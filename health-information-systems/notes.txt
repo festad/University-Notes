@@ -1,0 +1,397 @@
+26-10-2021
+
+logical tool layer,
+software applications in order to perform information processing,
+we discuss the one connected with enterprise functions,
+
+information processing tools,
+each hospital uses a different specific set of sw applications,
+we talk about them in a generic way
+according to 3gm we discussed the top layer,
+then logical tool layer, there is also the physical layer
+that describes network infrastructures, there's nothing specific,
+except for medical devices, digitalized, ex devices that allows imaging.
+
+Application portfolio -> diagram that describes the software,
+organized in three families of application components
+ - cis (clinical summary, worklist, app used directly by doctors and nurses),
+       order entry, decision planning, result entry),
+   clinical information system
+
+ - pas = patient administration system, more for administration of the patient,
+   medical report management, storing retrieval, patient record,
+   in patient management,
+
+ - departmental, set of applications that support specializations of supply management,
+     disposal management, human resource, specializations of execution diagnostic, therapeutic
+     procedures, supporting activities to perform an order asking for drugs, lab analysis on blood
+     of the patient,...
+
+
+- patient care
+- administration and resource management
+
+active decision support (for the doctor or administration of the hospital, for the managers),
+
+we have these 3 groups, the fundation PAS (attached to the central round core),
+are strictly working on the electronic patient record,
+this central core is the centre of clinical data concerning the patient,
+
+ 
+---  set of application components  ---
+
+-------------
+PAS
+-------------
+
+administration of the patient, contacts of the patient concerning relatives,
+it's used for covering patient admission 
+the patient ad sys can support allocational resources, allocate bed, room for the patient or
+specifical devices, 
+must provide complete administrative data of the patient, not the medical patient data,
+a purpose is to distribute data to the other components of the hospital,
+by means of computer network,
+pas has to collect basic administrative informations about the patient,
+also other app component can transmit relevant informations about the patient like diagnosis,
+why? eg the  doctor can enter in the documentation app component the fact that the patient
+was submitted to this diagnosis, it's useful to record information in the patient record and
+for billing purpose,
+pas is the memory of administrative informations, 
+
+chart - relationships of the patient, Management System (PMS),
+PMS = PAS,
+from the top there is the HIS, divides into
+ - information system for patient care
+    support direct activities for patient care
+ - managerial information system
+    information about quality, financial issues, performances,
+    costs supported in the last years, sintetic historical informations
+    for tactical decisions,
+
+  . clinical information system
+
+  . patient management system
+    client resource management, charging, billing,
+    encharged to support the admission of the patient to the hospital,
+    patient registration, visit registration, a patient can go to
+    the same hospital one or more times,
+    used to register the patient and each visit
+    scheduling and resource allocation,
+    supporting part of scheduling and resource allocation,
+    the one interesting the patient, not doctor or medical department,
+    focusing only on patients,
+    associating an appointment to the patient,
+    other resource allocations are bed, medical device
+
+    patient tracking, where the patient is at every moment,
+    where does it have to move,
+
+    charging, billing of the patient
+    
+
+  . systems for clinical support servicies
+
+
+
+electronic medical record -
+
+ - clinical information of the patient
+ - administrative information of the patient
+
+patient information system includes patient medical record and contains more,
+
+Patient management system functions:
+ - registering patient, clinical admission, transfer to other clinics,
+ - it can be monolitic software application or set of applications,
+ - client registrations, updates the patient master index for the current visit,
+   if the patient 
+
+ - after checking patient data a new visit is created
+
+ second group of services:
+ - client resource managemnet,
+   typical resources assigned
+   tracking of patient,
+   appointment and scheduling,
+   allocating other types of resources,
+   patient tracking,
+   billing at charge of the patient,
+   application to manage recipes
+
+
+details of some of these modules
+
+CLIENT REGISTRATION APPLICATION
+records that a new person is a patient of the hospital now,
+if the patient is new the app allows to record demographic data of the patient,
+this application creates and mantains singular record, a numerical record is created,
+mantains master list of the patient (record of all past patients of the hospital),
+each patient is associated with PIN = patient identification number,
+workflow chart,
+screenshot of patient administration software application,
+planned vs emergency admission,
+new visit of the patient,
+p.a.s.s. registers the visit, defined clearly as the period between arrival and discharge from hospital,
+in patient visit = admission, 
+it's not true that each visit is a new case,
+because the patient after discharge can come back for a follow up,
+when the patient comes back to the hospital it's not created a new case 
+but the data are associated with the previous case,
+
+functions:
+ confirmation of identity,
+ registering instance of service (visit)
+ .
+ .
+then the patient is directed to the ward,
+follow up is when the patient has already stayed in the hospital,
+it doesn't create a new case,
+repeated case -> repeated terapy is programmed, come back after 6 months
+to check the evolution of the patient, all visits are parts of the same case,
+whereas normaly a visit is a case,
+
+
+another typical function:
+client resource managemet system
+resources can be immaterial like time slot of appointment
+or concrete like associating patient with service,
+assign to specific doctor that started treating the patient,
+associating to number 12 room bed number b,
+or the patient is associated to medical devices like imaging machines,
+treadmils are devices where the patient runs on the device and the 
+cardiac effort is measured, physical activities,
+
+the client resource manag sys is organized in 3 functions:
+ - appointments and scheduling,
+   scans in the calendar to choose available periods,
+ - resource allocation, creation of work lists,
+   check when and where the resources will be available
+
+ - patient tracking
+
+the appointment is not computer based,
+each department has an appointment book (list of appointments),
+specific for department of radiology, is organized in booklets,
+for specific services provided by this unit,
+the radiology unit has a set of booklets for one of the x ray imaging,
+magnetic resonance, ... separate list of appointments for any machine,
+for any specific modality (x ray is one modality, magnetic resonance is another modality,
+computer tomography is another...),
+inside a specific modality you find the list of specific appointments,
+list of appointments for a specific x ray machine,
+into these list of appointments we have to look for empty slots where to assign patient,
+
+
+ ---------------------------------------------------
+             diagnostic by imaging
+-----------------------------------------------------
+                 |
+                 |
+                  --- xray, magn res, comp tom
+                       |       |          |
+                       |       |          |
+                     set of appointments  |
+                               |    set of appintments
+                               |
+                            set of appintments
+
+
+resource allocation for patient:
+
+tracking the patient, confirming the patient really arrived the ward,
+assigning the medical team to the patient,
+present patient list,
+make query -> location, room, bed number, team associated with each patient,
+responsible doctor,
+
+concerning the assignment, example of screenshot of bed reservation, pg 151,
+a code describes room and bed,
+name of the patient occuping the bed and forcast of period allocation,
+
+a specific subfunction of patient resource allocation subsystem is 
+PATIENT TRACKING, enables either the patient or the hospital personal to be aware
+of the status of administrative processes and patient location,
+now the patient is in this place of the hospital,
+patients receive the list of steps they have to follow,
+es first blood sample, then talk to anestheologist, then magnetic resonance,..
+tracking tells which steps were taken and which not,
+automatic capture in time,
+when the meeting is completed and when the patient is discharged..
+
+can be implemented in two metaphores:
+ - white board
+   service of endoscopy, if i'm waiting at emergency service of hospital,
+   waiting list, name available only to the personal,
+   you can have a number of appointment, status of the patient,
+   you can see if the appointment is cancelled, if the patient arrived, 
+   if already closed the visit, number of queue, the status of the medical procedure,
+   status describing that the patient has already completed the medical procedure OGDS,
+   others are in progress and others are waiting,
+tracks the patient with respect to specific medical department supposed to treat the patient,
+focusing on medical service, 
+
+ - search mechanism,
+   concerns a single patient and lists everything he has done or will have to do,
+   set of tasks for a patient
+
+PAS is covering the scheduling and resources allocation to patients, covers patient admission, administrative
+admission, appointment scheduling, administrative discharge and billing,
+it has responsibility to keep data of the patient, administrative data,
+this application system should communicate updates to other independent applications that deal with patient data,
+it's the master application for patient data
+
+after admitting the patient, he goes to a ward, where it is performed decision making, planning,
+planning diagnostic and medical steps, and formalize decisions into order, that can be executed
+as diagnostic steps or nursing steps, some coding of orders is performed (of diagnoses),
+the medical documentation system supports recording of set of activities,
+supports documentation of the medical tasks, may contains specialized modules for medical fields,
+clinical documentation -> coding diagnoses, 
+medical documentation system supports the staff, general medical knowledge, general classification system,
+if the system is smart it can select knowledge preselected forms to speed up,
+eg the systems already knows the patient has these problems and can suggest different pahts,
+medical documentation system has to support medical workflow,
+
+simple sample is a system like microsoft word,
+allows to write documents,
+a word processor,
+from the medical record the system can suggest templates, to speed up,
+
+nursing management and documentation systems,
+recording execution of nursing tasks,
+should be able to record formation useful to start nursing acrivities,
+history of the patient, current status, targets performing nursing acrivities,
+target from 28% to 40%,
+second set of cunctionalities:
+scheduling and planning activities,
+recording conditions, targets, history of patient, keeping track of plan,
+nursing terminologies and nursing classification (similar to ict11), encoding standard.
+
+general procedures -> list of the tasks
+
+another software application manages outpatient,
+
+physician orfer entry system -> POE,
+permits to record the orders, whereas the previous would record the treatments,
+after the decision the doctor transforms decisions in orders,
+POE, entering the order has consequences like:
+the order is automatically recordered in the medical documetnation system in case they are integrated,
+another ocnsequence is this order should be transmitted to who is in charge for this order (es pharmacy if
+the order is about drug),
+the third consequence is if the system is smart it can notify that something is dangerous in declaring
+one order, es 3 hours ago something else was ordered for this patient, duplicate order,
+
+order means order diagnostic, or drugs,
+tasks:
+ - defining the order (associated with service coming from a service catalog maintained by the hospital),
+while formulating the order suggestions are possible,
+ - appointment scheduling, moving patient to perform magnetic resonance,
+an appointment is needed, empty slot for mag res service,
+ - printing of the labels, for blood sample, specimen,
+ - communication of the order to the service unit,
+ - result reporting (blood),
+ - poe is able to assign charges, billing system,
+
+CPOE definition:
+portion of clinical information systems, we moved to the cis,
+we are analysing modules of clinical information system, we are talking about patient care enterprise functions,
+important function can be implemented: real time clinical decision support, dosage, suggestion about dosage, alternative medications,
+communication to a doctor "don't use this drug, there is a cheaper one available",
+alternative medication suggestion, allergy, duplicate, therapy warning,
+different doctors can order same thing within hours -> possible duplicate,
+
+
+advantages of smart cpoe, 
+tallman lettering,
+standardized therapy
+decision support,
+aggregation ordering,
+medical history,
+systematic recording of activities on patient,
+frequency of order - one shot, should be repeated every our,
+set frequency,
+helps doctors, the cannot forget to repeat the order,
+decision support example screenshot
+
+in the meanwhile: when the doctor defines an order,
+this order is selected and each service is selected by clinical support system,
+because its orders are implemented by this support department, it's important that the cpoe
+can send the order to the right service automatically,
+comunication between cpoe and other service applications in CIS is important,
+our order entry system communicates with departmental software applications (such as farmacy,
+laboratory information system, operating theater management, transportation service information system),
+unfortunately these inf sys are provided by different providers, 
+missing comunication has strong impact on the efficiency of activities performed at the hospital,
+
+chest pain -> system offering set of standard solutions, for example the system suggests drugs for syntomphs,
+can suggest laboratory investigations to be performed on the patient, suggestion of nursing activity,
+standard suggestions,
+
+list of services -> 
+order catalogues, standard list of orders, 
+clarity of communication,
+standardized order, easier to implement decision support,
+set of benefits...
+if the orders are based on standard qualities, easier control and audit,
+information concerning performing an order,
+set of tasks, several service departments,
+documented, cpoe, recording the order, results performing the order,
+if this comunication is automated every medical step is recorded in a clear way by the
+medical documentation system and electronic patient record.
+
+CPOE Order task result sequence graph - NOT to be learned,
+
+orders are entered, the orders are arriving to the service department later on,
+decomposed in two tasks (the orders), the radiology department has an automatically created list of tasks to be
+done by tomorrow,
+list supports automated capture of results...
+
+creation of worklists
+ - clinical workstations
+ - pharmacy workstations
+ - laboratory workstations
+ - analyser system interface
+ ...
+
+Communication between patient order entry POE and laboratory  information system (LIS)
+it's used for clinical analysis but also wine, food, polluted elements...
+
+pag 175, 
+scenario where CPOE and LIS are not integrated, are developed independently and
+nobody integrated them,
+what happens? 
+doctors enter order to perform blood analysis, put in container,
+and they enter order in CPOE to analyse glucose, potassium,
+this order is typed in CPOE, should be printed on some printer,
+the requests is entered and later on printed in the clinical area,
+some adesive labels are put on the container,
+they print paper requests, the labelled sample are sent to the laboratory,
+later on the laboratory application is typing from scratch in the system,
+the terminal on which is running the LIS,
+this typing can introduce errors,
+other errors can occure moving the sample, the paper can be lost,
+and there is another possible source of problems: after typing the information
+concerning the sample, the level on the label is not compatible with
+label of the information system, because standards are different,
+speciment is relabeled, a new label is printed and putted onto the previous one,
+cpoe and lis have different identification systems for the samples,
+and finally he sample can be processed by the laboratory,
+and then sent back to the clinic (this also is an error prone step),
+there are many error prone steps because the systems cpoe and LIS are not integrated
+(es chosing a new label),
+
+beetter scenario: CPOE and LIS are integrated,
+most error prone steps are removed from the scenario,
+enter test order in cpoe, the cpoe sends digitally the request to LIS (over network),
+lis receives order of analysing potassium and glucose,
+the system once it receives requests uses computer network to send digital image
+of the label, directly in the clinical area,
+LIS prints the final label to put on the sample, no relabeling,
+the sticker is already suitable,
+identificator is generated,
+the specimen is labeled with LIS label,
+there are no dozens of samples anymore, only one on which the label is put directly,
+the speciment can be sent to the laboratory with the right lable already,
+and they already see the requests from their terminal,
+inefficient error prone steps are avoided.
+
+
