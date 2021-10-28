@@ -1,29 +1,153 @@
-Business Process Reeingineering:
-il business process reengineering e' un approccio
-strutturato mirato all'aggiornamento e il ridisegno di processi
-al fine di ottenere miglioramenti nelle prestazioni eliminando
-attivita' e flussi che non generano valore.
-Il BPR sfrutta le opportunita' e le novita' tecnologiche
-per aggiornare e modificare il modo in cui i processi
-sono eseguiti e di conseguenza il modo in cui l'azienda lavora.
-Un progetto di BPR prevede in primo luogo lo sviluppo di una
-visione strategica da parte della dirigenza dell'organizzazione
-che, attraverso delle investigazioni, scopre come il mercato
-si muove, cosa si aspetta di nuovo, come i concorrenti si muovono,
-e quindi rileva dei possibili miglioramenti a livello strategico.
-La fase successiva e' quella di riprogettazione dei processi,
-che inizia con un attivita' di reverse engineering, con la quale
-dal sistema informativo esistente si ricava il progetto concettuale,
-quest'ultimo viene arricchito con le migliorie scoperte
-nella fase precedente. Seguono l'analisi e la diagnosi dei
-requisiti e delle criticita' e il ridisegno dei processi
- che possono portare a una nuova fase di progetto concettuale
-in caso si renda necessario apportare modifiche.
-Raggiunto un progetto concettuale formalizzato e analizzato
-in maniera definitiva, si procede alla realizzazione del cambiamento
-attraverso l'implementazione dei nuovi processi, il training degli utenti
-del nuovo software, la migrazione dei dati, le attivita' di project management.
-Una volta reso disponibile, il nuovo sistema informativo
-viene costantemente sottoposto a un monitoraggio delle prestazioni.
-fase che prevede 
-progettazione concettuale.
+---------------
+28 - 10 - 2021
+---------------
+
+'Prima di tutto'...
+riduciamo il tema d'esame,
+
+ERP
+unicita' dei dati, non replicati, unica rappresentazione
+lungo tutta la catena del valore dei processi supportati,
+da gestione magazzino a contabilita', la base di dati
+e' unica e i dati sono univoci, senza copie ridondanti.
+
+modularita' (che implica l'estensibilita')
+
+prescrittivita' (con approccio bpr),
+fare bpr con un erp significa fare
+la gap analysis, adattare il processo a quello
+best practice nell'erp o vice versa e' fare bpr,
+es: paradigma erp, sistemi informativi, catena del valore,
+bpr, bpr con erp,
+
+livelli: 
+- suite, come gruppo di app software che supportano
+tutta o parte della catena del valore
+- modulo
+- funzione, es emissione di una bolla o stampa di un report
+
+imoprtante la relazione tra catena del valore di porter
+per manifatturiero e moduli erp,
+classifica i moduli erp e li caratterizza rispetto alla catena
+del valore, i moduli verticali cambiano da settore a settore,
+ciascun settore ha un insieme particolare di moduli erp verticali,
+i singoli moduli a parita' di nome sono implementati diversamente
+a seconda del settore (farmac o auto),
+i moduli verticali richiedono costi elevati di analisi e sono vendibili
+solo al particolare settore,
+
+avere erp su cloud o open source permette di far acquistare erp
+anche alle aziende piu' piccole, ormai gli erp sono uno standard
+nelle organizzazioni, non averlo penalizza efficienza e efficacia
+dell'organizzazione e il modo in cui esegue i processi.
+Usare erp open source sono personalizzabili e permettono anche a aziende
+piccole di lavorare in modo erp.
+L'erp e' il tassello di base su cui si costruisce la diigitalizzazione.
+
+Slide della trasformazione dell'impresa,
+a partire dalle caratteristiche paradigmatiche (unic, modul, prescritt)
+gli erp consentono di trasformare i processi aziendali gestionali,
+processi ai vari livelli, da quelli operativi a quelli direzionali
+e di organizzazione tra partner, questo per ottenere vantaggi in termini
+di efficienza (minori costi) o efficacia (soddisfare meglio le aspettative del cliente),
+si possono acquisire anche altre tecnologie che migliorano ulteriormente efficienza e efficacia.
+Trasformare dei processi significa cambiare dei loro aspetti tra cui il flusso
+delle attivita' (gli erp implementano best practice per i processi, implementano
+schemi di processo), i flussi di attivita' a valle ci si aspetta che vengano
+eseguiti con meno passi e in meno tempo,
+dal pdv dell'organizzazione, visto che gli erp rendono automatiche attivita'
+elementari, il personale svolge mansioni di livello piu' elevato (le cose ripetitive
+le fa il sw, il personale fa' cose piu' ricche),
+visto che l'erp implementa schemi di processo, il personale puo' essere
+spostato piu' facilmente da un processo a un altro perche' tanto c'e'
+l'erp che lo guida, il processo e' piu' conosciuto dal software che
+dalla testa del personale.
+Gli erp salvano informazioni in modo coerente senza ridondanze, quindi
+si possono costruire sistemi di controllo, c'e' maggiore informazione
+di maggiore qualita' e e' piu' facile valutare le prestazioni da parte
+dei processi gestionali, e' piu' facile valutare quanto costa la produzione
+di un certo prodotto rispetto a quanto lo fosse in uno schema legacy a isole.
+
+Schema di Chang e Shaw, sempre sulla trasformazione dei processi,
+sintetizza i benefici in termini di efficienza e efficacia,
+efficienza significa minori tempi e minori costi,
+e si ottengono lungo tutta la catena del valore (staff,logistica, scorte...),
+altro beneficio e' l'efficacia, soddisfare meglio le aspettative del cliente,
+maggiore tasso di evasione dell'ordine, migliorata capacita' di rispondere
+al cliente in termini di flessibilita' (modifiche all'ultimo momento, 
+modifica preferenza il giorno prima, diventano gestibili).
+Standardizzazione delle piattaforme erp,
+nelle legacy a isole i moduli sono implementati con tecnologie diverse,
+nell'erp i moduli sono omogenei, gli aggiornamneti riguardano tutti i moduli,
+un'architettura standard migliora la gestione del sistema informativo,
+il valore dell'info attraverso la condivisione tra tutti i moduli migliora
+la qualita' dell'informazione.
+
+L'architettura classica erp e' su tre livelli:
+ - database server: una singola macchina su cui gira la base
+di dati, viene fatto il back up continuamente
+ - application server, vengono fatte eseguire le app che elaborano i dati
+nel database server
+ - presentation server (componenti installate nei terminali degli utenti),
+non e' una macchina fisica ma uno strato software che risiede sui pc dei client
+su cui girano i moduli dell'erp.
+
+----------------
+SISTEMI CRM
+----------------
+
+una nuova tipologia di sistemi informativi operativi,
+siamo ancora nella parte bassa della piramide di anthony,
+se gli erp sono normalmente nella parte inside della catena
+del valore, poi con i moduli estesi nella sell side,
+i crm nascono come separati dagli erp, (adesso in sap c'e' il modulo crm),
+e ricoprono la parte sell side del valore,
+
+ERP -> inside
+CRM -> sell side
+
+consentono di supportare tutta l'interazione con la clientela,
+supportare la relazione significa anche personalizzare il rapporto
+con i clienti (customization per il singolo utente),
+lo scopo e' di tratttenere gli utenti facendoli contenti e aumentando il valore
+per l'impresa.
+
+Con l'adozione dei crm cambia la strategia commerciale dell'azienda,
+a valle dell'adozione le aziende spostano il focus sempre piu' sul cliente
+e sulla customizzazione, essere reattivi alle richieste del cliente,
+il cliente viene posto al centro della strategia commerciale,
+
+I crm nascono nel 93, un po' dopo gli erp,
+le aziende di telefonia sono tra le prime che hanno adottato sistemi crm,
+le esigenze del cliente sono confezionarsi il profilo di consumo,
+personalizzarsi il contratto, tramite i sistemi crm e' possibile
+che il cliente contatti quando vuole l'azienda per modificare la propria
+offerta o acquistare nuove offerte o segnalare guasti.
+
+Tramite i crm le aziende gestiscono servizi personalizzati con milioni di utenti.
+
+Sono un elemento base.
+
+Portafoglio applicativo: insieme di sistemi informativi che l'organizzazione possiede,
+il crm e' parte integrante del portafoglio applicativo.
+
+Gli erp core (i tre giallo azzurro giallo) informatizzano le attivita'
+interne all'impresa, la parte inside della catena del valore, i crm l'ordine verso fornitori,
+gli scm invece la parte buy side della catena, i crm informatizzano il ciclo di relazione col cliente,
+da primo contatto a post vendita),
+i crm sono il front end tra cliente e azienda, supportano il presentarsi al cliente,
+gli erp sono il backend, quello che il cliente non vede e con cui non interagisce ma che
+servono per costruire il prodotto.
+Gli scm sono un secondo livello di back end,
+back end:
+ - primo livello: processi supportati da erp
+ - secondo livello: relazioni con i fornitori, supply chain management
+
+i crm hanno subito evoluzioni, una suite crm completa e' stata per la prima volta
+identificata negli anni 90, ma gia prima c'erano sistemi informativi che davano
+un contributo alla relazione col cliente, 
+es negli anni 70 i sistemi di gestione degli ordini, che venivano fatti dal cliente
+e disaggregati, a partire dalla richiesta del cliente l'ordine viene suddiviso
+in diversi ordini per la produzione, i sistemi di gestione ordine tengono
+anche traccia dello stato di avanzamento e comunicano al cliente ritardi o anticipi.
+Negli 80' c'e' l'esplosione
