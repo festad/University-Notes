@@ -150,4 +150,146 @@ es negli anni 70 i sistemi di gestione degli ordini, che venivano fatti dal clie
 e disaggregati, a partire dalla richiesta del cliente l'ordine viene suddiviso
 in diversi ordini per la produzione, i sistemi di gestione ordine tengono
 anche traccia dello stato di avanzamento e comunicano al cliente ritardi o anticipi.
-Negli 80' c'e' l'esplosione
+Negli 80' c'e' l'esplosione del canale web,
+
+48 min --distrazione---
+
+si possono raccogliere piu' informazioni sul cliente attraverso le pagine web,
+business intelligence, acquisizione di info utili a personalizzare il modo in cui
+devo interagire col cliente in base a come il cliente interagisce con la pagina web.
+
+Caratteristiche del CRM:
+
+- multicanalita': il cliente interagisce con l'azienda
+attraverso diversi canali possibili che il cliente decide,
+es numero verde, app,..
+il contatto rispecchia una strategia di business mirata
+a servire il cliente che puo' stare dovunque,
+puo' consentire al cliente di contattare l'organizzazione,
+piu' canali messi a disposizione del cliente
+
+- completezza e unicita' dei dati sui clienti,
+analoga alla completezza e unicita' dei dati dell'erp,
+i crm usano i dati sui clienti, sul conoscere nome,
+come contattarlo, eta', sesso, dati su abbonamenti e prodotti che ha acquisito,
+e i dati sui servizi aggiuntivi che posso vendere,
+ogni canale dispone di tutte le informazioni di cui l'azienda
+dispone sui clienti e i servizi che la stessa puo' offrire
+
+- catene di servizio: il crm non e' un sistema
+isolato ma implementa catene di servizio,
+un ordine viene acquisito col crm ma poi trasmesso
+ai processi inside che elaborano la parte backend
+che gestisce la richiesta e la soddisfa ed e' in grado
+di portare il risultato dell'elaborazione verso il cliente,
+la richiesta viene passata al backend,
+cliente -> crm -> processi inside -> cliente,
+e ci potrebbe essere anche la catena che comprende il supporto,
+un processo ammministrativo che porta a contabilizzare un servizio aggiuntivo,
+
+paradigma crm con i quattro canali tipici,
+dalla parte crm la richiesta viene passata alla parte backend che
+esegue la richiesta, distribuisce il risultato e si occupa
+dei processi amministrativi quali la contabilizzazione,
+il backend man mano evolve l'esecuzione dell'ordine manda
+dei dati al front end sullo stato di avanzamento,
+
+ - unicita' del dato
+sui prodotti che l'azienda mette in catalogo,
+simile all'erp,
+i dati sono mantenuti in modo univoco,
+le bolle rappressentano le varie unita' organizzative
+che processano le richieste degli utenti,
+un'unica interfaccia per far comunicare le unita'
+con la base di dati e l'aggiornamento e' immediatamente
+visibile a tutti gli altri processi coinvolti a soddisfare le richieste
+dell'utente.
+
+produzione e uffici commerciali vedono subito una modifica fatta da un'altra unita' organizzativa.
+
+==> Canale presenza / fisico
+a che organizzazione ci riferiamo?
+a una rete agenti che si muove sul territorio, o negozi o filiali,
+il venditore che si muove sul territorio ha a disposizione sul pc
+una componente del sistema crm che lo supporta nelle attivita'
+di procacciamento clientela, schedulazione nuovi appuntamenti,
+dati di contatto,
+presentazione offerta, customizzazione...
+es del cliente nella farmacia, il cliente richiede 100 pezzi
+e io inserisco l'ordine a terminale che finisce nella base di dati
+e messo in produzione dalla parte back end.
+Sales force automation, SFA, supporta il venditore nel costruire
+un'offerta corretta dal pdv tecnico, con un prezzo appropriato
+e che abbia caratteristiche desiderate dal cliente,
+avviene nei processi b2customer e b2b,
+es del cliente che vuole toccare con mano il prodotto,
+le aziende tessili vendono tessuti a case di moda, il cliente
+vuole sentire la consistenza del prodotto e decide di fare l'ordine,
+il venditore ha il crm sul tablet e puo' inserire l'ordine.
+Sistemi SFA,
+anche i crm contengono un modello di processo seguito dall'utente
+nel momento in cui formalizza l'ordine.
+
+==> Canale voce
+numeri verdi, anni 80-90, diffusione dei numeri verdi
+che moltiplica l'interazione telefonica tra clienti e aziende,
+ampia gamma di sistemi software, specifici crm chiamati contact center,
+offrono servizi di informazione e prenotazione,
+il cliente che chiama o vuole informazioni o vuole effettuare operazioni,
+i call center forniscono servizi di assistenza (help desk),
+vendita di servizi, aiutare il cliente a risolvere il problema
+o risolvere un guasto,
+possono anche operare come punti vendita di prodotti o servizi,
+vendita di abbonamenti adsl..
+
+Con riferimento ai call center, i sistemi software crm che supportano
+i call center cosa devono fare? Devono gestire la base di dati dei clienti,
+dei prodotti e dei servizi, l'operatore usa un terminale attraverso il
+quale il numero che chiama viene gia' abbinato ai dati del cliente
+(vedo da dove chiama, i servizi che ha acquistato..),
+il call center gestisce
+ - dati cliente
+ - dati servizi acquisiti
+ - dati a catalogo ulteriormente vendibili
+
+deve dare supporto al contatto col cliente,
+numero di telefono <-> dati del cliente,
+l'operatore puo' dare supporto specifico al cliente,
+il sw permette anche di inserire richieste dispositive del cliente,
+i sistemi a supporto dei contact center mettono a disposizione guide
+esecutive (scripts) che l'operatore vede a schermo, 
+l'operatore scrive le problematiche in linguaggio naturale
+e il sistema gli risponde con uno script con le offerte alternative,
+le operazioni 
+
+campagne di marketing inbound e outbound
+ - inbound: e' il cliente che ha chiamato e lo script suggerisce
+all'operatore di proporre offerte (natalizie), telemarketing,
+ - outbound: le aziende ti chiamano sul telefono facendo offerte commerciali,
+sono le telefonate snervanti
+
+==> Canale web
+detto portale business2customer
+parte di un portale generale che presenta l'azienda,
+fornisce servizi informativi di configurazione,
+e' un canale che non prevede operatori umani, non richiede costi aggiuntivi
+per lavorare 7/24, caratteristiche diverse se il cliente e' un'azienda o un privato,
+le info associate al canale web sono:
+ - catalogo dei prodotti e servizi, funzione vetrina,
+ - funzione carrello, supporta la possibilita' di raccogliere servizi dal catalogo,
+il canale web puo' dare supporto a transazioni, richieste assistenza, reclami, avanzamento ordini,
+tracciamento transazioni e contatto col cliente,
+profilare l'utente attraverso i suoi dati di comportamento
+serve a caratterizzare il cliente e usarlo per fare offerte attive
+dopo aver capito il cliente, proposta di servizi al di la di quelli richiesti,
+es Amazon e le raccomandazioni, stream analysis, successione di click,
+permettono di profilare l'utente e offrirgli proattivamente dei servizi.
+
+il portale e' tipicamente dotato di caratt di analisi, non solo risponde
+al cliente ma lo analizza tramite profiling,
+offre navigazione assistita sul catalogo (ordini raccomandati),
+altra funzione e' consentire al cliente di consultare lo storico dei consumi
+e pagamenti.
+
+Esempi:
+ - portale di SAP
