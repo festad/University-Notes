@@ -293,3 +293,12 @@ e pagamenti.
 
 Esempi:
  - portale di SAP
+
+Altri canali sono quelli che permettono il testo scritto,
+ovvero fax, sms, e-mail, richieste espresse in linguaggio
+naturale non strutturato.
+E' un canale per piccoli volumi perche' richiede operazioni manuali.
+I formati sms e email possono essere analizzati da sistemi
+di text mining, e incanalano una richiesta in sottocategorie,
+una richiesta viene automaticamente mandata a un team perche'
+contiene determinate parole chiave.
