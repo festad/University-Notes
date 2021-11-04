@@ -302,3 +302,324 @@ I formati sms e email possono essere analizzati da sistemi
 di text mining, e incanalano una richiesta in sottocategorie,
 una richiesta viene automaticamente mandata a un team perche'
 contiene determinate parole chiave.
+
+
+----------------
+03 - 11 - 2021
+----------------
+
+CRM analitici
+e 
+CRM direzionali
+
+gli analitici servono per costruire profili clienti,
+per analizzare statisticamente i clienti e creare
+profili utili per operazioni di marketing e promozioni mirate,
+il focus e' analizzare dati core (crm operativi) e usare
+i dati per costruire profili cliente,
+con quei profili si possono fare campagne informative e di vendita mirate,
+e per gestire meglio l'interazione col cliente perche' sappiamo
+che appartiene a una determinata classe.
+Possono essere:
+  sistemi di analisi
+
+  sistemi di azione
+
+quelli di analisi partono calcolando indici di prestazione dei clienti
+(calcolare quanti acquisti fa un cliente che abita in un certo posto
+e ha determinate caratteristiche, determinati abbonamenti...
+calcolo di indirici = considerare acquisti, preferenze, provider telefonici,
+indici sintetici che possono essere usati per segmentare clienti
+e generare report sui prodotti piu' gettonati e che fatturano di piu',
+segmentazione clienti = usare gli indici sullo storico degli acquisti e il luogo
+dove vivono per definire categorie, es il giovane sotto 20 anni con scarsa
+possibilita' di acquisto e quello tra 20 e 30 con potere di acquisto
+e disposto a rischiare, creare profili di mercato e quindi
+creare offerte che colpiscano determinati segmenti di clienti,
+questo si fa con il supporto per la gestione delle campagne,
+che aiuta a preparare i numeri di telefono, gli indirizzi email
+di utenti che ricadono sotto un certo profilo, gestiscono
+l'automatizzazione dell'invio delle email, gestione della pianificazione
+e esecuzione delle campagne.
+Il sistema analitico (crm analitico) fonda la sua attivita' sulla base di dati
+DATAWAREHOUSE, che contiene informazioni aggregate, conteggi di quanti clienti
+hanno chiuso un abbonamento, fatturato generato da un determinato prodotto,
+il crm analitico lavora su dati sintetici che servono per fare profilazione
+e analisi dei clienti (scopo diverso rispetto ai crm core che supportano
+la singola interazione col cliente mentre i crm analitici si interessano delle
+classi di utenti),
+lo scopo e' di contattare clienti che ricadono in determinati profili
+per fargli proposte di acquisto tramite un contatto propositivo,
+ovvero propongo io al cliente, e non aspetto che venga lui da me,
+spesso tramite i contatti si offrono scontistiche forti.
+Il contatto avviene con posta ordinaria o email, telemarketing con call center,
+tramite sito web e portale dell'azienda (per tutti i clienti) o portale del cliente (dopo che il cliente
+si autentica e entra nell'area privata trova messaggi di invito)
+Attivita' della gestione campagne (crm analitici)
+
+- preparazione
+compagnie telefoniche, propongo un nuovo abbonamento telefonico
+che secondo me puo' essere adatto per ragazzi tra 18 e 21 anni,
+con livello di qualita' basso ma poco costoso,
+i risultati attesi sono del 10%,
+per scoprire il target mi appoggio alla parte di analisi del crm,
+funzionalita' di business intelligence all'interno dell'organizzazione,
+il sistema informatico da informazioni per individuare il target di clientela,
+in fase preparazione puo' essere generico (es solo l'eta'),
+
+
+- progettazione
+definisco meglio i criteri target, es zona geografica, possesso di determinati abbonamenti,
+si definisce in modo preciso il tipo di contratto/offerta, si scelgono i canali e si progetta
+la pianificazione operativa, ovvero quando parto, quanti call center, a che ore chiamo,
+quanto dura la campagna, quanti clienti voglio raggiungere, alloco le risorse e i tempi,
+
+- esecuzione
+si estrae innanzitutto il target, ovvero a fronte del profilo ho bisogno
+dei numeri di telefono, gli elenchi dei clienti da chiamare, estraggo i dati
+dalla base di dati crm che mantiene i dati su clienti, prodotti e servizi,
+poi contatto i clienti operativamente,
+il sistema puo' effettuare automaticamente chiamate che vengono passate al primo operatore libero,
+terminata la fase di esecuzione si passa alla valutazione dei risultati,
+il contatto dei clienti avviene da parte degli operatori,
+i dati statistici sulle operazioni sono inviati al crm analitico che analizza i risultati
+in termini di efficacia e efficienza,
+nel caso di contatti via web posso sapere su cosa hanno cliccato, le manifestazioni di interesse
+vengono inferite da come il cliente ha interagito e cliccato sul browser, click stream analysis,
+
+analisi:
+analisi del comportamento dei clienti, report grafici, tabelle, 
+sys software che producono output grafici e non,
+utili per op di marketing, confronto di prezzi, quali prezzi
+sono visti come favorevoli per gli utenti, business intelligence,
+le compagnie telefoniche (ma anche quelle luce e gas),
+predizione di abbandono (= determinare sulla base del comportamento
+del cliente che il numero con quell'abbonamento ha smesso di funzionare,
+inferire la probabilita' di abbandono, se un cliente usa sempre meno un numero
+e' probabile che sta per abbandonare il servizio, in quel momento si inviano
+offerte per trattenere il cliente),
+analisi delle campagne, reazione del cliente per sapere se e' andata bene,
+analisi del click stream, i percorsi di navigazione all'interno del sito,
+vedere i prodotti maggiormente visitati per inferire l'interesse dei clienti
+o problemi di navigazione sul sito.
+Tutti questi problemi nei sistemi di business intelligence stanno nei datawarehouse,
+con diversi livelli di aggregazione (settimanale, mensile, giornaliero),
+
+I crm sono di piu' tipi, core (operativo), analitico e direzionale,
+esistono anche le suite crm, insiemi di applicazioni software dove ogni strumento permette di svolgere
+attivita' complete, es suite office, work processor, foglio elettronico, power point,
+se usati insieme gli strumenti si possono creare report completi.
+Le suite crm sono costituite da diversi componenti, con crm analitico, direzionale, operativo...
+
+Inizialmente i crm erano a liv operativo, poi si sono estesi a analisi e marketing,
+l'operativo elabora le transazioni, da primo contatto a post vendita,
+quello analitico informatizza la conoscenza sul cliente costruendo i profili utente,
+con le tecnologie della business intelligence (datawarehouse),
+i crm direzionali usano le info che provengono dal crm operativo (singole op di vendita, contatto,
+cambio tariffa, cancellazione) insieme a quelle del crm analitico (dati di successo e insuccesso
+delle campagne) permettono di pianificare azioni future e valutare quelle presenti e passate,
+a fronte di una campagna conclusa si capisce se un'offerta e' fallimentare o un successo,
+
+Il direzionale unisce le due precedenti e supporta le decisioni dell'azienda.
+Il crm operativo fornisce dati all'analitico, e fornisce dati sul progress, se siamo a 50 o 90%,
+e la percentuale di adesioni raccolte,
+l'analitico fornisce all'operativo la conoscenza per interagire coi clienti (ha l'info
+sui vari profili clienti e l'op li usa per effettuare campagne solo per un determinato 
+profilo oppure perche' ogni profilo ha determinate caratteristiche che possono
+essere usate durante la telefonata),
+crm direzionali forniscono info utili per prendere decisioni (anche correttive),
+
+IMPORTANTE: pag 22, architettura dei CRM
+il crm operativo mette a disposizione canali per la comunicazione bidirezionale cliente-azienda,
+telefonico, web (modalita'self service), canale fisico con agente che si muove per il territorio
+e gira con un tablet con l'istanza di crm operativo,
+fornisce lo storico delle interazioni tra cliente e azienda, es transazioni, acquisti del cliente,
+sono dati forniti al crm analitico che applica tecniche di business intelligence per proporre
+classi di clienti tentando di evidenziare caratteristiche comuni che definiscono profili utente,
+c'e' la componente di integrazione tra crm operativo e analitico, 
+il crm operativo invia dati sull'interazione col cliente, dati sintetici aggregati,
+quanti clienti hanno risposto positivamente alla telefonata,
+
+il sistema direzionale mostra ai dirigenti degli indici di prestazione,
+key performance indicator che servono ai dirigenti per capire quanto bene
+funziona l'interazione col cliente,
+per comprendere aspetti chiavi della relazione col cliente, quanto e' soddisfatto,
+quanto e' affezionato al brand
+
+---------------------
+
+SISTEMI DI CONTATTO
+
+sono sistemi sw che gestiscono la multicanalita',
+gestiscono l'interazione col cliente nel modo piu' semplice possibile
+attraverso diversi canali,
+l'utilizzo del canale web e' il piu' rilevante,
+sono un elemento complementare dei crm che supporta la multicanalita',
+3 caratt - multicanalita' , unicita' info , ...
+
+parliamo della loro architettura,
+all'inizio il contatto avveniva solo per telefono,
+il sistema gestiva solo le telefonate in entrata, un call center base,
+dove si usa una tecnologia telefonica per cui le telefonate vengono girate
+al primo operatore libero, c'e' un centralino dispatcher,
+smistare telefonate in entrata,
+il successivo passo e' stato di integrare la tecnologia telefonica
+con quella informatica, a fronte di una telefonata il sistema informatico
+risale al numero e quindi alla scheda cliente se il numero e' registrato
+nella base di dati del crm,
+il sistema visualizza una scheda sui dati del cliente, call center integrato,
+il terzo livello di integrazione e' quello dell'integrazione
+tra informatica e sistemi web, ovvero contact server completo,
+con canale web, le cose si complicano, i sistemi sono molto piu' ricchi.
+
+Call center base: si basano su sistemi telefonici evoluti che distribuiscono le chiamate,
+sistemi ACD, automatic call distribution,
+sfruttano la tecnologia VoIP, Voice over Internet Provider,
+il segnale analogico della voce viene trasformato in pacchietti,
+es redirezione di una chiamata in Albania,
+Instradamento verso opeatore disponibile, accodamento, ordine di priorita' in base all'arrivo,
+tempo medio di attesa, parametri di funzionamento (es tempo di attesa medio prima di poter parlare
+con un operatore, quanti chiudono prima di metter giu' al cliente,
+
+step evolutivo successivo: integrare, call center integrato con sistema informatico
+e automatismi (robot vocali) che affiancano l'operatore nei casi piu' semplici,
+scambio dati tra centralino telefonico, sistema informatico..
+grazie all'integrazione il riconoscimento del numero telefono
+il sistema puo' predisporre la scheda cliente del cliente,
+
+gli automi vocali sono app sw che sono in grado di interpretare la voce del cliente,
+distinzione si o no, numeri, oppure quelli sofisticati che ascoltano il parlato,
+automi semplici (del primo tipo, interactive voice response, pone domande (es hai bisogno
+di assistenza o nuovo contratto? dimmi 1 o 2..), se il cliente dice 1 l'automa gli fa sentire
+un nuovo menu...
+
+gli automatic speech recognition sono, modello probabilistico domande/risposte preconfezionate,
+se il cliente non e' soddisfatto puo' andare in escalation,
+
+il terzo livello evolutivo, contact center vero e proprio,
+usa anche il canale web a fianco di quello telefonico,
+telefonate via internet, direttamente via browser,
+il cliente si mette in contatto con mezzi sincroni (chat) o asincroni (mail),
+molteplicita' di canali che permettono di svolgere attivita' in entrata (operatori in attesa di chiamate),
+attivita' inbound (servo chiamate in entrata che il cliente decide di fare),
+ma anche attivita' outbound, programmare chiamate, effettuare contatti verso clienti in modo proattivo,
+l'azienda programma campagne promozionali, outbound (verso il cliente),
+le possibili modalita' di contattare sono molto varie,
+ad es chiamate col canale telefonico, gli operatori chattano tramite web browser,
+gli op possono condividere la schermata (team viewer), ti apro uno streaming sul terminale
+cosi' vedi come fare determinate operazioni,
+
+MODELLI TECNOLOGICI
+possiamo individuare nell'ultima delle componenti tecnologiche periodiche, come il terminale del cliente
+(telefono fisso, smartphone, pc, browser, client internet via voce streaming, videoconferenza),
+inbound o outbound, architettura di elaborazione che offre servizi a supporto se questo e' in modalita'
+self service,
+client locali (all'azienda, terminali) usati dagli operatori o dai commerciali,
+lato azienda abbiamo una rete di calcolatori, terminali usati da operatori umani
+e dall'altro lato abbiamo server, applicazione sw del contact center e del crm,
+le funzioni sono attivabili da op umani o da automi, attivano o disattivano offerte,
+in generale l'architettura risponde a richieste del cliente quando questo usa il web,
+tecnologie di integrazione tra componente telefonica e web,
+interfaccia tra sistema telefonico e informatico, permettono di abbinare
+il numero cliente alle info sul cliente in modo automatico, senza richieste
+tipo "qual e' il tuo cf, quali offerte attive hai?",
+le tecnologie di integrazione permettono l'interazione tra piu' centri di contatto,
+distribuiti in piu' sedi, piu' paesi,
+un cliente chiama un'unica chat o numero e il sistema redirige la richiesta
+del cliente sul contact center che in quel momento e' in grado di rispondere.
+
+Dal pdv grafico, "la architettura call center base",
+acronimo PABX, scatola nella quale entra la richiesta del mondo esterno
+e si esce con una serie di terminali telefonico,
+la parte di crm e telefonica sono SCOLLEGATE, non c'e' interazione tra
+PABX e DB server, come quando chiamo gli ospedali, CUP, vuoi aggiungere un'altra visita?
+Il tramite tra i due lati e' umano, ascolta e scrive.
+L'integrazione c'e' nel call center integrato,
+tecnologia CTI,
+figura rappresentata dal server,
+che comunica col PABX (tecnologia telefonica) e interagisce col l'application server
+su cui gira il crm, la base di dati e il terminale dell'operatore che comprende anche il telefono,
+tecnologia VoIP, la chiamata viene passata all'application server,
+fa riapparire sul terminale la scheda cliente,
+presenza di automi oltre al sw crm nel call center integrato, effettuano le op di routine,
+automi piu' o meno sofisticati (rispondono con risposte articolate, disaggregazione delle frasi,
+fonemi, ricostruzione di parole), tecniche text to speech,
+
+il modello piu' sofisticato, contact center,
+e' composto da call center integrato + gestione web,
+sottocanali web (chat, chiamate streaming)
+
+il cliente si mette in contatto con canali sincroni e/o asincroni,
+permette di svolgere attivita' inbound e outbound (proattive),
+l'architettura include una gamma di componenti (in particolare server),
+e' un'architettura costosa da impiantare e gestire, spesso
+il contact center viene acquistato da aziende che offrono
+tale servizio, non e' l'azienda a costruirne uno ma viene
+acquistato come outsourcing, viene affittato da parte
+di provider specializzati.
+elenco di parametri con soglie minime o massime (tempi di attesa,
+percentuale di utenti sodddisfatti),
+piu' il liv di servizio e' alto piu' costa il servizio in outsourcing.
+
+vediamo il sw in particolare,
+collaborazione tra due suite (crm),
+ha il ruolo di fornire agli operatori o al sito web o alla base dati
+dei clienti dei prodotti, info sulla data di nascita, lo storico dei contratti,
+le cessazioni, i prodotti disponibili (catalogo servizi e prodotti),
+gestito dalla componente crm,
+i crm forniscono il sw per l'elaborazione delle transazioni,
+acquisto tramite interazione con crm,
+
+piattaforma vera e propria che gestisce il contact center,
+puo' essere proposta da vendor specifici o telefonici,
+
+responsabilita' di gestire la funzionalita',
+gli op e i clienti devono poter usare canali diversi,
+funzionalita' di gestione canali e cti, automi,
+supporto programmazione e gestione dell'attivita' degli operatori,
+il sw permette di costruire programmi di contratto,
+se al cliente voglio vendere un prodotto devo avere info sui prodotti,
+programmi di contatto delle campagne (elenchi dei clienti che rientrano
+nei profili che si vogliono contattare), business rules,
+
+
+IMPORTANTE, pg 12,
+blocchi funzionali di un sw di gestione di contact center 1:25:00,
+abbiamo 3 tipi di funzioni: interazione col cliente attraverso canali,
+a supporto dell'operatore e a supporto della gestione complessiva del contact
+center come insieme di operatori, gestione delle op su come riportare i dati del funzionamento
+a qualche direttore per valutare le prestazioni del contact center stesso,
+
+- interazione col cliente
+funzionalita' a supporto della comunicazione inbound tipo voce, telefonico,
+funzionalita' di instradamento delle chiamate verso operatori liberi, 
+centri multisito, gestione della distribuzione in base al carico di lavoro,
+visualizzare la scheda dei dati del cliente, pop up dati associati al numero in entrata,
+outbound, l'operatore chiama il cliente, a fronte di 10 operatori
+oggi quali chiamate assegno? elenco numeri telefono automaticamente chiamati dal sistema,
+pop up dati cliente, crm,
+visualizzare dati cliente,
+interazione self service, il cliente interagisce via automa,
+interactive voice responder, gestione automi, canali email che ricevono
+e analizzano il testo delle email, modello di risposta automatica grazie
+a individuazione keywords, oppure instradamento automatico basato su keywords,
+web chat, instradamento verso operatore libero, memorizzazione delle chat,
+storico delle chat,
+gestione di chat multiple, tempi di attesa, l'op risponde a altre chat intanto,
+
+- integrazione e supporto a operatore, gestione desktop, la gestione del layout dell'operatore,
+funzionalita' a disp dell'opreatore per interagire col cliente,
+visualizzazione di script, narrazioni, suggerimenti,
+il cliente fa una domanda e l'op puo' digitare le keyword della richiesta,
+il sistema da una risposta probabilistica con degli script suggeribili al cliente,
+gestione degli esperti, instradamento email ai team esperti piu' indicati per la richiesta specifica,
+interfacciamento crm e contact center, componente che gestisce lo scambio di dati, campagne
+di vendita col crm,
+
+- governo delle operazioni, gestione dell'occupazione degli operatori,
+programmazione gestione operatori, equa distribuzione del carico, sovraccarico degli operatori,
+principio di rotazione, gestione desktop del responsabile del contact center, gli interessa
+una supervisione degli indici di prestazione in tempo reale e in senso storico,
+serve per capire se stanno operando bene in termini di servizio ai clienti,
+ci sono operatori molto carichi o op scarichi? monitoraggio delle attivita' del contact center,
+banca dati del contact center, senso storico
