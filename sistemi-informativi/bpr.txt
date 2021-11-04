@@ -1,4 +1,4 @@
-Business Process Reeingineering:
+Business Process Reengineering:
 il business process reengineering e' un approccio
 strutturato mirato all'aggiornamento e il ridisegno di processi
 al fine di ottenere miglioramenti nelle prestazioni eliminando
@@ -12,7 +12,7 @@ che, attraverso delle investigazioni, scopre come il mercato
 si muove, cosa si aspetta di nuovo, come i concorrenti si muovono,
 e quindi rileva dei possibili miglioramenti a livello strategico.
 La fase successiva e' quella di riprogettazione dei processi,
-che inizia con un attivita' di reverse engineering, con la quale
+che inizia con un'attivita' di reverse engineering, con la quale
 dal sistema informativo esistente si ricava il progetto concettuale,
 quest'ultimo viene arricchito con le migliorie scoperte
 nella fase precedente. Seguono l'analisi e la diagnosi dei
@@ -25,5 +25,3 @@ attraverso l'implementazione dei nuovi processi, il training degli utenti
 del nuovo software, la migrazione dei dati, le attivita' di project management.
 Una volta reso disponibile, il nuovo sistema informativo
 viene costantemente sottoposto a un monitoraggio delle prestazioni.
-fase che prevede 
-progettazione concettuale.
