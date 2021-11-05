@@ -825,3 +825,332 @@ con elevata scolarita' ma basso costo, india, africa...
 virtualizzazione dei centri, coordina centri dislocati in tutto il mondo
 ma presenta un unico punto di ingresso.
 
+
+=========================
+
+=========================
+
+SISTEMI INFORMATIVI DIREZIONALI
+
+offrono supporto alle decisioni strategiche e pratiche di allocazione risorse,
+controllo progetti.
+
+Diagramma sugli scambi informativi,
+supporto operativo, 
+direzionale, ha il compito di pianificare obiettivi,
+verificare a posteriori il supporto alle decisioni, target, tempistiche,
+pianificazione che rispetti le decisioni,
+verificare i risultati a posteriori,
+implementazione delle decisioni, es fare un nuovo modello di automobile e venderlo in sudamerica,
+progettare, prototipare il veicolo, dopo 6 mesi si verificano i risultati,
+una seconda attivita' supportata dal direzionale per capire se le decisioni hanno avuto
+frutti adeguati,
+si pianificano obiettivi, si passano al supporto operativo che fornisce risultati,
+es dati sulle vendite, quante auto ho venduto su quali paesi del sudamerica, il fatturato
+generato, l'utile generato, le difettosita' riscontrate, a distanza di 6 mesi verifica i risultati raggiunti,
+verifica dei risultati,
+dopodiche' si prendono azioni correttive (terza attivita'),
+il sistema di supporto operativo riporta risultati che possono essere analizzati dal direzionale
+il quale opera attivita' correttive.
+
+Il sistema di supporto operativo tratta dati spiccioli, singoli scontrini, singoli ordini,
+quantita' di prodotto presenti a magazzino, costo di un particolare dipendente,
+info molto parcellizzate e specifiche,
+l'informazione direzionale e' sintetica, aggregata, storicizzata,
+il sistema direzionale e' interessato alle informazioni sul semestre, sull'anno,
+al trend crescente, non alla singola busta paga ma allo stipendio medio,
+al costo del dipendente in un particolare paese,
+informazioni di sintesi che descrivono il macrofenomeno e non il microfenomeno,
+l'informazione direzionale e' usata per assistere il processo direzionale,
+mettere in atto azioni correttive.
+
+La piramide di Anthony classifica,
+a liv basso ci sono i processi operativi, il controllo operativo,
+si pianificano le attivita' esecutive, quanto produrre o quanto spedire, quanti ordini evadere
+in una determinata settimana, ci si preoccupa che le attivita' procedano nel modo prefissato,
+altro termine usato per i sistemi informativi operativi, ovvero sistemi di pianificazione e controllo,
+un erp implementa pianificazione e controllo,
+
+livello direzionale, intermedio, non si occupa delle spedizioni di un particolare modello in settimana
+ma controlla che nell'arco di un anno l'azienda raggiunga certi obiettivi patrimoniali,
+si fa un budget e si decide quanto spendere, si distribuisce il gruzzoletto sui vari centri che costituiscono
+l'azienda,
+mi aspetto certi ritorni in termini di attivita' eseguite, prodotti venduti,
+si fanno ipotesi sul futuro, si allocano risorse di tipo economico,
+si fa poi una verifica a liv consuntivo, si guardano i risultati e si fa una verifica
+a posteriori a consuntivo,
+
+la pianificazione strategica ha obiettivi ancora piu' alti, 
+se il direzionale e' annuo lo strategico si interessa di entrare con la vendita delle auto
+negli stati uniti, mettere in piedi una rete di vendita,
+quali stabilimenti chiudere perche' piu' vantaggioso,
+l'info direzionale,
+rendiconto direzionale, pg 4,
+contiene informazione direzionale,
+potrebbe essere tipica del livello intermedio,
+l'info esemplifica l'informazione direzionale,
+il rendiconto ha una serie di indicatori,
+parametri utili per modellare un certo fenomeno,
+sono i volumi di vendite, di acquisti, il costo del personale, i margini
+di ammortamento, l'utile,
+per capire come l'organizzaione consegue risultati economici o con particolare
+suddivisione, macchinari, stabilimenti, l'utile che generano,
+il focus e' sui dati aggregati,
+cappello costo economico, anche vendite e acquisti si riferiscono al fatturato, euro, dollaro, currency,
+altri indicatori non sono economici, sono es auto vendute e auto prodotte,
+sono dati che fanno riferimento a un periodo di riferimento,
+info basate su indicatori, su un aspetto del business, del processo..
+altro aspetto: diverse tipologie di valori,
+posso considerare le vendite immaginate di fare (a budget) e quelle a posteriori rilevate dopo
+6 mesi dalla previsione,
+ho diversi valori, quelli a budget e quelli effettivi,
+il sistema direzionale fissa obiettivi e verifica quanto sono stati raggiunti,
+altro aspetto dell'info direzionale e' che gli indicatori hanno valori calcolati con periodi temporali,
+2100 e' del semestre 2 dell'anno corrente,
+ho altre colonne sui dati annuali dell'anno precedente,
+nell'anno precedente considero in 12 mesi (non piu' 6),
+il dato complessivo a budget puo' essere segmentato su diverse dimensioni,
+oltre al dato complessivodel 2020 posso suddividerlo per i diversi prodotti,
+suddivisione di venduto che potrei fare per paese, rappresentanza commerciale, concessionaria,
+il dato complessivo puo' essere suddiviso per diversi sistemi di riferimento, es area geografica, quanto ho venduto
+con la concessionaria e quanto col leasing,
+servono le suddivisioni per entrare piu' in profondita nella comprensione del fenomeno vendita,
+se guardo le auto prodotte posso capire il liv macro del fenomeno (utile al dirigente),
+le info sono aggregate, non vedo la singola targa ma il parziale mensile, il parziale per modello,
+per paese di vendita, per concessionaria, in ogni caso info aggregate e CALCOLATE,
+tirate fuori a partire dai singoli ordini e dalle singole registrazioni,
+dati di esecuzione degli ordini, l'ufficio commerciale,
+l'unicita' dei dati supporta la generazione dell'informazione direzionale,
+se ho gli ordini su un singolo database e' facile tirar fuori le cifre complessive,
+se l'informazione non e' centralizzata e' piu' difficile costruire i rendiconti direzionali.
+Problemi tecnici, es mettere insieme dati di mercato in zone diverse, devo fare conversioni di valute,
+il tasso di cambio varia giorno per giorno,
+uso il tasso di cambio di oggi o calcolo rispetto al momento della vendita?
+Report in forma tabellare,
+forma grafica, grafica interattiva,
+forma di grammatica,
+
+i sistemi direzionali sono preconfezionati, standard,
+caratteristiche dei direzionali, supportano inprimis la definizione degli obiettivi,
+dss (decisional support system),
+vedo che crollano le vendite di un prodotto,
+posso provare a mettere in atto azioni correttive,
+info sinstetiche aiutano a capire il problema e gli obiettivi da definire per risolverlo,
+prima definire gli obiettivi, e poi supportare la valutazione del raggiungimento di tali obiettivi,
+valutare i risultati della strategia scelta,
+es mi aspettavo di aumentare le vendite, vediamo se e' avvenuto a distanza di 6 mesi (funzione
+di reporting),
+il dss mostra l'info direzionale in modo fortemente interattivo,
+cerco di cliccare sulle varie voci per mettere una toppa (azione correttiva),
+la funzione di reporting segue un template standardizzato e genera un report,
+queste erano le funzioni tipiche,
+un'altro aspetto dei SID e' quello che elabora informazioni aggregate, 
+non sui singoli ordini ma aggregati,
+parliamo di indicatori,
+tratta informazioni espresse tramite indicatori, le vendite totali del magazzino,
+non il singolo scontrino,
+le info aggregate sono temporizzate, hanno collegate un periodo, sono info tempificate,
+e la tempificazione e' centrale, serve per analizzare i trend,
+vendite totali su un particolare trimestre, su un particolare evento di vendita,
+l'info e' MULTIDIMENSIONALE, posso suddividere il totale per negozi, regioni, nazioni, vedere quali
+hanno venduto piu' e quali meno, posso disaggregare il dato totale effettuando molteplici segmentazioni,
+posso prendere il dato totale e disaggregarlo sui singoli negozi, i singoli prodotti, i singoli paesi.
+
+Posso avere il totale per anno, mese, semestre, ci sono diverse gerarchie per disaggregare i dati.
+
+Formalizziamo l'idea di indicatore,
+un indicatore e' relativo a fatti aziendali,
+es evento di vendita, quantita' di venduto,
+costo del personale (misura del fatto che l'azienda
+ha del personale che lavora),
+un indicatore e' una voce che compare nel report,
+e' descritto da n chiavi, puo' essere riferito a n coordinate,
+es tempo, prodotto, punto vendita,
+posso associare un'info sul tempo (mese gennaio 2021), una coordinata prodotto (prodotto x),
+info sul punto vendita (negozio, paese),
+tipicamente associato a chiavi/coordinate,
+l'indicatore e' una funzione di variabili,
+se il venduto ha una coordinata prodotto,
+al prodotto si puo' associare l'effettivo vettore dei prodotti,
+nel vettore associato al prodotto ho la lista dei prodotti che l'azienda vende,
+nel vettore sui punti vendita ho i punti vendita,
+ogni dimensione puo' essere organizzata su livelli gerarchici,
+posso essere interessato a vedere le vendite per mese, per quadrimestre, visione organizzata
+per livello gerarchico,
+posso decidere di guardare ai singoli punti vendita, alle regioni o ai paesi,
+posso guardare ai diversi prodotti o alle diverse categorie di prodotti (spaghetto - pasta),
+dati piu' spiccioli o dati piu' generali.
+Ne nasce uno spazio multidimensionale, un ipercubo,
+se ho 3 coordinate sono in spazio tridimensionale,
+ipercubo suddiviso in celle, 5 prodotti, per 10 mesi, per 4 negozi,
+
+Tecnologia datawarehouse,
+serve per memorizzare e realizzare indicatori, 
+"Building the datawarehouse",
+una collezione di dati.... definizione,
+non solamente dati dell'erp ma anche dal procurement, dal crm, dati esterni alla organizzazione,
+concorrenza, risultati di soddisfazione raccolti con interviste telefoniche,
+collezione persistente, collezione variabile nel tempo (viene aggiornata), orientata tipicamente
+a un certo argomento (dataware house relativa al fenomeno vendita, oppure marketing, o gestione personale,
+gestione contact center, e' orientata a un certo argomento, colleziona determinati indicatori che aiutano
+a capire un determinato argomento),
+dati enterprise wide, coprono l'intera catena del valore, non solo sell side o inside,
+l'informazione e' mantenuta per supportare decisioni e analisi dei dati,
+dss (decision support) e valutazione a posteriori dei risultati conseguiti.
+
+Spesso oltre a dataware house si sente dataware housing,
+denota il processo di progetto e costruzione e popolamento della dataware house,
+avviene a partire da soggetti diversi, mette insieme i dati del crm, erp,
+sistema di procurement, sistemi legacy dell'azienda, per poter esplorare
+il fenomeno a 360 gradi,
+si parte spesso da sorgenti di dati eterogenee (il prodotto del sistema a
+e' rappresentato con certi attributi e b con altri, i dati cozzano tra di loro),
+
+IMPORTANTE,
+architettura dei sistemi direzionali,
+organizzata su 4 livelli, livello a e b,
+ci sono 4 livelli, l'architettura classica parte
+dal livello 0, chiamato livello 
+delle basi di dati transazionali,
+in questa architettura si parte dalle bdd transazionali,
+dei sistemi informativi operativi,
+basi di dati dei vari componenti del sistema informativo operativo,
+presenti in azienda, 
+dati transazionali sui singoli ordini,
+sui singoli pagamenti, emissioni di fattura, ricevimento di merci,
+operazioni supportate dal sio,
+possono essere piu' di una,
+sap puo' avere una sola base di dati con dentro tutto,
+o sfortunatamente potrei avere diverse basi di dati incoerenti,
+le basi di dati vengono lette per portare su i risultati,
+l'informazione che permette di costruire risultati, calcolare indicatori,
+portare i dati verso il dataware house, che contiene dati in forma aggregata,
+con le coordinate dimensionali associate, dati sulle chiavi, le dimensioni,
+alimentare il dataware house si fa tramite 
+programmi software che implementano il TL, processo
+di lettura dei dati nelle bdd transazionali, la trasformazione
+(lavoro duro, armonizza le differenze tra valute),
+uniformare, e infine loading,
+estraction, transformation (uniformazione) e loading,
+es ho l'indirizzo dei clienti col cap insieme con la via,
+in un'altra base indirizzo e cap sono in zone diverse,
+devo scegliere un formato e trasformare i dati in una delle due fonti
+per separare il cap,
+per metterlo nella componente indirizzo,
+in fase di trasformazione posso anche aggregare,
+passare dai singoli scontrini ai totali,
+poi ho il caricamento, trasferire i dati copiandoli nel dataware house,
+quanto frequentemente si esegue l'ETL?
+ci vanno dati di sintesi, non serve in tempo reale, basta di notte,
+quando il sio e' scarico di lavoro,
+e' un programma eseguito a scadenze temporali prefissate,
+aggiorna il contenuto del dataware house,
+ha un'altra fonte di alimentazione, che sono dati che non
+sono presenti nella bdd transazionale,
+sono dati relativi a obiettivi transazionali, dati di budget,
+dati di previsione inseriti a mano, 
+interessanti perche' pensati dalle persone e ipotetizzati,
+perche' poi il datawarehouse genera dei report automatici,
+c'e' anche l'acquisizione di dati esterni sui concorrenti,
+che non si trova nell'erp ma arriva da fuori,
+puo' essere utile per prendere decisioni, es del concorrente
+in sudamerica che vende di piu', voglio i dati per capire
+se davvero c'e' il gap e prendere decisioni per colmare lo svantaggio,
+
+sui dataware house possono costruire datamart, che contengono dimensioni relative a un particolare
+soggetto, es sui dati di vendita, sul magazzino (perche' penso non operi sempre bene),
+posso avere il datamart sulla concorrenza, sul personale, sui posti, sulle prestazioni,
+sul tasso di carico,
+sono porzioni di datawarehouse specializzate su un soggetto,
+costituiscono il terzo livello a partire dal basso,
+sopra abbiamo l'ultimo livello, applicazioni software effettivamente
+usate dai dirigenti per accedere ai dati del datamart o del datawarehouse,
+fanno supporto alle decisioni,
+sono motori di calcolo, spesso sono strumenti interattivi che mostrano una visualizzazione
+diversa, in modo dinamico permettono di esplorare il fenomeno.
+Poi ci sono i motori di presentazione, ES = executive ... system,
+a diff del dss sono meno interattive, piu' basate su visualizzazione standard,
+spesso sono presentati agli azionisti, quindi devono essere standardizzati.
+
+I motori di mining riescono a individuare pattern che possono essere portati
+all'attenzione dell'umano che non li aveva notati,
+
+le operazioni di tipo OLTP sono in tempo reale, online,
+questi sistemi sono mirati a processare transazioni,
+effettuare il singolo pagamento, la singola fattura,
+registrare il singolo ingresso a magazzino,
+elaborare transazioni in tempo reale e' tipico dell'interazione
+del software sio con le basi di dati,
+elaborazione oltp, di tante transazioni che riguardano pochi dati,
+il mondo del datawarehouse viene chiamato OLAP,
+online analytical processing, 
+elaborazione di dati analitici, sono i nostri indicatori,
+spostamento di interesse da transazioni a analisi di fenomeni,
+le oltp sono costituite di tantissime operazioni semplici,
+riguardanti lo scontrino o la fattura, leggere ma tante,
+negli olap le operazioni sono piu' rare ma complesse,
+possono riguardare milioni di scontrini e ritornare un dato sul numero dei pezzi venduti,
+operazioni rare ma che trattano gigabytes di dati,
+dati aggregati a partire da fonti diverse.
+
+Modello concettuale che rappresenta l'indicatore: ipercubo,
+adesso vediamo il modello ideale come viene implementato nel dwh (datawarehouse),
+mondo olap,
+sono modelli di dati che devono supportare op su diverse gerarchie,
+struttura multidimensionale denominata ipercubo o data cube, 
+possiamo individuare gli indicatori da valutare, i fatti, 
+la quantita' volume a fatturato,
+le dimensioni su cui effettuare analisi diventano le dimensioni dell'ipercubo,
+tante coordinate di vendita quante dimensioni di ipercubo,
+le celle contengono i valori metrici,
+un particolare cubetto dell'ipercubo ha delle coordinate,
+la quantita' di venduto e' relativa a quel mese/negozio/prodotto,
+ogni dimensione puo' essere organizzata su liv gerarchici,
+il tempo puo' avere la granularita' del mese o del giorno o dell'anno,
+si puo' salire di gerarchia e raggruppare i mesi in semestri, considerando meno cubetti.
+
+dimensione prodotto, dimensione tempo, giorni, 10000 prodotti, 350 punti vendita,
+la cella contiene il valore metrico,
+considerazione algebrica: l'ipercubo ha forte sparsita',
+il prodotto 2 potrebbe essere invenduto nel negozio 350,
+lascio il layer associato a 2 e 350 vuoto,
+sparsita' significa che molte coordinate non hanno senso,
+un certo prodotto puo' essere solo di questo mese quindi
+tutte le celle antecedenti al periodo di introduzione sono vuote,
+questo significa che implementare una struttura a ipercubo
+potrei allocare spazi di memoria sprecati,
+combinazioni di prodotto/punto vendita/tempo vuote,
+
+ci sono operazioni effettuate sugli ipercubi,
+rappresentazioni tipiche anche dei data mart,
+sui quali ci sono software che operano e svolgono
+determinate operazioni olap, operazioni tipiche, frequenti,
+battezzate slice, dice, pivot,
+
+roll up      -> aggrega i dati salendo di qualche gerarchia dimensionale,
+                da giorni a semestri, voglio salire nella gerarchia tempo, aggregando dati,
+                voglio vedere i prodotti per categoria di prodotto
+
+drill down   -> operazione complementare, andare giu', trapanare,
+                voglio scendere dalla regione al livello delle singole citta',
+                da un cubo con meno a uno con piu' celle,
+
+slice & dice -> seleziona e proietta, scelgo solo i prodotti in lombardia,
+                negli ultimi 10 mesi e di questo particolare prodotto,
+                taglio una fetta, prendo un sottocubo,
+
+pivoting     -> ruotare l'ipercubo,
+
+modi di gestire la struttura dati:
+programmo la struttura a ipercubo,
+mappo il modello multidimensionale,
+la tecnologia che implementa l'idea,
+tecnologia MOLAP, dei cubi,
+implementa il modello, 
+mapping 1:1 ipercubo-struttura dati,
+le estrazioni di dati seguono questa filosofia dell'ipercubo,
+
+tecnica ROLAP, piu' significativa, mappo l'ipercubo in una serie di tabelle,
+relational database management system,
+organizzo i dati in tabelle per oganizzare la struttura multidimensionale.
+
