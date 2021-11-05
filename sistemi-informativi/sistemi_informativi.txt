@@ -623,3 +623,205 @@ una supervisione degli indici di prestazione in tempo reale e in senso storico,
 serve per capire se stanno operando bene in termini di servizio ai clienti,
 ci sono operatori molto carichi o op scarichi? monitoraggio delle attivita' del contact center,
 banca dati del contact center, senso storico
+
+
+------------------
+05 - 11 - 2021
+------------------
+I crm occupano la parte sell side,
+i sistemi di procurement
+
+I sistemi di contatto sono complementari dei crm per la gestione della multicanalita',
+
+SISTEMI DI CONTATTO
+completiamo...
+abbiamo parlato di modello applicativo riferito alle suite coinvolte (2),
+il modello applicativo mette insieme crm con contact center,
+suite crm e suite contact center,
+i crm gestiscono le basi di dati sui prodotti e acquisti dei clienti,
+supportano le transazioni commerciali coi clienti,
+il contact center gestisce i canali, i robot, gli automi vocali,
+supporta l'aspetto della prog e gestione degli operatori,
+importa info su dati, prodotti, campagne di vendita,
+slide 12 IMPORTANTE, parla delle f contact center,
+
+processi tipici della relazione col cliente con la copertura delle suite,
+suite crm + suite contact center,
+intervento di ulteriori suite come l'ERP,
+slide 12, sintesi, struttura grafica a catena del valore,
+unisce i processi tipici dell'interazione azienda-cliente,
+ci sono 5 processi con un sesto (follow up),
+amministrazione operatori e' di supporto (settimo),
+ciascun processo ha una colorazione che individua la suite che supporta tale processo,
+sono indicate anch ele funzioni tipiche che supportano tale processo,
+
+ci sono i processi dell'interazione azienda cliente,
+da sinistra:
+
+pianificazione e controllo finanziario,
+monitoraggio prestazioni,
+
+gestione dati crm
+
+gestione attivita' inbound
+
+outbound
+
+follow up
+
+PIANIFICAZIONE CONTROLLO MONITORAGGIO PRESTAZIONI,
+fuori dalla responsabilita' dei crm e contact, 
+ricade sotto altre suite, anche se e' inerente,
+vengono definiti il budget finanziario del callcenter,
+il budget per l'attivita' di supporto all'interazione col cliente,
+il monitoraggio delle performance di contatto col cliente,
+definizione delle prestazioni desiderate,
+il contact center deve avere delle prestazioni,
+l'azienda e' disposta a pagare quanto a fronte di certe prestazioni garantite?
+si definiscono i valori min e max dei parametri di funzionamento del contact center,
+parametri di service level agreement, contratto azienda-fornitore di contact center,
+sla = service level agreement, stendiamo un contratto che definisce i servizi offerti dal
+contact center, ti offro supporto tramite web e telefonico, non ti offro sms e cartaceo,
+fare sla significa garantire 1000 chiamate all'ora in entrata, tempi max 3 min,
+tempi medi attesa 50s, ti garantisco  che nel 90% dei casi che il cliente chiama
+gli offriro' una soluzione e nel 10% lo redirigero' a un altro numero aziendale,
+se non sono soddisfatti rivediamo il contratto, ti faccio uno sconto,
+se abbiamo un provider, nel service level agreement troviamo le velocita' max di download e upload,
+fase di definizione prestazioni, analisi prestazioni effettive,
+verificare che i clienti siano effettivamente soddisfatti nel 90%, analisi importante per
+capire se il sla e' stato rispettato o meno,
+es dell'ADSL a casa, verifichiamo con lo speed test,
+
+GESTIONE DATI CRM, 
+processo supportato dalla suite crm,
+gestisce la base di dati clienti, prodotti, transazioni,
+supporta dati listini, dati sui contratti clienti attivi...
+fare programmazione esecutiva significa fare programmazione esecutiva delle attivita;,
+pianificare le campagne promozionali, acquistare locali, assumere personale, gestire cose
+stabili nel tempo, di medio periodo si fa riferimento al mese e alle tre campagne nel mese,
+pianifichiamo le attivita',
+la programmazione esecutiva della attivita' si fa la settimana prima, genero la lista dei contatti,
+la distribuisco ai fornitori, faccio partire l'esecuzione dell'attivita',
+poi controlliamo che tutti i clienti che volevamo chiamare siano stati chiamati,
+si rifa' programmazione sui clienti non chiamati mettendoci risorse,
+
+cio' che caratterizza il contact center e' fare attivita' outbound,
+gestire programmazione e esecuzione dell'outbound.
+
+Gestione contatti outbound e inbound,
+quando chiamo i clienti c'e' uno scambio di dati tra contact center e crm che ha
+i dati sul cliente (il contact center gestisce il canale),
+i dati sulla scheda del cliente vengono inviati al contact center per avere la fotografia
+del cliente associato a un numero di telefono,
+
+i dati sono chiesti al crm,il contact center pianifica la campagna,
+ma i numeri di telefono e dati dei clienti vengono chieste informaticamente al crm che legge
+la sua base di dati e gira i dati al sw del contact center,
+desktop operatore e gestione layout, funzione contact center,
+per evitare unicita' dei dati.
+
+Telemarketing, contattare proattivamente i clienti,
+possibilita' di acquistare prodotti, 
+campagna di richiamo, portare l'auto in concessionaria,
+ricerca interviste (mi dai 2 min per un'intervista su cosa pensi del prodotto? questionario telefonico),
+se il cliente conferma l'intenzione di acquistare la richiesta e' informaticamennte eseguita dal crm.
+
+Contatti inbound, 
+
+Informazioni clienti, acquisizione reclami, segnalazione guasti,
+quando un operatore effettua una chiamata, il crm offre il serviziodi offrire un
+testo a video adatto alla situa che l'operatore gestisce,
+il testo a video descrive la storia da raccontare al cliente,
+nel caso del cliente che chiama l'operatore inserisce keyword, riceve risultati,
+il contact center mostra le linee guida (script) che gli operatori leggono al cliente,
+Componente backoffice che esegue l'ordine, evasione dell'ordine, evasione contratto,
+fatturazione del contratto, follow up, la richiesta inserita nel crm viene
+
+trasmessa a chi fa produzione, 
+processo bianco, ordine inserito nel modulo gestione ordini dell'ERP,
+
+AMMINISTRAZIONE DEGLI OPERATORI,
+modulo erp delle risorse umane.. gestione vacanze degli operatori,
+
+slide dei costi tipici di gestione di un contact center,
+non il sw ma l'unita' organizzativa,
+i costi tipici sono 6% hardware, computer e sw 5$
+il pagamento stipendi degli operatori e' la fetta maggiore, anche reclutamento costa molto,
+i contact center sono dati in outsourcing dove la manodopera qualificata costa poco,
+
+
+review,
+il contact center offre servizi,
+c'e' un contratto di servizio a fronte di un service level agreement,
+es di prestazioni sono la first call resolution (risoluzione del problema al primo tentativo),
+tasso chiamate risposta entro x secondi,
+tempo medio di risposta,
+lato web potrebbe essere la percentuale di tempo in cui il sito funziona,
+il tempo massimo di guasto,
+
+in un contact center possiamo mostrare volumi in entrata (inbound),
+volumi in uscita, quantita' chiamate in ingresso, quantita' email ricevute,
+analogamente per i vol di output le chiamate a cui si e' risposto,
+il grado di risposta che il call center da' a fronte delle chiamate ricevute,
+risorse, personale, quantita' linee telefoniche, postazioni di lavoro,
+superfici dei locali, n divisioni, misura delle risorse che fotografano la situazione,
+service level agreement + parametri di valutazione delle prestazioni del contact center,
+utili anche al gestore che valuta se economicamente ci sta,
+indicatori di qualita' ambientale (come ambiente di lavoro, no Greta Thunberg),
+sovraccarico delle chiamate da gestire in un'ora,
+interessi per il gestore del contact center,
+quante sol di problemi o vendite di prodotto un operatore riesce a forire,
+costo unitario della chiamata in ingresso o uscita per il gestore,
+costi del personale,
+tasso di guasto della rete, 
+indicatori della sla, tasso di chiamate che soddisfano il sla,
+costo della chiamata,
+
+gestione dei dati crm, base di dati per il canale telefonico, sottoinsieme della base crm,
+include info abbastanza stabili (anagrafiche) e dati generati e unificati piu' frequentemente,
+legati all'inter tra contact center e cliente,
+posso tener traccia dei contratti, servizi, richieste aiuto, assistenza,
+dati dinamici, ogni giorno ne accumolo di nuove (mentre le anagrafiche sono abbastanza stabili).
+
+a fronte di un certo  volume di servizi che vuole offrire il gestore calcola le risorse necessarie per quel livello,
+concetto di servire le chiamate inbound, complessita' che le chiamate in entrata variano per giorni della settimana
+e fascia oraria, e' tipico ricevere molto tra 15 e 18 o tra 10 e 13, e finiscono verso fine settimana,
+c'e' aunche un andamento stagionale, piu' chiamate d'inverno,
+bisogna sapere quando sono i picchi per non mettere in ferie il personale.
+misure correttive, operatori meno carichi, gli assegno del lavoro outbound da fare,
+tramite una console del contact center il dirigente puo' allocare dinamicamente del lavoro
+da fare agli operatori piu' scarichi,
+la guida operativa (o script) viene visualizzata a monitor, illustra il discorso da fare al cliente in fase outbound,
+le attivita' che l'operatore svolge sono inserite nella pianificazione esecutiva,
+il sistema distribuisce il carico di lavoro in modo automatico partendo dalla programmazione esecutiva,
+le chiamate sono distribuite tra i vari operatori,
+
+funzionalita' tipica del contact center,
+supportano le chiamate outbound,
+qualifica i crm di tipo avanzato che gestivano solo chiamate in entrata, 
+si fa solo con livello tecnologico avanzato,
+effettua le chiamate effettuate a un operatore
+che puo' parlare col cliente senza digitare a mano,
+contatti inbound -> cose che gia' sappiamo, info a contorno,
+tipologie di richieste tipiche inbound a un'azienda che distribuisce elettricita' e gas,
+58% delle telefonate sono per richieste di info all'operatore, 5% reclami, 2% guasti..
+
+I contact center possono svolgere funzioni diversi per il tipo di azienda che c'e' dietro,
+ci solo contact center centri di informazione, caratterizzati da volumi molto alti
+(es quando chiamiamo il numero di wind o tim),
+scopo di informare il cliente,
+ci sono contact center ricerca di post vendita, es aziende automobilistiche che assolvono
+richieste di interventi post vendita, problemi col veicolo,
+nei casi semplici l'operatore risolve, nei piu' complessi invita a visitare la concessionaria,
+contact center polivalenti,
+ricevono richieste di assistenza, informazione, esecuzione di ordini contrattuali.
+
+Delocalizzazione,
+centri esterni all'organizzazione, implementati da aziende esterne,
+centro conto terzi,
+delocalizzazione tipica da paesi a alto costo del personale,
+da paesi in UE i servizi di contact center sono delocalizzati a paesi
+con elevata scolarita' ma basso costo, india, africa...
+virtualizzazione dei centri, coordina centri dislocati in tutto il mondo
+ma presenta un unico punto di ingresso.
+
