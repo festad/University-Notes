@@ -264,4 +264,26 @@ machine assigned to this examination,
 the RIS is mantaining the working list for each modality
 and gets back confirmation on the completion of the radiological
 investigation.
- 
+The software can be produced by the same producers
+of the modalities.
+Other features of RIS are:
+- order entry (the ris is supposed to be connected
+to cpoe, orders made in the cpoe need to be converted
+into orders for RIS,
+this interconnection occurs through exchange of hl-7 (standard) messages,
+- access to clinical information
+radiographers can access to clinical informations:
+eg presence of allergies, pregnancy, they can access directly from RIS,
+Ris sends a request to CIS and CIS answers to RIS.
+if the radiographer should give to the patient some drug to the patient
+in order to perform the imaging procedure, the radiographer will write 
+this info to the RIS, if RIS is well integrated with CIS, will send this info
+to the CIS and this event will be stored in the patient record,
+so the info won't be missed.
+- decision support: conflicting and redundant orders,
+the system can have a mechanism to detect repeated orders,
+the RIS can send a warning of redundancy about the same investigation
+from two doctors.
+If RIS and CPOE are well integrated, RIS can send the warning
+about redundancy directly to CPOE, so the doctor making the order
+immediately receives this information.
