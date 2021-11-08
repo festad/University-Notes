@@ -353,7 +353,11 @@ Let's close with PACS and RIS for a moment, moving to
 the Enterprise resource planning system,
 not related with patient care enterprise function.
 
+---------------------------------------------------------------------
 Reference model of the hospital:
+---------------------------------------------------------------------
+
+---------------------------------------------------------------------
 
 - Patient care
  - patient admission
@@ -381,3 +385,4 @@ Reference model of the hospital:
  - knowledge retrieval and literature management
  - publishing and presentation
  - education
+---------------------------------------------------------------------
