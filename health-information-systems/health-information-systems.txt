@@ -157,5 +157,53 @@ ris controls the machines injecting the drug,
 
 Imaging workflow based on ris, pacs and cis:
 
+We have all the involved systems:
+- radiology information system
+- clinical information system
+- machine (xray/magnetic)
+- reporting application
+- PACS
+- viewing application (permits to display images)
 
-
+By means of the clinical information system
+the doctor working at the ward is submittig an order
+to perform diagnosis by taking medical images,
+eg the order requires magnetic resonance,
+the order is changing the schedule of the magnetic
+resonance team and machine, 
+by adding in the schedule this order.
+A task is created, the machine is allocated
+for performing the investigation on Annie,
+a technician is assigned to this task,
+the investigation is performed (images caught),
+later on the images associated with some metadata
+(data about the patient and appointment),
+the clinical information system allows to view
+the progress status, the completion status of the task,
+once the machine is taken, it is transfered to the picture
+archive communication system (pac), it receive the digital
+image from the machine, performs some indexing of the image,
+the image with metadata is stored, later on it 
+can be distributed.
+In parallel, after taking the image, 
+the doctor analyzing the image is using
+a reporting application to request, view
+the image, then it analyzes it, write and store 
+the report, releases it, so it can be analyzed
+by other doctors and then distributed.
+The report and images are going to the viewing application,
+the viewing application is called inside the clinical
+information system,
+the doctor asking for the imaging procedure can
+read the report and view any of them (images and report),
+if the viewing application is integrated with the clinical
+information system, the doctor is making all activities
+inside the clinical information system,
+using the same software application for all tasks 
+(perform order, check availability of machines and teams,
+view report, request images...),
+everything happens inside the same system (so the doctor
+hasn't to make many logins to different applications, 
+the gui is the same, no copy-paste from one application
+to another...)
+ 
