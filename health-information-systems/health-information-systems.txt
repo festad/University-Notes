@@ -206,4 +206,62 @@ everything happens inside the same system (so the doctor
 hasn't to make many logins to different applications, 
 the gui is the same, no copy-paste from one application
 to another...)
+We are gonna see what are the typical functionalities
+of RIS,
+keep in mind that RIS and PACS are very interconnected,
+sometimes it's hard to say which functionalities are whose,
+RIS is more with alphanumerical data, 
+PACS is more with images,
+but sometimes some functionalities are implemented as part
+of the picture archiving and communications system.
+A warder can make an order for diagnosis for imaging,
+so it implies scheduling an appointment,
+the RIS offers features comparable with those of the
+outpatient management system, that is:
+- registering patients,
+- appointment scheduling,
+- organization of examinations and staff (workflow management),
+- comunicate patient data and examination parameters
+to the radiographers and radiologists,
+radiologists can change the examination parameters,
+- creation of radiology report,
+- documentation and coding of activities,
+each procedure is coded, performing a magnetic
+resonance to upper part of the leg has a different
+code than for lower part,
+- ris can also collect data to produce and visualize
+statistics,
+usage statistics of a personal, of machines,
+to get the actual amount of usage is important
+to know if the usage is ok or not.
+
+Let's see the interconnection with RIS and modalities
+(tecnology used for imaging),
+different tecnologies:
+- digital tecnologies
+- analog tecnologies
+
+The old style is analog tecnology,
+produces a film like old style camera,
+the impression on the film is made by xrays
+crossing the body of the patient,
+the image is created directly from the application,
+the image is not transformed into bits and then processed by algoritms,
+
+computer tomography, magnetic resonance are digital imaging,
+during the procedure there are sensors, collecting infos about
+the patient, there are sensors reading magnetic fields,
+later on this information is digitalized and algorithms
+process these info to create a 3d image,
+
+RIS offers features similar to outpatient management system, 
+the special feature of RIS is the close connection to the modalities,
+the RIS is interconnected with modalities,
+the RIS is the sw app used to manage a working list
+for each modality,
+a set of infos like name of the patient, date and time,
+machine assigned to this examination,
+the RIS is mantaining the working list for each modality
+and gets back confirmation on the completion of the radiological
+investigation.
  
