@@ -306,3 +306,42 @@ typically PACS perform a lot of optimizations,
 they use fast and slow databases (for very soon retrievable
 images or long term storage),
 - tracking of status of imaging process
+
+RIS can manage the worklist,
+images are obtained from modalities,
+images are received by the pacs and
+the pacs is managing the storing in archives,
+pacs is responsible of making images available
+to the interpretation workstations (used by radiologists,
+to watch images and write reports),
+making available to enterprise distribution means
+making images available to other sw app like medical documentation system.
+There's also Study validation Pre-fetching,
+because sometimes the PACS is generating low quality
+images made available in few seconds,
+this stage evaluates the quality of the images,
+to have high quality you need hours,
+some low quality images are generated in few minutes,
+they are watched, radiologists check quality and decide
+if the patient can go or need to repeat the investigation.
+
+Interconnection between pacs and other tools:
+prefetching strategy to retrieve image data from slower storage devices,
+it's speculative way to retrieve images,
+concerning images supposed to be requested very soon
+put in cache,
+the images are already decompressed and stored in cache
+ready to be used.
+
+Conections between RIS+PACS and:
+- patient administration system,
+that manages the patient record,
+all investigation should be added to patient record
+can be added to the bill,
+- medical documentation system,
+- provider/physician order entry system (POE),
+- patient data management system
+the patient is submitted  to the diagnosis by imaging,
+patient is coming from Intensive Care Unit,
+results should be sent back to patient data management system.
+(1:30:20)
