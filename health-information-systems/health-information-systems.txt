@@ -344,4 +344,40 @@ can be added to the bill,
 the patient is submitted  to the diagnosis by imaging,
 patient is coming from Intensive Care Unit,
 results should be sent back to patient data management system.
-(1:30:20)
+
+Typical screen shot from a PACS application component,
+presenting different slices of an organ,
+the radiologists can analyze different slices to have 3d visualization
+
+Let's close with PACS and RIS for a moment, moving to
+the Enterprise resource planning system,
+not related with patient care enterprise function.
+
+Reference model of the hospital:
+
+- Patient care
+ - patient admission
+ -`decision making, planning and organization of patient treatment
+ - order entry
+ - execution of diagnostic, therapeutic and nursing procedures
+ - coding of diagnoses and procedures
+ - patient discharge and transfer to other institutions
+- Supply management, scheduling and resource allocation
+ - supply and disposal management
+ - scheduling and resource allocation
+ - human resources management
+- Hospital administration
+ - patient administration
+ - archiving of patient information
+ - quality management
+ - controlling
+ - cost accounting
+ - financial accounting
+ - facility management
+ - information management
+- Research and education
+ - research management
+ - execution of clinical trials and experiments
+ - knowledge retrieval and literature management
+ - publishing and presentation
+ - education
