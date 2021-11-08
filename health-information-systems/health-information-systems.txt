@@ -287,3 +287,22 @@ from two doctors.
 If RIS and CPOE are well integrated, RIS can send the warning
 about redundancy directly to CPOE, so the doctor making the order
 immediately receives this information.
+
+Let's talk about PACS:
+- creation of work lists (can be performed by RIS as well)
+definitive assignment of cases to workers or resources,
+- image capture:
+the pacs system (a server with sw application and terminals)
+are communicating with the machine, receive digital data from
+the machine, machine -> sw application -> database,
+the images are stored in central memory, then compressed and
+transfered to database,
+- image storage on the database,
+assigning metadata,
+- image distribution (eg from db to clinical information system),
+- image retrieval (if img was stored for long term),
+- decompressing image: we are dealing with heavy images,
+typically PACS perform a lot of optimizations,
+they use fast and slow databases (for very soon retrievable
+images or long term storage),
+- tracking of status of imaging process
