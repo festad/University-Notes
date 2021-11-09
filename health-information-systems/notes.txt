@@ -394,4 +394,350 @@ the speciment can be sent to the laboratory with the right lable already,
 and they already see the requests from their terminal,
 inefficient error prone steps are avoided.
 
+---------------
+09 - 11 - 2021
+---------------
+we were talking about erp, enterprise resource planning,
+
+DATAWARE HOUSE
+typically used for hospital mamagement and research
+strongly based on the coding of procedures and diagnoses
+if it wants to support research,
+
+electronic patient record and electronic health record already discusses,
+according to our model we have computer based and non application components,
+paper based sheets and forms coded in some rules like precompiled forms
+with fields,
+
+describe how to typically treat the cancer,
+
+patient chart,
+the patient chart system supports:
+ - documentation of body temperature
+ - ..
+
+they support order entry, order for nurses,
+they replace medical documentation system,
+
+Logical tool layer, integration of application components
+ <- interoperability
+
+interoperability is supported by standards..
+
+integration is supported by interoperability,
+
+integration is the union of the parts making a more complex system,
+can be meaned as the procedures in order to achieve the property of integration,
+
+Architectures od Hospital Information Systems,
+properties fulfilled:
+typical patterns and organization of hw and sw components of HIS,
+architectures -> taxonomy helping to cathegorize architectures,
+
+if we need to integrate different application components build by
+dfferent providers in different epoches, integrating is hard,
+
+an application component is made of or more sw modules,
+these modules store data into a database, cpoe, mds (medical documentation system),
+store data and write data and read from a database,
+criterions to classify:
+- how many databases are there?
+all the modules might be produced by the same company,
+each application has its own database => difficult to make interoperable,
+- another criterion to classify is the number of application components,
+2 or 10?
+- where did you by from? one vendor or more vendors?
+- patterns and schema of communication links,
+peer to peer, hybrid, centralized...
+- types of integration that can be achieved
+
+Number of databases:
+one single database vs each application each database,
+applications need database to store relevant information
+that we don't want to lose in persistent way, about entity types,
+applications that support hospital functions need to store
+in a persistent way infos about entity types,
+demographic infos about the patient, cases, PIN, CIN, insurances,
+admitting diagnosis of the patient,
+
+these entity types need to be managed by the ?? that needs to use a database,
+
+db1 style:
+central databse, all computer applications store in this database,
+only possible when database schema is known by all applications,
+all share the same organization of data, typical when all app come
+from same producer,
+example of db1
+LIS and RIS are interoperable,
+either they come from same vendor or are developed internally,
+if they come from different vendors they are not db1 style,
+store data about entity types,
+
+consequence of dbn
+data stored in different app components are on different databases,
+several databases may overlap the same information,
+if you store the same data in different databases you create
+redundancy,
+consistency of redundant data is a problem solved manually,
+asking people to update data is not a good solution,
+otherwise, synchronize databases,
+hw and sw infrastructure to implement automatic methodes,
+automatic propagation:
+for each entity type there is a master application,
+if birth day is wrong, you can't use the RIS,
+the master application is the PAS,
+if the radiologist wants to update the data he needs to ask
+to patiend administration system,
+for each type of information there is a master system
+to manage and spread info to other systems,
+only if different applicaiton can receive messages,
+are interoperable,
+not possible when app components aren't connected,
+are not interoperable and not connected by network,
+the organization of data needs different applications
+if there's not ntetwork, and they need to keep integrity by
+asking personally to update, there's no automated way.
+
+ex of dbn style,
+not good because each app has its own database,
+if there's some update of data patient in an application,
+to propagate it you need interoperability between the systems,
+need for standards, something complex.
+
+single database is easy to manage but hard to find in real world,
+because it is difficult to stop from further application component
+buying or creating,
+
+Mix of db1 and dbn,
+there are some modules from IBM that work on its own database,
+then some other components are bought without theirdatabase,
+
+- monolitic application
+- modular application
+only sw component - ac1, application component 1,
+does not support all hospital functions,
+
+acn, n application components,
+modular architecture,
+separate software modules,
+
+it's possible that modular architecture is db1,
+designed to work on same database,
+db1 + acn,
+when app come from same vendor,
+all in one vs best of the breed
+
+high omogenity vs high eterogenity
+
+high level of omogenity -> all in one,
+
+when you select for each module the best on the marked
+
+spaghetti vs star:
+ - peer to peer is spaghetti,
+ - star, devoted central component to support app components,
+
+data sending in json format, sql commands,
+
+Sante'Ware
+Mirth Connect,
+
+Permits interoperability communication between laboratory analysis,
+exchange of data with radiology (DICOM),
+data from laboratory, administrative data,
+labels related to data format,
+formats hl7, dicom, ascii,...
+software that permits bidirectional communication between
+any pair of applications,
+one interface able to enable communication between any other,
+
+star architecture, service oriented architecture,
+one application component serving as a broker,
+
+General requirements:
+base properties that are very good:
+ - integrity in the data
+ - consistency
+ (several copies tell the same story,
+ no contradiction,
+ several copies of same invoice
+ report the same amount)
+ - integration
+
+Integration = put together,
+but there are
+- data integration
+- contestual integration
+- sw integration
+- hw
+- semantic integration
+
+supported by different standards,
+
+consistency integration and referencial integrity
+(integrity = the data stored in the databases
+are correct, depicting the reality in correct way,
+eg description in correct way of the patient),
+
+referential integrity is that
+when you have pieces of information describing
+different aspects of the same patient these
+different parts are kept linked,
+in any moment they can be put together,
+a patient that went to an hospital twice,
+there are two cases, referential integrity is that
+we know that the two cases are concerning the same patient,
+we don't have when it appears that the two cases are not related,
+in this case the patient identification number
+helps in keeping referential integrity,
+pre condition: object identity,
+patient identification number,
+identify data in a correct way,
+all pieces of data linkable to the same patient.
+
+without object identity there's no referential integrity
+concepts not specific for digital systems,
+they're valid also on paper based information,
+
+patient administration system and RIS are not agreeing
+about data on the patient there is no referential
+integrity
+
+consistency: important condition for integrity,
+no consistency => no integrity,
+no way to say which is the correct data about the patient,
+if data is no identical, data is inconsistent,
+a way to keep consistency about data stored
+in different databases is to use transaction management systems,
+
+first name of the patient entered and medical documentation system has it available,
+data integration through server,
+radiologist has not to retype if there's data integration,
+data ubiquity = data available everywhere in the hospital,
+
+
+semantic integration,
+can be supported my medical data dictionary,
+standard dictionaries of medical diagnoses, dictionaries,
+can be supported by adopting the same medical data of
+catalogs dictionary medical terms
+
+Medical documentation system can be digitally sent on the same
+network and understood automatically,
+statistics can be made because all hospitals use
+the same coding system
+
+I want to type an order for drug for Mario Rossi and John Smith,
+
+then I want to register this ordering
+in the patient record,
+the other application already shows the record without performing
+a second search
+
+The last type of integration is process integration
+
+
+-> | read the card  | -> adpointment -> read document for       -> transmit patient
+   | of the patient |                    general practictioner      data ward
+
+3 different application components,
+there is process integration if these components interact between them
+in order to support the person that is using this,
+switching from app 1 to app 2 i don't need to retype the patient id,
+moving from an app to another the patient number 222 is already selected,
+all info from app1 are already available to app2 and app3,
+when this applications are interoperable,
+presentation integration, data integration, semantic integration
+all support process integration, which is higher level
+
+Consistent referencial integrity in multiple application components:
+STANDARDS
+
+
+-----------
+STANDARDS
+-----------
+
+RIS and Provider Of Entry System,
+can use HL7 as a standard to communicate
+between each other,
+RIS and CPOE may come from the same provider
+so they might already have a shared database,
+
+application components have to be integrated
+to communicate,
+when they communicate we can integrate them,
+a consensus must exist about syntax and semantic,
+textual data, DICOM to exchange radiological images
+and data related to radiological imaging,
+ISO/IEEE, CCOW for contextual integration,
+EDIFACT standard for suppliers of material for the hospital,
+order sending and confirmation from provider using EDIFACT,
+there are several standards,
+storing digital patient record,
+structure of medical documents that form the digital patient record,
+contribution to data integration,
+store patient record,
+medical record according to CDA standard,
+can be sent trough different applications,
+CDA is giving the structure, there are inner
+different coding systems,
+A standard is a definition or a format approved
+by some organization that develop standards,
+eg IEEE, the most of the industries and companies
+adopt these definitions and formats,
+'standard de facto',
+larger number of companies have agreed on using them,
+not formally approved.
+Within healthcare standards exist for different
+information processing:
+- for data vocabularies,
+- data formats
+- information representation and exchange,
+- collecting data
+- for medical documents
+- messages
+- communication protocols (HL7, DICOM),
+- representation of knowledge (processes, decisions)
+
+Standards about IT in healthcare,
+for IT infrastructures there are GUIs, OSs,
+Access Control Identifiers,
+standards for specific application domains,
+eg used by doctors,
+to describe medical document, disease, medical procedures,
+
+Some standard can be implicit,
+the way information is organized in radiological report follows
+an implicit standard (title, description, diagnosis, date
+in certain position),
+this supports sharing of infos between doctors,
+
+Standards support communication
+The types of standards in health care are
+complex,
+example of data standard for describing procedures
+of diseases, information content,
+data based on which field is descripted
+eg standard way of representing doctor, patient,
+employee, role,.. a single value (eg address, name of disease),
+standards to exchange:
+from app a to app b, message standards,
+for identifiers, eg for coding,
+for assigning unique id to the patient,
+for coding hospitals, medical personal, citizens,
+invoices, privacy and security standards,
+business process standards,
+for workflow, dataflow,
+
+Health Domain Standatds,
+representation by abstraction level
+
+- data standards
+- information standards
+- knowledge standards,
+
+data stds small complexity
+info stds more complex level
+
 
