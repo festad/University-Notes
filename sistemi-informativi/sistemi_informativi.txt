@@ -1154,3 +1154,227 @@ tecnica ROLAP, piu' significativa, mappo l'ipercubo in una serie di tabelle,
 relational database management system,
 organizzo i dati in tabelle per oganizzare la struttura multidimensionale.
 
+---------------------
+11 - 11 - 2021
+---------------------
+Sistema di supporto operativo
+
+Indicatori associati a dimensioni e chiavi,
+indicatore vendite -> tempo, prodotto, luogo di vendita,
+riferita a certi negozi o periodi di vendita,
+
+Indicatore, chiave, dimensione di analisi
+
+La struttura data dall'indicatore, le chiavi e le dimensioni
+puo' essere modellizzata come un ipercubo a n dimensioni
+(n chiavi)
+
+Il dataware house viene alimentato tramite l'esecuzione di programmi,
+alimentato secondo il procedimento di ETL,
+viene alimentato dal data entry,
+sono dati di preventivo,
+eventuale acquisizione di altri dati esterni, utili per prendere
+decisioni.
+
+Transazioni a bassa frequenza negli OLAP,
+
+modelli dei dati olap
+ipercubo con indicatori da valutare,
+ogni ipercubo e' associato a un indicatore,
+
+operazioni olap che passano da una scala piu' aggregata
+a una piu' fine (grid down)
+
+Un server ROLAP rappresenta il cubo come un insieme di tabelle,
+le informazioni contenute vengono estratte col linguaggio SQL
+
+Il data mart e' rappresentato come un insieme di tabelle,
+
+Tecnologia ROLAP: lo schema multidimensionale dei dati
+e' realizzato mediante insiemi di tabelle,
+
+inoltre, le tabelle sono riconducibili a due tipologie:
+ - stella
+ - fiocco di neve
+
+una delle tabelle si chiama centrale, o tabella dei fatti,
+contiene i valori metrici degli indicatori,
+poi c'e' un insieme di altre tabelle
+chiamate tabelle delle dimensioni,
+ogni tabella e' associata a una dimensione,
+le righe rappresentano il dettaglio della tabella.
+
+Una tabella e' associata a un insieme omogeneo
+di eventi del mondo reale, di interesse per i dirigenti
+dell'azienda,
+il dirigente e' interessato a analizzare le vendite,
+indicatori:
+ - quantita' di venduto
+ - incasso
+
+in questa configurazione a stella, a ogni
+cella sono assegnati due valori metrici,
+ogni celletta ha un indicatore del venduto
+in termini di quantita' e incasso,
+(potevano essercene n),
+inoltre per ciascun valore di quantita'
+e incasso sono espresse quattro coordinate,
+tutte le altre righe sono attributi o nomi di colonna,
+due colonne sono la quantita' in incasso,
+altre quattro colonne sono tempo (codice orario),
+coordinata del luogo, coordinata del prodotto e
+coordinata del cliente,
+questa la granularita' minima.
+
+Coordinata codice-luogo -> ogni riga della tabella vendite
+mostra un codice luogo 100,
+tabella luogo, riporta una serie di attributi,
+se scorriamo le righe troviamo la 100esima,
+per quella riga abbiamo ulteriori colonne,
+per il codice 100 troviamo il nome del negozio,
+l'indirizzo, codice citta', nome della citta',
+codice regione, stato, descrizione..
+per una coordinata 100 nella tabella della dimensione
+luogo trovo una descrizione delle proprieta' di quella coordinata,
+per il tempo abbiamo un codice orario associato
+a ora, trimestre, anno...
+codice prodotto -> il codice prodotto a04 ha una descrizione,
+un colore, un modello, una categoria associata,
+abbiamo una certa quantita' di venduto, incasso, vendita,
+il cliente ha codice, nome, indirizzo, professione...
+alcune vendite potrebbero essere sotto promozione a altre no,
+
+tabella centrale delle vendite,
+tabella FULL MART,
+
+ci sono tre indicatori del fatto vendita,
+unita' vendute, incasso, prezzo pagato per gli oggetti
+da negozio,
+ogni riga di vendita ha le coordinate,
+product ID, time ID, costumer ID, promotion ID,
+store ID,
+stiamo esplorando una tabella relativa ai fatti vendita,
+le colonne sono misure (indicatori),
+store sales = valuta, incasso,
+la riga rappresenta un evento di vendita,
+nel caso della prima riga la vendita di tre unita'
+e' stata effettuata dallo store id 34, per cliente 720,
+prodotto codice 1,
+prodotto numero 1, store 24,
+tabella prodotto 1,
+washington barry juice,
+in negozio 24, tabella store,
+nella tabella dello store ci sono codice negozio,
+citta' san diego, regione sw, paese united states america..
+
+Anche per il prodotto ci sono livelli gerarchici,
+product ID 1,
+poi abbiamo il brand washington, potrebbero esserci piu' prodotti,
+categoria di prodotto pure juice beverages,
+
+Nella configurazione a fiocco di neve ci possono essere una o piu'
+tabelle dimensionali,
+
+i prodotti si possono raggruppare per modello, categoria,
+
+Monitoraggio e innovazione di risorse e critiche.. posizionamento dei  metodi di analisi..
+bsc,
+a fronte di una particolare attivita' strategica individua
+indicatori e relazioni causa-effetto utili
+per misurare l'avanzamento nel tempo verso la strategia...
+usa un mix di indicatori di monitoraggio.
+
+----
+CSF
+----
+Sono quelle poche aree di eccellenza nelle quali
+ottenere risultati positivi significa ottenere
+il successo dell'intera azienda, oppure a livello
+individuale o a liv di divisione o ruolo,
+
+individua delle misure metriche per misurare i fattori di success,
+a diversi livelli dell'azienda,
+a livello corporate, dell'intera azienda,
+fattori competitivi, importanti dell'azienda come successo dell'immagine,
+del brand,
+rispetto del fattore ambientale,
+durata dei propri prodotti,
+sono tutti fattori di successo possibili,
+i csf possono anche essere a livello di funzione,
+misurano la capacita' di eccellere da parte di una particolare
+diviisone o funzione aziendale,
+per la produzione di una azienda automobilistica
+i fattori potrebbero essere livelli bassi di difettosita',
+capacita' di produrre pochi scarti inquinanti,
+poi i csf possono essere per il ceo, il direttore tecnico,
+a livello di ruolo, immagine, competenza e autorevolezza,
+capacita' di essere al passo coi tempi, informato sugli
+ultimi avanzamenti tecnologici,
+
+slide sui CSF che comprime la filosofia dell'approccio csf,
+i passi operativi del metodo, articolati in passi operativi,
+a sx abbiamo la filosofia e a dx i passi
+
+sx: obiettivo del metodo,
+selezionare in modo top down  le informazioni che
+davvero servono ai dirigenti, le priorita' aziendali,
+informazioni associate,
+indicatori per la dirigenza,
+top down nel senso che si parte individuando fattori di successo
+e poi scende dettagliando gli indicatori che misurano le prestazioni,
+as is, esistente, quanto e' ancora vicino rispetto al to be attuale?
+se lo scostamento e' forte si puo' decidere di revisionare il sistema,
+
+analisi degli score,
+
+METODO DEI KPI,
+
+approccio che si focalizza sul singolo processo
+
+Indicatori che siano rilevanti per una strategia,
+che siano perseguibili
+
+definiamo cos'e' un processo coi KPI,
+un processo diventa una black box che ha input,
+output, consuma risorse,
+abbiamo due attori del processo:
+gestore del processo e cliente,
+l'input della black box non sono per forza le risorse,
+non vanno scambiati,
+gli input sono le richieste di servizio,
+es mi servono 1000 pezzi del tal semilavorato,
+in alcune tipologie di processo ci sono input materiali,
+es nel processo di trasporto di un corriere amazon
+come input ci sono i pacchi da consegnare ai clienti,
+altrimenti gli unici input sono quelli provenienti dal cliente,
+le comunicazioni e reclami che l'utente invia,
+le richieste di riparazione in garanzia,
+ordini ma anche comunicazioni di informazioni da parte del cliente,
+gli output sono i beni / servizi inviati al cliente,
+cosa sono le risorse? tutti gli altri input al processo,
+il personale, le materie prime, le scorte,
+i magazzini...
+Il kpi process fa emergere una serie di indicatori
+che costituiscono un sistema di misurazione di efficienza
+e efficacia del processo,
+assume che il valore percepito dal cliente
+e anche che le prestazioni che il gestore del processo
+vede per il processo che deve gestire
+siano misurabili tramite 3 tipi di indicatore:
+ - costi e efficienza
+ - qualita'
+ - servizio e tempi di servizio
+
+sia per cliente che per gestore i kpi sono riconducibili
+a questi tre,
+lo scopo e' misurare i costi unitari con cui sono soddisfatte
+le richieste, quanto costa internamente gestire un ordine,
+un'istanza di servizio,
+e anche misurare la produttivita' del processo,
+ovvero valutare il rapporto tra cio che il processo
+produce e le risorse utilizzate,
+misurare la conformita' degli output rispetto alle attese,
+es compriamo una bici, dopo un mese si rompe un pedale,
+il gap tra cio' che attendevamo e cio' che otteniamo e' alto,
+indicatore dei tempi di servizio => misurare le tempistiche,
+dopo quanto ci consegnano l'oggetto rispetto a quanto ci avevano promesso,
