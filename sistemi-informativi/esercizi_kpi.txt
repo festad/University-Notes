@@ -434,4 +434,33 @@ Tempi e servizio:
 
 cerco di trovare tutti gli indicatori di risorse,
 
+<<<<<<< HEAD
  
+=======
+cpu per biglietto | euro  | personale (euro)/ibglietti(#)
+
+cm al cliente
+per biglietto    |  biglietti (E) / biglietti (#)
+
+produttivita' addetti | # | biglietti (#) / personale (#)
+
+produttivita' addetti
+nel tempo              | # |     biglietti(#)/personale (ore)
+
+utilizzo addetto   | | durata colloqui / personale (ore) * 100
+
+saturazione posti | | biglietti (#) / posti in vendita (#) * 100
+
+reclami in percentuale |  | reclami # / biglietti #
+ 
+reclami controvalore |  | reclami (#) * biglietti (E)
+
+durata dei colloqui | | durata in ore dei colloqui con i clienti
+
+tasso dei colloqui positivi (%)  |  | biglietti venduti # / colloqui # * 100
+
+tasso di abbandoni (%) |  | abbandoni rilevati dal PABX #
+                            ----------------------------
+                            teleconate in entrata #
+
+>>>>>>> rplot
