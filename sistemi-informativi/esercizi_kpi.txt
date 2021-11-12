@@ -1,0 +1,462 @@
+--------------
+21 11 12
+--------------
+
+Metodo KPI
+vediamo come associare a un processo gli indicatori di prestazioni...
+
+Un processo e' una black box con input immateriali
+provenienti dal cliente,
+segnalazioni del cliente a valle dell'output,
+come garanzia, post vendita, reclami,
+un processo comsuma risorse sul personale, energetiche, di scorte,
+il processo ha un output che consiste in tutto cio' che viene
+erogato, beni, servizi..
+
+Misurazione delle prestazioni del processo mediante indicatori,
+i posti unitari possono essere misurati dal pdv del gestore
+quanto costa al gestore produrre un'unita' di output, e quanto costa
+al cliente acquistare un'unita' di output.
+Indicatori di qualita' misurano lo scostamento,
+Indicatori di tempi di servizio / servizio: misurano
+tempi, ritardi, percentuale di risposte positive a fronte
+di una richiesta che il processo produce,
+
+Obiettivo: partire da indicatori standard e capire quali si applicano
+al nostro processo particolare, poi aggiustare e modificare.
+
+Un processo che ha un magazzino puo' avere come indicatore
+la produttivita' delle scorte (indicatori di rotazione),
+
+se ho un indicatore di produttivita' degli impianti, posso decidere
+di non usarlo se non mi serve al momento.
+
+dato un processo, posso produrre
+ indicatori generali
+ indicatori competitivi
+
+i generali misurano i volumi degli input del processo,
+i volumi degli output e i volumi delle risorse,
+servono a contestualizzare cio' che leggo sui competitivi,
+es l'indicatore sui reclami e' competitivo e si riferisce a
+quanti ordini? la quantita' e' contestualizzata nei generali,
+i generici (generali) dicono le quantita'
+
+I generici di input misurano la quantita' di richieste dal cliente, se il
+cliente puo' modificare gli ordini, la quantita' di modifiche, la quantita'
+di cancellazioni, se ci sono input materiali parliamo di trasporto,
+gli indicatori di output sono le quantita' di ordini serviti,
+i messaggi informativi inviati al cliente, quantita' di conferme,
+gli indicatori sono misure quantitative,
+quando costruisco una dashbord grafica, si devono vedere gli ordini
+diventare numeri in tabelle, o cruscotti grafici.
+Gli output e le risorse (umane), quantificare le teste, le ore lavorate,
+sono indicatori di risorse umane, poi ci sono impianti, scorte, (le scorte
+sono un costo per l'azienda), tecnologie e conoscenze sono un altro
+tipo di risorse (costo di corsi di formazione erogati ai dipendenti,
+conteggio dei laureati),
+spostiamoci sugli indicatori competitivi, che spesso
+danno risultati in percentuale,
+quanto mi costa in risorse soddisfare la richiesta di un cliente,
+sono indicatori che si esprimono con un numero e un simbolo di valuta,
+tasso di utilizzo delle risorse, percentuale di metri quadri
+a magazzino, percentuale di ore impiegate dalla macchina per le risonanze
+magnetiche, si cerca di farle funzionare quasi 24h su 24h,
+indicatori di qualita' (misurano lo spostamento tra dato atteso e output reale),
+misure di affidabilita' (num di macchine che si guastano entro un anno),
+misure sul punteggio del cliente (interviste tramite call center,
+feedback via telefono),
+oppure si puo' misurare la soddisfazione con i feedback per stelline,
+percentuali di ordini consegnati in tempo, tempo medio di risposta,
+dopo quanto tempo l'oggetto viene spedito, tempo di evasione dell'ordine,
+tempo di attraversamento (assemblaggio dell'oggetto in catena
+di montaggio, da quando entra nella catena a quando esce, lead time),
+percentuale di richieste soddisfatte in modo positivo,
+flessibilita' verso il cliente, percentuale di ordini
+che possono essere modificati o annullati dal cliente.
+
+Quando identifichiamo un indicatore di i e o dobbiamo
+definire se va bene, poi dobbiamo descriverlo con
+una formulina oltre a un nome, la formulina la chiamiamo metrica,
+descrive in modo piu' preciso il significato,
+poi si assegna una misura.
+
+Tabella di costi e efficienza,
+costo unitario al gestore -> costo unitario di output quasi sempre,
+ma potrebbe essere anche quello di input,
+quello monetario e' sempre unitario,
+quello di accesso alle info e' il tempo perso
+dal cliente per raggiungere una certa informazione,
+costo dell'op di 1 euro, ma per per ottenere il documento
+mi faccio 2 ore in comune, il costo e' minimo ma il costo
+di accesso all'informazione per raggiungere l'ufficio giusto
+e' una virtualizzazione del tempo che l'utente spende
+per arrivare al dunque.
+Per l'uso di prodotti tecnologici ci puo' stimare il costo
+d'uso del cliente, quanto tempo il cliente spende
+a imparare l'uso dell'oggetto,
+si puo' stimare il tempo con un valore proporzionale al numero
+di ore.
+Mediamente il cliente spende tot ore,
+numero di ordini, servizi / numero di teste, oppure stipendi,
+ore lavorate, e' un indicatore di produttivita' delle risorse umane,
+oppure numero di ordini serviti per addetto in una giornata
+di lavoro,
+produttivita' degli impianti, misura di pezzi prodotti per ore effettive di
+funzionamento o ammortamento.
+
+Rapporto tra output del magazzino,
+volume di prodotti uscenti dal magazzino / volume di giacenza -> rotazione
+                                                                 delle scorte
+produttivita' del tempo, misura della produttivita' della risorsa tempo,
+es num ordini serviti per ora lavorata, specializzazione dell'indice sulle risorse
+umane,
+eg num risonanze magnetiche fatte al giorno o all'ora,
+per tutte le misure di produttivita' in euro o in numero,
+se metto l'output a valore, numero di ordini o valore degli ordini,
+indicatori di utilizzo, quante risorse sono state utilizzate
+e quante erano disponibili,
+un indicatore di utilizzo delle risorse umane e' la saturazione
+delle risorse umane,
+tempo di attivita' / tempo di presenza,
+saturazione delle scorte,
+ottimizzazione del tempo,
+utilizzo dell'informazione, analizzando il peak streaming
+posso sapere cosa gli utenti guardano su mille pagine di manuale,
+
+Indicatori di qualita',
+ - di conformita', atteso - effettivo
+ - di affidabilita', frequenza di guasto, tempificazione di guasti
+ - soddisfazione del cliente
+
+conformita':
+ - interna, prima che il servizio venga erogato al cliente,
+ bloccato ancora all'interno del processo, per farli rilavorare,
+ se alta, fa salire i costi e i tempi, abbassa l'efficienza
+ del processo, ma non impatta sulla qualita' dell'oggetto ricevuto
+ dal cliente,
+ scarti, elaborazioni,
+ misurata anche in termini di costi di lavorazione
+ rispetto ai costi totali di processo,
+ sono 1 o 10%, piu' sono alti peggio e',
+ piu' bassa e' l'efficienza,
+ posso anche misurare i tempi di lavorazione
+ oltre ai costi,
+ es le mie macchine lavorano per 6h su 24 solo per processi difettosi,
+ - esterna,
+ il pezzo e' arrivato al cliente ma c'e' qualcosa che non piace,
+ reclami,
+ indicatore di reclami cliente / output totale (ordini serviti) * 100,
+ numero di resi,
+ riparazione in garanzia, il cliente si fa risentire,
+ percentuale di riparazioni in garanzia / # oggetti venduti,
+
+per un'azienda e' peggiore una bassa conformita' interna o esterna?
+esterna, quella interna incide sui costi, quella esterna
+sull'immagine che il cliente ha dei prodotti
+flessibilita' dell'impianto,
+input anomali serviti all'impianto / totale lavorato,
+indicatori di affidabilita',
+es proceso di un'auto,
+come si misura dopo averlo venduto?
+con due indicatori standard:
+ - medium time between failures,
+ - medium time between to repair,
+
+percentuale di clienti soddisfatti,
+da tre stelle in su..
+
+indicatori competitivi
+relativi ai tempi di servizio,
+tempi di risposta,
+misurano l'aspetto percentuale di richieste cliente soddisfatte,
+oltre a puntualita' tempi e ritardi c'e' anche il tasso di evasione delle
+richieste accettate / richieste effettuate,
+modifiche richieste dal cliente, servite in tempi accettabili / numero
+di richieste arrivate,
+non c'entrano coi tempi di servizio,
+indicatori di puntualita',
+puntualita' come entita' dei ritardi,
+numero di ore medio di ritardo, mediamente consegno in 36 ore invece che 24,
+
+guardando la metrica so cosa voglio misurare,
+es ordini serviti in ritardo / output totale,
+dice che gli ordini serviti in orario sono il 98%,
+2% degli ordini e' in ritardo,
+altro indicatore tipico sono le entita' del ritardo / tempo assoluto * 100,
+se prometto 24 ma servo in 36 l'entita' e' 12, il tempo assoluto
+e' 24, 12/24*100 e' 50% di sforamento nel fare le consegne,
++50% come ritardo, valore medio 12h, percentuale di ritardo 2%,
+entita' ritardo 50%,
+time/time to market -> costruzione e assemblaggio,
+                       tempo dall'ideazione al suo lancio sul mercato,
+		   
+tempo richiesto per assemblare,
+per le auto passavano anni qualche anno fa,
+adesso si cerca di renderlo massimo un anno,
+altrimenti quando esce sul mercato gli altri produttori
+sono avanti 5 anni.
+
+ESERCIZI
+
+prima individuiamo gli aspetti critici,
+es figura di responsabile ci ha detto di essere attenti in particolare
+ai costi, o ai reclami, o ai tassi di guasto, fattori espliciti,
+cercheremo di produrre indicatori che coprano questi fattori critici
+di successo,
+
+identificare e caratterizzare i KPI,
+ovvero leggo il testo, capisco quali sono le informazioni disponibili,
+perche' queste cose si devono calcolare come se avessero degli input,
+voglio esibire indicatori calcolabili, non posso mettere
+un indicatore sulla percentuale sui reclami se nemmeno vengono menzionati
+nel testo,
+dobbiamo partire dalle info che sono disponibili nel sistema informativo,
+si individuano le fonti informative,
+identifichiamo dei kpi che siano adatti al caso,
+devo scorrere le classi, capire quali si applicano,
+riportarli nella tabellina,
+scorrere le classi, identificare gli indicatori nelle varianti
+che si applicano al caso specifico,
+devo per ogni indicatore vedere se ci sono le info per calcolarlo
+senno' lo scarto,
+devo elencare l'indicatore e associargli metrica e unita' di misura,
+dettaglio la formula, consegne errate / consegne totali,
+poi passo all'analisi dimensionale,
+nei data mart quando parliamo di info direzionale parliamo
+di chiavi e dimensioni, dobbiamo preoccuparci delle dimensioni,
+consideriamo dimensioni piu' o meno standard,
+per ciascun kpi individuiamo le dimensioni applicabili,
+in genere sono dalle 4 alle 7 dimensioni per tutti i kpi,
+si cercano le dimensioni applicabili ad almeno uno degli indicatori,
+partiamo da una descrizione testuale di un processo,
+
+dalla lettura del testo ci segnamo le info disponibili,
+ricaviamo i requisiti dei kpi,
+capiremo quali sono gli indicatori da elaborare,
+teniamo sotto mano le tabelle e vediamo se questo
+si applica o meno,
+identifichiamo gli indicatori, ci chiediamo se ci sono le
+info altrimenti scartiamo l'indicatore,
+individuiamo le dimensioni partendo dalla tabella con poche
+dimensioni, es tempo, organigramma, ci sono clienti esterni?
+c'e' un processo di cui posso valutare metriche fase per fase?
+ci sono prodotti erogati o servizi erogati? si,
+ci sono dimensioni ad hoc? es canale di vendita.
+Partiamo da descrizioni di indicatori generici,
+finializziamo i kpi,abbiamo trovato gli indicatori o le dimensioni,
+per ciascun indicatore, quali sono le dim che si applicano?
+ci poniamo il problema della segmentazione di un indicatore,
+
+passando alle dimensioni,
+nome, granularita', per le vendite ci interessa minimo la vendita giorno
+per giorno, quindi la granularita' e' il giorno,
+specifichiamo le gerarchie, es minimo giorno per giorno,
+poi trimestri, semestri, anni, raggruppo i dati in trimestri,
+se il prodotto ha dei picchi durante l'anno, si suddividono i dati
+per stagionalita',
+la responsabilita' e' che alcuni degli indicatori
+possono essere valutati per unita' organizzativa o singolo dipendente,
+gli ordini processati da una determinata filiale,
+
+se il processo ha degli utenti finali ho la dimensione cliente,
+quali sono gli indicatori segmentabili sulla dimensione cliente?
+i reclami, i ritardi.. poi il ritardo puo' essere segmentato
+non sul singolo cliente ma sulla citta',
+come mai il 20% a brescia reclama e gli altri invece reclamano nell'1% dei casi?
+
+dimensione del prodotto, ho almeno un ordine che e' utile segmentare per prodotto,
+
+un indicatore puo' essere segmentato su delle dimensioni, cosa vuol dire questa
+frase?
+
+
+SILVERCARD
+
+KPI
+nota: l'agenzia ha una sede centrale e delle sedi secondarie
+nella sede principale c'e' anche il call center,
+roma -> call center
+|
+ -> agenzia1
+|
+ -> agenzia2
+.
+.
+|
+ -> agenziaN
+
+esito (utile per il tasso di evasione delle richieste),
+durata del colloquo (tempo),
+cio' che e' collegato a dimensioni o indicatori lo sottolineo,
+tasso di successo dei colloqui telefonici,
+durata del colloquio telefonico,
+quantita' di sganci del cliente sul call center,
+misura un insuccesso,
+per valorizzare il tasso di evasione delle richieste,
+andare di persona, durata del colloquio, id dell'operatore che ha gestito
+il colloquio,
+se il cliente conclude si hanno anche i dati del cliente,
+altrimenti si hanno i dati solo su operatore, esito, durata,
+se il cliente non acquista il biglietto non ti da i suoi dati,
+per i biglietti viene richiesto il pagamento contestualmente
+alla prenotazione,
+reclami non anonimi,
+riferimento al biglietto volo, cui il reclamo e' relativo,
+ogni reclamo ha un cliente, un biglietto, un volo a cui si riferisce,
+dal pdv del sistema informativo tutti i terminali sono
+collegati con la sede principale,
+ogni transazione effettuata (prenotazione, vendita, annullamento)
+mantiene riferimenti all'operatore e all'agenzia o call center coinvolti,
+sono eventi registrati nel sistema,
+registrata la durata di ogni singolo colloquio col cliente,
+il costo del personale e' un'info ottenibile dall'erp
+dell'organizzazione stessa,
+timbrature di cartellino, salario, nomi... stanno tutti nel modulo
+delle risorse umane dell'erp,
+
+Sezione richieste,
+csf, i dirigenti della compagnia aerea sono interessati a monitorare
+i costi, le richieste,
+rispetto al metodo kpi significa che devo essere sicuro di avere un buon
+assortimento di indicatori su costi e efficienza,
+sono interessato a confrontare nei casi in cui
+le attivita' siano tramite call center o agenzia,
+il mio indicatore deve essere segmentabile tramite agenzia o call center,
+nelle dimensioni devo avere la dimensione canale di vendita
+- agenzia
+- call center
+in fase di analisi alle dimensioni standard aggiungiamo il canale
+di vendita,
+voglio confrontare i valori di un indicatore,
+l'informazione pilota l'introduzione di un canale di vendita,
+segmentare con elementi dimensionali che permettono il confronto,
+
+i dirigenti sono interessati alla soddisfazione del cliente
+(non pilota la dimensione, solo che devono esserci kpi
+che misurano la soddisfazione del cliente),
+sta tutto nei reclami, che devono essere usati per costruire
+almeno un indicatore di qualita',
+si vogliono misurare anche le singole agenzie,
+agenzia di brescia, ome, milano, cremona...
+i singoli addetti possono essere raggruppati nell'agenzia dove lavorano,
+addetto, agenzia, totale...
+Valutare prestazioni offerte,
+valutazioni per distribuzione geografica, nazionalita' dei clienti,
+es voglio valutare il fatturato generato citta' per citta',
+giorno della settimana,
+periodo dell'anno in cui sono effettuate le prenotazioni,
+il tempo e' la singola data,
+si struttura non solo rispetto a date, mesi, trimestri..
+ma ha anche una stagionalita' settimanale (giorni festivi e feriali),
+posso raggruppare le date in festive o feriali,
+ho anche una stagionalita' annuale, periodi di alta e bassa stagione,
+identificare gli api,
+
+Schema triangolare,
+elencare gli indicatori:
+box con input, output, risorse...
+
+volumi io
+ - prenotazioni (#)
+ - biglietti venduti o posti venduti (#,E),
+ - tessere (#)
+ - prenotazioni annullate (#) non hanno un costo,
+   quindi niente E,
+
+risorse (personale, agenzie (gli impianti),
+ - personale (#,ore,E)
+ - posti in vendita (#,E)
+   il numero di agenzie si muove poco,
+   e' un indicatore possibile ma di bassa qualita',
+ - [numero agenzie (#)]
+
+indicatori di costo efficienza
+ partiamo dal costo unitario
+ - costo unitario CU per biglietto emesso,
+   quanto spendo di risorse per emettere un biglietto,
+ - CM, costo monetario al cliente per biglietto,
+ - Produttivita' degli addetti nel tempo (# biglietti venduti per testa),
+   specializzazione della produttivita' nel tempo, n biglietti / ore presenza
+   dell'addetto,
+
+ - misura di produttivita' o saturazione, tasso di utilizzo,
+ saturazione del posti messi in vendita, percentuale che sono
+ riuscito a vendere prima che il volo decollasse,
+
+ - saturazione di tipo immateriale, posti albergo, aerei,
+ posso rivenderli piu' volte,
+ con riferimento alle risorse umane posso anche valutare l'utilizzo,
+ la percentuale di utilizzo della risorsa umana
+ rispetto alla totale disponibilita',
+ gli addetti fanno solo colloqui, per ogni addetto so quanti
+ colloqui ha fatto e quanto sono durati,
+ quindi posso fare risorse usate / risorse disponibili,
+ quindi
+ - utilizzo dell'addetto
+
+ho indicatori di costo unitario, produttivita' per testa,
+utilizzo dell'addetto, siccome vendo biglietti aerei
+posso calcolare grado di utilizzo e saturazione,
+spostandoci alla qualita',
+quali sono gli indicatori di qualita'?
+Conformita, scarto di informazioni,
+reclami (si ci sono), resi (non ci sono),
+affidabilita' (non c'e'), niente manutenzione,
+tasso clienti soddisfatti non ce l'ho,
+ho in mano solo i reclami,
+e c'era un csf sulla soddisfazione del cliente,
+i reclami (che son un input al processo) in numero sono
+un input al processo,
+
+Qualita':
+ - reclami (%, controvalore),
+ misura la qualita' del processo,
+ misura in controvalore (misura pari al prezzo pagato,
+ valore del reclamo pari al prezzo del biglietto),
+ di un reclamo conosco il cliente e il volo associato
+ quindi posso misurare il controvalore del reclamo,
+
+Tempi e servizio:
+ - durata del colloquio,
+ assimilabile all'indicatore tempo di risposta,
+ durata media dei colloqui che si concludono con prenotazione,
+ e' una misura in min, ore,...
+ ci sono ritardi? no,
+ non ci sono altri tempi misurabili,
+ c'e' il tasso di evasione delle richieste? Si,
+ e il semicentralino registra anche gli abbandoni del cliente,
+ ho due misure:
+ - tasso colloqui conclusi positivamente (%),
+ - tasso di abbandoni in attesa telefonica (%), un po'
+ meno interessante, serve per sapere se il call center
+ e' funzionale o no..
+
+cerco di trovare tutti gli indicatori di risorse,
+
+cpu per biglietto | euro  | personale (euro)/ibglietti(#)
+
+cm al cliente
+per biglietto    |  biglietti (E) / biglietti (#)
+
+produttivita' addetti | # | biglietti (#) / personale (#)
+
+produttivita' addetti
+nel tempo              | # |     biglietti(#)/personale (ore)
+
+utilizzo addetto   | | durata colloqui / personale (ore) * 100
+
+saturazione posti | | biglietti (#) / posti in vendita (#) * 100
+
+reclami in percentuale |  | reclami # / biglietti #
+ 
+reclami controvalore |  | reclami (#) * biglietti (E)
+
+durata dei colloqui | | durata in ore dei colloqui con i clienti
+
+tasso dei colloqui positivi (%)  |  | biglietti venduti # / colloqui # * 100
+
+tasso di abbandoni (%) |  | abbandoni rilevati dal PABX #
+                            ----------------------------
+                            teleconate in entrata #
+
