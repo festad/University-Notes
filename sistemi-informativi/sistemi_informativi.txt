@@ -1159,10 +1159,14 @@ organizzo i dati in tabelle per oganizzare la struttura multidimensionale.
 ---------------------
 Sistema di supporto operativo
 
-Indicatori associati a dimensioni e chiavi,
-indicatore vendite -> tempo, prodotto, luogo di vendita,
-riferita a certi negozi o periodi di vendita,
+Gli indicatori sono associati a dimensioni e chiavi,
+l'indicatore vendita e' associato alle
+chiavi tempo, prodotto, luogo di vendita,
+riferite a certi periodi temporali o a certi
+insiemi di prodotti e di vendite riferite a certi
+negozi o regioni di vendita.
 
+Formalizzato il concetto di indicatore
 Indicatore, chiave, dimensione di analisi
 
 La struttura data dall'indicatore, le chiavi e le dimensioni
@@ -1170,20 +1174,71 @@ puo' essere modellizzata come un ipercubo a n dimensioni
 (n chiavi)
 
 Il dataware house viene alimentato tramite l'esecuzione di programmi,
-alimentato secondo il procedimento di ETL,
-viene alimentato dal data entry,
+alimentato secondo il procedimento di ETL (Extraction, Transformation, Loading),
+viene alimentato dalle basi di dati transazionali (le basi
+di dati dell'ERP),
+riceve anche altri dati non presenti
+nelle basi di dati transazionali,
+le data entry contengono dati non presenti nelle basi
+di dati transazionali ma sono dati di preventivo, di previsione,
 sono dati di preventivo,
-eventuale acquisizione di altri dati esterni, utili per prendere
-decisioni.
+sono dati utili per prendere decisioni, e' utile averli
+nel sistema informativo transazionale ma non derivano
+da informazioni presenti nelle basi di dati transazionali,
+non sono presenti nei sistemi informativi operativi.
 
-Transazioni a bassa frequenza negli OLAP,
+La tecnologia dataware house a supporto dei sistemi
+informativi transazionali l'abbiamo chiamata OLAP,
+in contrasto con la tecnologia OLTP che e' la tecnologia
+delle basi di dati transazionali e di supporto ai sistemi
+informativi operativi.
 
-modelli dei dati olap
-ipercubo con indicatori da valutare,
-ogni ipercubo e' associato a un indicatore,
+Rispetto all'OLAP, l'OLTP
+sostanzialmente opera transazioni che agiscono su pochi dati,
+molte transazioni per ogni minuto di funzionamento,
+al contrario il sistema OLAP opera sul dataware house
+e tratta tipicamente volumi di informazioni molto ampie,
+tipicamente di transazioni se ne fanno molto poche,
+avvengono a bassa frequenza.
 
-operazioni olap che passano da una scala piu' aggregata
-a una piu' fine (grid down)
+I modelli dei dati per OLAP devono
+supportare analisi e calcoli sofisticati su grossi
+volumi di dati che riguardano diverse dimensioni
+organizzate gerarchicamente,
+il modello logico dei dati e' quello dell'ipercubo,
+un ipercubo e' associato a un indicatore,
+ogni indicatore ha un valore associato a una delle cellette,
+
+Operazioni possibili sull'ipercubo:
+- operazione di aggregazione,
+scalatura verso l'alto,
+- operazione grill down, opposta alla roll up,
+- slice and dice, restringere il range
+delle dimensioni
+- pivot
+
+Un server MOLAP e' una tecnologia informatica
+che gestisce i dati del dataware house
+implementando dal pdv informatico direttamente
+una struttura a ipercubo,
+elabora le interrogazioni con riferimento a questa
+struttura a ipercubo.
+
+I server ROLAP invece sono sistemi di gestione
+di basi di dati standard che rappresentano i dati
+come insiemi di tabelle e usano insiemi di tabelle
+per simulare l'ipercubo,
+l'idea di ipercubo e' rappresentata con un insieme
+di tabelle.
+Le informazioni contenute nei rolap vengono estratte
+usando il linguaggio SQL per scrivere delle interrogazioni
+che implementano operazioni di roll up, grill down, slice
+and dice e pivot.
+
+Approfondiamo ROLAP
+Quasi tutti i dataware house e i data mart (sottoinsiemi
+dei dataware house con target specifico) sono
+rappresentati con insiemi di tabelle.
 
 Un server ROLAP rappresenta il cubo come un insieme di tabelle,
 le informazioni contenute vengono estratte col linguaggio SQL
@@ -1192,57 +1247,53 @@ Il data mart e' rappresentato come un insieme di tabelle,
 
 Tecnologia ROLAP: lo schema multidimensionale dei dati
 e' realizzato mediante insiemi di tabelle,
+ognuna di esse contenente righe che sono i dati veri e propri...
 
 inoltre, le tabelle sono riconducibili a due tipologie:
  - stella
  - fiocco di neve
 
-una delle tabelle si chiama centrale, o tabella dei fatti,
-contiene i valori metrici degli indicatori,
-poi c'e' un insieme di altre tabelle
-chiamate tabelle delle dimensioni,
+In entrambi i casi l'ipercubo e' rappresentato con un
+insieme di tabelle, in particolare una di queste tabelle
+si chiama tabella centrale o tabella dei fatti,
+e' una tabella che contiene i valori degli indicatori,
+poi ci sono altre tabelle chiamate delle dimensioni,
 ogni tabella e' associata a una dimensione,
-le righe rappresentano il dettaglio della tabella.
+le cui righe descrivono il dettaglio delle dimensioni
+rispetto ai quali gli indicatori vengono valorizzati.
 
-Una tabella e' associata a un insieme omogeneo
-di eventi del mondo reale, di interesse per i dirigenti
-dell'azienda,
-il dirigente e' interessato a analizzare le vendite,
-indicatori:
- - quantita' di venduto
- - incasso
+STELLA
+c'e' una tabella dei fatti
+che ha un nome, che richiama il fatto
+che si vuole misurare con gli indicatori
+che la tabella rappresenta,
+la tabella ha associato un fatto,
+ad esempio le vendite, (potevo averne
+una degli ordini, una delle richieste di assistenza
+post vendita, un qualsiasi insieme omogeneo
+di eventi del mondo reale che sono di interesse
+per l'azienda e in particolare per i dirigenti dell'azienda).
 
-in questa configurazione a stella, a ogni
-cella sono assegnati due valori metrici,
+Le vendite nell'esempio vengono misurate
+con due indicatori: quantita' di venduto e incasso,
+nella configurazione a stella
+che emula un ipercubo
+ad ogni cella del cubo sono associati due valori metrici,
 ogni celletta ha un indicatore del venduto
-in termini di quantita' e incasso,
-(potevano essercene n),
-inoltre per ciascun valore di quantita'
-e incasso sono espresse quattro coordinate,
-tutte le altre righe sono attributi o nomi di colonna,
-due colonne sono la quantita' in incasso,
-altre quattro colonne sono tempo (codice orario),
-coordinata del luogo, coordinata del prodotto e
-coordinata del cliente,
-questa la granularita' minima.
+in termini di quantita' e in termini di incasso,
+inoltre per ciascun indicatore, quantita' e incasso,
+sono specificate quattro coordinate,
+orario, cliente, luogo di vendita e prodotto.
+Ogni riga della tabella vendite in una
+certa posizione mostra un codice luogo,
+una descrizione completa la troviamo
+in una tabella separata, quella del luogo,
+che riporta una serie di attributi (colonne),
+una prima colonna contiene il codice del luogo,
+che conterra' il luogo 100,
+e per quella riga 100 poi abbiamo ulteriori colonne
+(negozio, indirizzo, codice citta', codice regione...)
 
-Coordinata codice-luogo -> ogni riga della tabella vendite
-mostra un codice luogo 100,
-tabella luogo, riporta una serie di attributi,
-se scorriamo le righe troviamo la 100esima,
-per quella riga abbiamo ulteriori colonne,
-per il codice 100 troviamo il nome del negozio,
-l'indirizzo, codice citta', nome della citta',
-codice regione, stato, descrizione..
-per una coordinata 100 nella tabella della dimensione
-luogo trovo una descrizione delle proprieta' di quella coordinata,
-per il tempo abbiamo un codice orario associato
-a ora, trimestre, anno...
-codice prodotto -> il codice prodotto a04 ha una descrizione,
-un colore, un modello, una categoria associata,
-abbiamo una certa quantita' di venduto, incasso, vendita,
-il cliente ha codice, nome, indirizzo, professione...
-alcune vendite potrebbero essere sotto promozione a altre no,
 
 tabella centrale delle vendite,
 tabella FULL MART,
