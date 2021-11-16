@@ -945,3 +945,54 @@ first 4 documents
 first document is an overview,
 part 2 describes what it is to be conformed with DICOM,
 
+DICOM data object is an abstraction of real world entity,
+like image, report, related to radiology workflow,
+grouped into data sets,
+Dicom uses already existing standards like jpeg,
+to describe the textual metadata of images,
+textual description of the study, description,
+jpeg used to describe the image,
+other standards describe the study (snowmed),
+
+the part four describes service classes,
+basic work list management service class
+print management service class (to print image
+in either dvd or piece of paper or transparent film,
+to add it to a report paper based)
+
+Application entity: software layer between
+communication layer and medical information application,
+application entity has a definition of services required
+from medical information (retrieving image service, print service),
+there's definition of information object,
+there's how to encode and store definition of
+objects in terms of standards,
+how to exchange data related to an image over the network
+and how to store in a database the image,
+in DICOM you can store to file system or into database,
+2 interfaces:
+ to send over network
+ to save
+
+Provides access to storage media,
+
+services and objects:
+service to store image file and sending it to pacs workstation where
+radiologist can watch the image and write a report,
+to keep consistence,
+the doctor can see always the same image thanks to consistency,
+standard tries to make homogeneous the representaion,
+
+querying service,
+to retrieve a specific image made this day, or a specific service,
+modality worklist pulls information,
+eg by means of the RIS the doctor already put data,
+with the modality worklist the list will appear also on the pacs,
+before data are entered in ris and data are sent from ris to
+pacs, no need to type twice,
+pacs activates machine and retrieves data from machines,
+offline media -> service implemented in the branch
+of storing into file system,
+ (the two interfaces are storing in filesystem vs sending over network),
+pacs has a local storage for temporary images,
+there is an usage scenario
