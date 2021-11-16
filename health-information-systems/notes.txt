@@ -939,3 +939,9 @@ imaging,
 in RIS, and PACS, expecially PACS,
 stores digital images, prints,..
 
+Generic DICOM Model
+
+first 4 documents
+first document is an overview,
+part 2 describes what it is to be conformed with DICOM,
+
