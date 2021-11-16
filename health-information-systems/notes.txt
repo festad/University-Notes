@@ -996,3 +996,11 @@ of storing into file system,
  (the two interfaces are storing in filesystem vs sending over network),
 pacs has a local storage for temporary images,
 there is an usage scenario
+
+Dicom -> set of services, printing, retrieving, managing worklists,
+to create data objects, managing offline media,
+set of standard services for machines,
+definition of communication protocol,
+able to deal with normal computer networks, tcp or iso osi based,
+phisical communication with the machines.
+
