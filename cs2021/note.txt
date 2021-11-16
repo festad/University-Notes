@@ -1,0 +1,225 @@
+set(gca,'Fontsize',14)
+close all
+clear
+clc
+x = linspace() n valori di n punti equispaziati
+tra a e b inclusi
+linspace(-2*pi, 2*pi, 100)
+
+disegno di superficie
+
+---------------------------
+propagazione degli errori
+---------------------------
+si puo' scrivere un polinomio in modi diversi,
+la forma 1+x(...) e' quella che costa meno in numero di operazioni
+
+nel calcolo di e con il limite, sommare 1e-20 e 1 da' 1 perche' sono 
+ordini di grandezza molto diversi tra loro
+logspace genera un insieme di punti logaritmicamente equispaziati
+
+analisi sulle matrici, autovalori vs determinante,
+il determinante risulta nullo nonostante gli autovalori
+siano tutti diversi da zero, come mai?
+
+supponiamo che matlab calcoli il determinante come il prodotto
+di tutti gli autovalori: la serie di moltiplicazioni crea
+un underflow
+
+Perche' vorrei calcolare numericamente
+una soluzione quando posso fare solo il plot?
+Per questioni di precisione, il grafico viene
+costruito con una discretizzazione di punti
+
+con secanti almeno uno dei due punti iniziali deve essere complesso
+
+se a e' radice teorica e a':
+se a e' radice semplice e 
+
+se cerco una radice semplice quello che ottengo numericamente
+e' errore multiplo della precisione di macchina
+
+se cerco una radice multipla l'errore e' una costante per la radice
+ennesima della precisione di macchina, e la radice della precisione
+di macchina e' molto piu' grande della precisione di macchina
+
+calcolare radici multiple e' un problema che 
+da' risultati con errori intrinseci,
+maggiore e' la molteplicita', minore la precisione che ottengo.
+
+Possiamo risolvere anche problemi di ottimizzazione.
+Esempio della legge della crescita della colonia di batteri.
+La colonia cresce finche' ci sono cibo e spazio,
+poi si crea competizione.
+Quando la popolazione raggiunge 
+il massimo tasso di crescita? (cioe' la derivata prima),
+devo trovare lo zero della derivata seconda,
+e lo posso fare numericamente.
+
+
+syms t -> t e' una variabile simbolica.
+b = 2500/(... con t) e' una funzione simbolica
+diff(b,2)
+
+--------------------
+esercizio ottobre
+--------------------
+
+come mai 17 iterazioni per x0 = 1?
+la radice non e' multipla,
+non e' perche' newton degrada
+ma perche' arrivo a un punto xk sufficientemente
+vicino alla radice, 
+quando le iterate partono da lontano non si
+sa cosa newton faccia,
+perche' con x0 = 1 ho le iterazioni con cui
+l'errore rimane sempre grande?
+
+se plotto la funzione da -10 a 20,
+ha tantissimi punti stazionari,
+quindi genero un nuovo x2 abbastanza lontano da x0,
+quindi devo sudare molto per ritornare in carreggiata,
+la presenza di tanti punti stazionari puo'
+rallentare di tanto le iterazioni perche' fa
+allontanare molto dal punto di partenza.
+
+--------------------
+secondo esercizio
+--------------------
+
+posso calcolare la radice a sx con bisezione
+partendo da un intervallo di ampiezza 2?
+no, partirei da estremi di segno uguale.
+La seconda radice potrei calcolarla con un intervallo
+sinistro -0.4 e destro 2.4,
+
+domanda 3:
+calcolare le ascisse dei punti di intersezione
+con il metodo di newton
+prendere x0 a destra di alpha proietterebbe
+l'intersezione con l'asse x troppo a sx, dove
+il logaritmo non e' definito,
+iniziando con 0.3 otteniamo una radice complessa
+(logaritmo complesso)
+
+scegliendo 0.001...
+
+con due funzioni phi di punto fisso diverse
+una converge bene a una radice e l'altra all'altra,
+verifichiamo se vale il teorema di ostrowski...
+
+
+------
+meg
+------
+
+se lk e' piccolo gli errori di arrotondamento
+nella Akj rimangono piccoli,
+quindi la pivotazione si fa sempre,
+tutti gli lik saranno <= 1 quando faccio Aik/Akk
+perche' Akk e' il massimo della riga
+
+calcolo dell'inversa della matrice
+
+se usassi meg ogni volta ->
+
+invece uso LU, fattorizzo una volta sola al costo
+di 1/3n^3 e poi risolvo i sistemi triangolari
+
+per calcolare A^-1 * b NON calcoliamo l'inversa
+ma risolviamo il sistema lineare x = A^-1 * b con la fattorizzazione
+
+
+--------------
+metodi del gradiente
+----------------
+
+e' nelle ultime iterazioni del gradiente coniugato
+che si vede il guadagno,
+residuo al passo n e' 0, 
+perche' ottiene la soluzione esatta dopo n iterazioni
+maggiore e' rho piu' lenta e' la convergenza
+
+----------------------
+Soluzione dell'esercizio:
+si puo' confrontare anche A con A',
+verifico che la matrice sia simmetrica e definita positiva,
+chiamo d = eig(A) e verifico che siano tutti positivi,
+ovvero
+if d > 0:
+    printf('matrice sp')
+else:
+    printf('matrice non sp')
+
+fattorizzazione di cholewski e' il metodo
+diretto piu' efficiente,
+
+definisco x0 vettore di numeri casuali,
+tolleranza 1e-8
+kmax = 500
+
+il metodo del gradiente esaurisce le iterazioni
+mentre quello del gradiente coniugato ne fa solo 6,
+il metodo del gradiente non e' accurato,
+mentre col gradiente coniugato l'errore parte da 10-3
+e poi subito 10-9,
+ulteriore confronto:
+col gradiente coniugato ottengo la soluzione esatta
+a meno dell'errore sul test d'arresto,
+
+I risultati concordano con la teoria?
+
+Chi determina la velocita' della convergenza?
+Teorema di convergenza
+
+Quando rho e'...
+riduco l'errore al passo precedente di 0,99,
+la quantita' rho dice di quanto riduco l'errore
+tra un passo e il successivo,
+il numero di condizionamento della matrice
+gioca un ruolo importante,
+l'errore al passo k+1 e' l'errore al passo k * rho,
+riduco  l'errore di pochissimo,
+e lo vediamo anche dal grafico,
+se k(a) fosse piccolo la frazione sarebbe un numero
+piu' lontano da 1 e l'errore si ridurrebbe piu' pesantemente,
+la curva dell'errore del metodo del gradiente riflette
+la teoria.
+Per il metodo del gradiente coniugato,
+cancello la curva del metodo del gradiente,
+il metodo del gradiente coniugato converge
+in al piu' n iterazioni,
+convergo in 6 perche' non sto usando l'aritmetica esatta
+ma quella del calcolatore, quindi si puo' richiedere
+qualche iterazione in piu',
+quando il numero di condizionamento e' alto
+questo interviene sulla bonta' della soluzione,
+l'errore di arrotondamento si propaga piu' pesantemente,
+avendo il condizionamento pari a 10^5 la matrice
+e' mal condizionata, quindi l'algoritmo
+non converge nel numero di iterazioni pari alla dimensione,
+non interviene la stima di convergenza (perche' abbiamo
+un sistema piccolo), ma il condizionamento gioca
+un ruolo pesante nella propagazione degli errori
+di arrotondamento.
+
+Ultimo punto,
+per stimare l'errore dobbiamo recuperare
+la stima a priori,
+ci dice che l'errore finale sulla soluzione esatta
+e quella calcolata e' <= condizionamento di a * somma di frazioni di
+norme su A e A^,
+Ci sono errori di approssimazione sui dati, prendiamo
+come errore epsilon, 10-16, che sia 1/2eps o 1/3eps non cambia,
+l'errore sara' k(a)*eps,
+mi aspetto un errore di al piu' 10e-10
+
+
+APPROSSIMAZIONE NEL SENSO DEI MINIMI QUADRATI
+
+un'approssimazione nel senso dei minimi quadrati
+trova una g chiamata retta di regressione,
+
+a partire dal set di dati calcoliamo la retta di regressione,
+
+
