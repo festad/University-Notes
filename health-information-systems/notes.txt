@@ -741,3 +741,201 @@ data stds small complexity
 info stds more complex level
 
 
+----------------
+16 - 11 - 2021
+----------------
+
+We were talking about standards,
+the erp to enter the orders (for linens, medical devices),
+order typed into the erp, and it can be sent by means of
+the communication network provided by the ERP,
+erp sends orders and receives confirmations, invoices..
+
+There are several cathegories of standards,
+ - data standards (vocabularies),
+   support definitions of very simple items,
+
+ - information content standard
+   define how classes are defined and
+   the relationships with different
+   pieces of information, more complex
+
+ - information exchange standards
+   deals with simple or complex pieces of information representing
+   a model from information data or content standard,
+   find a way to code simple or complex informations
+   and how to send them over the network,
+
+higher level standards aggregate informations,
+on the right there are the processes using the informations
+on the left the small informations
+
+National Biosurveillance Use Case
+
+107 standard,
+
+UMLS unified medical language system,
+map a code from icdt to loinc,
+supports interoperability between different
+organizations using different standards,
+to aggregate informations a mapping is needed,
+umls is the tool.
+
+It's also a set of libraries.
+
+Standards are sets of documents,
+certification is very important,
+
+--------
+HL7
+--------
+
+High level, concerning technological level,
+has to provide a way for migration of
+data for patient care,
+exchange, management, integration of
+data in order to support the enterprise
+function 'PATIENT CARE',
+it's not covering interoperability, management of the hospital..
+just patient administration, admission of patient,
+medical decision of patient, order entry, patient discharge,
+medical care documentation.
+
+From technological level,
+provides standard for exchange of data between
+pairs of software application used in health care organization,
+reduces the custom interface and program maintenance,
+ref to spaghetti architectural style (pg 241),
+without standard you need n software interfaces if you want
+to make communication between n applications,
+exchange of data is used for patient registration,
+information sent to medical information system,
+to do this you need a sw interface if there's no standard,
+if the two softwares have a standard they can already communicate.
+
+Standard reduces custom interface programming between software
+application pairs.
+Custom interface programming also has to be updated every time,
+whereas a standard cancels this work.
+
+HL7 is an important standard,
+the systems on the territory of Lombardia (system pharmacies,
+hospitals, general practitioners, can exchange informations),
+
+there are 2 main version:
+version 2 old
+version 3 still old but almost all systems use version 2,
+
+in brescia there are boxes take data from machine and translate into hl7,
+the version used is version 2,
+
+data about entity type,
+describes events (when they are detected, a system module
+sends a message to another),
+the event triggers the patient administration system to send
+informations to another application system,
+hl7 describes events,
+eg A01 -> admission of a patient,
+
+for each event there is a specific type of message,
+eg events:
+A01 -> admission
+A02 -> transfer to another organizational unit (patient discharged),
+       to inform that the patient
+       has moved
+A03 -> patient has been completely discharged
+
+hl7 is also a communication protocol, iso osi stack,
+interoperable with tcp ip, it works if you install
+the HL7 MLLP (minimal lower layer protocol),
+hl7 is also interoperable with serial interfaces,
+can be used to take serial data coming from medical devices,
+these boxes converting serial data to hl7 messages can be sent
+over ethernet,
+hl7 interactions operate between paires,
+it's point to point communication model,
+eg
+order entry system <-----> laboratory information system
+used by doctor  --sends order--> receives the order,
+                                 understands it,
+				 appears on terminal of people
+				 working in that laboratory
+	     <---confirmation--
+receives confirmation
+
+ASCII character,
+no tabs, can be written with text editor,
+set of rows, each row is called segment,
+a segment is a piece of information contained
+in the message,
+each segment starts with 3characters code,
+eg MSH describes message header,
+   EVN is the event type 
+   PID patient identification,
+
+| --- | --- | ---
+
+there is timestamp, 198808181126
+EVN | A01 | timestamp
+PID ||| PATID1234 || JONES^WILLIAM^A^III|
+
+typed by the clerk in the terminal,
+admitting diagnoses, malign neuclasy, liver, | timestamp
+
+info should not be typed again if it is already in the database
+
+version three is more complex so it has less implementations
+
+HL7 describes events and messages,
+
+when there are 2 app components what happens is that
+there's an event (new patient arriving), the event
+is recorded from a person in app comp A,
+when it is completed, A sends to app comp B of his,
+telling that the new event happened, the person arrived
+at the hospital,
+B sends ACK (acknowledgement),
+new event can also mean that a new set of data is ready in the machine
+
+HL7 vers 2 is ASCII based,
+in HL7 vers 3 it's XML based,
+restriction of XML, only a set of predefined text and data fields
+are allowed.
+
+HL7 3 was created in the 90s,
+the tags and the structure are
+complaiant with data model ->
+information classes describe phisical thing of interest,
+eg described persons, organization, patient admitted to specific
+ward, roles, attributes (features) for patient, employer, phisician,
+role of nurse, doctor, employer,
+
+The way to describe person, doctor, patient.. are standardized by the
+reference information model,
+also the way to describe that a doctor
+is author of medical acts is standardized,
+a medical act can be encounter, observation, procedures, medications,
+orders are examples of acts,
+the model describes in a standard way observations, encounters,
+surgery operations,
+there's a way to describe that a surgery was performed by a specified team.
+
+reference information model is the standard.
+
+This flexibility is obtained by having an attribute in acts,
+
+Version 3 messages is complaint with the model,
+some xml text has tag 'observation event',
+structures of classes is used to define the structure of messages
+
+Messages are very long, pair tag-content_tag
+
+---------
+DICOM
+---------
+deals with digital images,
+it's a standard used in medical
+imaging,
+in RIS, and PACS, expecially PACS,
+stores digital images, prints,..
+
