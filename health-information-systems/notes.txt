@@ -1004,3 +1004,5 @@ definition of communication protocol,
 able to deal with normal computer networks, tcp or iso osi based,
 phisical communication with the machines.
 
+CCOW
+when coming from different vendors
