@@ -4,16 +4,15 @@ library(modelr)
 
 zg <- read_csv("tidy_niezgonem-cities.csv") %>% 
   select(Year, Garnizon, Suicides)       %>% 
-  filter(Year >= 2001)                   %>%
+  filter(Year >= 2013)                   %>%
   filter(Garnizon == "KSP Warszawa" | Garnizon == "KWP Katowice" |
            Garnizon == "KWP Kraków" | Garnizon == "KWP Opole" |
            Garnizon == "KWP Poznań")
 
 plot <- ggplot(data = zg, mapping = aes(x = Year, y = Suicides)) +
   geom_point(mapping = aes(color = Garnizon)) +
-  scale_color_manual(values=c("red", "blue", "green", "darkblue", "orange"))# +
-# geom_smooth(data = zg %>% filter(Sex ==pre "Male"))  +
-# geom_smooth(data = zg %>% filter(Sex == "Female"))
+  scale_color_manual(values=c("red", "blue", "green", "blueviolet", "orange"))# +
+
 
 plot
 
@@ -39,7 +38,7 @@ plot <- plot +
   pred %>% geom_line(mapping = aes(x = Year, y = pred_warz), colour = "red")      +
   pred %>% geom_line(mapping = aes(x = Year, y = pred_kato), colour = "blue")     +
   pred %>% geom_line(mapping = aes(x = Year, y = pred_krak), colour = "green")    +
-  pred %>% geom_line(mapping = aes(x = Year, y = pred_opol), colour = "darkblue") +
+  pred %>% geom_line(mapping = aes(x = Year, y = pred_opol), colour = "blueviolet") +
   pred %>% geom_line(mapping = aes(x = Year, y = pred_pozn), colour = "orange")
 
 plot <- plot + labs(x = "Years",

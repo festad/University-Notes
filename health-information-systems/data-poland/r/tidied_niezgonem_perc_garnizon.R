@@ -2,12 +2,12 @@ library(ggplot2)
 library(tidyverse)
 library(modelr)
 
-zg <- read_csv("tidy_zgonem-cities.csv") %>% 
+zg <- read_csv("tidy_niezgonem-percs-cities.csv") %>% 
   select(Year, Garnizon, Suicides)       %>% 
   filter(Year >= 2013)                   %>%
   filter(Garnizon == "KSP Warszawa" | Garnizon == "KWP Katowice" |
-         Garnizon == "KWP Kraków" | Garnizon == "KWP Opole" |
-         Garnizon == "KWP Poznań")
+           Garnizon == "KWP Kraków" | Garnizon == "KWP Opole" |
+           Garnizon == "KWP Poznań")
 
 plot <- ggplot(data = zg, mapping = aes(x = Year, y = Suicides)) +
   geom_point(mapping = aes(color = Garnizon)) +
@@ -41,7 +41,7 @@ plot <- plot +
   pred %>% geom_line(mapping = aes(x = Year, y = pred_pozn), colour = "orange")
 
 plot <- plot + labs(x = "Years",
-                    y = "Fatal suicides",
-                    title = "Fatal suicides in different cities of Poland")
+                    y = "Attempted suicides (%)",
+                    title = "Attempted suicides over population in different cities of Poland")
 
 plot
