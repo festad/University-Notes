@@ -1429,3 +1429,362 @@ es compriamo una bici, dopo un mese si rompe un pedale,
 il gap tra cio' che attendevamo e cio' che otteniamo e' alto,
 indicatore dei tempi di servizio => misurare le tempistiche,
 dopo quanto ci consegnano l'oggetto rispetto a quanto ci avevano promesso,
+
+
+----------------
+18 - 11 - 2021
+----------------
+ricordiamo l'architettura dei si direzionali,
+col data warehouse, passaggi alto->basso,
+sotto abbiamo le basi di dati transazionali,
+dei vari sistemi informativi presenti in azienda,
+basi di dati erp e crm, per i processi primari e di supporto,
+i dati devono essere trasformati in indicatori
+con associate dimensioni,
+attraverso una fase di ETL (lettura dei dati
+dalle basi di dati transazionali di erp, crm,
+sistema di contatto, poi la trasformazione
+(pulendo i dati e aggregandoli, eg partendo dai
+singoli scontrini che stanno negli erp),
+poi la fase di caricamento (scrittura dei
+dati aggregati su vendite giornaliere
+nel data warehouse, copia dei dati
+in una nuova base di dati aggiuntiva (dw).
+Nei data warehouse possiamo creare sottoinsiemi specializzati
+su particolari tematiche aziendali (data mart, sono
+gruppi di dati organizzati a ipercubo, per una particolare
+campagna di vendita, sui dati del magazzino, sui dati
+delle nostre vendite vs vendite della concorrenza),
+si specializzano su una tematica specifica della dirigenza
+dell'organizzazione.
+L'ufficio associato agli indicatori deve essere di interesse
+per la dirigenza, altrimenti il datamart non lo creo.
+Liv 0 -> basi di dati transazionali
+Liv 1 -> ETL, + inserimento di dati esterni
+Liv 2 -> dw e data mart,
+  sui data mart o dw si appoggiano dei sw
+  specializzati che consentono l'esplorazione del contenuto
+  da parte degli utenti, motori di calcolo, motori
+  di presentazione e di motori di mining.
+
+Es proposto da Oracle,
+ripercorre con terminologia diversa gli stessi liv architetturali,
+a sx ci sono i sistemi operazionali (sistemi informativi operativi,
+tra cui erp in primis), supportano tranaszioni dei processi
+primari e di supporto,
+segue un flusso di dati verso il data warehouse (che rappresenta
+l'ETL),
+nel data warehouse:
+ - area di staging, i dati cosi' come sono
+ stati copiati, dalle basi di dati operative,
+ e' un'area di parcheggio di dati non puliti,
+ - transformation che da origine ai dati aggregati,
+ che costituiscono il contenuto informativo del data warehouse,
+
+l'area di staging e' un insieme di file,
+
+dal data warehouse si originano basi di dati specializzate
+(chiamate aree funzionali), che sono i nostri data mart,
+tema delle statistiche, del top management di gruppo,
+della contabilita', marketing,
+controllo commerciale...
+questi sono schemi a stella che contengono dimensioni
+e indicatori, utili a analizzare i temi dei data mart,
+liv 3 -> rendere come report i dati che sono istanze
+degli indicatori e delle relative dimensioni,
+ci sono tool grafici per fare interrogazioni e query,
+strumenti di dss per fare calcoli e simulazioni
+a partire dai dati, sulla base dei dati di budget
+si possono fare stime di venduto.
+strumenti di reporting, creano reports standard,
+che contengono valori di indicatori con associate dimensioni.
+
+Definiamo la data warehouse meglio:
+e' una base di dati gestita con determinate tecnologie,
+con strumenti sw di accesso non tipici dei file in generale,
+usata per il supporto alle decisioni aziendali,
+integrata (cioe' mette insieme piu' dati da piu' basi
+di dati aziendali, non solo erp),
+ha un'ampiezza non legata a un singolo dipartimento ma
+copre l'intero interesse dell'azienda,
+contiene dati storici con ampio orizzonte temporale,
+con dati usualmente aggregati (indicatori),
+fuori linea (non aggiornata in tempo reale),
+per es aggiornata ogni 24 ore,
+non sincrono ma sganciato rispetto all'operativita'
+dei sistemi informativi operativi,
+di solito separata rispetto a erp e crm.
+
+- 'integrata',
+i dati arrivano da varie sorgenti informative,
+es di sorgente inform e' un data base o anche un foglio
+excel con dati di budget,
+un file pdf con dati di mercato in cui si colloca l'azienda,
+ciascun dato proviene da almeno una fonte ma anche piu' fonti,
+lo stesso dato puo' essere rappresentato in maniera un po'
+diversa in diverse fonti, es le codifiche dei prodotti
+sono diverse a tokyo o a milano, per motivi legali,
+il prezzo puo' essere diverso, ci sono eterogeneita',
+che vanno riconciliate nel dw,
+eterogeneita' nei nomi con diverse assonanze per motivi commerciali,
+a liv di struttura la scheda prodotto ha degli attributi differenti
+da quelli italiani,
+differenze di codifica,
+nel dw devo conoscere il mapping tra i due codici e sceglierne uno,
+possiamo avere dati legati alla difettosita', che richiedono
+operazioni di cleaning,
+
+i data warehouse sono dati di basi con dati storici,
+l'obiettivo nei siosarebbe di mantenere i dati correnti,
+la giacenza attuale del magazzino, nei sistemi inform operazionali
+ci si interessa al dato recente,
+nel dw house ci si interessa alla variazione dei dati negli anni,
+la copertura e' piu' ampia, perche' interessa il trend,
+le serie temporali, l'esplorazione di fenomeni negli ultimi anni,
+non solo rispetto al presente.
+Il mod erp del magazzino registra la giacenza attuale,
+il dw descrive l'andamento delle scorte negli ultimi 3 anni...
+Gli ob sono diversi tra sio e sid.
+
+Si parla di dati aggregati (anche per i data mart)
+lo scopo e' fare analisi di dati,
+non interessa chi ha fatto un particolare ordine
+ma quanti clienti hanno comprato un particolare prodotto
+o quanti guasti ci sono stati, somme, medie, minimi, massimi.
+Le op di aggregazione sono fondamentali.
+
+Il dw e' fuori linea, sganciato, non e' continuo
+ma e' costituito da programmi eseguiti con un timer
+che suona a ogni mezzanotte (quando c'e' il minimo carico di lavoro),
+allora l'op di disturbo viene fatta quando l'azienda non sta usando
+il sio, l'erp, il crm...,
+le op su dw sono cadenzate, le op di etl sono cadenzate,
+quello e' il momento in cui si aggiorna il data warehouse.
+
+Nelle bdd operazionali si inseriscono pochi dati alla volta
+di piccola dimensione, nei dw ci sono op di accesso,
+trasformazione e caricamento su grosse moli di dati,
+e le op di accesso e interrogazione al fine di produrre
+report sono diurne (quando il dirigente lo chiede, durante
+ore di ufficio), mentre quelle di etl, di refresh,
+sono notturne (momenti di basso carico dal pdv dell'organizzazione
+che usa il sistema).
+
+Il dw e' separato, ovvero gli indicatori non si calcolano a partire
+dalle basi di dati transazionali, non si fanno sugli erp,
+perche' costruire i data warehouse? Perche' non esiste
+un'unica base di dati operazionale che contiene tutti i dati di interesse,
+gli ambiti sono diversi ed e' il dw a integrarli,
+la bdd deve essere integrata,
+e nell'integrare vengono risolti i problemi di eterogeneita'
+dei dati (prezzi da euro a yen), richiedono interventi
+anche manuali.
+Occorre costruire la bdd separata, il dw,
+non e' possibile fare il etl in linea, richiede ore,
+i dati di interesse sono diversi tra bdd operative e dw,
+nei dw abbiamo dati aggregati,
+dovrei fare l'op di aggregazione ma puo' richiedere
+minuti, se la facessi sugli erp rallenterei il tutto,
+e dal pdv dell'utente, richiede organizzazioni
+a ipercubo,  a sella o a fiocco di neve non disponibili
+nelle basi di dati operazionali,
+avremmo un degrado di prestazioni se non ci fosse la separazione,
+se i motori di calcolo agissero sulla base di dati operazionale
+il sistema potrebbe sedersi. Con i dw i motori di calcolo
+non rallentano gli erp, ridondiamo i dati per evitare
+problemi prestazionali.
+
+Liv 0 delle sorgenti informative:
+ci interessano
+ -> basi di dati dei sistemi operazionali informativi operativi,
+ OLTP, crm, sio, che supportano la catena del valore,
+ a supporto di un insieme limitato di processi,
+ mentre il dw copre si' l'intera catena del valore,
+ -> sorgenti esterne, possono essere dati di budget
+ previsionali, non stanno sull'erp o crm (dove ci stanno
+ i dati a consuntivo, mentre budget sono dati a preventivo),
+ dati che descrivono la concorrenza nel mercato, info
+ non nelle basi di dati dei si operativi.
+
+Es concreto: caso rossetti,
+catena di supermercati,
+requisiti, problema di analisi,
+immaginiamo di dover creare un dw che supporti
+l'analisi,
+si cercano indicatori che misurino le vendite giornaliere,
+il dato di interesse,
+il liv di granularita' e' giornaliero, per punto di vendita
+e per articolo,
+in base a questo tipo di analisi le coordinate
+sono tre:
+ tempo
+ prodotto
+ punto vendita,
+i livelli di granularita' sono
+ saldo giornaliero
+ saldo per singolo codice prodotto
+ saldo per singolo punto vendita,
+
+risaliamo l'architettura dei livelli,
+partiamo dal liv delle fonti, delle basi di dati transaz,
+il primo livello contiene i dati elementari,
+l'erp (supermercato), registra gli scontrini,
+abbiamo i dati di eventi di transazioni,
+registrazioni di scontrini,
+dati anagrafici, codice prodotto,
+categ prodotti in ciascun punto vendita,
+uno scontrino e' fatto da una testata
+con n ... (pg 13) + data di emissione ...
+lo scontrino si puo' rappresentare con due classi:
+- testata dello scontrino
+- dettaglio scontrini,
+nella prima ci sono tutto cio' che non c'e' nelle righe,
+importo totale, modalita' pagamento...
+nel dettaglio ci sono le righe,
+numero scontrino, codice articolo,
+importo della riga dello scontrino,
+la quantita' della riga di quello scontrino,
+terza tabella con l'anagrafica di prodotto,
+riporta la descrizione attribuita a quell'articolo
+in quel punto vendita,
+salendo di un livello nell'architettura
+troviamo le procedure che leggono i dati e li trasformano
+e aggregano per generare un corrispondente
+schema a stella,
+ricavandone dati di venduto, per data e per negozio,
+procedure batch (programma attivato non dall'utente
+ma da una scadenza temporale),
+etl e' batch,
+lettura dei dati riferita alle tabelle + precertificazione
+dei dati (ovvero cleaning, op di pulizia dei dati,
+risoluzione di incongruenze, armonizzazione di codici,
+op di piccole trasformazioni sui dati per aumentarne la qualita',
+es gli indirizzi potrebbero avere formati diversi,
+il cap con separazione a virgola, a trattino...
+il cleaning fa si che gli indirizzi siano tutti scritti nello stesso
+formato seguendo una convenzione,
+risoluzione di errori di scrittura e digitazione,
+armonizzazione dei nomi di brand,
+risoluzione di doppioni nel modo piu' automatico possibile),
+segue la selezione dei dati di interesse,
+la selezione puo' riguardare anche il tempo (es solo ultimo mese),
+creazione dei totali periodici (aggregazione),
+liv di trasformazione, legge i dati dalle fonti,
+li trasforma e aggiorna il data warehouse,
+nel nostro caso e' il dettaglio degli scontrini,
+portati nel dw come dati aggregati,
+nel dw ci sara' una tabella che descrive gli scontrini
+per numero dipunti vendita, numero di articoli, quantita' totale venduta,
+importo, numero scontrini.
+
+Il dw cosa contiene?
+fornisce input al liv 4 (delle applicazioni, usato dai dirigenti),
+puo' essere integrato da dati provenienti dal liv 4,
+es il dirigente fa una simulazione e cambia il dato di budget
+che viene reimmesso nel dw, sovrascrizione.
+
+Il dw dal pdv tecnologico e' ROLAP, base di dati relazionale,
+usa la tecnologia delle basi di dati relazionali (insieme di tabelle),
+strutturata a stella o fiocco di neve (es tabella full mart,
+vendita per negozio, vendite negozio, coordinate tempo, prodotto,
+cliente, negozio di vendita..),
+gli insiemi di tabelle si strutturano
+a stella..
+
+le linee tra tabella dei fatti e prodotto
+indicano che una vendita rappresentata da una riga
+e' relativa a un prodotto, una vendita e' relativa a un istante
+temporale, a uno store, a un customer, rapporto tra valore
+dell'indicatore e coordinate,
+vincoli di integrita' referenziale,
+cio' che misuro e le sue coordinate.
+
+i dati del dw sono rappresentati con uno schema
+dove abbiamo 4 tabelle, una dei fatti e tre dimensionali,
+quella dei fatti contiene le vendite a valore, quantita',
+num scontrini per unita' di tempo, prodotto e punto vendita,
+l'unita' di tempo e' il giorno, di prodotto e' il codice,
+la tabella delle vendite contiene i fatti e la chiave multipla
+(coordinate tempo,prod,punto vendita),
+la tabella chiave puo' essere collegata a piu' tabelle fatti,
+es tab fati vendita, tab fatti giacenze, la tabella dimensionale
+tempo puo' essere collegata a entrambe.
+
+Time id (etichetta l'istante temporale minimo),
+numera le date sulle quali voglio condurre le analisi,
+time id 367,
+
+i nomi sono le colonne, time id data giorno mese anno,
+ultimo giorno del mese, spesso si fanno op particolari
+e quindi puo' essere interessante fare analisi specifiche
+sull'ultimo giorno del mese,
+oppure un giorno della settimana speciale tipo mercoledi' sconto 10%,
+mi interessa poi analizzare le vendite del mercoledi',
+
+a fiocco di neve significa che alcune dimensioni sono rappresentate
+con due o tre tabelle, es tabella del tempo e settimane/mesi,
+costruendo le gerarchie delle chiavi si da' origine a una struttura
+a fiocco di neve.
+
+MOLAP -> ipercubo modellato direttamente,
+ROLAP -> dati rappresentati in relazioni o tabelle,
+base di dati relazionale che rappresenta i dati con insieme di tabelle,
+puo' essere organizzato a stella e simulare un ipercubo (# dimensioni =
+# tabelle attorno a quella dei fatti),
+HOLAP, hybrid, alcuni datamart sono con schemi a stella e altri
+come ipercubo direttamente.
+
+I data mart, dato un data warehouse, potrebbero essere sottoinsiemi
+del data warehouse, es ogni datamart si focalizza su uno dei tre
+attributi della tabella dei fatti,
+dm delle vendite a quantita', dm del numero degli scontrini,
+dm delle vendite a valore,
+sottoinsieme non si intende solo su un singolo indicatore
+ma per es il datamart contiene un sottoinsieme
+del tempo,
+dei negozi,
+dei prodotti rispetto a quello che contiene il dw,
+le dimensioni sono piu' compatte,
+es dw lombardia, veneto, data mart solo veneto e solo particolare prodotto,
+strumenti per rendere dati come tabelle,
+quando si passa dal multidimensionale al tabellare
+si perdono alcune dimensioni,
+tecnologia dss, analisi del presente mediante metafore grafiche dinamiche
+con presenza di tool che consentano di fare previsioni,
+tool executive information systems, cruscotti grafici,
+con interattivita' piu' bassa per i dss,
+pensata per dirigenti senior meno informatici;
+strumenti riconducibili alla business intelligence (tutti quelli
+visti finora lo sono, ma ci sono quelli evoluti),
+motori di data mining, sw che analizzano i dati nel dw
+e scoprono pattern nascosti, associazioni inattese
+tra prodotti venduti, algoritmi su base statistica
+che scoprono informazione rilevante e nascosta.
+
+Nei data mart e data warehouse gli indicatori
+sono rappresentati come ipercubi,
+dall'ipercubo si effettuano op di trasformazioni (olap)
+al fine di modificare il modo in cui si vedono i dati,
+op che fanno vedere gli stessi dati in modo diverso,
+cambi di prospettiva (nel liv 4 dell'architettura),
+
+operazioni OLAP,
+slice & dice,
+selezionano e proiettano le info,
+roll up -> disaggregano i dati,
+passare a una visualizzazione per regione,
+per intero anno, tenendo ferme le cat di prodotto,
+aggregazione di luogo e tempo, vedere il volume
+di vendita cambiando la granularita'
+drill down, disaggrega i dati,
+passo a un vedere i dati di venduto per giorno,
+per negozio, imponendo una restrizione in ogni
+regione, limitando il contesto di visualizzzione,
+il pivot e' un riorientamento del cubo,
+se il cubo lo vedo con il tempo su x, il luogo su y e l'articolo su z,
+faccio uno scambio di coordinate.
+
+es slice & dice ->
+restrizione dello scope,
+dice = ricavare un sottocubo,
+
