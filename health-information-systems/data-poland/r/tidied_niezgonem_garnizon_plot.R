@@ -34,6 +34,10 @@ pred <- zg %>% spread_predictions(pred_warz,
                                   pred_opol, 
                                   pred_pozn)
 
+#### HOW TO TRANSLATE THE LINE 
+## pred$pred_warz <- pred$pred_warz - pred$pred_warz[1]
+####
+
 plot <- plot + 
   pred %>% geom_line(mapping = aes(x = Year, y = pred_warz), colour = "red")      +
   pred %>% geom_line(mapping = aes(x = Year, y = pred_kato), colour = "blue")     +
