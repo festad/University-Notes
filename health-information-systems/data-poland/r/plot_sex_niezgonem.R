@@ -16,7 +16,8 @@ pred <- zg %>% spread_predictions(pred_m, pred_f)
 
 plot <- plot + 
   pred %>% geom_line(mapping = aes(x = Year, y = pred_f), colour = "red") +
-  pred %>% geom_line(mapping = aes(x = Year, y = pred_m), colour = "blue")
+  pred %>% geom_line(mapping = aes(x = Year, y = pred_m), colour = "blue") +
+  scale_x_continuous(breaks = zg$Year)
 
 plot <- plot + labs(x = "Years",
                     y = "Attempted suicides",

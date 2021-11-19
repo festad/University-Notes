@@ -38,7 +38,8 @@ plot <- plot +
   pred %>% geom_line(mapping = aes(x = Year, y = pred_kato), colour = "blue")       +
   pred %>% geom_line(mapping = aes(x = Year, y = pred_krak), colour = "green")      +
   pred %>% geom_line(mapping = aes(x = Year, y = pred_opol), colour = "blueviolet") +
-  pred %>% geom_line(mapping = aes(x = Year, y = pred_pozn), colour = "orange")
+  pred %>% geom_line(mapping = aes(x = Year, y = pred_pozn), colour = "orange")     +
+  scale_x_continuous(breaks = zg$Year)
 
 plot <- plot + labs(x = "Years",
                     y = "Fatal suicides (%)",

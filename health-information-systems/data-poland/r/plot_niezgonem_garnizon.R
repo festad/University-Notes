@@ -4,7 +4,7 @@ library(modelr)
 
 zg <- read_csv("tidy_niezgonem-cities.csv") %>% 
   select(Year, Garnizon, Suicides)       %>% 
-  filter(Year >= 2013)                   %>%
+  filter(Year >= 2001)                   %>%
   filter(Garnizon == "KSP Warszawa" | Garnizon == "KWP Katowice" |
            Garnizon == "KWP Kraków" | Garnizon == "KWP Opole" |
            Garnizon == "KWP Poznań")
@@ -43,7 +43,9 @@ plot <- plot +
   pred %>% geom_line(mapping = aes(x = Year, y = pred_kato), colour = "blue")     +
   pred %>% geom_line(mapping = aes(x = Year, y = pred_krak), colour = "green")    +
   pred %>% geom_line(mapping = aes(x = Year, y = pred_opol), colour = "blueviolet") +
-  pred %>% geom_line(mapping = aes(x = Year, y = pred_pozn), colour = "orange")
+  pred %>% geom_line(mapping = aes(x = Year, y = pred_pozn), colour = "orange") +
+  scale_x_continuous(breaks = zg$Year)
+  
 
 plot <- plot + labs(x = "Years",
                     y = "Attempted suicides",
