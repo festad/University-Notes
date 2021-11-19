@@ -837,3 +837,36 @@ interventi per problemi di ricezione
 valutazione clienti su servizio di installazione
   metrica:
     media dei voti dei clienti -> [0,10] come unita' di misura
+
+valutazioni clienti su istruzioni
+ricevute dal tecnico
+  metrica:
+    giudizio
+  unita' di misura:
+    [utile, poco utile, inutile]
+
+Ritardi:
+  metrica:
+    #inst_ritardo / #installazioni_fatte * 100
+
+Entita' dei ritardi:
+  metrica:
+    (somma giorni di ritardo)/(somma totale giorni destinati
+      ad effettuare le installazioni) * 100 -> %
+    ...oppure...
+    (somma giorni di ritardo) / #installazioni in ritardo -> orario
+
+tempo medio di installazione:
+  metrica:
+    somma durata delle installazioni / #installazioni -> ora, h
+
+installazioni riuscite:
+  metrica:
+    #installazioni riuscite/#installazioni * 100 -> %
+
+tasso evasione richieste:
+  metrica:
+    #richieste_installazione_non_evase/#richieste_installazione * 100
+    sulla totalita' delle installazioni, quante non ne ho evase?
+    
+    
