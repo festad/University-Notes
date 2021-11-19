@@ -678,3 +678,8 @@ un colloquio determina un operatore? si,
 il rapporto e' segmentabile
 cliente non e' segmentabile,
 canale di vendita, colloquio e min di colloquio sono attribuibili
+
+
+-----------------------
+ESERCIZIO TELEDIGITALE
+-----------------------
