@@ -464,3 +464,409 @@ tasso di abbandoni (%) |  | abbandoni rilevati dal PABX #
                             teleconate in entrata #
 
 >>>>>>> rplot
+
+-------------
+19 11 2021
+-------------
+
+posti vendita ~ scorte di materiali (rientrano nella categoria)
+
+indicatori di costo unitario ->
+  personale / numero di output = personale / # biglietti,
+  quanto spende mediamente un cliente per avere un biglietto
+
+indicatori di produttivita
+
+indicatori di utilizzo -> addetti che tengono colloqui,
+  si cronometra la durata,
+  durata colloqui / presenza personale
+
+# biglietti venduti / # posti messi in vendita
+% risorsa utilizzata = (sopra)
+numero assoluto di reclami
+reclami in controvalore -> indicatore di qualita'
+un reclamo si riferisce a un biglietto,
+i reclami in controvalore sono i reclami in numero per il prezzo
+del biglietto corrispondente
+
+indicatori di tempi di servizio / servizio
+durata dei colloqui,
+tempo di servizio in ore di colloquio coi clienti
+indicatori di servizio -> misurano la percentuale di servizio,
+non un tempo ma la perc di colloqui conclusi positivamente con
+"si, compro il biglietto".
+Non il 100% dei colloqui si conclude con una vendita.
+Altra informazione: abbandoni,
+riagganciare il telefono prima della risposta -> gli abbandoni
+vengono registrati, e' possibile sapere il numero di abbandoni
+e le telefonate totali ricevute,
+rapporto abbandoni / telefonate in entrata, e' un
+Indicatore di "non servizio",
+tempo, responsabilita' cliente ci sono sempre,
+una dimensione e' associabile a un indicatore se ... 08m:11s
+i biglietti hanno un timestamp,
+tutte le info hanno una coordinata temporale,
+possono essere riferite a una data.
+Dimensione delle responsabilita' -> consente di segmentare e valorizzare
+gli indicatori rispetto a vari elementi dimensionali che troviamo
+nell'organizzazione.
+L'elemento minimo della responsabilita' e' il singolo addetto,
+se c'e' un singolo indicatore che possiamo applicare al singolo addetto,
+gli addetti poi possono raggrupparsi in teams.
+
+Il cliente ha come granularita' proprio il singolo cliente,
+ci sono kpi che posso valutare sul singolo cliente o su classi piu' ampie
+di clienti.
+Per silvercard so chi e' il cliente che acquista quindi posso fare
+valutazioni sul singolo cliente.
+La dimensione processo (es assemblaggio dell'auto) puo' avere
+dei ritardi che possono essere misurati fase per fase.
+Tutti i processi erogano prodotti o servizi, quindi un'altra
+misura e' il singolo prodotto o il singolo articolo,
+se un processo eroga servizi la granularita' puo' essere la singola
+tipologia di servizio.
+Si possono segmentare indicatori sui singoli tipi di servizio.
+Per un volo posso valutare il fatturato generato, % biglietti venduti,
+% reclami..
+Indicatori ad hoc:
+- canale di vendita (agenzie call center),
+confronto tra i canali, agenzia vs call center,
+confronto tra i reclami.
+Possiamo avere ulteriori dimensioni che emergono da richieste specifiche,
+nel caso silvercard c'e' "i dirigenti della compagnia sono interessati a...
+aspetti critici, costi e efficienza del processo, soddisfazione del cliente"
++ ulteriori info sulle dimensioni (confronto prestazioni nel caso di
+call center vs agenzia),
+quando si vogliono fare confronti si prevede una dim apposita,
+se voglio confrontare le prestazioni call center vs agenzia
+devo avere la dim canale di vendita, dove l'elemento minimo e'
+il singolo canale e in questo  caso ne abbiamo due.
+
+Le valutazioni le vorremmo anche in base alla distribuzione geografica,
+fatturato e soddisfazione cliente  vanno valorizzati in base
+alla distr geogragica, oltre a avere i singoli clienti
+si deve riuscire a raggruppare i clienti per nazionalita',
+citta' in cui risiedono,...
+indicatori suddivisi su singoli clienti e su aree di nazionalita'.
+Frasetta "vogliamo classificare per aspetto geografico".
+Le valutazioni vanno fatte anche per giorno della settimana,
+periodo dell'anno (tempo),
+facciamo le valutazioni sulla singola data (gerarchia calendario standard)
+e poi le raggruppiamo.
+Volendo valutare rispetto a giorno della settimana, feriale, festivo,
+e valutare prestazioni ~ periodo dell'anno, significa che le vendite
+possono avere un picco in positivo a natale e negativo a novembre,
+periodi alta vs bassa stagione,
+=> raggruppare le date anche per feriale/festivo, alta/bassa stagionalita'
+con rif a settimana o periodo annuale.
+Posso suddividere gli indicatori di fatturato,
+vedere quanto e' stato generato dalle date feriali o festive.
+
+Completiamo la tabellina delle dimensioni:
+
+ - tempo (c'e' sempre)
+ la singola data e' il liv minimo di zoom
+ gerarchie: gerarchia calendario
+ feriale vs festivo
+ stagionalita' annuale
+ gerarchie: calendario, feriale/festivo, stagionalita' annuale
+
+ - responsabilita'
+  elemento minimo: singolo addetto
+  gerarchie: organizzazione,
+  sede, principale/agenzia, secondaria/call center
+
+ - cliente
+  el minimo: singolo cliente
+  gerarchie: distribuzione geografica, nazionalita'
+
+ - prodotto
+  el minimo: singolo volo
+  gerarchie: nazionali/internazionali, tratta
+
+ - canale di vendita:
+  sinoglo canale: agenzia/call center
+  gerarchia: piatta, ho solo due elementi, -
+
+abbiamo 4 dimensioni standard e una ad hoc,
+l'ultima e' quella ad hoc,
+
+
+tempo | responsabilita' | cliente | prodotto (volo) | canale di vendita
+
+parte finale dell'esercizio: segmentazione,
+ci chiediamo se il particolare indicatore puo' essere calcolato
+sulla dimensione delle responsabilita', prodotto, canale di vendita..
+es il costo per biglietto emesso puo' essere calcolato in maniera
+diversa per i due canali di vendita? se vero metto si, senno' niente.
+Per i singoli addetti, e' possibile calcolare il costo unitario
+per biglietto emesso su quell'addetto? No, suona male,
+per addetto si puo' calcolare il costo unitario per...
+per volo, si puo' calcolare il costo per ogni volo?
+
+ogni indicatore e' segmentabile rispetto al tempo.
+Indicatore costo unitario per costo venduto:
+prendiamo la metrica, formata da tre parametri
+costo operatore / # biglietti venduti
+costo operatore * operatore / posti venduti
+
+come decidiamo la segmentabilita'?
+rispetto al prodotto, l'el min primo e' l'euro pagato
+che e' associabile univocamente al metro del volo?
+un euro pagato in salario e' un euro a un dipendente,
+che puo' coprire 5 min di lavoro,
+ma un lavoratore in 5 min non si occupa solo di un particolare volo,
+puo' star facendo colloqui o altro,
+un euro di salario non e' associabile univocamente a un volo.
+
+Un operatore non si occupa di vendere voli univocamente,
+un volo e' catalogato con un'agenzia ma non un lavoratore.
+
+Un posto venduto individua univocamente un volo? Si'.
+
+se c'e' almeno un no si dice no,
+un singolo operatore e' riconducibile univocamente a un cliente? no!
+Un posto venduto determina un cliente? si,
+un operatore determina un operatore? si
+un posto venduto determina un operatore? si, per il colloquio
+di vendita.
+se sono tutti si in verticale su una colonna allora
+l'indicatore posto venduto e' segmentabile per dim responsa
+
+L'utilizzo degli operatori
+un minuto di colloqui non determina il volo
+un colloquio e' riconducibile a un cliente? non sempre,
+se il cliente se ne va dopo 20 min di chiacchiere i suoi
+dati non rimangono,
+un min di colloquio identifica un operatore? Si'.
+un minuto di presenza determina un cliente? no
+un min di presenza determina un lavoratore? si
+
+andando per righe si fa' piu' veloce
+
+quali sono gli indicatori segmentabili?
+quelli con si'
+
+Saturazione posti venduti"
+posti venduti e posti disponibili,
+parametri discreti,
+un posto venduto e' il metro minimo di prodotto,
+determina un operatore? si
+determina un cliente? si
+determina il canale? si
+
+il posto non ancora venduto non determina il cliente,
+determina il volo, non determina il canale di vendita,
+
+il volo determina il lavoratore??
+
+il volo determina la repsonsabilita'?
+
+reclami: in percentuale,
+segmentazione semplice, dati discreti,
+un reclamo e' a valle di un biglietto,
+quindi determina univocamente un volo, e' segmentabile rispetto a prodotto,
+un biglietto venduto e' attribuibile a un addetto,
+segmentazione possibile,
+un reclamo e' non anonimo, e' attribuibile a un cliente,
+biglietto e reclamo sono riconducibili al canale di vendita.
+
+altro esempio, nel continuo.
+minuto speso in colloquio /
+determina un volo? no,
+un colloquio determina un operatore? si,
+il rapporto e' segmentabile
+cliente non e' segmentabile,
+canale di vendita, colloquio e min di colloquio sono attribuibili
+
+
+-----------------------
+ESERCIZIO TELEDIGITALE
+-----------------------
+
+input   -> richieste di installazione,
+           richieste di intervento
+	   richieste di valutazione
+risorse ->
+output  -> 
+
+questionari non anonimi
+
+individuare almeno 10 kpi
+gli indicatori si costruiscono solo se sono calcolabili
+
+dimensioni di interesse, gerarchie...
+e' di interesse capire le info di tempistiche e qualita',
+i clienti su distribuzione geografica e i tipi di ...
+
+piramide
+-> centro: volumi di i, volumi di o, risorse umane,
+   impianti, scorte, altre risorse,
+   (dove c'e' un magazzino c'e' scorte, indicatore di rotazione
+   delle scorte)
+
+  -> risorse:
+  
+    -> tecnici (misurabili in euro, numero di tecnici,
+      in salario (euro), in ore, tempo speso per installare ricevitore
+
+    -> ricevitore (misurabile in numero, no euro perche' non e'
+      ancora in un contesto di installazione, ha un valore
+      quando entra a far parte del contesto di un ordine
+      o installazione, non prima)
+      
+  -> volumi input output
+  
+    -> richieste di installazione (misurabili in numero)
+    
+    -> installazioni (misurabili in numero ma anche quantificazione
+      economica perche' contengono il costo del tecnico
+      e del ricevitore vero e proprio)
+      
+    -> valutazioni: (misurabili in numero, quanti giudizi,
+      non sono come i tecnici che hanno anche numero di ore
+      e ritorno economico)
+
+    -> restituzioni (registrate con riferimento al tipo
+      di ricevitore, il tecnico che aveva installato,
+      misurabile in numero e euro)
+      
+    -> interventi per problemi di ricezione (numero e euro) 
+
+abbiamo visto i kpi generali,
+vediamo ora i kpi competitivi, lato del dollaro
+
+-> costi ed efficienza
+
+% -> costo unitario
+%   -> costo unitario input
+%   -> costo unitario output (costo)
+
+ -> costo unitario per installazione (all'azienda),
+   cio' che spende l'azienda,
+   costo gestionale vs costo monetario (di installazione
+   per il cliente, in fattura)
+ -> costo monitario al cliente (completamente diverso
+   dal precedente), cio' che un cliente spende
+
+ -> produttivita' dei tecnici: (un tecnico in media esegue
+   n installazioni),
+ -> produttivita' dei tecnici nel tempo: (quanto tempo
+   impiega un tecnico per eseguire un'installazione),
+   posso calcolare la saturazione,
+   ma nel testo non si tiene conto sia delle ore dedicate
+   alle installazioni sia a quelle dedicate a altro come
+   si faceva con silvercard
+
+ -> produttivita' del magazzino = rotazione delle scorte,
+   qual e' la ratio tra ricevitori installati e ricevitori disponibili,
+   indicatore chiamato rotazione (produttivita') delle scorte di magazzino
+
+ -> la saturazione delle risorse umane non e' determinabile,
+   non ho evidenza neanche degli spazi di magazzino,
+   so che ci sono n scorte di tipok ma non ho la capacita',
+
+
+-> indicatori di qualita'
+
+  -> indicatori di conformita'
+    -> interna
+    -> esterna
+
+abbiamo le restituzioni, i ricevitori resi,
+
+  -> ricevitori resi (quanti sono i resi sul totale, %))
+  -> interventi per problemi di ricezione (%)
+%  -> soddisfazione del cliente (i tre questionari),
+  -> valutazione clienti su servizio
+  -> valutazione clienti su funzionalita' ricevitore
+  -> valutazione clienti su istruzioni ricevute dal tecnico
+
+
+-> indicatori dei tempi di servizi / servizi
+  -> quanto sono in ritardo
+  -> ritardo medio generato dalle installazioni
+   (distinzione tra entita' dei ritardi e ritardo
+   discreto, cioe' quante installazioni generano
+   ritardo e quanto duravano i ritardi)
+
+  -> ritardi (in numero e percentuale, # e %),
+  -> installazioni riuscite (%)
+  -> tempo medio di installazione (ore)
+  -> tasso di evasione, quanto in media un'installazione ha richiesto,
+    c'erano richieste ma non tutte venivano evase,
+
+---------------
+
+costo unitario per installazione (all'azienda)
+  metrica: costo dei tecnici / #installazioni
+          (costo orario tecnico * #ore * #tecnici / #installazioni)
+	  essendo un costo metto il dollaro o l'euro,
+	  per far capire che l'indicatore e' un costo
+	  
+costo monetario al cliente:
+  metrica: costo (specificabile per installazioni
+           costo installazioni / #installazioni
+	   (costo manodopera + costo ricevitore)/# installazioni
+       (cost_manodop_cliente * #ore + cost_ricevitore * #ricevitori)/#install
+
+produttivita' dei tecnici, installazioni per tecnico,
+  metrica:
+    #installazioni/#tecnici,
+
+produttivita' dei tecnici nel tempo (ore)
+  metrica:
+    #installazioni / ore di installazione dei tecnici,
+     e' una frazione oraria, #/ora
+
+rotazione delle scorte di magazzino
+  metrica:
+    #ricev_installed/#ricev_disp * 100 -> %
+
+----- esauriti i costi e efficienza
+      costruiamo le formule degli altri------------
+
+ricevitori e resi:
+  metrica:
+    #ricev_restituiti / #installazioni_fatte * 100 -> %
+
+interventi per problemi di ricezione
+  metrica:
+    #interventi_prob_ricez / #installazioni_fatte * 100
+
+valutazione clienti su servizio di installazione
+  metrica:
+    media dei voti dei clienti -> [0,10] come unita' di misura
+
+valutazioni clienti su istruzioni
+ricevute dal tecnico
+  metrica:
+    giudizio
+  unita' di misura:
+    [utile, poco utile, inutile]
+
+Ritardi:
+  metrica:
+    #inst_ritardo / #installazioni_fatte * 100
+
+Entita' dei ritardi:
+  metrica:
+    (somma giorni di ritardo)/(somma totale giorni destinati
+      ad effettuare le installazioni) * 100 -> %
+    ...oppure...
+    (somma giorni di ritardo) / #installazioni in ritardo -> orario
+
+tempo medio di installazione:
+  metrica:
+    somma durata delle installazioni / #installazioni -> ora, h
+
+installazioni riuscite:
+  metrica:
+    #installazioni riuscite/#installazioni * 100 -> %
+
+tasso evasione richieste:
+  metrica:
+    #richieste_installazione_non_evase/#richieste_installazione * 100
+    sulla totalita' delle installazioni, quante non ne ho evase?
+    
+    
