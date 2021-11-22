@@ -223,3 +223,13 @@ trova una g chiamata retta di regressione,
 a partire dal set di dati calcoliamo la retta di regressione,
 
 
+---------------------
+Analisi dell'errore 
+dell'interpolazione
+composita lineare
+---------------------
+
+
+----------------------
+Formule di quadratura
+----------------------
