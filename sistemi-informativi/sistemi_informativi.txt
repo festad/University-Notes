@@ -1788,3 +1788,292 @@ es slice & dice ->
 restrizione dello scope,
 dice = ricavare un sottocubo,
 
+BUSINESS INTELLIGENCE
+
+incorpora e estende i sistemi informativi classici,
+incorpora dati nuovi,
+incorpora strumenti olap classici e tecniche di data mining avanzate,
+il data mining viene aggiunto all'analisi olap (sul presente e passato)
+di modo da prevedere il futuro.
+Definizione di business intelligence +
+Parte tecnologica (strutture dati e algoritmi) +
+[ Caso di studio ]
+Nuove tipologie di dati, a volte non ci sono gli
+strumenti tecnologici per gestirli tutti,
+ erp transactions
+ web click stream
+ location tracking
+ social media
+ tweet analysis
+ dati di acquisto
+ customer profiles
+
+La BI (business intelligence) tenta di sfruttare tutti
+questi dati.
+
+E' sempre piu' economico acquisire dati e memorizzarli.
+
+Sfide e opportunita':
+ dati caratterizzati da
+   velocita
+   volume
+   varieta'
+     non solo provenienti dagli erp ma da sorgenti diverse,
+     come i dati streaming, con diversi formati
+     dati che richiedono tecniche specializzate,
+     cio' complica lo scenario, potrebbero essere
+     necessari strumenti ad hoc per ogni formato,
+
+questi tre fattori mettono in crisi i metodi tradizionali
+di analisi dei dati.
+
+Utilizzare dati da fonti esterne offre opportunita' nuove
+come:
+  sentiment analysis del brand,
+  mps = analisi dell'opinione dei clienti sul prodotto
+  fraud detection (rilevamento in automatico di frodi),
+  limitare il rischio che i clienti abbandonino il brand,
+  tracking degli asset in modo puntuale dei prodotti
+   internamente e esternamente all'organizzazione,
+  tracking dei beni fisici,
+  product recomendation <- analisi del feedback e click stream,
+  tracking degli acquisti dei clienti
+
+aumenta il divario con gli utilizzatori
+che preferiscono le app, metafore informatiche piu' semplici
+che mal si coniugano con la complessita' dei dati che si vogliono
+ricavare.
+Piu' la metafora da offrire agli utenti e' semplice maggiore
+deve essere la sofisticazione dietro le quinte.
+
+def: insiemie di tecnologie e processi che aiutano l'azienda
+a trasformare il patrimonio informativo in conoscenza
+utile ai processi decisionali.
+La bi e' utile anche alla base della piramide di anthony,
+per esempio per la pianificazione della produzione con macchinari,
+es i dati dicono che la macchina reggera' non piu' di una sett. se usata
+in questo modo..
+La bi non e' solo tecnologia ma si articola su 3 piani:
+competenze, organizzazione, tecnologie.
+Trasformazione dei dati in conoscenza utile per prendere decisioni,
+
+richieste:
+saper effettuare richieste sql,
+saper costruire dataware house
+saper estrarre informazioni dalle dataware house (data mining),
+saper creare sistemi di supporto alle decisioni che simulano
+ scenari futuri,
+ le simulazioni inferiscono sul futuro,
+
+data visualization -> dashboards, sono console grafiche per analizzare
+indicatori, segmentarli in maniera grafica, op di roll up, drill down,
+mostrando
+
+La bi e' utile per le organizzazioni perche' prendere decisioni
+su dati oggettivi e' un requisito per il successo nel business.
+
+Nuova piramide (pg 2),
+parte dalla mission, il contesto organizzativo,
+la bi e' utile a liv strategico dove si definiscono
+gli obiettivi generali dell'azienda,
+e' utile per decision making, la fase tattica,
+dove si fanno analisi sullo stato di avanzamento di progetti e attivita',
+a un livello piu' focalizzato su prodotti e processi,
+es sono in ritardo sulla produzione di lotti -> devo scegliere
+cosa fare per colmare il ritardo,
+oppure decisioni sull'allocazione delle risorse, visto che c'e'
+una concorrenza anche interna all'azienda, dove guadagno se
+assegno determinate persone a determinati uffici?
+A liv di implementazione,
+project management -> gestione di un particolare progetto riguardante
+l'organizzazione.
+In alto alla piramide abbiamo la visione ampia e scendendo ci scostiamo
+verso l'azione, il liv dei processi operativi,
+ciascun livello deve prendere decisioni,
+la bi e' utile a tutti i livelli, non solo strategico.
+I dati sono sfruttati o sfruttabili o sono solo tombe di dati?
+
+La bi e' utile per tutti e tre i tipi di processi,
+e a tutti i livelli dell'organizzazione.
+
+L'architettura BI,
+
+liv di dati
+processo di ETL
+struttura a ipercubo (business information warehouse), sono i datamart,
+strumenti olap + strumenti di data mining
+
+fonti | dwh | datamart | dashboards & hubs
+
+Aspetti cruciali:
+ampiezza, dati messi insieme da diverse fonti, interne e esterne
+ all'organizzazione
+profondita', se il management e' stato educato a usare
+ strumenti olap il fatto che faccia arrivare la bi a produzione/magazzino
+ e' una sfida, perche' si devono poi creare nuove interfacce grafiche per gli
+ utenti non esperti di informatica,
+completezza: piattaforma integrata e capillare nei confronti dell'organizzazione,
+e' previsionale a differenza dei decision support systems,
+non si liimta a usare gli indicatori ma estrae informazioni
+non necessariamente preconfezionate dall'utente e cerca di prevedere
+scenari futuri.
+La bi serve per estrarre conoscenza che diventa azione,
+questo avviene seguendo un ciclo (pg 12),
+partendo da un problema esistente (es sto perdendo clienti),
+metto in piedi un processo di kdd (estrazione di conoscenza
+dai dati, social, di vendita, della presenza sul territorio...),
+estraggo della conoscenza utile per formulare ipotesi sul fenomeno,
+uso la conoscenza e la strasformo in azione (es il sito web
+e' il problema, lo miglioro, oppure e' il servizio post vendita a
+essere scarso, quindi assumo personale..) poi a distanza
+di qualche mese rianalizzo i dati e i kpis e verifico che
+l'emorragia di vendita si sia fermata, quindi cambio la strategia
+e identifico nuove sfide o problemi da correggere,
+reidentifico un nuovo problema, lo analizzo,.. c'e' un continuo
+migliorare del modo di operare dell'azienda.
+
+Pg 15
+processo di estrazione della conoscenza (kdd knowledge descovery in database),
+richiede una serie di fasi, analisi di un problema, si estraggono info,
+si creano data warehouse e data mart, si estraggono info col data mining,
+si applicano strategie correttive, si analizzano i risultati,
+si modifica la strategia dell'azienda..
+richiede esperti di vari tipologie:
+ esperti di dominio (es l'analisi sul business non la fa un informatico),
+ data administrator
+ mining specialist (usano tecniche olap e di dm per estrarre info
+ dai dati che il data administrator ha reso disponibili),
+qualita' e predisposizione dei dati,
+lo specialista di mining fa da ponte, si fa dare i dati dal data administrator,
+applica il data mining e offre in dashboard i risultati al data scientist
+
+Slide 17:
+insiemi di tecniche, conservative e avanzate (a sx le tradizionali),
+a dx le avanzate e moderne,
+sull'altro asse, tecniche strategiche per l'organizzazione,
+tecniche di base: tecniche di accesso e gestione dei dati,
+sulle quali si basano le tecniche di reporting (olap), basate
+su indicatori, permettono di acquisire indicatori aggregati,
+segmentarli, con riferimento agli stati presente e passato,
+poi ci sono le tecniche piu' avanzate, forecasting, predicting model,
+cercano di rispondere al futuro, cosa accadra' fra 6 mesi
+alle vendite di un prodotto? sono tecniche predittive che si basano
+sul contenuto del dataware house,
+senza digitalizzazione queste tecniche fanno acqua..
+
+le tecniche bi non sono facili da applicare,
+dovrebbe essere una strategia generale e non una soluzione al problema
+specifico, non si applica al singolo processo.
+
+Analisi olap, fanno parte della bi, reportistica avanzata,
+cruscotti grafici, tecniche di data mining,
+strumenti previsionali.
+
+spostiamoci alla tecnologia....
+
+il processo di bi e' un processo di estrazione di conoscenza (kdd),
+e' un processo iterativo (produce un output usato dagli ingengeri
+per correggere gli algoritmi e focalizzare meglio il sistema),
+mette insieme arte (tecniche empiriche) e tecniche ingegneristiche,
+
+filiere, flussi a piu' dati (architetture),
+partire da sorgenti di dati,
+creare data ware house, estrarne data mart (tramite selezione),
+rappresentazione con ipercubi su cui si fanno business queries,
+
+fare business queries significa estrarre fette, tirar fuori tabelle,
+
+ruoli: analista di business (guarda i dati finali),
+progettista dei data warehouse,
+progettista dei dati che supportano i sistemi inf operativi,
+misure e indicatori (indicatore e' un termine business),
+cubi olap, contengono info aggregate,
+roll up, drill down, operazioni su ipercubi,
+altre operazioni sui cubi sono, anziche' query, utilizzare
+i dati per valorizzare i report interattivi,
+dove un informatico li ha gia' preimpostati e l'utente
+decide se guardare il report delle vendite (vendite,
+segmentazioni standard),
+target effettivo e scostamento.
+
+ogni report e' agganciato a un tema,
+si appoggia a un particolare data mart,
+il report offre una sintesi di navigazioni possibili
+per un cubo,
+
+il report e' limitato,
+e' agganciato a un tema, collegato a un data mart
+ed e' un sottoinsieme delle possibili navigazioni di quel
+datamart, inoltre e' interattivo,
+
+in alternativa a cubi olap,
+invece di estrarre data mart sui quali fare report
+interattivo l'alternativa e' estrarre dati
+dalle dataware house e applicare data mining,
+con i quali estrarre conoscenza insita nei dati
+mostrandola all'utente,
+conoscenza nuova che non era stata capita,
+inoltre si puo' fare previsione sul futuro.
+Le tecniche di datamining si applicano su informazione
+tabellare (prepared data), es fetta di un data mart,
+es vendite usate per addestrare un algoritmo di datamining
+per capire le vendite future,
+si estraggono modelli che consentono analisi previsionale,
+un altro tipo di conoscenza e' quella completamente nuova,
+che si estrae dai dati ma non era prevista in nessun indicatore,
+es conoscenza sul fatto che i clienti
+di un supermercato quando comprano a comprano spesso anche b e c,
+gli algoritmi di data mining fanno analisi statistica sugli
+scontrini e vedono che b e c sono spesso vicini a a,
+questo puo' portare a eventuali offerte programmate,
+spostamento fisico di prodotti.
+
+pg 32,
+e' necessario lasciare che l'info emerga dall'info grezza,
+analisi di trand, analisi esplorativa...
+
+
+processi di data mining !!
+ - tecniche di esplorazione automatica o scoperta
+ di dati presenti, sono tecniche (es tecnica di clustering)
+ che scoprono informazione finora nuova, che non era ipotizzata
+ nel dataware house,
+ es scoprire i clienti che sono simili e hanno maggiore
+ propensione all'acquisto di determinati prodotti,
+ profilare il cliente costruire classi per bersagliare
+ una particolare classe,
+ inizialmente vedo tanti punti che sono i clienti,
+ inizialmente non ho in mente se i clienti sono di 10 o 3 categorie
+ principali, e' l'algoritmo di clustering a scoprirlo
+ individuando nuvole di utenti che sono poi le classi,
+ profilazione di clienti,
+ tecniche di data mining per la profilazione di clienti tipicamente
+ sono il clustering,
+
+previsione e classificazione:
+la previsione puo' essere relativa alle vendite,
+l'algo osserva sulla base di dati storici di vendita e sulla base
+delle condizioni che gli si applicano in input fa delle
+previsioni sui prossimi 6 mesi, usando tecniche di regressione
+o reti neurali.
+Il contact center fa attivita' outbound, redemption
+significa rispondere positivamente a un'offerta,
+sulla base di una serie di esempi veri nel passato,
+l'algoritmo cerca di indovinare se il cliente aderira'
+o no alla campagna di vendita,
+sulla base del passato si tenta di capire se un cliente aderira',
+la classificazione suddivide i clienti in quelli che diranno si
+o che diranno no alla campagna, questo economizzera' il processo
+di contattamento dei clienti,
+previsione -> f:R->R
+
+algoritmi:
+alberi di decisione
+regole di associazione (usate per promozioni di acquisti combinati)
+
+gli algoritmi potrebbero essere razzisti
+
+CRM analytics,
+
+la raccomandazione riguarda molto i canali di contatto,
+i crm analitici
