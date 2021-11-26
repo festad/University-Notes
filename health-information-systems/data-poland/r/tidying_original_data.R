@@ -17,7 +17,7 @@ tidying <- function(tib) {
   tib <- tib %>% select(-(matches("nieustalona")))
   tib <- tib %>% filter(Garnizon == "KSP Warszawa" | Garnizon == "KWP Katowice" |
            Garnizon == "KWP Kraków" | Garnizon == "KWP Opole" |
-           Garnizon == "KWP Poznań")
+           Garnizon == "KWP Poznań" | Garnizon == "Polska")
   
   tib$Year <- as.integer(tib$Year)
   tib <- tib %>%gather(`0-6`:`85+`,key='Age', value='Suicides' )
@@ -47,3 +47,6 @@ zg1316 <- tidying1316(zg1316)
 zg1720 <- tidying1316(zg1720)
 
 zg <- zg9912 %>% add_row(zg1316) %>% add_row(zg1720)
+
+nie %>% write_csv("tidy_niezgonem-age-garnizon.csv")
+zg %>% write_csv("tidy_zgonem-age-garnizon.csv")
