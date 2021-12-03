@@ -2,7 +2,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 1999,KWP Wrocław,378,0-6,1,Attempted
 1999,KWP Bydgoszcz,263,0-6,0,Attempted
 1999,KWP Lublin,283,0-6,2,Attempted
-1999,KWP Gorzów Wielk.,194,0-6,1,Attempted
+1999,KWP Gorzów Wlkp.,194,0-6,1,Attempted
 1999,KWP Łódź,410,0-6,2,Attempted
 1999,KWP Kraków,302,0-6,1,Attempted
 1999,KWP Radom,403,0-6,0,Attempted
@@ -20,7 +20,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2000,KWP Wrocław,431,0-6,1,Attempted
 2000,KWP Bydgoszcz,262,0-6,0,Attempted
 2000,KWP Lublin,288,0-6,0,Attempted
-2000,KWP Gorzów Wielk.,178,0-6,0,Attempted
+2000,KWP Gorzów Wlkp.,178,0-6,0,Attempted
 2000,KWP Łódź,402,0-6,0,Attempted
 2000,KWP Kraków,545,0-6,0,Attempted
 2000,KWP Radom,439,0-6,0,Attempted
@@ -38,7 +38,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2001,KWP Wrocław,372,0-6,0,Attempted
 2001,KWP Bydgoszcz,268,0-6,0,Attempted
 2001,KWP Lublin,313,0-6,1,Attempted
-2001,KWP Gorzów Wielk.,246,0-6,1,Attempted
+2001,KWP Gorzów Wlkp.,246,0-6,1,Attempted
 2001,KWP Łódź,380,0-6,0,Attempted
 2001,KWP Kraków,591,0-6,0,Attempted
 2001,KWP Radom,464,0-6,0,Attempted
@@ -56,7 +56,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2002,KWP Wrocław,372,0-6,0,Attempted
 2002,KWP Bydgoszcz,233,0-6,0,Attempted
 2002,KWP Lublin,329,0-6,1,Attempted
-2002,KWP Gorzów Wielk.,243,0-6,0,Attempted
+2002,KWP Gorzów Wlkp.,243,0-6,0,Attempted
 2002,KWP Łódź,385,0-6,1,Attempted
 2002,KWP Kraków,640,0-6,0,Attempted
 2002,KWP Radom,393,0-6,0,Attempted
@@ -74,7 +74,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2003,KWP Wrocław,420,0-6,0,Attempted
 2003,KWP Bydgoszcz,199,0-6,0,Attempted
 2003,KWP Lublin,399,0-6,0,Attempted
-2003,KWP Gorzów Wielk.,180,0-6,0,Attempted
+2003,KWP Gorzów Wlkp.,180,0-6,0,Attempted
 2003,KWP Łódź,335,0-6,0,Attempted
 2003,KWP Kraków,481,0-6,0,Attempted
 2003,KWP Radom,336,0-6,0,Attempted
@@ -92,7 +92,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2004,KWP Wrocław,450,0-6,0,Attempted
 2004,KWP Bydgoszcz,361,0-6,0,Attempted
 2004,KWP Lublin,415,0-6,0,Attempted
-2004,KWP Gorzów Wielk.,211,0-6,0,Attempted
+2004,KWP Gorzów Wlkp.,211,0-6,0,Attempted
 2004,KWP Łódź,382,0-6,0,Attempted
 2004,KWP Kraków,510,0-6,0,Attempted
 2004,KWP Radom,336,0-6,0,Attempted
@@ -110,7 +110,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2005,KWP Wrocław,338,0-6,0,Attempted
 2005,KWP Bydgoszcz,327,0-6,0,Attempted
 2005,KWP Lublin,383,0-6,1,Attempted
-2005,KWP Gorzów Wielk.,191,0-6,0,Attempted
+2005,KWP Gorzów Wlkp.,191,0-6,0,Attempted
 2005,KWP Łódź,378,0-6,0,Attempted
 2005,KWP Kraków,471,0-6,0,Attempted
 2005,KWP Radom,364,0-6,0,Attempted
@@ -128,7 +128,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2006,KWP Wrocław,320,0-6,0,Attempted
 2006,KWP Bydgoszcz,251,0-6,0,Attempted
 2006,KWP Lublin,345,0-6,0,Attempted
-2006,KWP Gorzów Wielk.,223,0-6,0,Attempted
+2006,KWP Gorzów Wlkp.,223,0-6,0,Attempted
 2006,KWP Łódź,389,0-6,0,Attempted
 2006,KWP Kraków,386,0-6,0,Attempted
 2006,KWP Radom,312,0-6,0,Attempted
@@ -146,7 +146,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2007,KWP Wrocław,282,0-6,0,Attempted
 2007,KWP Bydgoszcz,251,0-6,0,Attempted
 2007,KWP Lublin,295,0-6,0,Attempted
-2007,KWP Gorzów Wielk.,190,0-6,0,Attempted
+2007,KWP Gorzów Wlkp.,190,0-6,0,Attempted
 2007,KWP Łódź,390,0-6,0,Attempted
 2007,KWP Kraków,337,0-6,0,Attempted
 2007,KWP Radom,301,0-6,0,Attempted
@@ -164,7 +164,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2008,KWP Wrocław,311,0-6,0,Attempted
 2008,KWP Bydgoszcz,323,0-6,0,Attempted
 2008,KWP Lublin,398,0-6,0,Attempted
-2008,KWP Gorzów Wielk.,201,0-6,0,Attempted
+2008,KWP Gorzów Wlkp.,201,0-6,0,Attempted
 2008,KWP Łódź,379,0-6,0,Attempted
 2008,KWP Kraków,369,0-6,0,Attempted
 2008,KWP Radom,487,0-6,0,Attempted
@@ -182,7 +182,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2009,KWP Wrocław,295,0-6,0,Attempted
 2009,KWP Bydgoszcz,333,0-6,0,Attempted
 2009,KWP Lublin,390,0-6,0,Attempted
-2009,KWP Gorzów Wielk.,285,0-6,0,Attempted
+2009,KWP Gorzów Wlkp.,285,0-6,0,Attempted
 2009,KWP Łódź,471,0-6,0,Attempted
 2009,KWP Kraków,463,0-6,0,Attempted
 2009,KWP Radom,452,0-6,0,Attempted
@@ -200,7 +200,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2010,KWP Wrocław,266,0-6,0,Attempted
 2010,KWP Bydgoszcz,291,0-6,0,Attempted
 2010,KWP Lublin,359,0-6,0,Attempted
-2010,KWP Gorzów Wielk.,183,0-6,0,Attempted
+2010,KWP Gorzów Wlkp.,183,0-6,0,Attempted
 2010,KWP Łódź,440,0-6,0,Attempted
 2010,KWP Kraków,467,0-6,0,Attempted
 2010,KWP Radom,416,0-6,0,Attempted
@@ -218,7 +218,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2011,KWP Wrocław,241,0-6,0,Attempted
 2011,KWP Bydgoszcz,330,0-6,0,Attempted
 2011,KWP Lublin,313,0-6,0,Attempted
-2011,KWP Gorzów Wielk.,214,0-6,0,Attempted
+2011,KWP Gorzów Wlkp.,214,0-6,0,Attempted
 2011,KWP Łódź,436,0-6,0,Attempted
 2011,KWP Kraków,439,0-6,0,Attempted
 2011,KWP Radom,356,0-6,0,Attempted
@@ -236,7 +236,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2012,KWP Wrocław,262,0-6,0,Attempted
 2012,KWP Bydgoszcz,348,0-6,0,Attempted
 2012,KWP Lublin,302,0-6,0,Attempted
-2012,KWP Gorzów Wielk.,248,0-6,0,Attempted
+2012,KWP Gorzów Wlkp.,248,0-6,0,Attempted
 2012,KWP Łódź,511,0-6,0,Attempted
 2012,KWP Kraków,468,0-6,0,Attempted
 2012,KWP Radom,350,0-6,0,Attempted
@@ -254,7 +254,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 1999,KWP Wrocław,378,7-12,0,Attempted
 1999,KWP Bydgoszcz,263,7-12,0,Attempted
 1999,KWP Lublin,283,7-12,1,Attempted
-1999,KWP Gorzów Wielk.,194,7-12,0,Attempted
+1999,KWP Gorzów Wlkp.,194,7-12,0,Attempted
 1999,KWP Łódź,410,7-12,3,Attempted
 1999,KWP Kraków,302,7-12,0,Attempted
 1999,KWP Radom,403,7-12,1,Attempted
@@ -272,7 +272,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2000,KWP Wrocław,431,7-12,1,Attempted
 2000,KWP Bydgoszcz,262,7-12,0,Attempted
 2000,KWP Lublin,288,7-12,2,Attempted
-2000,KWP Gorzów Wielk.,178,7-12,1,Attempted
+2000,KWP Gorzów Wlkp.,178,7-12,1,Attempted
 2000,KWP Łódź,402,7-12,2,Attempted
 2000,KWP Kraków,545,7-12,1,Attempted
 2000,KWP Radom,439,7-12,2,Attempted
@@ -290,7 +290,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2001,KWP Wrocław,372,7-12,1,Attempted
 2001,KWP Bydgoszcz,268,7-12,2,Attempted
 2001,KWP Lublin,313,7-12,1,Attempted
-2001,KWP Gorzów Wielk.,246,7-12,1,Attempted
+2001,KWP Gorzów Wlkp.,246,7-12,1,Attempted
 2001,KWP Łódź,380,7-12,1,Attempted
 2001,KWP Kraków,591,7-12,2,Attempted
 2001,KWP Radom,464,7-12,2,Attempted
@@ -308,7 +308,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2002,KWP Wrocław,372,7-12,0,Attempted
 2002,KWP Bydgoszcz,233,7-12,0,Attempted
 2002,KWP Lublin,329,7-12,0,Attempted
-2002,KWP Gorzów Wielk.,243,7-12,0,Attempted
+2002,KWP Gorzów Wlkp.,243,7-12,0,Attempted
 2002,KWP Łódź,385,7-12,2,Attempted
 2002,KWP Kraków,640,7-12,0,Attempted
 2002,KWP Radom,393,7-12,1,Attempted
@@ -326,7 +326,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2003,KWP Wrocław,420,7-12,2,Attempted
 2003,KWP Bydgoszcz,199,7-12,0,Attempted
 2003,KWP Lublin,399,7-12,3,Attempted
-2003,KWP Gorzów Wielk.,180,7-12,0,Attempted
+2003,KWP Gorzów Wlkp.,180,7-12,0,Attempted
 2003,KWP Łódź,335,7-12,0,Attempted
 2003,KWP Kraków,481,7-12,1,Attempted
 2003,KWP Radom,336,7-12,1,Attempted
@@ -344,7 +344,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2004,KWP Wrocław,450,7-12,2,Attempted
 2004,KWP Bydgoszcz,361,7-12,0,Attempted
 2004,KWP Lublin,415,7-12,0,Attempted
-2004,KWP Gorzów Wielk.,211,7-12,1,Attempted
+2004,KWP Gorzów Wlkp.,211,7-12,1,Attempted
 2004,KWP Łódź,382,7-12,0,Attempted
 2004,KWP Kraków,510,7-12,1,Attempted
 2004,KWP Radom,336,7-12,2,Attempted
@@ -362,7 +362,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2005,KWP Wrocław,338,7-12,0,Attempted
 2005,KWP Bydgoszcz,327,7-12,1,Attempted
 2005,KWP Lublin,383,7-12,1,Attempted
-2005,KWP Gorzów Wielk.,191,7-12,0,Attempted
+2005,KWP Gorzów Wlkp.,191,7-12,0,Attempted
 2005,KWP Łódź,378,7-12,1,Attempted
 2005,KWP Kraków,471,7-12,2,Attempted
 2005,KWP Radom,364,7-12,0,Attempted
@@ -380,7 +380,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2006,KWP Wrocław,320,7-12,0,Attempted
 2006,KWP Bydgoszcz,251,7-12,0,Attempted
 2006,KWP Lublin,345,7-12,0,Attempted
-2006,KWP Gorzów Wielk.,223,7-12,0,Attempted
+2006,KWP Gorzów Wlkp.,223,7-12,0,Attempted
 2006,KWP Łódź,389,7-12,0,Attempted
 2006,KWP Kraków,386,7-12,0,Attempted
 2006,KWP Radom,312,7-12,1,Attempted
@@ -398,7 +398,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2007,KWP Wrocław,282,7-12,0,Attempted
 2007,KWP Bydgoszcz,251,7-12,1,Attempted
 2007,KWP Lublin,295,7-12,0,Attempted
-2007,KWP Gorzów Wielk.,190,7-12,2,Attempted
+2007,KWP Gorzów Wlkp.,190,7-12,2,Attempted
 2007,KWP Łódź,390,7-12,2,Attempted
 2007,KWP Kraków,337,7-12,1,Attempted
 2007,KWP Radom,301,7-12,0,Attempted
@@ -416,7 +416,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2008,KWP Wrocław,311,7-12,0,Attempted
 2008,KWP Bydgoszcz,323,7-12,0,Attempted
 2008,KWP Lublin,398,7-12,0,Attempted
-2008,KWP Gorzów Wielk.,201,7-12,1,Attempted
+2008,KWP Gorzów Wlkp.,201,7-12,1,Attempted
 2008,KWP Łódź,379,7-12,0,Attempted
 2008,KWP Kraków,369,7-12,0,Attempted
 2008,KWP Radom,487,7-12,0,Attempted
@@ -434,7 +434,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2009,KWP Wrocław,295,7-12,0,Attempted
 2009,KWP Bydgoszcz,333,7-12,0,Attempted
 2009,KWP Lublin,390,7-12,1,Attempted
-2009,KWP Gorzów Wielk.,285,7-12,0,Attempted
+2009,KWP Gorzów Wlkp.,285,7-12,0,Attempted
 2009,KWP Łódź,471,7-12,1,Attempted
 2009,KWP Kraków,463,7-12,0,Attempted
 2009,KWP Radom,452,7-12,0,Attempted
@@ -452,7 +452,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2010,KWP Wrocław,266,7-12,0,Attempted
 2010,KWP Bydgoszcz,291,7-12,0,Attempted
 2010,KWP Lublin,359,7-12,0,Attempted
-2010,KWP Gorzów Wielk.,183,7-12,0,Attempted
+2010,KWP Gorzów Wlkp.,183,7-12,0,Attempted
 2010,KWP Łódź,440,7-12,1,Attempted
 2010,KWP Kraków,467,7-12,1,Attempted
 2010,KWP Radom,416,7-12,2,Attempted
@@ -470,7 +470,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2011,KWP Wrocław,241,7-12,0,Attempted
 2011,KWP Bydgoszcz,330,7-12,0,Attempted
 2011,KWP Lublin,313,7-12,1,Attempted
-2011,KWP Gorzów Wielk.,214,7-12,0,Attempted
+2011,KWP Gorzów Wlkp.,214,7-12,0,Attempted
 2011,KWP Łódź,436,7-12,1,Attempted
 2011,KWP Kraków,439,7-12,0,Attempted
 2011,KWP Radom,356,7-12,0,Attempted
@@ -488,7 +488,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2012,KWP Wrocław,262,7-12,0,Attempted
 2012,KWP Bydgoszcz,348,7-12,0,Attempted
 2012,KWP Lublin,302,7-12,0,Attempted
-2012,KWP Gorzów Wielk.,248,7-12,0,Attempted
+2012,KWP Gorzów Wlkp.,248,7-12,0,Attempted
 2012,KWP Łódź,511,7-12,0,Attempted
 2012,KWP Kraków,468,7-12,1,Attempted
 2012,KWP Radom,350,7-12,0,Attempted
@@ -506,7 +506,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 1999,KWP Wrocław,378,13-18,18,Attempted
 1999,KWP Bydgoszcz,263,13-18,18,Attempted
 1999,KWP Lublin,283,13-18,17,Attempted
-1999,KWP Gorzów Wielk.,194,13-18,13,Attempted
+1999,KWP Gorzów Wlkp.,194,13-18,13,Attempted
 1999,KWP Łódź,410,13-18,15,Attempted
 1999,KWP Kraków,302,13-18,12,Attempted
 1999,KWP Radom,403,13-18,22,Attempted
@@ -524,7 +524,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2000,KWP Wrocław,431,13-18,31,Attempted
 2000,KWP Bydgoszcz,262,13-18,10,Attempted
 2000,KWP Lublin,288,13-18,20,Attempted
-2000,KWP Gorzów Wielk.,178,13-18,7,Attempted
+2000,KWP Gorzów Wlkp.,178,13-18,7,Attempted
 2000,KWP Łódź,402,13-18,16,Attempted
 2000,KWP Kraków,545,13-18,30,Attempted
 2000,KWP Radom,439,13-18,23,Attempted
@@ -542,7 +542,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2001,KWP Wrocław,372,13-18,28,Attempted
 2001,KWP Bydgoszcz,268,13-18,10,Attempted
 2001,KWP Lublin,313,13-18,29,Attempted
-2001,KWP Gorzów Wielk.,246,13-18,19,Attempted
+2001,KWP Gorzów Wlkp.,246,13-18,19,Attempted
 2001,KWP Łódź,380,13-18,26,Attempted
 2001,KWP Kraków,591,13-18,23,Attempted
 2001,KWP Radom,464,13-18,19,Attempted
@@ -560,7 +560,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2002,KWP Wrocław,372,13-18,18,Attempted
 2002,KWP Bydgoszcz,233,13-18,7,Attempted
 2002,KWP Lublin,329,13-18,21,Attempted
-2002,KWP Gorzów Wielk.,243,13-18,16,Attempted
+2002,KWP Gorzów Wlkp.,243,13-18,16,Attempted
 2002,KWP Łódź,385,13-18,20,Attempted
 2002,KWP Kraków,640,13-18,32,Attempted
 2002,KWP Radom,393,13-18,18,Attempted
@@ -578,7 +578,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2003,KWP Wrocław,420,13-18,20,Attempted
 2003,KWP Bydgoszcz,199,13-18,10,Attempted
 2003,KWP Lublin,399,13-18,24,Attempted
-2003,KWP Gorzów Wielk.,180,13-18,17,Attempted
+2003,KWP Gorzów Wlkp.,180,13-18,17,Attempted
 2003,KWP Łódź,335,13-18,13,Attempted
 2003,KWP Kraków,481,13-18,20,Attempted
 2003,KWP Radom,336,13-18,13,Attempted
@@ -596,7 +596,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2004,KWP Wrocław,450,13-18,23,Attempted
 2004,KWP Bydgoszcz,361,13-18,28,Attempted
 2004,KWP Lublin,415,13-18,29,Attempted
-2004,KWP Gorzów Wielk.,211,13-18,16,Attempted
+2004,KWP Gorzów Wlkp.,211,13-18,16,Attempted
 2004,KWP Łódź,382,13-18,14,Attempted
 2004,KWP Kraków,510,13-18,27,Attempted
 2004,KWP Radom,336,13-18,16,Attempted
@@ -614,7 +614,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2005,KWP Wrocław,338,13-18,13,Attempted
 2005,KWP Bydgoszcz,327,13-18,20,Attempted
 2005,KWP Lublin,383,13-18,18,Attempted
-2005,KWP Gorzów Wielk.,191,13-18,14,Attempted
+2005,KWP Gorzów Wlkp.,191,13-18,14,Attempted
 2005,KWP Łódź,378,13-18,8,Attempted
 2005,KWP Kraków,471,13-18,24,Attempted
 2005,KWP Radom,364,13-18,19,Attempted
@@ -632,7 +632,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2006,KWP Wrocław,320,13-18,14,Attempted
 2006,KWP Bydgoszcz,251,13-18,15,Attempted
 2006,KWP Lublin,345,13-18,25,Attempted
-2006,KWP Gorzów Wielk.,223,13-18,12,Attempted
+2006,KWP Gorzów Wlkp.,223,13-18,12,Attempted
 2006,KWP Łódź,389,13-18,10,Attempted
 2006,KWP Kraków,386,13-18,24,Attempted
 2006,KWP Radom,312,13-18,14,Attempted
@@ -650,7 +650,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2007,KWP Wrocław,282,13-18,22,Attempted
 2007,KWP Bydgoszcz,251,13-18,14,Attempted
 2007,KWP Lublin,295,13-18,20,Attempted
-2007,KWP Gorzów Wielk.,190,13-18,9,Attempted
+2007,KWP Gorzów Wlkp.,190,13-18,9,Attempted
 2007,KWP Łódź,390,13-18,20,Attempted
 2007,KWP Kraków,337,13-18,20,Attempted
 2007,KWP Radom,301,13-18,17,Attempted
@@ -668,7 +668,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2008,KWP Wrocław,311,13-18,14,Attempted
 2008,KWP Bydgoszcz,323,13-18,15,Attempted
 2008,KWP Lublin,398,13-18,42,Attempted
-2008,KWP Gorzów Wielk.,201,13-18,14,Attempted
+2008,KWP Gorzów Wlkp.,201,13-18,14,Attempted
 2008,KWP Łódź,379,13-18,17,Attempted
 2008,KWP Kraków,369,13-18,20,Attempted
 2008,KWP Radom,487,13-18,23,Attempted
@@ -686,7 +686,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2009,KWP Wrocław,295,13-18,12,Attempted
 2009,KWP Bydgoszcz,333,13-18,11,Attempted
 2009,KWP Lublin,390,13-18,22,Attempted
-2009,KWP Gorzów Wielk.,285,13-18,14,Attempted
+2009,KWP Gorzów Wlkp.,285,13-18,14,Attempted
 2009,KWP Łódź,471,13-18,30,Attempted
 2009,KWP Kraków,463,13-18,17,Attempted
 2009,KWP Radom,452,13-18,28,Attempted
@@ -704,7 +704,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2010,KWP Wrocław,266,13-18,9,Attempted
 2010,KWP Bydgoszcz,291,13-18,14,Attempted
 2010,KWP Lublin,359,13-18,13,Attempted
-2010,KWP Gorzów Wielk.,183,13-18,14,Attempted
+2010,KWP Gorzów Wlkp.,183,13-18,14,Attempted
 2010,KWP Łódź,440,13-18,21,Attempted
 2010,KWP Kraków,467,13-18,19,Attempted
 2010,KWP Radom,416,13-18,23,Attempted
@@ -722,7 +722,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2011,KWP Wrocław,241,13-18,7,Attempted
 2011,KWP Bydgoszcz,330,13-18,11,Attempted
 2011,KWP Lublin,313,13-18,14,Attempted
-2011,KWP Gorzów Wielk.,214,13-18,14,Attempted
+2011,KWP Gorzów Wlkp.,214,13-18,14,Attempted
 2011,KWP Łódź,436,13-18,14,Attempted
 2011,KWP Kraków,439,13-18,13,Attempted
 2011,KWP Radom,356,13-18,19,Attempted
@@ -740,7 +740,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2012,KWP Wrocław,262,13-18,10,Attempted
 2012,KWP Bydgoszcz,348,13-18,17,Attempted
 2012,KWP Lublin,302,13-18,18,Attempted
-2012,KWP Gorzów Wielk.,248,13-18,9,Attempted
+2012,KWP Gorzów Wlkp.,248,13-18,9,Attempted
 2012,KWP Łódź,511,13-18,24,Attempted
 2012,KWP Kraków,468,13-18,18,Attempted
 2012,KWP Radom,350,13-18,17,Attempted
@@ -758,7 +758,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 1999,KWP Wrocław,378,19-24,52,Attempted
 1999,KWP Bydgoszcz,263,19-24,26,Attempted
 1999,KWP Lublin,283,19-24,16,Attempted
-1999,KWP Gorzów Wielk.,194,19-24,24,Attempted
+1999,KWP Gorzów Wlkp.,194,19-24,24,Attempted
 1999,KWP Łódź,410,19-24,40,Attempted
 1999,KWP Kraków,302,19-24,41,Attempted
 1999,KWP Radom,403,19-24,31,Attempted
@@ -776,7 +776,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2000,KWP Wrocław,431,19-24,54,Attempted
 2000,KWP Bydgoszcz,262,19-24,29,Attempted
 2000,KWP Lublin,288,19-24,28,Attempted
-2000,KWP Gorzów Wielk.,178,19-24,20,Attempted
+2000,KWP Gorzów Wlkp.,178,19-24,20,Attempted
 2000,KWP Łódź,402,19-24,53,Attempted
 2000,KWP Kraków,545,19-24,50,Attempted
 2000,KWP Radom,439,19-24,41,Attempted
@@ -794,7 +794,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2001,KWP Wrocław,372,19-24,40,Attempted
 2001,KWP Bydgoszcz,268,19-24,32,Attempted
 2001,KWP Lublin,313,19-24,30,Attempted
-2001,KWP Gorzów Wielk.,246,19-24,35,Attempted
+2001,KWP Gorzów Wlkp.,246,19-24,35,Attempted
 2001,KWP Łódź,380,19-24,27,Attempted
 2001,KWP Kraków,591,19-24,48,Attempted
 2001,KWP Radom,464,19-24,49,Attempted
@@ -812,7 +812,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2002,KWP Wrocław,372,19-24,35,Attempted
 2002,KWP Bydgoszcz,233,19-24,26,Attempted
 2002,KWP Lublin,329,19-24,31,Attempted
-2002,KWP Gorzów Wielk.,243,19-24,32,Attempted
+2002,KWP Gorzów Wlkp.,243,19-24,32,Attempted
 2002,KWP Łódź,385,19-24,39,Attempted
 2002,KWP Kraków,640,19-24,58,Attempted
 2002,KWP Radom,393,19-24,37,Attempted
@@ -830,7 +830,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2003,KWP Wrocław,420,19-24,45,Attempted
 2003,KWP Bydgoszcz,199,19-24,18,Attempted
 2003,KWP Lublin,399,19-24,40,Attempted
-2003,KWP Gorzów Wielk.,180,19-24,19,Attempted
+2003,KWP Gorzów Wlkp.,180,19-24,19,Attempted
 2003,KWP Łódź,335,19-24,29,Attempted
 2003,KWP Kraków,481,19-24,35,Attempted
 2003,KWP Radom,336,19-24,40,Attempted
@@ -848,7 +848,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2004,KWP Wrocław,450,19-24,46,Attempted
 2004,KWP Bydgoszcz,361,19-24,33,Attempted
 2004,KWP Lublin,415,19-24,59,Attempted
-2004,KWP Gorzów Wielk.,211,19-24,35,Attempted
+2004,KWP Gorzów Wlkp.,211,19-24,35,Attempted
 2004,KWP Łódź,382,19-24,29,Attempted
 2004,KWP Kraków,510,19-24,48,Attempted
 2004,KWP Radom,336,19-24,39,Attempted
@@ -866,7 +866,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2005,KWP Wrocław,338,19-24,31,Attempted
 2005,KWP Bydgoszcz,327,19-24,27,Attempted
 2005,KWP Lublin,383,19-24,45,Attempted
-2005,KWP Gorzów Wielk.,191,19-24,23,Attempted
+2005,KWP Gorzów Wlkp.,191,19-24,23,Attempted
 2005,KWP Łódź,378,19-24,33,Attempted
 2005,KWP Kraków,471,19-24,41,Attempted
 2005,KWP Radom,364,19-24,29,Attempted
@@ -884,7 +884,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2006,KWP Wrocław,320,19-24,18,Attempted
 2006,KWP Bydgoszcz,251,19-24,24,Attempted
 2006,KWP Lublin,345,19-24,37,Attempted
-2006,KWP Gorzów Wielk.,223,19-24,33,Attempted
+2006,KWP Gorzów Wlkp.,223,19-24,33,Attempted
 2006,KWP Łódź,389,19-24,32,Attempted
 2006,KWP Kraków,386,19-24,36,Attempted
 2006,KWP Radom,312,19-24,35,Attempted
@@ -902,7 +902,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2007,KWP Wrocław,282,19-24,35,Attempted
 2007,KWP Bydgoszcz,251,19-24,34,Attempted
 2007,KWP Lublin,295,19-24,41,Attempted
-2007,KWP Gorzów Wielk.,190,19-24,25,Attempted
+2007,KWP Gorzów Wlkp.,190,19-24,25,Attempted
 2007,KWP Łódź,390,19-24,32,Attempted
 2007,KWP Kraków,337,19-24,35,Attempted
 2007,KWP Radom,301,19-24,27,Attempted
@@ -920,7 +920,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2008,KWP Wrocław,311,19-24,26,Attempted
 2008,KWP Bydgoszcz,323,19-24,36,Attempted
 2008,KWP Lublin,398,19-24,38,Attempted
-2008,KWP Gorzów Wielk.,201,19-24,25,Attempted
+2008,KWP Gorzów Wlkp.,201,19-24,25,Attempted
 2008,KWP Łódź,379,19-24,46,Attempted
 2008,KWP Kraków,369,19-24,29,Attempted
 2008,KWP Radom,487,19-24,38,Attempted
@@ -938,7 +938,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2009,KWP Wrocław,295,19-24,25,Attempted
 2009,KWP Bydgoszcz,333,19-24,39,Attempted
 2009,KWP Lublin,390,19-24,50,Attempted
-2009,KWP Gorzów Wielk.,285,19-24,37,Attempted
+2009,KWP Gorzów Wlkp.,285,19-24,37,Attempted
 2009,KWP Łódź,471,19-24,38,Attempted
 2009,KWP Kraków,463,19-24,38,Attempted
 2009,KWP Radom,452,19-24,35,Attempted
@@ -956,7 +956,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2010,KWP Wrocław,266,19-24,25,Attempted
 2010,KWP Bydgoszcz,291,19-24,23,Attempted
 2010,KWP Lublin,359,19-24,43,Attempted
-2010,KWP Gorzów Wielk.,183,19-24,27,Attempted
+2010,KWP Gorzów Wlkp.,183,19-24,27,Attempted
 2010,KWP Łódź,440,19-24,38,Attempted
 2010,KWP Kraków,467,19-24,38,Attempted
 2010,KWP Radom,416,19-24,36,Attempted
@@ -974,7 +974,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2011,KWP Wrocław,241,19-24,21,Attempted
 2011,KWP Bydgoszcz,330,19-24,31,Attempted
 2011,KWP Lublin,313,19-24,29,Attempted
-2011,KWP Gorzów Wielk.,214,19-24,17,Attempted
+2011,KWP Gorzów Wlkp.,214,19-24,17,Attempted
 2011,KWP Łódź,436,19-24,44,Attempted
 2011,KWP Kraków,439,19-24,41,Attempted
 2011,KWP Radom,356,19-24,37,Attempted
@@ -992,7 +992,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2012,KWP Wrocław,262,19-24,19,Attempted
 2012,KWP Bydgoszcz,348,19-24,23,Attempted
 2012,KWP Lublin,302,19-24,34,Attempted
-2012,KWP Gorzów Wielk.,248,19-24,20,Attempted
+2012,KWP Gorzów Wlkp.,248,19-24,20,Attempted
 2012,KWP Łódź,511,19-24,52,Attempted
 2012,KWP Kraków,468,19-24,57,Attempted
 2012,KWP Radom,350,19-24,31,Attempted
@@ -1010,7 +1010,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 1999,KWP Wrocław,378,25-29,26,Attempted
 1999,KWP Bydgoszcz,263,25-29,17,Attempted
 1999,KWP Lublin,283,25-29,25,Attempted
-1999,KWP Gorzów Wielk.,194,25-29,8,Attempted
+1999,KWP Gorzów Wlkp.,194,25-29,8,Attempted
 1999,KWP Łódź,410,25-29,26,Attempted
 1999,KWP Kraków,302,25-29,19,Attempted
 1999,KWP Radom,403,25-29,32,Attempted
@@ -1028,7 +1028,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2000,KWP Wrocław,431,25-29,31,Attempted
 2000,KWP Bydgoszcz,262,25-29,20,Attempted
 2000,KWP Lublin,288,25-29,26,Attempted
-2000,KWP Gorzów Wielk.,178,25-29,12,Attempted
+2000,KWP Gorzów Wlkp.,178,25-29,12,Attempted
 2000,KWP Łódź,402,25-29,16,Attempted
 2000,KWP Kraków,545,25-29,42,Attempted
 2000,KWP Radom,439,25-29,22,Attempted
@@ -1046,7 +1046,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2001,KWP Wrocław,372,25-29,20,Attempted
 2001,KWP Bydgoszcz,268,25-29,17,Attempted
 2001,KWP Lublin,313,25-29,28,Attempted
-2001,KWP Gorzów Wielk.,246,25-29,20,Attempted
+2001,KWP Gorzów Wlkp.,246,25-29,20,Attempted
 2001,KWP Łódź,380,25-29,30,Attempted
 2001,KWP Kraków,591,25-29,41,Attempted
 2001,KWP Radom,464,25-29,39,Attempted
@@ -1064,7 +1064,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2002,KWP Wrocław,372,25-29,32,Attempted
 2002,KWP Bydgoszcz,233,25-29,22,Attempted
 2002,KWP Lublin,329,25-29,23,Attempted
-2002,KWP Gorzów Wielk.,243,25-29,26,Attempted
+2002,KWP Gorzów Wlkp.,243,25-29,26,Attempted
 2002,KWP Łódź,385,25-29,33,Attempted
 2002,KWP Kraków,640,25-29,37,Attempted
 2002,KWP Radom,393,25-29,27,Attempted
@@ -1082,7 +1082,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2003,KWP Wrocław,420,25-29,32,Attempted
 2003,KWP Bydgoszcz,199,25-29,11,Attempted
 2003,KWP Lublin,399,25-29,40,Attempted
-2003,KWP Gorzów Wielk.,180,25-29,10,Attempted
+2003,KWP Gorzów Wlkp.,180,25-29,10,Attempted
 2003,KWP Łódź,335,25-29,24,Attempted
 2003,KWP Kraków,481,25-29,37,Attempted
 2003,KWP Radom,336,25-29,30,Attempted
@@ -1100,7 +1100,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2004,KWP Wrocław,450,25-29,47,Attempted
 2004,KWP Bydgoszcz,361,25-29,29,Attempted
 2004,KWP Lublin,415,25-29,29,Attempted
-2004,KWP Gorzów Wielk.,211,25-29,22,Attempted
+2004,KWP Gorzów Wlkp.,211,25-29,22,Attempted
 2004,KWP Łódź,382,25-29,20,Attempted
 2004,KWP Kraków,510,25-29,33,Attempted
 2004,KWP Radom,336,25-29,28,Attempted
@@ -1118,7 +1118,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2005,KWP Wrocław,338,25-29,14,Attempted
 2005,KWP Bydgoszcz,327,25-29,27,Attempted
 2005,KWP Lublin,383,25-29,36,Attempted
-2005,KWP Gorzów Wielk.,191,25-29,30,Attempted
+2005,KWP Gorzów Wlkp.,191,25-29,30,Attempted
 2005,KWP Łódź,378,25-29,37,Attempted
 2005,KWP Kraków,471,25-29,39,Attempted
 2005,KWP Radom,364,25-29,21,Attempted
@@ -1136,7 +1136,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2006,KWP Wrocław,320,25-29,22,Attempted
 2006,KWP Bydgoszcz,251,25-29,21,Attempted
 2006,KWP Lublin,345,25-29,25,Attempted
-2006,KWP Gorzów Wielk.,223,25-29,23,Attempted
+2006,KWP Gorzów Wlkp.,223,25-29,23,Attempted
 2006,KWP Łódź,389,25-29,34,Attempted
 2006,KWP Kraków,386,25-29,43,Attempted
 2006,KWP Radom,312,25-29,28,Attempted
@@ -1154,7 +1154,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2007,KWP Wrocław,282,25-29,32,Attempted
 2007,KWP Bydgoszcz,251,25-29,17,Attempted
 2007,KWP Lublin,295,25-29,22,Attempted
-2007,KWP Gorzów Wielk.,190,25-29,11,Attempted
+2007,KWP Gorzów Wlkp.,190,25-29,11,Attempted
 2007,KWP Łódź,390,25-29,27,Attempted
 2007,KWP Kraków,337,25-29,35,Attempted
 2007,KWP Radom,301,25-29,23,Attempted
@@ -1172,7 +1172,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2008,KWP Wrocław,311,25-29,27,Attempted
 2008,KWP Bydgoszcz,323,25-29,24,Attempted
 2008,KWP Lublin,398,25-29,46,Attempted
-2008,KWP Gorzów Wielk.,201,25-29,16,Attempted
+2008,KWP Gorzów Wlkp.,201,25-29,16,Attempted
 2008,KWP Łódź,379,25-29,21,Attempted
 2008,KWP Kraków,369,25-29,35,Attempted
 2008,KWP Radom,487,25-29,43,Attempted
@@ -1190,7 +1190,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2009,KWP Wrocław,295,25-29,27,Attempted
 2009,KWP Bydgoszcz,333,25-29,21,Attempted
 2009,KWP Lublin,390,25-29,35,Attempted
-2009,KWP Gorzów Wielk.,285,25-29,26,Attempted
+2009,KWP Gorzów Wlkp.,285,25-29,26,Attempted
 2009,KWP Łódź,471,25-29,44,Attempted
 2009,KWP Kraków,463,25-29,46,Attempted
 2009,KWP Radom,452,25-29,42,Attempted
@@ -1208,7 +1208,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2010,KWP Wrocław,266,25-29,27,Attempted
 2010,KWP Bydgoszcz,291,25-29,27,Attempted
 2010,KWP Lublin,359,25-29,29,Attempted
-2010,KWP Gorzów Wielk.,183,25-29,15,Attempted
+2010,KWP Gorzów Wlkp.,183,25-29,15,Attempted
 2010,KWP Łódź,440,25-29,36,Attempted
 2010,KWP Kraków,467,25-29,47,Attempted
 2010,KWP Radom,416,25-29,32,Attempted
@@ -1226,7 +1226,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2011,KWP Wrocław,241,25-29,16,Attempted
 2011,KWP Bydgoszcz,330,25-29,33,Attempted
 2011,KWP Lublin,313,25-29,24,Attempted
-2011,KWP Gorzów Wielk.,214,25-29,26,Attempted
+2011,KWP Gorzów Wlkp.,214,25-29,26,Attempted
 2011,KWP Łódź,436,25-29,40,Attempted
 2011,KWP Kraków,439,25-29,39,Attempted
 2011,KWP Radom,356,25-29,28,Attempted
@@ -1244,7 +1244,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2012,KWP Wrocław,262,25-29,20,Attempted
 2012,KWP Bydgoszcz,348,25-29,39,Attempted
 2012,KWP Lublin,302,25-29,23,Attempted
-2012,KWP Gorzów Wielk.,248,25-29,30,Attempted
+2012,KWP Gorzów Wlkp.,248,25-29,30,Attempted
 2012,KWP Łódź,511,25-29,49,Attempted
 2012,KWP Kraków,468,25-29,40,Attempted
 2012,KWP Radom,350,25-29,28,Attempted
@@ -1262,7 +1262,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 1999,KWP Wrocław,378,30-34,26,Attempted
 1999,KWP Bydgoszcz,263,30-34,17,Attempted
 1999,KWP Lublin,283,30-34,15,Attempted
-1999,KWP Gorzów Wielk.,194,30-34,12,Attempted
+1999,KWP Gorzów Wlkp.,194,30-34,12,Attempted
 1999,KWP Łódź,410,30-34,19,Attempted
 1999,KWP Kraków,302,30-34,22,Attempted
 1999,KWP Radom,403,30-34,28,Attempted
@@ -1280,7 +1280,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2000,KWP Wrocław,431,30-34,20,Attempted
 2000,KWP Bydgoszcz,262,30-34,16,Attempted
 2000,KWP Lublin,288,30-34,21,Attempted
-2000,KWP Gorzów Wielk.,178,30-34,12,Attempted
+2000,KWP Gorzów Wlkp.,178,30-34,12,Attempted
 2000,KWP Łódź,402,30-34,28,Attempted
 2000,KWP Kraków,545,30-34,45,Attempted
 2000,KWP Radom,439,30-34,33,Attempted
@@ -1298,7 +1298,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2001,KWP Wrocław,372,30-34,28,Attempted
 2001,KWP Bydgoszcz,268,30-34,18,Attempted
 2001,KWP Lublin,313,30-34,20,Attempted
-2001,KWP Gorzów Wielk.,246,30-34,19,Attempted
+2001,KWP Gorzów Wlkp.,246,30-34,19,Attempted
 2001,KWP Łódź,380,30-34,20,Attempted
 2001,KWP Kraków,591,30-34,43,Attempted
 2001,KWP Radom,464,30-34,43,Attempted
@@ -1316,7 +1316,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2002,KWP Wrocław,372,30-34,20,Attempted
 2002,KWP Bydgoszcz,233,30-34,13,Attempted
 2002,KWP Lublin,329,30-34,24,Attempted
-2002,KWP Gorzów Wielk.,243,30-34,20,Attempted
+2002,KWP Gorzów Wlkp.,243,30-34,20,Attempted
 2002,KWP Łódź,385,30-34,22,Attempted
 2002,KWP Kraków,640,30-34,44,Attempted
 2002,KWP Radom,393,30-34,25,Attempted
@@ -1334,7 +1334,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2003,KWP Wrocław,420,30-34,28,Attempted
 2003,KWP Bydgoszcz,199,30-34,11,Attempted
 2003,KWP Lublin,399,30-34,29,Attempted
-2003,KWP Gorzów Wielk.,180,30-34,13,Attempted
+2003,KWP Gorzów Wlkp.,180,30-34,13,Attempted
 2003,KWP Łódź,335,30-34,21,Attempted
 2003,KWP Kraków,481,30-34,32,Attempted
 2003,KWP Radom,336,30-34,28,Attempted
@@ -1352,7 +1352,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2004,KWP Wrocław,450,30-34,35,Attempted
 2004,KWP Bydgoszcz,361,30-34,19,Attempted
 2004,KWP Lublin,415,30-34,34,Attempted
-2004,KWP Gorzów Wielk.,211,30-34,12,Attempted
+2004,KWP Gorzów Wlkp.,211,30-34,12,Attempted
 2004,KWP Łódź,382,30-34,26,Attempted
 2004,KWP Kraków,510,30-34,38,Attempted
 2004,KWP Radom,336,30-34,25,Attempted
@@ -1370,7 +1370,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2005,KWP Wrocław,338,30-34,25,Attempted
 2005,KWP Bydgoszcz,327,30-34,26,Attempted
 2005,KWP Lublin,383,30-34,30,Attempted
-2005,KWP Gorzów Wielk.,191,30-34,17,Attempted
+2005,KWP Gorzów Wlkp.,191,30-34,17,Attempted
 2005,KWP Łódź,378,30-34,31,Attempted
 2005,KWP Kraków,471,30-34,34,Attempted
 2005,KWP Radom,364,30-34,26,Attempted
@@ -1388,7 +1388,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2006,KWP Wrocław,320,30-34,38,Attempted
 2006,KWP Bydgoszcz,251,30-34,19,Attempted
 2006,KWP Lublin,345,30-34,17,Attempted
-2006,KWP Gorzów Wielk.,223,30-34,17,Attempted
+2006,KWP Gorzów Wlkp.,223,30-34,17,Attempted
 2006,KWP Łódź,389,30-34,32,Attempted
 2006,KWP Kraków,386,30-34,28,Attempted
 2006,KWP Radom,312,30-34,21,Attempted
@@ -1406,7 +1406,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2007,KWP Wrocław,282,30-34,22,Attempted
 2007,KWP Bydgoszcz,251,30-34,16,Attempted
 2007,KWP Lublin,295,30-34,21,Attempted
-2007,KWP Gorzów Wielk.,190,30-34,19,Attempted
+2007,KWP Gorzów Wlkp.,190,30-34,19,Attempted
 2007,KWP Łódź,390,30-34,36,Attempted
 2007,KWP Kraków,337,30-34,23,Attempted
 2007,KWP Radom,301,30-34,23,Attempted
@@ -1424,7 +1424,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2008,KWP Wrocław,311,30-34,22,Attempted
 2008,KWP Bydgoszcz,323,30-34,29,Attempted
 2008,KWP Lublin,398,30-34,36,Attempted
-2008,KWP Gorzów Wielk.,201,30-34,18,Attempted
+2008,KWP Gorzów Wlkp.,201,30-34,18,Attempted
 2008,KWP Łódź,379,30-34,22,Attempted
 2008,KWP Kraków,369,30-34,33,Attempted
 2008,KWP Radom,487,30-34,37,Attempted
@@ -1442,7 +1442,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2009,KWP Wrocław,295,30-34,23,Attempted
 2009,KWP Bydgoszcz,333,30-34,23,Attempted
 2009,KWP Lublin,390,30-34,37,Attempted
-2009,KWP Gorzów Wielk.,285,30-34,16,Attempted
+2009,KWP Gorzów Wlkp.,285,30-34,16,Attempted
 2009,KWP Łódź,471,30-34,35,Attempted
 2009,KWP Kraków,463,30-34,35,Attempted
 2009,KWP Radom,452,30-34,32,Attempted
@@ -1460,7 +1460,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2010,KWP Wrocław,266,30-34,21,Attempted
 2010,KWP Bydgoszcz,291,30-34,30,Attempted
 2010,KWP Lublin,359,30-34,27,Attempted
-2010,KWP Gorzów Wielk.,183,30-34,11,Attempted
+2010,KWP Gorzów Wlkp.,183,30-34,11,Attempted
 2010,KWP Łódź,440,30-34,40,Attempted
 2010,KWP Kraków,467,30-34,44,Attempted
 2010,KWP Radom,416,30-34,28,Attempted
@@ -1478,7 +1478,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2011,KWP Wrocław,241,30-34,19,Attempted
 2011,KWP Bydgoszcz,330,30-34,28,Attempted
 2011,KWP Lublin,313,30-34,33,Attempted
-2011,KWP Gorzów Wielk.,214,30-34,27,Attempted
+2011,KWP Gorzów Wlkp.,214,30-34,27,Attempted
 2011,KWP Łódź,436,30-34,44,Attempted
 2011,KWP Kraków,439,30-34,39,Attempted
 2011,KWP Radom,356,30-34,23,Attempted
@@ -1496,7 +1496,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2012,KWP Wrocław,262,30-34,22,Attempted
 2012,KWP Bydgoszcz,348,30-34,33,Attempted
 2012,KWP Lublin,302,30-34,29,Attempted
-2012,KWP Gorzów Wielk.,248,30-34,23,Attempted
+2012,KWP Gorzów Wlkp.,248,30-34,23,Attempted
 2012,KWP Łódź,511,30-34,47,Attempted
 2012,KWP Kraków,468,30-34,42,Attempted
 2012,KWP Radom,350,30-34,37,Attempted
@@ -1514,7 +1514,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 1999,KWP Wrocław,378,35-39,41,Attempted
 1999,KWP Bydgoszcz,263,35-39,32,Attempted
 1999,KWP Lublin,283,35-39,22,Attempted
-1999,KWP Gorzów Wielk.,194,35-39,26,Attempted
+1999,KWP Gorzów Wlkp.,194,35-39,26,Attempted
 1999,KWP Łódź,410,35-39,36,Attempted
 1999,KWP Kraków,302,35-39,25,Attempted
 1999,KWP Radom,403,35-39,43,Attempted
@@ -1532,7 +1532,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2000,KWP Wrocław,431,35-39,34,Attempted
 2000,KWP Bydgoszcz,262,35-39,24,Attempted
 2000,KWP Lublin,288,35-39,26,Attempted
-2000,KWP Gorzów Wielk.,178,35-39,17,Attempted
+2000,KWP Gorzów Wlkp.,178,35-39,17,Attempted
 2000,KWP Łódź,402,35-39,33,Attempted
 2000,KWP Kraków,545,35-39,52,Attempted
 2000,KWP Radom,439,35-39,43,Attempted
@@ -1550,7 +1550,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2001,KWP Wrocław,372,35-39,34,Attempted
 2001,KWP Bydgoszcz,268,35-39,28,Attempted
 2001,KWP Lublin,313,35-39,18,Attempted
-2001,KWP Gorzów Wielk.,246,35-39,21,Attempted
+2001,KWP Gorzów Wlkp.,246,35-39,21,Attempted
 2001,KWP Łódź,380,35-39,34,Attempted
 2001,KWP Kraków,591,35-39,54,Attempted
 2001,KWP Radom,464,35-39,39,Attempted
@@ -1568,7 +1568,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2002,KWP Wrocław,372,35-39,26,Attempted
 2002,KWP Bydgoszcz,233,35-39,18,Attempted
 2002,KWP Lublin,329,35-39,32,Attempted
-2002,KWP Gorzów Wielk.,243,35-39,19,Attempted
+2002,KWP Gorzów Wlkp.,243,35-39,19,Attempted
 2002,KWP Łódź,385,35-39,33,Attempted
 2002,KWP Kraków,640,35-39,41,Attempted
 2002,KWP Radom,393,35-39,37,Attempted
@@ -1586,7 +1586,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2003,KWP Wrocław,420,35-39,34,Attempted
 2003,KWP Bydgoszcz,199,35-39,14,Attempted
 2003,KWP Lublin,399,35-39,30,Attempted
-2003,KWP Gorzów Wielk.,180,35-39,14,Attempted
+2003,KWP Gorzów Wlkp.,180,35-39,14,Attempted
 2003,KWP Łódź,335,35-39,19,Attempted
 2003,KWP Kraków,481,35-39,29,Attempted
 2003,KWP Radom,336,35-39,22,Attempted
@@ -1604,7 +1604,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2004,KWP Wrocław,450,35-39,26,Attempted
 2004,KWP Bydgoszcz,361,35-39,32,Attempted
 2004,KWP Lublin,415,35-39,27,Attempted
-2004,KWP Gorzów Wielk.,211,35-39,12,Attempted
+2004,KWP Gorzów Wlkp.,211,35-39,12,Attempted
 2004,KWP Łódź,382,35-39,24,Attempted
 2004,KWP Kraków,510,35-39,46,Attempted
 2004,KWP Radom,336,35-39,20,Attempted
@@ -1622,7 +1622,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2005,KWP Wrocław,338,35-39,24,Attempted
 2005,KWP Bydgoszcz,327,35-39,29,Attempted
 2005,KWP Lublin,383,35-39,25,Attempted
-2005,KWP Gorzów Wielk.,191,35-39,10,Attempted
+2005,KWP Gorzów Wlkp.,191,35-39,10,Attempted
 2005,KWP Łódź,378,35-39,39,Attempted
 2005,KWP Kraków,471,35-39,33,Attempted
 2005,KWP Radom,364,35-39,24,Attempted
@@ -1640,7 +1640,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2006,KWP Wrocław,320,35-39,25,Attempted
 2006,KWP Bydgoszcz,251,35-39,16,Attempted
 2006,KWP Lublin,345,35-39,18,Attempted
-2006,KWP Gorzów Wielk.,223,35-39,25,Attempted
+2006,KWP Gorzów Wlkp.,223,35-39,25,Attempted
 2006,KWP Łódź,389,35-39,27,Attempted
 2006,KWP Kraków,386,35-39,27,Attempted
 2006,KWP Radom,312,35-39,25,Attempted
@@ -1658,7 +1658,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2007,KWP Wrocław,282,35-39,15,Attempted
 2007,KWP Bydgoszcz,251,35-39,21,Attempted
 2007,KWP Lublin,295,35-39,30,Attempted
-2007,KWP Gorzów Wielk.,190,35-39,14,Attempted
+2007,KWP Gorzów Wlkp.,190,35-39,14,Attempted
 2007,KWP Łódź,390,35-39,38,Attempted
 2007,KWP Kraków,337,35-39,23,Attempted
 2007,KWP Radom,301,35-39,28,Attempted
@@ -1676,7 +1676,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2008,KWP Wrocław,311,35-39,31,Attempted
 2008,KWP Bydgoszcz,323,35-39,23,Attempted
 2008,KWP Lublin,398,35-39,27,Attempted
-2008,KWP Gorzów Wielk.,201,35-39,16,Attempted
+2008,KWP Gorzów Wlkp.,201,35-39,16,Attempted
 2008,KWP Łódź,379,35-39,26,Attempted
 2008,KWP Kraków,369,35-39,30,Attempted
 2008,KWP Radom,487,35-39,26,Attempted
@@ -1694,7 +1694,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2009,KWP Wrocław,295,35-39,31,Attempted
 2009,KWP Bydgoszcz,333,35-39,36,Attempted
 2009,KWP Lublin,390,35-39,30,Attempted
-2009,KWP Gorzów Wielk.,285,35-39,31,Attempted
+2009,KWP Gorzów Wlkp.,285,35-39,31,Attempted
 2009,KWP Łódź,471,35-39,36,Attempted
 2009,KWP Kraków,463,35-39,46,Attempted
 2009,KWP Radom,452,35-39,34,Attempted
@@ -1712,7 +1712,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2010,KWP Wrocław,266,35-39,23,Attempted
 2010,KWP Bydgoszcz,291,35-39,23,Attempted
 2010,KWP Lublin,359,35-39,30,Attempted
-2010,KWP Gorzów Wielk.,183,35-39,9,Attempted
+2010,KWP Gorzów Wlkp.,183,35-39,9,Attempted
 2010,KWP Łódź,440,35-39,31,Attempted
 2010,KWP Kraków,467,35-39,28,Attempted
 2010,KWP Radom,416,35-39,36,Attempted
@@ -1730,7 +1730,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2011,KWP Wrocław,241,35-39,26,Attempted
 2011,KWP Bydgoszcz,330,35-39,30,Attempted
 2011,KWP Lublin,313,35-39,30,Attempted
-2011,KWP Gorzów Wielk.,214,35-39,19,Attempted
+2011,KWP Gorzów Wlkp.,214,35-39,19,Attempted
 2011,KWP Łódź,436,35-39,43,Attempted
 2011,KWP Kraków,439,35-39,36,Attempted
 2011,KWP Radom,356,35-39,29,Attempted
@@ -1748,7 +1748,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2012,KWP Wrocław,262,35-39,19,Attempted
 2012,KWP Bydgoszcz,348,35-39,29,Attempted
 2012,KWP Lublin,302,35-39,21,Attempted
-2012,KWP Gorzów Wielk.,248,35-39,21,Attempted
+2012,KWP Gorzów Wlkp.,248,35-39,21,Attempted
 2012,KWP Łódź,511,35-39,45,Attempted
 2012,KWP Kraków,468,35-39,32,Attempted
 2012,KWP Radom,350,35-39,21,Attempted
@@ -1766,7 +1766,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 1999,KWP Wrocław,378,40-44,54,Attempted
 1999,KWP Bydgoszcz,263,40-44,44,Attempted
 1999,KWP Lublin,283,40-44,39,Attempted
-1999,KWP Gorzów Wielk.,194,40-44,27,Attempted
+1999,KWP Gorzów Wlkp.,194,40-44,27,Attempted
 1999,KWP Łódź,410,40-44,56,Attempted
 1999,KWP Kraków,302,40-44,40,Attempted
 1999,KWP Radom,403,40-44,55,Attempted
@@ -1784,7 +1784,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2000,KWP Wrocław,431,40-44,55,Attempted
 2000,KWP Bydgoszcz,262,40-44,38,Attempted
 2000,KWP Lublin,288,40-44,31,Attempted
-2000,KWP Gorzów Wielk.,178,40-44,28,Attempted
+2000,KWP Gorzów Wlkp.,178,40-44,28,Attempted
 2000,KWP Łódź,402,40-44,64,Attempted
 2000,KWP Kraków,545,40-44,67,Attempted
 2000,KWP Radom,439,40-44,64,Attempted
@@ -1802,7 +1802,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2001,KWP Wrocław,372,40-44,47,Attempted
 2001,KWP Bydgoszcz,268,40-44,27,Attempted
 2001,KWP Lublin,313,40-44,43,Attempted
-2001,KWP Gorzów Wielk.,246,40-44,19,Attempted
+2001,KWP Gorzów Wlkp.,246,40-44,19,Attempted
 2001,KWP Łódź,380,40-44,35,Attempted
 2001,KWP Kraków,591,40-44,74,Attempted
 2001,KWP Radom,464,40-44,59,Attempted
@@ -1820,7 +1820,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2002,KWP Wrocław,372,40-44,40,Attempted
 2002,KWP Bydgoszcz,233,40-44,27,Attempted
 2002,KWP Lublin,329,40-44,45,Attempted
-2002,KWP Gorzów Wielk.,243,40-44,20,Attempted
+2002,KWP Gorzów Wlkp.,243,40-44,20,Attempted
 2002,KWP Łódź,385,40-44,45,Attempted
 2002,KWP Kraków,640,40-44,75,Attempted
 2002,KWP Radom,393,40-44,57,Attempted
@@ -1838,7 +1838,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2003,KWP Wrocław,420,40-44,45,Attempted
 2003,KWP Bydgoszcz,199,40-44,28,Attempted
 2003,KWP Lublin,399,40-44,42,Attempted
-2003,KWP Gorzów Wielk.,180,40-44,20,Attempted
+2003,KWP Gorzów Wlkp.,180,40-44,20,Attempted
 2003,KWP Łódź,335,40-44,31,Attempted
 2003,KWP Kraków,481,40-44,54,Attempted
 2003,KWP Radom,336,40-44,41,Attempted
@@ -1856,7 +1856,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2004,KWP Wrocław,450,40-44,50,Attempted
 2004,KWP Bydgoszcz,361,40-44,31,Attempted
 2004,KWP Lublin,415,40-44,40,Attempted
-2004,KWP Gorzów Wielk.,211,40-44,23,Attempted
+2004,KWP Gorzów Wlkp.,211,40-44,23,Attempted
 2004,KWP Łódź,382,40-44,45,Attempted
 2004,KWP Kraków,510,40-44,56,Attempted
 2004,KWP Radom,336,40-44,38,Attempted
@@ -1874,7 +1874,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2005,KWP Wrocław,338,40-44,37,Attempted
 2005,KWP Bydgoszcz,327,40-44,34,Attempted
 2005,KWP Lublin,383,40-44,30,Attempted
-2005,KWP Gorzów Wielk.,191,40-44,14,Attempted
+2005,KWP Gorzów Wlkp.,191,40-44,14,Attempted
 2005,KWP Łódź,378,40-44,31,Attempted
 2005,KWP Kraków,471,40-44,48,Attempted
 2005,KWP Radom,364,40-44,42,Attempted
@@ -1892,7 +1892,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2006,KWP Wrocław,320,40-44,27,Attempted
 2006,KWP Bydgoszcz,251,40-44,20,Attempted
 2006,KWP Lublin,345,40-44,47,Attempted
-2006,KWP Gorzów Wielk.,223,40-44,14,Attempted
+2006,KWP Gorzów Wlkp.,223,40-44,14,Attempted
 2006,KWP Łódź,389,40-44,43,Attempted
 2006,KWP Kraków,386,40-44,30,Attempted
 2006,KWP Radom,312,40-44,27,Attempted
@@ -1910,7 +1910,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2007,KWP Wrocław,282,40-44,19,Attempted
 2007,KWP Bydgoszcz,251,40-44,17,Attempted
 2007,KWP Lublin,295,40-44,24,Attempted
-2007,KWP Gorzów Wielk.,190,40-44,17,Attempted
+2007,KWP Gorzów Wlkp.,190,40-44,17,Attempted
 2007,KWP Łódź,390,40-44,38,Attempted
 2007,KWP Kraków,337,40-44,33,Attempted
 2007,KWP Radom,301,40-44,33,Attempted
@@ -1928,7 +1928,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2008,KWP Wrocław,311,40-44,18,Attempted
 2008,KWP Bydgoszcz,323,40-44,33,Attempted
 2008,KWP Lublin,398,40-44,31,Attempted
-2008,KWP Gorzów Wielk.,201,40-44,25,Attempted
+2008,KWP Gorzów Wlkp.,201,40-44,25,Attempted
 2008,KWP Łódź,379,40-44,33,Attempted
 2008,KWP Kraków,369,40-44,25,Attempted
 2008,KWP Radom,487,40-44,48,Attempted
@@ -1946,7 +1946,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2009,KWP Wrocław,295,40-44,17,Attempted
 2009,KWP Bydgoszcz,333,40-44,30,Attempted
 2009,KWP Lublin,390,40-44,26,Attempted
-2009,KWP Gorzów Wielk.,285,40-44,20,Attempted
+2009,KWP Gorzów Wlkp.,285,40-44,20,Attempted
 2009,KWP Łódź,471,40-44,42,Attempted
 2009,KWP Kraków,463,40-44,29,Attempted
 2009,KWP Radom,452,40-44,42,Attempted
@@ -1964,7 +1964,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2010,KWP Wrocław,266,40-44,12,Attempted
 2010,KWP Bydgoszcz,291,40-44,20,Attempted
 2010,KWP Lublin,359,40-44,26,Attempted
-2010,KWP Gorzów Wielk.,183,40-44,14,Attempted
+2010,KWP Gorzów Wlkp.,183,40-44,14,Attempted
 2010,KWP Łódź,440,40-44,43,Attempted
 2010,KWP Kraków,467,40-44,46,Attempted
 2010,KWP Radom,416,40-44,39,Attempted
@@ -1982,7 +1982,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2011,KWP Wrocław,241,40-44,22,Attempted
 2011,KWP Bydgoszcz,330,40-44,21,Attempted
 2011,KWP Lublin,313,40-44,23,Attempted
-2011,KWP Gorzów Wielk.,214,40-44,18,Attempted
+2011,KWP Gorzów Wlkp.,214,40-44,18,Attempted
 2011,KWP Łódź,436,40-44,45,Attempted
 2011,KWP Kraków,439,40-44,37,Attempted
 2011,KWP Radom,356,40-44,30,Attempted
@@ -2000,7 +2000,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2012,KWP Wrocław,262,40-44,22,Attempted
 2012,KWP Bydgoszcz,348,40-44,37,Attempted
 2012,KWP Lublin,302,40-44,22,Attempted
-2012,KWP Gorzów Wielk.,248,40-44,18,Attempted
+2012,KWP Gorzów Wlkp.,248,40-44,18,Attempted
 2012,KWP Łódź,511,40-44,37,Attempted
 2012,KWP Kraków,468,40-44,35,Attempted
 2012,KWP Radom,350,40-44,34,Attempted
@@ -2018,7 +2018,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 1999,KWP Wrocław,378,45-49,43,Attempted
 1999,KWP Bydgoszcz,263,45-49,37,Attempted
 1999,KWP Lublin,283,45-49,43,Attempted
-1999,KWP Gorzów Wielk.,194,45-49,33,Attempted
+1999,KWP Gorzów Wlkp.,194,45-49,33,Attempted
 1999,KWP Łódź,410,45-49,64,Attempted
 1999,KWP Kraków,302,45-49,41,Attempted
 1999,KWP Radom,403,45-49,52,Attempted
@@ -2036,7 +2036,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2000,KWP Wrocław,431,45-49,64,Attempted
 2000,KWP Bydgoszcz,262,45-49,40,Attempted
 2000,KWP Lublin,288,45-49,32,Attempted
-2000,KWP Gorzów Wielk.,178,45-49,26,Attempted
+2000,KWP Gorzów Wlkp.,178,45-49,26,Attempted
 2000,KWP Łódź,402,45-49,49,Attempted
 2000,KWP Kraków,545,45-49,68,Attempted
 2000,KWP Radom,439,45-49,63,Attempted
@@ -2054,7 +2054,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2001,KWP Wrocław,372,45-49,50,Attempted
 2001,KWP Bydgoszcz,268,45-49,33,Attempted
 2001,KWP Lublin,313,45-49,42,Attempted
-2001,KWP Gorzów Wielk.,246,45-49,36,Attempted
+2001,KWP Gorzów Wlkp.,246,45-49,36,Attempted
 2001,KWP Łódź,380,45-49,56,Attempted
 2001,KWP Kraków,591,45-49,95,Attempted
 2001,KWP Radom,464,45-49,70,Attempted
@@ -2072,7 +2072,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2002,KWP Wrocław,372,45-49,47,Attempted
 2002,KWP Bydgoszcz,233,45-49,29,Attempted
 2002,KWP Lublin,329,45-49,41,Attempted
-2002,KWP Gorzów Wielk.,243,45-49,27,Attempted
+2002,KWP Gorzów Wlkp.,243,45-49,27,Attempted
 2002,KWP Łódź,385,45-49,48,Attempted
 2002,KWP Kraków,640,45-49,82,Attempted
 2002,KWP Radom,393,45-49,66,Attempted
@@ -2090,7 +2090,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2003,KWP Wrocław,420,45-49,51,Attempted
 2003,KWP Bydgoszcz,199,45-49,22,Attempted
 2003,KWP Lublin,399,45-49,56,Attempted
-2003,KWP Gorzów Wielk.,180,45-49,30,Attempted
+2003,KWP Gorzów Wlkp.,180,45-49,30,Attempted
 2003,KWP Łódź,335,45-49,62,Attempted
 2003,KWP Kraków,481,45-49,69,Attempted
 2003,KWP Radom,336,45-49,44,Attempted
@@ -2108,7 +2108,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2004,KWP Wrocław,450,45-49,70,Attempted
 2004,KWP Bydgoszcz,361,45-49,47,Attempted
 2004,KWP Lublin,415,45-49,44,Attempted
-2004,KWP Gorzów Wielk.,211,45-49,22,Attempted
+2004,KWP Gorzów Wlkp.,211,45-49,22,Attempted
 2004,KWP Łódź,382,45-49,66,Attempted
 2004,KWP Kraków,510,45-49,56,Attempted
 2004,KWP Radom,336,45-49,46,Attempted
@@ -2126,7 +2126,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2005,KWP Wrocław,338,45-49,46,Attempted
 2005,KWP Bydgoszcz,327,45-49,46,Attempted
 2005,KWP Lublin,383,45-49,44,Attempted
-2005,KWP Gorzów Wielk.,191,45-49,18,Attempted
+2005,KWP Gorzów Wlkp.,191,45-49,18,Attempted
 2005,KWP Łódź,378,45-49,46,Attempted
 2005,KWP Kraków,471,45-49,65,Attempted
 2005,KWP Radom,364,45-49,49,Attempted
@@ -2144,7 +2144,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2006,KWP Wrocław,320,45-49,37,Attempted
 2006,KWP Bydgoszcz,251,45-49,35,Attempted
 2006,KWP Lublin,345,45-49,47,Attempted
-2006,KWP Gorzów Wielk.,223,45-49,22,Attempted
+2006,KWP Gorzów Wlkp.,223,45-49,22,Attempted
 2006,KWP Łódź,389,45-49,44,Attempted
 2006,KWP Kraków,386,45-49,46,Attempted
 2006,KWP Radom,312,45-49,47,Attempted
@@ -2162,7 +2162,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2007,KWP Wrocław,282,45-49,36,Attempted
 2007,KWP Bydgoszcz,251,45-49,33,Attempted
 2007,KWP Lublin,295,45-49,27,Attempted
-2007,KWP Gorzów Wielk.,190,45-49,22,Attempted
+2007,KWP Gorzów Wlkp.,190,45-49,22,Attempted
 2007,KWP Łódź,390,45-49,49,Attempted
 2007,KWP Kraków,337,45-49,39,Attempted
 2007,KWP Radom,301,45-49,27,Attempted
@@ -2180,7 +2180,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2008,KWP Wrocław,311,45-49,33,Attempted
 2008,KWP Bydgoszcz,323,45-49,38,Attempted
 2008,KWP Lublin,398,45-49,34,Attempted
-2008,KWP Gorzów Wielk.,201,45-49,18,Attempted
+2008,KWP Gorzów Wlkp.,201,45-49,18,Attempted
 2008,KWP Łódź,379,45-49,44,Attempted
 2008,KWP Kraków,369,45-49,42,Attempted
 2008,KWP Radom,487,45-49,60,Attempted
@@ -2198,7 +2198,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2009,KWP Wrocław,295,45-49,34,Attempted
 2009,KWP Bydgoszcz,333,45-49,28,Attempted
 2009,KWP Lublin,390,45-49,43,Attempted
-2009,KWP Gorzów Wielk.,285,45-49,31,Attempted
+2009,KWP Gorzów Wlkp.,285,45-49,31,Attempted
 2009,KWP Łódź,471,45-49,40,Attempted
 2009,KWP Kraków,463,45-49,47,Attempted
 2009,KWP Radom,452,45-49,57,Attempted
@@ -2216,7 +2216,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2010,KWP Wrocław,266,45-49,26,Attempted
 2010,KWP Bydgoszcz,291,45-49,22,Attempted
 2010,KWP Lublin,359,45-49,37,Attempted
-2010,KWP Gorzów Wielk.,183,45-49,18,Attempted
+2010,KWP Gorzów Wlkp.,183,45-49,18,Attempted
 2010,KWP Łódź,440,45-49,30,Attempted
 2010,KWP Kraków,467,45-49,52,Attempted
 2010,KWP Radom,416,45-49,35,Attempted
@@ -2234,7 +2234,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2011,KWP Wrocław,241,45-49,16,Attempted
 2011,KWP Bydgoszcz,330,45-49,39,Attempted
 2011,KWP Lublin,313,45-49,34,Attempted
-2011,KWP Gorzów Wielk.,214,45-49,18,Attempted
+2011,KWP Gorzów Wlkp.,214,45-49,18,Attempted
 2011,KWP Łódź,436,45-49,31,Attempted
 2011,KWP Kraków,439,45-49,41,Attempted
 2011,KWP Radom,356,45-49,28,Attempted
@@ -2252,7 +2252,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2012,KWP Wrocław,262,45-49,18,Attempted
 2012,KWP Bydgoszcz,348,45-49,32,Attempted
 2012,KWP Lublin,302,45-49,22,Attempted
-2012,KWP Gorzów Wielk.,248,45-49,19,Attempted
+2012,KWP Gorzów Wlkp.,248,45-49,19,Attempted
 2012,KWP Łódź,511,45-49,46,Attempted
 2012,KWP Kraków,468,45-49,47,Attempted
 2012,KWP Radom,350,45-49,29,Attempted
@@ -2270,7 +2270,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 1999,KWP Wrocław,378,50-54,34,Attempted
 1999,KWP Bydgoszcz,263,50-54,25,Attempted
 1999,KWP Lublin,283,50-54,25,Attempted
-1999,KWP Gorzów Wielk.,194,50-54,15,Attempted
+1999,KWP Gorzów Wlkp.,194,50-54,15,Attempted
 1999,KWP Łódź,410,50-54,39,Attempted
 1999,KWP Kraków,302,50-54,29,Attempted
 1999,KWP Radom,403,50-54,40,Attempted
@@ -2288,7 +2288,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2000,KWP Wrocław,431,50-54,42,Attempted
 2000,KWP Bydgoszcz,262,50-54,26,Attempted
 2000,KWP Lublin,288,50-54,27,Attempted
-2000,KWP Gorzów Wielk.,178,50-54,18,Attempted
+2000,KWP Gorzów Wlkp.,178,50-54,18,Attempted
 2000,KWP Łódź,402,50-54,45,Attempted
 2000,KWP Kraków,545,50-54,49,Attempted
 2000,KWP Radom,439,50-54,44,Attempted
@@ -2306,7 +2306,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2001,KWP Wrocław,372,50-54,31,Attempted
 2001,KWP Bydgoszcz,268,50-54,34,Attempted
 2001,KWP Lublin,313,50-54,34,Attempted
-2001,KWP Gorzów Wielk.,246,50-54,36,Attempted
+2001,KWP Gorzów Wlkp.,246,50-54,36,Attempted
 2001,KWP Łódź,380,50-54,58,Attempted
 2001,KWP Kraków,591,50-54,60,Attempted
 2001,KWP Radom,464,50-54,44,Attempted
@@ -2324,7 +2324,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2002,KWP Wrocław,372,50-54,50,Attempted
 2002,KWP Bydgoszcz,233,50-54,34,Attempted
 2002,KWP Lublin,329,50-54,39,Attempted
-2002,KWP Gorzów Wielk.,243,50-54,27,Attempted
+2002,KWP Gorzów Wlkp.,243,50-54,27,Attempted
 2002,KWP Łódź,385,50-54,46,Attempted
 2002,KWP Kraków,640,50-54,74,Attempted
 2002,KWP Radom,393,50-54,33,Attempted
@@ -2342,7 +2342,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2003,KWP Wrocław,420,50-54,59,Attempted
 2003,KWP Bydgoszcz,199,50-54,31,Attempted
 2003,KWP Lublin,399,50-54,48,Attempted
-2003,KWP Gorzów Wielk.,180,50-54,19,Attempted
+2003,KWP Gorzów Wlkp.,180,50-54,19,Attempted
 2003,KWP Łódź,335,50-54,45,Attempted
 2003,KWP Kraków,481,50-54,60,Attempted
 2003,KWP Radom,336,50-54,32,Attempted
@@ -2360,7 +2360,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2004,KWP Wrocław,450,50-54,40,Attempted
 2004,KWP Bydgoszcz,361,50-54,48,Attempted
 2004,KWP Lublin,415,50-54,52,Attempted
-2004,KWP Gorzów Wielk.,211,50-54,20,Attempted
+2004,KWP Gorzów Wlkp.,211,50-54,20,Attempted
 2004,KWP Łódź,382,50-54,58,Attempted
 2004,KWP Kraków,510,50-54,58,Attempted
 2004,KWP Radom,336,50-54,38,Attempted
@@ -2378,7 +2378,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2005,KWP Wrocław,338,50-54,41,Attempted
 2005,KWP Bydgoszcz,327,50-54,38,Attempted
 2005,KWP Lublin,383,50-54,52,Attempted
-2005,KWP Gorzów Wielk.,191,50-54,20,Attempted
+2005,KWP Gorzów Wlkp.,191,50-54,20,Attempted
 2005,KWP Łódź,378,50-54,40,Attempted
 2005,KWP Kraków,471,50-54,54,Attempted
 2005,KWP Radom,364,50-54,60,Attempted
@@ -2396,7 +2396,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2006,KWP Wrocław,320,50-54,38,Attempted
 2006,KWP Bydgoszcz,251,50-54,24,Attempted
 2006,KWP Lublin,345,50-54,41,Attempted
-2006,KWP Gorzów Wielk.,223,50-54,24,Attempted
+2006,KWP Gorzów Wlkp.,223,50-54,24,Attempted
 2006,KWP Łódź,389,50-54,50,Attempted
 2006,KWP Kraków,386,50-54,39,Attempted
 2006,KWP Radom,312,50-54,42,Attempted
@@ -2414,7 +2414,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2007,KWP Wrocław,282,50-54,21,Attempted
 2007,KWP Bydgoszcz,251,50-54,23,Attempted
 2007,KWP Lublin,295,50-54,38,Attempted
-2007,KWP Gorzów Wielk.,190,50-54,30,Attempted
+2007,KWP Gorzów Wlkp.,190,50-54,30,Attempted
 2007,KWP Łódź,390,50-54,43,Attempted
 2007,KWP Kraków,337,50-54,29,Attempted
 2007,KWP Radom,301,50-54,38,Attempted
@@ -2432,7 +2432,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2008,KWP Wrocław,311,50-54,56,Attempted
 2008,KWP Bydgoszcz,323,50-54,34,Attempted
 2008,KWP Lublin,398,50-54,32,Attempted
-2008,KWP Gorzów Wielk.,201,50-54,16,Attempted
+2008,KWP Gorzów Wlkp.,201,50-54,16,Attempted
 2008,KWP Łódź,379,50-54,55,Attempted
 2008,KWP Kraków,369,50-54,50,Attempted
 2008,KWP Radom,487,50-54,56,Attempted
@@ -2450,7 +2450,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2009,KWP Wrocław,295,50-54,33,Attempted
 2009,KWP Bydgoszcz,333,50-54,47,Attempted
 2009,KWP Lublin,390,50-54,41,Attempted
-2009,KWP Gorzów Wielk.,285,50-54,33,Attempted
+2009,KWP Gorzów Wlkp.,285,50-54,33,Attempted
 2009,KWP Łódź,471,50-54,68,Attempted
 2009,KWP Kraków,463,50-54,57,Attempted
 2009,KWP Radom,452,50-54,48,Attempted
@@ -2468,7 +2468,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2010,KWP Wrocław,266,50-54,28,Attempted
 2010,KWP Bydgoszcz,291,50-54,44,Attempted
 2010,KWP Lublin,359,50-54,50,Attempted
-2010,KWP Gorzów Wielk.,183,50-54,23,Attempted
+2010,KWP Gorzów Wlkp.,183,50-54,23,Attempted
 2010,KWP Łódź,440,50-54,60,Attempted
 2010,KWP Kraków,467,50-54,56,Attempted
 2010,KWP Radom,416,50-54,61,Attempted
@@ -2486,7 +2486,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2011,KWP Wrocław,241,50-54,40,Attempted
 2011,KWP Bydgoszcz,330,50-54,34,Attempted
 2011,KWP Lublin,313,50-54,38,Attempted
-2011,KWP Gorzów Wielk.,214,50-54,27,Attempted
+2011,KWP Gorzów Wlkp.,214,50-54,27,Attempted
 2011,KWP Łódź,436,50-54,44,Attempted
 2011,KWP Kraków,439,50-54,56,Attempted
 2011,KWP Radom,356,50-54,55,Attempted
@@ -2504,7 +2504,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2012,KWP Wrocław,262,50-54,27,Attempted
 2012,KWP Bydgoszcz,348,50-54,36,Attempted
 2012,KWP Lublin,302,50-54,34,Attempted
-2012,KWP Gorzów Wielk.,248,50-54,22,Attempted
+2012,KWP Gorzów Wlkp.,248,50-54,22,Attempted
 2012,KWP Łódź,511,50-54,62,Attempted
 2012,KWP Kraków,468,50-54,63,Attempted
 2012,KWP Radom,350,50-54,43,Attempted
@@ -2522,7 +2522,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 1999,KWP Wrocław,378,55-59,18,Attempted
 1999,KWP Bydgoszcz,263,55-59,18,Attempted
 1999,KWP Lublin,283,55-59,13,Attempted
-1999,KWP Gorzów Wielk.,194,55-59,5,Attempted
+1999,KWP Gorzów Wlkp.,194,55-59,5,Attempted
 1999,KWP Łódź,410,55-59,24,Attempted
 1999,KWP Kraków,302,55-59,21,Attempted
 1999,KWP Radom,403,55-59,31,Attempted
@@ -2540,7 +2540,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2000,KWP Wrocław,431,55-59,23,Attempted
 2000,KWP Bydgoszcz,262,55-59,14,Attempted
 2000,KWP Lublin,288,55-59,27,Attempted
-2000,KWP Gorzów Wielk.,178,55-59,9,Attempted
+2000,KWP Gorzów Wlkp.,178,55-59,9,Attempted
 2000,KWP Łódź,402,55-59,19,Attempted
 2000,KWP Kraków,545,55-59,32,Attempted
 2000,KWP Radom,439,55-59,18,Attempted
@@ -2558,7 +2558,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2001,KWP Wrocław,372,55-59,20,Attempted
 2001,KWP Bydgoszcz,268,55-59,13,Attempted
 2001,KWP Lublin,313,55-59,17,Attempted
-2001,KWP Gorzów Wielk.,246,55-59,13,Attempted
+2001,KWP Gorzów Wlkp.,246,55-59,13,Attempted
 2001,KWP Łódź,380,55-59,24,Attempted
 2001,KWP Kraków,591,55-59,34,Attempted
 2001,KWP Radom,464,55-59,24,Attempted
@@ -2576,7 +2576,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2002,KWP Wrocław,372,55-59,18,Attempted
 2002,KWP Bydgoszcz,233,55-59,12,Attempted
 2002,KWP Lublin,329,55-59,15,Attempted
-2002,KWP Gorzów Wielk.,243,55-59,16,Attempted
+2002,KWP Gorzów Wlkp.,243,55-59,16,Attempted
 2002,KWP Łódź,385,55-59,27,Attempted
 2002,KWP Kraków,640,55-59,50,Attempted
 2002,KWP Radom,393,55-59,21,Attempted
@@ -2594,7 +2594,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2003,KWP Wrocław,420,55-59,26,Attempted
 2003,KWP Bydgoszcz,199,55-59,16,Attempted
 2003,KWP Lublin,399,55-59,22,Attempted
-2003,KWP Gorzów Wielk.,180,55-59,13,Attempted
+2003,KWP Gorzów Wlkp.,180,55-59,13,Attempted
 2003,KWP Łódź,335,55-59,26,Attempted
 2003,KWP Kraków,481,55-59,45,Attempted
 2003,KWP Radom,336,55-59,16,Attempted
@@ -2612,7 +2612,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2004,KWP Wrocław,450,55-59,29,Attempted
 2004,KWP Bydgoszcz,361,55-59,29,Attempted
 2004,KWP Lublin,415,55-59,31,Attempted
-2004,KWP Gorzów Wielk.,211,55-59,12,Attempted
+2004,KWP Gorzów Wlkp.,211,55-59,12,Attempted
 2004,KWP Łódź,382,55-59,32,Attempted
 2004,KWP Kraków,510,55-59,54,Attempted
 2004,KWP Radom,336,55-59,29,Attempted
@@ -2630,7 +2630,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2005,KWP Wrocław,338,55-59,40,Attempted
 2005,KWP Bydgoszcz,327,55-59,24,Attempted
 2005,KWP Lublin,383,55-59,32,Attempted
-2005,KWP Gorzów Wielk.,191,55-59,15,Attempted
+2005,KWP Gorzów Wlkp.,191,55-59,15,Attempted
 2005,KWP Łódź,378,55-59,45,Attempted
 2005,KWP Kraków,471,55-59,39,Attempted
 2005,KWP Radom,364,55-59,25,Attempted
@@ -2648,7 +2648,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2006,KWP Wrocław,320,55-59,38,Attempted
 2006,KWP Bydgoszcz,251,55-59,18,Attempted
 2006,KWP Lublin,345,55-59,23,Attempted
-2006,KWP Gorzów Wielk.,223,55-59,18,Attempted
+2006,KWP Gorzów Wlkp.,223,55-59,18,Attempted
 2006,KWP Łódź,389,55-59,39,Attempted
 2006,KWP Kraków,386,55-59,42,Attempted
 2006,KWP Radom,312,55-59,25,Attempted
@@ -2666,7 +2666,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2007,KWP Wrocław,282,55-59,29,Attempted
 2007,KWP Bydgoszcz,251,55-59,22,Attempted
 2007,KWP Lublin,295,55-59,23,Attempted
-2007,KWP Gorzów Wielk.,190,55-59,13,Attempted
+2007,KWP Gorzów Wlkp.,190,55-59,13,Attempted
 2007,KWP Łódź,390,55-59,36,Attempted
 2007,KWP Kraków,337,55-59,33,Attempted
 2007,KWP Radom,301,55-59,22,Attempted
@@ -2684,7 +2684,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2008,KWP Wrocław,311,55-59,32,Attempted
 2008,KWP Bydgoszcz,323,55-59,44,Attempted
 2008,KWP Lublin,398,55-59,51,Attempted
-2008,KWP Gorzów Wielk.,201,55-59,9,Attempted
+2008,KWP Gorzów Wlkp.,201,55-59,9,Attempted
 2008,KWP Łódź,379,55-59,37,Attempted
 2008,KWP Kraków,369,55-59,25,Attempted
 2008,KWP Radom,487,55-59,51,Attempted
@@ -2702,7 +2702,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2009,KWP Wrocław,295,55-59,32,Attempted
 2009,KWP Bydgoszcz,333,55-59,37,Attempted
 2009,KWP Lublin,390,55-59,50,Attempted
-2009,KWP Gorzów Wielk.,285,55-59,22,Attempted
+2009,KWP Gorzów Wlkp.,285,55-59,22,Attempted
 2009,KWP Łódź,471,55-59,48,Attempted
 2009,KWP Kraków,463,55-59,53,Attempted
 2009,KWP Radom,452,55-59,51,Attempted
@@ -2720,7 +2720,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2010,KWP Wrocław,266,55-59,39,Attempted
 2010,KWP Bydgoszcz,291,55-59,24,Attempted
 2010,KWP Lublin,359,55-59,34,Attempted
-2010,KWP Gorzów Wielk.,183,55-59,18,Attempted
+2010,KWP Gorzów Wlkp.,183,55-59,18,Attempted
 2010,KWP Łódź,440,55-59,54,Attempted
 2010,KWP Kraków,467,55-59,44,Attempted
 2010,KWP Radom,416,55-59,52,Attempted
@@ -2738,7 +2738,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2011,KWP Wrocław,241,55-59,31,Attempted
 2011,KWP Bydgoszcz,330,55-59,44,Attempted
 2011,KWP Lublin,313,55-59,35,Attempted
-2011,KWP Gorzów Wielk.,214,55-59,17,Attempted
+2011,KWP Gorzów Wlkp.,214,55-59,17,Attempted
 2011,KWP Łódź,436,55-59,46,Attempted
 2011,KWP Kraków,439,55-59,58,Attempted
 2011,KWP Radom,356,55-59,40,Attempted
@@ -2756,7 +2756,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2012,KWP Wrocław,262,55-59,39,Attempted
 2012,KWP Bydgoszcz,348,55-59,30,Attempted
 2012,KWP Lublin,302,55-59,43,Attempted
-2012,KWP Gorzów Wielk.,248,55-59,23,Attempted
+2012,KWP Gorzów Wlkp.,248,55-59,23,Attempted
 2012,KWP Łódź,511,55-59,57,Attempted
 2012,KWP Kraków,468,55-59,48,Attempted
 2012,KWP Radom,350,55-59,37,Attempted
@@ -2774,7 +2774,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 1999,KWP Wrocław,378,60-64,22,Attempted
 1999,KWP Bydgoszcz,263,60-64,12,Attempted
 1999,KWP Lublin,283,60-64,18,Attempted
-1999,KWP Gorzów Wielk.,194,60-64,10,Attempted
+1999,KWP Gorzów Wlkp.,194,60-64,10,Attempted
 1999,KWP Łódź,410,60-64,23,Attempted
 1999,KWP Kraków,302,60-64,15,Attempted
 1999,KWP Radom,403,60-64,23,Attempted
@@ -2792,7 +2792,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2000,KWP Wrocław,431,60-64,14,Attempted
 2000,KWP Bydgoszcz,262,60-64,13,Attempted
 2000,KWP Lublin,288,60-64,13,Attempted
-2000,KWP Gorzów Wielk.,178,60-64,8,Attempted
+2000,KWP Gorzów Wlkp.,178,60-64,8,Attempted
 2000,KWP Łódź,402,60-64,13,Attempted
 2000,KWP Kraków,545,60-64,40,Attempted
 2000,KWP Radom,439,60-64,27,Attempted
@@ -2810,7 +2810,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2001,KWP Wrocław,372,60-64,21,Attempted
 2001,KWP Bydgoszcz,268,60-64,12,Attempted
 2001,KWP Lublin,313,60-64,14,Attempted
-2001,KWP Gorzów Wielk.,246,60-64,3,Attempted
+2001,KWP Gorzów Wlkp.,246,60-64,3,Attempted
 2001,KWP Łódź,380,60-64,17,Attempted
 2001,KWP Kraków,591,60-64,40,Attempted
 2001,KWP Radom,464,60-64,22,Attempted
@@ -2828,7 +2828,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2002,KWP Wrocław,372,60-64,17,Attempted
 2002,KWP Bydgoszcz,233,60-64,10,Attempted
 2002,KWP Lublin,329,60-64,14,Attempted
-2002,KWP Gorzów Wielk.,243,60-64,13,Attempted
+2002,KWP Gorzów Wlkp.,243,60-64,13,Attempted
 2002,KWP Łódź,385,60-64,28,Attempted
 2002,KWP Kraków,640,60-64,41,Attempted
 2002,KWP Radom,393,60-64,15,Attempted
@@ -2846,7 +2846,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2003,KWP Wrocław,420,60-64,20,Attempted
 2003,KWP Bydgoszcz,199,60-64,16,Attempted
 2003,KWP Lublin,399,60-64,13,Attempted
-2003,KWP Gorzów Wielk.,180,60-64,5,Attempted
+2003,KWP Gorzów Wlkp.,180,60-64,5,Attempted
 2003,KWP Łódź,335,60-64,20,Attempted
 2003,KWP Kraków,481,60-64,28,Attempted
 2003,KWP Radom,336,60-64,24,Attempted
@@ -2864,7 +2864,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2004,KWP Wrocław,450,60-64,23,Attempted
 2004,KWP Bydgoszcz,361,60-64,16,Attempted
 2004,KWP Lublin,415,60-64,16,Attempted
-2004,KWP Gorzów Wielk.,211,60-64,11,Attempted
+2004,KWP Gorzów Wlkp.,211,60-64,11,Attempted
 2004,KWP Łódź,382,60-64,24,Attempted
 2004,KWP Kraków,510,60-64,30,Attempted
 2004,KWP Radom,336,60-64,19,Attempted
@@ -2882,7 +2882,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2005,KWP Wrocław,338,60-64,20,Attempted
 2005,KWP Bydgoszcz,327,60-64,18,Attempted
 2005,KWP Lublin,383,60-64,19,Attempted
-2005,KWP Gorzów Wielk.,191,60-64,6,Attempted
+2005,KWP Gorzów Wlkp.,191,60-64,6,Attempted
 2005,KWP Łódź,378,60-64,20,Attempted
 2005,KWP Kraków,471,60-64,32,Attempted
 2005,KWP Radom,364,60-64,16,Attempted
@@ -2900,7 +2900,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2006,KWP Wrocław,320,60-64,16,Attempted
 2006,KWP Bydgoszcz,251,60-64,18,Attempted
 2006,KWP Lublin,345,60-64,15,Attempted
-2006,KWP Gorzów Wielk.,223,60-64,9,Attempted
+2006,KWP Gorzów Wlkp.,223,60-64,9,Attempted
 2006,KWP Łódź,389,60-64,17,Attempted
 2006,KWP Kraków,386,60-64,21,Attempted
 2006,KWP Radom,312,60-64,10,Attempted
@@ -2918,7 +2918,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2007,KWP Wrocław,282,60-64,14,Attempted
 2007,KWP Bydgoszcz,251,60-64,13,Attempted
 2007,KWP Lublin,295,60-64,16,Attempted
-2007,KWP Gorzów Wielk.,190,60-64,8,Attempted
+2007,KWP Gorzów Wlkp.,190,60-64,8,Attempted
 2007,KWP Łódź,390,60-64,17,Attempted
 2007,KWP Kraków,337,60-64,18,Attempted
 2007,KWP Radom,301,60-64,20,Attempted
@@ -2936,7 +2936,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2008,KWP Wrocław,311,60-64,13,Attempted
 2008,KWP Bydgoszcz,323,60-64,15,Attempted
 2008,KWP Lublin,398,60-64,25,Attempted
-2008,KWP Gorzów Wielk.,201,60-64,12,Attempted
+2008,KWP Gorzów Wlkp.,201,60-64,12,Attempted
 2008,KWP Łódź,379,60-64,32,Attempted
 2008,KWP Kraków,369,60-64,27,Attempted
 2008,KWP Radom,487,60-64,34,Attempted
@@ -2954,7 +2954,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2009,KWP Wrocław,295,60-64,19,Attempted
 2009,KWP Bydgoszcz,333,60-64,25,Attempted
 2009,KWP Lublin,390,60-64,17,Attempted
-2009,KWP Gorzów Wielk.,285,60-64,15,Attempted
+2009,KWP Gorzów Wlkp.,285,60-64,15,Attempted
 2009,KWP Łódź,471,60-64,31,Attempted
 2009,KWP Kraków,463,60-64,31,Attempted
 2009,KWP Radom,452,60-64,31,Attempted
@@ -2972,7 +2972,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2010,KWP Wrocław,266,60-64,25,Attempted
 2010,KWP Bydgoszcz,291,60-64,18,Attempted
 2010,KWP Lublin,359,60-64,24,Attempted
-2010,KWP Gorzów Wielk.,183,60-64,15,Attempted
+2010,KWP Gorzów Wlkp.,183,60-64,15,Attempted
 2010,KWP Łódź,440,60-64,30,Attempted
 2010,KWP Kraków,467,60-64,20,Attempted
 2010,KWP Radom,416,60-64,32,Attempted
@@ -2990,7 +2990,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2011,KWP Wrocław,241,60-64,16,Attempted
 2011,KWP Bydgoszcz,330,60-64,25,Attempted
 2011,KWP Lublin,313,60-64,25,Attempted
-2011,KWP Gorzów Wielk.,214,60-64,14,Attempted
+2011,KWP Gorzów Wlkp.,214,60-64,14,Attempted
 2011,KWP Łódź,436,60-64,19,Attempted
 2011,KWP Kraków,439,60-64,25,Attempted
 2011,KWP Radom,356,60-64,20,Attempted
@@ -3008,7 +3008,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2012,KWP Wrocław,262,60-64,28,Attempted
 2012,KWP Bydgoszcz,348,60-64,34,Attempted
 2012,KWP Lublin,302,60-64,15,Attempted
-2012,KWP Gorzów Wielk.,248,60-64,27,Attempted
+2012,KWP Gorzów Wlkp.,248,60-64,27,Attempted
 2012,KWP Łódź,511,60-64,35,Attempted
 2012,KWP Kraków,468,60-64,25,Attempted
 2012,KWP Radom,350,60-64,36,Attempted
@@ -3026,7 +3026,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 1999,KWP Wrocław,378,65-69,7,Attempted
 1999,KWP Bydgoszcz,263,65-69,9,Attempted
 1999,KWP Lublin,283,65-69,14,Attempted
-1999,KWP Gorzów Wielk.,194,65-69,6,Attempted
+1999,KWP Gorzów Wlkp.,194,65-69,6,Attempted
 1999,KWP Łódź,410,65-69,15,Attempted
 1999,KWP Kraków,302,65-69,19,Attempted
 1999,KWP Radom,403,65-69,18,Attempted
@@ -3044,7 +3044,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2000,KWP Wrocław,431,65-69,19,Attempted
 2000,KWP Bydgoszcz,262,65-69,5,Attempted
 2000,KWP Lublin,288,65-69,6,Attempted
-2000,KWP Gorzów Wielk.,178,65-69,6,Attempted
+2000,KWP Gorzów Wlkp.,178,65-69,6,Attempted
 2000,KWP Łódź,402,65-69,18,Attempted
 2000,KWP Kraków,545,65-69,29,Attempted
 2000,KWP Radom,439,65-69,23,Attempted
@@ -3062,7 +3062,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2001,KWP Wrocław,372,65-69,16,Attempted
 2001,KWP Bydgoszcz,268,65-69,14,Attempted
 2001,KWP Lublin,313,65-69,7,Attempted
-2001,KWP Gorzów Wielk.,246,65-69,7,Attempted
+2001,KWP Gorzów Wlkp.,246,65-69,7,Attempted
 2001,KWP Łódź,380,65-69,18,Attempted
 2001,KWP Kraków,591,65-69,25,Attempted
 2001,KWP Radom,464,65-69,10,Attempted
@@ -3080,7 +3080,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2002,KWP Wrocław,372,65-69,27,Attempted
 2002,KWP Bydgoszcz,233,65-69,15,Attempted
 2002,KWP Lublin,329,65-69,14,Attempted
-2002,KWP Gorzów Wielk.,243,65-69,9,Attempted
+2002,KWP Gorzów Wlkp.,243,65-69,9,Attempted
 2002,KWP Łódź,385,65-69,13,Attempted
 2002,KWP Kraków,640,65-69,30,Attempted
 2002,KWP Radom,393,65-69,12,Attempted
@@ -3098,7 +3098,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2003,KWP Wrocław,420,65-69,21,Attempted
 2003,KWP Bydgoszcz,199,65-69,7,Attempted
 2003,KWP Lublin,399,65-69,21,Attempted
-2003,KWP Gorzów Wielk.,180,65-69,5,Attempted
+2003,KWP Gorzów Wlkp.,180,65-69,5,Attempted
 2003,KWP Łódź,335,65-69,15,Attempted
 2003,KWP Kraków,481,65-69,32,Attempted
 2003,KWP Radom,336,65-69,16,Attempted
@@ -3116,7 +3116,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2004,KWP Wrocław,450,65-69,25,Attempted
 2004,KWP Bydgoszcz,361,65-69,20,Attempted
 2004,KWP Lublin,415,65-69,12,Attempted
-2004,KWP Gorzów Wielk.,211,65-69,4,Attempted
+2004,KWP Gorzów Wlkp.,211,65-69,4,Attempted
 2004,KWP Łódź,382,65-69,11,Attempted
 2004,KWP Kraków,510,65-69,23,Attempted
 2004,KWP Radom,336,65-69,8,Attempted
@@ -3134,7 +3134,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2005,KWP Wrocław,338,65-69,12,Attempted
 2005,KWP Bydgoszcz,327,65-69,12,Attempted
 2005,KWP Lublin,383,65-69,14,Attempted
-2005,KWP Gorzów Wielk.,191,65-69,5,Attempted
+2005,KWP Gorzów Wlkp.,191,65-69,5,Attempted
 2005,KWP Łódź,378,65-69,11,Attempted
 2005,KWP Kraków,471,65-69,23,Attempted
 2005,KWP Radom,364,65-69,19,Attempted
@@ -3152,7 +3152,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2006,KWP Wrocław,320,65-69,15,Attempted
 2006,KWP Bydgoszcz,251,65-69,15,Attempted
 2006,KWP Lublin,345,65-69,8,Attempted
-2006,KWP Gorzów Wielk.,223,65-69,9,Attempted
+2006,KWP Gorzów Wlkp.,223,65-69,9,Attempted
 2006,KWP Łódź,389,65-69,18,Attempted
 2006,KWP Kraków,386,65-69,18,Attempted
 2006,KWP Radom,312,65-69,13,Attempted
@@ -3170,7 +3170,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2007,KWP Wrocław,282,65-69,14,Attempted
 2007,KWP Bydgoszcz,251,65-69,15,Attempted
 2007,KWP Lublin,295,65-69,10,Attempted
-2007,KWP Gorzów Wielk.,190,65-69,5,Attempted
+2007,KWP Gorzów Wlkp.,190,65-69,5,Attempted
 2007,KWP Łódź,390,65-69,13,Attempted
 2007,KWP Kraków,337,65-69,12,Attempted
 2007,KWP Radom,301,65-69,15,Attempted
@@ -3188,7 +3188,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2008,KWP Wrocław,311,65-69,16,Attempted
 2008,KWP Bydgoszcz,323,65-69,7,Attempted
 2008,KWP Lublin,398,65-69,6,Attempted
-2008,KWP Gorzów Wielk.,201,65-69,17,Attempted
+2008,KWP Gorzów Wlkp.,201,65-69,17,Attempted
 2008,KWP Łódź,379,65-69,16,Attempted
 2008,KWP Kraków,369,65-69,14,Attempted
 2008,KWP Radom,487,65-69,18,Attempted
@@ -3206,7 +3206,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2009,KWP Wrocław,295,65-69,11,Attempted
 2009,KWP Bydgoszcz,333,65-69,11,Attempted
 2009,KWP Lublin,390,65-69,14,Attempted
-2009,KWP Gorzów Wielk.,285,65-69,12,Attempted
+2009,KWP Gorzów Wlkp.,285,65-69,12,Attempted
 2009,KWP Łódź,471,65-69,16,Attempted
 2009,KWP Kraków,463,65-69,26,Attempted
 2009,KWP Radom,452,65-69,20,Attempted
@@ -3224,7 +3224,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2010,KWP Wrocław,266,65-69,7,Attempted
 2010,KWP Bydgoszcz,291,65-69,18,Attempted
 2010,KWP Lublin,359,65-69,15,Attempted
-2010,KWP Gorzów Wielk.,183,65-69,5,Attempted
+2010,KWP Gorzów Wlkp.,183,65-69,5,Attempted
 2010,KWP Łódź,440,65-69,17,Attempted
 2010,KWP Kraków,467,65-69,22,Attempted
 2010,KWP Radom,416,65-69,13,Attempted
@@ -3242,7 +3242,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2011,KWP Wrocław,241,65-69,6,Attempted
 2011,KWP Bydgoszcz,330,65-69,6,Attempted
 2011,KWP Lublin,313,65-69,9,Attempted
-2011,KWP Gorzów Wielk.,214,65-69,5,Attempted
+2011,KWP Gorzów Wlkp.,214,65-69,5,Attempted
 2011,KWP Łódź,436,65-69,10,Attempted
 2011,KWP Kraków,439,65-69,19,Attempted
 2011,KWP Radom,356,65-69,19,Attempted
@@ -3260,7 +3260,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2012,KWP Wrocław,262,65-69,14,Attempted
 2012,KWP Bydgoszcz,348,65-69,15,Attempted
 2012,KWP Lublin,302,65-69,12,Attempted
-2012,KWP Gorzów Wielk.,248,65-69,17,Attempted
+2012,KWP Gorzów Wlkp.,248,65-69,17,Attempted
 2012,KWP Łódź,511,65-69,19,Attempted
 2012,KWP Kraków,468,65-69,19,Attempted
 2012,KWP Radom,350,65-69,12,Attempted
@@ -3278,7 +3278,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 1999,KWP Wrocław,378,70-74,21,Attempted
 1999,KWP Bydgoszcz,263,70-74,4,Attempted
 1999,KWP Lublin,283,70-74,10,Attempted
-1999,KWP Gorzów Wielk.,194,70-74,11,Attempted
+1999,KWP Gorzów Wlkp.,194,70-74,11,Attempted
 1999,KWP Łódź,410,70-74,15,Attempted
 1999,KWP Kraków,302,70-74,8,Attempted
 1999,KWP Radom,403,70-74,9,Attempted
@@ -3296,7 +3296,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2000,KWP Wrocław,431,70-74,18,Attempted
 2000,KWP Bydgoszcz,262,70-74,10,Attempted
 2000,KWP Lublin,288,70-74,10,Attempted
-2000,KWP Gorzów Wielk.,178,70-74,7,Attempted
+2000,KWP Gorzów Wlkp.,178,70-74,7,Attempted
 2000,KWP Łódź,402,70-74,16,Attempted
 2000,KWP Kraków,545,70-74,18,Attempted
 2000,KWP Radom,439,70-74,14,Attempted
@@ -3314,7 +3314,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2001,KWP Wrocław,372,70-74,16,Attempted
 2001,KWP Bydgoszcz,268,70-74,12,Attempted
 2001,KWP Lublin,313,70-74,8,Attempted
-2001,KWP Gorzów Wielk.,246,70-74,8,Attempted
+2001,KWP Gorzów Wlkp.,246,70-74,8,Attempted
 2001,KWP Łódź,380,70-74,14,Attempted
 2001,KWP Kraków,591,70-74,22,Attempted
 2001,KWP Radom,464,70-74,16,Attempted
@@ -3332,7 +3332,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2002,KWP Wrocław,372,70-74,14,Attempted
 2002,KWP Bydgoszcz,233,70-74,7,Attempted
 2002,KWP Lublin,329,70-74,13,Attempted
-2002,KWP Gorzów Wielk.,243,70-74,10,Attempted
+2002,KWP Gorzów Wlkp.,243,70-74,10,Attempted
 2002,KWP Łódź,385,70-74,16,Attempted
 2002,KWP Kraków,640,70-74,36,Attempted
 2002,KWP Radom,393,70-74,18,Attempted
@@ -3350,7 +3350,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2003,KWP Wrocław,420,70-74,18,Attempted
 2003,KWP Bydgoszcz,199,70-74,6,Attempted
 2003,KWP Lublin,399,70-74,10,Attempted
-2003,KWP Gorzów Wielk.,180,70-74,8,Attempted
+2003,KWP Gorzów Wlkp.,180,70-74,8,Attempted
 2003,KWP Łódź,335,70-74,7,Attempted
 2003,KWP Kraków,481,70-74,14,Attempted
 2003,KWP Radom,336,70-74,15,Attempted
@@ -3368,7 +3368,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2004,KWP Wrocław,450,70-74,12,Attempted
 2004,KWP Bydgoszcz,361,70-74,12,Attempted
 2004,KWP Lublin,415,70-74,13,Attempted
-2004,KWP Gorzów Wielk.,211,70-74,13,Attempted
+2004,KWP Gorzów Wlkp.,211,70-74,13,Attempted
 2004,KWP Łódź,382,70-74,13,Attempted
 2004,KWP Kraków,510,70-74,18,Attempted
 2004,KWP Radom,336,70-74,16,Attempted
@@ -3386,7 +3386,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2005,KWP Wrocław,338,70-74,15,Attempted
 2005,KWP Bydgoszcz,327,70-74,14,Attempted
 2005,KWP Lublin,383,70-74,11,Attempted
-2005,KWP Gorzów Wielk.,191,70-74,10,Attempted
+2005,KWP Gorzów Wlkp.,191,70-74,10,Attempted
 2005,KWP Łódź,378,70-74,12,Attempted
 2005,KWP Kraków,471,70-74,14,Attempted
 2005,KWP Radom,364,70-74,17,Attempted
@@ -3404,7 +3404,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2006,KWP Wrocław,320,70-74,7,Attempted
 2006,KWP Bydgoszcz,251,70-74,11,Attempted
 2006,KWP Lublin,345,70-74,13,Attempted
-2006,KWP Gorzów Wielk.,223,70-74,7,Attempted
+2006,KWP Gorzów Wlkp.,223,70-74,7,Attempted
 2006,KWP Łódź,389,70-74,11,Attempted
 2006,KWP Kraków,386,70-74,11,Attempted
 2006,KWP Radom,312,70-74,7,Attempted
@@ -3422,7 +3422,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2007,KWP Wrocław,282,70-74,9,Attempted
 2007,KWP Bydgoszcz,251,70-74,7,Attempted
 2007,KWP Lublin,295,70-74,6,Attempted
-2007,KWP Gorzów Wielk.,190,70-74,5,Attempted
+2007,KWP Gorzów Wlkp.,190,70-74,5,Attempted
 2007,KWP Łódź,390,70-74,10,Attempted
 2007,KWP Kraków,337,70-74,16,Attempted
 2007,KWP Radom,301,70-74,12,Attempted
@@ -3440,7 +3440,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2008,KWP Wrocław,311,70-74,8,Attempted
 2008,KWP Bydgoszcz,323,70-74,10,Attempted
 2008,KWP Lublin,398,70-74,12,Attempted
-2008,KWP Gorzów Wielk.,201,70-74,4,Attempted
+2008,KWP Gorzów Wlkp.,201,70-74,4,Attempted
 2008,KWP Łódź,379,70-74,6,Attempted
 2008,KWP Kraków,369,70-74,21,Attempted
 2008,KWP Radom,487,70-74,16,Attempted
@@ -3458,7 +3458,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2009,KWP Wrocław,295,70-74,10,Attempted
 2009,KWP Bydgoszcz,333,70-74,11,Attempted
 2009,KWP Lublin,390,70-74,10,Attempted
-2009,KWP Gorzów Wielk.,285,70-74,9,Attempted
+2009,KWP Gorzów Wlkp.,285,70-74,9,Attempted
 2009,KWP Łódź,471,70-74,16,Attempted
 2009,KWP Kraków,463,70-74,10,Attempted
 2009,KWP Radom,452,70-74,13,Attempted
@@ -3476,7 +3476,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2010,KWP Wrocław,266,70-74,9,Attempted
 2010,KWP Bydgoszcz,291,70-74,15,Attempted
 2010,KWP Lublin,359,70-74,10,Attempted
-2010,KWP Gorzów Wielk.,183,70-74,4,Attempted
+2010,KWP Gorzów Wlkp.,183,70-74,4,Attempted
 2010,KWP Łódź,440,70-74,11,Attempted
 2010,KWP Kraków,467,70-74,15,Attempted
 2010,KWP Radom,416,70-74,9,Attempted
@@ -3494,7 +3494,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2011,KWP Wrocław,241,70-74,7,Attempted
 2011,KWP Bydgoszcz,330,70-74,8,Attempted
 2011,KWP Lublin,313,70-74,6,Attempted
-2011,KWP Gorzów Wielk.,214,70-74,2,Attempted
+2011,KWP Gorzów Wlkp.,214,70-74,2,Attempted
 2011,KWP Łódź,436,70-74,23,Attempted
 2011,KWP Kraków,439,70-74,18,Attempted
 2011,KWP Radom,356,70-74,16,Attempted
@@ -3512,7 +3512,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2012,KWP Wrocław,262,70-74,5,Attempted
 2012,KWP Bydgoszcz,348,70-74,8,Attempted
 2012,KWP Lublin,302,70-74,10,Attempted
-2012,KWP Gorzów Wielk.,248,70-74,6,Attempted
+2012,KWP Gorzów Wlkp.,248,70-74,6,Attempted
 2012,KWP Łódź,511,70-74,10,Attempted
 2012,KWP Kraków,468,70-74,16,Attempted
 2012,KWP Radom,350,70-74,7,Attempted
@@ -3530,7 +3530,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 1999,KWP Wrocław,378,75-79,11,Attempted
 1999,KWP Bydgoszcz,263,75-79,2,Attempted
 1999,KWP Lublin,283,75-79,9,Attempted
-1999,KWP Gorzów Wielk.,194,75-79,2,Attempted
+1999,KWP Gorzów Wlkp.,194,75-79,2,Attempted
 1999,KWP Łódź,410,75-79,7,Attempted
 1999,KWP Kraków,302,75-79,4,Attempted
 1999,KWP Radom,403,75-79,7,Attempted
@@ -3548,7 +3548,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2000,KWP Wrocław,431,75-79,9,Attempted
 2000,KWP Bydgoszcz,262,75-79,9,Attempted
 2000,KWP Lublin,288,75-79,14,Attempted
-2000,KWP Gorzów Wielk.,178,75-79,5,Attempted
+2000,KWP Gorzów Wlkp.,178,75-79,5,Attempted
 2000,KWP Łódź,402,75-79,9,Attempted
 2000,KWP Kraków,545,75-79,11,Attempted
 2000,KWP Radom,439,75-79,8,Attempted
@@ -3566,7 +3566,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2001,KWP Wrocław,372,75-79,12,Attempted
 2001,KWP Bydgoszcz,268,75-79,7,Attempted
 2001,KWP Lublin,313,75-79,9,Attempted
-2001,KWP Gorzów Wielk.,246,75-79,4,Attempted
+2001,KWP Gorzów Wlkp.,246,75-79,4,Attempted
 2001,KWP Łódź,380,75-79,13,Attempted
 2001,KWP Kraków,591,75-79,13,Attempted
 2001,KWP Radom,464,75-79,12,Attempted
@@ -3584,7 +3584,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2002,KWP Wrocław,372,75-79,10,Attempted
 2002,KWP Bydgoszcz,233,75-79,4,Attempted
 2002,KWP Lublin,329,75-79,5,Attempted
-2002,KWP Gorzów Wielk.,243,75-79,1,Attempted
+2002,KWP Gorzów Wlkp.,243,75-79,1,Attempted
 2002,KWP Łódź,385,75-79,4,Attempted
 2002,KWP Kraków,640,75-79,21,Attempted
 2002,KWP Radom,393,75-79,14,Attempted
@@ -3602,7 +3602,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2003,KWP Wrocław,420,75-79,8,Attempted
 2003,KWP Bydgoszcz,199,75-79,4,Attempted
 2003,KWP Lublin,399,75-79,7,Attempted
-2003,KWP Gorzów Wielk.,180,75-79,3,Attempted
+2003,KWP Gorzów Wlkp.,180,75-79,3,Attempted
 2003,KWP Łódź,335,75-79,10,Attempted
 2003,KWP Kraków,481,75-79,13,Attempted
 2003,KWP Radom,336,75-79,6,Attempted
@@ -3620,7 +3620,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2004,KWP Wrocław,450,75-79,14,Attempted
 2004,KWP Bydgoszcz,361,75-79,8,Attempted
 2004,KWP Lublin,415,75-79,10,Attempted
-2004,KWP Gorzów Wielk.,211,75-79,3,Attempted
+2004,KWP Gorzów Wlkp.,211,75-79,3,Attempted
 2004,KWP Łódź,382,75-79,9,Attempted
 2004,KWP Kraków,510,75-79,12,Attempted
 2004,KWP Radom,336,75-79,5,Attempted
@@ -3638,7 +3638,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2005,KWP Wrocław,338,75-79,7,Attempted
 2005,KWP Bydgoszcz,327,75-79,6,Attempted
 2005,KWP Lublin,383,75-79,11,Attempted
-2005,KWP Gorzów Wielk.,191,75-79,0,Attempted
+2005,KWP Gorzów Wlkp.,191,75-79,0,Attempted
 2005,KWP Łódź,378,75-79,17,Attempted
 2005,KWP Kraków,471,75-79,11,Attempted
 2005,KWP Radom,364,75-79,4,Attempted
@@ -3656,7 +3656,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2006,KWP Wrocław,320,75-79,12,Attempted
 2006,KWP Bydgoszcz,251,75-79,9,Attempted
 2006,KWP Lublin,345,75-79,10,Attempted
-2006,KWP Gorzów Wielk.,223,75-79,6,Attempted
+2006,KWP Gorzów Wlkp.,223,75-79,6,Attempted
 2006,KWP Łódź,389,75-79,9,Attempted
 2006,KWP Kraków,386,75-79,11,Attempted
 2006,KWP Radom,312,75-79,8,Attempted
@@ -3674,7 +3674,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2007,KWP Wrocław,282,75-79,5,Attempted
 2007,KWP Bydgoszcz,251,75-79,8,Attempted
 2007,KWP Lublin,295,75-79,3,Attempted
-2007,KWP Gorzów Wielk.,190,75-79,6,Attempted
+2007,KWP Gorzów Wlkp.,190,75-79,6,Attempted
 2007,KWP Łódź,390,75-79,12,Attempted
 2007,KWP Kraków,337,75-79,13,Attempted
 2007,KWP Radom,301,75-79,8,Attempted
@@ -3692,7 +3692,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2008,KWP Wrocław,311,75-79,5,Attempted
 2008,KWP Bydgoszcz,323,75-79,4,Attempted
 2008,KWP Lublin,398,75-79,9,Attempted
-2008,KWP Gorzów Wielk.,201,75-79,3,Attempted
+2008,KWP Gorzów Wlkp.,201,75-79,3,Attempted
 2008,KWP Łódź,379,75-79,14,Attempted
 2008,KWP Kraków,369,75-79,9,Attempted
 2008,KWP Radom,487,75-79,15,Attempted
@@ -3710,7 +3710,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2009,KWP Wrocław,295,75-79,9,Attempted
 2009,KWP Bydgoszcz,333,75-79,5,Attempted
 2009,KWP Lublin,390,75-79,5,Attempted
-2009,KWP Gorzów Wielk.,285,75-79,7,Attempted
+2009,KWP Gorzów Wlkp.,285,75-79,7,Attempted
 2009,KWP Łódź,471,75-79,8,Attempted
 2009,KWP Kraków,463,75-79,10,Attempted
 2009,KWP Radom,452,75-79,10,Attempted
@@ -3728,7 +3728,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2010,KWP Wrocław,266,75-79,9,Attempted
 2010,KWP Bydgoszcz,291,75-79,0,Attempted
 2010,KWP Lublin,359,75-79,14,Attempted
-2010,KWP Gorzów Wielk.,183,75-79,5,Attempted
+2010,KWP Gorzów Wlkp.,183,75-79,5,Attempted
 2010,KWP Łódź,440,75-79,2,Attempted
 2010,KWP Kraków,467,75-79,14,Attempted
 2010,KWP Radom,416,75-79,8,Attempted
@@ -3746,7 +3746,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2011,KWP Wrocław,241,75-79,5,Attempted
 2011,KWP Bydgoszcz,330,75-79,10,Attempted
 2011,KWP Lublin,313,75-79,9,Attempted
-2011,KWP Gorzów Wielk.,214,75-79,0,Attempted
+2011,KWP Gorzów Wlkp.,214,75-79,0,Attempted
 2011,KWP Łódź,436,75-79,14,Attempted
 2011,KWP Kraków,439,75-79,6,Attempted
 2011,KWP Radom,356,75-79,6,Attempted
@@ -3764,7 +3764,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2012,KWP Wrocław,262,75-79,4,Attempted
 2012,KWP Bydgoszcz,348,75-79,9,Attempted
 2012,KWP Lublin,302,75-79,8,Attempted
-2012,KWP Gorzów Wielk.,248,75-79,4,Attempted
+2012,KWP Gorzów Wlkp.,248,75-79,4,Attempted
 2012,KWP Łódź,511,75-79,9,Attempted
 2012,KWP Kraków,468,75-79,11,Attempted
 2012,KWP Radom,350,75-79,9,Attempted
@@ -3782,7 +3782,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 1999,KWP Wrocław,378,80-84,2,Attempted
 1999,KWP Bydgoszcz,263,80-84,2,Attempted
 1999,KWP Lublin,283,80-84,6,Attempted
-1999,KWP Gorzów Wielk.,194,80-84,1,Attempted
+1999,KWP Gorzów Wlkp.,194,80-84,1,Attempted
 1999,KWP Łódź,410,80-84,5,Attempted
 1999,KWP Kraków,302,80-84,3,Attempted
 1999,KWP Radom,403,80-84,6,Attempted
@@ -3800,7 +3800,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2000,KWP Wrocław,431,80-84,5,Attempted
 2000,KWP Bydgoszcz,262,80-84,5,Attempted
 2000,KWP Lublin,288,80-84,2,Attempted
-2000,KWP Gorzów Wielk.,178,80-84,0,Attempted
+2000,KWP Gorzów Wlkp.,178,80-84,0,Attempted
 2000,KWP Łódź,402,80-84,8,Attempted
 2000,KWP Kraków,545,80-84,6,Attempted
 2000,KWP Radom,439,80-84,5,Attempted
@@ -3818,7 +3818,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2001,KWP Wrocław,372,80-84,1,Attempted
 2001,KWP Bydgoszcz,268,80-84,2,Attempted
 2001,KWP Lublin,313,80-84,4,Attempted
-2001,KWP Gorzów Wielk.,246,80-84,3,Attempted
+2001,KWP Gorzów Wlkp.,246,80-84,3,Attempted
 2001,KWP Łódź,380,80-84,2,Attempted
 2001,KWP Kraków,591,80-84,9,Attempted
 2001,KWP Radom,464,80-84,6,Attempted
@@ -3836,7 +3836,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2002,KWP Wrocław,372,80-84,4,Attempted
 2002,KWP Bydgoszcz,233,80-84,3,Attempted
 2002,KWP Lublin,329,80-84,3,Attempted
-2002,KWP Gorzów Wielk.,243,80-84,2,Attempted
+2002,KWP Gorzów Wlkp.,243,80-84,2,Attempted
 2002,KWP Łódź,385,80-84,4,Attempted
 2002,KWP Kraków,640,80-84,8,Attempted
 2002,KWP Radom,393,80-84,6,Attempted
@@ -3854,7 +3854,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2003,KWP Wrocław,420,80-84,5,Attempted
 2003,KWP Bydgoszcz,199,80-84,2,Attempted
 2003,KWP Lublin,399,80-84,2,Attempted
-2003,KWP Gorzów Wielk.,180,80-84,2,Attempted
+2003,KWP Gorzów Wlkp.,180,80-84,2,Attempted
 2003,KWP Łódź,335,80-84,6,Attempted
 2003,KWP Kraków,481,80-84,4,Attempted
 2003,KWP Radom,336,80-84,4,Attempted
@@ -3872,7 +3872,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2004,KWP Wrocław,450,80-84,5,Attempted
 2004,KWP Bydgoszcz,361,80-84,4,Attempted
 2004,KWP Lublin,415,80-84,7,Attempted
-2004,KWP Gorzów Wielk.,211,80-84,3,Attempted
+2004,KWP Gorzów Wlkp.,211,80-84,3,Attempted
 2004,KWP Łódź,382,80-84,4,Attempted
 2004,KWP Kraków,510,80-84,5,Attempted
 2004,KWP Radom,336,80-84,4,Attempted
@@ -3890,7 +3890,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2005,KWP Wrocław,338,80-84,8,Attempted
 2005,KWP Bydgoszcz,327,80-84,1,Attempted
 2005,KWP Lublin,383,80-84,2,Attempted
-2005,KWP Gorzów Wielk.,191,80-84,6,Attempted
+2005,KWP Gorzów Wlkp.,191,80-84,6,Attempted
 2005,KWP Łódź,378,80-84,2,Attempted
 2005,KWP Kraków,471,80-84,7,Attempted
 2005,KWP Radom,364,80-84,9,Attempted
@@ -3908,7 +3908,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2006,KWP Wrocław,320,80-84,9,Attempted
 2006,KWP Bydgoszcz,251,80-84,3,Attempted
 2006,KWP Lublin,345,80-84,5,Attempted
-2006,KWP Gorzów Wielk.,223,80-84,3,Attempted
+2006,KWP Gorzów Wlkp.,223,80-84,3,Attempted
 2006,KWP Łódź,389,80-84,10,Attempted
 2006,KWP Kraków,386,80-84,9,Attempted
 2006,KWP Radom,312,80-84,5,Attempted
@@ -3926,7 +3926,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2007,KWP Wrocław,282,80-84,3,Attempted
 2007,KWP Bydgoszcz,251,80-84,4,Attempted
 2007,KWP Lublin,295,80-84,8,Attempted
-2007,KWP Gorzów Wielk.,190,80-84,3,Attempted
+2007,KWP Gorzów Wlkp.,190,80-84,3,Attempted
 2007,KWP Łódź,390,80-84,7,Attempted
 2007,KWP Kraków,337,80-84,5,Attempted
 2007,KWP Radom,301,80-84,3,Attempted
@@ -3944,7 +3944,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2008,KWP Wrocław,311,80-84,4,Attempted
 2008,KWP Bydgoszcz,323,80-84,9,Attempted
 2008,KWP Lublin,398,80-84,6,Attempted
-2008,KWP Gorzów Wielk.,201,80-84,4,Attempted
+2008,KWP Gorzów Wlkp.,201,80-84,4,Attempted
 2008,KWP Łódź,379,80-84,4,Attempted
 2008,KWP Kraków,369,80-84,6,Attempted
 2008,KWP Radom,487,80-84,13,Attempted
@@ -3962,7 +3962,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2009,KWP Wrocław,295,80-84,5,Attempted
 2009,KWP Bydgoszcz,333,80-84,5,Attempted
 2009,KWP Lublin,390,80-84,5,Attempted
-2009,KWP Gorzów Wielk.,285,80-84,6,Attempted
+2009,KWP Gorzów Wlkp.,285,80-84,6,Attempted
 2009,KWP Łódź,471,80-84,8,Attempted
 2009,KWP Kraków,463,80-84,13,Attempted
 2009,KWP Radom,452,80-84,7,Attempted
@@ -3980,7 +3980,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2010,KWP Wrocław,266,80-84,4,Attempted
 2010,KWP Bydgoszcz,291,80-84,5,Attempted
 2010,KWP Lublin,359,80-84,4,Attempted
-2010,KWP Gorzów Wielk.,183,80-84,2,Attempted
+2010,KWP Gorzów Wlkp.,183,80-84,2,Attempted
 2010,KWP Łódź,440,80-84,15,Attempted
 2010,KWP Kraków,467,80-84,13,Attempted
 2010,KWP Radom,416,80-84,8,Attempted
@@ -3998,7 +3998,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2011,KWP Wrocław,241,80-84,3,Attempted
 2011,KWP Bydgoszcz,330,80-84,7,Attempted
 2011,KWP Lublin,313,80-84,2,Attempted
-2011,KWP Gorzów Wielk.,214,80-84,1,Attempted
+2011,KWP Gorzów Wlkp.,214,80-84,1,Attempted
 2011,KWP Łódź,436,80-84,10,Attempted
 2011,KWP Kraków,439,80-84,9,Attempted
 2011,KWP Radom,356,80-84,1,Attempted
@@ -4016,7 +4016,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2012,KWP Wrocław,262,80-84,7,Attempted
 2012,KWP Bydgoszcz,348,80-84,3,Attempted
 2012,KWP Lublin,302,80-84,8,Attempted
-2012,KWP Gorzów Wielk.,248,80-84,6,Attempted
+2012,KWP Gorzów Wlkp.,248,80-84,6,Attempted
 2012,KWP Łódź,511,80-84,6,Attempted
 2012,KWP Kraków,468,80-84,10,Attempted
 2012,KWP Radom,350,80-84,2,Attempted
@@ -4034,7 +4034,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 1999,KWP Wrocław,378,85+,1,Attempted
 1999,KWP Bydgoszcz,263,85+,0,Attempted
 1999,KWP Lublin,283,85+,6,Attempted
-1999,KWP Gorzów Wielk.,194,85+,0,Attempted
+1999,KWP Gorzów Wlkp.,194,85+,0,Attempted
 1999,KWP Łódź,410,85+,3,Attempted
 1999,KWP Kraków,302,85+,2,Attempted
 1999,KWP Radom,403,85+,3,Attempted
@@ -4052,7 +4052,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2000,KWP Wrocław,431,85+,7,Attempted
 2000,KWP Bydgoszcz,262,85+,3,Attempted
 2000,KWP Lublin,288,85+,1,Attempted
-2000,KWP Gorzów Wielk.,178,85+,1,Attempted
+2000,KWP Gorzów Wlkp.,178,85+,1,Attempted
 2000,KWP Łódź,402,85+,5,Attempted
 2000,KWP Kraków,545,85+,5,Attempted
 2000,KWP Radom,439,85+,5,Attempted
@@ -4070,7 +4070,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2001,KWP Wrocław,372,85+,4,Attempted
 2001,KWP Bydgoszcz,268,85+,3,Attempted
 2001,KWP Lublin,313,85+,1,Attempted
-2001,KWP Gorzów Wielk.,246,85+,1,Attempted
+2001,KWP Gorzów Wlkp.,246,85+,1,Attempted
 2001,KWP Łódź,380,85+,2,Attempted
 2001,KWP Kraków,591,85+,3,Attempted
 2001,KWP Radom,464,85+,2,Attempted
@@ -4088,7 +4088,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2002,KWP Wrocław,372,85+,6,Attempted
 2002,KWP Bydgoszcz,233,85+,4,Attempted
 2002,KWP Lublin,329,85+,5,Attempted
-2002,KWP Gorzów Wielk.,243,85+,4,Attempted
+2002,KWP Gorzów Wlkp.,243,85+,4,Attempted
 2002,KWP Łódź,385,85+,4,Attempted
 2002,KWP Kraków,640,85+,7,Attempted
 2002,KWP Radom,393,85+,4,Attempted
@@ -4106,7 +4106,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2003,KWP Wrocław,420,85+,3,Attempted
 2003,KWP Bydgoszcz,199,85+,3,Attempted
 2003,KWP Lublin,399,85+,5,Attempted
-2003,KWP Gorzów Wielk.,180,85+,2,Attempted
+2003,KWP Gorzów Wlkp.,180,85+,2,Attempted
 2003,KWP Łódź,335,85+,4,Attempted
 2003,KWP Kraków,481,85+,5,Attempted
 2003,KWP Radom,336,85+,4,Attempted
@@ -4124,7 +4124,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2004,KWP Wrocław,450,85+,2,Attempted
 2004,KWP Bydgoszcz,361,85+,3,Attempted
 2004,KWP Lublin,415,85+,6,Attempted
-2004,KWP Gorzów Wielk.,211,85+,1,Attempted
+2004,KWP Gorzów Wlkp.,211,85+,1,Attempted
 2004,KWP Łódź,382,85+,3,Attempted
 2004,KWP Kraków,510,85+,4,Attempted
 2004,KWP Radom,336,85+,2,Attempted
@@ -4142,7 +4142,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2005,KWP Wrocław,338,85+,4,Attempted
 2005,KWP Bydgoszcz,327,85+,2,Attempted
 2005,KWP Lublin,383,85+,3,Attempted
-2005,KWP Gorzów Wielk.,191,85+,2,Attempted
+2005,KWP Gorzów Wlkp.,191,85+,2,Attempted
 2005,KWP Łódź,378,85+,1,Attempted
 2005,KWP Kraków,471,85+,2,Attempted
 2005,KWP Radom,364,85+,1,Attempted
@@ -4160,7 +4160,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2006,KWP Wrocław,320,85+,3,Attempted
 2006,KWP Bydgoszcz,251,85+,3,Attempted
 2006,KWP Lublin,345,85+,4,Attempted
-2006,KWP Gorzów Wielk.,223,85+,1,Attempted
+2006,KWP Gorzów Wlkp.,223,85+,1,Attempted
 2006,KWP Łódź,389,85+,6,Attempted
 2006,KWP Kraków,386,85+,1,Attempted
 2006,KWP Radom,312,85+,3,Attempted
@@ -4178,7 +4178,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2007,KWP Wrocław,282,85+,5,Attempted
 2007,KWP Bydgoszcz,251,85+,6,Attempted
 2007,KWP Lublin,295,85+,3,Attempted
-2007,KWP Gorzów Wielk.,190,85+,0,Attempted
+2007,KWP Gorzów Wlkp.,190,85+,0,Attempted
 2007,KWP Łódź,390,85+,7,Attempted
 2007,KWP Kraków,337,85+,2,Attempted
 2007,KWP Radom,301,85+,5,Attempted
@@ -4196,7 +4196,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2008,KWP Wrocław,311,85+,6,Attempted
 2008,KWP Bydgoszcz,323,85+,1,Attempted
 2008,KWP Lublin,398,85+,3,Attempted
-2008,KWP Gorzów Wielk.,201,85+,2,Attempted
+2008,KWP Gorzów Wlkp.,201,85+,2,Attempted
 2008,KWP Łódź,379,85+,2,Attempted
 2008,KWP Kraków,369,85+,3,Attempted
 2008,KWP Radom,487,85+,9,Attempted
@@ -4214,7 +4214,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2009,KWP Wrocław,295,85+,6,Attempted
 2009,KWP Bydgoszcz,333,85+,4,Attempted
 2009,KWP Lublin,390,85+,4,Attempted
-2009,KWP Gorzów Wielk.,285,85+,2,Attempted
+2009,KWP Gorzów Wlkp.,285,85+,2,Attempted
 2009,KWP Łódź,471,85+,8,Attempted
 2009,KWP Kraków,463,85+,4,Attempted
 2009,KWP Radom,452,85+,2,Attempted
@@ -4232,7 +4232,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2010,KWP Wrocław,266,85+,2,Attempted
 2010,KWP Bydgoszcz,291,85+,8,Attempted
 2010,KWP Lublin,359,85+,3,Attempted
-2010,KWP Gorzów Wielk.,183,85+,2,Attempted
+2010,KWP Gorzów Wlkp.,183,85+,2,Attempted
 2010,KWP Łódź,440,85+,11,Attempted
 2010,KWP Kraków,467,85+,8,Attempted
 2010,KWP Radom,416,85+,2,Attempted
@@ -4250,7 +4250,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2011,KWP Wrocław,241,85+,5,Attempted
 2011,KWP Bydgoszcz,330,85+,3,Attempted
 2011,KWP Lublin,313,85+,0,Attempted
-2011,KWP Gorzów Wielk.,214,85+,3,Attempted
+2011,KWP Gorzów Wlkp.,214,85+,3,Attempted
 2011,KWP Łódź,436,85+,6,Attempted
 2011,KWP Kraków,439,85+,1,Attempted
 2011,KWP Radom,356,85+,5,Attempted
@@ -4268,7 +4268,7 @@ Year,Garnizon,Total,Age,Suicides,Result
 2012,KWP Wrocław,262,85+,7,Attempted
 2012,KWP Bydgoszcz,348,85+,3,Attempted
 2012,KWP Lublin,302,85+,2,Attempted
-2012,KWP Gorzów Wielk.,248,85+,2,Attempted
+2012,KWP Gorzów Wlkp.,248,85+,2,Attempted
 2012,KWP Łódź,511,85+,11,Attempted
 2012,KWP Kraków,468,85+,3,Attempted
 2012,KWP Radom,350,85+,7,Attempted
@@ -6853,7 +6853,7 @@ NA,NA,NA,85+,NA,Attempted
 1999,KWP Wrocław,339,0-6,1,Fatal
 1999,KWP Bydgoszcz,248,0-6,0,Fatal
 1999,KWP Lublin,261,0-6,2,Fatal
-1999,KWP Gorzów Wielk.,179,0-6,0,Fatal
+1999,KWP Gorzów Wlkp.,179,0-6,0,Fatal
 1999,KWP Łódź,392,0-6,2,Fatal
 1999,KWP Kraków,282,0-6,1,Fatal
 1999,KWP Radom,394,0-6,0,Fatal
@@ -6871,7 +6871,7 @@ NA,NA,NA,85+,NA,Attempted
 2000,KWP Wrocław,394,0-6,1,Fatal
 2000,KWP Bydgoszcz,240,0-6,0,Fatal
 2000,KWP Lublin,259,0-6,0,Fatal
-2000,KWP Gorzów Wielk.,156,0-6,0,Fatal
+2000,KWP Gorzów Wlkp.,156,0-6,0,Fatal
 2000,KWP Łódź,366,0-6,0,Fatal
 2000,KWP Kraków,474,0-6,0,Fatal
 2000,KWP Radom,408,0-6,0,Fatal
@@ -6889,7 +6889,7 @@ NA,NA,NA,85+,NA,Attempted
 2001,KWP Wrocław,332,0-6,0,Fatal
 2001,KWP Bydgoszcz,245,0-6,0,Fatal
 2001,KWP Lublin,271,0-6,1,Fatal
-2001,KWP Gorzów Wielk.,210,0-6,1,Fatal
+2001,KWP Gorzów Wlkp.,210,0-6,1,Fatal
 2001,KWP Łódź,342,0-6,0,Fatal
 2001,KWP Kraków,508,0-6,0,Fatal
 2001,KWP Radom,426,0-6,0,Fatal
@@ -6907,7 +6907,7 @@ NA,NA,NA,85+,NA,Attempted
 2002,KWP Wrocław,347,0-6,0,Fatal
 2002,KWP Bydgoszcz,216,0-6,0,Fatal
 2002,KWP Lublin,288,0-6,1,Fatal
-2002,KWP Gorzów Wielk.,194,0-6,0,Fatal
+2002,KWP Gorzów Wlkp.,194,0-6,0,Fatal
 2002,KWP Łódź,338,0-6,0,Fatal
 2002,KWP Kraków,542,0-6,0,Fatal
 2002,KWP Radom,369,0-6,0,Fatal
@@ -6925,7 +6925,7 @@ NA,NA,NA,85+,NA,Attempted
 2003,KWP Wrocław,375,0-6,0,Fatal
 2003,KWP Bydgoszcz,183,0-6,0,Fatal
 2003,KWP Lublin,355,0-6,0,Fatal
-2003,KWP Gorzów Wielk.,143,0-6,0,Fatal
+2003,KWP Gorzów Wlkp.,143,0-6,0,Fatal
 2003,KWP Łódź,300,0-6,0,Fatal
 2003,KWP Kraków,416,0-6,0,Fatal
 2003,KWP Radom,310,0-6,0,Fatal
@@ -6943,7 +6943,7 @@ NA,NA,NA,85+,NA,Attempted
 2004,KWP Wrocław,397,0-6,0,Fatal
 2004,KWP Bydgoszcz,325,0-6,0,Fatal
 2004,KWP Lublin,342,0-6,0,Fatal
-2004,KWP Gorzów Wielk.,155,0-6,0,Fatal
+2004,KWP Gorzów Wlkp.,155,0-6,0,Fatal
 2004,KWP Łódź,338,0-6,0,Fatal
 2004,KWP Kraków,441,0-6,0,Fatal
 2004,KWP Radom,312,0-6,0,Fatal
@@ -6961,7 +6961,7 @@ NA,NA,NA,85+,NA,Attempted
 2005,KWP Wrocław,306,0-6,0,Fatal
 2005,KWP Bydgoszcz,277,0-6,0,Fatal
 2005,KWP Lublin,309,0-6,1,Fatal
-2005,KWP Gorzów Wielk.,142,0-6,0,Fatal
+2005,KWP Gorzów Wlkp.,142,0-6,0,Fatal
 2005,KWP Łódź,313,0-6,0,Fatal
 2005,KWP Kraków,411,0-6,0,Fatal
 2005,KWP Radom,341,0-6,0,Fatal
@@ -6979,7 +6979,7 @@ NA,NA,NA,85+,NA,Attempted
 2006,KWP Wrocław,289,0-6,0,Fatal
 2006,KWP Bydgoszcz,225,0-6,0,Fatal
 2006,KWP Lublin,276,0-6,0,Fatal
-2006,KWP Gorzów Wielk.,160,0-6,0,Fatal
+2006,KWP Gorzów Wlkp.,160,0-6,0,Fatal
 2006,KWP Łódź,314,0-6,0,Fatal
 2006,KWP Kraków,317,0-6,0,Fatal
 2006,KWP Radom,277,0-6,0,Fatal
@@ -6997,7 +6997,7 @@ NA,NA,NA,85+,NA,Attempted
 2007,KWP Wrocław,239,0-6,0,Fatal
 2007,KWP Bydgoszcz,215,0-6,0,Fatal
 2007,KWP Lublin,231,0-6,0,Fatal
-2007,KWP Gorzów Wielk.,152,0-6,0,Fatal
+2007,KWP Gorzów Wlkp.,152,0-6,0,Fatal
 2007,KWP Łódź,297,0-6,0,Fatal
 2007,KWP Kraków,253,0-6,0,Fatal
 2007,KWP Radom,264,0-6,0,Fatal
@@ -7015,7 +7015,7 @@ NA,NA,NA,85+,NA,Attempted
 2008,KWP Wrocław,272,0-6,0,Fatal
 2008,KWP Bydgoszcz,269,0-6,0,Fatal
 2008,KWP Lublin,299,0-6,0,Fatal
-2008,KWP Gorzów Wielk.,129,0-6,0,Fatal
+2008,KWP Gorzów Wlkp.,129,0-6,0,Fatal
 2008,KWP Łódź,301,0-6,0,Fatal
 2008,KWP Kraków,302,0-6,0,Fatal
 2008,KWP Radom,435,0-6,0,Fatal
@@ -7033,7 +7033,7 @@ NA,NA,NA,85+,NA,Attempted
 2009,KWP Wrocław,248,0-6,0,Fatal
 2009,KWP Bydgoszcz,276,0-6,0,Fatal
 2009,KWP Lublin,309,0-6,0,Fatal
-2009,KWP Gorzów Wielk.,170,0-6,0,Fatal
+2009,KWP Gorzów Wlkp.,170,0-6,0,Fatal
 2009,KWP Łódź,369,0-6,0,Fatal
 2009,KWP Kraków,363,0-6,0,Fatal
 2009,KWP Radom,385,0-6,0,Fatal
@@ -7051,7 +7051,7 @@ NA,NA,NA,85+,NA,Attempted
 2010,KWP Wrocław,241,0-6,0,Fatal
 2010,KWP Bydgoszcz,252,0-6,0,Fatal
 2010,KWP Lublin,285,0-6,0,Fatal
-2010,KWP Gorzów Wielk.,129,0-6,0,Fatal
+2010,KWP Gorzów Wlkp.,129,0-6,0,Fatal
 2010,KWP Łódź,334,0-6,0,Fatal
 2010,KWP Kraków,349,0-6,0,Fatal
 2010,KWP Radom,354,0-6,0,Fatal
@@ -7069,7 +7069,7 @@ NA,NA,NA,85+,NA,Attempted
 2011,KWP Wrocław,208,0-6,0,Fatal
 2011,KWP Bydgoszcz,271,0-6,0,Fatal
 2011,KWP Lublin,249,0-6,0,Fatal
-2011,KWP Gorzów Wielk.,137,0-6,0,Fatal
+2011,KWP Gorzów Wlkp.,137,0-6,0,Fatal
 2011,KWP Łódź,342,0-6,0,Fatal
 2011,KWP Kraków,342,0-6,0,Fatal
 2011,KWP Radom,328,0-6,0,Fatal
@@ -7087,7 +7087,7 @@ NA,NA,NA,85+,NA,Attempted
 2012,KWP Wrocław,231,0-6,0,Fatal
 2012,KWP Bydgoszcz,291,0-6,0,Fatal
 2012,KWP Lublin,236,0-6,0,Fatal
-2012,KWP Gorzów Wielk.,154,0-6,0,Fatal
+2012,KWP Gorzów Wlkp.,154,0-6,0,Fatal
 2012,KWP Łódź,373,0-6,0,Fatal
 2012,KWP Kraków,333,0-6,0,Fatal
 2012,KWP Radom,323,0-6,0,Fatal
@@ -7105,7 +7105,7 @@ NA,NA,NA,85+,NA,Attempted
 1999,KWP Wrocław,339,7-12,0,Fatal
 1999,KWP Bydgoszcz,248,7-12,0,Fatal
 1999,KWP Lublin,261,7-12,1,Fatal
-1999,KWP Gorzów Wielk.,179,7-12,0,Fatal
+1999,KWP Gorzów Wlkp.,179,7-12,0,Fatal
 1999,KWP Łódź,392,7-12,3,Fatal
 1999,KWP Kraków,282,7-12,0,Fatal
 1999,KWP Radom,394,7-12,1,Fatal
@@ -7123,7 +7123,7 @@ NA,NA,NA,85+,NA,Attempted
 2000,KWP Wrocław,394,7-12,1,Fatal
 2000,KWP Bydgoszcz,240,7-12,0,Fatal
 2000,KWP Lublin,259,7-12,2,Fatal
-2000,KWP Gorzów Wielk.,156,7-12,0,Fatal
+2000,KWP Gorzów Wlkp.,156,7-12,0,Fatal
 2000,KWP Łódź,366,7-12,2,Fatal
 2000,KWP Kraków,474,7-12,0,Fatal
 2000,KWP Radom,408,7-12,1,Fatal
@@ -7141,7 +7141,7 @@ NA,NA,NA,85+,NA,Attempted
 2001,KWP Wrocław,332,7-12,0,Fatal
 2001,KWP Bydgoszcz,245,7-12,2,Fatal
 2001,KWP Lublin,271,7-12,0,Fatal
-2001,KWP Gorzów Wielk.,210,7-12,1,Fatal
+2001,KWP Gorzów Wlkp.,210,7-12,1,Fatal
 2001,KWP Łódź,342,7-12,1,Fatal
 2001,KWP Kraków,508,7-12,2,Fatal
 2001,KWP Radom,426,7-12,2,Fatal
@@ -7159,7 +7159,7 @@ NA,NA,NA,85+,NA,Attempted
 2002,KWP Wrocław,347,7-12,0,Fatal
 2002,KWP Bydgoszcz,216,7-12,0,Fatal
 2002,KWP Lublin,288,7-12,0,Fatal
-2002,KWP Gorzów Wielk.,194,7-12,0,Fatal
+2002,KWP Gorzów Wlkp.,194,7-12,0,Fatal
 2002,KWP Łódź,338,7-12,1,Fatal
 2002,KWP Kraków,542,7-12,0,Fatal
 2002,KWP Radom,369,7-12,1,Fatal
@@ -7177,7 +7177,7 @@ NA,NA,NA,85+,NA,Attempted
 2003,KWP Wrocław,375,7-12,0,Fatal
 2003,KWP Bydgoszcz,183,7-12,0,Fatal
 2003,KWP Lublin,355,7-12,3,Fatal
-2003,KWP Gorzów Wielk.,143,7-12,0,Fatal
+2003,KWP Gorzów Wlkp.,143,7-12,0,Fatal
 2003,KWP Łódź,300,7-12,0,Fatal
 2003,KWP Kraków,416,7-12,1,Fatal
 2003,KWP Radom,310,7-12,1,Fatal
@@ -7195,7 +7195,7 @@ NA,NA,NA,85+,NA,Attempted
 2004,KWP Wrocław,397,7-12,1,Fatal
 2004,KWP Bydgoszcz,325,7-12,0,Fatal
 2004,KWP Lublin,342,7-12,0,Fatal
-2004,KWP Gorzów Wielk.,155,7-12,1,Fatal
+2004,KWP Gorzów Wlkp.,155,7-12,1,Fatal
 2004,KWP Łódź,338,7-12,0,Fatal
 2004,KWP Kraków,441,7-12,0,Fatal
 2004,KWP Radom,312,7-12,1,Fatal
@@ -7213,7 +7213,7 @@ NA,NA,NA,85+,NA,Attempted
 2005,KWP Wrocław,306,7-12,0,Fatal
 2005,KWP Bydgoszcz,277,7-12,0,Fatal
 2005,KWP Lublin,309,7-12,0,Fatal
-2005,KWP Gorzów Wielk.,142,7-12,0,Fatal
+2005,KWP Gorzów Wlkp.,142,7-12,0,Fatal
 2005,KWP Łódź,313,7-12,0,Fatal
 2005,KWP Kraków,411,7-12,2,Fatal
 2005,KWP Radom,341,7-12,0,Fatal
@@ -7231,7 +7231,7 @@ NA,NA,NA,85+,NA,Attempted
 2006,KWP Wrocław,289,7-12,0,Fatal
 2006,KWP Bydgoszcz,225,7-12,0,Fatal
 2006,KWP Lublin,276,7-12,0,Fatal
-2006,KWP Gorzów Wielk.,160,7-12,0,Fatal
+2006,KWP Gorzów Wlkp.,160,7-12,0,Fatal
 2006,KWP Łódź,314,7-12,0,Fatal
 2006,KWP Kraków,317,7-12,0,Fatal
 2006,KWP Radom,277,7-12,1,Fatal
@@ -7249,7 +7249,7 @@ NA,NA,NA,85+,NA,Attempted
 2007,KWP Wrocław,239,7-12,0,Fatal
 2007,KWP Bydgoszcz,215,7-12,0,Fatal
 2007,KWP Lublin,231,7-12,0,Fatal
-2007,KWP Gorzów Wielk.,152,7-12,2,Fatal
+2007,KWP Gorzów Wlkp.,152,7-12,2,Fatal
 2007,KWP Łódź,297,7-12,0,Fatal
 2007,KWP Kraków,253,7-12,0,Fatal
 2007,KWP Radom,264,7-12,0,Fatal
@@ -7267,7 +7267,7 @@ NA,NA,NA,85+,NA,Attempted
 2008,KWP Wrocław,272,7-12,0,Fatal
 2008,KWP Bydgoszcz,269,7-12,0,Fatal
 2008,KWP Lublin,299,7-12,0,Fatal
-2008,KWP Gorzów Wielk.,129,7-12,0,Fatal
+2008,KWP Gorzów Wlkp.,129,7-12,0,Fatal
 2008,KWP Łódź,301,7-12,0,Fatal
 2008,KWP Kraków,302,7-12,0,Fatal
 2008,KWP Radom,435,7-12,0,Fatal
@@ -7285,7 +7285,7 @@ NA,NA,NA,85+,NA,Attempted
 2009,KWP Wrocław,248,7-12,0,Fatal
 2009,KWP Bydgoszcz,276,7-12,0,Fatal
 2009,KWP Lublin,309,7-12,1,Fatal
-2009,KWP Gorzów Wielk.,170,7-12,0,Fatal
+2009,KWP Gorzów Wlkp.,170,7-12,0,Fatal
 2009,KWP Łódź,369,7-12,1,Fatal
 2009,KWP Kraków,363,7-12,0,Fatal
 2009,KWP Radom,385,7-12,0,Fatal
@@ -7303,7 +7303,7 @@ NA,NA,NA,85+,NA,Attempted
 2010,KWP Wrocław,241,7-12,0,Fatal
 2010,KWP Bydgoszcz,252,7-12,0,Fatal
 2010,KWP Lublin,285,7-12,0,Fatal
-2010,KWP Gorzów Wielk.,129,7-12,0,Fatal
+2010,KWP Gorzów Wlkp.,129,7-12,0,Fatal
 2010,KWP Łódź,334,7-12,0,Fatal
 2010,KWP Kraków,349,7-12,1,Fatal
 2010,KWP Radom,354,7-12,1,Fatal
@@ -7321,7 +7321,7 @@ NA,NA,NA,85+,NA,Attempted
 2011,KWP Wrocław,208,7-12,0,Fatal
 2011,KWP Bydgoszcz,271,7-12,0,Fatal
 2011,KWP Lublin,249,7-12,0,Fatal
-2011,KWP Gorzów Wielk.,137,7-12,0,Fatal
+2011,KWP Gorzów Wlkp.,137,7-12,0,Fatal
 2011,KWP Łódź,342,7-12,1,Fatal
 2011,KWP Kraków,342,7-12,0,Fatal
 2011,KWP Radom,328,7-12,0,Fatal
@@ -7339,7 +7339,7 @@ NA,NA,NA,85+,NA,Attempted
 2012,KWP Wrocław,231,7-12,0,Fatal
 2012,KWP Bydgoszcz,291,7-12,0,Fatal
 2012,KWP Lublin,236,7-12,0,Fatal
-2012,KWP Gorzów Wielk.,154,7-12,0,Fatal
+2012,KWP Gorzów Wlkp.,154,7-12,0,Fatal
 2012,KWP Łódź,373,7-12,0,Fatal
 2012,KWP Kraków,333,7-12,1,Fatal
 2012,KWP Radom,323,7-12,0,Fatal
@@ -7357,7 +7357,7 @@ NA,NA,NA,85+,NA,Attempted
 1999,KWP Wrocław,339,13-18,11,Fatal
 1999,KWP Bydgoszcz,248,13-18,16,Fatal
 1999,KWP Lublin,261,13-18,14,Fatal
-1999,KWP Gorzów Wielk.,179,13-18,12,Fatal
+1999,KWP Gorzów Wlkp.,179,13-18,12,Fatal
 1999,KWP Łódź,392,13-18,14,Fatal
 1999,KWP Kraków,282,13-18,11,Fatal
 1999,KWP Radom,394,13-18,22,Fatal
@@ -7375,7 +7375,7 @@ NA,NA,NA,85+,NA,Attempted
 2000,KWP Wrocław,394,13-18,22,Fatal
 2000,KWP Bydgoszcz,240,13-18,9,Fatal
 2000,KWP Lublin,259,13-18,13,Fatal
-2000,KWP Gorzów Wielk.,156,13-18,6,Fatal
+2000,KWP Gorzów Wlkp.,156,13-18,6,Fatal
 2000,KWP Łódź,366,13-18,15,Fatal
 2000,KWP Kraków,474,13-18,19,Fatal
 2000,KWP Radom,408,13-18,22,Fatal
@@ -7393,7 +7393,7 @@ NA,NA,NA,85+,NA,Attempted
 2001,KWP Wrocław,332,13-18,20,Fatal
 2001,KWP Bydgoszcz,245,13-18,6,Fatal
 2001,KWP Lublin,271,13-18,21,Fatal
-2001,KWP Gorzów Wielk.,210,13-18,14,Fatal
+2001,KWP Gorzów Wlkp.,210,13-18,14,Fatal
 2001,KWP Łódź,342,13-18,16,Fatal
 2001,KWP Kraków,508,13-18,15,Fatal
 2001,KWP Radom,426,13-18,18,Fatal
@@ -7411,7 +7411,7 @@ NA,NA,NA,85+,NA,Attempted
 2002,KWP Wrocław,347,13-18,17,Fatal
 2002,KWP Bydgoszcz,216,13-18,7,Fatal
 2002,KWP Lublin,288,13-18,16,Fatal
-2002,KWP Gorzów Wielk.,194,13-18,7,Fatal
+2002,KWP Gorzów Wlkp.,194,13-18,7,Fatal
 2002,KWP Łódź,338,13-18,11,Fatal
 2002,KWP Kraków,542,13-18,20,Fatal
 2002,KWP Radom,369,13-18,16,Fatal
@@ -7429,7 +7429,7 @@ NA,NA,NA,85+,NA,Attempted
 2003,KWP Wrocław,375,13-18,18,Fatal
 2003,KWP Bydgoszcz,183,13-18,7,Fatal
 2003,KWP Lublin,355,13-18,18,Fatal
-2003,KWP Gorzów Wielk.,143,13-18,9,Fatal
+2003,KWP Gorzów Wlkp.,143,13-18,9,Fatal
 2003,KWP Łódź,300,13-18,11,Fatal
 2003,KWP Kraków,416,13-18,15,Fatal
 2003,KWP Radom,310,13-18,11,Fatal
@@ -7447,7 +7447,7 @@ NA,NA,NA,85+,NA,Attempted
 2004,KWP Wrocław,397,13-18,20,Fatal
 2004,KWP Bydgoszcz,325,13-18,22,Fatal
 2004,KWP Lublin,342,13-18,20,Fatal
-2004,KWP Gorzów Wielk.,155,13-18,13,Fatal
+2004,KWP Gorzów Wlkp.,155,13-18,13,Fatal
 2004,KWP Łódź,338,13-18,10,Fatal
 2004,KWP Kraków,441,13-18,17,Fatal
 2004,KWP Radom,312,13-18,12,Fatal
@@ -7465,7 +7465,7 @@ NA,NA,NA,85+,NA,Attempted
 2005,KWP Wrocław,306,13-18,11,Fatal
 2005,KWP Bydgoszcz,277,13-18,14,Fatal
 2005,KWP Lublin,309,13-18,12,Fatal
-2005,KWP Gorzów Wielk.,142,13-18,7,Fatal
+2005,KWP Gorzów Wlkp.,142,13-18,7,Fatal
 2005,KWP Łódź,313,13-18,3,Fatal
 2005,KWP Kraków,411,13-18,19,Fatal
 2005,KWP Radom,341,13-18,13,Fatal
@@ -7483,7 +7483,7 @@ NA,NA,NA,85+,NA,Attempted
 2006,KWP Wrocław,289,13-18,10,Fatal
 2006,KWP Bydgoszcz,225,13-18,13,Fatal
 2006,KWP Lublin,276,13-18,15,Fatal
-2006,KWP Gorzów Wielk.,160,13-18,8,Fatal
+2006,KWP Gorzów Wlkp.,160,13-18,8,Fatal
 2006,KWP Łódź,314,13-18,2,Fatal
 2006,KWP Kraków,317,13-18,14,Fatal
 2006,KWP Radom,277,13-18,9,Fatal
@@ -7501,7 +7501,7 @@ NA,NA,NA,85+,NA,Attempted
 2007,KWP Wrocław,239,13-18,11,Fatal
 2007,KWP Bydgoszcz,215,13-18,10,Fatal
 2007,KWP Lublin,231,13-18,13,Fatal
-2007,KWP Gorzów Wielk.,152,13-18,4,Fatal
+2007,KWP Gorzów Wlkp.,152,13-18,4,Fatal
 2007,KWP Łódź,297,13-18,8,Fatal
 2007,KWP Kraków,253,13-18,7,Fatal
 2007,KWP Radom,264,13-18,12,Fatal
@@ -7519,7 +7519,7 @@ NA,NA,NA,85+,NA,Attempted
 2008,KWP Wrocław,272,13-18,9,Fatal
 2008,KWP Bydgoszcz,269,13-18,6,Fatal
 2008,KWP Lublin,299,13-18,21,Fatal
-2008,KWP Gorzów Wielk.,129,13-18,6,Fatal
+2008,KWP Gorzów Wlkp.,129,13-18,6,Fatal
 2008,KWP Łódź,301,13-18,13,Fatal
 2008,KWP Kraków,302,13-18,14,Fatal
 2008,KWP Radom,435,13-18,20,Fatal
@@ -7537,7 +7537,7 @@ NA,NA,NA,85+,NA,Attempted
 2009,KWP Wrocław,248,13-18,4,Fatal
 2009,KWP Bydgoszcz,276,13-18,6,Fatal
 2009,KWP Lublin,309,13-18,12,Fatal
-2009,KWP Gorzów Wielk.,170,13-18,6,Fatal
+2009,KWP Gorzów Wlkp.,170,13-18,6,Fatal
 2009,KWP Łódź,369,13-18,19,Fatal
 2009,KWP Kraków,363,13-18,7,Fatal
 2009,KWP Radom,385,13-18,19,Fatal
@@ -7555,7 +7555,7 @@ NA,NA,NA,85+,NA,Attempted
 2010,KWP Wrocław,241,13-18,8,Fatal
 2010,KWP Bydgoszcz,252,13-18,9,Fatal
 2010,KWP Lublin,285,13-18,10,Fatal
-2010,KWP Gorzów Wielk.,129,13-18,5,Fatal
+2010,KWP Gorzów Wlkp.,129,13-18,5,Fatal
 2010,KWP Łódź,334,13-18,6,Fatal
 2010,KWP Kraków,349,13-18,8,Fatal
 2010,KWP Radom,354,13-18,16,Fatal
@@ -7573,7 +7573,7 @@ NA,NA,NA,85+,NA,Attempted
 2011,KWP Wrocław,208,13-18,4,Fatal
 2011,KWP Bydgoszcz,271,13-18,4,Fatal
 2011,KWP Lublin,249,13-18,6,Fatal
-2011,KWP Gorzów Wielk.,137,13-18,6,Fatal
+2011,KWP Gorzów Wlkp.,137,13-18,6,Fatal
 2011,KWP Łódź,342,13-18,6,Fatal
 2011,KWP Kraków,342,13-18,7,Fatal
 2011,KWP Radom,328,13-18,14,Fatal
@@ -7591,7 +7591,7 @@ NA,NA,NA,85+,NA,Attempted
 2012,KWP Wrocław,231,13-18,7,Fatal
 2012,KWP Bydgoszcz,291,13-18,14,Fatal
 2012,KWP Lublin,236,13-18,8,Fatal
-2012,KWP Gorzów Wielk.,154,13-18,6,Fatal
+2012,KWP Gorzów Wlkp.,154,13-18,6,Fatal
 2012,KWP Łódź,373,13-18,9,Fatal
 2012,KWP Kraków,333,13-18,5,Fatal
 2012,KWP Radom,323,13-18,12,Fatal
@@ -7609,7 +7609,7 @@ NA,NA,NA,85+,NA,Attempted
 1999,KWP Wrocław,339,19-24,42,Fatal
 1999,KWP Bydgoszcz,248,19-24,24,Fatal
 1999,KWP Lublin,261,19-24,15,Fatal
-1999,KWP Gorzów Wielk.,179,19-24,21,Fatal
+1999,KWP Gorzów Wlkp.,179,19-24,21,Fatal
 1999,KWP Łódź,392,19-24,37,Fatal
 1999,KWP Kraków,282,19-24,35,Fatal
 1999,KWP Radom,394,19-24,29,Fatal
@@ -7627,7 +7627,7 @@ NA,NA,NA,85+,NA,Attempted
 2000,KWP Wrocław,394,19-24,44,Fatal
 2000,KWP Bydgoszcz,240,19-24,24,Fatal
 2000,KWP Lublin,259,19-24,23,Fatal
-2000,KWP Gorzów Wielk.,156,19-24,17,Fatal
+2000,KWP Gorzów Wlkp.,156,19-24,17,Fatal
 2000,KWP Łódź,366,19-24,39,Fatal
 2000,KWP Kraków,474,19-24,37,Fatal
 2000,KWP Radom,408,19-24,36,Fatal
@@ -7645,7 +7645,7 @@ NA,NA,NA,85+,NA,Attempted
 2001,KWP Wrocław,332,19-24,31,Fatal
 2001,KWP Bydgoszcz,245,19-24,28,Fatal
 2001,KWP Lublin,271,19-24,25,Fatal
-2001,KWP Gorzów Wielk.,210,19-24,24,Fatal
+2001,KWP Gorzów Wlkp.,210,19-24,24,Fatal
 2001,KWP Łódź,342,19-24,23,Fatal
 2001,KWP Kraków,508,19-24,36,Fatal
 2001,KWP Radom,426,19-24,44,Fatal
@@ -7663,7 +7663,7 @@ NA,NA,NA,85+,NA,Attempted
 2002,KWP Wrocław,347,19-24,31,Fatal
 2002,KWP Bydgoszcz,216,19-24,19,Fatal
 2002,KWP Lublin,288,19-24,25,Fatal
-2002,KWP Gorzów Wielk.,194,19-24,24,Fatal
+2002,KWP Gorzów Wlkp.,194,19-24,24,Fatal
 2002,KWP Łódź,338,19-24,29,Fatal
 2002,KWP Kraków,542,19-24,50,Fatal
 2002,KWP Radom,369,19-24,32,Fatal
@@ -7681,7 +7681,7 @@ NA,NA,NA,85+,NA,Attempted
 2003,KWP Wrocław,375,19-24,37,Fatal
 2003,KWP Bydgoszcz,183,19-24,16,Fatal
 2003,KWP Lublin,355,19-24,31,Fatal
-2003,KWP Gorzów Wielk.,143,19-24,9,Fatal
+2003,KWP Gorzów Wlkp.,143,19-24,9,Fatal
 2003,KWP Łódź,300,19-24,23,Fatal
 2003,KWP Kraków,416,19-24,25,Fatal
 2003,KWP Radom,310,19-24,34,Fatal
@@ -7699,7 +7699,7 @@ NA,NA,NA,85+,NA,Attempted
 2004,KWP Wrocław,397,19-24,40,Fatal
 2004,KWP Bydgoszcz,325,19-24,29,Fatal
 2004,KWP Lublin,342,19-24,42,Fatal
-2004,KWP Gorzów Wielk.,155,19-24,23,Fatal
+2004,KWP Gorzów Wlkp.,155,19-24,23,Fatal
 2004,KWP Łódź,338,19-24,23,Fatal
 2004,KWP Kraków,441,19-24,37,Fatal
 2004,KWP Radom,312,19-24,33,Fatal
@@ -7717,7 +7717,7 @@ NA,NA,NA,85+,NA,Attempted
 2005,KWP Wrocław,306,19-24,26,Fatal
 2005,KWP Bydgoszcz,277,19-24,19,Fatal
 2005,KWP Lublin,309,19-24,29,Fatal
-2005,KWP Gorzów Wielk.,142,19-24,11,Fatal
+2005,KWP Gorzów Wlkp.,142,19-24,11,Fatal
 2005,KWP Łódź,313,19-24,18,Fatal
 2005,KWP Kraków,411,19-24,30,Fatal
 2005,KWP Radom,341,19-24,27,Fatal
@@ -7735,7 +7735,7 @@ NA,NA,NA,85+,NA,Attempted
 2006,KWP Wrocław,289,19-24,15,Fatal
 2006,KWP Bydgoszcz,225,19-24,19,Fatal
 2006,KWP Lublin,276,19-24,23,Fatal
-2006,KWP Gorzów Wielk.,160,19-24,19,Fatal
+2006,KWP Gorzów Wlkp.,160,19-24,19,Fatal
 2006,KWP Łódź,314,19-24,24,Fatal
 2006,KWP Kraków,317,19-24,25,Fatal
 2006,KWP Radom,277,19-24,29,Fatal
@@ -7753,7 +7753,7 @@ NA,NA,NA,85+,NA,Attempted
 2007,KWP Wrocław,239,19-24,27,Fatal
 2007,KWP Bydgoszcz,215,19-24,26,Fatal
 2007,KWP Lublin,231,19-24,28,Fatal
-2007,KWP Gorzów Wielk.,152,19-24,17,Fatal
+2007,KWP Gorzów Wlkp.,152,19-24,17,Fatal
 2007,KWP Łódź,297,19-24,18,Fatal
 2007,KWP Kraków,253,19-24,24,Fatal
 2007,KWP Radom,264,19-24,20,Fatal
@@ -7771,7 +7771,7 @@ NA,NA,NA,85+,NA,Attempted
 2008,KWP Wrocław,272,19-24,20,Fatal
 2008,KWP Bydgoszcz,269,19-24,28,Fatal
 2008,KWP Lublin,299,19-24,26,Fatal
-2008,KWP Gorzów Wielk.,129,19-24,10,Fatal
+2008,KWP Gorzów Wlkp.,129,19-24,10,Fatal
 2008,KWP Łódź,301,19-24,22,Fatal
 2008,KWP Kraków,302,19-24,22,Fatal
 2008,KWP Radom,435,19-24,29,Fatal
@@ -7789,7 +7789,7 @@ NA,NA,NA,85+,NA,Attempted
 2009,KWP Wrocław,248,19-24,19,Fatal
 2009,KWP Bydgoszcz,276,19-24,24,Fatal
 2009,KWP Lublin,309,19-24,39,Fatal
-2009,KWP Gorzów Wielk.,170,19-24,14,Fatal
+2009,KWP Gorzów Wlkp.,170,19-24,14,Fatal
 2009,KWP Łódź,369,19-24,22,Fatal
 2009,KWP Kraków,363,19-24,21,Fatal
 2009,KWP Radom,385,19-24,22,Fatal
@@ -7807,7 +7807,7 @@ NA,NA,NA,85+,NA,Attempted
 2010,KWP Wrocław,241,19-24,21,Fatal
 2010,KWP Bydgoszcz,252,19-24,18,Fatal
 2010,KWP Lublin,285,19-24,24,Fatal
-2010,KWP Gorzów Wielk.,129,19-24,15,Fatal
+2010,KWP Gorzów Wlkp.,129,19-24,15,Fatal
 2010,KWP Łódź,334,19-24,23,Fatal
 2010,KWP Kraków,349,19-24,25,Fatal
 2010,KWP Radom,354,19-24,24,Fatal
@@ -7825,7 +7825,7 @@ NA,NA,NA,85+,NA,Attempted
 2011,KWP Wrocław,208,19-24,15,Fatal
 2011,KWP Bydgoszcz,271,19-24,22,Fatal
 2011,KWP Lublin,249,19-24,24,Fatal
-2011,KWP Gorzów Wielk.,137,19-24,8,Fatal
+2011,KWP Gorzów Wlkp.,137,19-24,8,Fatal
 2011,KWP Łódź,342,19-24,26,Fatal
 2011,KWP Kraków,342,19-24,26,Fatal
 2011,KWP Radom,328,19-24,30,Fatal
@@ -7843,7 +7843,7 @@ NA,NA,NA,85+,NA,Attempted
 2012,KWP Wrocław,231,19-24,17,Fatal
 2012,KWP Bydgoszcz,291,19-24,14,Fatal
 2012,KWP Lublin,236,19-24,24,Fatal
-2012,KWP Gorzów Wielk.,154,19-24,8,Fatal
+2012,KWP Gorzów Wlkp.,154,19-24,8,Fatal
 2012,KWP Łódź,373,19-24,28,Fatal
 2012,KWP Kraków,333,19-24,26,Fatal
 2012,KWP Radom,323,19-24,27,Fatal
@@ -7861,7 +7861,7 @@ NA,NA,NA,85+,NA,Attempted
 1999,KWP Wrocław,339,25-29,23,Fatal
 1999,KWP Bydgoszcz,248,25-29,14,Fatal
 1999,KWP Lublin,261,25-29,23,Fatal
-1999,KWP Gorzów Wielk.,179,25-29,7,Fatal
+1999,KWP Gorzów Wlkp.,179,25-29,7,Fatal
 1999,KWP Łódź,392,25-29,23,Fatal
 1999,KWP Kraków,282,25-29,18,Fatal
 1999,KWP Radom,394,25-29,31,Fatal
@@ -7879,7 +7879,7 @@ NA,NA,NA,85+,NA,Attempted
 2000,KWP Wrocław,394,25-29,26,Fatal
 2000,KWP Bydgoszcz,240,25-29,15,Fatal
 2000,KWP Lublin,259,25-29,25,Fatal
-2000,KWP Gorzów Wielk.,156,25-29,10,Fatal
+2000,KWP Gorzów Wlkp.,156,25-29,10,Fatal
 2000,KWP Łódź,366,25-29,12,Fatal
 2000,KWP Kraków,474,25-29,35,Fatal
 2000,KWP Radom,408,25-29,20,Fatal
@@ -7897,7 +7897,7 @@ NA,NA,NA,85+,NA,Attempted
 2001,KWP Wrocław,332,25-29,17,Fatal
 2001,KWP Bydgoszcz,245,25-29,15,Fatal
 2001,KWP Lublin,271,25-29,23,Fatal
-2001,KWP Gorzów Wielk.,210,25-29,18,Fatal
+2001,KWP Gorzów Wlkp.,210,25-29,18,Fatal
 2001,KWP Łódź,342,25-29,26,Fatal
 2001,KWP Kraków,508,25-29,36,Fatal
 2001,KWP Radom,426,25-29,32,Fatal
@@ -7915,7 +7915,7 @@ NA,NA,NA,85+,NA,Attempted
 2002,KWP Wrocław,347,25-29,27,Fatal
 2002,KWP Bydgoszcz,216,25-29,20,Fatal
 2002,KWP Lublin,288,25-29,16,Fatal
-2002,KWP Gorzów Wielk.,194,25-29,21,Fatal
+2002,KWP Gorzów Wlkp.,194,25-29,21,Fatal
 2002,KWP Łódź,338,25-29,25,Fatal
 2002,KWP Kraków,542,25-29,29,Fatal
 2002,KWP Radom,369,25-29,25,Fatal
@@ -7933,7 +7933,7 @@ NA,NA,NA,85+,NA,Attempted
 2003,KWP Wrocław,375,25-29,26,Fatal
 2003,KWP Bydgoszcz,183,25-29,9,Fatal
 2003,KWP Lublin,355,25-29,33,Fatal
-2003,KWP Gorzów Wielk.,143,25-29,10,Fatal
+2003,KWP Gorzów Wlkp.,143,25-29,10,Fatal
 2003,KWP Łódź,300,25-29,18,Fatal
 2003,KWP Kraków,416,25-29,28,Fatal
 2003,KWP Radom,310,25-29,27,Fatal
@@ -7951,7 +7951,7 @@ NA,NA,NA,85+,NA,Attempted
 2004,KWP Wrocław,397,25-29,42,Fatal
 2004,KWP Bydgoszcz,325,25-29,22,Fatal
 2004,KWP Lublin,342,25-29,22,Fatal
-2004,KWP Gorzów Wielk.,155,25-29,15,Fatal
+2004,KWP Gorzów Wlkp.,155,25-29,15,Fatal
 2004,KWP Łódź,338,25-29,12,Fatal
 2004,KWP Kraków,441,25-29,25,Fatal
 2004,KWP Radom,312,25-29,23,Fatal
@@ -7969,7 +7969,7 @@ NA,NA,NA,85+,NA,Attempted
 2005,KWP Wrocław,306,25-29,13,Fatal
 2005,KWP Bydgoszcz,277,25-29,23,Fatal
 2005,KWP Lublin,309,25-29,23,Fatal
-2005,KWP Gorzów Wielk.,142,25-29,21,Fatal
+2005,KWP Gorzów Wlkp.,142,25-29,21,Fatal
 2005,KWP Łódź,313,25-29,31,Fatal
 2005,KWP Kraków,411,25-29,30,Fatal
 2005,KWP Radom,341,25-29,19,Fatal
@@ -7987,7 +7987,7 @@ NA,NA,NA,85+,NA,Attempted
 2006,KWP Wrocław,289,25-29,20,Fatal
 2006,KWP Bydgoszcz,225,25-29,15,Fatal
 2006,KWP Lublin,276,25-29,19,Fatal
-2006,KWP Gorzów Wielk.,160,25-29,10,Fatal
+2006,KWP Gorzów Wlkp.,160,25-29,10,Fatal
 2006,KWP Łódź,314,25-29,25,Fatal
 2006,KWP Kraków,317,25-29,30,Fatal
 2006,KWP Radom,277,25-29,19,Fatal
@@ -8005,7 +8005,7 @@ NA,NA,NA,85+,NA,Attempted
 2007,KWP Wrocław,239,25-29,29,Fatal
 2007,KWP Bydgoszcz,215,25-29,12,Fatal
 2007,KWP Lublin,231,25-29,14,Fatal
-2007,KWP Gorzów Wielk.,152,25-29,8,Fatal
+2007,KWP Gorzów Wlkp.,152,25-29,8,Fatal
 2007,KWP Łódź,297,25-29,19,Fatal
 2007,KWP Kraków,253,25-29,17,Fatal
 2007,KWP Radom,264,25-29,19,Fatal
@@ -8023,7 +8023,7 @@ NA,NA,NA,85+,NA,Attempted
 2008,KWP Wrocław,272,25-29,20,Fatal
 2008,KWP Bydgoszcz,269,25-29,18,Fatal
 2008,KWP Lublin,299,25-29,27,Fatal
-2008,KWP Gorzów Wielk.,129,25-29,5,Fatal
+2008,KWP Gorzów Wlkp.,129,25-29,5,Fatal
 2008,KWP Łódź,301,25-29,15,Fatal
 2008,KWP Kraków,302,25-29,26,Fatal
 2008,KWP Radom,435,25-29,41,Fatal
@@ -8041,7 +8041,7 @@ NA,NA,NA,85+,NA,Attempted
 2009,KWP Wrocław,248,25-29,25,Fatal
 2009,KWP Bydgoszcz,276,25-29,16,Fatal
 2009,KWP Lublin,309,25-29,25,Fatal
-2009,KWP Gorzów Wielk.,170,25-29,13,Fatal
+2009,KWP Gorzów Wlkp.,170,25-29,13,Fatal
 2009,KWP Łódź,369,25-29,29,Fatal
 2009,KWP Kraków,363,25-29,26,Fatal
 2009,KWP Radom,385,25-29,29,Fatal
@@ -8059,7 +8059,7 @@ NA,NA,NA,85+,NA,Attempted
 2010,KWP Wrocław,241,25-29,25,Fatal
 2010,KWP Bydgoszcz,252,25-29,24,Fatal
 2010,KWP Lublin,285,25-29,24,Fatal
-2010,KWP Gorzów Wielk.,129,25-29,4,Fatal
+2010,KWP Gorzów Wlkp.,129,25-29,4,Fatal
 2010,KWP Łódź,334,25-29,24,Fatal
 2010,KWP Kraków,349,25-29,33,Fatal
 2010,KWP Radom,354,25-29,26,Fatal
@@ -8077,7 +8077,7 @@ NA,NA,NA,85+,NA,Attempted
 2011,KWP Wrocław,208,25-29,12,Fatal
 2011,KWP Bydgoszcz,271,25-29,26,Fatal
 2011,KWP Lublin,249,25-29,18,Fatal
-2011,KWP Gorzów Wielk.,137,25-29,13,Fatal
+2011,KWP Gorzów Wlkp.,137,25-29,13,Fatal
 2011,KWP Łódź,342,25-29,35,Fatal
 2011,KWP Kraków,342,25-29,26,Fatal
 2011,KWP Radom,328,25-29,25,Fatal
@@ -8095,7 +8095,7 @@ NA,NA,NA,85+,NA,Attempted
 2012,KWP Wrocław,231,25-29,16,Fatal
 2012,KWP Bydgoszcz,291,25-29,27,Fatal
 2012,KWP Lublin,236,25-29,16,Fatal
-2012,KWP Gorzów Wielk.,154,25-29,15,Fatal
+2012,KWP Gorzów Wlkp.,154,25-29,15,Fatal
 2012,KWP Łódź,373,25-29,26,Fatal
 2012,KWP Kraków,333,25-29,20,Fatal
 2012,KWP Radom,323,25-29,23,Fatal
@@ -8113,7 +8113,7 @@ NA,NA,NA,85+,NA,Attempted
 1999,KWP Wrocław,339,30-34,25,Fatal
 1999,KWP Bydgoszcz,248,30-34,15,Fatal
 1999,KWP Lublin,261,30-34,14,Fatal
-1999,KWP Gorzów Wielk.,179,30-34,12,Fatal
+1999,KWP Gorzów Wlkp.,179,30-34,12,Fatal
 1999,KWP Łódź,392,30-34,17,Fatal
 1999,KWP Kraków,282,30-34,21,Fatal
 1999,KWP Radom,394,30-34,27,Fatal
@@ -8131,7 +8131,7 @@ NA,NA,NA,85+,NA,Attempted
 2000,KWP Wrocław,394,30-34,19,Fatal
 2000,KWP Bydgoszcz,240,30-34,14,Fatal
 2000,KWP Lublin,259,30-34,17,Fatal
-2000,KWP Gorzów Wielk.,156,30-34,9,Fatal
+2000,KWP Gorzów Wlkp.,156,30-34,9,Fatal
 2000,KWP Łódź,366,30-34,24,Fatal
 2000,KWP Kraków,474,30-34,41,Fatal
 2000,KWP Radom,408,30-34,26,Fatal
@@ -8149,7 +8149,7 @@ NA,NA,NA,85+,NA,Attempted
 2001,KWP Wrocław,332,30-34,25,Fatal
 2001,KWP Bydgoszcz,245,30-34,16,Fatal
 2001,KWP Lublin,271,30-34,14,Fatal
-2001,KWP Gorzów Wielk.,210,30-34,14,Fatal
+2001,KWP Gorzów Wlkp.,210,30-34,14,Fatal
 2001,KWP Łódź,342,30-34,17,Fatal
 2001,KWP Kraków,508,30-34,36,Fatal
 2001,KWP Radom,426,30-34,38,Fatal
@@ -8167,7 +8167,7 @@ NA,NA,NA,85+,NA,Attempted
 2002,KWP Wrocław,347,30-34,20,Fatal
 2002,KWP Bydgoszcz,216,30-34,11,Fatal
 2002,KWP Lublin,288,30-34,18,Fatal
-2002,KWP Gorzów Wielk.,194,30-34,14,Fatal
+2002,KWP Gorzów Wlkp.,194,30-34,14,Fatal
 2002,KWP Łódź,338,30-34,19,Fatal
 2002,KWP Kraków,542,30-34,33,Fatal
 2002,KWP Radom,369,30-34,24,Fatal
@@ -8185,7 +8185,7 @@ NA,NA,NA,85+,NA,Attempted
 2003,KWP Wrocław,375,30-34,24,Fatal
 2003,KWP Bydgoszcz,183,30-34,11,Fatal
 2003,KWP Lublin,355,30-34,23,Fatal
-2003,KWP Gorzów Wielk.,143,30-34,11,Fatal
+2003,KWP Gorzów Wlkp.,143,30-34,11,Fatal
 2003,KWP Łódź,300,30-34,19,Fatal
 2003,KWP Kraków,416,30-34,28,Fatal
 2003,KWP Radom,310,30-34,25,Fatal
@@ -8203,7 +8203,7 @@ NA,NA,NA,85+,NA,Attempted
 2004,KWP Wrocław,397,30-34,24,Fatal
 2004,KWP Bydgoszcz,325,30-34,18,Fatal
 2004,KWP Lublin,342,30-34,26,Fatal
-2004,KWP Gorzów Wielk.,155,30-34,6,Fatal
+2004,KWP Gorzów Wlkp.,155,30-34,6,Fatal
 2004,KWP Łódź,338,30-34,19,Fatal
 2004,KWP Kraków,441,30-34,28,Fatal
 2004,KWP Radom,312,30-34,23,Fatal
@@ -8221,7 +8221,7 @@ NA,NA,NA,85+,NA,Attempted
 2005,KWP Wrocław,306,30-34,21,Fatal
 2005,KWP Bydgoszcz,277,30-34,21,Fatal
 2005,KWP Lublin,309,30-34,21,Fatal
-2005,KWP Gorzów Wielk.,142,30-34,12,Fatal
+2005,KWP Gorzów Wlkp.,142,30-34,12,Fatal
 2005,KWP Łódź,313,30-34,20,Fatal
 2005,KWP Kraków,411,30-34,25,Fatal
 2005,KWP Radom,341,30-34,26,Fatal
@@ -8239,7 +8239,7 @@ NA,NA,NA,85+,NA,Attempted
 2006,KWP Wrocław,289,30-34,35,Fatal
 2006,KWP Bydgoszcz,225,30-34,16,Fatal
 2006,KWP Lublin,276,30-34,12,Fatal
-2006,KWP Gorzów Wielk.,160,30-34,11,Fatal
+2006,KWP Gorzów Wlkp.,160,30-34,11,Fatal
 2006,KWP Łódź,314,30-34,20,Fatal
 2006,KWP Kraków,317,30-34,22,Fatal
 2006,KWP Radom,277,30-34,19,Fatal
@@ -8257,7 +8257,7 @@ NA,NA,NA,85+,NA,Attempted
 2007,KWP Wrocław,239,30-34,18,Fatal
 2007,KWP Bydgoszcz,215,30-34,12,Fatal
 2007,KWP Lublin,231,30-34,15,Fatal
-2007,KWP Gorzów Wielk.,152,30-34,11,Fatal
+2007,KWP Gorzów Wlkp.,152,30-34,11,Fatal
 2007,KWP Łódź,297,30-34,24,Fatal
 2007,KWP Kraków,253,30-34,14,Fatal
 2007,KWP Radom,264,30-34,19,Fatal
@@ -8275,7 +8275,7 @@ NA,NA,NA,85+,NA,Attempted
 2008,KWP Wrocław,272,30-34,20,Fatal
 2008,KWP Bydgoszcz,269,30-34,24,Fatal
 2008,KWP Lublin,299,30-34,28,Fatal
-2008,KWP Gorzów Wielk.,129,30-34,8,Fatal
+2008,KWP Gorzów Wlkp.,129,30-34,8,Fatal
 2008,KWP Łódź,301,30-34,9,Fatal
 2008,KWP Kraków,302,30-34,22,Fatal
 2008,KWP Radom,435,30-34,31,Fatal
@@ -8293,7 +8293,7 @@ NA,NA,NA,85+,NA,Attempted
 2009,KWP Wrocław,248,30-34,16,Fatal
 2009,KWP Bydgoszcz,276,30-34,20,Fatal
 2009,KWP Lublin,309,30-34,27,Fatal
-2009,KWP Gorzów Wielk.,170,30-34,9,Fatal
+2009,KWP Gorzów Wlkp.,170,30-34,9,Fatal
 2009,KWP Łódź,369,30-34,24,Fatal
 2009,KWP Kraków,363,30-34,28,Fatal
 2009,KWP Radom,385,30-34,28,Fatal
@@ -8311,7 +8311,7 @@ NA,NA,NA,85+,NA,Attempted
 2010,KWP Wrocław,241,30-34,16,Fatal
 2010,KWP Bydgoszcz,252,30-34,22,Fatal
 2010,KWP Lublin,285,30-34,17,Fatal
-2010,KWP Gorzów Wielk.,129,30-34,7,Fatal
+2010,KWP Gorzów Wlkp.,129,30-34,7,Fatal
 2010,KWP Łódź,334,30-34,26,Fatal
 2010,KWP Kraków,349,30-34,26,Fatal
 2010,KWP Radom,354,30-34,15,Fatal
@@ -8329,7 +8329,7 @@ NA,NA,NA,85+,NA,Attempted
 2011,KWP Wrocław,208,30-34,16,Fatal
 2011,KWP Bydgoszcz,271,30-34,17,Fatal
 2011,KWP Lublin,249,30-34,20,Fatal
-2011,KWP Gorzów Wielk.,137,30-34,15,Fatal
+2011,KWP Gorzów Wlkp.,137,30-34,15,Fatal
 2011,KWP Łódź,342,30-34,28,Fatal
 2011,KWP Kraków,342,30-34,26,Fatal
 2011,KWP Radom,328,30-34,21,Fatal
@@ -8347,7 +8347,7 @@ NA,NA,NA,85+,NA,Attempted
 2012,KWP Wrocław,231,30-34,16,Fatal
 2012,KWP Bydgoszcz,291,30-34,26,Fatal
 2012,KWP Lublin,236,30-34,20,Fatal
-2012,KWP Gorzów Wielk.,154,30-34,7,Fatal
+2012,KWP Gorzów Wlkp.,154,30-34,7,Fatal
 2012,KWP Łódź,373,30-34,32,Fatal
 2012,KWP Kraków,333,30-34,26,Fatal
 2012,KWP Radom,323,30-34,33,Fatal
@@ -8365,7 +8365,7 @@ NA,NA,NA,85+,NA,Attempted
 1999,KWP Wrocław,339,35-39,35,Fatal
 1999,KWP Bydgoszcz,248,35-39,31,Fatal
 1999,KWP Lublin,261,35-39,19,Fatal
-1999,KWP Gorzów Wielk.,179,35-39,22,Fatal
+1999,KWP Gorzów Wlkp.,179,35-39,22,Fatal
 1999,KWP Łódź,392,35-39,34,Fatal
 1999,KWP Kraków,282,35-39,22,Fatal
 1999,KWP Radom,394,35-39,42,Fatal
@@ -8383,7 +8383,7 @@ NA,NA,NA,85+,NA,Attempted
 2000,KWP Wrocław,394,35-39,31,Fatal
 2000,KWP Bydgoszcz,240,35-39,22,Fatal
 2000,KWP Lublin,259,35-39,24,Fatal
-2000,KWP Gorzów Wielk.,156,35-39,16,Fatal
+2000,KWP Gorzów Wlkp.,156,35-39,16,Fatal
 2000,KWP Łódź,366,35-39,31,Fatal
 2000,KWP Kraków,474,35-39,43,Fatal
 2000,KWP Radom,408,35-39,39,Fatal
@@ -8401,7 +8401,7 @@ NA,NA,NA,85+,NA,Attempted
 2001,KWP Wrocław,332,35-39,31,Fatal
 2001,KWP Bydgoszcz,245,35-39,23,Fatal
 2001,KWP Lublin,271,35-39,15,Fatal
-2001,KWP Gorzów Wielk.,210,35-39,19,Fatal
+2001,KWP Gorzów Wlkp.,210,35-39,19,Fatal
 2001,KWP Łódź,342,35-39,30,Fatal
 2001,KWP Kraków,508,35-39,40,Fatal
 2001,KWP Radom,426,35-39,35,Fatal
@@ -8419,7 +8419,7 @@ NA,NA,NA,85+,NA,Attempted
 2002,KWP Wrocław,347,35-39,23,Fatal
 2002,KWP Bydgoszcz,216,35-39,17,Fatal
 2002,KWP Lublin,288,35-39,30,Fatal
-2002,KWP Gorzów Wielk.,194,35-39,16,Fatal
+2002,KWP Gorzów Wlkp.,194,35-39,16,Fatal
 2002,KWP Łódź,338,35-39,33,Fatal
 2002,KWP Kraków,542,35-39,32,Fatal
 2002,KWP Radom,369,35-39,32,Fatal
@@ -8437,7 +8437,7 @@ NA,NA,NA,85+,NA,Attempted
 2003,KWP Wrocław,375,35-39,31,Fatal
 2003,KWP Bydgoszcz,183,35-39,12,Fatal
 2003,KWP Lublin,355,35-39,26,Fatal
-2003,KWP Gorzów Wielk.,143,35-39,10,Fatal
+2003,KWP Gorzów Wlkp.,143,35-39,10,Fatal
 2003,KWP Łódź,300,35-39,18,Fatal
 2003,KWP Kraków,416,35-39,25,Fatal
 2003,KWP Radom,310,35-39,21,Fatal
@@ -8455,7 +8455,7 @@ NA,NA,NA,85+,NA,Attempted
 2004,KWP Wrocław,397,35-39,22,Fatal
 2004,KWP Bydgoszcz,325,35-39,28,Fatal
 2004,KWP Lublin,342,35-39,21,Fatal
-2004,KWP Gorzów Wielk.,155,35-39,6,Fatal
+2004,KWP Gorzów Wlkp.,155,35-39,6,Fatal
 2004,KWP Łódź,338,35-39,19,Fatal
 2004,KWP Kraków,441,35-39,43,Fatal
 2004,KWP Radom,312,35-39,18,Fatal
@@ -8473,7 +8473,7 @@ NA,NA,NA,85+,NA,Attempted
 2005,KWP Wrocław,306,35-39,22,Fatal
 2005,KWP Bydgoszcz,277,35-39,24,Fatal
 2005,KWP Lublin,309,35-39,18,Fatal
-2005,KWP Gorzów Wielk.,142,35-39,6,Fatal
+2005,KWP Gorzów Wlkp.,142,35-39,6,Fatal
 2005,KWP Łódź,313,35-39,29,Fatal
 2005,KWP Kraków,411,35-39,29,Fatal
 2005,KWP Radom,341,35-39,24,Fatal
@@ -8491,7 +8491,7 @@ NA,NA,NA,85+,NA,Attempted
 2006,KWP Wrocław,289,35-39,18,Fatal
 2006,KWP Bydgoszcz,225,35-39,15,Fatal
 2006,KWP Lublin,276,35-39,13,Fatal
-2006,KWP Gorzów Wielk.,160,35-39,15,Fatal
+2006,KWP Gorzów Wlkp.,160,35-39,15,Fatal
 2006,KWP Łódź,314,35-39,23,Fatal
 2006,KWP Kraków,317,35-39,19,Fatal
 2006,KWP Radom,277,35-39,21,Fatal
@@ -8509,7 +8509,7 @@ NA,NA,NA,85+,NA,Attempted
 2007,KWP Wrocław,239,35-39,11,Fatal
 2007,KWP Bydgoszcz,215,35-39,20,Fatal
 2007,KWP Lublin,231,35-39,19,Fatal
-2007,KWP Gorzów Wielk.,152,35-39,9,Fatal
+2007,KWP Gorzów Wlkp.,152,35-39,9,Fatal
 2007,KWP Łódź,297,35-39,20,Fatal
 2007,KWP Kraków,253,35-39,18,Fatal
 2007,KWP Radom,264,35-39,22,Fatal
@@ -8527,7 +8527,7 @@ NA,NA,NA,85+,NA,Attempted
 2008,KWP Wrocław,272,35-39,28,Fatal
 2008,KWP Bydgoszcz,269,35-39,18,Fatal
 2008,KWP Lublin,299,35-39,17,Fatal
-2008,KWP Gorzów Wielk.,129,35-39,9,Fatal
+2008,KWP Gorzów Wlkp.,129,35-39,9,Fatal
 2008,KWP Łódź,301,35-39,22,Fatal
 2008,KWP Kraków,302,35-39,21,Fatal
 2008,KWP Radom,435,35-39,19,Fatal
@@ -8545,7 +8545,7 @@ NA,NA,NA,85+,NA,Attempted
 2009,KWP Wrocław,248,35-39,26,Fatal
 2009,KWP Bydgoszcz,276,35-39,29,Fatal
 2009,KWP Lublin,309,35-39,23,Fatal
-2009,KWP Gorzów Wielk.,170,35-39,16,Fatal
+2009,KWP Gorzów Wlkp.,170,35-39,16,Fatal
 2009,KWP Łódź,369,35-39,25,Fatal
 2009,KWP Kraków,363,35-39,35,Fatal
 2009,KWP Radom,385,35-39,30,Fatal
@@ -8563,7 +8563,7 @@ NA,NA,NA,85+,NA,Attempted
 2010,KWP Wrocław,241,35-39,22,Fatal
 2010,KWP Bydgoszcz,252,35-39,21,Fatal
 2010,KWP Lublin,285,35-39,22,Fatal
-2010,KWP Gorzów Wielk.,129,35-39,4,Fatal
+2010,KWP Gorzów Wlkp.,129,35-39,4,Fatal
 2010,KWP Łódź,334,35-39,17,Fatal
 2010,KWP Kraków,349,35-39,16,Fatal
 2010,KWP Radom,354,35-39,29,Fatal
@@ -8581,7 +8581,7 @@ NA,NA,NA,85+,NA,Attempted
 2011,KWP Wrocław,208,35-39,22,Fatal
 2011,KWP Bydgoszcz,271,35-39,24,Fatal
 2011,KWP Lublin,249,35-39,20,Fatal
-2011,KWP Gorzów Wielk.,137,35-39,11,Fatal
+2011,KWP Gorzów Wlkp.,137,35-39,11,Fatal
 2011,KWP Łódź,342,35-39,34,Fatal
 2011,KWP Kraków,342,35-39,28,Fatal
 2011,KWP Radom,328,35-39,25,Fatal
@@ -8599,7 +8599,7 @@ NA,NA,NA,85+,NA,Attempted
 2012,KWP Wrocław,231,35-39,15,Fatal
 2012,KWP Bydgoszcz,291,35-39,23,Fatal
 2012,KWP Lublin,236,35-39,15,Fatal
-2012,KWP Gorzów Wielk.,154,35-39,10,Fatal
+2012,KWP Gorzów Wlkp.,154,35-39,10,Fatal
 2012,KWP Łódź,373,35-39,30,Fatal
 2012,KWP Kraków,333,35-39,25,Fatal
 2012,KWP Radom,323,35-39,20,Fatal
@@ -8617,7 +8617,7 @@ NA,NA,NA,85+,NA,Attempted
 1999,KWP Wrocław,339,40-44,48,Fatal
 1999,KWP Bydgoszcz,248,40-44,41,Fatal
 1999,KWP Lublin,261,40-44,37,Fatal
-1999,KWP Gorzów Wielk.,179,40-44,27,Fatal
+1999,KWP Gorzów Wlkp.,179,40-44,27,Fatal
 1999,KWP Łódź,392,40-44,55,Fatal
 1999,KWP Kraków,282,40-44,36,Fatal
 1999,KWP Radom,394,40-44,54,Fatal
@@ -8635,7 +8635,7 @@ NA,NA,NA,85+,NA,Attempted
 2000,KWP Wrocław,394,40-44,51,Fatal
 2000,KWP Bydgoszcz,240,40-44,36,Fatal
 2000,KWP Lublin,259,40-44,28,Fatal
-2000,KWP Gorzów Wielk.,156,40-44,25,Fatal
+2000,KWP Gorzów Wlkp.,156,40-44,25,Fatal
 2000,KWP Łódź,366,40-44,59,Fatal
 2000,KWP Kraków,474,40-44,60,Fatal
 2000,KWP Radom,408,40-44,64,Fatal
@@ -8653,7 +8653,7 @@ NA,NA,NA,85+,NA,Attempted
 2001,KWP Wrocław,332,40-44,46,Fatal
 2001,KWP Bydgoszcz,245,40-44,24,Fatal
 2001,KWP Lublin,271,40-44,38,Fatal
-2001,KWP Gorzów Wielk.,210,40-44,18,Fatal
+2001,KWP Gorzów Wlkp.,210,40-44,18,Fatal
 2001,KWP Łódź,342,40-44,34,Fatal
 2001,KWP Kraków,508,40-44,60,Fatal
 2001,KWP Radom,426,40-44,51,Fatal
@@ -8671,7 +8671,7 @@ NA,NA,NA,85+,NA,Attempted
 2002,KWP Wrocław,347,40-44,38,Fatal
 2002,KWP Bydgoszcz,216,40-44,26,Fatal
 2002,KWP Lublin,288,40-44,41,Fatal
-2002,KWP Gorzów Wielk.,194,40-44,14,Fatal
+2002,KWP Gorzów Wlkp.,194,40-44,14,Fatal
 2002,KWP Łódź,338,40-44,41,Fatal
 2002,KWP Kraków,542,40-44,63,Fatal
 2002,KWP Radom,369,40-44,52,Fatal
@@ -8689,7 +8689,7 @@ NA,NA,NA,85+,NA,Attempted
 2003,KWP Wrocław,375,40-44,40,Fatal
 2003,KWP Bydgoszcz,183,40-44,27,Fatal
 2003,KWP Lublin,355,40-44,39,Fatal
-2003,KWP Gorzów Wielk.,143,40-44,14,Fatal
+2003,KWP Gorzów Wlkp.,143,40-44,14,Fatal
 2003,KWP Łódź,300,40-44,28,Fatal
 2003,KWP Kraków,416,40-44,46,Fatal
 2003,KWP Radom,310,40-44,39,Fatal
@@ -8707,7 +8707,7 @@ NA,NA,NA,85+,NA,Attempted
 2004,KWP Wrocław,397,40-44,43,Fatal
 2004,KWP Bydgoszcz,325,40-44,28,Fatal
 2004,KWP Lublin,342,40-44,33,Fatal
-2004,KWP Gorzów Wielk.,155,40-44,15,Fatal
+2004,KWP Gorzów Wlkp.,155,40-44,15,Fatal
 2004,KWP Łódź,338,40-44,41,Fatal
 2004,KWP Kraków,441,40-44,49,Fatal
 2004,KWP Radom,312,40-44,37,Fatal
@@ -8725,7 +8725,7 @@ NA,NA,NA,85+,NA,Attempted
 2005,KWP Wrocław,306,40-44,34,Fatal
 2005,KWP Bydgoszcz,277,40-44,31,Fatal
 2005,KWP Lublin,309,40-44,27,Fatal
-2005,KWP Gorzów Wielk.,142,40-44,11,Fatal
+2005,KWP Gorzów Wlkp.,142,40-44,11,Fatal
 2005,KWP Łódź,313,40-44,28,Fatal
 2005,KWP Kraków,411,40-44,44,Fatal
 2005,KWP Radom,341,40-44,38,Fatal
@@ -8743,7 +8743,7 @@ NA,NA,NA,85+,NA,Attempted
 2006,KWP Wrocław,289,40-44,26,Fatal
 2006,KWP Bydgoszcz,225,40-44,18,Fatal
 2006,KWP Lublin,276,40-44,36,Fatal
-2006,KWP Gorzów Wielk.,160,40-44,14,Fatal
+2006,KWP Gorzów Wlkp.,160,40-44,14,Fatal
 2006,KWP Łódź,314,40-44,31,Fatal
 2006,KWP Kraków,317,40-44,25,Fatal
 2006,KWP Radom,277,40-44,26,Fatal
@@ -8761,7 +8761,7 @@ NA,NA,NA,85+,NA,Attempted
 2007,KWP Wrocław,239,40-44,17,Fatal
 2007,KWP Bydgoszcz,215,40-44,13,Fatal
 2007,KWP Lublin,231,40-44,16,Fatal
-2007,KWP Gorzów Wielk.,152,40-44,13,Fatal
+2007,KWP Gorzów Wlkp.,152,40-44,13,Fatal
 2007,KWP Łódź,297,40-44,29,Fatal
 2007,KWP Kraków,253,40-44,25,Fatal
 2007,KWP Radom,264,40-44,30,Fatal
@@ -8779,7 +8779,7 @@ NA,NA,NA,85+,NA,Attempted
 2008,KWP Wrocław,272,40-44,17,Fatal
 2008,KWP Bydgoszcz,269,40-44,31,Fatal
 2008,KWP Lublin,299,40-44,24,Fatal
-2008,KWP Gorzów Wielk.,129,40-44,18,Fatal
+2008,KWP Gorzów Wlkp.,129,40-44,18,Fatal
 2008,KWP Łódź,301,40-44,26,Fatal
 2008,KWP Kraków,302,40-44,23,Fatal
 2008,KWP Radom,435,40-44,43,Fatal
@@ -8797,7 +8797,7 @@ NA,NA,NA,85+,NA,Attempted
 2009,KWP Wrocław,248,40-44,14,Fatal
 2009,KWP Bydgoszcz,276,40-44,23,Fatal
 2009,KWP Lublin,309,40-44,21,Fatal
-2009,KWP Gorzów Wielk.,170,40-44,13,Fatal
+2009,KWP Gorzów Wlkp.,170,40-44,13,Fatal
 2009,KWP Łódź,369,40-44,32,Fatal
 2009,KWP Kraków,363,40-44,25,Fatal
 2009,KWP Radom,385,40-44,33,Fatal
@@ -8815,7 +8815,7 @@ NA,NA,NA,85+,NA,Attempted
 2010,KWP Wrocław,241,40-44,9,Fatal
 2010,KWP Bydgoszcz,252,40-44,19,Fatal
 2010,KWP Lublin,285,40-44,18,Fatal
-2010,KWP Gorzów Wielk.,129,40-44,10,Fatal
+2010,KWP Gorzów Wlkp.,129,40-44,10,Fatal
 2010,KWP Łódź,334,40-44,32,Fatal
 2010,KWP Kraków,349,40-44,34,Fatal
 2010,KWP Radom,354,40-44,35,Fatal
@@ -8833,7 +8833,7 @@ NA,NA,NA,85+,NA,Attempted
 2011,KWP Wrocław,208,40-44,19,Fatal
 2011,KWP Bydgoszcz,271,40-44,18,Fatal
 2011,KWP Lublin,249,40-44,19,Fatal
-2011,KWP Gorzów Wielk.,137,40-44,14,Fatal
+2011,KWP Gorzów Wlkp.,137,40-44,14,Fatal
 2011,KWP Łódź,342,40-44,36,Fatal
 2011,KWP Kraków,342,40-44,24,Fatal
 2011,KWP Radom,328,40-44,28,Fatal
@@ -8851,7 +8851,7 @@ NA,NA,NA,85+,NA,Attempted
 2012,KWP Wrocław,231,40-44,18,Fatal
 2012,KWP Bydgoszcz,291,40-44,30,Fatal
 2012,KWP Lublin,236,40-44,18,Fatal
-2012,KWP Gorzów Wielk.,154,40-44,7,Fatal
+2012,KWP Gorzów Wlkp.,154,40-44,7,Fatal
 2012,KWP Łódź,373,40-44,29,Fatal
 2012,KWP Kraków,333,40-44,23,Fatal
 2012,KWP Radom,323,40-44,31,Fatal
@@ -8869,7 +8869,7 @@ NA,NA,NA,85+,NA,Attempted
 1999,KWP Wrocław,339,45-49,42,Fatal
 1999,KWP Bydgoszcz,248,45-49,36,Fatal
 1999,KWP Lublin,261,45-49,38,Fatal
-1999,KWP Gorzów Wielk.,179,45-49,31,Fatal
+1999,KWP Gorzów Wlkp.,179,45-49,31,Fatal
 1999,KWP Łódź,392,45-49,62,Fatal
 1999,KWP Kraków,282,45-49,41,Fatal
 1999,KWP Radom,394,45-49,49,Fatal
@@ -8887,7 +8887,7 @@ NA,NA,NA,85+,NA,Attempted
 2000,KWP Wrocław,394,45-49,62,Fatal
 2000,KWP Bydgoszcz,240,45-49,38,Fatal
 2000,KWP Lublin,259,45-49,29,Fatal
-2000,KWP Gorzów Wielk.,156,45-49,23,Fatal
+2000,KWP Gorzów Wlkp.,156,45-49,23,Fatal
 2000,KWP Łódź,366,45-49,46,Fatal
 2000,KWP Kraków,474,45-49,62,Fatal
 2000,KWP Radom,408,45-49,58,Fatal
@@ -8905,7 +8905,7 @@ NA,NA,NA,85+,NA,Attempted
 2001,KWP Wrocław,332,45-49,45,Fatal
 2001,KWP Bydgoszcz,245,45-49,32,Fatal
 2001,KWP Lublin,271,45-49,38,Fatal
-2001,KWP Gorzów Wielk.,210,45-49,30,Fatal
+2001,KWP Gorzów Wlkp.,210,45-49,30,Fatal
 2001,KWP Łódź,342,45-49,52,Fatal
 2001,KWP Kraków,508,45-49,91,Fatal
 2001,KWP Radom,426,45-49,69,Fatal
@@ -8923,7 +8923,7 @@ NA,NA,NA,85+,NA,Attempted
 2002,KWP Wrocław,347,45-49,43,Fatal
 2002,KWP Bydgoszcz,216,45-49,28,Fatal
 2002,KWP Lublin,288,45-49,36,Fatal
-2002,KWP Gorzów Wielk.,194,45-49,24,Fatal
+2002,KWP Gorzów Wlkp.,194,45-49,24,Fatal
 2002,KWP Łódź,338,45-49,44,Fatal
 2002,KWP Kraków,542,45-49,66,Fatal
 2002,KWP Radom,369,45-49,64,Fatal
@@ -8941,7 +8941,7 @@ NA,NA,NA,85+,NA,Attempted
 2003,KWP Wrocław,375,45-49,47,Fatal
 2003,KWP Bydgoszcz,183,45-49,22,Fatal
 2003,KWP Lublin,355,45-49,53,Fatal
-2003,KWP Gorzów Wielk.,143,45-49,24,Fatal
+2003,KWP Gorzów Wlkp.,143,45-49,24,Fatal
 2003,KWP Łódź,300,45-49,58,Fatal
 2003,KWP Kraków,416,45-49,58,Fatal
 2003,KWP Radom,310,45-49,41,Fatal
@@ -8959,7 +8959,7 @@ NA,NA,NA,85+,NA,Attempted
 2004,KWP Wrocław,397,45-49,65,Fatal
 2004,KWP Bydgoszcz,325,45-49,42,Fatal
 2004,KWP Lublin,342,45-49,38,Fatal
-2004,KWP Gorzów Wielk.,155,45-49,18,Fatal
+2004,KWP Gorzów Wlkp.,155,45-49,18,Fatal
 2004,KWP Łódź,338,45-49,63,Fatal
 2004,KWP Kraków,441,45-49,52,Fatal
 2004,KWP Radom,312,45-49,45,Fatal
@@ -8977,7 +8977,7 @@ NA,NA,NA,85+,NA,Attempted
 2005,KWP Wrocław,306,45-49,39,Fatal
 2005,KWP Bydgoszcz,277,45-49,41,Fatal
 2005,KWP Lublin,309,45-49,40,Fatal
-2005,KWP Gorzów Wielk.,142,45-49,16,Fatal
+2005,KWP Gorzów Wlkp.,142,45-49,16,Fatal
 2005,KWP Łódź,313,45-49,43,Fatal
 2005,KWP Kraków,411,45-49,58,Fatal
 2005,KWP Radom,341,45-49,47,Fatal
@@ -8995,7 +8995,7 @@ NA,NA,NA,85+,NA,Attempted
 2006,KWP Wrocław,289,45-49,33,Fatal
 2006,KWP Bydgoszcz,225,45-49,30,Fatal
 2006,KWP Lublin,276,45-49,41,Fatal
-2006,KWP Gorzów Wielk.,160,45-49,16,Fatal
+2006,KWP Gorzów Wlkp.,160,45-49,16,Fatal
 2006,KWP Łódź,314,45-49,37,Fatal
 2006,KWP Kraków,317,45-49,40,Fatal
 2006,KWP Radom,277,45-49,44,Fatal
@@ -9013,7 +9013,7 @@ NA,NA,NA,85+,NA,Attempted
 2007,KWP Wrocław,239,45-49,31,Fatal
 2007,KWP Bydgoszcz,215,45-49,26,Fatal
 2007,KWP Lublin,231,45-49,24,Fatal
-2007,KWP Gorzów Wielk.,152,45-49,21,Fatal
+2007,KWP Gorzów Wlkp.,152,45-49,21,Fatal
 2007,KWP Łódź,297,45-49,41,Fatal
 2007,KWP Kraków,253,45-49,31,Fatal
 2007,KWP Radom,264,45-49,26,Fatal
@@ -9031,7 +9031,7 @@ NA,NA,NA,85+,NA,Attempted
 2008,KWP Wrocław,272,45-49,31,Fatal
 2008,KWP Bydgoszcz,269,45-49,31,Fatal
 2008,KWP Lublin,299,45-49,31,Fatal
-2008,KWP Gorzów Wielk.,129,45-49,13,Fatal
+2008,KWP Gorzów Wlkp.,129,45-49,13,Fatal
 2008,KWP Łódź,301,45-49,36,Fatal
 2008,KWP Kraków,302,45-49,39,Fatal
 2008,KWP Radom,435,45-49,52,Fatal
@@ -9049,7 +9049,7 @@ NA,NA,NA,85+,NA,Attempted
 2009,KWP Wrocław,248,45-49,27,Fatal
 2009,KWP Bydgoszcz,276,45-49,25,Fatal
 2009,KWP Lublin,309,45-49,35,Fatal
-2009,KWP Gorzów Wielk.,170,45-49,18,Fatal
+2009,KWP Gorzów Wlkp.,170,45-49,18,Fatal
 2009,KWP Łódź,369,45-49,35,Fatal
 2009,KWP Kraków,363,45-49,40,Fatal
 2009,KWP Radom,385,45-49,52,Fatal
@@ -9067,7 +9067,7 @@ NA,NA,NA,85+,NA,Attempted
 2010,KWP Wrocław,241,45-49,24,Fatal
 2010,KWP Bydgoszcz,252,45-49,19,Fatal
 2010,KWP Lublin,285,45-49,33,Fatal
-2010,KWP Gorzów Wielk.,129,45-49,15,Fatal
+2010,KWP Gorzów Wlkp.,129,45-49,15,Fatal
 2010,KWP Łódź,334,45-49,24,Fatal
 2010,KWP Kraków,349,45-49,38,Fatal
 2010,KWP Radom,354,45-49,28,Fatal
@@ -9085,7 +9085,7 @@ NA,NA,NA,85+,NA,Attempted
 2011,KWP Wrocław,208,45-49,12,Fatal
 2011,KWP Bydgoszcz,271,45-49,36,Fatal
 2011,KWP Lublin,249,45-49,30,Fatal
-2011,KWP Gorzów Wielk.,137,45-49,10,Fatal
+2011,KWP Gorzów Wlkp.,137,45-49,10,Fatal
 2011,KWP Łódź,342,45-49,23,Fatal
 2011,KWP Kraków,342,45-49,36,Fatal
 2011,KWP Radom,328,45-49,26,Fatal
@@ -9103,7 +9103,7 @@ NA,NA,NA,85+,NA,Attempted
 2012,KWP Wrocław,231,45-49,18,Fatal
 2012,KWP Bydgoszcz,291,45-49,29,Fatal
 2012,KWP Lublin,236,45-49,16,Fatal
-2012,KWP Gorzów Wielk.,154,45-49,12,Fatal
+2012,KWP Gorzów Wlkp.,154,45-49,12,Fatal
 2012,KWP Łódź,373,45-49,38,Fatal
 2012,KWP Kraków,333,45-49,33,Fatal
 2012,KWP Radom,323,45-49,28,Fatal
@@ -9121,7 +9121,7 @@ NA,NA,NA,85+,NA,Attempted
 1999,KWP Wrocław,339,50-54,31,Fatal
 1999,KWP Bydgoszcz,248,50-54,24,Fatal
 1999,KWP Lublin,261,50-54,24,Fatal
-1999,KWP Gorzów Wielk.,179,50-54,14,Fatal
+1999,KWP Gorzów Wlkp.,179,50-54,14,Fatal
 1999,KWP Łódź,392,50-54,39,Fatal
 1999,KWP Kraków,282,50-54,26,Fatal
 1999,KWP Radom,394,50-54,40,Fatal
@@ -9139,7 +9139,7 @@ NA,NA,NA,85+,NA,Attempted
 2000,KWP Wrocław,394,50-54,40,Fatal
 2000,KWP Bydgoszcz,240,50-54,26,Fatal
 2000,KWP Lublin,259,50-54,25,Fatal
-2000,KWP Gorzów Wielk.,156,50-54,16,Fatal
+2000,KWP Gorzów Wlkp.,156,50-54,16,Fatal
 2000,KWP Łódź,366,50-54,45,Fatal
 2000,KWP Kraków,474,50-54,44,Fatal
 2000,KWP Radom,408,50-54,42,Fatal
@@ -9157,7 +9157,7 @@ NA,NA,NA,85+,NA,Attempted
 2001,KWP Wrocław,332,50-54,29,Fatal
 2001,KWP Bydgoszcz,245,50-54,34,Fatal
 2001,KWP Lublin,271,50-54,33,Fatal
-2001,KWP Gorzów Wielk.,210,50-54,33,Fatal
+2001,KWP Gorzów Wlkp.,210,50-54,33,Fatal
 2001,KWP Łódź,342,50-54,54,Fatal
 2001,KWP Kraków,508,50-54,51,Fatal
 2001,KWP Radom,426,50-54,42,Fatal
@@ -9175,7 +9175,7 @@ NA,NA,NA,85+,NA,Attempted
 2002,KWP Wrocław,347,50-54,46,Fatal
 2002,KWP Bydgoszcz,216,50-54,33,Fatal
 2002,KWP Lublin,288,50-54,37,Fatal
-2002,KWP Gorzów Wielk.,194,50-54,24,Fatal
+2002,KWP Gorzów Wlkp.,194,50-54,24,Fatal
 2002,KWP Łódź,338,50-54,43,Fatal
 2002,KWP Kraków,542,50-54,70,Fatal
 2002,KWP Radom,369,50-54,32,Fatal
@@ -9193,7 +9193,7 @@ NA,NA,NA,85+,NA,Attempted
 2003,KWP Wrocław,375,50-54,53,Fatal
 2003,KWP Bydgoszcz,183,50-54,27,Fatal
 2003,KWP Lublin,355,50-54,46,Fatal
-2003,KWP Gorzów Wielk.,143,50-54,19,Fatal
+2003,KWP Gorzów Wlkp.,143,50-54,19,Fatal
 2003,KWP Łódź,300,50-54,39,Fatal
 2003,KWP Kraków,416,50-54,57,Fatal
 2003,KWP Radom,310,50-54,31,Fatal
@@ -9211,7 +9211,7 @@ NA,NA,NA,85+,NA,Attempted
 2004,KWP Wrocław,397,50-54,38,Fatal
 2004,KWP Bydgoszcz,325,50-54,45,Fatal
 2004,KWP Lublin,342,50-54,48,Fatal
-2004,KWP Gorzów Wielk.,155,50-54,13,Fatal
+2004,KWP Gorzów Wlkp.,155,50-54,13,Fatal
 2004,KWP Łódź,338,50-54,56,Fatal
 2004,KWP Kraków,441,50-54,51,Fatal
 2004,KWP Radom,312,50-54,36,Fatal
@@ -9229,7 +9229,7 @@ NA,NA,NA,85+,NA,Attempted
 2005,KWP Wrocław,306,50-54,38,Fatal
 2005,KWP Bydgoszcz,277,50-54,35,Fatal
 2005,KWP Lublin,309,50-54,46,Fatal
-2005,KWP Gorzów Wielk.,142,50-54,18,Fatal
+2005,KWP Gorzów Wlkp.,142,50-54,18,Fatal
 2005,KWP Łódź,313,50-54,36,Fatal
 2005,KWP Kraków,411,50-54,50,Fatal
 2005,KWP Radom,341,50-54,54,Fatal
@@ -9247,7 +9247,7 @@ NA,NA,NA,85+,NA,Attempted
 2006,KWP Wrocław,289,50-54,35,Fatal
 2006,KWP Bydgoszcz,225,50-54,22,Fatal
 2006,KWP Lublin,276,50-54,39,Fatal
-2006,KWP Gorzów Wielk.,160,50-54,20,Fatal
+2006,KWP Gorzów Wlkp.,160,50-54,20,Fatal
 2006,KWP Łódź,314,50-54,46,Fatal
 2006,KWP Kraków,317,50-54,36,Fatal
 2006,KWP Radom,277,50-54,39,Fatal
@@ -9265,7 +9265,7 @@ NA,NA,NA,85+,NA,Attempted
 2007,KWP Wrocław,239,50-54,18,Fatal
 2007,KWP Bydgoszcz,215,50-54,22,Fatal
 2007,KWP Lublin,231,50-54,32,Fatal
-2007,KWP Gorzów Wielk.,152,50-54,26,Fatal
+2007,KWP Gorzów Wlkp.,152,50-54,26,Fatal
 2007,KWP Łódź,297,50-54,38,Fatal
 2007,KWP Kraków,253,50-54,25,Fatal
 2007,KWP Radom,264,50-54,35,Fatal
@@ -9283,7 +9283,7 @@ NA,NA,NA,85+,NA,Attempted
 2008,KWP Wrocław,272,50-54,51,Fatal
 2008,KWP Bydgoszcz,269,50-54,28,Fatal
 2008,KWP Lublin,299,50-54,27,Fatal
-2008,KWP Gorzów Wielk.,129,50-54,12,Fatal
+2008,KWP Gorzów Wlkp.,129,50-54,12,Fatal
 2008,KWP Łódź,301,50-54,49,Fatal
 2008,KWP Kraków,302,50-54,42,Fatal
 2008,KWP Radom,435,50-54,53,Fatal
@@ -9301,7 +9301,7 @@ NA,NA,NA,85+,NA,Attempted
 2009,KWP Wrocław,248,50-54,31,Fatal
 2009,KWP Bydgoszcz,276,50-54,42,Fatal
 2009,KWP Lublin,309,50-54,35,Fatal
-2009,KWP Gorzów Wielk.,170,50-54,18,Fatal
+2009,KWP Gorzów Wlkp.,170,50-54,18,Fatal
 2009,KWP Łódź,369,50-54,58,Fatal
 2009,KWP Kraków,363,50-54,47,Fatal
 2009,KWP Radom,385,50-54,42,Fatal
@@ -9319,7 +9319,7 @@ NA,NA,NA,85+,NA,Attempted
 2010,KWP Wrocław,241,50-54,27,Fatal
 2010,KWP Bydgoszcz,252,50-54,41,Fatal
 2010,KWP Lublin,285,50-54,46,Fatal
-2010,KWP Gorzów Wielk.,129,50-54,20,Fatal
+2010,KWP Gorzów Wlkp.,129,50-54,20,Fatal
 2010,KWP Łódź,334,50-54,52,Fatal
 2010,KWP Kraków,349,50-54,46,Fatal
 2010,KWP Radom,354,50-54,59,Fatal
@@ -9337,7 +9337,7 @@ NA,NA,NA,85+,NA,Attempted
 2011,KWP Wrocław,208,50-54,38,Fatal
 2011,KWP Bydgoszcz,271,50-54,29,Fatal
 2011,KWP Lublin,249,50-54,33,Fatal
-2011,KWP Gorzów Wielk.,137,50-54,21,Fatal
+2011,KWP Gorzów Wlkp.,137,50-54,21,Fatal
 2011,KWP Łódź,342,50-54,34,Fatal
 2011,KWP Kraków,342,50-54,46,Fatal
 2011,KWP Radom,328,50-54,53,Fatal
@@ -9355,7 +9355,7 @@ NA,NA,NA,85+,NA,Attempted
 2012,KWP Wrocław,231,50-54,23,Fatal
 2012,KWP Bydgoszcz,291,50-54,34,Fatal
 2012,KWP Lublin,236,50-54,30,Fatal
-2012,KWP Gorzów Wielk.,154,50-54,14,Fatal
+2012,KWP Gorzów Wlkp.,154,50-54,14,Fatal
 2012,KWP Łódź,373,50-54,48,Fatal
 2012,KWP Kraków,333,50-54,56,Fatal
 2012,KWP Radom,323,50-54,42,Fatal
@@ -9373,7 +9373,7 @@ NA,NA,NA,85+,NA,Attempted
 1999,KWP Wrocław,339,55-59,18,Fatal
 1999,KWP Bydgoszcz,248,55-59,18,Fatal
 1999,KWP Lublin,261,55-59,12,Fatal
-1999,KWP Gorzów Wielk.,179,55-59,5,Fatal
+1999,KWP Gorzów Wlkp.,179,55-59,5,Fatal
 1999,KWP Łódź,392,55-59,24,Fatal
 1999,KWP Kraków,282,55-59,20,Fatal
 1999,KWP Radom,394,55-59,31,Fatal
@@ -9391,7 +9391,7 @@ NA,NA,NA,85+,NA,Attempted
 2000,KWP Wrocław,394,55-59,22,Fatal
 2000,KWP Bydgoszcz,240,55-59,13,Fatal
 2000,KWP Lublin,259,55-59,26,Fatal
-2000,KWP Gorzów Wielk.,156,55-59,8,Fatal
+2000,KWP Gorzów Wlkp.,156,55-59,8,Fatal
 2000,KWP Łódź,366,55-59,18,Fatal
 2000,KWP Kraków,474,55-59,31,Fatal
 2000,KWP Radom,408,55-59,16,Fatal
@@ -9409,7 +9409,7 @@ NA,NA,NA,85+,NA,Attempted
 2001,KWP Wrocław,332,55-59,19,Fatal
 2001,KWP Bydgoszcz,245,55-59,13,Fatal
 2001,KWP Lublin,271,55-59,17,Fatal
-2001,KWP Gorzów Wielk.,210,55-59,12,Fatal
+2001,KWP Gorzów Wlkp.,210,55-59,12,Fatal
 2001,KWP Łódź,342,55-59,23,Fatal
 2001,KWP Kraków,508,55-59,31,Fatal
 2001,KWP Radom,426,55-59,22,Fatal
@@ -9427,7 +9427,7 @@ NA,NA,NA,85+,NA,Attempted
 2002,KWP Wrocław,347,55-59,18,Fatal
 2002,KWP Bydgoszcz,216,55-59,12,Fatal
 2002,KWP Lublin,288,55-59,13,Fatal
-2002,KWP Gorzów Wielk.,194,55-59,15,Fatal
+2002,KWP Gorzów Wlkp.,194,55-59,15,Fatal
 2002,KWP Łódź,338,55-59,25,Fatal
 2002,KWP Kraków,542,55-59,44,Fatal
 2002,KWP Radom,369,55-59,21,Fatal
@@ -9445,7 +9445,7 @@ NA,NA,NA,85+,NA,Attempted
 2003,KWP Wrocław,375,55-59,25,Fatal
 2003,KWP Bydgoszcz,183,55-59,15,Fatal
 2003,KWP Lublin,355,55-59,20,Fatal
-2003,KWP Gorzów Wielk.,143,55-59,12,Fatal
+2003,KWP Gorzów Wlkp.,143,55-59,12,Fatal
 2003,KWP Łódź,300,55-59,26,Fatal
 2003,KWP Kraków,416,55-59,40,Fatal
 2003,KWP Radom,310,55-59,14,Fatal
@@ -9463,7 +9463,7 @@ NA,NA,NA,85+,NA,Attempted
 2004,KWP Wrocław,397,55-59,26,Fatal
 2004,KWP Bydgoszcz,325,55-59,29,Fatal
 2004,KWP Lublin,342,55-59,30,Fatal
-2004,KWP Gorzów Wielk.,155,55-59,11,Fatal
+2004,KWP Gorzów Wlkp.,155,55-59,11,Fatal
 2004,KWP Łódź,338,55-59,29,Fatal
 2004,KWP Kraków,441,55-59,51,Fatal
 2004,KWP Radom,312,55-59,29,Fatal
@@ -9481,7 +9481,7 @@ NA,NA,NA,85+,NA,Attempted
 2005,KWP Wrocław,306,55-59,37,Fatal
 2005,KWP Bydgoszcz,277,55-59,21,Fatal
 2005,KWP Lublin,309,55-59,27,Fatal
-2005,KWP Gorzów Wielk.,142,55-59,13,Fatal
+2005,KWP Gorzów Wlkp.,142,55-59,13,Fatal
 2005,KWP Łódź,313,55-59,42,Fatal
 2005,KWP Kraków,411,55-59,36,Fatal
 2005,KWP Radom,341,55-59,25,Fatal
@@ -9499,7 +9499,7 @@ NA,NA,NA,85+,NA,Attempted
 2006,KWP Wrocław,289,55-59,37,Fatal
 2006,KWP Bydgoszcz,225,55-59,18,Fatal
 2006,KWP Lublin,276,55-59,23,Fatal
-2006,KWP Gorzów Wielk.,160,55-59,14,Fatal
+2006,KWP Gorzów Wlkp.,160,55-59,14,Fatal
 2006,KWP Łódź,314,55-59,35,Fatal
 2006,KWP Kraków,317,55-59,38,Fatal
 2006,KWP Radom,277,55-59,25,Fatal
@@ -9517,7 +9517,7 @@ NA,NA,NA,85+,NA,Attempted
 2007,KWP Wrocław,239,55-59,26,Fatal
 2007,KWP Bydgoszcz,215,55-59,22,Fatal
 2007,KWP Lublin,231,55-59,22,Fatal
-2007,KWP Gorzów Wielk.,152,55-59,13,Fatal
+2007,KWP Gorzów Wlkp.,152,55-59,13,Fatal
 2007,KWP Łódź,297,55-59,34,Fatal
 2007,KWP Kraków,253,55-59,32,Fatal
 2007,KWP Radom,264,55-59,22,Fatal
@@ -9535,7 +9535,7 @@ NA,NA,NA,85+,NA,Attempted
 2008,KWP Wrocław,272,55-59,30,Fatal
 2008,KWP Bydgoszcz,269,55-59,41,Fatal
 2008,KWP Lublin,299,55-59,45,Fatal
-2008,KWP Gorzów Wielk.,129,55-59,9,Fatal
+2008,KWP Gorzów Wlkp.,129,55-59,9,Fatal
 2008,KWP Łódź,301,55-59,35,Fatal
 2008,KWP Kraków,302,55-59,21,Fatal
 2008,KWP Radom,435,55-59,51,Fatal
@@ -9553,7 +9553,7 @@ NA,NA,NA,85+,NA,Attempted
 2009,KWP Wrocław,248,55-59,31,Fatal
 2009,KWP Bydgoszcz,276,55-59,32,Fatal
 2009,KWP Lublin,309,55-59,43,Fatal
-2009,KWP Gorzów Wielk.,170,55-59,18,Fatal
+2009,KWP Gorzów Wlkp.,170,55-59,18,Fatal
 2009,KWP Łódź,369,55-59,42,Fatal
 2009,KWP Kraków,363,55-59,45,Fatal
 2009,KWP Radom,385,55-59,50,Fatal
@@ -9571,7 +9571,7 @@ NA,NA,NA,85+,NA,Attempted
 2010,KWP Wrocław,241,55-59,38,Fatal
 2010,KWP Bydgoszcz,252,55-59,19,Fatal
 2010,KWP Lublin,285,55-59,29,Fatal
-2010,KWP Gorzów Wielk.,129,55-59,17,Fatal
+2010,KWP Gorzów Wlkp.,129,55-59,17,Fatal
 2010,KWP Łódź,334,55-59,48,Fatal
 2010,KWP Kraków,349,55-59,40,Fatal
 2010,KWP Radom,354,55-59,49,Fatal
@@ -9589,7 +9589,7 @@ NA,NA,NA,85+,NA,Attempted
 2011,KWP Wrocław,208,55-59,28,Fatal
 2011,KWP Bydgoszcz,271,55-59,39,Fatal
 2011,KWP Lublin,249,55-59,32,Fatal
-2011,KWP Gorzów Wielk.,137,55-59,13,Fatal
+2011,KWP Gorzów Wlkp.,137,55-59,13,Fatal
 2011,KWP Łódź,342,55-59,41,Fatal
 2011,KWP Kraków,342,55-59,51,Fatal
 2011,KWP Radom,328,55-59,39,Fatal
@@ -9607,7 +9607,7 @@ NA,NA,NA,85+,NA,Attempted
 2012,KWP Wrocław,231,55-59,37,Fatal
 2012,KWP Bydgoszcz,291,55-59,27,Fatal
 2012,KWP Lublin,236,55-59,39,Fatal
-2012,KWP Gorzów Wielk.,154,55-59,19,Fatal
+2012,KWP Gorzów Wlkp.,154,55-59,19,Fatal
 2012,KWP Łódź,373,55-59,49,Fatal
 2012,KWP Kraków,333,55-59,44,Fatal
 2012,KWP Radom,323,55-59,37,Fatal
@@ -9625,7 +9625,7 @@ NA,NA,NA,85+,NA,Attempted
 1999,KWP Wrocław,339,60-64,20,Fatal
 1999,KWP Bydgoszcz,248,60-64,12,Fatal
 1999,KWP Lublin,261,60-64,17,Fatal
-1999,KWP Gorzów Wielk.,179,60-64,10,Fatal
+1999,KWP Gorzów Wlkp.,179,60-64,10,Fatal
 1999,KWP Łódź,392,60-64,22,Fatal
 1999,KWP Kraków,282,60-64,15,Fatal
 1999,KWP Radom,394,60-64,23,Fatal
@@ -9643,7 +9643,7 @@ NA,NA,NA,85+,NA,Attempted
 2000,KWP Wrocław,394,60-64,14,Fatal
 2000,KWP Bydgoszcz,240,60-64,13,Fatal
 2000,KWP Lublin,259,60-64,13,Fatal
-2000,KWP Gorzów Wielk.,156,60-64,8,Fatal
+2000,KWP Gorzów Wlkp.,156,60-64,8,Fatal
 2000,KWP Łódź,366,60-64,13,Fatal
 2000,KWP Kraków,474,60-64,37,Fatal
 2000,KWP Radom,408,60-64,27,Fatal
@@ -9661,7 +9661,7 @@ NA,NA,NA,85+,NA,Attempted
 2001,KWP Wrocław,332,60-64,19,Fatal
 2001,KWP Bydgoszcz,245,60-64,12,Fatal
 2001,KWP Lublin,271,60-64,11,Fatal
-2001,KWP Gorzów Wielk.,210,60-64,3,Fatal
+2001,KWP Gorzów Wlkp.,210,60-64,3,Fatal
 2001,KWP Łódź,342,60-64,15,Fatal
 2001,KWP Kraków,508,60-64,38,Fatal
 2001,KWP Radom,426,60-64,22,Fatal
@@ -9679,7 +9679,7 @@ NA,NA,NA,85+,NA,Attempted
 2002,KWP Wrocław,347,60-64,17,Fatal
 2002,KWP Bydgoszcz,216,60-64,10,Fatal
 2002,KWP Lublin,288,60-64,13,Fatal
-2002,KWP Gorzów Wielk.,194,60-64,12,Fatal
+2002,KWP Gorzów Wlkp.,194,60-64,12,Fatal
 2002,KWP Łódź,338,60-64,26,Fatal
 2002,KWP Kraków,542,60-64,36,Fatal
 2002,KWP Radom,369,60-64,15,Fatal
@@ -9697,7 +9697,7 @@ NA,NA,NA,85+,NA,Attempted
 2003,KWP Wrocław,375,60-64,19,Fatal
 2003,KWP Bydgoszcz,183,60-64,16,Fatal
 2003,KWP Lublin,355,60-64,12,Fatal
-2003,KWP Gorzów Wielk.,143,60-64,5,Fatal
+2003,KWP Gorzów Wlkp.,143,60-64,5,Fatal
 2003,KWP Łódź,300,60-64,17,Fatal
 2003,KWP Kraków,416,60-64,28,Fatal
 2003,KWP Radom,310,60-64,24,Fatal
@@ -9715,7 +9715,7 @@ NA,NA,NA,85+,NA,Attempted
 2004,KWP Wrocław,397,60-64,22,Fatal
 2004,KWP Bydgoszcz,325,60-64,15,Fatal
 2004,KWP Lublin,342,60-64,14,Fatal
-2004,KWP Gorzów Wielk.,155,60-64,11,Fatal
+2004,KWP Gorzów Wlkp.,155,60-64,11,Fatal
 2004,KWP Łódź,338,60-64,23,Fatal
 2004,KWP Kraków,441,60-64,28,Fatal
 2004,KWP Radom,312,60-64,19,Fatal
@@ -9733,7 +9733,7 @@ NA,NA,NA,85+,NA,Attempted
 2005,KWP Wrocław,306,60-64,19,Fatal
 2005,KWP Bydgoszcz,277,60-64,13,Fatal
 2005,KWP Lublin,309,60-64,19,Fatal
-2005,KWP Gorzów Wielk.,142,60-64,6,Fatal
+2005,KWP Gorzów Wlkp.,142,60-64,6,Fatal
 2005,KWP Łódź,313,60-64,18,Fatal
 2005,KWP Kraków,411,60-64,31,Fatal
 2005,KWP Radom,341,60-64,15,Fatal
@@ -9751,7 +9751,7 @@ NA,NA,NA,85+,NA,Attempted
 2006,KWP Wrocław,289,60-64,16,Fatal
 2006,KWP Bydgoszcz,225,60-64,18,Fatal
 2006,KWP Lublin,276,60-64,13,Fatal
-2006,KWP Gorzów Wielk.,160,60-64,8,Fatal
+2006,KWP Gorzów Wlkp.,160,60-64,8,Fatal
 2006,KWP Łódź,314,60-64,15,Fatal
 2006,KWP Kraków,317,60-64,18,Fatal
 2006,KWP Radom,277,60-64,9,Fatal
@@ -9769,7 +9769,7 @@ NA,NA,NA,85+,NA,Attempted
 2007,KWP Wrocław,239,60-64,14,Fatal
 2007,KWP Bydgoszcz,215,60-64,13,Fatal
 2007,KWP Lublin,231,60-64,16,Fatal
-2007,KWP Gorzów Wielk.,152,60-64,8,Fatal
+2007,KWP Gorzów Wlkp.,152,60-64,8,Fatal
 2007,KWP Łódź,297,60-64,17,Fatal
 2007,KWP Kraków,253,60-64,17,Fatal
 2007,KWP Radom,264,60-64,18,Fatal
@@ -9787,7 +9787,7 @@ NA,NA,NA,85+,NA,Attempted
 2008,KWP Wrocław,272,60-64,11,Fatal
 2008,KWP Bydgoszcz,269,60-64,15,Fatal
 2008,KWP Lublin,299,60-64,22,Fatal
-2008,KWP Gorzów Wielk.,129,60-64,11,Fatal
+2008,KWP Gorzów Wlkp.,129,60-64,11,Fatal
 2008,KWP Łódź,301,60-64,30,Fatal
 2008,KWP Kraków,302,60-64,24,Fatal
 2008,KWP Radom,435,60-64,32,Fatal
@@ -9805,7 +9805,7 @@ NA,NA,NA,85+,NA,Attempted
 2009,KWP Wrocław,248,60-64,19,Fatal
 2009,KWP Bydgoszcz,276,60-64,23,Fatal
 2009,KWP Lublin,309,60-64,15,Fatal
-2009,KWP Gorzów Wielk.,170,60-64,14,Fatal
+2009,KWP Gorzów Wlkp.,170,60-64,14,Fatal
 2009,KWP Łódź,369,60-64,29,Fatal
 2009,KWP Kraków,363,60-64,28,Fatal
 2009,KWP Radom,385,60-64,29,Fatal
@@ -9823,7 +9823,7 @@ NA,NA,NA,85+,NA,Attempted
 2010,KWP Wrocław,241,60-64,22,Fatal
 2010,KWP Bydgoszcz,252,60-64,17,Fatal
 2010,KWP Lublin,285,60-64,20,Fatal
-2010,KWP Gorzów Wielk.,129,60-64,13,Fatal
+2010,KWP Gorzów Wlkp.,129,60-64,13,Fatal
 2010,KWP Łódź,334,60-64,26,Fatal
 2010,KWP Kraków,349,60-64,17,Fatal
 2010,KWP Radom,354,60-64,32,Fatal
@@ -9841,7 +9841,7 @@ NA,NA,NA,85+,NA,Attempted
 2011,KWP Wrocław,208,60-64,16,Fatal
 2011,KWP Bydgoszcz,271,60-64,24,Fatal
 2011,KWP Lublin,249,60-64,23,Fatal
-2011,KWP Gorzów Wielk.,137,60-64,10,Fatal
+2011,KWP Gorzów Wlkp.,137,60-64,10,Fatal
 2011,KWP Łódź,342,60-64,18,Fatal
 2011,KWP Kraków,342,60-64,21,Fatal
 2011,KWP Radom,328,60-64,20,Fatal
@@ -9859,7 +9859,7 @@ NA,NA,NA,85+,NA,Attempted
 2012,KWP Wrocław,231,60-64,27,Fatal
 2012,KWP Bydgoszcz,291,60-64,31,Fatal
 2012,KWP Lublin,236,60-64,13,Fatal
-2012,KWP Gorzów Wielk.,154,60-64,21,Fatal
+2012,KWP Gorzów Wlkp.,154,60-64,21,Fatal
 2012,KWP Łódź,373,60-64,29,Fatal
 2012,KWP Kraków,333,60-64,21,Fatal
 2012,KWP Radom,323,60-64,35,Fatal
@@ -9877,7 +9877,7 @@ NA,NA,NA,85+,NA,Attempted
 1999,KWP Wrocław,339,65-69,7,Fatal
 1999,KWP Bydgoszcz,248,65-69,9,Fatal
 1999,KWP Lublin,261,65-69,14,Fatal
-1999,KWP Gorzów Wielk.,179,65-69,6,Fatal
+1999,KWP Gorzów Wlkp.,179,65-69,6,Fatal
 1999,KWP Łódź,392,65-69,14,Fatal
 1999,KWP Kraków,282,65-69,19,Fatal
 1999,KWP Radom,394,65-69,18,Fatal
@@ -9895,7 +9895,7 @@ NA,NA,NA,85+,NA,Attempted
 2000,KWP Wrocław,394,65-69,19,Fatal
 2000,KWP Bydgoszcz,240,65-69,4,Fatal
 2000,KWP Lublin,259,65-69,5,Fatal
-2000,KWP Gorzów Wielk.,156,65-69,4,Fatal
+2000,KWP Gorzów Wlkp.,156,65-69,4,Fatal
 2000,KWP Łódź,366,65-69,18,Fatal
 2000,KWP Kraków,474,65-69,25,Fatal
 2000,KWP Radom,408,65-69,23,Fatal
@@ -9913,7 +9913,7 @@ NA,NA,NA,85+,NA,Attempted
 2001,KWP Wrocław,332,65-69,16,Fatal
 2001,KWP Bydgoszcz,245,65-69,13,Fatal
 2001,KWP Lublin,271,65-69,7,Fatal
-2001,KWP Gorzów Wielk.,210,65-69,7,Fatal
+2001,KWP Gorzów Wlkp.,210,65-69,7,Fatal
 2001,KWP Łódź,342,65-69,18,Fatal
 2001,KWP Kraków,508,65-69,24,Fatal
 2001,KWP Radom,426,65-69,10,Fatal
@@ -9931,7 +9931,7 @@ NA,NA,NA,85+,NA,Attempted
 2002,KWP Wrocław,347,65-69,26,Fatal
 2002,KWP Bydgoszcz,216,65-69,14,Fatal
 2002,KWP Lublin,288,65-69,13,Fatal
-2002,KWP Gorzów Wielk.,194,65-69,9,Fatal
+2002,KWP Gorzów Wlkp.,194,65-69,9,Fatal
 2002,KWP Łódź,338,65-69,13,Fatal
 2002,KWP Kraków,542,65-69,28,Fatal
 2002,KWP Radom,369,65-69,12,Fatal
@@ -9949,7 +9949,7 @@ NA,NA,NA,85+,NA,Attempted
 2003,KWP Wrocław,375,65-69,20,Fatal
 2003,KWP Bydgoszcz,183,65-69,7,Fatal
 2003,KWP Lublin,355,65-69,20,Fatal
-2003,KWP Gorzów Wielk.,143,65-69,5,Fatal
+2003,KWP Gorzów Wlkp.,143,65-69,5,Fatal
 2003,KWP Łódź,300,65-69,15,Fatal
 2003,KWP Kraków,416,65-69,29,Fatal
 2003,KWP Radom,310,65-69,15,Fatal
@@ -9967,7 +9967,7 @@ NA,NA,NA,85+,NA,Attempted
 2004,KWP Wrocław,397,65-69,21,Fatal
 2004,KWP Bydgoszcz,325,65-69,19,Fatal
 2004,KWP Lublin,342,65-69,12,Fatal
-2004,KWP Gorzów Wielk.,155,65-69,4,Fatal
+2004,KWP Gorzów Wlkp.,155,65-69,4,Fatal
 2004,KWP Łódź,338,65-69,11,Fatal
 2004,KWP Kraków,441,65-69,23,Fatal
 2004,KWP Radom,312,65-69,8,Fatal
@@ -9985,7 +9985,7 @@ NA,NA,NA,85+,NA,Attempted
 2005,KWP Wrocław,306,65-69,12,Fatal
 2005,KWP Bydgoszcz,277,65-69,12,Fatal
 2005,KWP Lublin,309,65-69,14,Fatal
-2005,KWP Gorzów Wielk.,142,65-69,5,Fatal
+2005,KWP Gorzów Wlkp.,142,65-69,5,Fatal
 2005,KWP Łódź,313,65-69,11,Fatal
 2005,KWP Kraków,411,65-69,21,Fatal
 2005,KWP Radom,341,65-69,19,Fatal
@@ -10003,7 +10003,7 @@ NA,NA,NA,85+,NA,Attempted
 2006,KWP Wrocław,289,65-69,14,Fatal
 2006,KWP Bydgoszcz,225,65-69,15,Fatal
 2006,KWP Lublin,276,65-69,7,Fatal
-2006,KWP Gorzów Wielk.,160,65-69,9,Fatal
+2006,KWP Gorzów Wlkp.,160,65-69,9,Fatal
 2006,KWP Łódź,314,65-69,16,Fatal
 2006,KWP Kraków,317,65-69,18,Fatal
 2006,KWP Radom,277,65-69,13,Fatal
@@ -10021,7 +10021,7 @@ NA,NA,NA,85+,NA,Attempted
 2007,KWP Wrocław,239,65-69,14,Fatal
 2007,KWP Bydgoszcz,215,65-69,14,Fatal
 2007,KWP Lublin,231,65-69,9,Fatal
-2007,KWP Gorzów Wielk.,152,65-69,5,Fatal
+2007,KWP Gorzów Wlkp.,152,65-69,5,Fatal
 2007,KWP Łódź,297,65-69,13,Fatal
 2007,KWP Kraków,253,65-69,11,Fatal
 2007,KWP Radom,264,65-69,14,Fatal
@@ -10039,7 +10039,7 @@ NA,NA,NA,85+,NA,Attempted
 2008,KWP Wrocław,272,65-69,16,Fatal
 2008,KWP Bydgoszcz,269,65-69,7,Fatal
 2008,KWP Lublin,299,65-69,6,Fatal
-2008,KWP Gorzów Wielk.,129,65-69,15,Fatal
+2008,KWP Gorzów Wlkp.,129,65-69,15,Fatal
 2008,KWP Łódź,301,65-69,15,Fatal
 2008,KWP Kraków,302,65-69,12,Fatal
 2008,KWP Radom,435,65-69,16,Fatal
@@ -10057,7 +10057,7 @@ NA,NA,NA,85+,NA,Attempted
 2009,KWP Wrocław,248,65-69,11,Fatal
 2009,KWP Bydgoszcz,276,65-69,11,Fatal
 2009,KWP Lublin,309,65-69,11,Fatal
-2009,KWP Gorzów Wielk.,170,65-69,9,Fatal
+2009,KWP Gorzów Wlkp.,170,65-69,9,Fatal
 2009,KWP Łódź,369,65-69,14,Fatal
 2009,KWP Kraków,363,65-69,24,Fatal
 2009,KWP Radom,385,65-69,20,Fatal
@@ -10075,7 +10075,7 @@ NA,NA,NA,85+,NA,Attempted
 2010,KWP Wrocław,241,65-69,7,Fatal
 2010,KWP Bydgoszcz,252,65-69,17,Fatal
 2010,KWP Lublin,285,65-69,15,Fatal
-2010,KWP Gorzów Wielk.,129,65-69,5,Fatal
+2010,KWP Gorzów Wlkp.,129,65-69,5,Fatal
 2010,KWP Łódź,334,65-69,17,Fatal
 2010,KWP Kraków,349,65-69,21,Fatal
 2010,KWP Radom,354,65-69,13,Fatal
@@ -10093,7 +10093,7 @@ NA,NA,NA,85+,NA,Attempted
 2011,KWP Wrocław,208,65-69,6,Fatal
 2011,KWP Bydgoszcz,271,65-69,6,Fatal
 2011,KWP Lublin,249,65-69,8,Fatal
-2011,KWP Gorzów Wielk.,137,65-69,4,Fatal
+2011,KWP Gorzów Wlkp.,137,65-69,4,Fatal
 2011,KWP Łódź,342,65-69,9,Fatal
 2011,KWP Kraków,342,65-69,17,Fatal
 2011,KWP Radom,328,65-69,19,Fatal
@@ -10111,7 +10111,7 @@ NA,NA,NA,85+,NA,Attempted
 2012,KWP Wrocław,231,65-69,14,Fatal
 2012,KWP Bydgoszcz,291,65-69,15,Fatal
 2012,KWP Lublin,236,65-69,11,Fatal
-2012,KWP Gorzów Wielk.,154,65-69,16,Fatal
+2012,KWP Gorzów Wlkp.,154,65-69,16,Fatal
 2012,KWP Łódź,373,65-69,19,Fatal
 2012,KWP Kraków,333,65-69,17,Fatal
 2012,KWP Radom,323,65-69,10,Fatal
@@ -10129,7 +10129,7 @@ NA,NA,NA,85+,NA,Attempted
 1999,KWP Wrocław,339,70-74,21,Fatal
 1999,KWP Bydgoszcz,248,70-74,4,Fatal
 1999,KWP Lublin,261,70-74,9,Fatal
-1999,KWP Gorzów Wielk.,179,70-74,9,Fatal
+1999,KWP Gorzów Wlkp.,179,70-74,9,Fatal
 1999,KWP Łódź,392,70-74,15,Fatal
 1999,KWP Kraków,282,70-74,8,Fatal
 1999,KWP Radom,394,70-74,9,Fatal
@@ -10147,7 +10147,7 @@ NA,NA,NA,85+,NA,Attempted
 2000,KWP Wrocław,394,70-74,18,Fatal
 2000,KWP Bydgoszcz,240,70-74,10,Fatal
 2000,KWP Lublin,259,70-74,10,Fatal
-2000,KWP Gorzów Wielk.,156,70-74,7,Fatal
+2000,KWP Gorzów Wlkp.,156,70-74,7,Fatal
 2000,KWP Łódź,366,70-74,15,Fatal
 2000,KWP Kraków,474,70-74,18,Fatal
 2000,KWP Radom,408,70-74,14,Fatal
@@ -10165,7 +10165,7 @@ NA,NA,NA,85+,NA,Attempted
 2001,KWP Wrocław,332,70-74,14,Fatal
 2001,KWP Bydgoszcz,245,70-74,12,Fatal
 2001,KWP Lublin,271,70-74,8,Fatal
-2001,KWP Gorzów Wielk.,210,70-74,8,Fatal
+2001,KWP Gorzów Wlkp.,210,70-74,8,Fatal
 2001,KWP Łódź,342,70-74,14,Fatal
 2001,KWP Kraków,508,70-74,20,Fatal
 2001,KWP Radom,426,70-74,16,Fatal
@@ -10183,7 +10183,7 @@ NA,NA,NA,85+,NA,Attempted
 2002,KWP Wrocław,347,70-74,14,Fatal
 2002,KWP Bydgoszcz,216,70-74,7,Fatal
 2002,KWP Lublin,288,70-74,13,Fatal
-2002,KWP Gorzów Wielk.,194,70-74,8,Fatal
+2002,KWP Gorzów Wlkp.,194,70-74,8,Fatal
 2002,KWP Łódź,338,70-74,16,Fatal
 2002,KWP Kraków,542,70-74,32,Fatal
 2002,KWP Radom,369,70-74,18,Fatal
@@ -10201,7 +10201,7 @@ NA,NA,NA,85+,NA,Attempted
 2003,KWP Wrocław,375,70-74,16,Fatal
 2003,KWP Bydgoszcz,183,70-74,5,Fatal
 2003,KWP Lublin,355,70-74,10,Fatal
-2003,KWP Gorzów Wielk.,143,70-74,8,Fatal
+2003,KWP Gorzów Wlkp.,143,70-74,8,Fatal
 2003,KWP Łódź,300,70-74,7,Fatal
 2003,KWP Kraków,416,70-74,12,Fatal
 2003,KWP Radom,310,70-74,14,Fatal
@@ -10219,7 +10219,7 @@ NA,NA,NA,85+,NA,Attempted
 2004,KWP Wrocław,397,70-74,11,Fatal
 2004,KWP Bydgoszcz,325,70-74,11,Fatal
 2004,KWP Lublin,342,70-74,10,Fatal
-2004,KWP Gorzów Wielk.,155,70-74,11,Fatal
+2004,KWP Gorzów Wlkp.,155,70-74,11,Fatal
 2004,KWP Łódź,338,70-74,12,Fatal
 2004,KWP Kraków,441,70-74,16,Fatal
 2004,KWP Radom,312,70-74,16,Fatal
@@ -10237,7 +10237,7 @@ NA,NA,NA,85+,NA,Attempted
 2005,KWP Wrocław,306,70-74,15,Fatal
 2005,KWP Bydgoszcz,277,70-74,12,Fatal
 2005,KWP Lublin,309,70-74,11,Fatal
-2005,KWP Gorzów Wielk.,142,70-74,9,Fatal
+2005,KWP Gorzów Wlkp.,142,70-74,9,Fatal
 2005,KWP Łódź,313,70-74,11,Fatal
 2005,KWP Kraków,411,70-74,14,Fatal
 2005,KWP Radom,341,70-74,17,Fatal
@@ -10255,7 +10255,7 @@ NA,NA,NA,85+,NA,Attempted
 2006,KWP Wrocław,289,70-74,6,Fatal
 2006,KWP Bydgoszcz,225,70-74,11,Fatal
 2006,KWP Lublin,276,70-74,11,Fatal
-2006,KWP Gorzów Wielk.,160,70-74,7,Fatal
+2006,KWP Gorzów Wlkp.,160,70-74,7,Fatal
 2006,KWP Łódź,314,70-74,9,Fatal
 2006,KWP Kraków,317,70-74,11,Fatal
 2006,KWP Radom,277,70-74,7,Fatal
@@ -10273,7 +10273,7 @@ NA,NA,NA,85+,NA,Attempted
 2007,KWP Wrocław,239,70-74,9,Fatal
 2007,KWP Bydgoszcz,215,70-74,7,Fatal
 2007,KWP Lublin,231,70-74,6,Fatal
-2007,KWP Gorzów Wielk.,152,70-74,5,Fatal
+2007,KWP Gorzów Wlkp.,152,70-74,5,Fatal
 2007,KWP Łódź,297,70-74,10,Fatal
 2007,KWP Kraków,253,70-74,14,Fatal
 2007,KWP Radom,264,70-74,11,Fatal
@@ -10291,7 +10291,7 @@ NA,NA,NA,85+,NA,Attempted
 2008,KWP Wrocław,272,70-74,6,Fatal
 2008,KWP Bydgoszcz,269,70-74,9,Fatal
 2008,KWP Lublin,299,70-74,9,Fatal
-2008,KWP Gorzów Wielk.,129,70-74,3,Fatal
+2008,KWP Gorzów Wlkp.,129,70-74,3,Fatal
 2008,KWP Łódź,301,70-74,6,Fatal
 2008,KWP Kraków,302,70-74,19,Fatal
 2008,KWP Radom,435,70-74,16,Fatal
@@ -10309,7 +10309,7 @@ NA,NA,NA,85+,NA,Attempted
 2009,KWP Wrocław,248,70-74,7,Fatal
 2009,KWP Bydgoszcz,276,70-74,11,Fatal
 2009,KWP Lublin,309,70-74,10,Fatal
-2009,KWP Gorzów Wielk.,170,70-74,9,Fatal
+2009,KWP Gorzów Wlkp.,170,70-74,9,Fatal
 2009,KWP Łódź,369,70-74,15,Fatal
 2009,KWP Kraków,363,70-74,9,Fatal
 2009,KWP Radom,385,70-74,13,Fatal
@@ -10327,7 +10327,7 @@ NA,NA,NA,85+,NA,Attempted
 2010,KWP Wrocław,241,70-74,8,Fatal
 2010,KWP Bydgoszcz,252,70-74,14,Fatal
 2010,KWP Lublin,285,70-74,8,Fatal
-2010,KWP Gorzów Wielk.,129,70-74,4,Fatal
+2010,KWP Gorzów Wlkp.,129,70-74,4,Fatal
 2010,KWP Łódź,334,70-74,11,Fatal
 2010,KWP Kraków,349,70-74,13,Fatal
 2010,KWP Radom,354,70-74,9,Fatal
@@ -10345,7 +10345,7 @@ NA,NA,NA,85+,NA,Attempted
 2011,KWP Wrocław,208,70-74,7,Fatal
 2011,KWP Bydgoszcz,271,70-74,8,Fatal
 2011,KWP Lublin,249,70-74,6,Fatal
-2011,KWP Gorzów Wielk.,137,70-74,2,Fatal
+2011,KWP Gorzów Wlkp.,137,70-74,2,Fatal
 2011,KWP Łódź,342,70-74,20,Fatal
 2011,KWP Kraków,342,70-74,18,Fatal
 2011,KWP Radom,328,70-74,16,Fatal
@@ -10363,7 +10363,7 @@ NA,NA,NA,85+,NA,Attempted
 2012,KWP Wrocław,231,70-74,5,Fatal
 2012,KWP Bydgoszcz,291,70-74,8,Fatal
 2012,KWP Lublin,236,70-74,7,Fatal
-2012,KWP Gorzów Wielk.,154,70-74,6,Fatal
+2012,KWP Gorzów Wlkp.,154,70-74,6,Fatal
 2012,KWP Łódź,373,70-74,10,Fatal
 2012,KWP Kraków,333,70-74,13,Fatal
 2012,KWP Radom,323,70-74,7,Fatal
@@ -10381,7 +10381,7 @@ NA,NA,NA,85+,NA,Attempted
 1999,KWP Wrocław,339,75-79,11,Fatal
 1999,KWP Bydgoszcz,248,75-79,2,Fatal
 1999,KWP Lublin,261,75-79,9,Fatal
-1999,KWP Gorzów Wielk.,179,75-79,2,Fatal
+1999,KWP Gorzów Wlkp.,179,75-79,2,Fatal
 1999,KWP Łódź,392,75-79,7,Fatal
 1999,KWP Kraków,282,75-79,4,Fatal
 1999,KWP Radom,394,75-79,7,Fatal
@@ -10399,7 +10399,7 @@ NA,NA,NA,85+,NA,Attempted
 2000,KWP Wrocław,394,75-79,9,Fatal
 2000,KWP Bydgoszcz,240,75-79,9,Fatal
 2000,KWP Lublin,259,75-79,14,Fatal
-2000,KWP Gorzów Wielk.,156,75-79,5,Fatal
+2000,KWP Gorzów Wlkp.,156,75-79,5,Fatal
 2000,KWP Łódź,366,75-79,9,Fatal
 2000,KWP Kraków,474,75-79,11,Fatal
 2000,KWP Radom,408,75-79,8,Fatal
@@ -10417,7 +10417,7 @@ NA,NA,NA,85+,NA,Attempted
 2001,KWP Wrocław,332,75-79,12,Fatal
 2001,KWP Bydgoszcz,245,75-79,7,Fatal
 2001,KWP Lublin,271,75-79,9,Fatal
-2001,KWP Gorzów Wielk.,210,75-79,4,Fatal
+2001,KWP Gorzów Wlkp.,210,75-79,4,Fatal
 2001,KWP Łódź,342,75-79,12,Fatal
 2001,KWP Kraków,508,75-79,12,Fatal
 2001,KWP Radom,426,75-79,11,Fatal
@@ -10435,7 +10435,7 @@ NA,NA,NA,85+,NA,Attempted
 2002,KWP Wrocław,347,75-79,10,Fatal
 2002,KWP Bydgoszcz,216,75-79,4,Fatal
 2002,KWP Lublin,288,75-79,5,Fatal
-2002,KWP Gorzów Wielk.,194,75-79,1,Fatal
+2002,KWP Gorzów Wlkp.,194,75-79,1,Fatal
 2002,KWP Łódź,338,75-79,4,Fatal
 2002,KWP Kraków,542,75-79,20,Fatal
 2002,KWP Radom,369,75-79,14,Fatal
@@ -10453,7 +10453,7 @@ NA,NA,NA,85+,NA,Attempted
 2003,KWP Wrocław,375,75-79,8,Fatal
 2003,KWP Bydgoszcz,183,75-79,4,Fatal
 2003,KWP Lublin,355,75-79,7,Fatal
-2003,KWP Gorzów Wielk.,143,75-79,3,Fatal
+2003,KWP Gorzów Wlkp.,143,75-79,3,Fatal
 2003,KWP Łódź,300,75-79,8,Fatal
 2003,KWP Kraków,416,75-79,12,Fatal
 2003,KWP Radom,310,75-79,6,Fatal
@@ -10471,7 +10471,7 @@ NA,NA,NA,85+,NA,Attempted
 2004,KWP Wrocław,397,75-79,14,Fatal
 2004,KWP Bydgoszcz,325,75-79,8,Fatal
 2004,KWP Lublin,342,75-79,10,Fatal
-2004,KWP Gorzów Wielk.,155,75-79,3,Fatal
+2004,KWP Gorzów Wlkp.,155,75-79,3,Fatal
 2004,KWP Łódź,338,75-79,9,Fatal
 2004,KWP Kraków,441,75-79,12,Fatal
 2004,KWP Radom,312,75-79,5,Fatal
@@ -10489,7 +10489,7 @@ NA,NA,NA,85+,NA,Attempted
 2005,KWP Wrocław,306,75-79,7,Fatal
 2005,KWP Bydgoszcz,277,75-79,6,Fatal
 2005,KWP Lublin,309,75-79,11,Fatal
-2005,KWP Gorzów Wielk.,142,75-79,0,Fatal
+2005,KWP Gorzów Wlkp.,142,75-79,0,Fatal
 2005,KWP Łódź,313,75-79,17,Fatal
 2005,KWP Kraków,411,75-79,10,Fatal
 2005,KWP Radom,341,75-79,4,Fatal
@@ -10507,7 +10507,7 @@ NA,NA,NA,85+,NA,Attempted
 2006,KWP Wrocław,289,75-79,11,Fatal
 2006,KWP Bydgoszcz,225,75-79,9,Fatal
 2006,KWP Lublin,276,75-79,9,Fatal
-2006,KWP Gorzów Wielk.,160,75-79,5,Fatal
+2006,KWP Gorzów Wlkp.,160,75-79,5,Fatal
 2006,KWP Łódź,314,75-79,9,Fatal
 2006,KWP Kraków,317,75-79,11,Fatal
 2006,KWP Radom,277,75-79,7,Fatal
@@ -10525,7 +10525,7 @@ NA,NA,NA,85+,NA,Attempted
 2007,KWP Wrocław,239,75-79,5,Fatal
 2007,KWP Bydgoszcz,215,75-79,8,Fatal
 2007,KWP Lublin,231,75-79,3,Fatal
-2007,KWP Gorzów Wielk.,152,75-79,6,Fatal
+2007,KWP Gorzów Wlkp.,152,75-79,6,Fatal
 2007,KWP Łódź,297,75-79,10,Fatal
 2007,KWP Kraków,253,75-79,12,Fatal
 2007,KWP Radom,264,75-79,8,Fatal
@@ -10543,7 +10543,7 @@ NA,NA,NA,85+,NA,Attempted
 2008,KWP Wrocław,272,75-79,4,Fatal
 2008,KWP Bydgoszcz,269,75-79,4,Fatal
 2008,KWP Lublin,299,75-79,8,Fatal
-2008,KWP Gorzów Wielk.,129,75-79,3,Fatal
+2008,KWP Gorzów Wlkp.,129,75-79,3,Fatal
 2008,KWP Łódź,301,75-79,13,Fatal
 2008,KWP Kraków,302,75-79,8,Fatal
 2008,KWP Radom,435,75-79,13,Fatal
@@ -10561,7 +10561,7 @@ NA,NA,NA,85+,NA,Attempted
 2009,KWP Wrocław,248,75-79,6,Fatal
 2009,KWP Bydgoszcz,276,75-79,5,Fatal
 2009,KWP Lublin,309,75-79,4,Fatal
-2009,KWP Gorzów Wielk.,170,75-79,4,Fatal
+2009,KWP Gorzów Wlkp.,170,75-79,4,Fatal
 2009,KWP Łódź,369,75-79,8,Fatal
 2009,KWP Kraków,363,75-79,10,Fatal
 2009,KWP Radom,385,75-79,9,Fatal
@@ -10579,7 +10579,7 @@ NA,NA,NA,85+,NA,Attempted
 2010,KWP Wrocław,241,75-79,8,Fatal
 2010,KWP Bydgoszcz,252,75-79,0,Fatal
 2010,KWP Lublin,285,75-79,14,Fatal
-2010,KWP Gorzów Wielk.,129,75-79,5,Fatal
+2010,KWP Gorzów Wlkp.,129,75-79,5,Fatal
 2010,KWP Łódź,334,75-79,2,Fatal
 2010,KWP Kraków,349,75-79,13,Fatal
 2010,KWP Radom,354,75-79,8,Fatal
@@ -10597,7 +10597,7 @@ NA,NA,NA,85+,NA,Attempted
 2011,KWP Wrocław,208,75-79,4,Fatal
 2011,KWP Bydgoszcz,271,75-79,10,Fatal
 2011,KWP Lublin,249,75-79,8,Fatal
-2011,KWP Gorzów Wielk.,137,75-79,0,Fatal
+2011,KWP Gorzów Wlkp.,137,75-79,0,Fatal
 2011,KWP Łódź,342,75-79,13,Fatal
 2011,KWP Kraków,342,75-79,6,Fatal
 2011,KWP Radom,328,75-79,6,Fatal
@@ -10615,7 +10615,7 @@ NA,NA,NA,85+,NA,Attempted
 2012,KWP Wrocław,231,75-79,4,Fatal
 2012,KWP Bydgoszcz,291,75-79,9,Fatal
 2012,KWP Lublin,236,75-79,8,Fatal
-2012,KWP Gorzów Wielk.,154,75-79,4,Fatal
+2012,KWP Gorzów Wlkp.,154,75-79,4,Fatal
 2012,KWP Łódź,373,75-79,8,Fatal
 2012,KWP Kraków,333,75-79,10,Fatal
 2012,KWP Radom,323,75-79,9,Fatal
@@ -10633,7 +10633,7 @@ NA,NA,NA,85+,NA,Attempted
 1999,KWP Wrocław,339,80-84,2,Fatal
 1999,KWP Bydgoszcz,248,80-84,2,Fatal
 1999,KWP Lublin,261,80-84,6,Fatal
-1999,KWP Gorzów Wielk.,179,80-84,1,Fatal
+1999,KWP Gorzów Wlkp.,179,80-84,1,Fatal
 1999,KWP Łódź,392,80-84,5,Fatal
 1999,KWP Kraków,282,80-84,3,Fatal
 1999,KWP Radom,394,80-84,6,Fatal
@@ -10651,7 +10651,7 @@ NA,NA,NA,85+,NA,Attempted
 2000,KWP Wrocław,394,80-84,5,Fatal
 2000,KWP Bydgoszcz,240,80-84,5,Fatal
 2000,KWP Lublin,259,80-84,2,Fatal
-2000,KWP Gorzów Wielk.,156,80-84,0,Fatal
+2000,KWP Gorzów Wlkp.,156,80-84,0,Fatal
 2000,KWP Łódź,366,80-84,8,Fatal
 2000,KWP Kraków,474,80-84,6,Fatal
 2000,KWP Radom,408,80-84,3,Fatal
@@ -10669,7 +10669,7 @@ NA,NA,NA,85+,NA,Attempted
 2001,KWP Wrocław,332,80-84,1,Fatal
 2001,KWP Bydgoszcz,245,80-84,2,Fatal
 2001,KWP Lublin,271,80-84,4,Fatal
-2001,KWP Gorzów Wielk.,210,80-84,3,Fatal
+2001,KWP Gorzów Wlkp.,210,80-84,3,Fatal
 2001,KWP Łódź,342,80-84,2,Fatal
 2001,KWP Kraków,508,80-84,9,Fatal
 2001,KWP Radom,426,80-84,6,Fatal
@@ -10687,7 +10687,7 @@ NA,NA,NA,85+,NA,Attempted
 2002,KWP Wrocław,347,80-84,4,Fatal
 2002,KWP Bydgoszcz,216,80-84,3,Fatal
 2002,KWP Lublin,288,80-84,3,Fatal
-2002,KWP Gorzów Wielk.,194,80-84,1,Fatal
+2002,KWP Gorzów Wlkp.,194,80-84,1,Fatal
 2002,KWP Łódź,338,80-84,4,Fatal
 2002,KWP Kraków,542,80-84,8,Fatal
 2002,KWP Radom,369,80-84,5,Fatal
@@ -10705,7 +10705,7 @@ NA,NA,NA,85+,NA,Attempted
 2003,KWP Wrocław,375,80-84,5,Fatal
 2003,KWP Bydgoszcz,183,80-84,2,Fatal
 2003,KWP Lublin,355,80-84,2,Fatal
-2003,KWP Gorzów Wielk.,143,80-84,2,Fatal
+2003,KWP Gorzów Wlkp.,143,80-84,2,Fatal
 2003,KWP Łódź,300,80-84,6,Fatal
 2003,KWP Kraków,416,80-84,4,Fatal
 2003,KWP Radom,310,80-84,4,Fatal
@@ -10723,7 +10723,7 @@ NA,NA,NA,85+,NA,Attempted
 2004,KWP Wrocław,397,80-84,5,Fatal
 2004,KWP Bydgoszcz,325,80-84,4,Fatal
 2004,KWP Lublin,342,80-84,7,Fatal
-2004,KWP Gorzów Wielk.,155,80-84,3,Fatal
+2004,KWP Gorzów Wlkp.,155,80-84,3,Fatal
 2004,KWP Łódź,338,80-84,4,Fatal
 2004,KWP Kraków,441,80-84,4,Fatal
 2004,KWP Radom,312,80-84,4,Fatal
@@ -10741,7 +10741,7 @@ NA,NA,NA,85+,NA,Attempted
 2005,KWP Wrocław,306,80-84,7,Fatal
 2005,KWP Bydgoszcz,277,80-84,1,Fatal
 2005,KWP Lublin,309,80-84,1,Fatal
-2005,KWP Gorzów Wielk.,142,80-84,5,Fatal
+2005,KWP Gorzów Wlkp.,142,80-84,5,Fatal
 2005,KWP Łódź,313,80-84,2,Fatal
 2005,KWP Kraków,411,80-84,7,Fatal
 2005,KWP Radom,341,80-84,9,Fatal
@@ -10759,7 +10759,7 @@ NA,NA,NA,85+,NA,Attempted
 2006,KWP Wrocław,289,80-84,9,Fatal
 2006,KWP Bydgoszcz,225,80-84,3,Fatal
 2006,KWP Lublin,276,80-84,5,Fatal
-2006,KWP Gorzów Wielk.,160,80-84,3,Fatal
+2006,KWP Gorzów Wlkp.,160,80-84,3,Fatal
 2006,KWP Łódź,314,80-84,10,Fatal
 2006,KWP Kraków,317,80-84,9,Fatal
 2006,KWP Radom,277,80-84,5,Fatal
@@ -10777,7 +10777,7 @@ NA,NA,NA,85+,NA,Attempted
 2007,KWP Wrocław,239,80-84,3,Fatal
 2007,KWP Bydgoszcz,215,80-84,4,Fatal
 2007,KWP Lublin,231,80-84,8,Fatal
-2007,KWP Gorzów Wielk.,152,80-84,3,Fatal
+2007,KWP Gorzów Wlkp.,152,80-84,3,Fatal
 2007,KWP Łódź,297,80-84,6,Fatal
 2007,KWP Kraków,253,80-84,5,Fatal
 2007,KWP Radom,264,80-84,3,Fatal
@@ -10795,7 +10795,7 @@ NA,NA,NA,85+,NA,Attempted
 2008,KWP Wrocław,272,80-84,3,Fatal
 2008,KWP Bydgoszcz,269,80-84,9,Fatal
 2008,KWP Lublin,299,80-84,5,Fatal
-2008,KWP Gorzów Wielk.,129,80-84,4,Fatal
+2008,KWP Gorzów Wlkp.,129,80-84,4,Fatal
 2008,KWP Łódź,301,80-84,4,Fatal
 2008,KWP Kraków,302,80-84,6,Fatal
 2008,KWP Radom,435,80-84,12,Fatal
@@ -10813,7 +10813,7 @@ NA,NA,NA,85+,NA,Attempted
 2009,KWP Wrocław,248,80-84,5,Fatal
 2009,KWP Bydgoszcz,276,80-84,5,Fatal
 2009,KWP Lublin,309,80-84,5,Fatal
-2009,KWP Gorzów Wielk.,170,80-84,4,Fatal
+2009,KWP Gorzów Wlkp.,170,80-84,4,Fatal
 2009,KWP Łódź,369,80-84,7,Fatal
 2009,KWP Kraków,363,80-84,13,Fatal
 2009,KWP Radom,385,80-84,7,Fatal
@@ -10831,7 +10831,7 @@ NA,NA,NA,85+,NA,Attempted
 2010,KWP Wrocław,241,80-84,4,Fatal
 2010,KWP Bydgoszcz,252,80-84,4,Fatal
 2010,KWP Lublin,285,80-84,3,Fatal
-2010,KWP Gorzów Wielk.,129,80-84,2,Fatal
+2010,KWP Gorzów Wlkp.,129,80-84,2,Fatal
 2010,KWP Łódź,334,80-84,15,Fatal
 2010,KWP Kraków,349,80-84,11,Fatal
 2010,KWP Radom,354,80-84,8,Fatal
@@ -10849,7 +10849,7 @@ NA,NA,NA,85+,NA,Attempted
 2011,KWP Wrocław,208,80-84,3,Fatal
 2011,KWP Bydgoszcz,271,80-84,6,Fatal
 2011,KWP Lublin,249,80-84,1,Fatal
-2011,KWP Gorzów Wielk.,137,80-84,1,Fatal
+2011,KWP Gorzów Wlkp.,137,80-84,1,Fatal
 2011,KWP Łódź,342,80-84,10,Fatal
 2011,KWP Kraków,342,80-84,9,Fatal
 2011,KWP Radom,328,80-84,1,Fatal
@@ -10867,7 +10867,7 @@ NA,NA,NA,85+,NA,Attempted
 2012,KWP Wrocław,231,80-84,6,Fatal
 2012,KWP Bydgoszcz,291,80-84,2,Fatal
 2012,KWP Lublin,236,80-84,8,Fatal
-2012,KWP Gorzów Wielk.,154,80-84,6,Fatal
+2012,KWP Gorzów Wlkp.,154,80-84,6,Fatal
 2012,KWP Łódź,373,80-84,5,Fatal
 2012,KWP Kraków,333,80-84,9,Fatal
 2012,KWP Radom,323,80-84,2,Fatal
@@ -10885,7 +10885,7 @@ NA,NA,NA,85+,NA,Attempted
 1999,KWP Wrocław,339,85+,1,Fatal
 1999,KWP Bydgoszcz,248,85+,0,Fatal
 1999,KWP Lublin,261,85+,5,Fatal
-1999,KWP Gorzów Wielk.,179,85+,0,Fatal
+1999,KWP Gorzów Wlkp.,179,85+,0,Fatal
 1999,KWP Łódź,392,85+,3,Fatal
 1999,KWP Kraków,282,85+,2,Fatal
 1999,KWP Radom,394,85+,3,Fatal
@@ -10903,7 +10903,7 @@ NA,NA,NA,85+,NA,Attempted
 2000,KWP Wrocław,394,85+,7,Fatal
 2000,KWP Bydgoszcz,240,85+,2,Fatal
 2000,KWP Lublin,259,85+,1,Fatal
-2000,KWP Gorzów Wielk.,156,85+,1,Fatal
+2000,KWP Gorzów Wlkp.,156,85+,1,Fatal
 2000,KWP Łódź,366,85+,5,Fatal
 2000,KWP Kraków,474,85+,5,Fatal
 2000,KWP Radom,408,85+,5,Fatal
@@ -10921,7 +10921,7 @@ NA,NA,NA,85+,NA,Attempted
 2001,KWP Wrocław,332,85+,4,Fatal
 2001,KWP Bydgoszcz,245,85+,3,Fatal
 2001,KWP Lublin,271,85+,1,Fatal
-2001,KWP Gorzów Wielk.,210,85+,1,Fatal
+2001,KWP Gorzów Wlkp.,210,85+,1,Fatal
 2001,KWP Łódź,342,85+,2,Fatal
 2001,KWP Kraków,508,85+,3,Fatal
 2001,KWP Radom,426,85+,2,Fatal
@@ -10939,7 +10939,7 @@ NA,NA,NA,85+,NA,Attempted
 2002,KWP Wrocław,347,85+,6,Fatal
 2002,KWP Bydgoszcz,216,85+,3,Fatal
 2002,KWP Lublin,288,85+,5,Fatal
-2002,KWP Gorzów Wielk.,194,85+,3,Fatal
+2002,KWP Gorzów Wlkp.,194,85+,3,Fatal
 2002,KWP Łódź,338,85+,4,Fatal
 2002,KWP Kraków,542,85+,7,Fatal
 2002,KWP Radom,369,85+,4,Fatal
@@ -10957,7 +10957,7 @@ NA,NA,NA,85+,NA,Attempted
 2003,KWP Wrocław,375,85+,3,Fatal
 2003,KWP Bydgoszcz,183,85+,3,Fatal
 2003,KWP Lublin,355,85+,5,Fatal
-2003,KWP Gorzów Wielk.,143,85+,2,Fatal
+2003,KWP Gorzów Wlkp.,143,85+,2,Fatal
 2003,KWP Łódź,300,85+,4,Fatal
 2003,KWP Kraków,416,85+,5,Fatal
 2003,KWP Radom,310,85+,3,Fatal
@@ -10975,7 +10975,7 @@ NA,NA,NA,85+,NA,Attempted
 2004,KWP Wrocław,397,85+,2,Fatal
 2004,KWP Bydgoszcz,325,85+,3,Fatal
 2004,KWP Lublin,342,85+,5,Fatal
-2004,KWP Gorzów Wielk.,155,85+,1,Fatal
+2004,KWP Gorzów Wlkp.,155,85+,1,Fatal
 2004,KWP Łódź,338,85+,3,Fatal
 2004,KWP Kraków,441,85+,4,Fatal
 2004,KWP Radom,312,85+,2,Fatal
@@ -10993,7 +10993,7 @@ NA,NA,NA,85+,NA,Attempted
 2005,KWP Wrocław,306,85+,4,Fatal
 2005,KWP Bydgoszcz,277,85+,2,Fatal
 2005,KWP Lublin,309,85+,3,Fatal
-2005,KWP Gorzów Wielk.,142,85+,1,Fatal
+2005,KWP Gorzów Wlkp.,142,85+,1,Fatal
 2005,KWP Łódź,313,85+,1,Fatal
 2005,KWP Kraków,411,85+,2,Fatal
 2005,KWP Radom,341,85+,1,Fatal
@@ -11011,7 +11011,7 @@ NA,NA,NA,85+,NA,Attempted
 2006,KWP Wrocław,289,85+,3,Fatal
 2006,KWP Bydgoszcz,225,85+,3,Fatal
 2006,KWP Lublin,276,85+,4,Fatal
-2006,KWP Gorzów Wielk.,160,85+,1,Fatal
+2006,KWP Gorzów Wlkp.,160,85+,1,Fatal
 2006,KWP Łódź,314,85+,6,Fatal
 2006,KWP Kraków,317,85+,1,Fatal
 2006,KWP Radom,277,85+,3,Fatal
@@ -11029,7 +11029,7 @@ NA,NA,NA,85+,NA,Attempted
 2007,KWP Wrocław,239,85+,5,Fatal
 2007,KWP Bydgoszcz,215,85+,6,Fatal
 2007,KWP Lublin,231,85+,3,Fatal
-2007,KWP Gorzów Wielk.,152,85+,0,Fatal
+2007,KWP Gorzów Wlkp.,152,85+,0,Fatal
 2007,KWP Łódź,297,85+,7,Fatal
 2007,KWP Kraków,253,85+,1,Fatal
 2007,KWP Radom,264,85+,5,Fatal
@@ -11047,7 +11047,7 @@ NA,NA,NA,85+,NA,Attempted
 2008,KWP Wrocław,272,85+,6,Fatal
 2008,KWP Bydgoszcz,269,85+,0,Fatal
 2008,KWP Lublin,299,85+,3,Fatal
-2008,KWP Gorzów Wielk.,129,85+,2,Fatal
+2008,KWP Gorzów Wlkp.,129,85+,2,Fatal
 2008,KWP Łódź,301,85+,2,Fatal
 2008,KWP Kraków,302,85+,3,Fatal
 2008,KWP Radom,435,85+,7,Fatal
@@ -11065,7 +11065,7 @@ NA,NA,NA,85+,NA,Attempted
 2009,KWP Wrocław,248,85+,6,Fatal
 2009,KWP Bydgoszcz,276,85+,4,Fatal
 2009,KWP Lublin,309,85+,3,Fatal
-2009,KWP Gorzów Wielk.,170,85+,1,Fatal
+2009,KWP Gorzów Wlkp.,170,85+,1,Fatal
 2009,KWP Łódź,369,85+,7,Fatal
 2009,KWP Kraków,363,85+,4,Fatal
 2009,KWP Radom,385,85+,2,Fatal
@@ -11083,7 +11083,7 @@ NA,NA,NA,85+,NA,Attempted
 2010,KWP Wrocław,241,85+,2,Fatal
 2010,KWP Bydgoszcz,252,85+,8,Fatal
 2010,KWP Lublin,285,85+,2,Fatal
-2010,KWP Gorzów Wielk.,129,85+,2,Fatal
+2010,KWP Gorzów Wlkp.,129,85+,2,Fatal
 2010,KWP Łódź,334,85+,11,Fatal
 2010,KWP Kraków,349,85+,7,Fatal
 2010,KWP Radom,354,85+,2,Fatal
@@ -11101,7 +11101,7 @@ NA,NA,NA,85+,NA,Attempted
 2011,KWP Wrocław,208,85+,5,Fatal
 2011,KWP Bydgoszcz,271,85+,2,Fatal
 2011,KWP Lublin,249,85+,0,Fatal
-2011,KWP Gorzów Wielk.,137,85+,3,Fatal
+2011,KWP Gorzów Wlkp.,137,85+,3,Fatal
 2011,KWP Łódź,342,85+,6,Fatal
 2011,KWP Kraków,342,85+,0,Fatal
 2011,KWP Radom,328,85+,5,Fatal
@@ -11119,7 +11119,7 @@ NA,NA,NA,85+,NA,Attempted
 2012,KWP Wrocław,231,85+,7,Fatal
 2012,KWP Bydgoszcz,291,85+,2,Fatal
 2012,KWP Lublin,236,85+,2,Fatal
-2012,KWP Gorzów Wielk.,154,85+,2,Fatal
+2012,KWP Gorzów Wlkp.,154,85+,2,Fatal
 2012,KWP Łódź,373,85+,11,Fatal
 2012,KWP Kraków,333,85+,3,Fatal
 2012,KWP Radom,323,85+,7,Fatal

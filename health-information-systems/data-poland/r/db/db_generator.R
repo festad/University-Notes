@@ -21,6 +21,9 @@ tidying <- function(tib) {
   #          Garnizon == "KWP Kraków" | Garnizon == "KWP Opole" |
   #          Garnizon == "KWP Poznań" | Garnizon == "Polska")
   
+  i1 <- with(tib, Garnizon == "KWP Gorzów Wielk.")
+  tib$Garnizon[i1] <- "KWP Gorzów Wlkp."
+  
   tib$Year <- as.integer(tib$Year)
   tib <- tib %>%gather(`0-6`:`85+`,key='Age', value='Suicides' )
   return(tib)
@@ -50,10 +53,11 @@ zg1720 <- tidying1316(zg1720)
 
 zg <- zg9912 %>% add_row(zg1316) %>% add_row(zg1720)
 
-nie %>% write_csv("tidy_niezgonem-age-garnizon.csv")
-zg %>% write_csv("tidy_zgonem-age-garnizon.csv")
+# nie %>% write_csv("tidy_niezgonem-age-garnizon.csv")
+# zg %>% write_csv("tidy_zgonem-age-garnizon.csv")
 
 nie %>% add_column(Result = "Attempted") -> nie
 zg %>% add_column(Result = "Fatal") -> zg
+
 dw <- nie %>% add_row(zg)
 dw %>% write_csv("poland_suicides_database.csv")
