@@ -1,3 +1,7 @@
+legenda:
+  !! = not on slides
+
+
 26-10-2021
 
 logical tool layer,
@@ -1006,3 +1010,227 @@ phisical communication with the machines.
 
 CCOW
 when coming from different vendors
+
+ISO IEEE 11073
+Image with active devices,
+bidirectional communication between sensor active devices
+and control units.
+The communication can be implemented with standard iso ieee 11073,
+based on schedule, machines can inject drugs with certain
+rates and amounts.
+
+CCOW is for standard integration,
+multiple components,
+app running on same terminal,
+communication sends status (eg visualizing
+data of patient) to background applications,
+foreground -> background applications,
+apps synchronize data,
+reducing amount of work of people working on same terminal.
+eg ward app (back) and word document with marks of students..
+
+Integrating Healthcare Enterprise
+an organization that tres to make proposals
+for interoperability inside health care,
+typical approaches -> laboratory analysis,
+new diagnoses on the patient, magnetic  resonance,
+based on this best practice standard model they select
+and propose existing standards to be applied on these processes,
+(eg they propose HL7 for magnetic resonance, Dicom for the communication
+between machines MR),
+they don't propose new standards but propose best practices.
+
+Standard EDIFACT,
+for commercial partners,
+buying medical commodities (linens, drugs),
+the hospital enters the order in the ERP of the hospital
+and the order is communicated to the IS of the provider
+with this standard,
+the order is accepted and communicated to ERP still with EDIFACT,
+a business to business communication,
+is not only for hospitals but b2b in general.
+
+CDA, important standard (!!)
+for digital electronic health records,
+standard for digital representation,
+specification of .. (see on wikipedia),
+templates for reports, typical documents
+of electronic records (discharge report, radiological report,
+laboratory list of results..)
+Each documentation can be mapped in the reference model.
+
+Open electronic record (clinical document architecture,
+reference model is HL7 is xml),
+reference model is for changing documents,
+cda represents document like files,
+based on xml encoding,
+standard consists in document templates,
+templates define document structure,
+human readable and machine readable (xml).
+It's possible to build a single file corresponding
+to electronic health record,
+it can be used by different applications,
+
+------
+Story of hospital abroad,
+the hospital needs the past history
+from other hospitals where the patient was before,
+the history of patient is in hospitals in belgio,
+idea: propose communication in europe,
+presence of Common EU EHR Registry/Repository
+Euro repository contains only PID and standard electronic
+health record of the patient.
+
+And now: integration technologies in DBn (multiple databases)
+architectures
+Problem: independent applications,
+? make them interoperate with integration,
+app must be able to share data in meaningful way,
+data don't have to be reentered several times in different
+applications.
+
+We can have another type of integration,
+not about data but functionalities,
+software functions (patiend administration system),
+implementing food sw function for coding ICD level standard,
+string looking for matches with ICD,
+we want to use the function without reepmlementing,
+more like a task for computer technicians and programmers,
+we want new information without double updating,
+avoiding double mantainance,
+we want to share software functions,
+FUNCTIONAL INTEGRATION,
+there are standard techniques for it.
+Data schema integration,
+single virtual schema,
+master application component,
+(we elect an application that will be the master
+for a specific entity type),
+and a service to synchronize transactions in centralized
+database.
+
+Coupling of app components,
+middleware approach,
+Federated Database system:
+means to start with autonomous apps and
+we want to build a virtual schema,
+we start from multiple databases,
+
+
+Database
+ |
+ |
+*--*      *---------*
+|  |      | new     | <------- new application
+*--*      | applic. |
+          *---------*
+               |
+ *---------*   | 
+ | virtual |<--/ 
+ | database|
+ *---------*
+    | |
+ *-------------*
+ |             |-\ <---- middleware software for
+ |             |         federated database
+ *-------------* |
+ |     |         |
+*--* *---*    *----*
+|  | |   |    |    |  <----- legacy applications
+*--* *---*    *----*  
+         |
+patient  |      patient
+data     |      case
+         |      diagnose and
+	 |      procedures
+         |
+     patient
+     insurance
+
+slides ~ 100, 102,
+
+legacy systems and applications,
+they want to build a new application,
+
+
+the new app can have its own database
+
+Transaction management system:
+a technology to ensure that every update
+is managed in a consistent way,
+when concurrent transactions are running
+on a single or multiple databsaes.
+
+slide 105
+locking of resources before writing phase
+during update, and then unlocking.
+
+MIRTH application using HL7,
+middleware that receives messages
+from one app and sends to another
+slide 109 communication servers example
+11:44
+multicast to all relevant components
+
+other example of functional integration:
+remote function calls;
+when there are two app components,
+the second has a sw function
+that you want to use also in the first,
+the coding of procedures is the function
+implemented in the second,
+then the first can invoke the function
+in the second using the protocol RPC/remote function call,
+typically is called remote because the apps
+run on two separated applications,
+the first calls the function and suspends
+the execution (of the first) until there's an answer
+from the function of the second, synchronous communication.
+
+The function is implemented once and shared.
+
+Don't confuse with SOA,
+service oriented architecture,
+where there are simple elementary tasks implemented,
+a set of software services typically
+put on one or more servers (or local)
+and a set of thin applications that make
+use of this services.
+Software thin applications behave as clients,
+using software services.
+Sw services can be delocalized (cloud).
+
+Http verbs (get, post..),
+restful style is a possible way to implement
+a SOA (service oriented architecture).
+Layers of services, based on other services,
+
+Register of available services.
+
+Standard architecture for a business application
+before and after service oriented architecture.
+Before -> independent applications,
+       -> apps read and write on shared databases,
+          but they are independent,
+	  some of them share software functions
+
+after -> light version of services,
+         like order processing or account management
+	 order procesing is a sequence of tasks,
+	 each task is mapped over an existing service,
+	 to perform order processing you need 4 tasks,
+	 instead of implementing those 4 inside
+	 only the call is inside the service,
+	 applications can be managed independently,
+	 you can touch the invocation schema
+	 without touching the service.
+
+first: services -> then applications based on those services,
+
+microservices
+
+Other examples of Health Information System architectures
+
+emr -> electronic medical report system (japanese example).
+
+last configuration
