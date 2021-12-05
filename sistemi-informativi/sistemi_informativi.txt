@@ -193,7 +193,6 @@ esegue la richiesta, distribuisce il risultato e si occupa
 dei processi amministrativi quali la contabilizzazione,
 il backend man mano evolve l'esecuzione dell'ordine manda
 dei dati al front end sullo stato di avanzamento,
-
  - unicita' del dato
 sui prodotti che l'azienda mette in catalogo,
 simile all'erp,
@@ -328,7 +327,7 @@ Possono essere:
 quelli di analisi partono calcolando indici di prestazione dei clienti
 (calcolare quanti acquisti fa un cliente che abita in un certo posto
 e ha determinate caratteristiche, determinati abbonamenti...
-calcolo di indirici = considerare acquisti, preferenze, provider telefonici,
+calcolo di indici = considerare acquisti, preferenze, provider telefonici,
 indici sintetici che possono essere usati per segmentare clienti
 e generare report sui prodotti piu' gettonati e che fatturano di piu',
 segmentazione clienti = usare gli indici sullo storico degli acquisti e il luogo
@@ -653,7 +652,7 @@ unisce i processi tipici dell'interazione azienda-cliente,
 ci sono 5 processi con un sesto (follow up),
 amministrazione operatori e' di supporto (settimo),
 ciascun processo ha una colorazione che individua la suite che supporta tale processo,
-sono indicate anch ele funzioni tipiche che supportano tale processo,
+sono indicate anche le funzioni tipiche che supportano tale processo,
 
 ci sono i processi dell'interazione azienda cliente,
 da sinistra:
@@ -847,17 +846,22 @@ una seconda attivita' supportata dal direzionale per capire se le decisioni hann
 frutti adeguati,
 si pianificano obiettivi, si passano al supporto operativo che fornisce risultati,
 es dati sulle vendite, quante auto ho venduto su quali paesi del sudamerica, il fatturato
-generato, l'utile generato, le difettosita' riscontrate, a distanza di 6 mesi verifica i risultati raggiunti,
+generato, l'utile generato, le difettosita' riscontrate,
+a distanza di 6 mesi verifica i risultati raggiunti,
 verifica dei risultati,
 dopodiche' si prendono azioni correttive (terza attivita'),
-il sistema di supporto operativo riporta risultati che possono essere analizzati dal direzionale
+il sistema di supporto operativo riporta risultati
+che possono essere analizzati dal direzionale
 il quale opera attivita' correttive.
 
-Il sistema di supporto operativo tratta dati spiccioli, singoli scontrini, singoli ordini,
-quantita' di prodotto presenti a magazzino, costo di un particolare dipendente,
+Il sistema di supporto operativo tratta dati spiccioli,
+singoli scontrini, singoli ordini,
+quantita' di prodotto presenti a magazzino,
+costo di un particolare dipendente,
 info molto parcellizzate e specifiche,
 l'informazione direzionale e' sintetica, aggregata, storicizzata,
-il sistema direzionale e' interessato alle informazioni sul semestre, sull'anno,
+il sistema direzionale e' interessato
+alle informazioni sul semestre, sull'anno,
 al trend crescente, non alla singola busta paga ma allo stipendio medio,
 al costo del dipendente in un particolare paese,
 informazioni di sintesi che descrivono il macrofenomeno e non il microfenomeno,
@@ -931,14 +935,18 @@ forma grafica, grafica interattiva,
 forma di grammatica,
 
 i sistemi direzionali sono preconfezionati, standard,
-caratteristiche dei direzionali, supportano inprimis la definizione degli obiettivi,
+caratteristiche dei direzionali,
+supportano inprimis la definizione degli obiettivi,
 dss (decisional support system),
 vedo che crollano le vendite di un prodotto,
 posso provare a mettere in atto azioni correttive,
-info sinstetiche aiutano a capire il problema e gli obiettivi da definire per risolverlo,
-prima definire gli obiettivi, e poi supportare la valutazione del raggiungimento di tali obiettivi,
+info sinstetiche aiutano a capire il problema
+e gli obiettivi da definire per risolverlo,
+prima definire gli obiettivi, e poi supportare la
+valutazione del raggiungimento di tali obiettivi,
 valutare i risultati della strategia scelta,
-es mi aspettavo di aumentare le vendite, vediamo se e' avvenuto a distanza di 6 mesi (funzione
+es mi aspettavo di aumentare le vendite,
+vediamo se e' avvenuto a distanza di 6 mesi (funzione
 di reporting),
 il dss mostra l'info direzionale in modo fortemente interattivo,
 cerco di cliccare sulle varie voci per mettere una toppa (azione correttiva),
@@ -947,16 +955,23 @@ queste erano le funzioni tipiche,
 un'altro aspetto dei SID e' quello che elabora informazioni aggregate, 
 non sui singoli ordini ma aggregati,
 parliamo di indicatori,
-tratta informazioni espresse tramite indicatori, le vendite totali del magazzino,
+tratta informazioni espresse tramite indicatori,
+le vendite totali del magazzino,
 non il singolo scontrino,
-le info aggregate sono temporizzate, hanno collegate un periodo, sono info tempificate,
+le info aggregate sono temporizzate, hanno
+collegate un periodo, sono info tempificate,
 e la tempificazione e' centrale, serve per analizzare i trend,
-vendite totali su un particolare trimestre, su un particolare evento di vendita,
-l'info e' MULTIDIMENSIONALE, posso suddividere il totale per negozi, regioni, nazioni, vedere quali
-hanno venduto piu' e quali meno, posso disaggregare il dato totale effettuando molteplici segmentazioni,
-posso prendere il dato totale e disaggregarlo sui singoli negozi, i singoli prodotti, i singoli paesi.
+vendite totali su un particolare trimestre,
+su un particolare evento di vendita,
+l'info e' MULTIDIMENSIONALE, posso suddividere
+il totale per negozi, regioni, nazioni, vedere quali
+hanno venduto piu' e quali meno, posso
+disaggregare il dato totale effettuando molteplici segmentazioni,
+posso prendere il dato totale e disaggregarlo
+sui singoli negozi, i singoli prodotti, i singoli paesi.
 
-Posso avere il totale per anno, mese, semestre, ci sono diverse gerarchie per disaggregare i dati.
+Posso avere il totale per anno, mese, semestre,
+ci sono diverse gerarchie per disaggregare i dati.
 
 Formalizziamo l'idea di indicatore,
 un indicatore e' relativo a fatti aziendali,
@@ -1535,7 +1550,7 @@ possiamo avere dati legati alla difettosita', che richiedono
 operazioni di cleaning,
 
 i data warehouse sono dati di basi con dati storici,
-l'obiettivo nei siosarebbe di mantenere i dati correnti,
+l'obiettivo nei sio sarebbe di mantenere i dati correnti,
 la giacenza attuale del magazzino, nei sistemi inform operazionali
 ci si interessa al dato recente,
 nel dw house ci si interessa alla variazione dei dati negli anni,
@@ -2077,3 +2092,90 @@ CRM analytics,
 
 la raccomandazione riguarda molto i canali di contatto,
 i crm analitici
+
+
+--------------
+4 - 12 - 2021
+--------------
+Cosa e' importante sapere della business intelligence:
+definizione di business intelligence,
+insieme di conoscenze che possono essere trasformate in azione,
+i sistemi dir classici supportano, la BI estende
+la definizione, e' utile su tutti i piani della piramide
+di Anthony,
+qualunque processo puo' trarre conoscenza utile dal patrimonio aziendale,
+non si ferma solo a strategico e tattico,
+importante anche sapere che estensione e profondita' sono molto
+piu' alte di quelle dei classici sistemi direzionali,
+anche slide 13 e 14 sono importanti,
+le architetture non hanno niente di piu' di quello gia' detto,
+ricordiamoci l'architettura dei si tradizionali, direzionali,
+non e' da memorizzare.
+Non e' importante il ciclo virtuoso,
+ricordarsi che esistono insieme di tecniche piu' a basso valore che
+estraggono conoscenza dei dati che rappresenta lo stato attuale
+e lo stato passato (olap) e tecniche di predizione
+che fanno ipotesi sul futuro (modelli predittivi).
+
+Ricordare che si legnao fortemente alle architetture
+dei sistemi informativi tradizionali, sono le filiere
+della bi dove ci sono liv sorgente, data warehouse, data mart,
+prima variante: avere sopra data mart i cubi e fare interrogazioni
+query su quei cubi e fare operazioni slice, roll..
+a liv 4 si fanno interrogazioni sui cubi,
+una prima filiera che a liv 4 prevede interrogazione e navigazione
+sui cubi, navigazione in su (roll up), navigazione in giu' (drill down),
+
+poi la configurazione alternativa e', sopra di data mart, di fare report,
+report interattivi, ricordarsi le caratteristiche della reportistica avanzata,
+si parte da un template standard,
+l'utente puo' cambiare i filtri,
+il report e' una sintesi delle navigazioni del cubo,
+il report si focalizza su alcune particolari navigazioni del cubo,
+consente all'utente di filtrare le vendite, per es solo in spagna,
+e permette di disaggregare i dati di vendita per regione,
+oppure osservare le vendite su prodotti particolari,
+e' interattivo e segue in template particolare,
+puo' nascere come un report di fidelizzazione di clienti
+su una catena di supermercati.
+
+Ulteriore alternativa a liv 4, cruscotti grafici, piu' statici,
+con meno manopole di navigazione, sono  report che contengono
+una serie di indicatori che fotografano un settore
+e che l'utente apre e guarda cosi' come sono,
+servono per dare una fotografia, tastare il polso della situazione.
+
+Spesso i cruscotti contengono kpis che sono resi graficamente.
+
+La quarta possibilita' e' quella sopra delle fette di datamart,
+slice di datamart,
+cioe' utilizzare tecniche di mining che estraggono conoscenza
+non nota a priori,
+a differenza della reportistica il mining e' sofisticato,
+estrae della conoscenza non nota a priori,
+la reportistica presenta un report gia' strutturato,
+i singoli valori cambiano ma il modo di interpretare i dati
+e' precostituito,
+le tecniche di mining estraggono conoscenza completamente nuova,
+non nota a priori,
+spesso si vuole estrarre conoscenza nuova dai dati,
+per fare classificazioni, scoprire possibili segmentazioni
+dei dati, possibili associazioni non note.
+Le tecniche di data mining principali sono
+  tecniche di esplorazione/discovery automatica
+   con tecniche di clustering
+   che creano gruppi non noti a priori,
+   utili per segmentare il mercato
+
+  tecniche di previsione: reti neurali,
+   tecniche di regressione
+
+  tecniche di classificazione di dati non noti,
+   tecniche di discovery
+
+
+Alcune funzioni rientrano nel crm analitico:
+es gestire le campagne di vendita (si puo' fare col mining),
+il mining suggerisce a quali clienti inviare determinate promozioni,
+si possono incorporare tecniche di mining all'interno delle funzionalita'
+dei crm analitici

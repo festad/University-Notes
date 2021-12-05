@@ -109,8 +109,8 @@ Rapporto tra output del magazzino,
 volume di prodotti uscenti dal magazzino / volume di giacenza -> rotazione
                                                                  delle scorte
 produttivita' del tempo, misura della produttivita' della risorsa tempo,
-es num ordini serviti per ora lavorata, specializzazione dell'indice sulle risorse
-umane,
+es num ordini serviti per ora lavorata,
+specializzazione dell'indice sulle risorse umane,
 eg num risonanze magnetiche fatte al giorno o all'ora,
 per tutte le misure di produttivita' in euro o in numero,
 se metto l'output a valore, numero di ordini o valore degli ordini,
@@ -161,7 +161,7 @@ es proceso di un'auto,
 come si misura dopo averlo venduto?
 con due indicatori standard:
  - medium time between failures,
- - medium time between to repair,
+ - medium time to repair,
 
 percentuale di clienti soddisfatti,
 da tre stelle in su..
@@ -868,5 +868,333 @@ tasso evasione richieste:
   metrica:
     #richieste_installazione_non_evase/#richieste_installazione * 100
     sulla totalita' delle installazioni, quante non ne ho evase?
-    
-    
+
+Abbiamo individuato le categorie dei kpi
+e le metriche,
+es costo monetario calcolabile in piu' modi,
+
+tabella delle dimensioni
+nome dimensione | | valore minimo
+
+ci sono le dimensioni standard come tempo, responsabilita',
+cliente, il processo c'e' nel caso in cui e' diviso in fasi,
+prodotto, dimensione ad hoc..
+una dimensione che c'e' sempre il tempo,
+devo individuare elemento minimo e gerarchie per ogni dimensione.
+
+Come elemento minimo inseriamo il giorno
+(teledigitale era vendita di ricevitori),
+l'installazione ha come elemento minimo il giorno,
+le gerarchie del tempo, se non ne emergono altre, sono quelle del calendario
+standard, con ripartizione in mesi, trimestri, anno.
+
+Prodotto (P), l'elemento minimo e' il ricevitore,
+il ricevitore ha un tipo base, standard o plus, come gerarchie ha:
+catalogo plus, standard, base,
+
+Responsabilita' (R): l'elemento minimo e' il singolo dipendente,
+come gerarchia si specifica l'organigramma aziendale, la gerarchia
+indotta da quella presente in una realta' lavorativa: i centri
+di intervento con a capo i tecnici e il responsabile (capo
+dei tecnici)
+
+Cliente (C): e' lui l'elemento minimo, come gerarchia posso suddividere
+in clienti privati e pubblici,
+c'e' l'interesse per la distribuzione geografica dei clienti,
+si potrebbero fare distinzioni anche sulle possibilita' economiche (in SAP),
+quindi come gerarchie si indicano: privato oppure locale/pubblico,
+la seconda e' in base alla distribuzione geografica.
+
+Quando considerero' indicatori segmentabili su questa dimensione potro'
+vedere il contributo del cliente anche in base alla zona geografica.
+
+L'ultimo step, una volta individuate le dimensioni,
+si deve verificare la applicabilita' ai kpi individuati,
+ovvero fare la segmentazione, ha senso calcolare un indicatore
+con una determinata dimensione?
+
+costo tecnici / numero installazioni -> segmentabile rispetto al prodotto?
+installazione singola e' riconducibile all'installazione singola? Si,
+
+costo monetario -> segmentabile rispetto al cliente? si se lo guardiamo dal pdv
+della ripartizione geografica piu' che per singolo cliente,
+
+il singolo tecnico non determina il singolo ricevitore
+il singolo tecnico non e' attribuibile al singolo cliente
+
+
+==============================
+
+FUNNY_TRAVEL
+
+dimensioni
+
+
+tempo | giorno  | calendario e stagionalita' (annuale/settimanale)
+
+responsabilita' | singolo addetto | organigramma aziendale
+
+cliente | singolo cliente | privato/azienda e distribuzione geografica
+
+# processo e' semplice, non serve indicarlo
+
+prodotto=veicolo | singolo veicolo, identificato | classificazione in base a
+servito          | da tipologia e targa          | numero assi
+                 |                               | e altezza (in fasce)
+
+# valorizzo la dimensione qualora prevedo di spacchettare in almeno
+# due categorie
+
+canale di | tipo di pagamento     | non ci sono, o e' telepass o manuale
+vendita   | (telepass vs manuale) | 
+
+casello | singolo casello | distribuzione geografica dei caselli
+                            tratta autostradale a cui appartengono
+
+segmentazione:
+
+
+------------
+
+GASTRONAUTA
+
+Vende per corrispondenza,
+call center o web (due canali),
+confezionamento e evasione di ordini,
+magazzino prodotti + 4 reparti spedizione,
++ area di spedizione,
+il flusso delle merci va dal magazzino
+a ciascun reparto di spedizione e da ciascun
+reparto di spedizione all'area di spedizione.
+
+Il catalogo e' in forma cartacea,
+un ordine immesso riceve un addetto assegnato,
+una composizione dell'ordine, si registra
+il momento in cui l'ordine' e' stato fatto,
+quindi parte cronometro fino a quando viene spedito,
+un addetto al reparto spedizione e' assegnato a un solo reparto,
+ci sono 4 teams, uno per ogni reparto,
+gli addetti fanno riferimento a un responsabile,
+un ordine viene preso in carico da un addetto
+a un reparto di spedizione che accede al si,
+legge l'ordine, prelava i prodotti dal magazzino,
+aggiorna lo stato del magazzino nel si (aggiorna
+le scorte), imballa, etichetta e deposita nell'area
+di spedizione.
+Di ogni ordine si registra l'addetto e il momento
+in cui e' stato fatto l'ordine e quanti minuti ci
+ha messo l'addetto a fare l'ordine.
+Giornalmente i corrieri prelavano i pacchi,
+una volta al giorno, dall'area di spedizione,
+e registrano nel si l'ora e il giorno di avvenuta consegna,
+i corrieri sono personale esterno alla ditta che riceve
+un compenso fisso per ogni consegna, esistono ma non
+se ne conosce l'orario di presenza, lavorano a gettone,
+i clienti assegnano un voto da 1 a 5 dopo aver ricevuto la merce.
+Il cliente a posteriori puo' dare un feedback,
+talvolta il pacco consegnato ha un contenuto
+diverso da quello assegnato a causa di un errore,
+in tal caso oltre agli ordini ci sono le integrazioni.
+Integrazioni ordine e voti sono input dell'utente,
+talvolta si verificano ritardi della consegna,
+se il tempo complessivo e' oltre 72 ore
+si verifica un ritardo.
+I clienti possono essere occasionali, affezzionati ospeciali.
+Il costo degli addetti e' noto.
+I critical success factors sono... ritardi, saturazione personale
+puntualita' e contenumento dei ritardi (registriamo il tempo dell'ordine
+immesso e quello consegnato).
+
+In ingresso: ordini, richieste ordine,
+ordini evasi (in realta' tutti quelli richiesti vengono evasi)
+
+IO
+ - ordini (#,$)
+ - prodotti (#), no $ perche' l'importo
+ dell'ordine e' sempre lo stesso,
+ il volume di denaro generato dagli ordini o
+ dai prodotti coincide, $ in prodotti sarebbe ridondante,
+ - voti (#),
+ - misurare le integrazioni in controvalore o percentuale
+ sono un indicatore di qualita', ma le integrazioni
+ sono pursempre un input
+ - integrazioni a ordini (#)
+Risorse
+ - addetti (#,$,h)
+ - corrieri ($)
+ - scorte (#,$)
+ - spazi magazzino (capacita' o #)
+
+Costi ed efficienza
+ - costo unitario per un ordine
+   euro
+   (costo addetti + costo corrieri) / # ordini
+   
+ - costo monetario al cliente per ordine
+   euro
+   ordini (euro) / # ordini
+
+ - produttivita' degli addetti (ordini/addetti)
+   #
+   #ordini / addetti
+
+- produttiivta' degli addetti nel tempo (ordini/ore di presenza)
+   #
+   #ordini / addetti (ore)
+
+- Saturazione addetti al confezionamento
+   %
+   tempo per confezionare e evadere ordini (ore) / addetti (ore) * 100
+ - Rotazione scorte (scorte in uscita / giacenza media nella giornata)
+   %
+   #prodotti / #scorte * 100
+   
+ - Saturazione degli spazi nel magazzino
+   %
+   #scorte / spazi magazzino (capacita') * 100
+
+Qualita'
+ - Integrazioni (%,controvalore, tempo impiegato)
+
+   #integrazioni/#ordini * 100
+   
+ - Voti (media)
+
+   sum{voti ricevuti}/#voti ricevuti
+
+Tempi e servizio
+ - Ritardi (%)
+
+   # ordini evasi in ritardo / #ordini * 100
+
+- Tenpo di evasione ordine (ore)
+  somma tempi evasione ordini / # ordini
+
+- Ritardi (tempo)
+  somma dei tempi di evasione ordini in ritardo oltre 72 ore / # ordini in ritardo
+
+Dimensioni
+
+tempo | singola ora \ calendario oppure stagionalita' annuale
+
+responsabilita' | singolo operatore | organigramma
+
+cliente | singolo cliente | in base al fatturato (speciale,affezionato,occasionale)
+                            oppure classificazione geografica
+
+prodotto | singolo prodotto (codice prodotto) | catalogo
+
+canali di vendita | singolo canale | nessuna gerarchia
+
+nella responsabilita' abbiamo gli addetti interni,
+quindi ordine e euro all'addetto sono riconducibili
+alla responsabilita' ma il costo pagato al corriere non e'
+riconducibile al singolo responsabile
+
+
+la produttivita' si misura di solito sul tempo di presenza e non
+sul tempo di attivita', cosi' il tempo di presenza non e'
+segmentabile sul singolo cliente e neanche sul prodotto ma
+solo sul responsabile.
+
+===================
+AUTOSPRINT
+===================
+
+        sito
+   +->  societa' -+
+   |              |
+   |              |
+ cliente     deposito
+ (concess.   generale
+ officina)
+
+                deposito
+                speciale
+
+                       fornitore
+		       specializzato
+
+il numero di telaio identificaanche
+il singolo lotto
+
+Un ordine non e' legato a un singolo addetto
+ma a un gruppo, a differenza di Gastronauta.
+
+Ci sono i trasportatori che fanno parte di
+un gruppo,
+un ordine viene assegnato a un gruppo piu' che
+a un singolo addetto.
+Giornalmente si crea un programa di trasporto,
+relativo a ordini e destinatari,
+il programma viene inviato e salvato nel deposito
+generale,
+viene inviato agli addetti del trasposto,
+l'ordine va a un gruppo, gli addetti confezionano
+la merce e la inviano a un gruppo che si occupa
+del trasporto.
+
+Il trasportatore effettua le consegne relative
+all'ordine di cui fa parte.
+Il tempo in cui il trasportatore e' impegnato e' registrato.
+Ci sono consegne non evase in giornata ma nei giorni successivi.
+
+Sulla base del programma di trasporto...
+registrato l'identificativo del trasporto
+relativo a un ordine,
+quindi un ordine determina un trasportatore e un gruppo,
+se abbiamo i dati sulle scorte possiamo calcolare la rotazione,
+viene emessa la bolla di trasporto,
+per correggere la consegna errata viene usato un modulo
+sul sitodi autosprint,
+anche qui ci sono le integrazioni a ordini come in gastronauta,
+chiamate correzioni degli ordini.
+
+Errori presenti nel catalogo e malfunzionamenti del sito,
+ogni segnalazione e' associata al cliente che l'ha effettuata,
+tempi di presenza sono noti,
+
+individuare i kpi competitivi derivabili dalle info effettivamente
+presenti,
+
+CSF: precisione dell'evasione ordine,
+sono interessato a calcolare quanti errori avvengono,
+la percentuale di ordini con errori,
+efficienza del trasporto (puo' riguardare la saturazione
+degli operatori),
+durata del viaggio (tempo in cui il trasportatore e' impegnato),
+eventuali ritardi introducibili nella consegna,
+efficienza del processo, precisione (percentuale ordini errati)
+e efficienza del trasporto.
+Si vogliono analizzare i flussi di ricambio ordinati (sono un input
+al processo, un indicatore di volumi, il fatturato),
+voglio uno o piu' indicatori che misurino quanti ricambi
+sono stati ordinati,
+quando definiamo le dimensioni dobbiamo averne una riconducibile
+al ricambio e una al modello di veicolo al quale il ricambio appartiene.
+C'e' una relazione molti a molti tra ricambi e veicoli.
+
+IO
+
+ ordini in numero e euro,
+ ogni ordine e' fatto di piu' ricambi,
+ possiamo parlare di volumi di prodotti e ricambi
+ - ordine (#,$)
+ - ricambio (#,$)
+ - conferme ordine (#)
+ - conferme cliente (#)
+ - annullamenti cliente (#)
+ - correzioni di ordini (#)
+
+Risorse
+ = addetti (#,ore,$)
+ - trasportatori (#,ore,$)
+ - scorte (#,$)
+ - fornitori specializzati (#)
+
+Costo ed efficienza
+ - costo unitario al gestore per ordine
+ - costo monetario al cliente per ordine
+
+
+
