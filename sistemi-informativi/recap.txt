@@ -653,5 +653,77 @@ E' un'architettura suddivisa in 4 livelli.
     inoltre ci sono dati esterni, relativi ai concorrenti,
     sempre utili per report con confronti, importanti
     per prendere decisioni strategiche.
-    
-  
+
+-> Sul data warehouse possono essere costruiti i data mart,
+   delle porzioni di data warehouse che contengono indicatori
+   e dimensioni relative a un particolare problema,
+   es data mart sui dati di vendita, sui dati di magazzino,
+   sulla concorrenza, sul personale, sul tasso di carico del
+   personale, sono specializzati su un argomento.
+
+-> Ultimo livello: le applicazioni sw utilizzate dai dirigenti
+   per acecdere ai dati dei data mart o dei data warehouse,
+   sono motori di calcolo dss, sono fortemente interattivi
+   e consentono di esplorare dinamicamente i fatti,
+   altre applicazioni sono i motori di presentazione,
+   i motori di reporting, che a differenza dei dss
+   sono meno interattive e basate su visualizzazioni
+   standard,
+   altre applicazioni sono i motori di mining, strumenti
+   informatici che sanno individuare pattern e
+   situazioni ricorrenti che non erano stati notati
+   dall'umano.
+
+Confronto tra basi di dati transazionali e data warehouse:
+le operazioni tipiche svolte sulle basi di dati transazionali
+da parte dei sw che gestiscono i sio sono operazioni
+oltp, online transaction processing, in tempo reale,
+processano transazioni (come emettere una singola fattura),
+sono operazioni tipicamente svolte dagli erp, tante operazioni
+che riguardano pochi dati.
+Il tipo di elaborazione che si fa sui dw e' l'OLAP,
+online analytical processing, sempre in tempo reale
+ma non piu' di transazioni, bensi' di dati analitici (i
+nostri indicatori),
+elaborazioni che mirano al supporto dell'analisi dei fenomeni,
+operazioni tipiche dei sistemi di supporto alle decisioni,
+le op oltp sono tante e semplici (dati sul singolo scontrino,
+pochi dati e op leggere ma tante),
+le op olap sono piu' rare, complesse che possono operare
+su milioni di dati, es milioni di scontrini per estrarre
+il fatturato complessivo, interrogazioni complesse,
+rare che operano su dati pesanti, dati aggregati
+da fonti diverse.
+
+Tecnologie per sistemi informativi direzionali.
+
+recap di quello gia' visto
+struttura a 4 livelli
+- basi di dati transazionali
+  degli erp o crm che supportano
+  i processi primari,
+  i dati devono essere trasformati
+  in indicatori con associate
+  dimensioni, si fa attraverso
+- l'ETL, pulizia e aggregazione di dati,
+  caricamento = scrittura dei dati
+  aggregati nel dw,
+
+DW: definizione
+e' una base di dati usata per il supporto alle decisioni
+direzionali, integrata (ovvero raccoglie dati da diverse
+fonti, non e' legata a un particolare dipartimento
+ma e' enterprise wide, lo stesso dato potrebbe
+provenire da piu' fonti e potrebbe quindi
+essere eterogeneo, con unita' di misura non
+omogenee, es valuta euro e yen, vanno
+riconciliate/armonizzate,
+l'eterogeneita' puo' riguardare il nome,
+la struttura, la codifica), contiene dati storici
+con ampio orizzonte temporale, con dati usualmente
+aggregati (indicatori, riguardano somme, medie, minimi,
+massimi, non il dato singolo), non viene aggiornata
+in tempo reale (fuori linea) ma viene sincronizzata
+a cadenze temporali, per es a mezzanotte quando
+il sio e' al minimo carico di lavoro, e' separata dalle
+basi di dati transazionali.
