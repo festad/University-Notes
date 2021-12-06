@@ -579,7 +579,6 @@ e prendere contromisure,
 - altra funzione del sid e' supportare a posteriori
 la valutazione dei risultati effettivi della strategia scelta,
 chiamata funzione di reporting.
-
 I dss mostrano l'informazione in modo fortemente interattivo.
 La funzione di reporting riporta l'informazione in modo standardizzato
 servendosi di un template.
@@ -595,3 +594,64 @@ dimensioni di analisi effettuando molteplici segmentazioni.
 Segmentare significa verticalizzare su singoli prodotti o regioni
 o periodi, suddividere in diversi livelli gerarchici (anno, semestre, mese),
 
+Il fatturato, il costo del personale, sono esempi di 'fatto'.
+Un indicatore e' descritto da N chiavi,
+ovvero e' individuato da N coordinate (coordinata prodotto,
+coordinata punto vendita,coordinata tempo).
+
+Tecnologia informatica alla base dei sistemi direzionali:
+data warehousing
+
+E' una base di dati che contiene indicatori con sistemi di
+coordinate dimensionali, e' una collezione di dati
+integrata (ovvero i dati vengono da piu' fonti, non solamente
+l'erp ma anche crm, sistemi di procurement, dati sulla concorrenza
+nel mercato), persistente (ovvero non volatile), variabile nel
+tempo (ovvero subisce aggiornamenti), orientata ad un certo
+argomento (per esempio esplora il fenomeno vendita, o gestione
+del personale, del contact center), colleziona indicatori
+con determinate dimensioni, esistono anche i data warehouse specializzati
+(data mart), e' enterprise wide, ovvero copre l'intera catena del valore,
+non solo inside o sell side, e' una collezione mantenuta per supportare
+decisioni e analisi di dati (valutazione a posteriori dei risultati).
+
+!! Architettura dei sistemi informativi direzionali:
+E' un'architettura suddivisa in 4 livelli.
+
+-> Livello piu' basso:
+   livello delle basi di dati transazionali,
+   le basi di dati dei sistemi informativi operativi,
+   (per es base di dati dell'erp o del crm o del sistema
+   di procurement), i dati transazionali riguardano
+   i singoli ordini, le singole transazioni, i singoli
+   pagamenti di fatture e ricevimenti di merci,
+   nel caso migliore la base di dati e' unica (sap),
+   le basi di dati vengono lette per portare in alto
+   informazioni che permettono di calcolare indicatori,
+   che sintetizzano i risultati conseguiti,
+   portare i dati verso il data warehouse che contiene
+   i dati aggregati. Alimentare i data warehouse si fa
+   attraverso programmi software che implementano l'ETL,
+   ovvero il processo Estrazione, Trasformazione (al fine
+   di uniformare) e Loading:
+   -> extraction: leggo i dati dalla base di dati
+   -> transformation: li uniformo, opero sui dati,
+      es decido se mantenere uno o l'altro formato
+      usati in diverse fonti
+   -> caricamento: puo' includere anche l'aggregamento,
+      ovvero il calcolo di totali, e li copio nel
+      data warehouse.
+
+    Gli aggiornamenti non sono in tempo reale
+    ma avvengono a scadenze temporali prefissate.
+    Un'ulteriore fonte a livello di ETL per il data
+    warehouse sono i dati non presenti nelle basi
+    di dati transazionali, sono dati relativi
+    a obiettivi direzionali, dati di budget (di previsione),
+    dati di previsione, tutti interessanti perche' il data
+    warehouse permette di calcolare report,
+    inoltre ci sono dati esterni, relativi ai concorrenti,
+    sempre utili per report con confronti, importanti
+    per prendere decisioni strategiche.
+    
+  
