@@ -2117,16 +2117,17 @@ estraggono conoscenza dei dati che rappresenta lo stato attuale
 e lo stato passato (olap) e tecniche di predizione
 che fanno ipotesi sul futuro (modelli predittivi).
 
-Ricordare che si legnao fortemente alle architetture
+Ricordare che si leganao fortemente alle architetture
 dei sistemi informativi tradizionali, sono le filiere
 della bi dove ci sono liv sorgente, data warehouse, data mart,
-prima variante: avere sopra data mart i cubi e fare interrogazioni
+
+-> prima variante: avere sopra data mart i cubi e fare interrogazioni
 query su quei cubi e fare operazioni slice, roll..
 a liv 4 si fanno interrogazioni sui cubi,
 una prima filiera che a liv 4 prevede interrogazione e navigazione
 sui cubi, navigazione in su (roll up), navigazione in giu' (drill down),
 
-poi la configurazione alternativa e', sopra di data mart, di fare report,
+-> poi la configurazione alternativa e', sopra di data mart, di fare report,
 report interattivi, ricordarsi le caratteristiche della reportistica avanzata,
 si parte da un template standard,
 l'utente puo' cambiare i filtri,
@@ -2135,11 +2136,11 @@ il report si focalizza su alcune particolari navigazioni del cubo,
 consente all'utente di filtrare le vendite, per es solo in spagna,
 e permette di disaggregare i dati di vendita per regione,
 oppure osservare le vendite su prodotti particolari,
-e' interattivo e segue in template particolare,
+e' interattivo e segue un template particolare,
 puo' nascere come un report di fidelizzazione di clienti
 su una catena di supermercati.
 
-Ulteriore alternativa a liv 4, cruscotti grafici, piu' statici,
+-> Ulteriore alternativa a liv 4, cruscotti grafici, piu' statici,
 con meno manopole di navigazione, sono  report che contengono
 una serie di indicatori che fotografano un settore
 e che l'utente apre e guarda cosi' come sono,
@@ -2147,7 +2148,7 @@ servono per dare una fotografia, tastare il polso della situazione.
 
 Spesso i cruscotti contengono kpis che sono resi graficamente.
 
-La quarta possibilita' e' quella sopra delle fette di datamart,
+-> La quarta possibilita' e' quella sopra delle fette di datamart,
 slice di datamart,
 cioe' utilizzare tecniche di mining che estraggono conoscenza
 non nota a priori,
@@ -2162,16 +2163,16 @@ spesso si vuole estrarre conoscenza nuova dai dati,
 per fare classificazioni, scoprire possibili segmentazioni
 dei dati, possibili associazioni non note.
 Le tecniche di data mining principali sono
-  tecniche di esplorazione/discovery automatica
-   con tecniche di clustering
-   che creano gruppi non noti a priori,
-   utili per segmentare il mercato
+  - tecniche di esplorazione/discovery automatica
+  - con tecniche di clustering
+    che creano gruppi non noti a priori,
+    utili per segmentare il mercato
 
-  tecniche di previsione: reti neurali,
-   tecniche di regressione
+  - tecniche di previsione: reti neurali,
+  - tecniche di regressione
 
-  tecniche di classificazione di dati non noti,
-   tecniche di discovery
+  - tecniche di classificazione di dati non noti,
+  -  tecniche di discovery
 
 
 Alcune funzioni rientrano nel crm analitico:
