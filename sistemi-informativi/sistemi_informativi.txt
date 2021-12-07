@@ -1395,6 +1395,8 @@ analisi degli score,
 
 METODO DEI KPI,
 
+1:19
+
 approccio che si focalizza sul singolo processo
 
 Indicatori che siano rilevanti per una strategia,
@@ -1449,6 +1451,7 @@ dopo quanto ci consegnano l'oggetto rispetto a quanto ci avevano promesso,
 ----------------
 18 - 11 - 2021
 ----------------
+
 ricordiamo l'architettura dei si direzionali,
 col data warehouse, passaggi alto->basso,
 sotto abbiamo le basi di dati transazionali,
