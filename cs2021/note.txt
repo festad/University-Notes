@@ -233,3 +233,14 @@ composita lineare
 ----------------------
 Formule di quadratura
 ----------------------
+
+---------
+EDO
+---------
+
+Crank Nicolson e' perfetto per soluzioni periodiche,
+Eulero porterebbe a smorzamenti
+
+I metodi adattivi a passo variabile riadattano H
+
+Pensiamo a Eulero esplicito con passo variabile

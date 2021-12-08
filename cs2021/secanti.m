@@ -10,7 +10,7 @@ function [z,res,k,ERR] = secanti(f,x0,x1,tol,kmax)
     k = k+1;
     x0 = x1;
     x1 = x2;
-  endwhile
+  end
   
   z = x2;
   res = f(z);
