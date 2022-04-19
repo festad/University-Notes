@@ -113,4 +113,10 @@ sexdw <- nie %>% add_row(zg)
 full_dw <- dw %>% left_join(sexdw) %>% 
   gather(`Male`, `Female`, key='Sex', value='Suicides by sex' )
 
+lud <- read_csv("ludnosc.csv")
+
+full_dw <- full_dw %>% left_join(lud)
+
+full_dw %>% mutate(Percentage = Total / Population) -> full_dw
+
 full_dw %>% write_csv("poland_suicides_full_database.csv")
