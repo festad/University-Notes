@@ -1,0 +1,2185 @@
+---------------
+28 - 10 - 2021
+---------------
+
+'Prima di tutto'...
+riduciamo il tema d'esame,
+
+ERP
+unicita' dei dati, non replicati, unica rappresentazione
+lungo tutta la catena del valore dei processi supportati,
+da gestione magazzino a contabilita', la base di dati
+e' unica e i dati sono univoci, senza copie ridondanti.
+
+modularita' (che implica l'estensibilita')
+
+prescrittivita' (con approccio bpr),
+fare bpr con un erp significa fare
+la gap analysis, adattare il processo a quello
+best practice nell'erp o vice versa e' fare bpr,
+es: paradigma erp, sistemi informativi, catena del valore,
+bpr, bpr con erp,
+
+livelli: 
+- suite, come gruppo di app software che supportano
+tutta o parte della catena del valore
+- modulo
+- funzione, es emissione di una bolla o stampa di un report
+
+imoprtante la relazione tra catena del valore di porter
+per manifatturiero e moduli erp,
+classifica i moduli erp e li caratterizza rispetto alla catena
+del valore, i moduli verticali cambiano da settore a settore,
+ciascun settore ha un insieme particolare di moduli erp verticali,
+i singoli moduli a parita' di nome sono implementati diversamente
+a seconda del settore (farmac o auto),
+i moduli verticali richiedono costi elevati di analisi e sono vendibili
+solo al particolare settore,
+
+avere erp su cloud o open source permette di far acquistare erp
+anche alle aziende piu' piccole, ormai gli erp sono uno standard
+nelle organizzazioni, non averlo penalizza efficienza e efficacia
+dell'organizzazione e il modo in cui esegue i processi.
+Usare erp open source sono personalizzabili e permettono anche a aziende
+piccole di lavorare in modo erp.
+L'erp e' il tassello di base su cui si costruisce la diigitalizzazione.
+
+Slide della trasformazione dell'impresa,
+a partire dalle caratteristiche paradigmatiche (unic, modul, prescritt)
+gli erp consentono di trasformare i processi aziendali gestionali,
+processi ai vari livelli, da quelli operativi a quelli direzionali
+e di organizzazione tra partner, questo per ottenere vantaggi in termini
+di efficienza (minori costi) o efficacia (soddisfare meglio le aspettative del cliente),
+si possono acquisire anche altre tecnologie che migliorano ulteriormente efficienza e efficacia.
+Trasformare dei processi significa cambiare dei loro aspetti tra cui il flusso
+delle attivita' (gli erp implementano best practice per i processi, implementano
+schemi di processo), i flussi di attivita' a valle ci si aspetta che vengano
+eseguiti con meno passi e in meno tempo,
+dal pdv dell'organizzazione, visto che gli erp rendono automatiche attivita'
+elementari, il personale svolge mansioni di livello piu' elevato (le cose ripetitive
+le fa il sw, il personale fa' cose piu' ricche),
+visto che l'erp implementa schemi di processo, il personale puo' essere
+spostato piu' facilmente da un processo a un altro perche' tanto c'e'
+l'erp che lo guida, il processo e' piu' conosciuto dal software che
+dalla testa del personale.
+Gli erp salvano informazioni in modo coerente senza ridondanze, quindi
+si possono costruire sistemi di controllo, c'e' maggiore informazione
+di maggiore qualita' e e' piu' facile valutare le prestazioni da parte
+dei processi gestionali, e' piu' facile valutare quanto costa la produzione
+di un certo prodotto rispetto a quanto lo fosse in uno schema legacy a isole.
+
+Schema di Chang e Shaw, sempre sulla trasformazione dei processi,
+sintetizza i benefici in termini di efficienza e efficacia,
+efficienza significa minori tempi e minori costi,
+e si ottengono lungo tutta la catena del valore (staff,logistica, scorte...),
+altro beneficio e' l'efficacia, soddisfare meglio le aspettative del cliente,
+maggiore tasso di evasione dell'ordine, migliorata capacita' di rispondere
+al cliente in termini di flessibilita' (modifiche all'ultimo momento, 
+modifica preferenza il giorno prima, diventano gestibili).
+Standardizzazione delle piattaforme erp,
+nelle legacy a isole i moduli sono implementati con tecnologie diverse,
+nell'erp i moduli sono omogenei, gli aggiornamneti riguardano tutti i moduli,
+un'architettura standard migliora la gestione del sistema informativo,
+il valore dell'info attraverso la condivisione tra tutti i moduli migliora
+la qualita' dell'informazione.
+
+L'architettura classica erp e' su tre livelli:
+ - database server: una singola macchina su cui gira la base
+di dati, viene fatto il back up continuamente
+ - application server, vengono fatte eseguire le app che elaborano i dati
+nel database server
+ - presentation server (componenti installate nei terminali degli utenti),
+non e' una macchina fisica ma uno strato software che risiede sui pc dei client
+su cui girano i moduli dell'erp.
+
+----------------
+SISTEMI CRM
+----------------
+
+una nuova tipologia di sistemi informativi operativi,
+siamo ancora nella parte bassa della piramide di anthony,
+se gli erp sono normalmente nella parte inside della catena
+del valore, poi con i moduli estesi nella sell side,
+i crm nascono come separati dagli erp, (adesso in sap c'e' il modulo crm),
+e ricoprono la parte sell side del valore,
+
+ERP -> inside
+CRM -> sell side
+
+consentono di supportare tutta l'interazione con la clientela,
+supportare la relazione significa anche personalizzare il rapporto
+con i clienti (customization per il singolo utente),
+lo scopo e' di tratttenere gli utenti facendoli contenti e aumentando il valore
+per l'impresa.
+
+Con l'adozione dei crm cambia la strategia commerciale dell'azienda,
+a valle dell'adozione le aziende spostano il focus sempre piu' sul cliente
+e sulla customizzazione, essere reattivi alle richieste del cliente,
+il cliente viene posto al centro della strategia commerciale,
+
+I crm nascono nel 93, un po' dopo gli erp,
+le aziende di telefonia sono tra le prime che hanno adottato sistemi crm,
+le esigenze del cliente sono confezionarsi il profilo di consumo,
+personalizzarsi il contratto, tramite i sistemi crm e' possibile
+che il cliente contatti quando vuole l'azienda per modificare la propria
+offerta o acquistare nuove offerte o segnalare guasti.
+
+Tramite i crm le aziende gestiscono servizi personalizzati con milioni di utenti.
+
+Sono un elemento base.
+
+Portafoglio applicativo: insieme di sistemi informativi che l'organizzazione possiede,
+il crm e' parte integrante del portafoglio applicativo.
+
+Gli erp core (i tre giallo azzurro giallo) informatizzano le attivita'
+interne all'impresa, la parte inside della catena del valore, i crm l'ordine verso fornitori,
+gli scm invece la parte buy side della catena, i crm informatizzano il ciclo di relazione col cliente,
+da primo contatto a post vendita),
+i crm sono il front end tra cliente e azienda, supportano il presentarsi al cliente,
+gli erp sono il backend, quello che il cliente non vede e con cui non interagisce ma che
+servono per costruire il prodotto.
+Gli scm sono un secondo livello di back end,
+back end:
+ - primo livello: processi supportati da erp
+ - secondo livello: relazioni con i fornitori, supply chain management
+
+i crm hanno subito evoluzioni, una suite crm completa e' stata per la prima volta
+identificata negli anni 90, ma gia prima c'erano sistemi informativi che davano
+un contributo alla relazione col cliente, 
+es negli anni 70 i sistemi di gestione degli ordini, che venivano fatti dal cliente
+e disaggregati, a partire dalla richiesta del cliente l'ordine viene suddiviso
+in diversi ordini per la produzione, i sistemi di gestione ordine tengono
+anche traccia dello stato di avanzamento e comunicano al cliente ritardi o anticipi.
+Negli 80' c'e' l'esplosione del canale web,
+
+48 min --distrazione---
+
+si possono raccogliere piu' informazioni sul cliente attraverso le pagine web,
+business intelligence, acquisizione di info utili a personalizzare il modo in cui
+devo interagire col cliente in base a come il cliente interagisce con la pagina web.
+
+Caratteristiche del CRM:
+
+- multicanalita': il cliente interagisce con l'azienda
+attraverso diversi canali possibili che il cliente decide,
+es numero verde, app,..
+il contatto rispecchia una strategia di business mirata
+a servire il cliente che puo' stare dovunque,
+puo' consentire al cliente di contattare l'organizzazione,
+piu' canali messi a disposizione del cliente
+
+- completezza e unicita' dei dati sui clienti,
+analoga alla completezza e unicita' dei dati dell'erp,
+i crm usano i dati sui clienti, sul conoscere nome,
+come contattarlo, eta', sesso, dati su abbonamenti e prodotti che ha acquisito,
+e i dati sui servizi aggiuntivi che posso vendere,
+ogni canale dispone di tutte le informazioni di cui l'azienda
+dispone sui clienti e i servizi che la stessa puo' offrire
+
+- catene di servizio: il crm non e' un sistema
+isolato ma implementa catene di servizio,
+un ordine viene acquisito col crm ma poi trasmesso
+ai processi inside che elaborano la parte backend
+che gestisce la richiesta e la soddisfa ed e' in grado
+di portare il risultato dell'elaborazione verso il cliente,
+la richiesta viene passata al backend,
+cliente -> crm -> processi inside -> cliente,
+e ci potrebbe essere anche la catena che comprende il supporto,
+un processo ammministrativo che porta a contabilizzare un servizio aggiuntivo,
+
+paradigma crm con i quattro canali tipici,
+dalla parte crm la richiesta viene passata alla parte backend che
+esegue la richiesta, distribuisce il risultato e si occupa
+dei processi amministrativi quali la contabilizzazione,
+il backend man mano evolve l'esecuzione dell'ordine manda
+dei dati al front end sullo stato di avanzamento,
+ - unicita' del dato
+sui prodotti che l'azienda mette in catalogo,
+simile all'erp,
+i dati sono mantenuti in modo univoco,
+le bolle rappressentano le varie unita' organizzative
+che processano le richieste degli utenti,
+un'unica interfaccia per far comunicare le unita'
+con la base di dati e l'aggiornamento e' immediatamente
+visibile a tutti gli altri processi coinvolti a soddisfare le richieste
+dell'utente.
+
+produzione e uffici commerciali vedono subito una modifica fatta da un'altra unita' organizzativa.
+
+==> Canale presenza / fisico
+a che organizzazione ci riferiamo?
+a una rete agenti che si muove sul territorio, o negozi o filiali,
+il venditore che si muove sul territorio ha a disposizione sul pc
+una componente del sistema crm che lo supporta nelle attivita'
+di procacciamento clientela, schedulazione nuovi appuntamenti,
+dati di contatto,
+presentazione offerta, customizzazione...
+es del cliente nella farmacia, il cliente richiede 100 pezzi
+e io inserisco l'ordine a terminale che finisce nella base di dati
+e messo in produzione dalla parte back end.
+Sales force automation, SFA, supporta il venditore nel costruire
+un'offerta corretta dal pdv tecnico, con un prezzo appropriato
+e che abbia caratteristiche desiderate dal cliente,
+avviene nei processi b2customer e b2b,
+es del cliente che vuole toccare con mano il prodotto,
+le aziende tessili vendono tessuti a case di moda, il cliente
+vuole sentire la consistenza del prodotto e decide di fare l'ordine,
+il venditore ha il crm sul tablet e puo' inserire l'ordine.
+Sistemi SFA,
+anche i crm contengono un modello di processo seguito dall'utente
+nel momento in cui formalizza l'ordine.
+
+==> Canale voce
+numeri verdi, anni 80-90, diffusione dei numeri verdi
+che moltiplica l'interazione telefonica tra clienti e aziende,
+ampia gamma di sistemi software, specifici crm chiamati contact center,
+offrono servizi di informazione e prenotazione,
+il cliente che chiama o vuole informazioni o vuole effettuare operazioni,
+i call center forniscono servizi di assistenza (help desk),
+vendita di servizi, aiutare il cliente a risolvere il problema
+o risolvere un guasto,
+possono anche operare come punti vendita di prodotti o servizi,
+vendita di abbonamenti adsl..
+
+Con riferimento ai call center, i sistemi software crm che supportano
+i call center cosa devono fare? Devono gestire la base di dati dei clienti,
+dei prodotti e dei servizi, l'operatore usa un terminale attraverso il
+quale il numero che chiama viene gia' abbinato ai dati del cliente
+(vedo da dove chiama, i servizi che ha acquistato..),
+il call center gestisce
+ - dati cliente
+ - dati servizi acquisiti
+ - dati a catalogo ulteriormente vendibili
+
+deve dare supporto al contatto col cliente,
+numero di telefono <-> dati del cliente,
+l'operatore puo' dare supporto specifico al cliente,
+il sw permette anche di inserire richieste dispositive del cliente,
+i sistemi a supporto dei contact center mettono a disposizione guide
+esecutive (scripts) che l'operatore vede a schermo, 
+l'operatore scrive le problematiche in linguaggio naturale
+e il sistema gli risponde con uno script con le offerte alternative,
+le operazioni 
+
+campagne di marketing inbound e outbound
+ - inbound: e' il cliente che ha chiamato e lo script suggerisce
+all'operatore di proporre offerte (natalizie), telemarketing,
+ - outbound: le aziende ti chiamano sul telefono facendo offerte commerciali,
+sono le telefonate snervanti
+
+==> Canale web
+detto portale business2customer
+parte di un portale generale che presenta l'azienda,
+fornisce servizi informativi di configurazione,
+e' un canale che non prevede operatori umani, non richiede costi aggiuntivi
+per lavorare 7/24, caratteristiche diverse se il cliente e' un'azienda o un privato,
+le info associate al canale web sono:
+ - catalogo dei prodotti e servizi, funzione vetrina,
+ - funzione carrello, supporta la possibilita' di raccogliere servizi dal catalogo,
+il canale web puo' dare supporto a transazioni, richieste assistenza, reclami, avanzamento ordini,
+tracciamento transazioni e contatto col cliente,
+profilare l'utente attraverso i suoi dati di comportamento
+serve a caratterizzare il cliente e usarlo per fare offerte attive
+dopo aver capito il cliente, proposta di servizi al di la di quelli richiesti,
+es Amazon e le raccomandazioni, stream analysis, successione di click,
+permettono di profilare l'utente e offrirgli proattivamente dei servizi.
+
+il portale e' tipicamente dotato di caratt di analisi, non solo risponde
+al cliente ma lo analizza tramite profiling,
+offre navigazione assistita sul catalogo (ordini raccomandati),
+altra funzione e' consentire al cliente di consultare lo storico dei consumi
+e pagamenti.
+
+Esempi:
+ - portale di SAP
+
+Altri canali sono quelli che permettono il testo scritto,
+ovvero fax, sms, e-mail, richieste espresse in linguaggio
+naturale non strutturato.
+E' un canale per piccoli volumi perche' richiede operazioni manuali.
+I formati sms e email possono essere analizzati da sistemi
+di text mining, e incanalano una richiesta in sottocategorie,
+una richiesta viene automaticamente mandata a un team perche'
+contiene determinate parole chiave.
+
+
+----------------
+03 - 11 - 2021
+----------------
+
+CRM analitici
+e 
+CRM direzionali
+
+gli analitici servono per costruire profili clienti,
+per analizzare statisticamente i clienti e creare
+profili utili per operazioni di marketing e promozioni mirate,
+il focus e' analizzare dati core (crm operativi) e usare
+i dati per costruire profili cliente,
+con quei profili si possono fare campagne informative e di vendita mirate,
+e per gestire meglio l'interazione col cliente perche' sappiamo
+che appartiene a una determinata classe.
+Possono essere:
+  sistemi di analisi
+
+  sistemi di azione
+
+quelli di analisi partono calcolando indici di prestazione dei clienti
+(calcolare quanti acquisti fa un cliente che abita in un certo posto
+e ha determinate caratteristiche, determinati abbonamenti...
+calcolo di indici = considerare acquisti, preferenze, provider telefonici,
+indici sintetici che possono essere usati per segmentare clienti
+e generare report sui prodotti piu' gettonati e che fatturano di piu',
+segmentazione clienti = usare gli indici sullo storico degli acquisti e il luogo
+dove vivono per definire categorie, es il giovane sotto 20 anni con scarsa
+possibilita' di acquisto e quello tra 20 e 30 con potere di acquisto
+e disposto a rischiare, creare profili di mercato e quindi
+creare offerte che colpiscano determinati segmenti di clienti,
+questo si fa con il supporto per la gestione delle campagne,
+che aiuta a preparare i numeri di telefono, gli indirizzi email
+di utenti che ricadono sotto un certo profilo, gestiscono
+l'automatizzazione dell'invio delle email, gestione della pianificazione
+e esecuzione delle campagne.
+Il sistema analitico (crm analitico) fonda la sua attivita' sulla base di dati
+DATAWAREHOUSE, che contiene informazioni aggregate, conteggi di quanti clienti
+hanno chiuso un abbonamento, fatturato generato da un determinato prodotto,
+il crm analitico lavora su dati sintetici che servono per fare profilazione
+e analisi dei clienti (scopo diverso rispetto ai crm core che supportano
+la singola interazione col cliente mentre i crm analitici si interessano delle
+classi di utenti),
+lo scopo e' di contattare clienti che ricadono in determinati profili
+per fargli proposte di acquisto tramite un contatto propositivo,
+ovvero propongo io al cliente, e non aspetto che venga lui da me,
+spesso tramite i contatti si offrono scontistiche forti.
+Il contatto avviene con posta ordinaria o email, telemarketing con call center,
+tramite sito web e portale dell'azienda (per tutti i clienti) o portale del cliente (dopo che il cliente
+si autentica e entra nell'area privata trova messaggi di invito)
+Attivita' della gestione campagne (crm analitici)
+
+- preparazione
+compagnie telefoniche, propongo un nuovo abbonamento telefonico
+che secondo me puo' essere adatto per ragazzi tra 18 e 21 anni,
+con livello di qualita' basso ma poco costoso,
+i risultati attesi sono del 10%,
+per scoprire il target mi appoggio alla parte di analisi del crm,
+funzionalita' di business intelligence all'interno dell'organizzazione,
+il sistema informatico da informazioni per individuare il target di clientela,
+in fase preparazione puo' essere generico (es solo l'eta'),
+
+
+- progettazione
+definisco meglio i criteri target, es zona geografica, possesso di determinati abbonamenti,
+si definisce in modo preciso il tipo di contratto/offerta, si scelgono i canali e si progetta
+la pianificazione operativa, ovvero quando parto, quanti call center, a che ore chiamo,
+quanto dura la campagna, quanti clienti voglio raggiungere, alloco le risorse e i tempi,
+
+- esecuzione
+si estrae innanzitutto il target, ovvero a fronte del profilo ho bisogno
+dei numeri di telefono, gli elenchi dei clienti da chiamare, estraggo i dati
+dalla base di dati crm che mantiene i dati su clienti, prodotti e servizi,
+poi contatto i clienti operativamente,
+il sistema puo' effettuare automaticamente chiamate che vengono passate al primo operatore libero,
+terminata la fase di esecuzione si passa alla valutazione dei risultati,
+il contatto dei clienti avviene da parte degli operatori,
+i dati statistici sulle operazioni sono inviati al crm analitico che analizza i risultati
+in termini di efficacia e efficienza,
+nel caso di contatti via web posso sapere su cosa hanno cliccato, le manifestazioni di interesse
+vengono inferite da come il cliente ha interagito e cliccato sul browser, click stream analysis,
+
+analisi:
+analisi del comportamento dei clienti, report grafici, tabelle, 
+sys software che producono output grafici e non,
+utili per op di marketing, confronto di prezzi, quali prezzi
+sono visti come favorevoli per gli utenti, business intelligence,
+le compagnie telefoniche (ma anche quelle luce e gas),
+predizione di abbandono (= determinare sulla base del comportamento
+del cliente che il numero con quell'abbonamento ha smesso di funzionare,
+inferire la probabilita' di abbandono, se un cliente usa sempre meno un numero
+e' probabile che sta per abbandonare il servizio, in quel momento si inviano
+offerte per trattenere il cliente),
+analisi delle campagne, reazione del cliente per sapere se e' andata bene,
+analisi del click stream, i percorsi di navigazione all'interno del sito,
+vedere i prodotti maggiormente visitati per inferire l'interesse dei clienti
+o problemi di navigazione sul sito.
+Tutti questi problemi nei sistemi di business intelligence stanno nei datawarehouse,
+con diversi livelli di aggregazione (settimanale, mensile, giornaliero),
+
+I crm sono di piu' tipi, core (operativo), analitico e direzionale,
+esistono anche le suite crm, insiemi di applicazioni software dove ogni strumento permette di svolgere
+attivita' complete, es suite office, work processor, foglio elettronico, power point,
+se usati insieme gli strumenti si possono creare report completi.
+Le suite crm sono costituite da diversi componenti, con crm analitico, direzionale, operativo...
+
+Inizialmente i crm erano a liv operativo, poi si sono estesi a analisi e marketing,
+l'operativo elabora le transazioni, da primo contatto a post vendita,
+quello analitico informatizza la conoscenza sul cliente costruendo i profili utente,
+con le tecnologie della business intelligence (datawarehouse),
+i crm direzionali usano le info che provengono dal crm operativo (singole op di vendita, contatto,
+cambio tariffa, cancellazione) insieme a quelle del crm analitico (dati di successo e insuccesso
+delle campagne) permettono di pianificare azioni future e valutare quelle presenti e passate,
+a fronte di una campagna conclusa si capisce se un'offerta e' fallimentare o un successo,
+
+Il direzionale unisce le due precedenti e supporta le decisioni dell'azienda.
+Il crm operativo fornisce dati all'analitico, e fornisce dati sul progress, se siamo a 50 o 90%,
+e la percentuale di adesioni raccolte,
+l'analitico fornisce all'operativo la conoscenza per interagire coi clienti (ha l'info
+sui vari profili clienti e l'op li usa per effettuare campagne solo per un determinato 
+profilo oppure perche' ogni profilo ha determinate caratteristiche che possono
+essere usate durante la telefonata),
+crm direzionali forniscono info utili per prendere decisioni (anche correttive),
+
+IMPORTANTE: pag 22, architettura dei CRM
+il crm operativo mette a disposizione canali per la comunicazione bidirezionale cliente-azienda,
+telefonico, web (modalita'self service), canale fisico con agente che si muove per il territorio
+e gira con un tablet con l'istanza di crm operativo,
+fornisce lo storico delle interazioni tra cliente e azienda, es transazioni, acquisti del cliente,
+sono dati forniti al crm analitico che applica tecniche di business intelligence per proporre
+classi di clienti tentando di evidenziare caratteristiche comuni che definiscono profili utente,
+c'e' la componente di integrazione tra crm operativo e analitico, 
+il crm operativo invia dati sull'interazione col cliente, dati sintetici aggregati,
+quanti clienti hanno risposto positivamente alla telefonata,
+
+il sistema direzionale mostra ai dirigenti degli indici di prestazione,
+key performance indicator che servono ai dirigenti per capire quanto bene
+funziona l'interazione col cliente,
+per comprendere aspetti chiavi della relazione col cliente, quanto e' soddisfatto,
+quanto e' affezionato al brand
+
+---------------------
+
+SISTEMI DI CONTATTO
+
+sono sistemi sw che gestiscono la multicanalita',
+gestiscono l'interazione col cliente nel modo piu' semplice possibile
+attraverso diversi canali,
+l'utilizzo del canale web e' il piu' rilevante,
+sono un elemento complementare dei crm che supporta la multicanalita',
+3 caratt - multicanalita' , unicita' info , ...
+
+parliamo della loro architettura,
+all'inizio il contatto avveniva solo per telefono,
+il sistema gestiva solo le telefonate in entrata, un call center base,
+dove si usa una tecnologia telefonica per cui le telefonate vengono girate
+al primo operatore libero, c'e' un centralino dispatcher,
+smistare telefonate in entrata,
+il successivo passo e' stato di integrare la tecnologia telefonica
+con quella informatica, a fronte di una telefonata il sistema informatico
+risale al numero e quindi alla scheda cliente se il numero e' registrato
+nella base di dati del crm,
+il sistema visualizza una scheda sui dati del cliente, call center integrato,
+il terzo livello di integrazione e' quello dell'integrazione
+tra informatica e sistemi web, ovvero contact server completo,
+con canale web, le cose si complicano, i sistemi sono molto piu' ricchi.
+
+Call center base: si basano su sistemi telefonici evoluti che distribuiscono le chiamate,
+sistemi ACD, automatic call distribution,
+sfruttano la tecnologia VoIP, Voice over Internet Provider,
+il segnale analogico della voce viene trasformato in pacchietti,
+es redirezione di una chiamata in Albania,
+Instradamento verso opeatore disponibile, accodamento, ordine di priorita' in base all'arrivo,
+tempo medio di attesa, parametri di funzionamento (es tempo di attesa medio prima di poter parlare
+con un operatore, quanti chiudono prima di metter giu' al cliente,
+
+step evolutivo successivo: integrare, call center integrato con sistema informatico
+e automatismi (robot vocali) che affiancano l'operatore nei casi piu' semplici,
+scambio dati tra centralino telefonico, sistema informatico..
+grazie all'integrazione il riconoscimento del numero telefono
+il sistema puo' predisporre la scheda cliente del cliente,
+
+gli automi vocali sono app sw che sono in grado di interpretare la voce del cliente,
+distinzione si o no, numeri, oppure quelli sofisticati che ascoltano il parlato,
+automi semplici (del primo tipo, interactive voice response, pone domande (es hai bisogno
+di assistenza o nuovo contratto? dimmi 1 o 2..), se il cliente dice 1 l'automa gli fa sentire
+un nuovo menu...
+
+gli automatic speech recognition sono, modello probabilistico domande/risposte preconfezionate,
+se il cliente non e' soddisfatto puo' andare in escalation,
+
+il terzo livello evolutivo, contact center vero e proprio,
+usa anche il canale web a fianco di quello telefonico,
+telefonate via internet, direttamente via browser,
+il cliente si mette in contatto con mezzi sincroni (chat) o asincroni (mail),
+molteplicita' di canali che permettono di svolgere attivita' in entrata (operatori in attesa di chiamate),
+attivita' inbound (servo chiamate in entrata che il cliente decide di fare),
+ma anche attivita' outbound, programmare chiamate, effettuare contatti verso clienti in modo proattivo,
+l'azienda programma campagne promozionali, outbound (verso il cliente),
+le possibili modalita' di contattare sono molto varie,
+ad es chiamate col canale telefonico, gli operatori chattano tramite web browser,
+gli op possono condividere la schermata (team viewer), ti apro uno streaming sul terminale
+cosi' vedi come fare determinate operazioni,
+
+MODELLI TECNOLOGICI
+possiamo individuare nell'ultima delle componenti tecnologiche periodiche, come il terminale del cliente
+(telefono fisso, smartphone, pc, browser, client internet via voce streaming, videoconferenza),
+inbound o outbound, architettura di elaborazione che offre servizi a supporto se questo e' in modalita'
+self service,
+client locali (all'azienda, terminali) usati dagli operatori o dai commerciali,
+lato azienda abbiamo una rete di calcolatori, terminali usati da operatori umani
+e dall'altro lato abbiamo server, applicazione sw del contact center e del crm,
+le funzioni sono attivabili da op umani o da automi, attivano o disattivano offerte,
+in generale l'architettura risponde a richieste del cliente quando questo usa il web,
+tecnologie di integrazione tra componente telefonica e web,
+interfaccia tra sistema telefonico e informatico, permettono di abbinare
+il numero cliente alle info sul cliente in modo automatico, senza richieste
+tipo "qual e' il tuo cf, quali offerte attive hai?",
+le tecnologie di integrazione permettono l'interazione tra piu' centri di contatto,
+distribuiti in piu' sedi, piu' paesi,
+un cliente chiama un'unica chat o numero e il sistema redirige la richiesta
+del cliente sul contact center che in quel momento e' in grado di rispondere.
+
+Dal pdv grafico, "la architettura call center base",
+acronimo PABX, scatola nella quale entra la richiesta del mondo esterno
+e si esce con una serie di terminali telefonico,
+la parte di crm e telefonica sono SCOLLEGATE, non c'e' interazione tra
+PABX e DB server, come quando chiamo gli ospedali, CUP, vuoi aggiungere un'altra visita?
+Il tramite tra i due lati e' umano, ascolta e scrive.
+L'integrazione c'e' nel call center integrato,
+tecnologia CTI,
+figura rappresentata dal server,
+che comunica col PABX (tecnologia telefonica) e interagisce col l'application server
+su cui gira il crm, la base di dati e il terminale dell'operatore che comprende anche il telefono,
+tecnologia VoIP, la chiamata viene passata all'application server,
+fa riapparire sul terminale la scheda cliente,
+presenza di automi oltre al sw crm nel call center integrato, effettuano le op di routine,
+automi piu' o meno sofisticati (rispondono con risposte articolate, disaggregazione delle frasi,
+fonemi, ricostruzione di parole), tecniche text to speech,
+
+il modello piu' sofisticato, contact center,
+e' composto da call center integrato + gestione web,
+sottocanali web (chat, chiamate streaming)
+
+il cliente si mette in contatto con canali sincroni e/o asincroni,
+permette di svolgere attivita' inbound e outbound (proattive),
+l'architettura include una gamma di componenti (in particolare server),
+e' un'architettura costosa da impiantare e gestire, spesso
+il contact center viene acquistato da aziende che offrono
+tale servizio, non e' l'azienda a costruirne uno ma viene
+acquistato come outsourcing, viene affittato da parte
+di provider specializzati.
+elenco di parametri con soglie minime o massime (tempi di attesa,
+percentuale di utenti sodddisfatti),
+piu' il liv di servizio e' alto piu' costa il servizio in outsourcing.
+
+vediamo il sw in particolare,
+collaborazione tra due suite (crm),
+ha il ruolo di fornire agli operatori o al sito web o alla base dati
+dei clienti dei prodotti, info sulla data di nascita, lo storico dei contratti,
+le cessazioni, i prodotti disponibili (catalogo servizi e prodotti),
+gestito dalla componente crm,
+i crm forniscono il sw per l'elaborazione delle transazioni,
+acquisto tramite interazione con crm,
+
+piattaforma vera e propria che gestisce il contact center,
+puo' essere proposta da vendor specifici o telefonici,
+
+responsabilita' di gestire la funzionalita',
+gli op e i clienti devono poter usare canali diversi,
+funzionalita' di gestione canali e cti, automi,
+supporto programmazione e gestione dell'attivita' degli operatori,
+il sw permette di costruire programmi di contratto,
+se al cliente voglio vendere un prodotto devo avere info sui prodotti,
+programmi di contatto delle campagne (elenchi dei clienti che rientrano
+nei profili che si vogliono contattare), business rules,
+
+
+IMPORTANTE, pg 12,
+blocchi funzionali di un sw di gestione di contact center 1:25:00,
+abbiamo 3 tipi di funzioni: interazione col cliente attraverso canali,
+a supporto dell'operatore e a supporto della gestione complessiva del contact
+center come insieme di operatori, gestione delle op su come riportare i dati del funzionamento
+a qualche direttore per valutare le prestazioni del contact center stesso,
+
+- interazione col cliente
+funzionalita' a supporto della comunicazione inbound tipo voce, telefonico,
+funzionalita' di instradamento delle chiamate verso operatori liberi, 
+centri multisito, gestione della distribuzione in base al carico di lavoro,
+visualizzare la scheda dei dati del cliente, pop up dati associati al numero in entrata,
+outbound, l'operatore chiama il cliente, a fronte di 10 operatori
+oggi quali chiamate assegno? elenco numeri telefono automaticamente chiamati dal sistema,
+pop up dati cliente, crm,
+visualizzare dati cliente,
+interazione self service, il cliente interagisce via automa,
+interactive voice responder, gestione automi, canali email che ricevono
+e analizzano il testo delle email, modello di risposta automatica grazie
+a individuazione keywords, oppure instradamento automatico basato su keywords,
+web chat, instradamento verso operatore libero, memorizzazione delle chat,
+storico delle chat,
+gestione di chat multiple, tempi di attesa, l'op risponde a altre chat intanto,
+
+- integrazione e supporto a operatore, gestione desktop, la gestione del layout dell'operatore,
+funzionalita' a disp dell'opreatore per interagire col cliente,
+visualizzazione di script, narrazioni, suggerimenti,
+il cliente fa una domanda e l'op puo' digitare le keyword della richiesta,
+il sistema da una risposta probabilistica con degli script suggeribili al cliente,
+gestione degli esperti, instradamento email ai team esperti piu' indicati per la richiesta specifica,
+interfacciamento crm e contact center, componente che gestisce lo scambio di dati, campagne
+di vendita col crm,
+
+- governo delle operazioni, gestione dell'occupazione degli operatori,
+programmazione gestione operatori, equa distribuzione del carico, sovraccarico degli operatori,
+principio di rotazione, gestione desktop del responsabile del contact center, gli interessa
+una supervisione degli indici di prestazione in tempo reale e in senso storico,
+serve per capire se stanno operando bene in termini di servizio ai clienti,
+ci sono operatori molto carichi o op scarichi? monitoraggio delle attivita' del contact center,
+banca dati del contact center, senso storico
+
+
+------------------
+05 - 11 - 2021
+------------------
+I crm occupano la parte sell side,
+i sistemi di procurement
+
+I sistemi di contatto sono complementari dei crm per la gestione della multicanalita',
+
+SISTEMI DI CONTATTO
+completiamo...
+abbiamo parlato di modello applicativo riferito alle suite coinvolte (2),
+il modello applicativo mette insieme crm con contact center,
+suite crm e suite contact center,
+i crm gestiscono le basi di dati sui prodotti e acquisti dei clienti,
+supportano le transazioni commerciali coi clienti,
+il contact center gestisce i canali, i robot, gli automi vocali,
+supporta l'aspetto della prog e gestione degli operatori,
+importa info su dati, prodotti, campagne di vendita,
+slide 12 IMPORTANTE, parla delle f contact center,
+
+processi tipici della relazione col cliente con la copertura delle suite,
+suite crm + suite contact center,
+intervento di ulteriori suite come l'ERP,
+slide 12, sintesi, struttura grafica a catena del valore,
+unisce i processi tipici dell'interazione azienda-cliente,
+ci sono 5 processi con un sesto (follow up),
+amministrazione operatori e' di supporto (settimo),
+ciascun processo ha una colorazione che individua la suite che supporta tale processo,
+sono indicate anche le funzioni tipiche che supportano tale processo,
+
+ci sono i processi dell'interazione azienda cliente,
+da sinistra:
+
+pianificazione e controllo finanziario,
+monitoraggio prestazioni,
+
+gestione dati crm
+
+gestione attivita' inbound
+
+outbound
+
+follow up
+
+PIANIFICAZIONE CONTROLLO MONITORAGGIO PRESTAZIONI,
+fuori dalla responsabilita' dei crm e contact, 
+ricade sotto altre suite, anche se e' inerente,
+vengono definiti il budget finanziario del callcenter,
+il budget per l'attivita' di supporto all'interazione col cliente,
+il monitoraggio delle performance di contatto col cliente,
+definizione delle prestazioni desiderate,
+il contact center deve avere delle prestazioni,
+l'azienda e' disposta a pagare quanto a fronte di certe prestazioni garantite?
+si definiscono i valori min e max dei parametri di funzionamento del contact center,
+parametri di service level agreement, contratto azienda-fornitore di contact center,
+sla = service level agreement, stendiamo un contratto che definisce i servizi offerti dal
+contact center, ti offro supporto tramite web e telefonico, non ti offro sms e cartaceo,
+fare sla significa garantire 1000 chiamate all'ora in entrata, tempi max 3 min,
+tempi medi attesa 50s, ti garantisco  che nel 90% dei casi che il cliente chiama
+gli offriro' una soluzione e nel 10% lo redirigero' a un altro numero aziendale,
+se non sono soddisfatti rivediamo il contratto, ti faccio uno sconto,
+se abbiamo un provider, nel service level agreement troviamo le velocita' max di download e upload,
+fase di definizione prestazioni, analisi prestazioni effettive,
+verificare che i clienti siano effettivamente soddisfatti nel 90%, analisi importante per
+capire se il sla e' stato rispettato o meno,
+es dell'ADSL a casa, verifichiamo con lo speed test,
+
+GESTIONE DATI CRM, 
+processo supportato dalla suite crm,
+gestisce la base di dati clienti, prodotti, transazioni,
+supporta dati listini, dati sui contratti clienti attivi...
+fare programmazione esecutiva significa fare programmazione esecutiva delle attivita;,
+pianificare le campagne promozionali, acquistare locali, assumere personale, gestire cose
+stabili nel tempo, di medio periodo si fa riferimento al mese e alle tre campagne nel mese,
+pianifichiamo le attivita',
+la programmazione esecutiva della attivita' si fa la settimana prima, genero la lista dei contatti,
+la distribuisco ai fornitori, faccio partire l'esecuzione dell'attivita',
+poi controlliamo che tutti i clienti che volevamo chiamare siano stati chiamati,
+si rifa' programmazione sui clienti non chiamati mettendoci risorse,
+
+cio' che caratterizza il contact center e' fare attivita' outbound,
+gestire programmazione e esecuzione dell'outbound.
+
+Gestione contatti outbound e inbound,
+quando chiamo i clienti c'e' uno scambio di dati tra contact center e crm che ha
+i dati sul cliente (il contact center gestisce il canale),
+i dati sulla scheda del cliente vengono inviati al contact center per avere la fotografia
+del cliente associato a un numero di telefono,
+
+i dati sono chiesti al crm,il contact center pianifica la campagna,
+ma i numeri di telefono e dati dei clienti vengono chieste informaticamente al crm che legge
+la sua base di dati e gira i dati al sw del contact center,
+desktop operatore e gestione layout, funzione contact center,
+per evitare unicita' dei dati.
+
+Telemarketing, contattare proattivamente i clienti,
+possibilita' di acquistare prodotti, 
+campagna di richiamo, portare l'auto in concessionaria,
+ricerca interviste (mi dai 2 min per un'intervista su cosa pensi del prodotto? questionario telefonico),
+se il cliente conferma l'intenzione di acquistare la richiesta e' informaticamennte eseguita dal crm.
+
+Contatti inbound, 
+
+Informazioni clienti, acquisizione reclami, segnalazione guasti,
+quando un operatore effettua una chiamata, il crm offre il serviziodi offrire un
+testo a video adatto alla situa che l'operatore gestisce,
+il testo a video descrive la storia da raccontare al cliente,
+nel caso del cliente che chiama l'operatore inserisce keyword, riceve risultati,
+il contact center mostra le linee guida (script) che gli operatori leggono al cliente,
+Componente backoffice che esegue l'ordine, evasione dell'ordine, evasione contratto,
+fatturazione del contratto, follow up, la richiesta inserita nel crm viene
+
+trasmessa a chi fa produzione, 
+processo bianco, ordine inserito nel modulo gestione ordini dell'ERP,
+
+AMMINISTRAZIONE DEGLI OPERATORI,
+modulo erp delle risorse umane.. gestione vacanze degli operatori,
+
+slide dei costi tipici di gestione di un contact center,
+non il sw ma l'unita' organizzativa,
+i costi tipici sono 6% hardware, computer e sw 5$
+il pagamento stipendi degli operatori e' la fetta maggiore, anche reclutamento costa molto,
+i contact center sono dati in outsourcing dove la manodopera qualificata costa poco,
+
+
+review,
+il contact center offre servizi,
+c'e' un contratto di servizio a fronte di un service level agreement,
+es di prestazioni sono la first call resolution (risoluzione del problema al primo tentativo),
+tasso chiamate risposta entro x secondi,
+tempo medio di risposta,
+lato web potrebbe essere la percentuale di tempo in cui il sito funziona,
+il tempo massimo di guasto,
+
+in un contact center possiamo mostrare volumi in entrata (inbound),
+volumi in uscita, quantita' chiamate in ingresso, quantita' email ricevute,
+analogamente per i vol di output le chiamate a cui si e' risposto,
+il grado di risposta che il call center da' a fronte delle chiamate ricevute,
+risorse, personale, quantita' linee telefoniche, postazioni di lavoro,
+superfici dei locali, n divisioni, misura delle risorse che fotografano la situazione,
+service level agreement + parametri di valutazione delle prestazioni del contact center,
+utili anche al gestore che valuta se economicamente ci sta,
+indicatori di qualita' ambientale (come ambiente di lavoro, no Greta Thunberg),
+sovraccarico delle chiamate da gestire in un'ora,
+interessi per il gestore del contact center,
+quante sol di problemi o vendite di prodotto un operatore riesce a forire,
+costo unitario della chiamata in ingresso o uscita per il gestore,
+costi del personale,
+tasso di guasto della rete, 
+indicatori della sla, tasso di chiamate che soddisfano il sla,
+costo della chiamata,
+
+gestione dei dati crm, base di dati per il canale telefonico, sottoinsieme della base crm,
+include info abbastanza stabili (anagrafiche) e dati generati e unificati piu' frequentemente,
+legati all'inter tra contact center e cliente,
+posso tener traccia dei contratti, servizi, richieste aiuto, assistenza,
+dati dinamici, ogni giorno ne accumolo di nuove (mentre le anagrafiche sono abbastanza stabili).
+
+a fronte di un certo  volume di servizi che vuole offrire il gestore calcola le risorse necessarie per quel livello,
+concetto di servire le chiamate inbound, complessita' che le chiamate in entrata variano per giorni della settimana
+e fascia oraria, e' tipico ricevere molto tra 15 e 18 o tra 10 e 13, e finiscono verso fine settimana,
+c'e' aunche un andamento stagionale, piu' chiamate d'inverno,
+bisogna sapere quando sono i picchi per non mettere in ferie il personale.
+misure correttive, operatori meno carichi, gli assegno del lavoro outbound da fare,
+tramite una console del contact center il dirigente puo' allocare dinamicamente del lavoro
+da fare agli operatori piu' scarichi,
+la guida operativa (o script) viene visualizzata a monitor, illustra il discorso da fare al cliente in fase outbound,
+le attivita' che l'operatore svolge sono inserite nella pianificazione esecutiva,
+il sistema distribuisce il carico di lavoro in modo automatico partendo dalla programmazione esecutiva,
+le chiamate sono distribuite tra i vari operatori,
+
+funzionalita' tipica del contact center,
+supportano le chiamate outbound,
+qualifica i crm di tipo avanzato che gestivano solo chiamate in entrata, 
+si fa solo con livello tecnologico avanzato,
+effettua le chiamate effettuate a un operatore
+che puo' parlare col cliente senza digitare a mano,
+contatti inbound -> cose che gia' sappiamo, info a contorno,
+tipologie di richieste tipiche inbound a un'azienda che distribuisce elettricita' e gas,
+58% delle telefonate sono per richieste di info all'operatore, 5% reclami, 2% guasti..
+
+I contact center possono svolgere funzioni diversi per il tipo di azienda che c'e' dietro,
+ci solo contact center centri di informazione, caratterizzati da volumi molto alti
+(es quando chiamiamo il numero di wind o tim),
+scopo di informare il cliente,
+ci sono contact center ricerca di post vendita, es aziende automobilistiche che assolvono
+richieste di interventi post vendita, problemi col veicolo,
+nei casi semplici l'operatore risolve, nei piu' complessi invita a visitare la concessionaria,
+contact center polivalenti,
+ricevono richieste di assistenza, informazione, esecuzione di ordini contrattuali.
+
+Delocalizzazione,
+centri esterni all'organizzazione, implementati da aziende esterne,
+centro conto terzi,
+delocalizzazione tipica da paesi a alto costo del personale,
+da paesi in UE i servizi di contact center sono delocalizzati a paesi
+con elevata scolarita' ma basso costo, india, africa...
+virtualizzazione dei centri, coordina centri dislocati in tutto il mondo
+ma presenta un unico punto di ingresso.
+
+
+=========================
+
+=========================
+
+SISTEMI INFORMATIVI DIREZIONALI
+
+offrono supporto alle decisioni strategiche e pratiche di allocazione risorse,
+controllo progetti.
+
+Diagramma sugli scambi informativi,
+supporto operativo, 
+direzionale, ha il compito di pianificare obiettivi,
+verificare a posteriori il supporto alle decisioni, target, tempistiche,
+pianificazione che rispetti le decisioni,
+verificare i risultati a posteriori,
+implementazione delle decisioni, es fare un nuovo modello di automobile e venderlo in sudamerica,
+progettare, prototipare il veicolo, dopo 6 mesi si verificano i risultati,
+una seconda attivita' supportata dal direzionale per capire se le decisioni hanno avuto
+frutti adeguati,
+si pianificano obiettivi, si passano al supporto operativo che fornisce risultati,
+es dati sulle vendite, quante auto ho venduto su quali paesi del sudamerica, il fatturato
+generato, l'utile generato, le difettosita' riscontrate,
+a distanza di 6 mesi verifica i risultati raggiunti,
+verifica dei risultati,
+dopodiche' si prendono azioni correttive (terza attivita'),
+il sistema di supporto operativo riporta risultati
+che possono essere analizzati dal direzionale
+il quale opera attivita' correttive.
+
+Il sistema di supporto operativo tratta dati spiccioli,
+singoli scontrini, singoli ordini,
+quantita' di prodotto presenti a magazzino,
+costo di un particolare dipendente,
+info molto parcellizzate e specifiche,
+l'informazione direzionale e' sintetica, aggregata, storicizzata,
+il sistema direzionale e' interessato
+alle informazioni sul semestre, sull'anno,
+al trend crescente, non alla singola busta paga ma allo stipendio medio,
+al costo del dipendente in un particolare paese,
+informazioni di sintesi che descrivono il macrofenomeno e non il microfenomeno,
+l'informazione direzionale e' usata per assistere il processo direzionale,
+mettere in atto azioni correttive.
+
+La piramide di Anthony classifica,
+a liv basso ci sono i processi operativi, il controllo operativo,
+si pianificano le attivita' esecutive, quanto produrre o quanto spedire, quanti ordini evadere
+in una determinata settimana, ci si preoccupa che le attivita' procedano nel modo prefissato,
+altro termine usato per i sistemi informativi operativi, ovvero sistemi di pianificazione e controllo,
+un erp implementa pianificazione e controllo,
+
+livello direzionale, intermedio, non si occupa delle spedizioni di un particolare modello in settimana
+ma controlla che nell'arco di un anno l'azienda raggiunga certi obiettivi patrimoniali,
+si fa un budget e si decide quanto spendere, si distribuisce il gruzzoletto sui vari centri che costituiscono
+l'azienda,
+mi aspetto certi ritorni in termini di attivita' eseguite, prodotti venduti,
+si fanno ipotesi sul futuro, si allocano risorse di tipo economico,
+si fa poi una verifica a liv consuntivo, si guardano i risultati e si fa una verifica
+a posteriori a consuntivo,
+
+la pianificazione strategica ha obiettivi ancora piu' alti, 
+se il direzionale e' annuo lo strategico si interessa di entrare con la vendita delle auto
+negli stati uniti, mettere in piedi una rete di vendita,
+quali stabilimenti chiudere perche' piu' vantaggioso,
+l'info direzionale,
+rendiconto direzionale, pg 4,
+contiene informazione direzionale,
+potrebbe essere tipica del livello intermedio,
+l'info esemplifica l'informazione direzionale,
+il rendiconto ha una serie di indicatori,
+parametri utili per modellare un certo fenomeno,
+sono i volumi di vendite, di acquisti, il costo del personale, i margini
+di ammortamento, l'utile,
+per capire come l'organizzaione consegue risultati economici o con particolare
+suddivisione, macchinari, stabilimenti, l'utile che generano,
+il focus e' sui dati aggregati,
+cappello costo economico, anche vendite e acquisti si riferiscono al fatturato, euro, dollaro, currency,
+altri indicatori non sono economici, sono es auto vendute e auto prodotte,
+sono dati che fanno riferimento a un periodo di riferimento,
+info basate su indicatori, su un aspetto del business, del processo..
+altro aspetto: diverse tipologie di valori,
+posso considerare le vendite immaginate di fare (a budget) e quelle a posteriori rilevate dopo
+6 mesi dalla previsione,
+ho diversi valori, quelli a budget e quelli effettivi,
+il sistema direzionale fissa obiettivi e verifica quanto sono stati raggiunti,
+altro aspetto dell'info direzionale e' che gli indicatori hanno valori calcolati con periodi temporali,
+2100 e' del semestre 2 dell'anno corrente,
+ho altre colonne sui dati annuali dell'anno precedente,
+nell'anno precedente considero in 12 mesi (non piu' 6),
+il dato complessivo a budget puo' essere segmentato su diverse dimensioni,
+oltre al dato complessivodel 2020 posso suddividerlo per i diversi prodotti,
+suddivisione di venduto che potrei fare per paese, rappresentanza commerciale, concessionaria,
+il dato complessivo puo' essere suddiviso per diversi sistemi di riferimento, es area geografica, quanto ho venduto
+con la concessionaria e quanto col leasing,
+servono le suddivisioni per entrare piu' in profondita nella comprensione del fenomeno vendita,
+se guardo le auto prodotte posso capire il liv macro del fenomeno (utile al dirigente),
+le info sono aggregate, non vedo la singola targa ma il parziale mensile, il parziale per modello,
+per paese di vendita, per concessionaria, in ogni caso info aggregate e CALCOLATE,
+tirate fuori a partire dai singoli ordini e dalle singole registrazioni,
+dati di esecuzione degli ordini, l'ufficio commerciale,
+l'unicita' dei dati supporta la generazione dell'informazione direzionale,
+se ho gli ordini su un singolo database e' facile tirar fuori le cifre complessive,
+se l'informazione non e' centralizzata e' piu' difficile costruire i rendiconti direzionali.
+Problemi tecnici, es mettere insieme dati di mercato in zone diverse, devo fare conversioni di valute,
+il tasso di cambio varia giorno per giorno,
+uso il tasso di cambio di oggi o calcolo rispetto al momento della vendita?
+Report in forma tabellare,
+forma grafica, grafica interattiva,
+forma di grammatica,
+
+i sistemi direzionali sono preconfezionati, standard,
+caratteristiche dei direzionali,
+supportano inprimis la definizione degli obiettivi,
+dss (decisional support system),
+vedo che crollano le vendite di un prodotto,
+posso provare a mettere in atto azioni correttive,
+info sinstetiche aiutano a capire il problema
+e gli obiettivi da definire per risolverlo,
+prima definire gli obiettivi, e poi supportare la
+valutazione del raggiungimento di tali obiettivi,
+valutare i risultati della strategia scelta,
+es mi aspettavo di aumentare le vendite,
+vediamo se e' avvenuto a distanza di 6 mesi (funzione
+di reporting),
+il dss mostra l'info direzionale in modo fortemente interattivo,
+cerco di cliccare sulle varie voci per mettere una toppa (azione correttiva),
+la funzione di reporting segue un template standardizzato e genera un report,
+queste erano le funzioni tipiche,
+un'altro aspetto dei SID e' quello che elabora informazioni aggregate, 
+non sui singoli ordini ma aggregati,
+parliamo di indicatori,
+tratta informazioni espresse tramite indicatori,
+le vendite totali del magazzino,
+non il singolo scontrino,
+le info aggregate sono temporizzate, hanno
+collegate un periodo, sono info tempificate,
+e la tempificazione e' centrale, serve per analizzare i trend,
+vendite totali su un particolare trimestre,
+su un particolare evento di vendita,
+l'info e' MULTIDIMENSIONALE, posso suddividere
+il totale per negozi, regioni, nazioni, vedere quali
+hanno venduto piu' e quali meno, posso
+disaggregare il dato totale effettuando molteplici segmentazioni,
+posso prendere il dato totale e disaggregarlo
+sui singoli negozi, i singoli prodotti, i singoli paesi.
+
+Posso avere il totale per anno, mese, semestre,
+ci sono diverse gerarchie per disaggregare i dati.
+
+Formalizziamo l'idea di indicatore,
+un indicatore e' relativo a fatti aziendali,
+es evento di vendita, quantita' di venduto,
+costo del personale (misura del fatto che l'azienda
+ha del personale che lavora),
+un indicatore e' una voce che compare nel report,
+e' descritto da n chiavi, puo' essere riferito a n coordinate,
+es tempo, prodotto, punto vendita,
+posso associare un'info sul tempo (mese gennaio 2021), una coordinata prodotto (prodotto x),
+info sul punto vendita (negozio, paese),
+tipicamente associato a chiavi/coordinate,
+l'indicatore e' una funzione di variabili,
+se il venduto ha una coordinata prodotto,
+al prodotto si puo' associare l'effettivo vettore dei prodotti,
+nel vettore associato al prodotto ho la lista dei prodotti che l'azienda vende,
+nel vettore sui punti vendita ho i punti vendita,
+ogni dimensione puo' essere organizzata su livelli gerarchici,
+posso essere interessato a vedere le vendite per mese, per quadrimestre, visione organizzata
+per livello gerarchico,
+posso decidere di guardare ai singoli punti vendita, alle regioni o ai paesi,
+posso guardare ai diversi prodotti o alle diverse categorie di prodotti (spaghetto - pasta),
+dati piu' spiccioli o dati piu' generali.
+Ne nasce uno spazio multidimensionale, un ipercubo,
+se ho 3 coordinate sono in spazio tridimensionale,
+ipercubo suddiviso in celle, 5 prodotti, per 10 mesi, per 4 negozi,
+
+Tecnologia datawarehouse,
+serve per memorizzare e realizzare indicatori, 
+"Building the datawarehouse",
+una collezione di dati.... definizione,
+non solamente dati dell'erp ma anche dal procurement, dal crm, dati esterni alla organizzazione,
+concorrenza, risultati di soddisfazione raccolti con interviste telefoniche,
+collezione persistente, collezione variabile nel tempo (viene aggiornata), orientata tipicamente
+a un certo argomento (dataware house relativa al fenomeno vendita, oppure marketing, o gestione personale,
+gestione contact center, e' orientata a un certo argomento, colleziona determinati indicatori che aiutano
+a capire un determinato argomento),
+dati enterprise wide, coprono l'intera catena del valore, non solo sell side o inside,
+l'informazione e' mantenuta per supportare decisioni e analisi dei dati,
+dss (decision support) e valutazione a posteriori dei risultati conseguiti.
+
+Spesso oltre a dataware house si sente dataware housing,
+denota il processo di progetto e costruzione e popolamento della dataware house,
+avviene a partire da soggetti diversi, mette insieme i dati del crm, erp,
+sistema di procurement, sistemi legacy dell'azienda, per poter esplorare
+il fenomeno a 360 gradi,
+si parte spesso da sorgenti di dati eterogenee (il prodotto del sistema a
+e' rappresentato con certi attributi e b con altri, i dati cozzano tra di loro),
+
+IMPORTANTE,
+architettura dei sistemi direzionali,
+organizzata su 4 livelli, livello a e b,
+ci sono 4 livelli, l'architettura classica parte
+dal livello 0, chiamato livello 
+delle basi di dati transazionali,
+in questa architettura si parte dalle bdd transazionali,
+dei sistemi informativi operativi,
+basi di dati dei vari componenti del sistema informativo operativo,
+presenti in azienda, 
+dati transazionali sui singoli ordini,
+sui singoli pagamenti, emissioni di fattura, ricevimento di merci,
+operazioni supportate dal sio,
+possono essere piu' di una,
+sap puo' avere una sola base di dati con dentro tutto,
+o sfortunatamente potrei avere diverse basi di dati incoerenti,
+le basi di dati vengono lette per portare su i risultati,
+l'informazione che permette di costruire risultati, calcolare indicatori,
+portare i dati verso il dataware house, che contiene dati in forma aggregata,
+con le coordinate dimensionali associate, dati sulle chiavi, le dimensioni,
+alimentare il dataware house si fa tramite 
+programmi software che implementano il TL, processo
+di lettura dei dati nelle bdd transazionali, la trasformazione
+(lavoro duro, armonizza le differenze tra valute),
+uniformare, e infine loading,
+estraction, transformation (uniformazione) e loading,
+es ho l'indirizzo dei clienti col cap insieme con la via,
+in un'altra base indirizzo e cap sono in zone diverse,
+devo scegliere un formato e trasformare i dati in una delle due fonti
+per separare il cap,
+per metterlo nella componente indirizzo,
+in fase di trasformazione posso anche aggregare,
+passare dai singoli scontrini ai totali,
+poi ho il caricamento, trasferire i dati copiandoli nel dataware house,
+quanto frequentemente si esegue l'ETL?
+ci vanno dati di sintesi, non serve in tempo reale, basta di notte,
+quando il sio e' scarico di lavoro,
+e' un programma eseguito a scadenze temporali prefissate,
+aggiorna il contenuto del dataware house,
+ha un'altra fonte di alimentazione, che sono dati che non
+sono presenti nella bdd transazionale,
+sono dati relativi a obiettivi transazionali, dati di budget,
+dati di previsione inseriti a mano, 
+interessanti perche' pensati dalle persone e ipotetizzati,
+perche' poi il datawarehouse genera dei report automatici,
+c'e' anche l'acquisizione di dati esterni sui concorrenti,
+che non si trova nell'erp ma arriva da fuori,
+puo' essere utile per prendere decisioni, es del concorrente
+in sudamerica che vende di piu', voglio i dati per capire
+se davvero c'e' il gap e prendere decisioni per colmare lo svantaggio,
+
+sui dataware house possono costruire datamart, che contengono dimensioni relative a un particolare
+soggetto, es sui dati di vendita, sul magazzino (perche' penso non operi sempre bene),
+posso avere il datamart sulla concorrenza, sul personale, sui posti, sulle prestazioni,
+sul tasso di carico,
+sono porzioni di datawarehouse specializzate su un soggetto,
+costituiscono il terzo livello a partire dal basso,
+sopra abbiamo l'ultimo livello, applicazioni software effettivamente
+usate dai dirigenti per accedere ai dati del datamart o del datawarehouse,
+fanno supporto alle decisioni,
+sono motori di calcolo, spesso sono strumenti interattivi che mostrano una visualizzazione
+diversa, in modo dinamico permettono di esplorare il fenomeno.
+Poi ci sono i motori di presentazione, ES = executive ... system,
+a diff del dss sono meno interattive, piu' basate su visualizzazione standard,
+spesso sono presentati agli azionisti, quindi devono essere standardizzati.
+
+I motori di mining riescono a individuare pattern che possono essere portati
+all'attenzione dell'umano che non li aveva notati,
+
+le operazioni di tipo OLTP sono in tempo reale, online,
+questi sistemi sono mirati a processare transazioni,
+effettuare il singolo pagamento, la singola fattura,
+registrare il singolo ingresso a magazzino,
+elaborare transazioni in tempo reale e' tipico dell'interazione
+del software sio con le basi di dati,
+elaborazione oltp, di tante transazioni che riguardano pochi dati,
+il mondo del datawarehouse viene chiamato OLAP,
+online analytical processing, 
+elaborazione di dati analitici, sono i nostri indicatori,
+spostamento di interesse da transazioni a analisi di fenomeni,
+le oltp sono costituite di tantissime operazioni semplici,
+riguardanti lo scontrino o la fattura, leggere ma tante,
+negli olap le operazioni sono piu' rare ma complesse,
+possono riguardare milioni di scontrini e ritornare un dato sul numero dei pezzi venduti,
+operazioni rare ma che trattano gigabytes di dati,
+dati aggregati a partire da fonti diverse.
+
+Modello concettuale che rappresenta l'indicatore: ipercubo,
+adesso vediamo il modello ideale come viene implementato nel dwh (datawarehouse),
+mondo olap,
+sono modelli di dati che devono supportare op su diverse gerarchie,
+struttura multidimensionale denominata ipercubo o data cube, 
+possiamo individuare gli indicatori da valutare, i fatti, 
+la quantita' volume a fatturato,
+le dimensioni su cui effettuare analisi diventano le dimensioni dell'ipercubo,
+tante coordinate di vendita quante dimensioni di ipercubo,
+le celle contengono i valori metrici,
+un particolare cubetto dell'ipercubo ha delle coordinate,
+la quantita' di venduto e' relativa a quel mese/negozio/prodotto,
+ogni dimensione puo' essere organizzata su liv gerarchici,
+il tempo puo' avere la granularita' del mese o del giorno o dell'anno,
+si puo' salire di gerarchia e raggruppare i mesi in semestri, considerando meno cubetti.
+
+dimensione prodotto, dimensione tempo, giorni, 10000 prodotti, 350 punti vendita,
+la cella contiene il valore metrico,
+considerazione algebrica: l'ipercubo ha forte sparsita',
+il prodotto 2 potrebbe essere invenduto nel negozio 350,
+lascio il layer associato a 2 e 350 vuoto,
+sparsita' significa che molte coordinate non hanno senso,
+un certo prodotto puo' essere solo di questo mese quindi
+tutte le celle antecedenti al periodo di introduzione sono vuote,
+questo significa che implementare una struttura a ipercubo
+potrei allocare spazi di memoria sprecati,
+combinazioni di prodotto/punto vendita/tempo vuote,
+
+ci sono operazioni effettuate sugli ipercubi,
+rappresentazioni tipiche anche dei data mart,
+sui quali ci sono software che operano e svolgono
+determinate operazioni olap, operazioni tipiche, frequenti,
+battezzate slice, dice, pivot,
+
+roll up      -> aggrega i dati salendo di qualche gerarchia dimensionale,
+                da giorni a semestri, voglio salire nella gerarchia tempo, aggregando dati,
+                voglio vedere i prodotti per categoria di prodotto
+
+drill down   -> operazione complementare, andare giu', trapanare,
+                voglio scendere dalla regione al livello delle singole citta',
+                da un cubo con meno a uno con piu' celle,
+
+slice & dice -> seleziona e proietta, scelgo solo i prodotti in lombardia,
+                negli ultimi 10 mesi e di questo particolare prodotto,
+                taglio una fetta, prendo un sottocubo,
+
+pivoting     -> ruotare l'ipercubo,
+
+modi di gestire la struttura dati:
+programmo la struttura a ipercubo,
+mappo il modello multidimensionale,
+la tecnologia che implementa l'idea,
+tecnologia MOLAP, dei cubi,
+implementa il modello, 
+mapping 1:1 ipercubo-struttura dati,
+le estrazioni di dati seguono questa filosofia dell'ipercubo,
+
+tecnica ROLAP, piu' significativa, mappo l'ipercubo in una serie di tabelle,
+relational database management system,
+organizzo i dati in tabelle per oganizzare la struttura multidimensionale.
+
+---------------------
+11 - 11 - 2021
+---------------------
+Sistema di supporto operativo
+
+Gli indicatori sono associati a dimensioni e chiavi,
+l'indicatore vendita e' associato alle
+chiavi tempo, prodotto, luogo di vendita,
+riferite a certi periodi temporali o a certi
+insiemi di prodotti e di vendite riferite a certi
+negozi o regioni di vendita.
+
+Formalizzato il concetto di indicatore
+Indicatore, chiave, dimensione di analisi
+
+La struttura data dall'indicatore, le chiavi e le dimensioni
+puo' essere modellizzata come un ipercubo a n dimensioni
+(n chiavi)
+
+Il dataware house viene alimentato tramite l'esecuzione di programmi,
+alimentato secondo il procedimento di ETL (Extraction, Transformation, Loading),
+viene alimentato dalle basi di dati transazionali (le basi
+di dati dell'ERP),
+riceve anche altri dati non presenti
+nelle basi di dati transazionali,
+le data entry contengono dati non presenti nelle basi
+di dati transazionali ma sono dati di preventivo, di previsione,
+sono dati di preventivo,
+sono dati utili per prendere decisioni, e' utile averli
+nel sistema informativo transazionale ma non derivano
+da informazioni presenti nelle basi di dati transazionali,
+non sono presenti nei sistemi informativi operativi.
+
+La tecnologia dataware house a supporto dei sistemi
+informativi transazionali l'abbiamo chiamata OLAP,
+in contrasto con la tecnologia OLTP che e' la tecnologia
+delle basi di dati transazionali e di supporto ai sistemi
+informativi operativi.
+
+Rispetto all'OLAP, l'OLTP
+sostanzialmente opera transazioni che agiscono su pochi dati,
+molte transazioni per ogni minuto di funzionamento,
+al contrario il sistema OLAP opera sul dataware house
+e tratta tipicamente volumi di informazioni molto ampie,
+tipicamente di transazioni se ne fanno molto poche,
+avvengono a bassa frequenza.
+
+I modelli dei dati per OLAP devono
+supportare analisi e calcoli sofisticati su grossi
+volumi di dati che riguardano diverse dimensioni
+organizzate gerarchicamente,
+il modello logico dei dati e' quello dell'ipercubo,
+un ipercubo e' associato a un indicatore,
+ogni indicatore ha un valore associato a una delle cellette,
+
+Operazioni possibili sull'ipercubo:
+- operazione di aggregazione,
+scalatura verso l'alto,
+- operazione grill down, opposta alla roll up,
+- slice and dice, restringere il range
+delle dimensioni
+- pivot
+
+Un server MOLAP e' una tecnologia informatica
+che gestisce i dati del dataware house
+implementando dal pdv informatico direttamente
+una struttura a ipercubo,
+elabora le interrogazioni con riferimento a questa
+struttura a ipercubo.
+
+I server ROLAP invece sono sistemi di gestione
+di basi di dati standard che rappresentano i dati
+come insiemi di tabelle e usano insiemi di tabelle
+per simulare l'ipercubo,
+l'idea di ipercubo e' rappresentata con un insieme
+di tabelle.
+Le informazioni contenute nei rolap vengono estratte
+usando il linguaggio SQL per scrivere delle interrogazioni
+che implementano operazioni di roll up, grill down, slice
+and dice e pivot.
+
+Approfondiamo ROLAP
+Quasi tutti i dataware house e i data mart (sottoinsiemi
+dei dataware house con target specifico) sono
+rappresentati con insiemi di tabelle.
+
+Un server ROLAP rappresenta il cubo come un insieme di tabelle,
+le informazioni contenute vengono estratte col linguaggio SQL
+
+Il data mart e' rappresentato come un insieme di tabelle,
+
+Tecnologia ROLAP: lo schema multidimensionale dei dati
+e' realizzato mediante insiemi di tabelle,
+ognuna di esse contenente righe che sono i dati veri e propri...
+
+inoltre, le tabelle sono riconducibili a due tipologie:
+ - stella
+ - fiocco di neve
+
+In entrambi i casi l'ipercubo e' rappresentato con un
+insieme di tabelle, in particolare una di queste tabelle
+si chiama tabella centrale o tabella dei fatti,
+e' una tabella che contiene i valori degli indicatori,
+poi ci sono altre tabelle chiamate delle dimensioni,
+ogni tabella e' associata a una dimensione,
+le cui righe descrivono il dettaglio delle dimensioni
+rispetto ai quali gli indicatori vengono valorizzati.
+
+STELLA
+c'e' una tabella dei fatti
+che ha un nome, che richiama il fatto
+che si vuole misurare con gli indicatori
+che la tabella rappresenta,
+la tabella ha associato un fatto,
+ad esempio le vendite, (potevo averne
+una degli ordini, una delle richieste di assistenza
+post vendita, un qualsiasi insieme omogeneo
+di eventi del mondo reale che sono di interesse
+per l'azienda e in particolare per i dirigenti dell'azienda).
+
+Le vendite nell'esempio vengono misurate
+con due indicatori: quantita' di venduto e incasso,
+nella configurazione a stella
+che emula un ipercubo
+ad ogni cella del cubo sono associati due valori metrici,
+ogni celletta ha un indicatore del venduto
+in termini di quantita' e in termini di incasso,
+inoltre per ciascun indicatore, quantita' e incasso,
+sono specificate quattro coordinate,
+orario, cliente, luogo di vendita e prodotto.
+Ogni riga della tabella vendite in una
+certa posizione mostra un codice luogo,
+una descrizione completa la troviamo
+in una tabella separata, quella del luogo,
+che riporta una serie di attributi (colonne),
+una prima colonna contiene il codice del luogo,
+che conterra' il luogo 100,
+e per quella riga 100 poi abbiamo ulteriori colonne
+(negozio, indirizzo, codice citta', codice regione...)
+
+
+tabella centrale delle vendite,
+tabella FULL MART,
+
+ci sono tre indicatori del fatto vendita,
+unita' vendute, incasso, prezzo pagato per gli oggetti
+da negozio,
+ogni riga di vendita ha le coordinate,
+product ID, time ID, costumer ID, promotion ID,
+store ID,
+stiamo esplorando una tabella relativa ai fatti vendita,
+le colonne sono misure (indicatori),
+store sales = valuta, incasso,
+la riga rappresenta un evento di vendita,
+nel caso della prima riga la vendita di tre unita'
+e' stata effettuata dallo store id 34, per cliente 720,
+prodotto codice 1,
+prodotto numero 1, store 24,
+tabella prodotto 1,
+washington barry juice,
+in negozio 24, tabella store,
+nella tabella dello store ci sono codice negozio,
+citta' san diego, regione sw, paese united states america..
+
+Anche per il prodotto ci sono livelli gerarchici,
+product ID 1,
+poi abbiamo il brand washington, potrebbero esserci piu' prodotti,
+categoria di prodotto pure juice beverages,
+
+Nella configurazione a fiocco di neve ci possono essere una o piu'
+tabelle dimensionali,
+
+i prodotti si possono raggruppare per modello, categoria,
+
+Monitoraggio e innovazione di risorse e critiche.. posizionamento dei  metodi di analisi..
+bsc,
+a fronte di una particolare attivita' strategica individua
+indicatori e relazioni causa-effetto utili
+per misurare l'avanzamento nel tempo verso la strategia...
+usa un mix di indicatori di monitoraggio.
+
+----
+CSF
+----
+Sono quelle poche aree di eccellenza nelle quali
+ottenere risultati positivi significa ottenere
+il successo dell'intera azienda, oppure a livello
+individuale o a liv di divisione o ruolo,
+
+individua delle misure metriche per misurare i fattori di success,
+a diversi livelli dell'azienda,
+a livello corporate, dell'intera azienda,
+fattori competitivi, importanti dell'azienda come successo dell'immagine,
+del brand,
+rispetto del fattore ambientale,
+durata dei propri prodotti,
+sono tutti fattori di successo possibili,
+i csf possono anche essere a livello di funzione,
+misurano la capacita' di eccellere da parte di una particolare
+diviisone o funzione aziendale,
+per la produzione di una azienda automobilistica
+i fattori potrebbero essere livelli bassi di difettosita',
+capacita' di produrre pochi scarti inquinanti,
+poi i csf possono essere per il ceo, il direttore tecnico,
+a livello di ruolo, immagine, competenza e autorevolezza,
+capacita' di essere al passo coi tempi, informato sugli
+ultimi avanzamenti tecnologici,
+
+slide sui CSF che comprime la filosofia dell'approccio csf,
+i passi operativi del metodo, articolati in passi operativi,
+a sx abbiamo la filosofia e a dx i passi
+
+sx: obiettivo del metodo,
+selezionare in modo top down  le informazioni che
+davvero servono ai dirigenti, le priorita' aziendali,
+informazioni associate,
+indicatori per la dirigenza,
+top down nel senso che si parte individuando fattori di successo
+e poi scende dettagliando gli indicatori che misurano le prestazioni,
+as is, esistente, quanto e' ancora vicino rispetto al to be attuale?
+se lo scostamento e' forte si puo' decidere di revisionare il sistema,
+
+analisi degli score,
+
+METODO DEI KPI,
+
+1:19
+
+approccio che si focalizza sul singolo processo
+
+Indicatori che siano rilevanti per una strategia,
+che siano perseguibili
+
+definiamo cos'e' un processo coi KPI,
+un processo diventa una black box che ha input,
+output, consuma risorse,
+abbiamo due attori del processo:
+gestore del processo e cliente,
+l'input della black box non sono per forza le risorse,
+non vanno scambiati,
+gli input sono le richieste di servizio,
+es mi servono 1000 pezzi del tal semilavorato,
+in alcune tipologie di processo ci sono input materiali,
+es nel processo di trasporto di un corriere amazon
+come input ci sono i pacchi da consegnare ai clienti,
+altrimenti gli unici input sono quelli provenienti dal cliente,
+le comunicazioni e reclami che l'utente invia,
+le richieste di riparazione in garanzia,
+ordini ma anche comunicazioni di informazioni da parte del cliente,
+gli output sono i beni / servizi inviati al cliente,
+cosa sono le risorse? tutti gli altri input al processo,
+il personale, le materie prime, le scorte,
+i magazzini...
+Il kpi process fa emergere una serie di indicatori
+che costituiscono un sistema di misurazione di efficienza
+e efficacia del processo,
+assume che il valore percepito dal cliente
+e anche che le prestazioni che il gestore del processo
+vede per il processo che deve gestire
+siano misurabili tramite 3 tipi di indicatore:
+ - costi e efficienza
+ - qualita'
+ - servizio e tempi di servizio
+
+sia per cliente che per gestore i kpi sono riconducibili
+a questi tre,
+lo scopo e' misurare i costi unitari con cui sono soddisfatte
+le richieste, quanto costa internamente gestire un ordine,
+un'istanza di servizio,
+e anche misurare la produttivita' del processo,
+ovvero valutare il rapporto tra cio che il processo
+produce e le risorse utilizzate,
+misurare la conformita' degli output rispetto alle attese,
+es compriamo una bici, dopo un mese si rompe un pedale,
+il gap tra cio' che attendevamo e cio' che otteniamo e' alto,
+indicatore dei tempi di servizio => misurare le tempistiche,
+dopo quanto ci consegnano l'oggetto rispetto a quanto ci avevano promesso,
+
+
+----------------
+18 - 11 - 2021
+----------------
+
+ricordiamo l'architettura dei si direzionali,
+col data warehouse, passaggi alto->basso,
+sotto abbiamo le basi di dati transazionali,
+dei vari sistemi informativi presenti in azienda,
+basi di dati erp e crm, per i processi primari e di supporto,
+i dati devono essere trasformati in indicatori
+con associate dimensioni,
+attraverso una fase di ETL (lettura dei dati
+dalle basi di dati transazionali di erp, crm,
+sistema di contatto, poi la trasformazione
+(pulendo i dati e aggregandoli, eg partendo dai
+singoli scontrini che stanno negli erp),
+poi la fase di caricamento (scrittura dei
+dati aggregati su vendite giornaliere
+nel data warehouse, copia dei dati
+in una nuova base di dati aggiuntiva (dw).
+Nei data warehouse possiamo creare sottoinsiemi specializzati
+su particolari tematiche aziendali (data mart, sono
+gruppi di dati organizzati a ipercubo, per una particolare
+campagna di vendita, sui dati del magazzino, sui dati
+delle nostre vendite vs vendite della concorrenza),
+si specializzano su una tematica specifica della dirigenza
+dell'organizzazione.
+L'ufficio associato agli indicatori deve essere di interesse
+per la dirigenza, altrimenti il datamart non lo creo.
+Liv 0 -> basi di dati transazionali
+Liv 1 -> ETL, + inserimento di dati esterni
+Liv 2 -> dw e data mart,
+  sui data mart o dw si appoggiano dei sw
+  specializzati che consentono l'esplorazione del contenuto
+  da parte degli utenti, motori di calcolo, motori
+  di presentazione e di motori di mining.
+
+Es proposto da Oracle,
+ripercorre con terminologia diversa gli stessi liv architetturali,
+a sx ci sono i sistemi operazionali (sistemi informativi operativi,
+tra cui erp in primis), supportano tranaszioni dei processi
+primari e di supporto,
+segue un flusso di dati verso il data warehouse (che rappresenta
+l'ETL),
+nel data warehouse:
+ - area di staging, i dati cosi' come sono
+ stati copiati, dalle basi di dati operative,
+ e' un'area di parcheggio di dati non puliti,
+ - transformation che da origine ai dati aggregati,
+ che costituiscono il contenuto informativo del data warehouse,
+
+l'area di staging e' un insieme di file,
+
+dal data warehouse si originano basi di dati specializzate
+(chiamate aree funzionali), che sono i nostri data mart,
+tema delle statistiche, del top management di gruppo,
+della contabilita', marketing,
+controllo commerciale...
+questi sono schemi a stella che contengono dimensioni
+e indicatori, utili a analizzare i temi dei data mart,
+liv 3 -> rendere come report i dati che sono istanze
+degli indicatori e delle relative dimensioni,
+ci sono tool grafici per fare interrogazioni e query,
+strumenti di dss per fare calcoli e simulazioni
+a partire dai dati, sulla base dei dati di budget
+si possono fare stime di venduto.
+strumenti di reporting, creano reports standard,
+che contengono valori di indicatori con associate dimensioni.
+
+Definiamo la data warehouse meglio:
+e' una base di dati gestita con determinate tecnologie,
+con strumenti sw di accesso non tipici dei file in generale,
+usata per il supporto alle decisioni aziendali,
+integrata (cioe' mette insieme piu' dati da piu' basi
+di dati aziendali, non solo erp),
+ha un'ampiezza non legata a un singolo dipartimento ma
+copre l'intero interesse dell'azienda,
+contiene dati storici con ampio orizzonte temporale,
+con dati usualmente aggregati (indicatori),
+fuori linea (non aggiornata in tempo reale),
+per es aggiornata ogni 24 ore,
+non sincrono ma sganciato rispetto all'operativita'
+dei sistemi informativi operativi,
+di solito separata rispetto a erp e crm.
+
+- 'integrata',
+i dati arrivano da varie sorgenti informative,
+es di sorgente inform e' un data base o anche un foglio
+excel con dati di budget,
+un file pdf con dati di mercato in cui si colloca l'azienda,
+ciascun dato proviene da almeno una fonte ma anche piu' fonti,
+lo stesso dato puo' essere rappresentato in maniera un po'
+diversa in diverse fonti, es le codifiche dei prodotti
+sono diverse a tokyo o a milano, per motivi legali,
+il prezzo puo' essere diverso, ci sono eterogeneita',
+che vanno riconciliate nel dw,
+eterogeneita' nei nomi con diverse assonanze per motivi commerciali,
+a liv di struttura la scheda prodotto ha degli attributi differenti
+da quelli italiani,
+differenze di codifica,
+nel dw devo conoscere il mapping tra i due codici e sceglierne uno,
+possiamo avere dati legati alla difettosita', che richiedono
+operazioni di cleaning,
+
+i data warehouse sono dati di basi con dati storici,
+l'obiettivo nei sio sarebbe di mantenere i dati correnti,
+la giacenza attuale del magazzino, nei sistemi inform operazionali
+ci si interessa al dato recente,
+nel dw house ci si interessa alla variazione dei dati negli anni,
+la copertura e' piu' ampia, perche' interessa il trend,
+le serie temporali, l'esplorazione di fenomeni negli ultimi anni,
+non solo rispetto al presente.
+Il mod erp del magazzino registra la giacenza attuale,
+il dw descrive l'andamento delle scorte negli ultimi 3 anni...
+Gli ob sono diversi tra sio e sid.
+
+Si parla di dati aggregati (anche per i data mart)
+lo scopo e' fare analisi di dati,
+non interessa chi ha fatto un particolare ordine
+ma quanti clienti hanno comprato un particolare prodotto
+o quanti guasti ci sono stati, somme, medie, minimi, massimi.
+Le op di aggregazione sono fondamentali.
+
+Il dw e' fuori linea, sganciato, non e' continuo
+ma e' costituito da programmi eseguiti con un timer
+che suona a ogni mezzanotte (quando c'e' il minimo carico di lavoro),
+allora l'op di disturbo viene fatta quando l'azienda non sta usando
+il sio, l'erp, il crm...,
+le op su dw sono cadenzate, le op di etl sono cadenzate,
+quello e' il momento in cui si aggiorna il data warehouse.
+
+Nelle bdd operazionali si inseriscono pochi dati alla volta
+di piccola dimensione, nei dw ci sono op di accesso,
+trasformazione e caricamento su grosse moli di dati,
+e le op di accesso e interrogazione al fine di produrre
+report sono diurne (quando il dirigente lo chiede, durante
+ore di ufficio), mentre quelle di etl, di refresh,
+sono notturne (momenti di basso carico dal pdv dell'organizzazione
+che usa il sistema).
+
+Il dw e' separato, ovvero gli indicatori non si calcolano a partire
+dalle basi di dati transazionali, non si fanno sugli erp,
+perche' costruire i data warehouse? Perche' non esiste
+un'unica base di dati operazionale che contiene tutti i dati di interesse,
+gli ambiti sono diversi ed e' il dw a integrarli,
+la bdd deve essere integrata,
+e nell'integrare vengono risolti i problemi di eterogeneita'
+dei dati (prezzi da euro a yen), richiedono interventi
+anche manuali.
+Occorre costruire la bdd separata, il dw,
+non e' possibile fare il etl in linea, richiede ore,
+i dati di interesse sono diversi tra bdd operative e dw,
+nei dw abbiamo dati aggregati,
+dovrei fare l'op di aggregazione ma puo' richiedere
+minuti, se la facessi sugli erp rallenterei il tutto,
+e dal pdv dell'utente, richiede organizzazioni
+a ipercubo,  a sella o a fiocco di neve non disponibili
+nelle basi di dati operazionali,
+avremmo un degrado di prestazioni se non ci fosse la separazione,
+se i motori di calcolo agissero sulla base di dati operazionale
+il sistema potrebbe sedersi. Con i dw i motori di calcolo
+non rallentano gli erp, ridondiamo i dati per evitare
+problemi prestazionali.
+
+Liv 0 delle sorgenti informative:
+ci interessano
+ -> basi di dati dei sistemi operazionali informativi operativi,
+ OLTP, crm, sio, che supportano la catena del valore,
+ a supporto di un insieme limitato di processi,
+ mentre il dw copre si' l'intera catena del valore,
+ -> sorgenti esterne, possono essere dati di budget
+ previsionali, non stanno sull'erp o crm (dove ci stanno
+ i dati a consuntivo, mentre budget sono dati a preventivo),
+ dati che descrivono la concorrenza nel mercato, info
+ non nelle basi di dati dei si operativi.
+
+Es concreto: caso rossetti,
+catena di supermercati,
+requisiti, problema di analisi,
+immaginiamo di dover creare un dw che supporti
+l'analisi,
+si cercano indicatori che misurino le vendite giornaliere,
+il dato di interesse,
+il liv di granularita' e' giornaliero, per punto di vendita
+e per articolo,
+in base a questo tipo di analisi le coordinate
+sono tre:
+ tempo
+ prodotto
+ punto vendita,
+i livelli di granularita' sono
+ saldo giornaliero
+ saldo per singolo codice prodotto
+ saldo per singolo punto vendita,
+
+risaliamo l'architettura dei livelli,
+partiamo dal liv delle fonti, delle basi di dati transaz,
+il primo livello contiene i dati elementari,
+l'erp (supermercato), registra gli scontrini,
+abbiamo i dati di eventi di transazioni,
+registrazioni di scontrini,
+dati anagrafici, codice prodotto,
+categ prodotti in ciascun punto vendita,
+uno scontrino e' fatto da una testata
+con n ... (pg 13) + data di emissione ...
+lo scontrino si puo' rappresentare con due classi:
+- testata dello scontrino
+- dettaglio scontrini,
+nella prima ci sono tutto cio' che non c'e' nelle righe,
+importo totale, modalita' pagamento...
+nel dettaglio ci sono le righe,
+numero scontrino, codice articolo,
+importo della riga dello scontrino,
+la quantita' della riga di quello scontrino,
+terza tabella con l'anagrafica di prodotto,
+riporta la descrizione attribuita a quell'articolo
+in quel punto vendita,
+salendo di un livello nell'architettura
+troviamo le procedure che leggono i dati e li trasformano
+e aggregano per generare un corrispondente
+schema a stella,
+ricavandone dati di venduto, per data e per negozio,
+procedure batch (programma attivato non dall'utente
+ma da una scadenza temporale),
+etl e' batch,
+lettura dei dati riferita alle tabelle + precertificazione
+dei dati (ovvero cleaning, op di pulizia dei dati,
+risoluzione di incongruenze, armonizzazione di codici,
+op di piccole trasformazioni sui dati per aumentarne la qualita',
+es gli indirizzi potrebbero avere formati diversi,
+il cap con separazione a virgola, a trattino...
+il cleaning fa si che gli indirizzi siano tutti scritti nello stesso
+formato seguendo una convenzione,
+risoluzione di errori di scrittura e digitazione,
+armonizzazione dei nomi di brand,
+risoluzione di doppioni nel modo piu' automatico possibile),
+segue la selezione dei dati di interesse,
+la selezione puo' riguardare anche il tempo (es solo ultimo mese),
+creazione dei totali periodici (aggregazione),
+liv di trasformazione, legge i dati dalle fonti,
+li trasforma e aggiorna il data warehouse,
+nel nostro caso e' il dettaglio degli scontrini,
+portati nel dw come dati aggregati,
+nel dw ci sara' una tabella che descrive gli scontrini
+per numero dipunti vendita, numero di articoli, quantita' totale venduta,
+importo, numero scontrini.
+
+Il dw cosa contiene?
+fornisce input al liv 4 (delle applicazioni, usato dai dirigenti),
+puo' essere integrato da dati provenienti dal liv 4,
+es il dirigente fa una simulazione e cambia il dato di budget
+che viene reimmesso nel dw, sovrascrizione.
+
+Il dw dal pdv tecnologico e' ROLAP, base di dati relazionale,
+usa la tecnologia delle basi di dati relazionali (insieme di tabelle),
+strutturata a stella o fiocco di neve (es tabella full mart,
+vendita per negozio, vendite negozio, coordinate tempo, prodotto,
+cliente, negozio di vendita..),
+gli insiemi di tabelle si strutturano
+a stella..
+
+le linee tra tabella dei fatti e prodotto
+indicano che una vendita rappresentata da una riga
+e' relativa a un prodotto, una vendita e' relativa a un istante
+temporale, a uno store, a un customer, rapporto tra valore
+dell'indicatore e coordinate,
+vincoli di integrita' referenziale,
+cio' che misuro e le sue coordinate.
+
+i dati del dw sono rappresentati con uno schema
+dove abbiamo 4 tabelle, una dei fatti e tre dimensionali,
+quella dei fatti contiene le vendite a valore, quantita',
+num scontrini per unita' di tempo, prodotto e punto vendita,
+l'unita' di tempo e' il giorno, di prodotto e' il codice,
+la tabella delle vendite contiene i fatti e la chiave multipla
+(coordinate tempo,prod,punto vendita),
+la tabella chiave puo' essere collegata a piu' tabelle fatti,
+es tab fati vendita, tab fatti giacenze, la tabella dimensionale
+tempo puo' essere collegata a entrambe.
+
+Time id (etichetta l'istante temporale minimo),
+numera le date sulle quali voglio condurre le analisi,
+time id 367,
+
+i nomi sono le colonne, time id data giorno mese anno,
+ultimo giorno del mese, spesso si fanno op particolari
+e quindi puo' essere interessante fare analisi specifiche
+sull'ultimo giorno del mese,
+oppure un giorno della settimana speciale tipo mercoledi' sconto 10%,
+mi interessa poi analizzare le vendite del mercoledi',
+
+a fiocco di neve significa che alcune dimensioni sono rappresentate
+con due o tre tabelle, es tabella del tempo e settimane/mesi,
+costruendo le gerarchie delle chiavi si da' origine a una struttura
+a fiocco di neve.
+
+MOLAP -> ipercubo modellato direttamente,
+ROLAP -> dati rappresentati in relazioni o tabelle,
+base di dati relazionale che rappresenta i dati con insieme di tabelle,
+puo' essere organizzato a stella e simulare un ipercubo (# dimensioni =
+# tabelle attorno a quella dei fatti),
+HOLAP, hybrid, alcuni datamart sono con schemi a stella e altri
+come ipercubo direttamente.
+
+I data mart, dato un data warehouse, potrebbero essere sottoinsiemi
+del data warehouse, es ogni datamart si focalizza su uno dei tre
+attributi della tabella dei fatti,
+dm delle vendite a quantita', dm del numero degli scontrini,
+dm delle vendite a valore,
+sottoinsieme non si intende solo su un singolo indicatore
+ma per es il datamart contiene un sottoinsieme
+del tempo,
+dei negozi,
+dei prodotti rispetto a quello che contiene il dw,
+le dimensioni sono piu' compatte,
+es dw lombardia, veneto, data mart solo veneto e solo particolare prodotto,
+strumenti per rendere dati come tabelle,
+quando si passa dal multidimensionale al tabellare
+si perdono alcune dimensioni,
+tecnologia dss, analisi del presente mediante metafore grafiche dinamiche
+con presenza di tool che consentano di fare previsioni,
+tool executive information systems, cruscotti grafici,
+con interattivita' piu' bassa per i dss,
+pensata per dirigenti senior meno informatici;
+strumenti riconducibili alla business intelligence (tutti quelli
+visti finora lo sono, ma ci sono quelli evoluti),
+motori di data mining, sw che analizzano i dati nel dw
+e scoprono pattern nascosti, associazioni inattese
+tra prodotti venduti, algoritmi su base statistica
+che scoprono informazione rilevante e nascosta.
+
+Nei data mart e data warehouse gli indicatori
+sono rappresentati come ipercubi,
+dall'ipercubo si effettuano op di trasformazioni (olap)
+al fine di modificare il modo in cui si vedono i dati,
+op che fanno vedere gli stessi dati in modo diverso,
+cambi di prospettiva (nel liv 4 dell'architettura),
+
+operazioni OLAP,
+slice & dice,
+selezionano e proiettano le info,
+roll up -> disaggregano i dati,
+passare a una visualizzazione per regione,
+per intero anno, tenendo ferme le cat di prodotto,
+aggregazione di luogo e tempo, vedere il volume
+di vendita cambiando la granularita'
+drill down, disaggrega i dati,
+passo a un vedere i dati di venduto per giorno,
+per negozio, imponendo una restrizione in ogni
+regione, limitando il contesto di visualizzzione,
+il pivot e' un riorientamento del cubo,
+se il cubo lo vedo con il tempo su x, il luogo su y e l'articolo su z,
+faccio uno scambio di coordinate.
+
+es slice & dice ->
+restrizione dello scope,
+dice = ricavare un sottocubo,
+
+BUSINESS INTELLIGENCE
+
+incorpora e estende i sistemi informativi classici,
+incorpora dati nuovi,
+incorpora strumenti olap classici e tecniche di data mining avanzate,
+il data mining viene aggiunto all'analisi olap (sul presente e passato)
+di modo da prevedere il futuro.
+Definizione di business intelligence +
+Parte tecnologica (strutture dati e algoritmi) +
+[ Caso di studio ]
+Nuove tipologie di dati, a volte non ci sono gli
+strumenti tecnologici per gestirli tutti,
+ erp transactions
+ web click stream
+ location tracking
+ social media
+ tweet analysis
+ dati di acquisto
+ customer profiles
+
+La BI (business intelligence) tenta di sfruttare tutti
+questi dati.
+
+E' sempre piu' economico acquisire dati e memorizzarli.
+
+Sfide e opportunita':
+ dati caratterizzati da
+   velocita
+   volume
+   varieta'
+     non solo provenienti dagli erp ma da sorgenti diverse,
+     come i dati streaming, con diversi formati
+     dati che richiedono tecniche specializzate,
+     cio' complica lo scenario, potrebbero essere
+     necessari strumenti ad hoc per ogni formato,
+
+questi tre fattori mettono in crisi i metodi tradizionali
+di analisi dei dati.
+
+Utilizzare dati da fonti esterne offre opportunita' nuove
+come:
+  sentiment analysis del brand,
+  mps = analisi dell'opinione dei clienti sul prodotto
+  fraud detection (rilevamento in automatico di frodi),
+  limitare il rischio che i clienti abbandonino il brand,
+  tracking degli asset in modo puntuale dei prodotti
+   internamente e esternamente all'organizzazione,
+  tracking dei beni fisici,
+  product recomendation <- analisi del feedback e click stream,
+  tracking degli acquisti dei clienti
+
+aumenta il divario con gli utilizzatori
+che preferiscono le app, metafore informatiche piu' semplici
+che mal si coniugano con la complessita' dei dati che si vogliono
+ricavare.
+Piu' la metafora da offrire agli utenti e' semplice maggiore
+deve essere la sofisticazione dietro le quinte.
+
+def: insiemie di tecnologie e processi che aiutano l'azienda
+a trasformare il patrimonio informativo in conoscenza
+utile ai processi decisionali.
+La bi e' utile anche alla base della piramide di anthony,
+per esempio per la pianificazione della produzione con macchinari,
+es i dati dicono che la macchina reggera' non piu' di una sett. se usata
+in questo modo..
+La bi non e' solo tecnologia ma si articola su 3 piani:
+competenze, organizzazione, tecnologie.
+Trasformazione dei dati in conoscenza utile per prendere decisioni,
+
+richieste:
+saper effettuare richieste sql,
+saper costruire dataware house
+saper estrarre informazioni dalle dataware house (data mining),
+saper creare sistemi di supporto alle decisioni che simulano
+ scenari futuri,
+ le simulazioni inferiscono sul futuro,
+
+data visualization -> dashboards, sono console grafiche per analizzare
+indicatori, segmentarli in maniera grafica, op di roll up, drill down,
+mostrando
+
+La bi e' utile per le organizzazioni perche' prendere decisioni
+su dati oggettivi e' un requisito per il successo nel business.
+
+Nuova piramide (pg 2),
+parte dalla mission, il contesto organizzativo,
+la bi e' utile a liv strategico dove si definiscono
+gli obiettivi generali dell'azienda,
+e' utile per decision making, la fase tattica,
+dove si fanno analisi sullo stato di avanzamento di progetti e attivita',
+a un livello piu' focalizzato su prodotti e processi,
+es sono in ritardo sulla produzione di lotti -> devo scegliere
+cosa fare per colmare il ritardo,
+oppure decisioni sull'allocazione delle risorse, visto che c'e'
+una concorrenza anche interna all'azienda, dove guadagno se
+assegno determinate persone a determinati uffici?
+A liv di implementazione,
+project management -> gestione di un particolare progetto riguardante
+l'organizzazione.
+In alto alla piramide abbiamo la visione ampia e scendendo ci scostiamo
+verso l'azione, il liv dei processi operativi,
+ciascun livello deve prendere decisioni,
+la bi e' utile a tutti i livelli, non solo strategico.
+I dati sono sfruttati o sfruttabili o sono solo tombe di dati?
+
+La bi e' utile per tutti e tre i tipi di processi,
+e a tutti i livelli dell'organizzazione.
+
+L'architettura BI,
+
+liv di dati
+processo di ETL
+struttura a ipercubo (business information warehouse), sono i datamart,
+strumenti olap + strumenti di data mining
+
+fonti | dwh | datamart | dashboards & hubs
+
+Aspetti cruciali:
+ampiezza, dati messi insieme da diverse fonti, interne e esterne
+ all'organizzazione
+profondita', se il management e' stato educato a usare
+ strumenti olap il fatto che faccia arrivare la bi a produzione/magazzino
+ e' una sfida, perche' si devono poi creare nuove interfacce grafiche per gli
+ utenti non esperti di informatica,
+completezza: piattaforma integrata e capillare nei confronti dell'organizzazione,
+e' previsionale a differenza dei decision support systems,
+non si liimta a usare gli indicatori ma estrae informazioni
+non necessariamente preconfezionate dall'utente e cerca di prevedere
+scenari futuri.
+La bi serve per estrarre conoscenza che diventa azione,
+questo avviene seguendo un ciclo (pg 12),
+partendo da un problema esistente (es sto perdendo clienti),
+metto in piedi un processo di kdd (estrazione di conoscenza
+dai dati, social, di vendita, della presenza sul territorio...),
+estraggo della conoscenza utile per formulare ipotesi sul fenomeno,
+uso la conoscenza e la strasformo in azione (es il sito web
+e' il problema, lo miglioro, oppure e' il servizio post vendita a
+essere scarso, quindi assumo personale..) poi a distanza
+di qualche mese rianalizzo i dati e i kpis e verifico che
+l'emorragia di vendita si sia fermata, quindi cambio la strategia
+e identifico nuove sfide o problemi da correggere,
+reidentifico un nuovo problema, lo analizzo,.. c'e' un continuo
+migliorare del modo di operare dell'azienda.
+
+Pg 15
+processo di estrazione della conoscenza (kdd knowledge descovery in database),
+richiede una serie di fasi, analisi di un problema, si estraggono info,
+si creano data warehouse e data mart, si estraggono info col data mining,
+si applicano strategie correttive, si analizzano i risultati,
+si modifica la strategia dell'azienda..
+richiede esperti di vari tipologie:
+ esperti di dominio (es l'analisi sul business non la fa un informatico),
+ data administrator
+ mining specialist (usano tecniche olap e di dm per estrarre info
+ dai dati che il data administrator ha reso disponibili),
+qualita' e predisposizione dei dati,
+lo specialista di mining fa da ponte, si fa dare i dati dal data administrator,
+applica il data mining e offre in dashboard i risultati al data scientist
+
+Slide 17:
+insiemi di tecniche, conservative e avanzate (a sx le tradizionali),
+a dx le avanzate e moderne,
+sull'altro asse, tecniche strategiche per l'organizzazione,
+tecniche di base: tecniche di accesso e gestione dei dati,
+sulle quali si basano le tecniche di reporting (olap), basate
+su indicatori, permettono di acquisire indicatori aggregati,
+segmentarli, con riferimento agli stati presente e passato,
+poi ci sono le tecniche piu' avanzate, forecasting, predicting model,
+cercano di rispondere al futuro, cosa accadra' fra 6 mesi
+alle vendite di un prodotto? sono tecniche predittive che si basano
+sul contenuto del dataware house,
+senza digitalizzazione queste tecniche fanno acqua..
+
+le tecniche bi non sono facili da applicare,
+dovrebbe essere una strategia generale e non una soluzione al problema
+specifico, non si applica al singolo processo.
+
+Analisi olap, fanno parte della bi, reportistica avanzata,
+cruscotti grafici, tecniche di data mining,
+strumenti previsionali.
+
+spostiamoci alla tecnologia....
+
+il processo di bi e' un processo di estrazione di conoscenza (kdd),
+e' un processo iterativo (produce un output usato dagli ingengeri
+per correggere gli algoritmi e focalizzare meglio il sistema),
+mette insieme arte (tecniche empiriche) e tecniche ingegneristiche,
+
+filiere, flussi a piu' dati (architetture),
+partire da sorgenti di dati,
+creare data ware house, estrarne data mart (tramite selezione),
+rappresentazione con ipercubi su cui si fanno business queries,
+
+fare business queries significa estrarre fette, tirar fuori tabelle,
+
+ruoli: analista di business (guarda i dati finali),
+progettista dei data warehouse,
+progettista dei dati che supportano i sistemi inf operativi,
+misure e indicatori (indicatore e' un termine business),
+cubi olap, contengono info aggregate,
+roll up, drill down, operazioni su ipercubi,
+altre operazioni sui cubi sono, anziche' query, utilizzare
+i dati per valorizzare i report interattivi,
+dove un informatico li ha gia' preimpostati e l'utente
+decide se guardare il report delle vendite (vendite,
+segmentazioni standard),
+target effettivo e scostamento.
+
+ogni report e' agganciato a un tema,
+si appoggia a un particolare data mart,
+il report offre una sintesi di navigazioni possibili
+per un cubo,
+
+il report e' limitato,
+e' agganciato a un tema, collegato a un data mart
+ed e' un sottoinsieme delle possibili navigazioni di quel
+datamart, inoltre e' interattivo,
+
+in alternativa a cubi olap,
+invece di estrarre data mart sui quali fare report
+interattivo l'alternativa e' estrarre dati
+dalle dataware house e applicare data mining,
+con i quali estrarre conoscenza insita nei dati
+mostrandola all'utente,
+conoscenza nuova che non era stata capita,
+inoltre si puo' fare previsione sul futuro.
+Le tecniche di datamining si applicano su informazione
+tabellare (prepared data), es fetta di un data mart,
+es vendite usate per addestrare un algoritmo di datamining
+per capire le vendite future,
+si estraggono modelli che consentono analisi previsionale,
+un altro tipo di conoscenza e' quella completamente nuova,
+che si estrae dai dati ma non era prevista in nessun indicatore,
+es conoscenza sul fatto che i clienti
+di un supermercato quando comprano a comprano spesso anche b e c,
+gli algoritmi di data mining fanno analisi statistica sugli
+scontrini e vedono che b e c sono spesso vicini a a,
+questo puo' portare a eventuali offerte programmate,
+spostamento fisico di prodotti.
+
+pg 32,
+e' necessario lasciare che l'info emerga dall'info grezza,
+analisi di trand, analisi esplorativa...
+
+
+processi di data mining !!
+ - tecniche di esplorazione automatica o scoperta
+ di dati presenti, sono tecniche (es tecnica di clustering)
+ che scoprono informazione finora nuova, che non era ipotizzata
+ nel dataware house,
+ es scoprire i clienti che sono simili e hanno maggiore
+ propensione all'acquisto di determinati prodotti,
+ profilare il cliente costruire classi per bersagliare
+ una particolare classe,
+ inizialmente vedo tanti punti che sono i clienti,
+ inizialmente non ho in mente se i clienti sono di 10 o 3 categorie
+ principali, e' l'algoritmo di clustering a scoprirlo
+ individuando nuvole di utenti che sono poi le classi,
+ profilazione di clienti,
+ tecniche di data mining per la profilazione di clienti tipicamente
+ sono il clustering,
+
+previsione e classificazione:
+la previsione puo' essere relativa alle vendite,
+l'algo osserva sulla base di dati storici di vendita e sulla base
+delle condizioni che gli si applicano in input fa delle
+previsioni sui prossimi 6 mesi, usando tecniche di regressione
+o reti neurali.
+Il contact center fa attivita' outbound, redemption
+significa rispondere positivamente a un'offerta,
+sulla base di una serie di esempi veri nel passato,
+l'algoritmo cerca di indovinare se il cliente aderira'
+o no alla campagna di vendita,
+sulla base del passato si tenta di capire se un cliente aderira',
+la classificazione suddivide i clienti in quelli che diranno si
+o che diranno no alla campagna, questo economizzera' il processo
+di contattamento dei clienti,
+previsione -> f:R->R
+
+algoritmi:
+alberi di decisione
+regole di associazione (usate per promozioni di acquisti combinati)
+
+gli algoritmi potrebbero essere razzisti
+
+CRM analytics,
+
+la raccomandazione riguarda molto i canali di contatto,
+i crm analitici
+
+
+--------------
+4 - 12 - 2021
+--------------
+Cosa e' importante sapere della business intelligence:
+definizione di business intelligence,
+insieme di conoscenze che possono essere trasformate in azione,
+i sistemi dir classici supportano, la BI estende
+la definizione, e' utile su tutti i piani della piramide
+di Anthony,
+qualunque processo puo' trarre conoscenza utile dal patrimonio aziendale,
+non si ferma solo a strategico e tattico,
+importante anche sapere che estensione e profondita' sono molto
+piu' alte di quelle dei classici sistemi direzionali,
+anche slide 13 e 14 sono importanti,
+le architetture non hanno niente di piu' di quello gia' detto,
+ricordiamoci l'architettura dei si tradizionali, direzionali,
+non e' da memorizzare.
+Non e' importante il ciclo virtuoso,
+ricordarsi che esistono insieme di tecniche piu' a basso valore che
+estraggono conoscenza dei dati che rappresenta lo stato attuale
+e lo stato passato (olap) e tecniche di predizione
+che fanno ipotesi sul futuro (modelli predittivi).
+
+Ricordare che si leganao fortemente alle architetture
+dei sistemi informativi tradizionali, sono le filiere
+della bi dove ci sono liv sorgente, data warehouse, data mart,
+
+-> prima variante: avere sopra data mart i cubi e fare interrogazioni
+query su quei cubi e fare operazioni slice, roll..
+a liv 4 si fanno interrogazioni sui cubi,
+una prima filiera che a liv 4 prevede interrogazione e navigazione
+sui cubi, navigazione in su (roll up), navigazione in giu' (drill down),
+
+-> poi la configurazione alternativa e', sopra di data mart, di fare report,
+report interattivi, ricordarsi le caratteristiche della reportistica avanzata,
+si parte da un template standard,
+l'utente puo' cambiare i filtri,
+il report e' una sintesi delle navigazioni del cubo,
+il report si focalizza su alcune particolari navigazioni del cubo,
+consente all'utente di filtrare le vendite, per es solo in spagna,
+e permette di disaggregare i dati di vendita per regione,
+oppure osservare le vendite su prodotti particolari,
+e' interattivo e segue un template particolare,
+puo' nascere come un report di fidelizzazione di clienti
+su una catena di supermercati.
+
+-> Ulteriore alternativa a liv 4, cruscotti grafici, piu' statici,
+con meno manopole di navigazione, sono  report che contengono
+una serie di indicatori che fotografano un settore
+e che l'utente apre e guarda cosi' come sono,
+servono per dare una fotografia, tastare il polso della situazione.
+
+Spesso i cruscotti contengono kpis che sono resi graficamente.
+
+-> La quarta possibilita' e' quella sopra delle fette di datamart,
+slice di datamart,
+cioe' utilizzare tecniche di mining che estraggono conoscenza
+non nota a priori,
+a differenza della reportistica il mining e' sofisticato,
+estrae della conoscenza non nota a priori,
+la reportistica presenta un report gia' strutturato,
+i singoli valori cambiano ma il modo di interpretare i dati
+e' precostituito,
+le tecniche di mining estraggono conoscenza completamente nuova,
+non nota a priori,
+spesso si vuole estrarre conoscenza nuova dai dati,
+per fare classificazioni, scoprire possibili segmentazioni
+dei dati, possibili associazioni non note.
+Le tecniche di data mining principali sono
+  - tecniche di esplorazione/discovery automatica
+  - con tecniche di clustering
+    che creano gruppi non noti a priori,
+    utili per segmentare il mercato
+
+  - tecniche di previsione: reti neurali,
+  - tecniche di regressione
+
+  - tecniche di classificazione di dati non noti,
+  -  tecniche di discovery
+
+
+Alcune funzioni rientrano nel crm analitico:
+es gestire le campagne di vendita (si puo' fare col mining),
+il mining suggerisce a quali clienti inviare determinate promozioni,
+si possono incorporare tecniche di mining all'interno delle funzionalita'
+dei crm analitici

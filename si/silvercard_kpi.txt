@@ -1,0 +1,24 @@
+SILVERCARD - KPI
+
+Sede principale con call center a Roma e agenzie sparse,
+le agenzie dipendono gerarchicamente da Roma.
+Il call center registra per ogni chiamata il tipo di operazione,
+l'esito, la durata (dati utili per gli indicatori).
+
+Viene registrato se il cliente rinuncia a parlare con l'operatore
+perche' si annoia (misura l'insuccesso).
+Anche se si rivolge direttamente ad una delle agenzie
+l'esito, la durata e l'operatore.
+
+La compagnia puo' ricevere reclami non anonimi.
+Ogni reclamo ha associato il cliente, il biglietto, il volo.
+Ogni transazione mantiene riferimenti all'operatore, il luogo,
+l'agenzia, il call center, la durata.
+
+Tutti i dati sulle risorse umane sono registrati, costo del personale,
+ore di lavoro, per ogni sede.
+
+Critical Success Factor ->
+ costi e efficienza del processo di vendita e prenotazione,
+ confronto call center vs agenzia (canali di vendita).
+ 

@@ -1,0 +1,388 @@
+-------------
+RIS-PACS-CIS
+-------------
+finishing patient data management system
+scoring systems: system permitted to assigne
+scores, classification of diseases,
+assigns a patient to a class,
+pdms keeps the scores assigned to the patient,
+specific for an organ or for a disease,
+es level of coma,
+
+TISS
+
+software module supporting operation activities,
+surgeons,..
+it's called operation management system,
+supports planning and documentation of surgery operations,
+it's a specialization of the enterprise function
+'execution of diagnostic and therapeutic procedures',
+it schedules the operations, assigns the time and the date
+to an operation, 
+assigns operation resources like the room, (operating room),
+sets an appointment for the surgery,
+assigns human resources (surgeons, anesthesiologist, staff),
+medical team,
+supports the collection of data that will occure during the surgery operation,
+it's connected to the medical documentation system and the cpoe (to enter
+the order) because when you enter the order for the surgery you
+need to specify date, time, team...
+these information are also recorder in the medical record of the patient
+(the medical documentation system adds those informations to the medical record),
+the oms also supports during the surgery,
+eg it documents informations like the difference between planned
+team and actual team,
+
+RIS and PACS
+sometimes seen as a single module, they're well integrated,
+sw and hw components that permit to performe diagnosis
+by imaging, Radiology Information System 
+(radiology is the first type of diagnosis by imaging),
+and Picture Archiving & Communications System.
+The purpose is to facilitate the patient care by enabling
+radiographers and radiologists in the work
+they have to perform and the report they
+have to write.
+Typically the patient is moved to the room using some kind of modality,
+eg XRay, magnetic resonance, computer tomography,
+the patient is taken to a room, a specific modality is used,
+some images of the patient organ are taken,
+then the images are visualized on a screen,
+the radiologist analyzes the images, and general informations
+like health care status, she makes a diagnosis of the patient,
+later on a report is written about this.
+Support of images procedures and report writing on the findings.
+The RISPACS is tipically integrated with the
+clinical information system, that includes a set of modules used for the
+patient care, eg CPOE, this permits clinicians to make orders, requiring a specific
+radiology investigation, view resulting images and related reports,
+the order goes from the cis/cpoe to the ris pacs and then the pacs sends an image and report back to the CIS,
+by means of the cpoe you can send the order,
+by means of the medical documentation system
+the doctor can analyze the images and reports,
+and add them to the medical documentation of the patient,
+the patiend record is in a database
+the images and reports are analyzed by the doctor
+at the ward using the medical documentation system,
+and later on the images and reports are stored
+into the patient record of the specific patient.
+By means of the cpoe the doctor that wants a magnetic resonance to be done on his patient
+can open the cpoe application, look for an
+available time slot for the magnetic resonance
+the reservation is possible because the cpoe
+is talking to the ris pacs, the ris is keeping
+all the available schedules and free slots
+and these slots for a specific modality or technician,
+later on the order can be formalized and can
+be sent to the ris, so this order is visualized
+on the terminal of the radiologist,
+the radiologists knows that it is required to perform
+a magnetic resonance on Annie's right leg,
+after performing the magnetic investigation
+the radiologist analyzes the images 
+using the pacs system, he sees the images
+on the screen, he analyzes also the other health informations
+on the patient,
+he writes a report that is later on sent back
+together with the images to the medical documentation system
+the doctor at the ward can see the images,
+he can store the images and report in the patient record.
+A good RIS-PACS system should enable also clinical
+departments to use it to perform imaging procedures
+and acquire images for their own use.
+The system can be also distributed,
+can be used by other clinical departments,
+it's not only used by the radiology department.
+Sometimes the imaging procedures are concerning
+portable devices, you don't move the patient to
+the radiology department but you take
+the device (typical for echocardiography,
+ultrasounds for obstetricians and gynecologists),
+they take this machine to the ward,
+they perform the investigation,
+they get the images and those should be
+managed by the ris-pacs system,
+so it should be a distributed system,
+vailable also on portable devices,
+if you move a portable device later on
+you need to communicate the images to the
+central database of the images.
+Ris-pacs are also used by the dentists,
+
+The usual classification is between 
+- information system for patient care
+ - patient management/administration system
+ - clinical information system (includes cpoe,...)
+ - systems for clinical support services
+  - laboratory information system
+  - pharmacy information system
+  - radiology informatio system
+   - pacs
+- managerial information system
+
+the radiology department or diagnosis by imaging department
+can be called both ways, they are typical support services,
+the radiology informatio system and the pacs provide data to the patient information
+database, specifically to the electronic medical record,
+the pacs deals with the images generated and collected during the investigation.
+
+Let's see the functions associated with ris and pacs.
+For clinicians the ris and pacs as a whole
+enables the clinicians to request order for services
+(different types of imaging examinations),
+view the images taken and view the interpretations (reports)
+made by radiologists,
+ris and pacs should be integrated with the cpoe,
+the cpoe for what concernes the request/order service
+and integrated with the medical documentation system for what concerns the view of images and reports.
+Radiologist and radiographer are working not at the ward
+but at the diagnosing by imaging department,
+the system facilitates the work of these people
+and also the work of other care providers such as cardiologists, obstetricians, gynecologists
+who use portable devices.
+What kind of support is offered to radiologists, radiographers?
+- Manage and perform the capture of images, storage and distribution,
+(sending to meidcal documentation system)
+- operate the machines that produce these images, ris not only allows to type that the machine is going
+to be used but can also send commands to the machine,
+the software is the remote controller of the
+command center of the machines,
+- permits to interact with the clinicians who requests the images,
+sending messages,
+- carry out clinical functions since the procedure involves
+the patient directly, permits to control the machine to change
+the positioning or permits drugs administration,
+eg drugs to increase the contrast of the images,
+ris controls the machines injecting the drug,
+
+Imaging workflow based on ris, pacs and cis:
+
+We have all the involved systems:
+- radiology information system
+- clinical information system
+- machine (xray/magnetic)
+- reporting application
+- PACS
+- viewing application (permits to display images)
+
+By means of the clinical information system
+the doctor working at the ward is submittig an order
+to perform diagnosis by taking medical images,
+eg the order requires magnetic resonance,
+the order is changing the schedule of the magnetic
+resonance team and machine, 
+by adding in the schedule this order.
+A task is created, the machine is allocated
+for performing the investigation on Annie,
+a technician is assigned to this task,
+the investigation is performed (images caught),
+later on the images associated with some metadata
+(data about the patient and appointment),
+the clinical information system allows to view
+the progress status, the completion status of the task,
+once the machine is taken, it is transfered to the picture
+archive communication system (pac), it receive the digital
+image from the machine, performs some indexing of the image,
+the image with metadata is stored, later on it 
+can be distributed.
+In parallel, after taking the image, 
+the doctor analyzing the image is using
+a reporting application to request, view
+the image, then it analyzes it, write and store 
+the report, releases it, so it can be analyzed
+by other doctors and then distributed.
+The report and images are going to the viewing application,
+the viewing application is called inside the clinical
+information system,
+the doctor asking for the imaging procedure can
+read the report and view any of them (images and report),
+if the viewing application is integrated with the clinical
+information system, the doctor is making all activities
+inside the clinical information system,
+using the same software application for all tasks 
+(perform order, check availability of machines and teams,
+view report, request images...),
+everything happens inside the same system (so the doctor
+hasn't to make many logins to different applications, 
+the gui is the same, no copy-paste from one application
+to another...)
+We are gonna see what are the typical functionalities
+of RIS,
+keep in mind that RIS and PACS are very interconnected,
+sometimes it's hard to say which functionalities are whose,
+RIS is more with alphanumerical data, 
+PACS is more with images,
+but sometimes some functionalities are implemented as part
+of the picture archiving and communications system.
+A warder can make an order for diagnosis for imaging,
+so it implies scheduling an appointment,
+the RIS offers features comparable with those of the
+outpatient management system, that is:
+- registering patients,
+- appointment scheduling,
+- organization of examinations and staff (workflow management),
+- comunicate patient data and examination parameters
+to the radiographers and radiologists,
+radiologists can change the examination parameters,
+- creation of radiology report,
+- documentation and coding of activities,
+each procedure is coded, performing a magnetic
+resonance to upper part of the leg has a different
+code than for lower part,
+- ris can also collect data to produce and visualize
+statistics,
+usage statistics of a personal, of machines,
+to get the actual amount of usage is important
+to know if the usage is ok or not.
+
+Let's see the interconnection with RIS and modalities
+(tecnology used for imaging),
+different tecnologies:
+- digital tecnologies
+- analog tecnologies
+
+The old style is analog tecnology,
+produces a film like old style camera,
+the impression on the film is made by xrays
+crossing the body of the patient,
+the image is created directly from the application,
+the image is not transformed into bits and then processed by algoritms,
+
+computer tomography, magnetic resonance are digital imaging,
+during the procedure there are sensors, collecting infos about
+the patient, there are sensors reading magnetic fields,
+later on this information is digitalized and algorithms
+process these info to create a 3d image,
+
+RIS offers features similar to outpatient management system, 
+the special feature of RIS is the close connection to the modalities,
+the RIS is interconnected with modalities,
+the RIS is the sw app used to manage a working list
+for each modality,
+a set of infos like name of the patient, date and time,
+machine assigned to this examination,
+the RIS is mantaining the working list for each modality
+and gets back confirmation on the completion of the radiological
+investigation.
+The software can be produced by the same producers
+of the modalities.
+Other features of RIS are:
+- order entry (the ris is supposed to be connected
+to cpoe, orders made in the cpoe need to be converted
+into orders for RIS,
+this interconnection occurs through exchange of hl-7 (standard) messages,
+- access to clinical information
+radiographers can access to clinical informations:
+eg presence of allergies, pregnancy, they can access directly from RIS,
+Ris sends a request to CIS and CIS answers to RIS.
+if the radiographer should give to the patient some drug to the patient
+in order to perform the imaging procedure, the radiographer will write 
+this info to the RIS, if RIS is well integrated with CIS, will send this info
+to the CIS and this event will be stored in the patient record,
+so the info won't be missed.
+- decision support: conflicting and redundant orders,
+the system can have a mechanism to detect repeated orders,
+the RIS can send a warning of redundancy about the same investigation
+from two doctors.
+If RIS and CPOE are well integrated, RIS can send the warning
+about redundancy directly to CPOE, so the doctor making the order
+immediately receives this information.
+
+Let's talk about PACS:
+- creation of work lists (can be performed by RIS as well)
+definitive assignment of cases to workers or resources,
+- image capture:
+the pacs system (a server with sw application and terminals)
+are communicating with the machine, receive digital data from
+the machine, machine -> sw application -> database,
+the images are stored in central memory, then compressed and
+transfered to database,
+- image storage on the database,
+assigning metadata,
+- image distribution (eg from db to clinical information system),
+- image retrieval (if img was stored for long term),
+- decompressing image: we are dealing with heavy images,
+typically PACS perform a lot of optimizations,
+they use fast and slow databases (for very soon retrievable
+images or long term storage),
+- tracking of status of imaging process
+
+RIS can manage the worklist,
+images are obtained from modalities,
+images are received by the pacs and
+the pacs is managing the storing in archives,
+pacs is responsible of making images available
+to the interpretation workstations (used by radiologists,
+to watch images and write reports),
+making available to enterprise distribution means
+making images available to other sw app like medical documentation system.
+There's also Study validation Pre-fetching,
+because sometimes the PACS is generating low quality
+images made available in few seconds,
+this stage evaluates the quality of the images,
+to have high quality you need hours,
+some low quality images are generated in few minutes,
+they are watched, radiologists check quality and decide
+if the patient can go or need to repeat the investigation.
+
+Interconnection between pacs and other tools:
+prefetching strategy to retrieve image data from slower storage devices,
+it's speculative way to retrieve images,
+concerning images supposed to be requested very soon
+put in cache,
+the images are already decompressed and stored in cache
+ready to be used.
+
+Conections between RIS+PACS and:
+- patient administration system,
+that manages the patient record,
+all investigation should be added to patient record
+can be added to the bill,
+- medical documentation system,
+- provider/physician order entry system (POE),
+- patient data management system
+the patient is submitted  to the diagnosis by imaging,
+patient is coming from Intensive Care Unit,
+results should be sent back to patient data management system.
+
+Typical screen shot from a PACS application component,
+presenting different slices of an organ,
+the radiologists can analyze different slices to have 3d visualization
+
+Let's close with PACS and RIS for a moment, moving to
+the Enterprise resource planning system,
+not related with patient care enterprise function.
+
+---------------------------------------------------------------------
+Reference model of the hospital:
+---------------------------------------------------------------------
+
+---------------------------------------------------------------------
+
+- Patient care
+ - patient admission
+ -`decision making, planning and organization of patient treatment
+ - order entry
+ - execution of diagnostic, therapeutic and nursing procedures
+ - coding of diagnoses and procedures
+ - patient discharge and transfer to other institutions
+- Supply management, scheduling and resource allocation
+ - supply and disposal management
+ - scheduling and resource allocation
+ - human resources management
+- Hospital administration
+ - patient administration
+ - archiving of patient information
+ - quality management
+ - controlling
+ - cost accounting
+ - financial accounting
+ - facility management
+ - information management
+- Research and education
+ - research management
+ - execution of clinical trials and experiments
+ - knowledge retrieval and literature management
+ - publishing and presentation
+ - education
+---------------------------------------------------------------------
