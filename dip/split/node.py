@@ -42,9 +42,14 @@ class Node:
     def average(self):
         return np.average(self.pixels)
 
-    def split(self):
+    def split(self, verbose=False):
         # evaluate variance
-        if self.variance() > self.threshold \
+        normalized_var = self.variance()/self.height*self.length
+        if verbose:
+            print('Area dimension: ', self.pixels.shape)
+            print('Normalized variance: ', normalized_var)
+            
+        if normalized_var > self.threshold \
            and self.height > self.min_length \
            and self.length > self.min_length:
            
