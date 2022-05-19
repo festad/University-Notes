@@ -62,4 +62,3 @@ class Node:
             # average of the pixels
             # color the area
             self.pixels[::] = self.average()
-            return

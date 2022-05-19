@@ -5,11 +5,11 @@ import sys
 
 from node import Node
 
-VERBOSE   = True
+VERBOSE            = True
 THRESHOLD_NORM_VAR = 100
 
-if len(sys.argv) != 2:
-    print('Usage: python split <image name>')
+if len(sys.argv) < 2:
+    print('Usage: python split <image name> [--write]')
     sys.exit()
 
 def split(img, threshold=10, min_length=8, verbose=False):
@@ -21,6 +21,11 @@ img = cv2.imread(sys.argv[1], 0) # 0 -> BLACK AND WHITE
 img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
 splitted = split(img.copy(), threshold=THRESHOLD_NORM_VAR, min_length=4, verbose=VERBOSE)
+
+if len(sys.argv) == 3:
+    if sys.argv[2] == '--write':
+        cv2.imwrite('img-org.png', img)
+        cv2.imwrite('img-spl.png',splitted)
 
 
 fig, axs = plt.subplots(1,2,sharey=True)
