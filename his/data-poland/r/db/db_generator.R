@@ -59,23 +59,23 @@ sex_tidying1316 <- function(tib) {
 
 nie9912 <- readxl::read_xls('niezgonem-1999_2012.xls')
 nie1316 <- readxl::read_xlsx('niezgonem-2013_2016.xlsx')
-nie1720 <- readxl::read_xlsx('niezgonem-2017_2020.xlsx')
+nie1721 <- readxl::read_xlsx('niezgonem-2017_2021.xlsx')
 
 nie9912 <- tidying(nie9912)
 nie1316 <- tidying1316(nie1316)
-nie1720 <- tidying1316(nie1720)
+nie1721 <- tidying1316(nie1721)
 
-nie <- nie9912 %>% add_row(nie1316) %>% add_row(nie1720)
+nie <- nie9912 %>% add_row(nie1316) %>% add_row(nie1721)
 
 zg9912 <- readxl::read_xls('zgonem-1999_2012.xls')
 zg1316 <- readxl::read_xlsx('zgonem-2013_2016.xlsx')
-zg1720 <- readxl::read_xlsx('zgonem-2017_2020.xlsx')
+zg1721 <- readxl::read_xlsx('zgonem-2017_2021.xlsx')
 
 zg9912 <- tidying(zg9912)
 zg1316 <- tidying1316(zg1316)
-zg1720 <- tidying1316(zg1720)
+zg1721 <- tidying1316(zg1721)
 
-zg <- zg9912 %>% add_row(zg1316) %>% add_row(zg1720)
+zg <- zg9912 %>% add_row(zg1316) %>% add_row(zg1721)
 
 # nie %>% write_csv("tidy_niezgonem-age-garnizon.csv")
 # zg %>% write_csv("tidy_zgonem-age-garnizon.csv")
@@ -87,23 +87,23 @@ dw <- nie %>% add_row(zg)
 
 sexnie9912 <- readxl::read_xls('sex-niezgonem-1999_2012.xls')
 sexnie1316 <- readxl::read_xlsx('sex-niezgonem-2013_2016.xlsx')
-sexnie1720 <- readxl::read_xlsx('sex-niezgonem-2017_2020.xlsx')
+sexnie1721 <- readxl::read_xlsx('sex-niezgonem-2017_2021.xlsx')
 
 sexnie9912 <- sex_tidying(sexnie9912)
 sexnie1316 <- sex_tidying1316(sexnie1316)
-sexnie1720 <- sex_tidying1316(sexnie1720)
+sexnie1721 <- sex_tidying1316(sexnie1721)
 
-sexnie <- sexnie9912 %>% add_row(sexnie1316) %>% add_row(sexnie1720)
+sexnie <- sexnie9912 %>% add_row(sexnie1316) %>% add_row(sexnie1721)
 
 sexzg9912 <- readxl::read_xls('sex-zgonem-1999_2012.xls')
 sexzg1316 <- readxl::read_xlsx('sex-zgonem-2013_2016.xlsx')
-sexzg1720 <- readxl::read_xlsx('sex-zgonem-2017_2020.xlsx')
+sexzg1721 <- readxl::read_xlsx('sex-zgonem-2017_2021.xlsx')
 
 sexzg9912 <- sex_tidying(sexzg9912)
 sexzg1316 <- sex_tidying1316(sexzg1316)
-sexzg1720 <- sex_tidying1316(sexzg1720)
+sexzg1721 <- sex_tidying1316(sexzg1721)
 
-sexzg <- sexzg9912 %>% add_row(sexzg1316) %>% add_row(sexzg1720)
+sexzg <- sexzg9912 %>% add_row(sexzg1316) %>% add_row(sexzg1721)
 
 sexnie %>% add_column(Result = "Attempted") -> nie
 sexzg %>% add_column(Result = "Fatal") -> zg
