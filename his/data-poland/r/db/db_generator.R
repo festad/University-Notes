@@ -23,6 +23,10 @@ tidying <- function(tib) {
   i1 <- with(tib, garnizon == "KWP Gorzów Wielk.")
   tib$garnizon[i1] <- "KWP Gorzów Wlkp."
   
+  tib <- tib %>% mutate(garnizon = gsub("KWP ", "", garnizon))
+  tib <- tib %>% mutate(garnizon = gsub("KSP ", "", garnizon))
+  
+  
   tib$year <- as.integer(tib$year)
   tib <- tib %>%gather(c(`0-6`:`85+`,undetermined),key='age', value='suicides' )
   return(tib)
@@ -59,6 +63,9 @@ sex_tidying <- function(tib) {
   i1 <- with(tib, garnizon == "KWP Gorzów Wielk.")
   tib$garnizon[i1] <- "KWP Gorzów Wlkp."
   
+  tib <- tib %>% mutate(garnizon = gsub("KWP ", "", garnizon))
+  tib <- tib %>% mutate(garnizon = gsub("KSP ", "", garnizon))
+
   tib$year <- as.integer(tib$year)
   tib <- tib %>% gather(`Male`, `Female`, key='sex', value='suicides' )
   return(tib)
@@ -73,9 +80,9 @@ sex_tidying1721 <- function(tib) {
 }
 
 
-nie9912 <- readxl::read_xls('niezgonem-1999_2012.xls')
-nie1316 <- readxl::read_xlsx('niezgonem-2013_2016.xlsx')
-nie1721 <- readxl::read_xlsx('niezgonem-2017_2021.xlsx')
+nie9912 <- readxl::read_xls('./excels/niezgonem-1999_2012.xls')
+nie1316 <- readxl::read_xlsx('./excels/niezgonem-2013_2016.xlsx')
+nie1721 <- readxl::read_xlsx('./excels/niezgonem-2017_2021.xlsx')
 
 nie9912 <- tidying(nie9912)
 nie1316 <- tidying1316(nie1316)
@@ -83,9 +90,9 @@ nie1721 <- tidying1721(nie1721)
 
 nie <- nie9912 %>% add_row(nie1316) %>% add_row(nie1721)
 
-zg9912 <- readxl::read_xls('zgonem-1999_2012.xls')
-zg1316 <- readxl::read_xlsx('zgonem-2013_2016.xlsx')
-zg1721 <- readxl::read_xlsx('zgonem-2017_2021.xlsx')
+zg9912 <- readxl::read_xls('./excels/zgonem-1999_2012.xls')
+zg1316 <- readxl::read_xlsx('./excels/zgonem-2013_2016.xlsx')
+zg1721 <- readxl::read_xlsx('./excels/zgonem-2017_2021.xlsx')
 
 zg9912 <- tidying(zg9912)
 zg1316 <- tidying1316(zg1316)
@@ -93,20 +100,17 @@ zg1721 <- tidying1721(zg1721)
 
 zg <- zg9912 %>% add_row(zg1316) %>% add_row(zg1721)
 
-# nie %>% write_csv("tidy_niezgonem-age-garnizon.csv")
-# zg %>% write_csv("tidy_zgonem-age-garnizon.csv")
-
 nie %>% add_column(outcome = "Attempted") -> nie
 zg %>% add_column(outcome = "Fatal") -> zg
 
 age <- nie %>% add_row(zg)
 
 age <- age %>% filter(garnizon != "Polska")
-age %>% write_csv("1999_2021_age.csv")
+age %>% write_csv("./csvs/1999_2021_age.csv")
 
-sexnie9912 <- readxl::read_xls('sex-niezgonem-1999_2012.xls')
-sexnie1316 <- readxl::read_xlsx('sex-niezgonem-2013_2016.xlsx')
-sexnie1721 <- readxl::read_xlsx('sex-niezgonem-2017_2021.xlsx')
+sexnie9912 <- readxl::read_xls('./excels/sex-niezgonem-1999_2012.xls')
+sexnie1316 <- readxl::read_xlsx('./excels/sex-niezgonem-2013_2016.xlsx')
+sexnie1721 <- readxl::read_xlsx('./excels/sex-niezgonem-2017_2021.xlsx')
 
 sexnie9912 <- sex_tidying(sexnie9912)
 sexnie1316 <- sex_tidying1316(sexnie1316)
@@ -114,9 +118,9 @@ sexnie1721 <- sex_tidying1721(sexnie1721)
 
 sexnie <- sexnie9912 %>% add_row(sexnie1316) %>% add_row(sexnie1721)
 
-sexzg9912 <- readxl::read_xls('sex-zgonem-1999_2012.xls')
-sexzg1316 <- readxl::read_xlsx('sex-zgonem-2013_2016.xlsx')
-sexzg1721 <- readxl::read_xlsx('sex-zgonem-2017_2021.xlsx')
+sexzg9912 <- readxl::read_xls('./excels/sex-zgonem-1999_2012.xls')
+sexzg1316 <- readxl::read_xlsx('./excels/sex-zgonem-2013_2016.xlsx')
+sexzg1721 <- readxl::read_xlsx('./excels/sex-zgonem-2017_2021.xlsx')
 
 sexzg9912 <- sex_tidying(sexzg9912)
 sexzg1316 <- sex_tidying1316(sexzg1316)
@@ -127,29 +131,29 @@ sexzg <- sexzg9912 %>% add_row(sexzg1316) %>% add_row(sexzg1721)
 sexnie %>% add_column(outcome = "Attempted") -> nie
 sexzg %>% add_column(outcome = "Fatal") -> zg
 
-sexwpol <- nie %>% add_row(zg)
-sex <- sexwpol %>% filter(garnizon != "Polska")
-sex %>% write_csv("1999_2021_sex.csv")
+sex_p_poland <- nie %>% add_row(zg)
+sex <- sex_p_poland %>% filter(garnizon != "Polska")
+sex %>% write_csv("./csvs/1999_2021_sex.csv")
 
-polska_sex <- sexwpol %>% 
+sex_poland <- sex_p_poland %>% 
   filter(garnizon == "Polska") %>%
   select(-(garnizon))
-# polska_sex %>% write_csv("1999_2021_sex_poland.csv")
+# sex_poland %>% write_csv("./csvs/1999_2021_sex_poland.csv")
 
 
-polska <- polska_sex %>%
+polska <- sex_poland %>%
   spread(key = sex, value = suicides) %>%
   mutate(`suicides` = Male + Female) %>%
   select(-(c(Male, Female)))
-polska %>% write_csv("1999_2021_poland.csv")
+polska %>% write_csv("./csvs/1999_2021_poland.csv")
 
-polska_sex_perc <- polska_sex %>%
+sex_perc_poland <- sex_poland %>%
   spread(key = sex, value = suicides) %>%
   mutate(`suicides total` = Male + Female) %>%
   gather(Male, Female, key = 'sex', value = 'suicides') %>%
   mutate(percentage = suicides / `suicides total`) %>%
   select(-(`suicides total`))
-polska_sex_perc %>% write_csv("1999_2021_sex_perc_poland.csv")
+sex_perc_poland %>% write_csv("./csvs/1999_2021_sex_perc_poland.csv")
 
 lud <- read_csv("ludnosc.csv")
 sex %>% 
@@ -157,16 +161,6 @@ sex %>%
   mutate(total = Male + Female) %>%
   left_join(lud) %>%
   mutate(percentage = total / population) %>%
-  select(-(c(Male, Female, population))) -> polska_perc
-polska_perc %>% write_csv("1999_2021_kwp_perc.csv")
+  select(-(c(Male, Female, population))) -> kwp_perc
+kwp_perc %>% write_csv("./csvs/1999_2021_kwp_perc.csv")
 
-
-# full_dw <- dw %>% left_join(sex)
-# 
-# lud <- read_csv("ludnosc.csv")
-# 
-# full_dw <- full_dw %>% left_join(lud)
-# 
-# full_dw %>% mutate(Percentage = Total / Population) -> full_dw
-# 
-# full_dw %>% write_csv("poland_suicides_full_database.csv")
