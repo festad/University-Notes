@@ -13,8 +13,8 @@ tidying <- function(tib) {
     setNames(gsub(" ", "", names(.))) %>%
     setNames(gsub("'", "", names(.)))
   tib <- tib %>% 
-      rename(year = Rok) %>% 
-      rename(garnizon = Garnizon)
+    rename(year = Rok) %>% 
+    rename(garnizon = Garnizon)
   
   # tib <- tib %>% filter(Garnizon == "KSP Warszawa" | Garnizon == "KWP Katowice" |
   #          Garnizon == "KWP Kraków" | Garnizon == "KWP Opole" |
@@ -133,23 +133,23 @@ sex %>% write_csv("1999_2021_sex.csv")
 
 polska_sex <- sexwpol %>% 
   filter(garnizon == "Polska") %>%
-  select(-(garnizon)) %>%
-  setNames(gsub("suicides","suicides in Poland",names(.)))
-polska_sex %>% write_csv("1999_2021_Poland_sex.csv")
+  select(-(garnizon))
+# polska_sex %>% write_csv("1999_2021_sex_poland.csv")
 
 
 polska <- polska_sex %>%
-  spread(key = sex, value = `suicides in Poland`) %>%
-  mutate(`suicides total` = Male + Female)
-polska %>% write_csv("1999_2021_Poland_tot.csv")
+  spread(key = sex, value = suicides) %>%
+  mutate(`suicides` = Male + Female) %>%
+  select(-(c(Male, Female)))
+polska %>% write_csv("1999_2021_poland.csv")
 
 polska_sex_perc <- polska_sex %>%
-  spread(key = sex, value = `suicides in Poland`) %>%
+  spread(key = sex, value = suicides) %>%
   mutate(`suicides total` = Male + Female) %>%
   gather(Male, Female, key = 'sex', value = 'suicides') %>%
   mutate(percentage = suicides / `suicides total`) %>%
   select(-(`suicides total`))
-polska_sex_perc %>% write_csv("1999_2021_Poland_sex_perc.csv")
+polska_sex_perc %>% write_csv("1999_2021_sex_perc_poland.csv")
 
 lud <- read_csv("ludnosc.csv")
 sex %>% 
@@ -158,8 +158,8 @@ sex %>%
   left_join(lud) %>%
   mutate(percentage = total / population) %>%
   select(-(c(Male, Female, population))) -> polska_perc
-polska_perc %>% write_csv("1999_2021_Poland_perc.csv")
-  
+polska_perc %>% write_csv("1999_2021_kwp_perc.csv")
+
 
 # full_dw <- dw %>% left_join(sex)
 # 
