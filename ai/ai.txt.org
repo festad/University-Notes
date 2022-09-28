@@ -1,0 +1,67 @@
+#+title: Intelligenza Artificiale
+
+2022-09-26
+
+Problema a stati multipli
+
+Nulla osservabilita'
+osservabilita' parziale (robot aspirapolvere), 8
+possibili stati.
+
+Un problema di ricerca a stati multipli ha un numero di belief
+esponenzialmente piu' grande del numero degli stati, e'
+l'insieme delle parti, 2^(8) -1 possibili stati.
+
+Dato un diagramma degli stati, questi stati sono raggiungibili? (e'
+una possibile domanda da esame).
+
+Formalizzare un problema:
+bisogna scegliere gli stati, formalizzare le azioni.
+Esempio:
+Problema dei missionari e cannibali:
+- stati,
+- azioni:
+  - precondizioni se ci sono,
+  - effetti,
+- stato iniziale del problema,
+- stato goal (insieme di stati goal,
+  in questo caso lo stato goal e' che i
+  missionari e cannibali sono tutti dall'altra
+  parte del fiume).
+- costo della soluzione trovata.
+
+
+* Algoritmo generico di ricerca
+
+Tutti gli esempi li vedremo con uno stato
+iniziale,
+L e' la lista iniziale degli stati,
+se L e' la foglia diremo che non
+esiste soluzione al problema.
+Se L non e' vuota c'e' almeno
+un nodo sulla frontiera, si sceglie
+un nodo foglia (potrebbe anche essere random,
+lo scegliamo dopo), dopodiche' controlliamo
+se e' foglia e soddisfa il gol test,
+se lo soddisfa allora riscriviamo n e
+il cammino da nodo ad n,
+perche' restituiamo n? perche' a volte
+lo stato gol non e' noto (es provlema
+delle n regine),
+se il gol test non si applica viene eseguita
+l'istruzione successiva (che non viene eseguita
+se il gol test non ha successo),
+tiriamo via n da L (lo abbiamo appena visitato)
+e gli aggiungiamo i figli di n, n non e'
+piu' una frontiera ma ci aggiungiamo i suoi figli,
+come? quali? per il momento tutti, poi vediamo.
+Ls strategia di ricerca determina come si costruisce
+l'albero di ricerca, ci sono quelle
+cieche o non informate che scelgono il nodo
+dalla frontiera solo in base alla posizione nell'albero,
+quelle euristiche o informate scelgono il nodo promettente
+dalla frontiera usando informazioni esterne che c'entrano
+parzialmente con la posizione nell'albero.
+Un esempio di euristica e' il numero
+di caselle fuori posto nel problema del piazzamento
+dei numeri nel sudoku.
