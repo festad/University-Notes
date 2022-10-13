@@ -475,3 +475,7 @@ un CSP.
 Un valore viene assegnato solo se non e' in conflitto
 con gli altri a differenza di prima,
 il gol test si applica in modo incrementale.
+
+Per ogni valore x in X deve esistere un valore y nel
+dominio della variabile y,
+se non e' vero x viene tolto dal dominio di X.
