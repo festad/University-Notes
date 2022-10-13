@@ -1,0 +1,136 @@
+#+TITLE: Go-kart race information system
+#+AUTHOR: 719394
+
+#+latex_header: \usepackage[utf8]{inputenc}
+#+latex_header: \usepackage[italian]{babel}
+
+#+latex_header: \usepackage{listings}
+
+#+latex_header: \usepackage{tikz}
+#+latex_header: \usetikzlibrary{arrows.meta}
+
+* Go-kart race
+
+Go-kart race è una compagnia che pubblicizza e organizza gare di go-kart su diverse piste
+nel territorio bresciano. L'applicazione web presenta agli utenti un catalogo
+delle diverse piste (indoor, outdoor, in resina, in asfalto...) e dei go-kart disponibili (Sodi, ...)
+nei kartodromi che le gestiscono. I piloti potranno prenotare e noleggiare i go-kart nei tempi
+dedicati oppure partecipare a eventi organizzati dai kartodromi. Anche degli organizzatori
+esterni potranno invitare i piloti a eventi privati (tornei con qualifiche e finali, endurance,...).
+
+* Raccolta dei requisiti
+** Utenti
+L'applicazione si rivolge a tre categorie di utenti:
+\begin{itemize}
+    \item utenti esterni: visitatori oppure piloti registrati,
+    \item utenti interni: amministratori di un particolare kartodromo,
+    \item organizzatori: noleggiano un kartodromo per organizzare
+    eventi privati.
+\end{itemize}
+
+*** Utenti esterni
+I visitatori vedono:
+\begin{itemize}
+    \item gli orari di disponibilità dei kartodromi per noleggiare i go-kart,
+    \item gli eventi pubblici organizzati dagli amministratori in un determinato kartodromo,
+    \item informazioni sui modelli di go kart disponibili all'interno di ogni kartodromo,
+    \item informazioni sulla pista come la lunghezza, il materiale (asfalto, resina), 
+    se all'aperto o al chiuso,
+    \item la graduatoria della pista, globale oppure suddivisa per adulti, bambini,
+    uomini, donne, settimanale, mensile, annuale e mostra il miglior tempo per ogni
+    pilota e la data in cui è stato effettuato.
+\end{itemize}
+Quando un visitatore si presenta per la prima volta in un kartodromo, qualora non avesse
+usufruito del servizio di registrazione disponibile nell'applicazione, viene registrato e tesserato 
+dagli amministratori del kartodromo prima di poter correre e diventare pilota.
+Ogni utente registrato (pilota), oltre a vedere tutto ciò che vede il visitatore, ha accesso alla sua
+pagina personale dalla quale può:
+\begin{itemize}
+    \item percorrere lo storico delle sue corse nei diversi kartodromi,
+    \item per ogni corsa nello storico:
+    \begin{itemize}
+        \item il tempo per ogni suo giro di pista, in evidenza quello migliore,
+        \item solo il tempo migliore di ogni altro pilota che ha partecipato
+        a quella corsa,
+    \end{itemize}
+    \item prenotare la pista in una finestra temporale disponibile.
+\end{itemize}
+L'utente registrato può anche vedere il profilo di altri utenti ma ha accesso a meno
+informazioni, in particolare:
+\begin{itemize}
+    \item può percorrere lo storico delle corse di un altro utente ma vedrà solo
+    il tempo migliore per ogni corsa, in quale kartodromo si è tenuta e la data, non potrà
+    vedere il tempo per ogni giro di pista o gli altri piloti che hanno corso
+    insieme all'utente visitato.
+\end{itemize}
+
+*** Utenti interni
+Gli utenti interni sono gli amministratori, ogni amministratore è dedicato a un particolare
+kartodromo e un kartodromo può avere più amministratori.
+Gli amministratori possono:
+\begin{itemize}
+    \item gestire la tabella degli orari,
+    \item accettare o rifiutare le prenotazioni degli utenti,
+    aggiornando di conseguenza le finestre temporali,
+    \item accettare o rifiutare le proposte di eventi da parte degli
+    organizzatori esterni,
+    \item accedere ai profili dei piloti e visualizzare i dati sulle corse,
+    se necessario anche eliminare le corse dichiarate \textit{nulle}.
+\end{itemize}
+
+
+** Gerarchia degli utenti
+
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[scale=3,every node/.style={scale=1}]
+        \tikzstyle{bktext}=[rectangle]
+        
+        % \draw[-] (0.5,0) rectangle (2.5,1);
+        % \node[bktext,scale=1] (key) at (1.5,0.85) {Database};
+
+        \node[scale=0.05] (pic-ut) at (1.5,3) {
+            \includegraphics[]{user.jpg}
+        };
+        \node[bktext,scale=1] (ut) at (1.5,2.75) {Utente Go-kart race};
+        
+        % \draw[-{Triangle[open]}] (1,0) -- (upper_user);
+        
+        \node[scale=0.05] (pic_ut_est) at (0,2) {
+            \includegraphics[]{user.jpg}
+        };
+        \node[bktext,scale=1] (ut_est) at (0,1.75) {Utente esterno};
+        
+        \node[scale=0.05] (pic_ut_int_reg) at (1.5,2) {
+            \includegraphics[]{user.jpg}
+        };
+        \node[bktext,scale=1,align=left] (ut_int_reg) at (1.5,1.65) {Utente interno registrato\\(Amministratore)};
+        
+        \node[scale=0.05] (pic_org_reg) at (3,2) {
+            \includegraphics[]{user.jpg}
+        };
+        \node[bktext,scale=1] (org_reg) at (3,1.75) {Organizzatore registrato};       
+        
+        \draw[-{Triangle[open]}] (pic_ut_est) -- (ut);
+        \draw[-{Triangle[open]}] (pic_ut_int_reg) -- (ut);
+        \draw[-{Triangle[open]}] (pic_org_reg) -- (ut);
+        
+        \node[scale=0.05] (pic_vis) at (-0.75,1) {
+            \includegraphics[]{user.jpg}
+        };
+        \node[bktext,scale=1,align=left] (vis) at (-0.75,0.65) {Visitatore \\ (non registrato)}; 
+        
+        \node[scale=0.05] (pic_pil) at (0.75,1) {
+            \includegraphics[]{user.jpg}
+        };
+        \node[bktext,scale=1,align=left] (pil) at (0.75,0.65) {Pilota \\ (registrato)}; 
+        
+        \draw[-{Triangle[open]}] (pic_vis) -- (ut_est);
+        \draw[-{Triangle[open]}] (pic_pil) -- (ut_est);
+        
+        % \draw[->,>=latex] (1.5,2) to (1.5,1);
+    \end{tikzpicture}
+    \caption{Gerarchia degli utenti.}
+    \label{fig:wish1}
+\end{figure}
+
