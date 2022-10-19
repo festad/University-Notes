@@ -1,3 +1,4 @@
+
 #+title: Intelligenza Artificiale
 
 2022-09-26
@@ -65,3 +66,416 @@ parzialmente con la posizione nell'albero.
 Un esempio di euristica e' il numero
 di caselle fuori posto nel problema del piazzamento
 dei numeri nel sudoku.
+
+* Tecniche euristiche
+
+2022-10-04
+Best-first search
+
+h*(n) = reale distanza di n dal gol piu' vicino (ci potrebbero
+essere piu' stati che garantiscono il gol),
+quando h(n) e' ammissibile l'algoritmo si chiama A*,
+A per ammissibile, * indica che trova sempre la soluzione ottima.
+
+
+Confronto tra euristiche:
+ci sono due metodi per confrontare le euristiche a coppie:
+il confronto teorico e il confronto sperimentale o empirico.
+
+Confronto teorico: e' piu' difficile, richiede matematica pesante,
+si deve dimostrare che per ogni stato l'euristica di un nodo
+e' minore o uguale dell'euristica dell'altro, a patto
+che entrambe le euristiche siano ammissibili.
+Se h1(n)<=h2(n) per ogni n allora h2 e' migliore,
+ma dipende dal problema e dalle euristiche.
+
+Metodo sperimentale: molto utilizzato.
+Bisogna scrivere un'equazione,
+prendiamo tanti problemi (configurazione
+iniziale random e finale fissa), risolvo tanti problemi
+usando un'euristica e tanti usando un'altra,
+quando risolvo un problema posso o considerare il cpu time
+(ma non e' furbo) oppure posso contare il numero di nodi visitati,
+chiamiamo N il numero di nodi generati da A* in un run (anche nodi
+generati si puo' dire invece che visitati), poi si tiene traccia
+durante la soluzione della profondita' dove si trova il nodo gol,
+equazione: ...
+
+Confronto tra l'euristica di manhattan,
+confronto delle euristiche con il metodo sperimentale con la
+costruzione dell'albero fittizio per vedere b*.
+
+Nuovo algoritmo:
+
+Iterative deepening
+
+Una possibilita', simile a quella della ricerca cieca non informata
+in profondita, ripetiamo una ricerca in A* dando un bound sulla
+lunghezza della soluzione che stiamo cercando,
+iterative deepening A*,
+diamo un limite alla lunghezza del cammino che viene
+incrementato iterativamente.
+Dobbiamo capire il taglio,
+potrei pero' ripetere piu' volte la stessa cosa,
+scegliamo come cut g(n), perche' gli archi
+non hanno costo unitario ma costo definito da g,
+
+Con l'incremento di uno, se ripeto la ricerca e' garantito
+che visito almeno un nodo in piu'.
+
+Seminario: A* con tecniche ulteriori.
+come lavorare sulla lista L, usando qualcosa in piu' della f
+allo scopo di risparmiare memoria.
+
+Parliamo di un'altra classe di tecniche.
+
+** Tecniche di ricerca locale
+
+hill climbing, funzione da massimizzare,
+anche se noi h la minimizzavamo prima,
+no problem, mettiamo il meno davanti e manteniamo
+la regola di massimizzare invece che minimizzare,
+l'algoritmo si chiama discesa del gradiente.
+
+Non costruiamo piu' l'albero di ricerca,
+invece di inserire i figli nella lista L si
+sceglie un figlio (se l'euristica e' furba
+sceglie la mossa giusta da fare, senno' sceglie
+quello sbagliato),
+scegliamo il migliore,
+ovvero quello con h piu' basso (ho meno
+lavoro da fare),
+l'hill climbing pero' era stato formulato
+come problema di massimizzazione,
+sceglieva h maggiore,
+si puo' pero' riformulare in maniera
+duale l'euristica,
+in genere si usa h da minimizzare in AI,
+la distanza di Manhattan e' difficile da riformulare
+una volta scelto il figlio si cancella il padre e tutti gli altri figli.
+si fa una scelta vincolante che non permette di tornare indietro,
+
+Tecniche dell'hill climbing + euristiche
+
+*** Mosse laterali
+Se non riesci a uscire dalla pianura migliorando ricmoincia da capo.
+
+*** Stocastico a: con probabilita' per stati successori
+Il prossimo passo non e' deterministico e univoco
+ma e' un range di possibili operazioni
+scelte con una probabilita',
+quando si arriva al momento non deterministico si tira
+una moneta sbilanciata, piu' esecuzioni possono essere
+diverse a parita' di input.
+Lo faccio perche' l'euristica ogni tanto sbaglia,
+per compensare non la seguo sempre ma ogni tanto
+faccio qualcosa di diverso da quello che mi dice.
+ 
+*** Stocastico b con prima scelta migliorativa random
+
+
+*** stocastico c con riavvii casuali _ mosse laterali
+
+
+*** Simulated annealing
+
+
+*** Ricerca locale Local Beam
+
+Si puo' inserire la randomizzazione anche qui,
+si scelgono anche
+dei K che peggiorino
+
+*** Tabu Search
+
+Senza run paralleli, si introduce un po' di memoria
+a Climb Hill, si memorizzano gli ultimi K stati
+visitati o le ultime K azioni,
+puo' evitarci dei loop,
+sono tecniche che si prestano a spazi
+di ricerca molto grandi, non voglio
+avere un algoritmo che visita pochi stati,
+devo avere un algoritmo che visita tanto
+perche' lo spazio e' immenso e allo
+stesso tempo abbia memoria sufficiente a
+evitare dei loop, es K 10, 20, 100..
+dipende dal problema specifico.
+Se k passi sono sufficienti a uscire
+dal minimo locale allora si puo' raggiungere il
+minimo assoluto, senno' si rimane ancora
+intrappolati nel minimo locale.
+
+*** Enforced Hill-Climbing
+Per ogni stato visitato usa una ricerca
+in ampiezza per trovare un discendente
+di S che abbia valore euristico
+migliore di S.
+Si ferma sul primo che trova migliorativo.
+
+Trovato il nodo che migliora si butta via il resto,
+si riparte dallo stato corrente, si controllano i successori.
+Queste tecnica la ritroveremo perche' e' stata usata in un
+sistema di pianificazione automatico con un'euristica macchina,
+H si puo' calcolare automaticamente senza conoscere
+il dominio del problema.
+
+Se S e' un minimo locale molto profondo
+serve una ricerca in ampiezza molto profonda,
+il problema della ricerca locale e' legato
+a come e' fatta la funzione euristica rispetto
+agli stati del problema.
+
+Se volessimo minimizzare la funzione
+e mi trovassi in un minimo locale
+i successori sarebbero peggiorativi,
+se voglio uscire dal minimo locale
+pero' devo scrivere un albero abbastanza
+profondo, tanto quanto sono le azioni
+necessarie a raggiungere un successore
+migliorativo,
+servira' una profondita' dell'albero elevata,
+questa tecnica puo' non funzionare quando h
+ha minimi locali profondi, e la memoria
+si esaurirebbe nel migliore dei casi.
+
+*** Algoritmi genetici
+Con risultati misti, a volte funziona
+e a volte e' disastrosa, richiama l'evoluzione
+della popolazione di generazione in generazione,
+nel processo evolutivo c'e' un miglioramento della specie.
+
+Gli algoritmi genetici richiedono che uno stato
+sia rappresentato con una stringa di numeri (elementi,
+vettore),
+nel problema delle 8 regine potrebbe essere
+[riga della regina in colonna 1, riga della regina in colonna 2, ...].
+Devo partire da un insieme di stati che rappresentano la popolazione,
+faccio un processo evolutivo nel tentativo di trovare
+un individuo che soddisfa il problema,
+es l'assenza di attacchi tra regine.
+
+Posso disporre le regine casualmente,
+il problema del rompicapo dell-8 uguale, potrei iniziare con
+posizioni casuali.
+
+Determinata la posizione iniziale si fa una valutazione
+euristica degli individui della popolazione,
+negli algoritmi genetici l'euristica si chiama
+funzione di fitness,
+a questo punto selezioniamo dalla popolazione individui da accoppiare,
+si scelgono sulla base della funzione euristica e in maniera stocastica,
+chi ha una funzione euristica migliore deve avere piu' probabilita' di
+essere scelto,
+come si genera lo stato successore a partire da due stati?
+Si mescolano le caratteristiche,
+ci possono essere varie strategie, per es prendere un po' di piu' da chi
+ha la funzione euristica piu' alta.
+
+*** Algoritmo con ricerca online
+
+Non ha senso pensare a tutta la soluzione,
+potrebbe succedere che non ho tempo per pensare alla soluzione,
+devo fare qualcosa in un secondo,
+puo' essere necessaria la ricerca online
+perche' il mondo non e' statico,
+ho conoscenza parziale dell'ambiente e anche
+delle mie azioni,
+non posso costruire una soluzione che funzioni
+sempre allo stesso modo,
+la prossima azione da fare viene prima
+calcolata e poi eseguita,
+dopodiche' la gente deve osservare lo stato:
+ci sono due casi:
+- il mondo e' totalmente accessibile,
+  l'agente sa com'e' l'ambiente dopo che
+  ha effettuato l'azione,
+- il mondo e' parzialmente accessibile
+
+L'azione puo' avere costi diversi a seconda
+dello stato che ha generato,
+ma non sappiamo all'inizio quali sono gli effetti,
+delle azioni,
+le precondizioni delle azioni le conosciamo
+ma scopriremo gli effetti delle azioni solo
+dopo averle eseguite,
+inoltre la funzione gol test decide se uno stato
+e' gol o no.
+
+Anche gli stati successori si conoscono solo
+dopo aver eseguito tutte le azioni applicabili
+nello stato, c'e' dell'apprendimento,
+scopriro' come e' fatto il diagramma degli stati,
+non lo so a priori.
+Pero' ho la totale osservabilita', imparero' gli
+effetti dell'azione, so sempre dove sono andato
+a finire dopo aver compiuto l'azione.
+Dopo aver eseguito l'azione imparo il suo costo e
+il suo effetto.
+
+La ricerca in ampiezza non puo' essere resa online
+La ricerca in profondita' puo' essere
+resa online perche' la ricerca avviene di pari
+passo con la valutazione,
+posso spostarmi in uno stato e man mano che
+scendo eseguo anche l'azione che mi fa scendere,
+l'unico problema e' quando
+arrivo in fondo, ovvero trovo un vicolo cieco,
+quindi quando arrivo in fondo?
+Devo aver inserito una regola, l'azione
+che fa tornare indietro,
+l'azione di reverse che riporta al padre,
+una volta tornato al padre posso chiedermi
+se ha altri figli,
+
+2022-10-11
+
+Algoritmi di ricerca online,
+concetto di backtracking,
+vuol dire tornare indietro in un punto della ricerca,
+quando siamo arrivati a un nodo senza successori si fa
+backtracking,
+oppure quando uno stato e' nella closed list
+e si evita di rivisitarlo,
+
+** Ricerca in profondita' online
+
+result e' inizialmente vuoto e rappresenta
+gli effetti delle azioni,
+inizialmente l'algoritmo non sa nulla,
+
+unexplored e' una tabella
+che lista per ogni stato quali sono le
+azioni che non si sono ancora provate
+ad applicare,
+unbacktracked: tiene traccia di tutti
+i possibili punti di ritorno della ricerca,
+
+ad ogni run abbiamo mmeoria dell'ultimo stato (precedente),
+l'ultima azione eseguita (+ le tre variabili globali,
+result, unexplored e unbacktracked).
+
+Pseudocodice:
+le azioni disponibili in uno stato sono statiche,
+si sanno sin dall'inizio e non cambiano,
+se s=0 allora s==s',
+aggiungo s alla lista degli unbacktracked quando
+da s mi sposto a s',
+se e' la prima volta che entro in s' ho la lista
+di tutte le azioni da eseugire,
+se invece ci ero gia' passato
+la lista unexplored[] potrebbe non essere
+vuota perche' ho gia' provato qualcosa,
+quindi prendo un'azione (la prima) disponibile
+in unbacktracked (la prima perche' facciamo ricerca in
+profondita') e aggiorno lo stato vecchio che non sara'
+piu' s ma s', lo stato corrente in cui sono,
+return a fa eseguire a,
+nel caso in cui non abbiamo piu' azioni da esplorare
+vediamo se c'e' un punto indietro che abbia una strada
+aperta (potrebbe anche non esserci, per es. se il problema non
+ha soluzione), se non c'e' ritorno fallimento,
+
+es pg 69
+terza iterazione
+S = B
+S; = C
+unexp[C] = (03)
+unback[C] = (B)
+Q = 03
+unexp[C] = ()
+
+S' NON e' un nuovo stato
+
+S = C
+S'= A
+non tocco unexplored
+unexplored[A] e' vuoto
+unback[A] e' vuoto?
+unbac[A] = C
+
+e' un algoritmo corretto e completo,
+e' un algoritmo che sa fermarsi e riconoscere
+che non c'e' soluzione pur essendo
+a parziale conoscenza,
+ma con l'assunzione che abbia totale osservabilita',
+inoltre ha una complessita' limitata, infatti
+ogni arco viene visitato al piu' due volte,
+il numero di chiamate resta polinomiale,
+le azioni di reverse sono necessarie,
+quindi gli archi devono essere bidirezinoali,
+ci sono anche altri algoritmi online senza
+questa assunziuone ma potrebbero non trovare la soluzione.
+
+actions[] contiene solo le azioni normali,
+non quelle di reverse o backtracking
+
+
+** Random walk
+
+ricerca locale online,
+
+in ciascun nodo ho una possibilita' per progredire
+e due per regredire,
+da questo diagramma si evince che se mi muovo
+in modo casuale ho una doppia probabilita'
+di peggiorare rispetto a quella di migliorare,
+
+
+pg. 73,
+Conosciamo h(s) della funzione euristica,
+conosciamo i valori euristici per ogni stato,
+inizialmente siamo a meta' della catena bidirezionale,
+
+** LRTA*-Agent
+
+Ripetendo l'algoritmo tante volte si riesce
+a trovare la soluzione ottima ma non la prima
+volta, la funzione euristica h viene
+aggiornata ogni volta,
+
+
+* Constraint Satisfaction Problems
+
+** Map-coloring
+
+Gli stati che soddisfano il gol test si chiamano soluzioni,
+non siamo interessati ai passi per raggiungere la
+soluzione ma a trovare una soluzione,
+vogliamo trovare uno stato che soddisfi il gol test.
+
+Il csp, nel caso di vincoli binari, puo' essere
+modellizzato con un grafo.
+La Tazmania non ha vincoli, non e' collegata a niente,
+la semantica degli archi puo' significare diverse
+cose a seconda del problema,
+qui significano un vincolo della diversita' dei colori,
+
+ad occhio si vede (slide 6) che il grafo
+non e' connesso, posso decomporre il problema
+in sottoproblemi uno diverso dall'altro,
+riducendo la complessita' del problema originale.
+
+Nel sudoku ci sono 9^{81} stati possibili,
+i vincoli sono quelli del problema:
+
+i vincoli binari sono preferiti.
+Per ogni riga: $\frac{9^2-9}{2}=36$ vincoli,
+il numero totale di vincoli e' (36*9*3),
+il grafo e' sparso perche' il numero degli archi sarebbe
+$\frac{81^{2}-81}{2}=3240$, molti di piu'.
+
+Nel problema delle 8 regine
+ci sono 8^8 possibili configurazioni,
+i vincoli sono $\frac{8^2-8}{2}=28$ e tutti uguali,
+anche il problema delle regine e' formalizzato come
+un CSP.
+
+** Backtracking search
+
+Un valore viene assegnato solo se non e' in conflitto
+con gli altri a differenza di prima,
+il gol test si applica in modo incrementale.
+
+Per ogni valore x in X deve esistere un valore y nel
+dominio della variabile y,
+se non e' vero x viene tolto dal dominio di X.
