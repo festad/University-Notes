@@ -479,3 +479,225 @@ il gol test si applica in modo incrementale.
 Per ogni valore x in X deve esistere un valore y nel
 dominio della variabile y,
 se non e' vero x viene tolto dal dominio di X.
+
+
+** Arc consistency
+
+20221018
+
+
+n -> numero di variabili
+d -> cardinalita' del numero delle variabili
+
+In input c'e' il csp, ogni variabile ha il suo dominio,
+inizialmente mettiamo tutti gli archi del csp,
+nel grafo c'e' un arco per ogni coppia di variabili,
+gli archi sono bidirezionali,
+se c'e' un vincolo di diversita' tra x e y
+dovremo mettere (x,y) e (y,x) nella coda,
+la coda viene processata finche' diventa vuota,
+poi prendo il primo elemento e forzo la consistenza
+tra le due variabili selezionate,
+forzare la consistenza si fa con la funzione RM-INCONSISTENT-VALUES(X_i, X_j),
+poi faccio il controllo della proprieta' di consistenza,
+se non c'e' vincolo tra la coppia allora il check e'
+automaticamente soddisfatto,
+se ho modificato il dominio di x_i potrebbe esserci
+un'altra variabile x_j per cui non vale il vincolo
+di consistenza,
+devo inserire tutte le coppie per fare nuovamente il check.
+
+Esempio:
+x_i -> x_j
+
+nel fare il controllo modifico il dominio di x_i,
+quindi prendo tutte le x_k nel vicinato di x_i,
+[x_k1, x_k2, x_k3..] che hanno un vincolo con x_i,
+potrei anche metterle tutte ma sprecherei risorse,
+metto solo quelle nel neighborood,
+Neighbor[x_i],
+si inseriscono tutte nella coda perche'
+ora che x_i e' cambiato il controllo fatto
+prima potrebbe non essere piu' valido,
+prima dicevamo che in x_i c'era almeno un
+valore nel dominio che era != da x_j,
+es x_i = {3,9},
+x_k1 = {3,7},
+se tolgo il 9 x_k1 e x_i non soddisfano piu'
+il vincolo di diversita'.
+
+L'algoritmo termina?
+Tolgo ma aggiungo anche elementi nella coda, magari
+non si svuota mai...
+in realta' si svuota perche' le coppie sono finite
+e la stessa coppia puo' entrare nella coda un numero
+finito di volte,
+al massimo tante quante posso cambiare il dominio
+della variabile (che ogni volta che cambia puo'
+diventare piu' piccolo ma mai piu' grande),
+le coppie del vicinato rientrano nella queue
+un numero massimo pari alla cardinalita' dei domini.
+
+L'algoritmo termina perche' una coppia entra in queue
+al massimo d volte (d=max numero di elementi in una variabile),
+
+Costo: O(n^2d^3),
+
+all'interno del while eseguiamo un d^2,
+dobbiamo contare le coppie dei nodi che entrano
+nella queue nel caso peggiore,
+inizialmente le coppie sono n^2-n, O(n^2),
+per ogni ciclo devo eseguire un algoritmo che costa
+d^2,
+O(n^2)*O(d^2),
+la stessa coppia puo' rientrare nella queue al massimo
+d volte,
+quindi n^2*d*d^2,
+
+si pou' fare pruning dei valori,
+e' una forma di inferenza potente nell'algoritmo di
+backtracking.
+Nel fare l'arc consistency i valori possono essere
+eliminati.
+
+** Backtracking with inference
+
+Viene chiamato il backtrack (ricorsivo) e controlliamo
+alla fine della ricorsione se l'assegnamento e' completo,
+il check di consistenza dei vincoli e' fatto man mano
+che assegno valori alle variabili,
+prendo una variabile (the most constraining variable)
+e provo tutti i possibili valori, correntemente nel dominio,
+se il valore e' consistente con l'assegnamneto allora
+incremento l'assegnamento col nuovo assegnamento a var,
+dopodiche' applico l'arc consistency,
+la applico al csp modificato,
+alcune variabili hanno valore fisso,
+il csp e' dinamico,
+altre variabili potrebbero avere
+un dominio ristretto,
+se non c'e' fallimento aggiungo alle inferenze
+che ho fatto faccio un assegnamento nullo,
+dopodiche' faccio backtracking sulle variabili
+che rimangono da assegnare,
+es. esercizio dei sudoku,
+abbiamo valori settati inizialmente,
+
+3-consistenza = path-consistenza,
+eliminare le coppie che non soddisfano la
+proprieta', per rendere il vincolo piu'
+restrittivo,
+
+il problema alla lavagna e' arc consistente
+ma non path consistente (no alla coppia 2,2, perche'
+2<=2<2 non e' vero.
+
+La ricerca locale per i CSP
+non e' completa, non puo' accorgersi
+di aver considerato tutto e di poter
+terminare la ricerca,
+non si ha la garanzia di aver
+visitato tutto,
+si parte invece che da un assegnamento
+vuoto come nel backtracking, da un assegnamento
+aleatorio e si controlla se e' una soluzione,
+se non lo e' si inserisce una perturbazione
+con un numero limitato di possibilita',
+si prende una variabile scelta in modo casuale
+ma tra quelle che hanno valore corrente in conflitto
+con quello di qualche altra variabile,
+se il csp non e' una soluzione c'e' almeno un conflitto,
+dopodiche' si vede come cambiare valore,
+es euristica del min conflict,
+si sceglie un valore che porta a ridurre il numero
+di constraints violati,
+oppure invece che minimizzare i conflitti si
+massimizzano gli assegnamenti leciti.
+Se stiamo massimizzando la nostra euristica: hill climbing,
+altrimenti gradient descent.
+
+* Seminario su $A^{\star}$
+
+Se h e' ammissibile allora troviamo l'ottima,
+ma potrebbe anche essere troppo costoso trovare l'ottimo,
+allora puo' essere tollerabile trovare sol subottime, implementiamo
+quindi h non ammissibile.
+Ci sono soluzioni subottime con limiti, non troppo distanti
+dall'ottimo, con un bound (es al massimo 3 volte peggio
+dell'ottimo),
+Vediamo tecniche che vanno in contro a questa esigenza.
+
+- any solution: una sol qualsiasi
+  senza garanzia sulla qualita;,
+  greedy best first search (guardano solo
+  h),
+
+- bounded subottimal search: voglio
+  trovare una sol : il costo e' minore di b*sol_ottima,
+  se b=1 cerco l'ottimo,
+  una sol e' b-ammissibile se soddisfa
+  tale ugualianza,
+
+- bounded cost search, trovare
+  una sol tale che cost<=C,
+
+
+** BSS - FOCAL Search
+
+Ci si focalizza su certi elementi della open list (frontiera),
+la focal list e' fatta da un sottoinsieme della open list,
+devo avere una euristica h ammissibile,
+(es. numero di caselle malposte, manhattan),
+viene mantenuta la lista di sottoinsiemi (focal),
+in cui metto gli elementi tali che $f(n) (=g(n)(=h(n)) <= \mbox{ il miglior nodo}$,
+quando prendo un nodo dalla lista L non prendo piu' il nodo migliore in base
+a L ma mi concentro solo sugli elementi in FOCAL, perche' contiene gli elementi
+che soddisfano il requisito che voglio (quello di <=).
+
+(Pearl - Heuristic search),
+si sceglie il nodo, lo si toglie sia dalla focal sia dalla L,
+se best soddisfa il gol test lo ritorno,
+se f_min e' cresciuto allora fix_local,
+siccome la open cambia la L, puo' anche cambiare il valore
+minimo di f dei nodi nella open list,
+se ho 10 nodi puo' essere che il nodo minore sia 5,
+dopodiche' potrebbe diventare 4,
+se cambia il valore di f_min, se e' cresciuto, allora
+aggiorna il contenuto della focal list,
+perche' tiene tutti i nodi che hanno f <= b*f_min,
+$f(n) \leq Bf_{{min}$,
+se decresce non modifico perche' non devo aggiungere
+niente,
+i neighbors sono i successori di best,
+li aggiungo alla open list, se soddisfano
+il requisito <= li aggiorno anche alla focal,
+quando prelevo un nodo da espandere
+lo prendo da focal e non da open,
+in questo modo riesco a dimostrare che
+trovo una soluzione subottima ma bounded con
+il vincolo di B desiderato,
+
+** BSS Weighted A^\star
+Se w = 1 e h ammissibile troveremo la sol ottima,
+g_n e' il miglior cammino conosciuto per raggiungere
+n,
+w tipicamente non e' < 0 ma e' >=1,
+se w=1 siamo in a*,
+se w > 1 abbiamo un regime diverso,
+diventa stra dominante il secondo termine,
+greedy best first search,
+per i w non troppo grandi non trovo
+la soluzione ottima perche'
+se w e' 1.2 potrebbe essere che 1.2 * h non sia
+piu' ammissibile,
+potrei raggiungere un gol non ottimo,
+pero' sto dando piu' peso all'h,
+e se e' progettata bene mi aiuta a trovare
+un nodo gol,
+mi sto dimenticando di g (quanto mi occorre
+per arrivare a quel nodo li'),
+si puo' dimostrare che c'e' corrispondenza
+tra weighted e focal, perche' w a* e' un
+caso speciale della focal, permette di trovare
+soluzioni w-ammissibili (B=w),
+sono di costo peggiorativo non piu' di w le soluzioni trovate.
