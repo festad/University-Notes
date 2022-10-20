@@ -1,0 +1,163 @@
+
+#+TITLE: Sistemi informativi per la gestione delle operazioni industriali
+#+AUTHOR: Denis Festa
+
+Partiamo dai sistemi informativi di produzione.
+Smart Factory:
+- persone: messe a fare cose in base
+  a dei processi definiti
+- processi: si vuole automatizzare i processi,
+  (Robotic Process Automation, RPA),
+- tecnologie: tra persone e tecnologia c'e' l'efficienza,
+  OLAP e ROLAP sono importanti!
+
+smartness e' quando pensiamo a un sistema
+informatizzato.
+
+La catena del valore di Porter,
+processi (soddisfare la richiesta del cliente) vs funzioni (verticali),
+ogni impresa deve essere orientata al cliente (from Japan),
+(funzioni, dimensione delle competenze), (processi, dimensione
+delle misure),
+
+slide 9: mi predispongo con un piano delle vendite,
+pianifico gli approvvigionamenti (acquisto materia prima,
+magazzino degli imballi), poi lo metto nel magazzino dei prodotti
+finiti e lo posso vendere al cliente.
+E' fondamentale essere in grado di produrre una reportistica
+con la quale possa tenere sotto controllo la produzione, sapere se
+mancano materiali o persone, se ho comprato abbastanza o troppo poco.
+
+informatizzazione: ho le informazioni e le uso
+digitalizzazione: dati da interpretare con un
+miglioramento della nostra capacita' di agire sui
+risultati che vogliamo ottenere.
+
+Dobbiamo conoscere i processi di fabbrica perche'
+dobbiamo modellizzarli all'interno di un sistema informativo,
+per dare le corrette istruzioni a uomini e macchine,
+dobbiamo conoscere i flussi logistici, le persone e gli
+impianti che ho, non posso costruire valvole in
+un'industria che produce biscotti.
+Il PLC e' importante perche' e' da li' che tiro fuori i dati,
+se ho una pesatrice che riempie il sacchetto di biscotti,
+il sacchetto e' un dato e ci interessa, oltre alla valenza ci
+interessa perche' i 450g vanno nella produzione,
+se sommo tutti i dati ho la somma che e' un dato industriale,
+al dato poi do un significato che e' diverso.
+Il significato del dato e' la cosa importante,
+es. negli acquedotti, la pressione in punti diversi
+puo' dirmi se ho una perdita d'acqua,
+gli impianti sono la principale fonte di informazione,
+
+I sistemi informativi di produzione cosa fanno? (pg 12),
+Pianificare la produzione, defnire gli ordini di acquisto,
+(materiali, persone, macchine, attrezzature) -> processi produttivi,
+lancio in produzione fisico, prima ci deve essere il setup,
+ovvero creare le condizioni perche' possa produrre macine
+piuttosto che tarallucci o pan di stelle,
+Il setup deve essere commmisurato alla macchina
+non posso avere una macchina che fa due pezzi al secondo
+ma con un setup di 6 ore e far funzionare la macchina
+per un paio d'ore tra un setup e l'altro.
+
+Durante il controllo industriale voglio sapere quanto costa
+un pezzo, quanto ci ho guadagnato,
+come si rappresenta il processo produttivo?
+
+In un mes si possono costruire personalizzazioni per
+descrivere meglio il processo produttivo.
+Nel gestionale non ci interessiamo a come
+e' fatta la fabbrica ma interessa solo
+come e' fatto il processo.
+
+- sistema gestionale
+- sistemi dipartimentali
+
+** Sistema gestionale
+
+A meta' anni 70 nasce l'MRP, material r* planning,
+importante perche' se ho prodotti complessi
+l'MRP mi organizza i processi,
+i sistemi dipartimentali sono adattabili,
+oggi c'e' il concetto di composable ERP,
+chi l'ha detto che devo comprare l'intero sap o oracle
+e tutti i vari modulini? Le tecnologie cloud permettono
+di interconnettere moduli diversi, es SAP con Microsoft,
+adesso vince chi costruisce la miglior piattaforma di interconnessione,
+azure, amazon, infor, il problema
+e', per fare una interconnessione, trovare il subset
+di dati minimo uguale per tutti.
+
+Sono fondamentali i dati tecnici di produzione.
+
+L'ordine di produzione e' il requisito per
+ogni distinta base,
+L'anagrafica permette di fare una pianificazione
+prima ancora di effettuare l'ordine.
+Il ciclo descrive una sequenza di operazioni ed e' corredato da
+tassi orari,
+
+20221013
+
+L'oedine di produzione
+on sempre i pezzi vengono prodotti nel tempo previsto, quindi
+bisogna rilevare i tempi produttivi,
+il tempo di esecuzione e' il momento di fabbrica in cui stiamo utilizzando
+l'ordine di produzione
+come elemento di raccolta,
+si puo' fare anche con la carta.
+si deve rilevare quanti prodotti, quanti reciclati e quanti polli.
+
+Logica dell'ordine di produzione,
+un'ordine di produzione ha un solo codice parte,
+un codice parte puo' avere tanti ordini di produzione (notazione UML),
+l'ordine di produzione utilizza N materiali.
+
+La distinta base contiene una parte che viene prodotta da
+uno o piu' componenti,
+posso avere uno o piu' sotttoprodotti,
+ci sono distinte base a forchetta in cui il
+protagonista e' da dove parte, il rottame,
+nel nostro territorio ci sono tanti che operano
+nella valorizzazione dei rifiuti, dove
+si prende un rifiuto e si tira fuori una materia prima,
+diverse materie prime e anche uno scarto reciclabile,
+nel mondo dell'economia circolare la distinta base a forchetta
+sta diventando sempre piu' importante.
+
+Il gestionale quando progetta una digitalizzazione della fabbrica
+ha in mente un modello informativo di fabbrica, un modello generalizzato,
+il gestionale e' li' perche' deve lavorare sui processi, es
+il lancio dell'ordine sul MES,
+ricevo gli ordini dal sistema di fabbrica,
+siccome qualcuno li ha lanciati devo confermare
+le macchine su cui sono destinati e attraverso un'attivita' di
+sequenziazione si assegna ...
+poi qualcuno davanti alla macchina riceve i batch di ordini
+da fare, c'e' una coda per ogni macchina che sa qual e'
+il primo ordine da lavorare,
+ora l'informazione arriva solo dal MES,
+c'e' un barcode identificativo,
+c'e' integrazione con i sistemi logistici,
+la fabbrica e' anche fatta di sistemi per spostare, non solo
+macchine, al pie di macchina c'e' solo quello che deve
+essere lavorato, nient'altro,
+a prova di errore.
+Utilizzo di sistemi automatici usati per avviare la produzione,
+senza avere funzioni particolari, tramite la lettura del barcode
+posso dare l'istruzione che e' avviata la produzione di un lotto.
+
+Raccolta dati del MES:
+chi c'e' sul centro di lavoro? A logica un uomo e una macchina ma
+potrebbe essere anche un uomo e N macchine oppure M macchine
+
+Il segnale di inizio lavorazione e le fermate che sono infinite e sono un problema
+perche' rallentano la produttivita',
+
+OEE:
+
+OEEE: come sta lavorando la mia macchina,
+quando vado di norma vado a 500 pezzi ora, ma sto fermo 20 minuti,
+mi interessa la saturazione impianto.
+

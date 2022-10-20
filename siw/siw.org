@@ -1,0 +1,93 @@
+#+TITLE: Sistemi informativi evoluti
+#+AUTHOR: 719394
+
+2022-10-12
+
+Progettazione dei dati
+
+L'ER e' uno schema concettuale dei dati,
+contiene classi, attributi e relazioni (Entity
+and Relationships).
+Relazioni "is-a" (un concetto piu' specifico
+dell'altro).
+L'ER sara' supportato dalla classificazione degli
+oggetti informativi, per facilitare la navigazione.
+Su ogni entita' definiamo attributi e tra
+le entita' stabiliamo delle relazioni.
+
+Relazioni ternarie e N-arie.
+
+Relazione con attributi attraverso una entita' debole
+intermedia (es VOTO, che esiste solo in relazione
+a uno studente e a un corso).
+
+IS-A: rappresenta una gerarchia, es
+
+#begin_src
+cantante <- cantante_pop
+         <- cantante_jazz[strumento]
+#end_src
+
+In webml le gerarchie sono solo esclusive.
+
+Non e' possibile rappresentare l'ereditarieta' multipla.
+
+Identifichiamo la classificazione degli oggetti informativi,
+dei sottoschemi, e organizziamo il modello dei dati
+in base a questi schemi,
+prima cosa da fare: individuare le entita' core,
+quelle che rappresentano gli oggetti cruciali
+del nostro sistema informativo web,
+dobbiamo avere 3/4 entita' core.
+
+E' meglio avere tanti sottoschemi di accesso e pochi core,
+
+La personalizzazione e' il sottoschema del modello dei dati
+che parte dall'autenticazione dell'utente.
+
+Noi dobbiamo portare sottoschemi core e non "oggetti core",
+importante non avere troppi sottoschemi core,
+
+Ci sono due tipi di identita' deboli:
+- attributi compositi esclusivi, che
+  fanno parte della stessa entita' forte,
+  solo quella, "PART OF",
+  qui e' facile capire qual e' il sottoschema
+  core in cui mettere quel componente,
+
+- entita' shared, es la fornitura,
+  entita' debole di ditta, componente e dipartimento
+  alllo stesso tempo.
+
+O si sceglie una delle entita' in cui inserire
+il compomente o trasformare in uno schema
+core a se' la componente.
+
+Un'entita' puo' appartenere a piu'
+sottoschemi core di tipi diversi contemporaneamente.
+
+Sottoschemi di interconnessione.
+
+I meccanismi di lookup search devono essere solo ausiliari,
+per ogni sottoschema core devono esserci un bel po'
+di sottoschemi di accesso, UN BEL PO'!, e non devono
+essere troppo lunghi,
+categorizzazione e specializzazione,
+entita' esterna fascia di prezzo, e' il meccanismo
+piu' facile per categorizzare il prodotto,
+voglio sempre avere tanti sottoschemi di categorizzazione
+e specializzazione,
+non esagerare con i passaggi, tre al massimo!
+
+La categorizzazione e' un sottoschema di accesso.
+
+La personalizzazione parte dall'utente autenticato,
+puo' essere confusa con l'accesso ma l'accesso
+e' pensato per l'utente non registrato,
+la personalizzazione parte dalle tre entita' (tra cui utente)
+e parte dal momento dell'autenticazione,
+attraverso informazioni sull'entita' autenticata
+si fanno filtraggi.
+
+
+
