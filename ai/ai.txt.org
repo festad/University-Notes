@@ -893,3 +893,100 @@ concentrandomi su nodi vicini a c (inutile
 spendere tempo su percorsi piu' brevi, voglio
 andare dove c'e' la sol a costo c, senza tentare
 di risparmiare perdendo tempo).
+
+
+* Test intermedio
+
+Rimane tutto uguale a parte il seminario.
+Potrebbero esserci domande sulla definizione
+dei vari agenti,
+semplici, stato e mondo, con gol e utilita',
+gli ambienti in cui opera, deterministici,
+con osservabilita' parziale.. diagramma degli
+stati che diventa diagramma dei belief.
+
+1 Es del robot aspirapolvere,
+problemi con contingenze,
+effetti non deterministici,
+es che quando aspiro in una locazione
+pulita potrebbe far cadere dello sporco,
+se sono in uno stato che non ha sporco
+non devo aspirare o potrei sporcare,
+
+2 descrivere la complessita' computazionale
+dell'algoritmo a approfondimento iterativo,
+complessita' temporale,
+
+Evitare cicli:
+nella lista open n1 e n2 sono lo stato,
+dentro ci deve essere il percorso dalla radice a n1,
+ci deve essere un percorso alla radice,
+se prendo n1 e non soddisfa il gol test, genero
+il figlio e controllo che il figlio
+non sia sul cammino che dalla radice
+conduce al padre altrimenti sarebbe un ciclo:
+[radice] --> ((figlio)) -->  [padre] ---> [figlio]
+                 ^                            |
+                 |                            |
+                  ----------------------------
+
+Formula del simulated annealing,
+
+la funzione consistente garantisce di trovare una sol ottima
+e c'e' la proprieta' di monotonicita' per cui se
+incontro un nodo che ho gia' incontrato
+sono sicuro che lo sto incontrando attraverso
+un percorso che non e' migliore del precedente,
+quindi non procedo piu' perche' quello nuovo
+e' peggiorativo,
+se A* e' equipaggiato da una lista di nodi chiusa
+e l'euristica e' consistente se incontro
+un nodo nella closed list so che il percorso
+nuovo non e' migliore del precedente, faccio
+pruning e non aggiungo il nodo alla open list,
+se l'euristica e' solo ammissibile dovrei,
+se non voglio aggiungere nuovamente il nodo,
+fare il controllo che il percorso sia effettivamente
+peggiore di quello trovato prima, il che non e' detto,
+quindi nella open list devo scrivere anche i costi
+del percorso migliore trovato per raggiungere lo
+stato dalla radice.
+
+7 descrivere almeno una delle seguenti
+tecniche in hill climbing (mosse laterali o prima scelta),
+
+- prima scelta: il vicinato (stati successori) valutali,
+  comincia dal primo, confrontalo col corrente, e' migliorativo?
+  no, continua, il prossimo e' migliorativo? si, acecttalo,
+  mentre hill climbing li valuta tutti,
+  e' utile quando ci sono tanti figli, 
+- mosse laterali: anche se nel vicinato
+  non c'e' nulla di meglio e ti fermeresti, cerca
+  comunque (sei in una pianura) vai avanti lo stesso
+  e scegli elemento con la stessa qualita',
+  e' utile perche' si spera che la pianura  non sia vasta
+  e e' abbastanza piccola da migliorare con poche
+  mosse laterali.
+
+8 differenza in formulazione di problema offline e online,
+perche' l'online funziona solo con azioni reversibili
+(dfs), il problema offline consente
+di trovare l'intera soluzione prima di effettuarne l'esecuzione,
+in quella online devo trovare la prossima azione, eseguirla,
+abbiamo molta meno conoscenza,
+nel problema online non sappiamo gli effetti delle azioni,
+gli effetti delle azioni si sanno solo dopo averli eseguiti,
+il diagramma delle azioni non e' potenzialmente esplicitabile
+come nel caso offline prima di eseguire le azioni,
+le azioni devono essere reversibili altrimenti non posso
+implementare la dfs con backtracking,
+
+9 tecnica del forward checking (con esempio per illustrare),
+ogni volta che associo a x un valore v  vado a vedere
+per tutte le altre variabili y legate con un vincolo
+ad x se nel dominio delle variabili y c'e' qualche
+valore in conflitto con v dato a x,
+se il vincolo e' != e instanzio x con 1 controllo le y,
+il check e' sui domini delle variabili non istanziate,
+si rimuovono dal dominio i valori che creerebbero
+conflitti.
