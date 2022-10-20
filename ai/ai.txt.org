@@ -701,3 +701,195 @@ tra weighted e focal, perche' w a* e' un
 caso speciale della focal, permette di trovare
 soluzioni w-ammissibili (B=w),
 sono di costo peggiorativo non piu' di w le soluzioni trovate.
+
+(Vediamo anche metodi per combinare piu' euristiche)
+
+BSS e' una best first search con
+f(n) = g(n)+W*h(n),
+costo per arrivare dalla radice a n + euristica (ammissibile
+o non) pesata (W),
+se h e' ammissibile con W=1 abbiamo A*,
+se e' > 1 l'euristica complessibile
+potrebbe non essere ammissibile,
+se W e' molto grande la componente g non ha
+piu' nessun ruolo (viene mangiata),
+quindi con W grande e' la greedy best first search,
+guarda in avanti senza ricordarsi del costo gia' speso.
+
+FOCAL: soluzioni b ammissibili,
+si possono trovare soluzioni W ammissibili con BSS,
+W -> costo della soluzione ottima.
+
+** BSS Explicit estimation search (ESS),
+bounded subottimal search,
+trova soluzioni che hanno la garanzia di un bound
+peggiorativo rispetto all'ottimo, ma non la soluzione ottima,
+in questo framework c'e' l'ESS, un'altra tecnica (come FOCAL e l'altra),
+abbiamo 3 euristiche da specificare:
+- euristica ammissibile h, vogliamo sia ammissibile,
+  chiamata cost-to-go, 
+- $\hat{A}$, cost-to-go NON ammissibile, piu' aggressiva, meno
+  cautelativa, osa di piu', cerca di avvicinarsi di piu'
+  e potrebbe anche sbagliare,
+  potrebbe essere non il numero delle azioni (azioni non unitarie),
+  
+- distance-to-go, anche questa non ammissibile,
+  conta quante azioni servono per arrivare al gol,
+  a differenza del precedente, (es. costo delle azioni
+  per arrivare al gol, 5+7+9, sono 3 azioni,
+  la dtg conta il 3, la ctg conta 5+7+9).
+
+h(n) e' l'unica ammissibile per forza.
+
+Scegliamo con una combinazione di possibilita' come
+combinarle nell'algoritmo,
+f, \hat{f}, d (elemento greedy, guarda in avanti, conta le azioni
+per arrivare al nodo gol piu' vicino),
+durante la ricerca si tiene traccia dei nodi importanti:
+nella lista L valutiamo i nodi in base \hat{f} e \hat{d},
+la seconda non la fa A*, la terza dice "considera tutti
+i nodi nella lista open tali per cui \hat{f}(n) deve essere
+<= b*\hat{f}(best_f)",
+per tutti i peggiorativi al massimo b rispetto a fhat considera
+quello piu' vicino al gol,
+ad ogni espansione di nodo viene scelto dalla lista open
+il nodo migliore secondo questo criterio:
+se il meglio rispetto a fhat (non ammissibile) e' <= b*f(best)
+allora scegli questo,
+considero il miglior nodo che verrebbe preso da A* (prima euristica),
+moltiplico il valore scelto da A* per b, se il miglior
+nodo seguendo l'euristica non amm e' <= b*valore scelto da A*
+allora scelgo quello con l'euristica cattiva (fhat), altrimenti
+scelgo quello che avrebbe scelto A* (prima euristica, f),
+prima si considera la terza euristica e se non va
+scelgo il secondo criterio e lo confronto con quello che farebbe
+A*,
+in ultima istanza fai quello che farebbe A*,
+A* garantisce l'ottimo ma ci mette tanto tempo,
+le altre euristiche ci portano a un gol piu' velocemente
+perche' usano euristiche piu' cattive,
+con la disuguaglianza rimaniamo dentro al bound,
+
+**BCS - Potential search,
+abbiamo in input un costo C, espande i nodi
+secondo la probabilita' che questi siano parte
+di un piano avente costo <= C,
+mi confronto con C quando sono nel nodo n,
+uso la formula $u(n)=\frac{C-g(n)}{h(n)}$,
+a parita' di eutistica (g<=c, tutti nodi
+con costo inferiore a c),
+(sin dall'inizio diciamo che c'e' una soluzione con costo C,
+adesso pero' la devi trovare),
+h(n) e' un'euristica,
+a parita' di euristica scegliamo il nodo con g(n) piu'
+piccolo e a parita di g(n) scegliamo quello con euristica
+minima,
+guidiamo la ricerca tenendo conto di C e privilegiando
+i nodi rispetto alla funzione potenziale.
+C e' dato in input ma puo' anche essere calcolato
+dinamicamente considerando il nodo con l'f piu'
+basso in quel momento, al posto di C che e' il nodo
+della soluzione mettiamo b*f_min,
+in questo modo usiamo una dynamic potential search,
+quale sia meglio dipende dal problema.
+
+L'anytime search la saltiamo, facciamo solo la definizione.
+Gli algoritmi anytime producono iterativamente
+soluzioni una dopo l'altra, una prodotta e'
+in genere meglio delle precedenti,
+sono soluzioni diverse,
+si guarda non tanto la qualita' ma la diversita',
+come si fa?
+Versione ovvia: continuare la ricerca,
+quando trovo una sol con un' h non ammissibile
+allora (sol non ottima) aspetto che arrivi un'altra
+soluzione, la lista L conterra' altri nodi
+e vado avanti con la ricerca,
+termino quando L e' vuota,
+quando trovo la prima sol quella mi da'
+un bound sulla qualita' della soluzione,
+vado avanti e se trovo una sol con costo migliore
+la fornisco in output altrimenti se ne trovo
+una a costo 99 la do',
+non so mai se la sol che do e' ottima ma
+l'ultima che do' in output (non l'ultima trovata)
+sara' migliore della precedente,
+garantisce l'ottimo anche se h e' inammissibile
+ma devo esplorare tutto l'albero di ricerca.
+Ci sono tecniche di search che man mano trovano
+una sol modificano l'euristica (non proseguono
+come prima) ma cambiano l'euristica affinche'
+la ricerca non porti a sol di cattiva qualita',
+repairing search,
+poi c'e' la restarting search,
+ogni volta riparto da capo modificando il problema
+per assicurarmi di non trovare soluzioni
+di qualita' peggiore.
+
+Facciamo la tecnica per la gestione delle stime (soft-bound),
+l'ultima,
+supponiamo di avere una stima di quanto costa
+la sol, intuitivamente e ' ragionevole perche'
+anche nei preventivi per organizzare un viaggio
+uno si fa' un'idea di quanto spendera',
+ma e' solo una stima,
+supponiamo di avere un bound soft,
+si possono prendere problemi
+come il rompicapo dell'8 risolti,
+un algoritmo di machine learning
+puo' imparare a stimare i costi,
+i passi per risolvere un problema di ricerca,
+supponiamo di avere il bound,
+possiamo usarlo per aiutare la ricerca?
+iniziamo con bfs, una ricerca chiamata
+hsearch non ammissibile, una h ammissibile e C,
+usiamo la versione di algoritmo del W A*,
+la funzione euristica di WA* tiene conto sia
+di g che ti C e h_search..
+questo h_bound (l'euristica che inventiamo),
+e' definita prendendo l'euristica non ammissibile
+e la moltiplichiamo per un fattore moltiplicativo
+formato da c diviso (il conto che farebbe A*, h_delta(n)),
+h_search non e' ammissibile,
+viene modificata aumentandola o decrementandola in base al fattore,
+se siamo molto sotto C la frazione diventa piu' grande,
+se siamo sopra C stiamo andando oltre e h_search viene
+penalizzata dalla frazione che diventa piu' piccola,
+se i nodi hanno la componente molto minore
+di c sono penalizzati,
+voglio trovare la sol che costa C,
+non perderti sui nodi che hanno la f troppo bassa,
+perche' li sotto non c'e' la soluzione, i nodi >= C
+sono piu' probabili da trovarci la soluzione se si parte
+da li',
+succede che se C che adotto come stima,
+se il budget e' alto e posso usare tanti soldi e' piu' facile
+trovare la soluzione,
+se C e' vicino a quello ottimo rischiamo
+di seguire troppo A* e fare troppa fatica,
+se invece C non e' vicino all'ottimo
+sara' piu' facile da trovare,
+andrebbe un po' esagerato il costo C
+se il nostro obiettivo e' trovare una sol (non
+per forza la migliore),
+cosi' la scelta viene nuovamente modulata
+cercando di spegnere gradualmente il fattore
+che moltiplica h_search,
+lo facciamo con un esponente (1-p_rate)
+che diventera' 1 quando il p_rate diventera' 1,
+confrontiamo il n di nodi espandi dalla ricerca
+con il numero di nodi espansi tali che g(n)+h(n) e' superiore
+a c,
+quando questo numero tende a 1 stiamo facendo troppa ricerca visitando nodi
+che sono soluzioni piu' costose di c,
+se g(n)+h_delta>c vuol dire che attraverso n
+trovero' una sol piu' grande di c (perche' h_delta e' ammissibile),
+se sono gia' molto avanti con la ricerca
+e ho esplorato molti nodi oltre a c allora i due numeri
+tendono a essere uguali (rapporto -> 1),
+l'obiettivo e' velocizzare la ricerca,
+voglio arrivare il prima possibile a una soluzione,
+concentrandomi su nodi vicini a c (inutile
+spendere tempo su percorsi piu' brevi, voglio
+andare dove c'e' la sol a costo c, senza tentare
+di risparmiare perdendo tempo).
