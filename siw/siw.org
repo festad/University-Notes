@@ -89,5 +89,15 @@ e parte dal momento dell'autenticazione,
 attraverso informazioni sull'entita' autenticata
 si fanno filtraggi.
 
+Per capire se e' un sottoschema
+di accesso guardare gli attributi e la
+numerosita', se ci sono piu' valutazioni
+che istanze di elementi valutati
+allora non aiuta,
+se invece un utente scrive
+valutazioni e poi dalla valutazione
+raggiunge il giocatore che ha valutato
+non e' accesso ma personalizzazione,
+
 
 
