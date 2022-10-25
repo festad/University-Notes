@@ -992,3 +992,96 @@ si rimuovono dal dominio i valori che creerebbero
 conflitti.
 
 20221026
+
+* Rappresentazione della conoscenza
+
+I CSP sono un linguaggio che rappresenta una conoscenza,
+sono dotati di un linguaggio sintattico,
+rappresentiamo qualcosa di vero nel mondo,
+la semantica sara' legata a qualcosa
+di vero,
+inizialmente abbiamo formule che corrispondono a qualcosa
+nel mondo reale, poi voglio che le nuove
+formule rappresentino qualcos'altro che sia una conseguenza
+logica delle formule originarie,
+entails = implica,
+follows = conseguenza (logico, semantico) (entails, sintattico),
+una procedura di inferenza e' un algoritmo
+che deriva nuove frasi da frasi iniziali,
+puo' essere corretto, completo, tutti e due,
+corretto (sound) = per ogni formula derivata, l'insieme di formule iniziali
+e' chiamato knowledge base,
+per ogni formula phi derivata dall'algoritmo, phi deve
+essere una conseguenza logica (liv semantico) della knowledge base,
+e' completo se vale il viceversa,
+proof theory: e' relativa a un particolare linguaggio,
+(es logica proposizionale),
+la teoria della dimostrazione specifica un insieme
+di passaggi che sono corretti,
+i passi di inferenza sono le operazioni dell'algoritmo
+che fa inferenza,
+tutti i passi devono essere corretti,
+la logica matematica e' precisa e espressiva,
+esistono diverse logiche matematiche, ciascuna
+con una diversa proof theory,
+
+** Modus ponens
+
+a and b -> a (se nel mondo e' vero a and b allora
+sono veri anche a e b),
+
+supponiamo di avere a e b nella base di conoscenza,
+l'algoritmo dice che sono veri a e b,
+allora si puo' derivare anche a and b,
+
+- and elimination a & b -> a,b
+- and introduction
+- modus ponens (a, a=>b -> b)
+- or introduction (a -> a or b, a or *),
+  introduce ridondanza,
+- doppia negazione: !!a -> a,
+- resolution:
+  a or !b, c or b or !d (sono le due formule date),
+  la risoluzione vuole due formule tali per cui c'e'
+  un simbolo o variabile proposizionale che compare
+  in tutte le due formule ma con segno diverso,
+  (!),
+  qui e' vero perche' b compare con entrambi
+  i segni,
+  a questo punto le due formule vengono messe insieme
+  senza i due elementi negati che si cancellano,
+  si mette insieme con l'or,
+  a or c or !d,
+  la risoluzione vuole due formule (disgiunzioni
+  di formule atomiche),
+  o negazioni di formule atomiche,
+  genero una nuova disgiunzione
+  ottenuta mettendo insieme le prime
+  due senza gli elmeneti che si risolvono.
+
+ - risoluzione unitaria, almeno una delle due
+   formule e' unitaria (formula atomica o negazione
+   di formula atomica),
+   es !b, b or c,
+   da cui si deriva c perche' !b e b si cancellano,
+
+Le regole di inferenza si applicano a formule con
+un determinato formato, es la risoluzione generale
+vuole due disgiunzioni, non gli and ma gli or,
+l'altra cosa fondamentale e' che la procedura di inferenza
+applica le regole di inferenza e ninet'altro,
+la base di conoscenza e' lo stato a cui si applicano
+gli operatori per generare gli stati successori.
+Se applico il modus ponens prendo
+dalla base di conoscenza due formule e ne aggiungo
+una nuova.
+
+** Metodi semantici
+
+Posso usare il metodo inferenziale o
+quello semantico,
+ma gli assegnamenti diventano un numero
+infinito nella logica del primo ordine,
+la logica proposizionale e' molto potente
+perche' molte altre logiche si possono
+compilare in logica proposizionale.

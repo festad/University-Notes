@@ -1,0 +1,14 @@
+#+title: Audio configuration
+#+author: 719394
+
+#+begin_src sh
+  sudo nano /etc/modprobe.d/audio-fix.conf
+#+end_src
+
+Insert the following line:
+
+#+begin_src sh
+  options snd-intel-dspcfg dsp_driver=1
+#+end_src
+
+Reboot.
