@@ -990,3 +990,5 @@ se il vincolo e' != e instanzio x con 1 controllo le y,
 il check e' sui domini delle variabili non istanziate,
 si rimuovono dal dominio i valori che creerebbero
 conflitti.
+
+20221026
