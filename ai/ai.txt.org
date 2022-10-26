@@ -1085,3 +1085,92 @@ infinito nella logica del primo ordine,
 la logica proposizionale e' molto potente
 perche' molte altre logiche si possono
 compilare in logica proposizionale.
+
+20221026
+
+Regole di inferenza.
+La base di conoscenza iniziale e' lo stato iniziale,
+si modifica con le formule derivate dalle regole di inferenza.
+Terminazione:
+- chiusura deduttiva della base di conoscenza,
+  abbiamo derivato tutto cio' che e' derivabile,
+  non e' detto che sia la cosa migliore, potremmo
+  derivare un numero esponenziale di implicazioni
+- ...
+
+Il ragionamento semantico lavora direttamente sulle interpretazioni e
+sui modelli, Model checking, controllo se esiste
+qualcosa che rende le formule vere,
+sfruttando per lo piu' il teorema:
+KB & !a,
+con il model checking controllo se esiste un modello,
+se esiste allora la formula e' valida e quindi
+a non e' conseguenza logica perche' se assumo
+il suo contrario e' ancora vera,
+mentre se non esiste alcun modello allora
+a e' conseguenza logica perche' se assumo
+il suo contrario e' impossibile.
+
+Un problema di CPS temporale puo' essere
+trasformato in SAT, artificiale e con vincoli
+particolari, se risolvo SAT risolvo anche
+il problema principale,
+si chiama "Riduzione di problemi in SAT".
+
+Semantico -> regole di inferenza
+Deduttivo -> model check
+
+Conjunctive Normal Form (CNF),
+si puo' dimostrare che la regola
+di inferenza e' sound (corretta) con le tabelle
+di verita'.
+
+Formato CNF -> conjunctive normal form,
+congiunzione di disgiunzioni.
+
+a => b === !a || b
+
+a <=> b === (a => b) & (b => a),
+sat cerca un modello in conjunctive normal form,
+ciascuna clausola e' un vincolo.
+
+La clausola vuota e' la formula che non ha nessun letterale.
+
+Una procedura di inferenza e' completa se
+e' in grado di dare una risposta per qualsiasi
+formula a, (ed e' corretta),
+una procedura di inferenza che applica solo la regola
+di inferenza prende tutte le coppie
+possibili dalla KB, in teoria andrebbe bene
+ma in pratica e' troppo, bisogna selezionare alcune
+coppie e non farle tutte,
+si chiama "strategia di risoluzione" il metodo con cui
+si scelgono le coppie.
+
+Perche' attraverso il metodo di rifiutazione
+e non quello diretto?
+Perche' quello diretto non e' completo, e' corretto
+ma non completo.
+
+La KB non deve essere in contraddizione da sola,
+se dalla KB arrivo alla clausola vuota dopo qualche
+passo di inferenza allora e' inconsistente.
+se KB e' inconsistente il metodo non e' applicabile,
+altrimenti direi "si" a tutto.
+
+Nuova procedura di inferenza (che funziona
+solo per un sottoinsieme della logica
+proposizionale pero').
+Se ci sono solo le clausole di Horn si possono
+usare altre tecniche piu' veloci.
+Le clausole di Horn sono il
+fondamento della programmazione logica.
+
+Le clausole di Horn sono:
+...
+
+** Forward chaining
+
+
+
+** Backward chaining
