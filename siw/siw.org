@@ -101,3 +101,189 @@ non e' accesso ma personalizzazione,
 
 
 
+* Progettazione dell'ipertesto
+
+Dobbiamo aver davanti il modello dei dati,
+per organizzare i contenuti dovremo individuare
+i sottoschemi in generale, di accesso e core,
+dobbiamo avere la mappa del sito, dovremo andare
+nel dettaglio delle aree,
+abbiamo bisogno dei requisiti funzionali,
+i requisiti utente,
+i gruppi utente e la loro organizzazione,
+il risultato e' ottenuto in due step
+- con delle primitive individuiamo aree,
+  pagine e contenuto delle pagine
+- progetto dettagliato, attraverso i costrutti
+  del modello webml descriviamo con precisione
+  cosa sta all'interno delle pagine.
+
+** Progetto Coarse
+
+*** Individuazione delle aree
+
+Suddividione delle side view, le aree
+rappresentano pagine fra loro coese,
+le aree si traducono in menu del nostro
+sito,
+all'interno delle aree individueremo un livello
+di visibilita' che e' specializzato in:
+- aree landmark: compaiono all'interno del
+  menu (es area ricerca, area ateneo,
+  area ditattica), compaiono ovunque
+  all'interno di ciascuna pagina,
+  sono un punto di riferimento,
+  se voglio tornare a luoghi noti ci clicco,
+- aree interne,
+  si raggiungono tramite la navigazione,
+  partendo dalle landmark ci arrivo, sono aree
+  a priorita' inferiore,
+- aree di default: una per ogni side view,
+  si apre all'interno di quella side view,
+  nell'area pubblica e' quella su cui atterro,
+  in quelle private sono quelle che compaiono
+  per prime, nella prima pagina dopo il login,
+  nella maggiorparte dei siti c'e'
+  l'area di default e le aree landmark,
+  all'interno vengono usate poco, si usano
+  poche aree per organizzare la pagina
+  della side view,
+  uso poche aree tutte landmark.
+
+Identificate le side view,
+all'interno di ciascun'area capisco se
+le relazioni sono tra sottoschemi core,
+accesso, personalizzazione o ...
+
+partendo dalla primitiva core, voglio
+mettere in evidenza l'entita' core e il suo sottoschema,
+uso in questo caso la primitiva core, che dice "qua dentro
+peschi il sottoschema core",
+si possono avere piu' sottoschemi core e aree che non
+toccano sottoschemi core ma che servono per accederli,
+Core (CoreEntity, Component1,...,ComponentN),
+visualizzo l'entita' core e l'elenco dei suoi componenti,
+in una certa area potrei arrivare
+ad un'entita' core attraverso sottoschema
+di accesso,
+allora lo esplicito con la primitiva "access",
+che individua la primitiva core a cui punta
+e il percorso delle entita' di accesso,
+"in quest'area voglio puntare al core attraverso
+questo percorso),
+se all'interno di un'area mi sposto da un sottoschema all'altro
+uso la primitiva di interconnessione,
+indicando il sottoschema di interconnessione (fatto di relazioni + altre
+entita'),
+un'interconnessione puo' indicare animale+allevamento
+
+personalization + percorso che voglio compiere,
+i sottoschemi core di personalizzazione, accesso e interconnessione
+sono usati per la visualizzazione dei dati,
+quando l'utente interagisce con il sito
+(es creare nuove istanze, modificare, cancellare..)
+R -> altri sottoschemi
+CUD -> creare un'istanza di entita',
+primitiva connect = create di una relazione,
+spesso sono usati insieme,
+quando creo una valutazione non solo
+la creo ma la collego a me stesso,
+istanza di valutazione tra me stesso e l'allevamento,
+create & connect,
+si usa quando queste cose si fanno insieme,
+altrimenti si fanno separatamente se la connect avviene in un secondo tempo,
+questa primitiva e' indipendente dai sottoschemi,
+le altre primitive rispettano fedelmente i sottoschemi.
+
+Le pagine possono essere all'interno o al di fuori delle aree,
+le aree servono a raggruppare pagine ma non e'
+necessario che le pagine stiano all'interno
+delle aree (pero' e' raccomandato),
+
+tra le pagine posso mettere dei link, 
+all'interno di una pagina trovo un link non
+contestuale (ovvero non trasporta alcuna informazione),
+
+Se voglio che tutte le pagine puntino a un'altra pagina
+invece di fare tanti link meglio sfruttare i landmark.
+
+** Input e output delle unita' di contenuto
+
+Link, contestuali e non contestuali,
+L'input serve a selezionare i record da pescare,
+serve per agire sul selettore.
+I selettori sono:
+- key condition: "selezionami un record
+  dell'entita' il cui OID e' uguale a quello
+  in ingresso", e' un accesso per chiave,
+  quello che spariamo al componente e' sempre
+  l'oid.
+
+- attribute condition: 
+  nome attributo:
+  "seleziona gli oggetti per i quali
+  l'attributo X assume valore x", dove
+  x viene imposto a prescindere oppure
+  viene scelto con l'input,
+
+- relationship role condition:
+  selezioniamo una relazione,
+  non piu' un attributo,
+  e decidiamo che sia popolato
+  dall'input.
+
+Queste sono le condizioni atomiche, poi possiamo
+comporle utilizzando operatori logici
+per negare le condizioni ("voglio tutti
+gli animail che NON hanno attributo pari
+a questo valore"),
+si possono usare && e ||,
+
+Details unit, speciifco identita' e selezione.
+
+** Link di trasporto
+
+** Link automatici
+
+Link a tratto continuo,
+
+** Operazioni
+
+Le operation unit vanno ad agire
+su entita' e relazioni,
+hanno sempre dei link in ingresso
+(danno indicazioni su cosa va creato
+e con cosa)
+e hanno dei link in uscita, uno
+rosso (op andata male) e uno
+verde (op andata bene),
+create, delete, update, (all'interno di un'entita'),
+connect (crea una relazione) e disconnect (per eliminarla),
+la create viene fatta pratire con un link nero, 
+i link rosso e verde contengono
+ancora l'oid dell'oggetto (in realta'
+quello rosso vorrebbe ma non lo contiene
+perche' e' andato male),
+la delete permette di cancellare piu' istanze,
+se tutto e' andato bene link verde (che non
+l'oid perche' l'elemento e' stato eliminato),
+se e' andato male contengo l'oid perche'
+l'oggetto indicato da quell'oid non e' stato cancellato,
+update ritorna in ogni caso l'oid,
+se lo leggo con una details unit e il link
+e' rosso saranno letti gli attributi vecchi,
+
+connect richiede due oid o due insiemi di oid,
+due entita' che ovviamente hanno gia' una relazione
+nel modello dei dati,
+
+WEBRATIO
+
+Posso fare il refactor di HomePage all'interno
+di Home e spostarla in un'altra pagina
+nuovo arrivo e' una sottoentita' di animale
+
+le entity role condition
+si aggiungono solo alla testa della freccia,
+la selezione si fa basandoci sull'input
+che arriva, alla destinazione.
