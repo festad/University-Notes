@@ -1325,3 +1325,51 @@ anche dovuto considerare i casi
  puri,
  tolti i simboli puri si inizia a diramare,
 
+** WalkSAT
+
+Walk satisfyiability
+
+P potrebbe essere 0.15 o 0.2,
+con questa probabilita' fai una mossa casuale,
+i flip sono i cambi di valore da T a F e viceversa,
+si lavora sempre con assegnameneti completi,
+si spostano poi i valori (come con
+le N regine),
+la variabile e' chiamata modello,
+e' un assegnamento stocastico a tutti i simboli,
+poi proviamo dando un upper bound al
+n di passi di ricerca (max flip)
+a vedere se dando un bound
+trova la soluzione,
+potrebbe anche non trovarla mai,
+c'e' la tecnica del restart per permetterci di uscire
+dai minimi locali,
+faccio un po' di esplorazione poi se sono partito
+male faccio un'altra ricerca,
+l'algoritmo fa un solo run ma
+potrebbe farne altri,
+facendo tanti restart la probabilita'
+di trovare la sol si alza,
+se l'assegnamento corrente
+soddisfa le clausole lo accetto,
+altrimenti prendo una clausola che
+non soddisfa il vincolo (es A or B falsa,
+ne scelgo una delle due),
+con una probabilita' bassa che imputo all'algoritmo
+modifico scegliendo a caso uno dei due simboli
+da T a F o viceversa,
+se una clausola e' falsa tutti i letterali sono falsi,
+quale scelgo da cambiare e' casuale,
+altrimenti cambio il simbolo che,
+cambiandogli valore, renderebbe il maggior
+numero di clausole soddisfatte,
+scelgo di cambiare A o B?
+Se cambiando A ci sono altre clausole impattate
+che diventano soddisfatte cambio lui,
+se B ne ha molte di piu' che sarebbero
+soddisfatte cambiandolo allora cambio lui,
+A or B, A=F,B=F,
+uno dei due deve cambiare valore da falso a vero,
+quale dei due impatta meglio sulle altre formule?
+
+
