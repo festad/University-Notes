@@ -1291,6 +1291,37 @@ allora per def di implicazione m dovrebbe essere
 modello di q ma non puo' esserlo perche in m
 la q e' false,
 quindi almeno una delle nostre assunzioni e' falsa,
-o q non e' conseguenza logica di KB o FC deriva
+-o q non e' conseguenza logica di KB o FC deriva
 q adl forw ch o tutte e due.
+
+Esercizio
+
+vogliamo fare model check delle clausole,
+cerchiamo un modello che renda
+le formule vere,
+i simboli nell'algoritmo dpll sono
+P,Q,L,D.. (lettere senza il not),
+si guarda prima quali sono i simboli puri:
+Q e' puro,
+quindi gli assegnamo false perche'
+compare solo con !Q,
+possiamo ogni volta che cambiamo qualcosa
+nell'assegnamento vedere le clausole che sono
+vere,
+se q e' false sappiamo che la prima e' vera
+(!P or !Q),
+se metto da parte la prima so che
+P diventa puro perche' compare solo
+un'altra volta (se facciamo sparire la prima
+che e' vera),
+D = false,
+
+(Q F, P T, D F, L T),
+
+in un albero di ricerca avrei
+anche dovuto considerare i casi
+ Q T, P F,.. ma sto facendo pruning
+ per ottimizzare ispezionando i simboli
+ puri,
+ tolti i simboli puri si inizia a diramare,
 
