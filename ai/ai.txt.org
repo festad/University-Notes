@@ -1174,3 +1174,123 @@ Le clausole di Horn sono:
 
 
 ** Backward chaining
+
+Backword e' molto piu' efficiente di forward nonostante
+la complessita' sia la stessa,
+ogni iperarco e' attraversato una volta sola,
+complessita' lineare nel numero delle formule,
+anche se la base di conoscenza contiene
+10000 formule non e' un problema
+per l'algoritmo processarli.
+
+La programmazione logica usa clausole
+definite, + una serie di trucchi
+per gestire la negazione per fallimento,
+l'interprete non sta facendo una vera dimostrazione logica,
+la prog logica e' nata ispirata dalle dimostrazioni di teoremi,
+noi non facciamo programmazione logica pero'.
+La programmazione logica ha anche variabili,
+non solo proposizioni.
+La forward chaining e' data driven,
+dati dei fatti lui va in avanti,
+la backword e' chiamata gol driven perche'
+parte da un punto specifico del grafo e va indietro
+in modo piu' focalizzato.
+
+Facciamo una dimostrazione della completezza
+del concatenamento in avanti.
+
+Applicare modus ponens in avanti e' una
+procedura completa,
+una volta che ho il grafo posso
+attraversare il grafo e arrivare al nodo,
+come dimostriamo che l'algoritmo e' completo?
+
+** Proof of completeness
+
+L'algoritmo di forward checking
+applica la regola di inferenza
+(modus ponens),
+si guardano le premesse,
+se ci sono gia' nella KB allora aggiungo
+alla base di conoscenza b,
+ora che ho aggiunto b potrebbero
+esserci nuove regole che ora posso applicare
+e prima senza b non potevo,
+continuo a vedere se le regole
+sono applicabili finche' ho applicato
+tutto quello che si poteva applicare.
+Guardo dentro la base di conoscenza (base deduttiva)
+se c'e' la formula atomica che dovevo dimostrare,
+se c'e' allora era una conseguenza logica,
+senno' no.
+
+supponiamo
+KB = {A,C,F,A => K...},
+prendo tutte le formule atomiche (in questo caso 3),
+avranno come valore true:
+A = T,
+C = T,
+F = T,
+le altre le metto false:
+B = F,
+D = F,
+E = F,
+se compare e' vero e se non compare e' falso.
+
+Ogni clausola o formula implicativa e' vera in m;
+la base di conoscemza avra' come modello m,
+per quale motivo l'assegnamento e' un modello?
+Perche' sicuramente le formule atomiche
+sono soddisfatte da quel modello e le altre
+sono implicazioni,
+se non sono soddisfatte c'e' qualche implicazione falsa,
+
+deve esserci una formula non vera,
+quindi un'implicazione (sono tutte implicazioni
+le formule),
+un'implicazione e' falsa quando Q e' falsa e A,C,F veri:
+A & C & F => Q,
+ma se nella KB abbiamo A,C,F allora ci deve essere stato
+dentro anche Q senno' non e' vero che avevamo derivato Q,
+quindi Q e' T, ma allora A,B,C => e' vera,
+CONTRADDIZIONE!
+
+m era stata costruita col modus ponens,
+guardando la base di conoscenza con tutte le formule
+derivate,
+e' impossibile che una delle formule costruite
+sia falsa,
+
+proof of completeness
+
+m e' un modello della base di conoscenza.
+
+dentro a m Q e' falso,
+
+assunzioni:
+1: kb != q
+2: FC non deriva q
+
+Lemma: m e' modello di KB
+
+Per definizione di |=
+m deve essere un modello di q,
+tutti i modelli della base di conoscenza
+sono anche modelli di q per definizione di
+implicazione logica (|=),
+MA m non puo' essere modello di
+q perche' dentro m c'e' q falso (perche'
+stiamo assumendo che m non derivi q),
+se l'algoritmo non deriva q allora deve
+essere false,
+se q false allora il modello non puo' soddisfarlo
+perche' vuole che q sia true,
+dentro a m q e' false perche' fc non l'ha derivato,
+allora per def di implicazione m dovrebbe essere
+modello di q ma non puo' esserlo perche in m
+la q e' false,
+quindi almeno una delle nostre assunzioni e' falsa,
+o q non e' conseguenza logica di KB o FC deriva
+q adl forw ch o tutte e due.
+
