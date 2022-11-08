@@ -1373,3 +1373,312 @@ uno dei due deve cambiare valore da falso a vero,
 quale dei due impatta meglio sulle altre formule?
 
 
+20221102
+
+WalkSAT -> ricerca locale, fa ricerca nello spazio
+dei possibili assegnamenti booleani,
+partendo da un assegnamento modifica le variabili.
+
+SAT appartiene alla classe NP,
+
+* Logica del primo ordine
+
+1 -> KB !+ phi e KB & !phi
+
+2 -> p1, p2, ..., pn  p1 & p2 & ... & pn => 0
+
+Il primo metodo deve essere piu' potente perche'
+e' completo,
+il modus ponens e' un caso particolare
+della risoluzione applicata a piu' step.
+
+p1  !p1 | ...(alpha)..
+----------------------
+          alpha
+
+esempio
+
+p1  !p1 | q
+-------------
+       q
+
+Tutte le formule si possono trasformare
+in un insieme di clausole (CNF),
+
+!p1 | !p2 | ... | q
+
+equivale a
+
+p1 & p2 & ... & pn => q
+
+(trasformazione con il not davanti
+all'antecedente...)
+
+( p => q === !p | q)
+
+nella base di conoscenza abbiamo anche p1 quindi
+lo combiniamo:
+
+poi abbiamo anche p2 e lo semplifichiamo,
+poi p3, p4, ..., pn
+
+
+(!p1) | (!p2) | ... | (!pn) | q  pn
+------------------------------------
+                  q
+
+n risoluzioni unitarie con la clausola  pi (i da 1 a n)
+
+
+Stiamo dimostrando che il concatenamento in avanti e indietro (che applica
+il modus ponens) puo' derivare q nello stesso modo in cui lo puo' fare
+la regola di risoluzione perche' se nella base
+di conoscenza abbiamo p1, p2, ..., pn,
+al posto dell'implicazione scriviamo !p1  | !p2 ... | q,
+lo si deriva facendo il not dell'antecedente dell'implicazione,
+per le leggi di demorgan il not diventa disgiunzione degli elementi
+negati,
+queste n+1 formule si scrivono con la disgiunzione + n formule atomiche,
+applichiamo la risoluzione unitaria,
+che vuole una clasuola unitaria e un'altra clausola non unaria (lunga n+1),
+a ogni risoluzione diminuisco la lunghezza delle disgiunzioni di 1.
+
+
+* Esercizi per l'esame
+
+Completezza:
+se c'e' soluzione l'alg la trova e se non c'e' l'alg se ne accorge
+e dice che non c'e'.
+L'alg in ampiezza e' teoricamente completo
+ma nel caso di sol lunga non lo e' in pratica perche'
+la memoria e' esponenziale, a meno che non ci
+sia un fattore di diramazione di 1.1,
+ma se gia' e' vicino a 2 non ce la facciamo, la memoria
+occupata e' esponenziale.
+
+La ricerca in ampiezza esce sempre dal ciclo,
+pero' se non c'e' sol la terminazione non avviene,
+la terminazione avviene per profondita' finita,
+se la profondita' e' infinita non termina,
+la completezza c'e' solo se l'algoritmo termina,
+la profondita' massima finita fa in modo che
+l'algoritmo termini,
+se c'e' una soluzione lui la trova,
+se c'e' un nodo che soddisfa il gol test
+BFS lo trova,
+se non c'e' una sol l'algoritmo non termina,
+perche' l'albero ha profondita' infinita,
+quindi non e' completo quando ci sono cicli
+e non c'e' una soluzione,
+se c'e' la sol e ci sono i cicli trova
+la soluzione.
+La ricerca in profondita' va su un percorso
+e continua finche' non finisce quel percorso,
+quindi potrebbe non fermarsi mai e non trovare
+la sol quando ci sono cicli e c'e' la soluzione.
+In DFS anche se c'e' la sol potrebbe non fermarsi
+mai, mentre BFS se c'e' la sol si ferma sempre
+(perche' la sol per definizione ha profondita' finita).
+
+LRTA*.
+
+Il pattern database disgiunti usa piu' euristiche
+e richiede nel database che si siano le mosse in
+particolare (da scontare) e non solo il numero,
+il pattern dei database richiede una sola
+euristica.
+
+Per w a* la condizione e' anche che w=1.
+wA* e' concepita per trovare piu' sol di
+qualita' incrementale, avere subito
+la sol migliore potrebbe richiedere
+tempo, invece e' preferibile avere
+subito una sol e poi incrementalmente
+trovarne migliori,
+- f
+- w * h(n),
+  h(n) ammissibile,
+  w >= 1 (farlo minore di 1 non ha senso)
+
+Inizialmente con w>1 vuol dire fare la ricerca
+in modo piu' goloso, cerco di trovare una sol
+piu' velocemente senza badare troppo al suo
+costo,
+ma sblianciandomi su h sto considerando di piu' h,
+amplificandola potrebbe essere che non sia piu'
+ammissibile,
+potrei iniziare con w=1.5 (e posso sforare l'ammissibilita'),
+trovo la sol e faccio ripartire l'alg con un
+valore piu' piccolo,
+siccome le sol sono w-ammissibili,
+se abbasso sempre w trovo sol peggiorativa
+ma sempre meno peggiorative,
+fino ad arrivare a 1.05, 1.01, 1,
+con w=1 sono tornato ad A*.
+
+La consistenza non e' data dalla semplice ammissiblita',
+la consistenza e' piu' forte dell'ammissibilita',
+progettare un'euristica consistente e informativa
+e' difficile e anche dimostrare che e' consistente,
+se pero' ce l'ho il vantaggio e' che
+arrivo all'ottimo con maggiore efficienza,
+so che quando incontro uno stato una seconda volta posso
+incontrarlo solo con un percorso peggiorativo.
+MI basta memorizzare nella closed list gli stati che
+ho gia' visitato e fare pruning,
+se non c'e' consistenza devo sempre vedere se sto
+riincontrando qualcosa con un percorso piu' corto (per poi
+metterlo nella open),
+altrimenti non lo rimetto nella open list.
+
+Quando due euristiche sono ottimiste e' meglio
+quella piu' grande, perche' si avvicina di piu'
+alla verita'.
+Con un'euristica peggiore la sol la trovi comunque
+ma fai piu' sforzo.
+
+Valore minimo dei nodi che superano f dopo
+la prima iterazione (valore cut per iterative deepening A*).
+
+tecnica di randomizzazione:
+ordinare a caso i successori e prendere il primo
+migliore (variante di hill climbing).
+
+La ricerca bidirezionale non e' sempre applicabile,
+innanzitutto devo conoscere lo stato goal,
+la ricerca piu' safe nel bidirezionale e'
+quella in ampiezza.
+
+Focal search:
+
+Se i domini sono discreti e finiti l'algoritmo AC3 termina,
+se i domini sono continui l'algoritmo non termina.
+
+
+20221107
+
+** Semantica di F.O.L.
+
+La logica del primo ordine e' piu' ricca, quindi
+e' piu' lungo dare l'interpretazione per ogni insieme
+di formule.
+
+Insieme di formule = congiunzione di formule.
+
+Ogni simbolo di predicato n-ario con n >= 0 viene
+interpretato in d^n, ogni relazione e'
+un sottoinsieme di n-uple,
+
+Ci mancano da interpretare i somboli di variabile e funzione.
+
+Una formula puo' essere vera o falsa, la verita' di una
+formula atomica dipende da come e' interpretato il simbolo
+proposizionale.
+La formula atomica e' un predicato senza alcun argomento,
+un predicato con uno o piu' termini e' n-ario,
+una formula atomica e' il predicato uguaglianza
+con due termini.
+
+Amico di (Giovanni, Mario), n=2,
+Mario -> costante da interpretare come una persona,
+Giovanni -> ..
+Deve esserci questa accoppiata nella relazione,
+
+[Amico di] = {(oggetto_i, oggetto_j), (oggetto_k, oggetto_k)...},
+[[Mario] deve essere un oggetto del dominio, es. oggetto_i,
+l'interpretaizone di [Amico di(Mario, Giovanni)] richiede l'interpretazione
+di Giovanni ( [Giovanni]), quella di [Mario], che sono
+object)i e object_j,
+e devo avere la coppia obj_i e obj_j all'interno di [Amico di],
+se c'e' e' interpretata come VERO.
+
+Le formule non atomiche? Vale lo stesso della logica proposizionale,
+la semantica nella logica e' composizionale, dipende dalle componenti,
+le componenti elementari le abbiamo fatte (predicati, funzioni,
+variabili...),
+
+I domini possono anche essere infiniti,
+ma direttamente non possiamo trasformare
+tutto in csp e fare backtracking come nella
+semantica proposizionale,
+l'unica cosa che possiamo fare e' procedure
+di inferenza  sulle formule,
+modificarle col modus ponens..
+
+La logica proposizionale e' decidibile,
+la logica del primo ordine NON lo e', non esiste
+un algoritmo che dia sempre la risposta corretta,
+ma per fortuna e' semidecidibile
+(o si dimostra che qualcosa e' conseguenza logica
+o non lo e'), se tutti e due si possono fare
+allora e' decidibile, senno' no.
+L'algoritmo esiste e ha un numero finito di passi,
+L'algoritmo per decidere se una formula non e'
+un teorema non finisce mai, le inferenze sono
+infinite.
+L'inferenza in alcuni esempi puo' andare avanti a derivare
+formule diverse.
+
+
+
+\forall stud \forall s \exists c_1, \exists c_2 supera(stud,c_1,s,v1) \and supera(stud,c_2,s,v_2) \and !(c_1=c_2) \and ..
+\forall a_1,a_2 bocciato(stud,a_1) \and bpccoato(stud,a_2) => a_1 = a_2 (serve per dire che al massimo un appello \and
+
+se  vogliamo dire che al msasimo sono 2 allora: a_1=a_2 or a_1=a_3 or a_2=a_3.
+
+** Inferenza
+
+Le variabili esistenziali non permettono
+di usare gli algoritmo di inferenza,
+quindi con un algoritmo di preprocessing si possono
+sostituire a funzioni che hanno quantificatori universali che la precedono.
+Ma al posto delle costanti NON posso mettere quantificatori universali.
+
+*** Modus ponens generalizzato
+
+Chiamato GMP, vuole n+1 formule come premessa,
+nella logica proposizionale questa regola dice che n formule sono
+atomiche e la n+1-esima e' fatta cosa',
+senza or, senza not,...
+
+Le formule atomiche dovranno avere solo variabili universali,
+l'esiste si puo' comunque recuperare con il preprocessing
+di prima (con le funzioni di Skolem).
+
+King(John), Avido(John) \forall x King(x) \and Avido(x) => Malvagio(x),
+
+si puo' rimuovere \forall perche' si sa gia' che se c'e' una variabile
+allora e' universale (dopo la skolemizzazione),
+l'inferenza per essere corretta deve essere
+Malvagio(x)\Theta -> sostituisci(Malvagio(x), x=John),
+\Theta = {x/John}
+
+Malvagio(x) seguito da \Theta.
+
+
+\forall x \forall y \forall z p1(x) \and p2(y) \and p3(f(x,y)) => Q(x,y,z)
+
+p1(A), p2(f(A)), p3(k)  p1(x)\and p2(y) \and p3(f(x,y)) => Q(x,y,z)
+------------------------------------------------------------------
+                            ??????????
+
+
+Primo fa match con il primo, seocndo col secondo..
+devo fare l'inferenza che p1(x) valga anche per p1(A),
+accumulo le sostituzioni che occorrono per fare il match:
+\Theta = {x/A,y/f(A)}
+p(f(x,y)) non lo posso sostituire,
+alle variabili univerali posso sostituire cio' che voglio
+io ma guido la sostituzione,
+
+\forall k p(k)
+---------------
+  p(f(x,y))
+
+Ho accumulato 3 sostituzioni di variabili universali
+con un termine e adesso posso inferire
+Q(x,y,z) ma non direttamente,
+inferisco
+Q(x,y,z)\Theta che e' {x/A,y/f(A),k/f(x,y)},
+quindi inferisco Q(A,f(A),z).
+
