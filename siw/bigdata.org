@@ -161,3 +161,206 @@ OEEE: come sta lavorando la mia macchina,
 quando vado di norma vado a 500 pezzi ora, ma sto fermo 20 minuti,
 mi interessa la saturazione impianto.
 
+20221028
+
+Il mes e' un raccoglitore di informazioni,
+uno strato di software specializzato per le funzioni di fabbrica,
+serviva perche' l'ERP e' generico, va bene per acciaio, automobili,
+merendine... mentre il mes e' specifico per la fabbrica,
+e' uno strato gestionale che permetta di specializzare le funzioni
+per il tipo di processo,
+e ora che c'e' una cosa dedicata che fa da broker per il campo,
+adesso serve il campo.
+Sin dall'invenzione del plc si e' sviluppato un mondo parallelo,
+(CIM degli anni 80, con tecnologie arretrate),
+una delle tecnologie emersa a fine anni 80 e' lo SCADA,
+il sinottico digitale di un processo nel quale coordino il funzionamento
+in funzione della temperatura o pressione, fa cambiare il
+funzionamento della pompa,
+prima c'era un circuito elettrico con dei segnali che venivano
+aperti e chiusi per controllare le pompe attraverso delle logiche,
+adesso c'e' un'applicazione digitale,
+supervisoning control and data acquisition,
+ci piace perche' ...
+sono utilizzati per controllare parti di un impianto,
+sono prodotti predefiniti che permettono di costruire
+logiche con metalinguaggi, permettono di ridefinire delle logiche,
+e soprattutto fanno data acquisition,
+riescono ad avere un posto per far
+girare i dati PRIMA che arrivino da altre parti,
+sensor networks,
+prima quando si raccoglievano i dati non c'era il posto
+dove farli galleggiare,
+l'IOT e' la connessione delle cose,
+c'e' sempre stata (connessione seriale, reti,
+ethernet, decknet, ibmnet, token ring),
+pero' i dati non si sapeva dove metterli,
+lo scada si presta bene come secchio per i dati,
+quando parliamo della fabbrica intelligente
+prendiamo dei dati raccolti in qualche modo e usiamoli in
+qualche modo, non c'era molta possibilita'
+di dargli intelligenza,
+la fabbrica industriale faceva potenziare
+la presenza dell'uomo,
+la componente umana prima era stata sostituita con il cim,
+nelle tecnologie nuove c'e' la fabbrica intelligenze che permette
+di potenziare l'uomo all'interno della fabbrica,
+(distributore intelligente..) potenzia l'opera dell'uomo.
+
+RAMI 4.0,
+reference architecture model industry 4.0,
+una dimensione del digitale e' la gerarchia della fabbrica,
+il primo oggetto gerarchico e' prodotto-lavorazione,
+il prodotto in lavorazione gia' puo' dare informazioni,
+vedremo il caso della macchina utensile che gia' da accesa
+puo' interagire con me,
+la macchina da accesa gia' puo' ricevere e inviare informazioni,
+qualsiasi prodotto puo' dare informazioni,
+
+** Architetture digitali
+
+Siamo partiti dal CIM che aveva 5 livelli,
+alla base della piramite:
+uomo + cyber fisico = uomo cyberfisico,
+oggetto cyberfisico,
+ci sono tanti parametri misurabili dell'uomo,
+il respiro, il battito
+
+strato di coordinamento: SCADA, e' un oggetto
+per coordinare oggetti,
+questo concetto di serve,
+
+strato di management
+
+strato di organizzazione
+
+(big data di Bianchini),
+
+nel management ci sono rtp, mes e sfc,
+un cyberphysical object e' un oggetto
+fisico con una smart machine (istanza nello spazio
+virtuale dell'oggetto fisico),
+vedremo la parte cyber dell'oggetto cyber fisico,
+non e' una parte digitale di controllo,
+e' un'istanza nello spazio virtuale della macchina,
+
+lo strato di coordinamento IOT/iOS,
+l'iot e' la connessione con qualcosa ma nell'azienda
+raccogliamo informazioni E CI FACCIAMO DEI TRATTAMENTI,
+ovvero Internet of services,
+i servizi possono risiedere ovunque, volendo anche
+nel cloud, anche se in genere si usano servizi edge,
+ho bisogno di fare la somma delle pesate della bilancia
+per sapere quanto ho prodotto,
+potrebbe esserci un servizio sempre attivo che fa la somma,
+logica, event management and detection,
+questo e' la coordination, lo scada, succede l'evento e lo scada
+apre la valvola per far entrare il fluido che serve,
+
+e poi c'e' il data service, vario,
+per la pulizia e elaborazione dei dati,
+ogni minutp mando la somma delle pesate,
+oppure ci sono sistemi di instradamento
+dell'informazione,
+se mi serve nell'ambito di una piattaforma di big data,
+se raccolgo tutti i dati e li invio,
+oppure mando i dati sul mes dopo che il data service ha fatto
+la somma,
+lo stesso dato puo' essere usato in diverse modalita',
+per es la bilancia che pesa per controllare il livello
+di precisione con cui sto dosando,
+devo dosare 450 g,
+oppure mi interessa sapere quanto ho prodotto,
+ho dato un significato al dato,
+dare un significato sulla base del modello dei 5 assi
+
+il modello dei 5 assi ci permette di scambiare informazioni,
+attraverso i dati gestionali apprendo i dati di processo,
+aiuta a dare un significato ai dati,
+
+
+** Schema della fabbrica
+
+l'operazione di ciclo e' dove si da' un significato gestionale
+ai dati che raccolgo.
+
+** Trasformazione digitale
+
+- opportunita': csoti significativamente
+  bassi, si possono aprire nuove opportunita'
+  di mercato (servitization, vendere un oggetto
+  fisico come un servizio),
+  tanto piu' di livello di controllo hai il
+  controllo tanta piu' catena del valore
+  dell'utente ti mangi via,
+  con la servitization regalo una macchina
+  e partecipo alla sua capacita' di utilizzarla,
+  la macchina deve funzionare sempre,
+  la Tesla vale tanto perche' loro vogliono
+  gestire le flotte di taxi senza conducente,
+  vogliono gestirle direttamente, e avere
+  gran parte dell'utile dalle corse di taxi,
+  la tesla guadagna esattamente il pagamento
+  della corsa,
+  la trasformazione digitale permette
+  di controllare le mie macchine e
+
+- minacce: se non lo fai cosa succede?
+  il digitale assume lo stesso
+  livello di importanza della macchina.
+  La sicurezza delle informazioni, lo
+  skill gap,
+  polarizzazione tecnologica,
+
+- prerequisiti:
+  sistema informativo aziendale adeguato,
+  conferma del manager,
+  essere disposti all'insuccesso.
+
+20221104
+
+Everything as a service,
+se alcune cose abbiamo capito che si possono
+fare in maniera digitale
+possiamo anche raggiungere cose
+piu' complesse come una macchina
+o una lavatrice vendute as a service,
+che funzionino facendo bene.
+Non e' pay per use,
+da pay per use e' pay per value,
+ci si concentra piu' sull'obiettivo,
+non ti pago per quanto la macchina
+sta accesa ma per quanti pezzi buoni fa.
+Devo farmi piu' carico della catena del
+valore del cliente,
+perche' non vengo pagato per ora/macchina
+ma per pezzi buoni.
+
+Per fare trasformazione digitale bisogna
+innanzitutto semplificare,
+es. nella distinta base i processi
+sono descritti in maniera piu' intelligibile.
+Dopodiche' bisogna automatizzare,
+poi integrare e infine educare.
+
+* Smart Factory
+
+Spesso la tracciabilita' viene finalizzata a
+capire quali processi sono adeguati.
+Tema della separazione tra iot e internet of services,
+(ios -> avere capacita' elaborative),
+cyberphysical = capacita' di poter invocare
+dei processi.
+
+Ci sono un momento in cui ho il fisico
+e momenti in cui posso dare un significato (elaborazione),
+chiamare dei servizi che governino l'attivita'.
+
+L'oggetto cyberfisico e la sua rappresentazione nel
+virtuale (cibernetica),
+lo strato di coordinamento,
+
+** Adige7
+
+Macchine laser per taglio di tubi,
+macchine laser-tubo,

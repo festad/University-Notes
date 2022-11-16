@@ -1,0 +1,164 @@
+#+TITLE: Big data
+
+
+* Definizioni
+
+Creano problemi alle tecnologie tradizionali,
+ovvero
+- architetture centralizzate (per superarle abbiamo
+  bisogno dei cluster)
+- database relazionali (si scontrano con le prerogative
+  dei big data).
+
+Non parliamo soltanto di qualcosa di grande,
+ma anche di velocita' di elaborazione, acquisizione,
+trasformazione in qualcosa di utile (applicazioni
+in near real-time).
+Parliamo quindi di
+- memorizzazione
+- gestione
+- processing.
+
+La seconda definizione sposta l'attenzione sui volumi,
+i big data sono dataset le cui dimensioni rendono inabili
+i tipici database (relazionali) per la loro gestione,
+analisi.
+
+La terza espande il focus e dice che i big data sono dataset
+grandi e complessi.
+
+Da queste definizioni possiamo dire che big data
+non significa solo grosse dimensioni ma anche complessita',
+velocita',
+e non si tratta solo di gestione di basi di dati
+ma anche una questione di potenza di calcolo ed elaborazione
+(architettura centralizzata, il singolo nodo),
+bisogna scalare orizzontalmente.
+I big data creano problemi dall'acquisizione all'analisi.
+
+Le ipotesi in machine learning sono che i dati arrivino con un formato speciale,
+la fase iniziale e' quella infernale,
+ovvero il data processing.
+
+Cosa ha spinto i big data?
+Forse le fonti operazionali?
+Non proprio, i veri big data
+arrivano da applicazioni basate su sensori (smart grid,
+smart city) e social network (molto voluminosi e de-strutturati),
+sono poco schematizzati ma devono comunque essere elaborati al volo.
+
+L'utente non e' solo un consumatore di dati ma anche un produttore.
+
+Le applicazioni per l'internet of things, la smart mobility,
+l'agrifood, le smart cities, la telemedicina (spostare i pazienti
+a casa loro).
+
+Se ci chiedono quali sono le caratteristiche dei big data dobbiamo pensare
+a volume, velocita' di elaborazione e immagazzinamento, variabilita'
+dei dati.
+
+Mantenere le performance all'aumentare del carico.
+
+Scalabilita' verticale e scalabilita'
+orizzontale (scale out, cluster, potenzialmente non
+ha limiti).
+
+
+elaborazione,
+storage (filesystem distribuito),
+database specificamente pensati (nosql),
+scalabilita' orizzontale
+
+Volume, velocita', varieta', variabilita' (valore = capacita' di modificare
+immediatamente i dati in modo da renderli utilizzabili).
+
+Limiti tecnologici che impongono.
+
+Volume: zeptabyte, octabyte,
+il volume impatta sul singolo nodo,
+quando non ci stanno piu' si possono distribuire
+su piu' nodi,
+in realta' il volume e' influenzato anche da altri aspetti,
+i big data arrivano in maniera molto disordinata
+e sono dati che arrivano molto velocemente,
+non c'e' il tempo di processarli, pulirli, elaborarli,
+li dobbiamo parcheggiare.
+Non ho li tempo di buttar via i dati inutili,
+li prendo tutti e li parcheggio,
+spesso potrei averne piu' di quel che serve,
+ma a prescindere non posso sapere quali buttare,
+questo ha impatto sui meccanismi di storage,
+questo crea problemi con i meccanismi
+dei database tradizionali.
+Volume -> Problemi tipicamente sul singolo nodo.
+
+Velocita':
+i big data arrivano a grandi velocita' e devono essere processati
+a grandi velocita',
+se arrivano velocemente non ho il tempo di validarli
+prima di salvarli o perderei altri dati (il buffer
+si riempirebbe).
+La velocita' impone di salvare i dati prima di usarli,
+impatto soprattutto sui meccanismi di storage che
+non possono piu' essere strutturati,
+devono poter gestire dati non strutturati,
+con ripetizioni, senza chiavi primarie..
+Per essere veloce parallelizzo (architetture
+distribuite),
+anche perche' quando si parla di big data
+si parla di azioni real time.
+
+Varieta': aspetto piu' rognoso,
+i dati non sono tutti strutturati,
+non hanno vincoli o regole precise,
+no vincoli di chiave.
+La varieta' ha soprattutto impatto sui meccanismi di storage.
+
+
+Schema on-write (devo avere
+in mente lo schema mentre lo scrivo), schema on-read (stabilisco lo
+schema quando lo leggo dal meccanismo di storage),
+una tabella e' un insieme omogenero di record.
+Union e intersection sono costruitti mysql, concetto di insieme.
+piu' ad alto livello ci sono i concetti di lista.
+I semistrutturati vengono scanditi cosi' come sono, se voglio
+fare piu' alla svelta e' importante l'ordine con cui appaiono
+in un documento semistrutturato, nei semistrutturati l'ordine
+non e' indifferente.
+Nello strutturato c'e' il concetto di normalizzazione,
+nel semistrutturato c'e' il concetto di annidamento.
+
+Nel mondo semistrutturato si tende a mettere tutto insieme
+per velocizzare le cose piuttosto che usare tabelle separate,
+il contro e' la ridondanza.
+
+La differenza tra mondo strutturato e non, a parte lo schema on-write.. e non schema
+e' che nel caso strutturato abbiamo sql (query sui dati),
+nell'altro andiamo per keyword, si estraggono features dai video e sono
+usate per fare ricerche.
+Precision: #item_corretti/#item_prelevati,
+perfetta quando non faccio niente,
+se non restituisco niente ho recall zero.
+
+
+#risultati_rilevanti/#risultati_rilevanti_nel_database -> recall,
+quanto copro tutto cio' che stavo cercando,
+
+All'interno di un db strutturato posso fare degli aggiornamenti,
+l'update c'e' nel relazionale,
+nel destrutturato no, piuttosto ho una nuova versione
+che sostituisco alla precedente.
+
+
+I big data hanno una qualita' scarsa,
+problematiche di incompletezza,
+non sempre sono consistenti,
+non garantisco assenza di duplicazione,
+non posso garantire che i vincoli di integrita'
+siano rispettati.
+Gli user-generated-content
+
+- architetture distribuite, vedremo mapreduce, apache sparks, adupe,
+- database nosql, mongodb (documentale), influxdb.
+
+

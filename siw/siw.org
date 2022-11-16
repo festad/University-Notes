@@ -287,3 +287,83 @@ le entity role condition
 si aggiungono solo alla testa della freccia,
 la selezione si fa basandoci sull'input
 che arriva, alla destinazione.
+
+20221103
+
+Il lock factor e' il numero
+di elementi per pagina, e' obbligatorio
+specificarlo.
+I link contestuali sono sempre tra componente
+e componente, non tra pagina e pagina.
+
+Voglio far vedere gli allevamenti
+con animali non ancora adottati.
+Trovo gli animali non adottati
+con un selettore (tra gli utility components
+in webratio), NON voglio mostrarli, il mio
+interesse e' mostrare gli allevamenti,
+degli animali mi servono solo gli OID,
+il selettore lavora come una simple list ma
+NON fa visualizzazione.
+Con il selector trovo gli animali
+il cui 'adottato' e' false,
+Attribute condition: chiede l'attributo
+da considerare (animali),
+voglio che 'adottato' sia = false (valore costante),
+ho aggiunto un'attribute condition, scelto l'attributo
+e ho specificato il valore fisso (false),
+questo butta fuori un set
+di OID, e a questo punto aggiungo
+un flow da "animali da adottare" a "allevamenti",
+faccio vedere gli allevamenti legati ad almeno un animale
+ancora da adottare con le relationship-role condition
+da animale ad allevamento.
+
+Strada alternativa: parto da "amante degli animali",
+Melchiori direbbe che c'e' ridondanza,
+l'attributo adottato,
+si potrebbe usare la relazione derivata,
+se non ci fosse stato "adottato" o se avessimo
+ascoltato melchiori saremmo partiti
+da "amanti degli animali", recuperare tutti gli
+animali non collegati a nessun amante degli animali
+e far vedere gli allevamenti ad essi associati.
+Uscendo con un flow porto gli OID,
+esco con un flow dagli amanti degli animali,
+scegliamo gli animali non collegati
+da una relationship-role condition agli amanti
+degli animali, perche' sono quelli non adottati,
+aggiungo una relationship-role condition
+da amanti degli animali ad animali e la nego (NOT in),
+recupero gli animali non legati a nessun
+amante degli animali, ovvero quelli non ancora
+adottati, 
+dopodiche' recupero gli allevamenti legati
+a questi animali.
+
+Ulteriore passaggio:
+nella homepage vorrei piazzare una form:
+la form deve farmi cercare le razze ma
+non da una lista, meglio un menu a tendina,
+vedremo una form con un menu a tendina compilato
+dinamicamente pescando dal db le razze,
+focalizziamoci sulla home-page.
+Un bulk e' un inserimento massivo in un colpo solo.
+Associare una entity a una form:
+inserire un animale significa predisporre
+un campo per ogni attributo,
+i field sono di tre tipi:
+- campo di testo (anche tipo password)
+- selection field
+- multiple field.
+
+Una volta scelta la razza la sparo dove dico io.
+Sul menu a tendina faccio vedere il nome della razza.
+I valori ID si usano per selezionare gli animali.
+
+Login:
+
+Il link della form sta all'interno della
+pagina, l'operazione sta fuori.
+L'operazione login richiede username
+e password. 
