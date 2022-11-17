@@ -162,3 +162,46 @@ Gli user-generated-content
 - database nosql, mongodb (documentale), influxdb.
 
 
+----
+Programmazione funzionale
+creo una funzione di map
+molto veloce e ottimizzata,
+il risultato di map viene inviato
+a reduce che ha lo scopo di tirare le somme,
+la map e' ottimizzata e la reduce no,
+reduce tiene fissa la parola e
+fa un'operazione sulle occorrenze
+(word counting),
+lo shuffling e l'aggregazione per chiave applicata
+a un singolo nodo, un "pre-digerire",
+considera le coppie con la stessa chiave,
+le mette insieme e crea un array di elementi
+associati alla stessa chiave in uscita da map,
+
+Partendo dal corpus dei documenti, data una
+lunghezza, ottenere quante parole
+hanno quella lunghezza (word length count),
+
+combine e' un'operazione che fa un'operazione intermedia,
+verifica se c'e' la possibilita' di fare un reduce
+locale, e' la stessa funzione reduce applicata
+al singolo nodo.
+
+Lo shuffling e' spesso accompagnato dal concetto
+di sort.
+
+MAP --> COMBINE --> REDUCE --> OUTPUT
+                  ^
+                  |
+MAP --> COMBINE --+
+
+Le map sono tante in parallelo, la reduce e' una sola,
+o cosi' pensavamo..
+talvolta non c'e' un solo map reduce ma piu' di uno in sequenza,
+posso combinare insieme i job map reduce
+di modo da ottenere un risultato finale,
+gli intermedi saranno parallelizzati.
+
+- La prima map fissata la data somma la quantita',
+  solo per gli anni 2010/11, gli altri si buttano via,
+- 
