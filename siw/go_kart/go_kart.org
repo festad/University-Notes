@@ -134,3 +134,36 @@ Gli amministratori possono:
     \label{fig:wish1}
 \end{figure}
 
+
+
+\begin{figure}
+    \centering
+    \begin{tikzpicture}[xscale=3,yscale=6,every node/.style={scale=1}]
+        \tikzstyle{bktext}=[rectangle]
+        
+        \node[bktext,scale=1] (c) at (1,0) {Corsa};
+
+          \node[bktext,scale=1] (cl) at (0.5,-0.5) {Corsa libera};
+
+          \node[bktext,scale=1] (cf) at (1.5,-0.5) {Finale};
+
+        \node[bktext,scale=1] (e) at (0,0) {Evento};
+
+        \node[bktext,scale=1] (p) at (-1,0) {Pilota};
+
+        \node[bktext,scale=1] (ko) at (-2,0) {Kartodromo};
+
+        \node[bktext,scale=1] (pi) at (-1,1) {Pista};
+
+        \node[bktext,scale=1] (pe) at (-1,0.5) {Performance};
+
+        \node[bktext,scale=1] (or) at (-2,1) {Organizzatore};
+
+        \node[bktext,scale=1] (k) at (0.5,0.5) {Kart};
+
+
+    \end{tikzpicture}
+    \caption{Modello concettuale E-R}
+    \label{fig:ermodel}
+\end{figure}
+
