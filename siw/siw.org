@@ -288,6 +288,9 @@ si aggiungono solo alla testa della freccia,
 la selezione si fa basandoci sull'input
 che arriva, alla destinazione.
 
+
+
+
 20221103
 
 Il lock factor e' il numero
@@ -367,3 +370,23 @@ Il link della form sta all'interno della
 pagina, l'operazione sta fuori.
 L'operazione login richiede username
 e password. 
+
+20221111
+
+Vediamo cos'e' un cyberphysical system.
+
+digital twin vs cyberphysical system:
+
+nasce da un ambito morfologico a cui si
+collegano aspetti comportamentali.
+Un digital twin puo' nascere da un cyberphysical system,
+la macchina di formula 1 e' un digital twin,
+il cyber physical system richiede il collegamento costante
+tra parte fisica e parte cyber,
+per un digital twin e' necessario un cyber physical.
+
+Rappresentazione nello spazio virtuale del
+comportamento di un oggetto fisico, si puo'
+ottenere grazie al clustering.
+Il clustering e' ottimo quando si riesce
+a fare data streaming.

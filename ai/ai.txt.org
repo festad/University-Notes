@@ -1682,3 +1682,263 @@ inferisco
 Q(x,y,z)\Theta che e' {x/A,y/f(A),k/f(x,y)},
 quindi inferisco Q(A,f(A),z).
 
+20221110
+
+Example knowledge base.
+
+Algoritmo per applicare il forward chaining.
+
+Prende una base di conoscenza in formule di horn
+e una frase da dimostrare.
+Se genero la formula alpha allora alpha e'
+una conseguenza logica.
+
+Il modus ponens deriva solo formule atomiche.
+new e' linsieme di cio' che ho derivato.
+per ogni implicazione che abbiamo (for each sentence r in KB)
+
+deriviamo R(A,B).
+
+mi chiedo se cio' che ho appena derivato e' alpha (in tal caso
+termino), oppure e' quasi uguale ad alpha,
+supponiamo che voglia dimostrare che
+alpha sia uguale a R(A,Z),
+il nostro Q' appena derivato e' R(A,B),
+voglio dimostrare R(A,Z),
+nel caso piu' semplice che avessi dovuto derivare
+R(A,B) l'unify non genera fallimento,
+pero' in caso diverso in alpha potrei
+avere delle variabili,
+se l'alpha e' R(A,Z) la risposta e' comunque
+si' per due motivi:
+nelle interrogazioni le variabili sono esistenziali,
+non universali, nell'alpha se voglio dimostrare
+qualcosa ho variabili esistenziali nella query
+(e' nella kb che sono universali),
+odbbiamo leggere l'interrogazione come
+alpha = Esiste z tale che R(A,Z)?
+rispondero' E z criminale(Z) al posto
+che scrivere Criminale(West),
+perche' siamo nella logica del primo ordine, possiamo
+usare le variabili ma NON quelle universali,
+si assume che siano esistenziali,
+quando derivo R(A,B) faccio l'unificazione
+e faccio il match (trova sostituzioni alle
+variabili), z/B, sono uguali se pero'
+sostituisci le variabili in questo modo,
+phi != fail?
+sono la stessa cosa se al posto della z ci metti B,
+a questo punto l'algoritmo non restituisce semplicemente,
+ma se e' true ritorna una sostituzione,
+se l'interrogazione e' "C'e' un assassino?",
+lui risponde "Si', e' lui),
+dice non solo che la frase e' un teorema ma
+fornisce anche la sostituzione,
+e' un algoritmo proattivo,
+ogni volta che si inferisce qualcosa di nuovo si mette
+dentro a new,
+aggiungo new alla base di conoscenza e ripeto,
+perche' qualcosa che aggiungo adesso potrebbe far
+scattare qualcosa che prima non poteva scattare,
+se fallisce ritorna la sostituzione vuota.
+
+Unify(R(A,B),R(A,B)) = {},
+quando derivo qualcosa che ho gia' derivato
+prima o che e' gia' nella base di conoscenza
+non la aggiungo a new.
+Renaming ->
+
+Se nella base di conoscenza avessi
+per ogni z R(A,Z)
+e stessi inferendo per ogni y R(A,y)
+starei inferendo la stessa cosa,
+renaming non e' standardize,
+se la formula atomica e' uguale a una
+che gia' hai a meno del nome della
+variabile allora stiamo dicendo
+la stessa cosa,
+due formule atomiche sono identiche se
+hanno argomenti uguali oppure variabili
+universali con nomi diversi.
+
+Piace(x,GELATO) e Piace(y,GELATO) sono
+la stessa cosa, sono l'una il renaming dell'altra,
+se derivo qualcosa che e' il renaming di una
+formula atomica che ho gia' non va considerata.
+
+Usando questo algoritmo vediamo come
+si generano sostituzioni.
+
+Partendo dalla base di conoscenza contenente 4 formule
+atomiche (American(West), Missile(M1), Owns(Nono,M1), Enemy(Nono,America),
+
+(skolemizzazione per togliere x, era venuto fuori che m1 e' il missile
+e che Nono possiede m1), 
+
+Si tiene traccia delle sostituzioni fatte per applicare
+il modus ponens e si applicano alla conseguenza
+(nella relazione da enemy(nono,america) a hostile(nono) sono state
+fatte sostituzioni),
+per ogni x, enemy(x,america) => hostile(x),
+il theta e' x sostituito da Nono,
+derivo hostile(Nono),
+formula atomica e implicazione sono il modus ponens,
+derivo q a cui applico la sostituzione.
+
+A and B => C \equiv !(A and B) or C
+\equiv !A or !B or C
+
+negazione formula atomica,
+letterale negativo (la stessa cosa) e letterale positivo.
+
+Se ammetto funzioni ho un numero infinito di formule atomiche.
+
+Backward chaining example,
+finisce quando abbiamo costruito il grafo al contrario,
+applica il modus ponens al contrario.
+In questo esempio ci chiediamo se esiste un criminale.
+Posso rendere uguali degli elementi con una sostituzione
+e dovro' ricordarmi di questo vincolo.
+
+Missile(m1) matcha tramite la sostituzione y/m1,
+si e' accumulata un'altra sostituzione dopo s/west,
+quando sara' il turno di sells(x,y,z)
+devo considerare al loro posto
+west e m1,
+
+
+20221115
+
+Backward chaining,
+di per se' non fa controlli sui loop,
+
+Funzionano in modo completo solo con clausole
+definite (forward e backward), ovvero con
+le clausole di horn,
+siamo con clausole definite senza funzioni
+che definiscono il datalog,
+non e' detto che questo sia fattibile, magari
+mi servono formule piu' complesse come
+una disgiunzione positiva A or B,
+allora i sistemi per fare inferenza piu' potenti
+si basano sulla risoluzione (gia' vista nella
+logica proposizionale).
+
+Per decidere se KB entails a:
+- KB and a
+- KB and not a
+C'e' il caso in cui BB not entails a e KB not entails not a,
+la logica del primo ordine e' semi-decidibile,
+'semi' perche' se phi non e' conseguenza logica
+di KB allora l'algoritmo di inferenza non e'
+capace di dirci SEMPRE se phi e' conseguenza logica,
+c'e' il caso in cui non termina.
+
+Il metodo di risoluzione per rifiutazione ricava
+la clausola vuota,
+se not a e' conseguenza logica so che la dimostrazione
+terminera' ma se not a non e' conseguenza logica potrebbe
+andare avanti all'infinito,
+siccome c'e' un terzo caso allora ce ne sono due che
+potrebbero andare all'infinito e non so per quale dei
+due motivi e' a causa della semidecidibilita'.
+Non e' che non termina mai, ma esistono casi in cui non termina.
+Se KB = {A or B} allora KB not entails a,
+ma anche KB not entails not a,
+ci sono casi a infiniti passi in cui non possiamo terminare.
+
+f(x,B) non e' vero o falso, e' un individuo,
+i termini di un predicato sono individui,
+P(x,f(x,B),C):
+not P(B,y,C),
+B costante, y variabile, C costante,
+notazione con lettere maiuscole costanti e lettere minuscole variabili,
+le funzioni le riconosciamo perche' sono dentro ai predicati,
+f non puo' essere un predicato,
+e per essere una formula della logica del primo
+ordine deve avere un forall davanti,
+pero' non lo usa perche' tutte le variabili
+sono universali, quelle esistenziali non ci sono piu'
+(si rimuovono con la skilemizzazione),
+facciamo l'unificazione per vedere se i predicati possono
+essere uguali:
+il simbolo di predicato e' uguale, il numero di termini
+del predicato e' lo stesso,
+allora procediamo coppia per coppia,
+primo con primo, secondo con secondo e terzo con terzo:
+nelle coppie ci possono essere costanti, variabili, funzioni.
+il caso costante,costante richiede che le costanti
+siano uguali,
+il termine composto (funzione),
+{x/B, y/f(B,B)},
+le sostituzioni si propagano subito,
+se x deve essere B sostituiamo subito,
+quindi non arriveremo a z/x ma a z/B,
+altrimenti se non lo faccio subito potrei
+escrivere cose contradditorie.
+Gli unici che non si unificano sono termine composto e costante,
+quando c'e' una variabile si unifica sempre.
+
+L'unificazione che abbiamo fatto rende uguali le formule,
+ma puo' essere che due formule siano unificabili con sostituzioni diverse,
+L'algoritmo unify trova la sostituzione piu' generale che vincola
+di meno le variabili universali, quella che preferiamo.
+
+Unification algorithm non chiede lo pseudocodice!
+
+Ottimizzazione: evitiamo di sostituire
+una variabile con un termine che contiene la variabile stessa,
+non sostituiamo y con padre(y),
+a una variabile possiamo sostituire quello che vogliamo
+ma evitiamo queste ricorsioni o incorreremmo in un loop.
+controllo che dentro a un termine composto non ci
+sia la variabile con cui facciamo unification,
+si chiama occur check.
+
+** Teorema della correttezza e completezza della risoluzione
+
+Conversione di una formula in CNF.
+Prima si toglie il simbolo di implicazione,
+Bisogna cambiare il nome a variabili
+che hanno quantificatori diversi,
+ogni quantificatore deve avere una variabile
+diversa!
+skolemizzazione (se non c'e' nessuna variabile universale
+prima si introduce una nuova costante S_k,
+l'importante e' che non sia gia' stata usata
+prima,
+se la variabile esistenziale e' preceduta da una universale
+NON posso mettere la costante,
+se forall x exists z Ama(x,z) stiamo
+dicendo che tutti amano qualcuno, non che tutti
+amano la stessa persona,
+quindi sarebbe sbagliato dire
+Ama(x,SK41),
+perche' e' come se tutti amassero la stessa,
+quando tolgo l'exists all'interno di un forall
+sostituisco con una funzione di Skolem:
+forall x Ama(x, f_{SK41}(x)).
+Siccome non abbiamo piu' le esistenziali
+(e neanche le universali)...
+
+Il quantificatore piu' vicino ha la precedenza,
+
+forall x (P(x) implies exists x Q(x))
+
+forall x (not P(x) or exists x Q(x))
+
+se avessi scritto senza parentesi
+
+forall x P(x) implies exists x Q(x)
+
+uso la seconda x in modo infelice,
+e' equivalente a
+
+forall x P(x) implies exists y Q(y)
+
+ma meglio la seconda.
+
+not forall x P(x) or exists x Q(x)
+
+exists x not P(x) or exists x phi(x)
+

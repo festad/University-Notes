@@ -161,6 +161,109 @@ Gli user-generated-content
 - architetture distribuite, vedremo mapreduce, apache sparks, adupe,
 - database nosql, mongodb (documentale), influxdb.
 
+** Hadoop e DHFS
+
+Sviluppo di architetture distribuite e problema
+dello storage sono gli effetti dei big-data,
+quando ho tanti dati da elaborare velocemente penso prima di tutto
+a potenza di calcolo e spazio di memorizzazione,
+sulle architetture distribuite ho bisogno di nuove
+tecnologie.
+
+Oggi parliamo di architetture distribuite.
+Le distribuite permettono la scalabilita' orizzontale (mantenere
+performance all'aunentare del carico),
+posso poi garantire la scalabilita' lavorando orizzontalmente
+(no limiti potenzialmente),
+i cluster permettono maggiore resistenza ai guasti (fault tolerance),
+l'eventual consistency e' la consistenza del sistema a regime,
+con i dati replicati quando ho una modifica su un nodo questa
+modifica si deve replicare sui nodi nella rete,
+richiede un minimo di tempo,
+in quel lasso non ho la consistenza,
+le architetture distribuite moderne si basano
+sul "shared nothing architecture",
+che non si realizza sulle architetture verticali,
+ci sono colli di bottiglia che sono le risorse condivise,
+su una singola macchina c'e' qualcosa di condiviso che potrebbe
+diventare il collo di bottiglia,
+potrebbe rallentare,
+mentre le distribuite non condividono questi
+colli di bottiglia,
+si parla di commodity hardware,
+server che garantiscono la scalabilita' perche' ne metto
+insieme tanti.
+I singoli nodi hanno la loro memoria e i loro bus, interagiscono
+il minimo possibile con gli altri.
+Per sfruttare la shared nothing architecture anche
+il paradigma di programmazione distribuita ne deve
+tenere conto, come deve tenere conto
+della Data Locality,
+ovvero i dati posizionati al di sopra di un nodo
+non devono spostarsi da quel nodo, perche'
+vorrebbe dire intasare la rete.
+I programmi tendono non a spostare il dato ma la funzionalita'
+(paradigma MapReduce),
+Teorema del CAP:
+pensato per i distribuiti,
+dice che un qualsiasi software distribuito non puo'
+garantire contemporaneamente:
+- consistency, capacita' di mostrare lo stesso dato su nodi diversi, (coerenza)
+- availability, capacita' di rispondere alle richieste da parte del sistema,
+- partition tolerance.
+
+*** Consistenza
+Per garantirla o rinuncio a availability o a partition tolerance,
+per es se il nodo deve aggiornarsi, mentre si aggiorna non puo'
+rispondere di quel dato in quel preciso momento.
+Se voglio l'availability rinuncio alla coerenza.
+Se invece rinuncio alla partition tolerance posso avere le altre due contemporaneamente
+usando un solo nodo.
+
+I relazionali sono pensati piu' per i centralizzati, sono
+piu' acidi, mentre gli altri nosequel sono piu' basici,
+
+Hadoop e' una suite di moduli pensata
+per esecuzione di software parallelizzati su un'architettura
+distribuita,
+e' stato iniziato da Google ed e' ora in mano all'Apache Foundation,
+Hadoop ha un filesystem distribuito
+che hadoop virtualizza,
+hdfs e' hadoop distributed file system,
+Hadoop lavora ancora molto sul disco fisos, non e' imparato per
+essere veloce.
+
+Distributed filesystem:
+funziona come un fs tradizionale, i file vengono
+spezzati e distribuiti sui nodi,
+il blocco minimo su cui viene spezzato il file
+e' il chunk e non supera i 64/128 M,
+il fattore di replica minimo e' 3, (dato replicato
+3 volte),
+il fs sotto ha due tipi di nodi:
+- data node, contiene i dati
+- master node, contiene il registro in cui sono scritte le info
+  su dove sstanno i chunk e come leggere i dati sui data node,
+
+il data note dice su quali nodi scrivere i file chunks e si segna
+questa informazione,
+quando leggo un file non devo sapere su quali nodi
+cercare i ifle ma basta chiedere al master node,
+il master node fa apparire il filesystem come
+una serie di cartelle e di file.
+
+L'applicazione comunica con il HDFS client,
+gli chiede di scrivere o leggere file,
+questa richiesta viene letta dal client che interagisce con
+i nodes per sapere dove trovare questi file,
+il client hdfs chiede al name node dove trovare il file
+perche' il name node ha la tabella,
+sa che il file e' spezzato in determinati chunks
+e sa dove i chunks risiedono,
+il name node aspetta un ack per evitare che il sistema
+possa finire in uno stato inconsistente,
+i data node rispondono con un ack al name node,
+la scrittura non e' a stella ma in sequenza,
 
 ----
 Programmazione funzionale
