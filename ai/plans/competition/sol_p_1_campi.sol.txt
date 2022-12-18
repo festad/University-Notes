@@ -1,0 +1,42 @@
+Cueing down from goal distance:   11 into depth [1]
+                                  10            [1][2][3][4]
+                                   9            [1][2]
+                                   8            [1][2][3]
+                                   7            [1][2][3][4]
+                                   6            [1]
+                                   5            [1][2]
+                                   4            [1]
+                                   3            [1]
+                                   2            [1]
+                                   1            [1]
+                                   0            
+
+ff: found legal plan as follows
+
+step    0: AGGANCIARE_ARATRO CONTADINO1 TRAA1 ARATRO1 CAM1
+        1: SALIRE CONTADINO1 TRAA1 CAM1
+        2: ARARE CONTADINO1 TRAA1 ARATRO1 CAM1
+        3: GUIDARE CONTADINO1 TRAA1 CAM1 CAM2
+        4: ARARE CONTADINO1 TRAA1 ARATRO1 CAM2
+        5: SCENDERE CONTADINO1 TRAA1 CAM2
+        6: SGANCIARE_ARATRO CONTADINO1 TRAA1 ARATRO1 CAM2
+        7: SALIRE CONTADINO1 TRAA1 CAM2
+        8: GUIDARE CONTADINO1 TRAA1 CAM2 CAM1
+        9: SCENDERE CONTADINO1 TRAA1 CAM1
+       10: AGGANCIARE_SEMINATORE CONTADINO1 TRAA1 SEMINATORE1 CAM1
+       11: SALIRE CONTADINO1 TRAA1 CAM1
+       12: SEMINARE CONTADINO1 TRAA1 SEMINATORE1 CAM1
+       13: GUIDARE CONTADINO1 TRAA1 CAM1 CAM2
+       14: SEMINARE CONTADINO1 TRAA1 SEMINATORE1 CAM2
+       15: SCENDERE CONTADINO1 TRAA1 CAM2
+       16: INNAFFIARE CONTADINO1 CAM2
+       17: CAMMINARE CONTADINO1 CAM2 CAM1
+       18: INNAFFIARE CONTADINO1 CAM1
+     
+
+time spent:    0.00 seconds instantiating 268 easy, 20 hard action templates
+               0.00 seconds reachability analysis, yielding 164 facts and 288 actions
+               0.00 seconds creating final representation with 114 relevant facts
+               0.00 seconds building connectivity graph
+               0.00 seconds searching, evaluating 44 states, to a max depth of 4
+               0.00 seconds total time
