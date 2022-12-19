@@ -302,6 +302,273 @@
 
   ;;(:action triangolazione
   ;;)
-  
+
+  (:action guidare-due
+    :parameters (?cont ?tra ?cam_from ?cam_mid ?cam_to)
+    :precondition (and
+      (contadino ?cont) (TRA ?tra) (CAMPO ?cam_from) (CAMPO ?cam_mid) (CAMPO ?cam_to) 
+      (CONNESSO ?cam_from ?cam_mid)
+      (CONNESSO ?cam_mid ?cam_to)
+      (at ?cont ?cam_from)
+      (at ?tra ?cam_from)
+      (on ?cont ?tra)
+    )
+    :effect (and
+    
+      ;; Tutti i contadini sul trattore
+      ;; si spostano a destinazione
+      (forall (?conts)
+        (when
+	  (and
+	    (contadino ?conts)
+	    (on ?conts ?tra)
+	  )
+	  (and
+	    (at ?conts ?cam_to)
+	    (not (at ?conts ?cam_from))
+	  )
+	)
+      )
+
+      ;; Se il trattore e' equipaggiato
+      ;; con un aratro o un seminatore,
+      ;; si sposta anche l'aratro o il seminatore
+      (forall (?equip)
+        (when
+	  (and
+	    ;; (or (ARATRO ?equip) (SEMINATORE ?equip))
+	    (equipaggiato ?tra ?equip)
+	  )
+	  (and
+	    (at ?equip ?cam_to)
+	    (not (at ?equip ?cam_from))
+	  )
+	)
+      )
+      
+      (at ?tra ?cam_to)
+      (not (at ?tra ?cam_from))
+    )
+  )
+
+  (:action arare-due
+    :parameters (?cont ?tra ?aratro ?cam1 ?cam2)
+    :precondition (and
+      (contadino ?cont) (TRA-ARA ?tra) (TRA ?tra) (ARATRO ?aratro) (CAMPO ?cam1) (CAMPO ?cam2)
+      ;; (impegnato ?cont)
+      (on ?cont ?tra)
+      ;; (occupato ?tra)
+      (equipaggiato ?tra ?aratro)
+      ;; (agganciato ?aratro)
+      (CONNESSO ?cam1 ?cam2)
+      (at ?cont ?cam1)
+      (at ?tra ?cam1)
+      (not (arato ?cam1))
+      (not (seminato ?cam1))
+      (not (innaffiato ?cam1))
+      (not (arato ?cam2))
+      (not (seminato ?cam2))
+      (not (innaffiato ?cam2))
+    )
+    :effect (and
+      (arato ?cam1)
+      (arato ?cam2)
+    )
+  )
+
+  (:action seminare-due
+    :parameters (?cont ?tra ?seminatore ?cam1 ?cam2)
+    :precondition (and
+      (contadino ?cont) (TRA-SEMINA ?tra) (TRA ?tra) (SEMINATORE ?seminatore) (CAMPO ?cam1) (CAMPO ?cam2)
+      ;; (impegnato ?cont)
+      (on ?cont ?tra)
+      ;; (occupato ?tra)
+      (equipaggiato ?tra ?seminatore)
+      ;; (agganciato ?seminatore)
+      (CONNESSO ?cam1 ?cam2)
+      (at ?cont ?cam1)
+      (at ?tra ?cam1)
+      (arato ?cam1)
+      (not (seminato ?cam1))
+      (not (innaffiato ?cam1))
+      (arato ?cam2)
+      (not (seminato ?cam2))
+      (not (innaffiato ?cam2))
+    )
+    :effect (and
+      (seminato ?cam1)
+      (seminato ?cam2)
+    )
+  )
+
+(:action innaffiare-due
+    :parameters (?cont ?cam1 ?cam2)
+    :precondition (and
+      (contadino ?cont) (CAMPO ?cam1) (CAMPO ?cam2)
+      (not (impegnato ?cont))
+      (at ?cont ?cam1)
+      (or
+        (and (not (arato ?cam1)) (seminato ?cam1) (not (innaffiato ?cam1)))
+	(and (arato ?cam1)       (seminato ?cam1) (not (innaffiato ?cam1)))
+      )
+      (or
+        (and (not (arato ?cam2)) (seminato ?cam2) (not (innaffiato ?cam2)))
+	(and (arato ?cam2)       (seminato ?cam2) (not (innaffiato ?cam2)))
+      )
+    )
+    :effect (and
+      (arato ?cam1)
+      (arato ?cam2)
+      
+      (innaffiato ?cam1)
+      (innaffiato ?cam2)
+    )
+  )
+
+
+  (:action guidare-tre
+    :parameters (?cont ?tra ?cam_from ?cam_mid_1 ?cam_mid_2 ?cam_to)
+    :precondition (and
+      (contadino ?cont) (TRA ?tra) (CAMPO ?cam_from)  (CAMPO ?cam_mid_1)
+                                   (CAMPO ?cam_mid_2) (CAMPO ?cam_to) 
+      (CONNESSO ?cam_from ?cam_mid_1)
+      (CONNESSO ?cam_mid_1 ?cam_mid_2)
+      (CONNESSO ?cam_mid_2 ?cam_to)
+      (at ?cont ?cam_from)
+      (at ?tra ?cam_from)
+      (on ?cont ?tra)
+    )
+    :effect (and
+      (forall (?conts)
+        (when
+	  (and
+	    (contadino ?conts)
+	    (on ?conts ?tra)
+	  )
+	  (and
+	    (at ?conts ?cam_to)
+	    (not (at ?conts ?cam_from))
+	  )
+	)
+      )
+
+      ;; Se il trattore e' equipaggiato
+      ;; con un aratro o un seminatore,
+      ;; si sposta anche l'aratro o il seminatore
+      (forall (?equip)
+        (when
+	  (and
+	    ;; (or (ARATRO ?equip) (SEMINATORE ?equip))
+	    (equipaggiato ?tra ?equip)
+	  )
+	  (and
+	    (at ?equip ?cam_to)
+	    (not (at ?equip ?cam_from))
+	  )
+	)
+      )
+      
+      (at ?tra ?cam_to)
+      (not (at ?tra ?cam_from))
+    )
+  )
+
+
+  (:action arare-tre
+    :parameters (?cont ?tra ?aratro ?cam1 ?cam2 ?cam3)
+    :precondition (and
+      (contadino ?cont) (TRA-ARA ?tra) (TRA ?tra) (ARATRO ?aratro)
+                        (CAMPO ?cam1) (CAMPO ?cam2) (CAMPO ?cam3)
+      ;; (impegnato ?cont)
+      (on ?cont ?tra)
+      ;; (occupato ?tra)
+      (equipaggiato ?tra ?aratro)
+      ;; (agganciato ?aratro)
+      (CONNESSO ?cam1 ?cam2)
+      (CONNESSO ?cam2 ?cam3)
+      (at ?cont ?cam1)
+      (at ?tra ?cam1)
+      (not (arato ?cam1))
+      (not (seminato ?cam1))
+      (not (innaffiato ?cam1))
+      ;;
+      (not (arato ?cam2))
+      (not (seminato ?cam2))
+      (not (innaffiato ?cam2))
+      ;;
+      (not (arato ?cam3))
+      (not (seminato ?cam3))
+      (not (innaffiato ?cam3))
+    )
+    :effect (and
+      (arato ?cam1)
+      (arato ?cam2)
+      (arato ?cam3)
+    )
+  )
+
+  (:action seminare-tre
+    :parameters (?cont ?tra ?seminatore ?cam1 ?cam2 ?cam3)
+    :precondition (and
+      (contadino ?cont) (TRA-SEMINA ?tra) (TRA ?tra) (SEMINATORE ?seminatore)
+                        (CAMPO ?cam1) (CAMPO ?cam2) (CAMPO ?cam3)
+      ;; (impegnato ?cont)
+      (on ?cont ?tra)
+      ;; (occupato ?tra)
+      (equipaggiato ?tra ?seminatore)
+      ;; (agganciato ?seminatore)
+      (CONNESSO ?cam1 ?cam2)
+      (CONNESSO ?cam2 ?cam3)
+      (at ?cont ?cam1)
+      (at ?tra ?cam1)
+      (arato ?cam1)
+      (not (seminato ?cam1))
+      (not (innaffiato ?cam1))
+      ;;
+      (arato ?cam2)
+      (not (seminato ?cam2))
+      (not (innaffiato ?cam2))
+      ;;
+      (arato ?cam3)
+      (not (seminato ?cam3))
+      (not (innaffiato ?cam3))      
+      
+    )
+    :effect (and
+      (seminato ?cam1)
+      (seminato ?cam2)
+      (seminato ?cam3)
+    )
+  )
+
+(:action innaffiare-tre
+    :parameters (?cont ?cam1 ?cam2 ?cam3)
+    :precondition (and
+      (contadino ?cont) (CAMPO ?cam1) (CAMPO ?cam2) (CAMPO ?cam3)
+      (not (impegnato ?cont))
+      (at ?cont ?cam1)
+      (or
+        (and (not (arato ?cam1)) (seminato ?cam1) (not (innaffiato ?cam1)))
+	(and (arato ?cam1)       (seminato ?cam1) (not (innaffiato ?cam1)))
+      )
+      (or
+        (and (not (arato ?cam2)) (seminato ?cam2) (not (innaffiato ?cam2)))
+	(and (arato ?cam2)       (seminato ?cam2) (not (innaffiato ?cam2)))
+      )
+      (or
+        (and (not (arato ?cam3)) (seminato ?cam3) (not (innaffiato ?cam3)))
+	(and (arato ?cam3)       (seminato ?cam3) (not (innaffiato ?cam3)))
+      )
+    )
+    :effect (and
+      (arato ?cam1)
+      (arato ?cam2)
+      (arato ?cam3)
+      
+      (innaffiato ?cam1)
+      (innaffiato ?cam2)
+      (innaffiato ?cam3)
+    )
+  )
 
 )
