@@ -2,7 +2,7 @@
   (domain CAMPI)
 
   (:requirements
-    :strips :conditional-effects
+    :strips :conditional-effects :equality
   )
 
   (:predicates
@@ -80,6 +80,7 @@
     :parameters (?cont ?tra ?cam_from ?cam_to)
     :precondition (and
       (contadino ?cont) (TRA ?tra) (CAMPO ?cam_from) (CAMPO ?cam_to)
+      (not (= ?cam_from ?cam_to))
       (CONNESSO ?cam_from ?cam_to)
       (at ?cont ?cam_from)
       (at ?tra ?cam_from)
@@ -185,6 +186,7 @@
     :parameters (?cont ?cam_from ?cam_to)
     :precondition (and
       (contadino ?cont) (CAMPO ?cam_from) (CAMPO ?cam_to)
+      (not (= ?cam_from ?cam_to))
       (CONNESSO ?cam_from ?cam_to)
       (at ?cont ?cam_from)
       (not (impegnato ?cont))
@@ -288,7 +290,7 @@
       (at ?tra ?cam)
       (occupato ?tra)
       (equipaggiato ?tra ?seminatore)
-      (agganciato ?seminatore) ;; <- might be removed
+      ;; (agganciato ?seminatore) ;; <- might be removed
     )
     :effect (and
       (not (occupato ?tra))
@@ -308,7 +310,10 @@
   (:action guidare-due
     :parameters (?cont ?tra ?cam_from ?cam_mid ?cam_to)
     :precondition (and
-      (contadino ?cont) (TRA ?tra) (CAMPO ?cam_from) (CAMPO ?cam_mid) (CAMPO ?cam_to) 
+      (contadino ?cont) (TRA ?tra) (CAMPO ?cam_from) (CAMPO ?cam_mid) (CAMPO ?cam_to)
+      (not (= ?cam_from ?cam_mid))
+      (not (= ?cam_mid ?cam_to))
+      (not (= ?cam_from ?cam_to))
       (CONNESSO ?cam_from ?cam_mid)
       (CONNESSO ?cam_mid ?cam_to)
       (at ?cont ?cam_from)
@@ -357,6 +362,9 @@
     :parameters (?cont ?cam_from ?cam_mid ?cam_to)
     :precondition (and
       (contadino ?cont) (CAMPO ?cam_from) (CAMPO ?cam_mid) (CAMPO ?cam_to)
+      (not (= ?cam_from ?cam_mid))
+      (not (= ?cam_mid ?cam_to))
+      (not (= ?cam_from ?cam_to))
       (CONNESSO ?cam_from ?cam_mid)
       (CONNESSO ?cam_mid ?cam_to)
       (at ?cont ?cam_from)
@@ -377,6 +385,7 @@
       ;; (occupato ?tra)
       (equipaggiato ?tra ?aratro)
       ;; (agganciato ?aratro)
+      (not (= ?cam1 ?cam2))
       (CONNESSO ?cam1 ?cam2)
       (at ?cont ?cam1)
       (at ?tra ?cam1)
@@ -402,6 +411,7 @@
       ;; (occupato ?tra)
       (equipaggiato ?tra ?seminatore)
       ;; (agganciato ?seminatore)
+      (not (= ?cam1 ?cam2))
       (CONNESSO ?cam1 ?cam2)
       (at ?cont ?cam1)
       (at ?tra ?cam1)
@@ -423,6 +433,8 @@
     :precondition (and
       (contadino ?cont) (CAMPO ?cam1) (CAMPO ?cam2)
       (not (impegnato ?cont))
+      (not (= ?cam1 ?cam2))
+      (CONNESSO ?cam1 ?cam2)
       (at ?cont ?cam1)
       (or
         (and (not (arato ?cam1)) (seminato ?cam1) (not (innaffiato ?cam1)))
@@ -449,7 +461,13 @@
     :parameters (?cont ?tra ?cam_from ?cam_mid_1 ?cam_mid_2 ?cam_to)
     :precondition (and
       (contadino ?cont) (TRA ?tra) (CAMPO ?cam_from)  (CAMPO ?cam_mid_1)
-                                   (CAMPO ?cam_mid_2) (CAMPO ?cam_to) 
+                                   (CAMPO ?cam_mid_2) (CAMPO ?cam_to)
+      (not (= ?cam_from ?cam_mid_1))
+      (not (= ?cam_from ?cam_mid_2))
+      (not (= ?cam_from ?cam_to))
+      (not (= ?cam_mid_1 ?cam_mid_2))
+      (not (= ?cam_mid_1 ?cam_to))
+      (not (= ?cam_mid_2 ?cam_to))
       (CONNESSO ?cam_from ?cam_mid_1)
       (CONNESSO ?cam_mid_1 ?cam_mid_2)
       (CONNESSO ?cam_mid_2 ?cam_to)
@@ -496,6 +514,12 @@
     :parameters (?cont ?cam_from ?cam_mid_1 ?cam_mid_2 ?cam_to)
     :precondition (and
       (contadino ?cont) (CAMPO ?cam_from) (CAMPO ?cam_mid_1) (CAMPO ?cam_mid_2) (CAMPO ?cam_to)
+      (not (= ?cam_from ?cam_mid_1))
+      (not (= ?cam_from ?cam_mid_2))
+      (not (= ?cam_from ?cam_to))
+      (not (= ?cam_mid_1 ?cam_mid_2))
+      (not (= ?cam_mid_1 ?cam_to))
+      (not (= ?cam_mid_2 ?cam_to))
       (CONNESSO ?cam_from ?cam_mid_1)
       (CONNESSO ?cam_mid_1 ?cam_mid_2)
       (CONNESSO ?cam_mid_2 ?cam_to)
@@ -519,6 +543,9 @@
       ;; (occupato ?tra)
       (equipaggiato ?tra ?aratro)
       ;; (agganciato ?aratro)
+      (not (= ?cam1 ?cam2))
+      (not (= ?cam1 ?cam3))
+      (not (= ?cam2 ?cam3))
       (CONNESSO ?cam1 ?cam2)
       (CONNESSO ?cam2 ?cam3)
       (at ?cont ?cam1)
@@ -552,6 +579,9 @@
       ;; (occupato ?tra)
       (equipaggiato ?tra ?seminatore)
       ;; (agganciato ?seminatore)
+      (not (= ?cam1 ?cam2))
+      (not (= ?cam1 ?cam3))
+      (not (= ?cam2 ?cam3))
       (CONNESSO ?cam1 ?cam2)
       (CONNESSO ?cam2 ?cam3)
       (at ?cont ?cam1)
@@ -581,6 +611,11 @@
     :precondition (and
       (contadino ?cont) (CAMPO ?cam1) (CAMPO ?cam2) (CAMPO ?cam3)
       (not (impegnato ?cont))
+      (not (= ?cam1 ?cam2))
+      (not (= ?cam1 ?cam3))
+      (not (= ?cam2 ?cam3))
+      (CONNESSO ?cam1 ?cam2)
+      (CONNESSO ?cam2 ?cam3)
       (at ?cont ?cam1)
       (or
         (and (not (arato ?cam1)) (seminato ?cam1) (not (innaffiato ?cam1)))
