@@ -1,36 +1,35 @@
-Cueing down from goal distance:   52 into depth [1]
-                                  50            [1]
-                                  48            [1]
-                                  43            [1]
+Cueing down from goal distance:   55 into depth [1]
+                                  51            [1]
+                                  46            [1]
+                                  42            [1]
                                   40            [1][2][3]
-                                  37            [1][2]
-                                  36            [1][2][3][4]
-                                  32            [1][2]
-                                  30            [1]
-                                  29            [1][2]
-                                  28            [1][2][3]
+                                  38            [1]
+                                  37            [1]
+                                  34            [1]
+                                  32            [1][2][3]
+                                  31            [1]
+                                  29            [1]
+                                  28            [1][2]
                                   27            [1]
                                   26            [1]
                                   25            [1][2]
+                                  24            [1]
                                   23            [1]
                                   22            [1][2]
                                   21            [1]
-                                  19            [1]
-                                  17            [1][2]
-                                  16            [1]
-                                  15            [1][2][3]
-                                  14            [1]
-                                  13            [1]
-                                  11            [1][2][3][4]
+                                  20            [1]
+                                  19            [1][2][3]
+                                  17            [1]
+                                  13            [1][2]
+                                  12            [1]
+                                  11            [1][2]
                                   10            [1]
-                                   9            [1]
-                                   8            [1][2]
-                                   7            [1]
-                                   6            [1]
-                                   5            [1]
+                                   9            [1][2]
+                                   7            [1][2]
+                                   5            [1][2]
                                    4            [1][2]
-                                   3            [1]
-                                   2            [1][2]
+                                   3            [1][2]
+                                   2            [1]
                                    1            [1]
                                    0            
 
@@ -38,62 +37,57 @@ ff: found legal plan as follows
 
 step    0: SALIRE CONTADINO1 TRAA1 CAM1
         1: CAMMINARE CONTADINO2 CAM5 CAM1
-        2: SALIRE CONTADINO2 TRAA1 CAM1
-        3: GUIDARE-DUE CONTADINO1 TRAA1 CAM1 CAM5 CAM6
-        4: GUIDARE-DUE CONTADINO1 TRAA1 CAM6 CAM5 CAM4
-        5: SCENDERE CONTADINO1 TRAA1 CAM4
-        6: GUIDARE-DUE CONTADINO2 TRAA1 CAM4 CAM5 CAM6
-        7: GUIDARE-DUE CONTADINO2 TRAA1 CAM6 CAM7 CAM8
-        8: SCENDERE CONTADINO2 TRAA1 CAM8
-        9: AGGANCIARE_ARATRO CONTADINO2 TRAA1 ARATRO2 CAM8
-       10: SALIRE CONTADINO2 TRAA1 CAM8
-       11: ARARE CONTADINO2 TRAA1 ARATRO2 CAM8
-       12: SALIRE CONTADINO1 TRAS2 CAM4
-       13: GUIDARE CONTADINO2 TRAA1 CAM8 CAM1
-       14: ARARE CONTADINO2 TRAA1 ARATRO2 CAM1
-       15: GUIDARE CONTADINO2 TRAA1 CAM1 CAM8
-       16: GUIDARE-DUE CONTADINO2 TRAA1 CAM8 CAM1 CAM2
-       17: ARARE-DUE CONTADINO2 TRAA1 ARATRO2 CAM2 CAM3
-       18: GUIDARE CONTADINO2 TRAA1 CAM2 CAM1
-       19: GUIDARE-DUE CONTADINO2 TRAA1 CAM1 CAM8 CAM7
-       20: ARARE-DUE CONTADINO2 TRAA1 ARATRO2 CAM7 CAM6
-       21: GUIDARE-DUE CONTADINO1 TRAS2 CAM4 CAM5 CAM6
-       22: SCENDERE CONTADINO1 TRAS2 CAM6
-       23: AGGANCIARE_SEMINATORE CONTADINO1 TRAS2 SEMINATORE2 CAM6
-       24: SALIRE CONTADINO1 TRAS2 CAM6
-       25: GUIDARE CONTADINO1 TRAS2 CAM6 CAM7
-       26: SEMINARE-DUE CONTADINO1 TRAS2 SEMINATORE2 CAM7 CAM8
-       27: GUIDARE-DUE CONTADINO1 TRAS2 CAM7 CAM8 CAM9
-       28: GUIDARE-DUE CONTADINO1 TRAS2 CAM9 CAM8 CAM1
-       29: SEMINARE-DUE CONTADINO1 TRAS2 SEMINATORE2 CAM1 CAM2
-       30: GUIDARE-DUE CONTADINO1 TRAS2 CAM1 CAM8 CAM9
-       31: GUIDARE-DUE CONTADINO2 TRAA1 CAM7 CAM8 CAM9
-       32: ARARE-DUE CONTADINO2 TRAA1 ARATRO2 CAM9 CAM10
-       33: GUIDARE-DUE CONTADINO2 TRAA1 CAM9 CAM8 CAM1
-       34: SEMINARE-DUE CONTADINO1 TRAS2 SEMINATORE2 CAM9 CAM10
-       35: GUIDARE-DUE CONTADINO2 TRAA1 CAM1 CAM5 CAM4
-       36: ARARE CONTADINO2 TRAA1 ARATRO2 CAM4
-       37: GUIDARE-DUE CONTADINO1 TRAS2 CAM9 CAM8 CAM1
-       38: GUIDARE-DUE CONTADINO1 TRAS2 CAM1 CAM5 CAM6
-       39: SEMINARE CONTADINO1 TRAS2 SEMINATORE2 CAM6
-       40: GUIDARE CONTADINO2 TRAA1 CAM4 CAM5
-       41: ARARE CONTADINO2 TRAA1 ARATRO2 CAM5
-       42: GUIDARE-DUE CONTADINO1 TRAS2 CAM6 CAM5 CAM4
-       43: SCENDERE CONTADINO2 TRAA1 CAM5
-       44: CAMMINARE CONTADINO2 CAM5 CAM6
-       45: INNAFFIARE-DUE CONTADINO2 CAM6 CAM8
-       46: CAMMINARE CONTADINO2 CAM6 CAM7
-       47: SEMINARE-DUE CONTADINO1 TRAS2 SEMINATORE2 CAM4 CAM3
-       48: GUIDARE CONTADINO1 TRAS2 CAM4 CAM5
-       49: SEMINARE CONTADINO1 TRAS2 SEMINATORE2 CAM5
-       50: INNAFFIARE-DUE CONTADINO2 CAM7 CAM9
-       51: SCENDERE CONTADINO1 TRAS2 CAM5
-       52: INNAFFIARE-DUE CONTADINO1 CAM5 CAM10
+        2: SALIRE CONTADINO2 TRAS1 CAM1
+        3: GUIDARE CONTADINO1 TRAA1 CAM1 CAM2
+        4: GUIDARE-DUE CONTADINO1 TRAA1 CAM2 CAM1 CAM8
+        5: GUIDARE CONTADINO2 TRAS1 CAM1 CAM8
+        6: SCENDERE CONTADINO2 TRAS1 CAM8
+        7: AGGANCIARE_ARATRO CONTADINO2 TRAA1 ARATRO2 CAM8
+        8: SALIRE CONTADINO2 TRAS1 CAM8
+        9: GUIDARE CONTADINO2 TRAS1 CAM8 CAM7
+       10: ARARE CONTADINO1 TRAA1 ARATRO2 CAM8
+       11: GUIDARE CONTADINO1 TRAA1 CAM8 CAM7
+       12: ARARE-DUE CONTADINO1 TRAA1 ARATRO2 CAM7 CAM6
+       13: GUIDARE-DUE CONTADINO1 TRAA1 CAM7 CAM8 CAM9
+       14: ARARE-DUE CONTADINO1 TRAA1 ARATRO2 CAM9 CAM10
+       15: GUIDARE-DUE CONTADINO1 TRAA1 CAM9 CAM8 CAM1
+       16: GUIDARE CONTADINO2 TRAS1 CAM7 CAM8
+       17: GUIDARE-DUE CONTADINO1 TRAA1 CAM1 CAM5 CAM4
+       18: GUIDARE-DUE CONTADINO1 TRAA1 CAM4 CAM5 CAM2
+       19: ARARE-DUE CONTADINO1 TRAA1 ARATRO2 CAM2 CAM1
+       20: GUIDARE-DUE CONTADINO1 TRAA1 CAM2 CAM5 CAM4
+       21: ARARE-DUE CONTADINO1 TRAA1 ARATRO2 CAM4 CAM3
+       22: GUIDARE-DUE CONTADINO1 TRAA1 CAM4 CAM5 CAM2
+       23: GUIDARE-DUE CONTADINO1 TRAA1 CAM2 CAM1 CAM5
+       24: ARARE CONTADINO1 TRAA1 ARATRO2 CAM5
+       25: SCENDERE CONTADINO1 TRAA1 CAM5
+       26: CAMMINARE CONTADINO1 CAM5 CAM2
+       27: GUIDARE-DUE CONTADINO2 TRAS1 CAM8 CAM1 CAM2
+       28: AGGANCIARE_SEMINATORE CONTADINO1 TRAS1 SEMINATORE1 CAM2
+       29: SEMINARE CONTADINO2 TRAS1 SEMINATORE1 CAM2
+       30: GUIDARE CONTADINO2 TRAS1 CAM2 CAM1
+       31: GUIDARE-DUE CONTADINO2 TRAS1 CAM1 CAM8 CAM9
+       32: SEMINARE-DUE CONTADINO2 TRAS1 SEMINATORE1 CAM9 CAM10
+       33: GUIDARE-DUE CONTADINO2 TRAS1 CAM9 CAM8 CAM1
+       34: GUIDARE-DUE CONTADINO2 TRAS1 CAM1 CAM5 CAM6
+       35: SEMINARE-DUE CONTADINO2 TRAS1 SEMINATORE1 CAM6 CAM7
+       36: GUIDARE-DUE CONTADINO2 TRAS1 CAM6 CAM5 CAM4
+       37: INNAFFIARE-DUE CONTADINO1 CAM2 CAM7
+       38: CAMMINARE-DUE CONTADINO1 CAM2 CAM5 CAM6
+       39: SEMINARE-DUE CONTADINO2 TRAS1 SEMINATORE1 CAM4 CAM3
+       40: GUIDARE-DUE CONTADINO2 TRAS1 CAM4 CAM5 CAM1
+       41: INNAFFIARE-DUE CONTADINO1 CAM6 CAM9
+       42: CAMMINARE-DUE CONTADINO1 CAM6 CAM5 CAM4
+       43: INNAFFIARE-DUE CONTADINO1 CAM4 CAM10
+       44: CAMMINARE CONTADINO1 CAM4 CAM3
+       45: SEMINARE-DUE CONTADINO2 TRAS1 SEMINATORE1 CAM1 CAM8
+       46: GUIDARE CONTADINO2 TRAS1 CAM1 CAM5
+       47: SEMINARE CONTADINO2 TRAS1 SEMINATORE1 CAM5
+       48: INNAFFIARE-DUE CONTADINO1 CAM3 CAM8
      
 
-time spent:    0.02 seconds instantiating 1936 easy, 840 hard action templates
-               0.00 seconds reachability analysis, yielding 376 facts and 2616 actions
+time spent:    0.02 seconds instantiating 2064 easy, 840 hard action templates
+               0.00 seconds reachability analysis, yielding 376 facts and 2744 actions
                0.00 seconds creating final representation with 296 relevant facts
                0.01 seconds building connectivity graph
-               0.57 seconds searching, evaluating 1150 states, to a max depth of 4
-               0.60 seconds total time
+               0.47 seconds searching, evaluating 874 states, to a max depth of 3
