@@ -1,0 +1,21 @@
+Il dominio campi-original e' la versione base, tendenzialmente la piu' lenta,
+quella che genera piu' nodi visitati durante l'esecuzione di ff-planner e
+quella che genera piani piu' lunghi.
+
+Il dominio campi_f2 arricchisce la versione base con azioni "raddoppiate"
+come guidare-due, camminare-due, arare-due, seminare-due, innaffiare-due.
+
+Il dominio campi_adj arricchiesce la versione base con
+arare-vicinato, seminare-vicinato, -innaffiare-vicinato.
+
+E' molto difficile estrapolare considerazioni generali su quale delle due
+sia la soluzione migliore, a volte f2
+ha un tempo di runtime inferiore, genera piani piu' brevi e anche minori nodi visitati,
+altre volte invece e' adj a dominare sotto tutti gli aseptti.
+
+Il dominio campi-mix arricchisce la versione base con entrambe le versioni f2 e adj,
+a volte peggiora (ma non di troppo), in genere rimane un intermedio, a volte e'
+migliore delle due precedenti prese singolarmente.
+
+Tutto dipende dalla mappa in cui ci si pone, le sue dimensioni,
+il numero di campi.
