@@ -1,7 +1,7 @@
 import sys
 
-HEIGHT = 6
-WIDTH = 6
+HEIGHT = 1
+WIDTH = 30
 PREDICATE = "arato"
 
 

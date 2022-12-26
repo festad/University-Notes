@@ -80,6 +80,7 @@
     :parameters (?cont ?tra ?cam_from ?cam_to)
     :precondition (and
       (contadino ?cont) (TRA ?tra) (CAMPO ?cam_from) (CAMPO ?cam_to)
+      (not (= ?cam_from ?cam_to))
       (CONNESSO ?cam_from ?cam_to)
       (at ?cont ?cam_from)
       (at ?tra ?cam_from)
@@ -185,6 +186,7 @@
     :parameters (?cont ?cam_from ?cam_to)
     :precondition (and
       (contadino ?cont) (CAMPO ?cam_from) (CAMPO ?cam_to)
+      (not (= ?cam_from ?cam_to))
       (CONNESSO ?cam_from ?cam_to)
       (at ?cont ?cam_from)
       (not (impegnato ?cont))
@@ -204,15 +206,6 @@
       (contadino ?cont) (CAMPO ?cam)
       (not (impegnato ?cont))
       (at ?cont ?cam)
-      ;;(or
-        ;; se il campo puo' essere dichiarato seminato
-	;; senza essere dichiarato arato nel testo del
-	;; problema allora bisogna accettare questo caso
-	;; particolare, dopodiche' dichiarare il campo
-	;; come arato per "correggere" l'errore nel testo
-        ;;  (and (not (arato ?cam)) (seminato ?cam) (not (innaffiato ?cam)))
-        ;;  (and (arato ?cam)       (seminato ?cam) (not (innaffiato ?cam)))
-      ;;)
       (arato ?cam)
       (seminato ?cam)
       (not (innaffiato ?cam))
@@ -291,7 +284,7 @@
       (at ?tra ?cam)
       (occupato ?tra)
       (equipaggiato ?tra ?seminatore)
-      (agganciato ?seminatore) ;; <- might be removed
+      ;;(agganciato ?seminatore) ;; <- might be removed
     )
     :effect (and
       (not (occupato ?tra))
@@ -373,10 +366,6 @@
       (contadino ?cont) (CAMPO ?cam)
       (not (impegnato ?cont))
       (at ?cont ?cam)
-      ;;(or
-      ;;  (and (not (arato ?cam)) (seminato ?cam) (not (innaffiato ?cam)))
-      ;;  (and (arato ?cam) (seminato ?cam) (not (innaffiato ?cam)))
-      ;;)
       (seminato ?cam)
       (not (innaffiato ?cam))
     )
@@ -393,16 +382,6 @@
         (when
 	  (and
 	    (CONNESSO ?cam ?camps)
-	    ;;(or
-	    ;;(and
-	    ;;  (not (arato ?camps))
-	    ;;  (seminato ?camps)
-	    ;;  (not (innaffiato ?camps)))
-	    ;;(and
-	    ;;  (arato ?camps)
-	    ;;  (seminato ?camps)
-	    ;;  (not (innaffiato ?camps)))
-	    ;;)
 	    (seminato ?camps)
 	    (not (innaffiato ?camps))
 	  )

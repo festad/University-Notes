@@ -160,7 +160,7 @@
       (at ?tra ?cam)
       (arato ?cam)
       (not (seminato ?cam))
-      ;;(not (innaffiato ?cam))
+      (not (innaffiato ?cam))
     )
     :effect (and
       (seminato ?cam)
@@ -186,7 +186,7 @@
     :parameters (?cont ?cam_from ?cam_to)
     :precondition (and
       (contadino ?cont) (CAMPO ?cam_from) (CAMPO ?cam_to)
-      ;;(not (= ?cam_from ?cam_to))
+      (not (= ?cam_from ?cam_to))
       (CONNESSO ?cam_from ?cam_to)
       (at ?cont ?cam_from)
       (not (impegnato ?cont))
@@ -439,14 +439,6 @@
       (not (= ?cam1 ?cam2))
       (CONNESSO ?cam1 ?cam2)
       (at ?cont ?cam1)
-      ;;(or
-      ;;  (and (not (arato ?cam1)) (seminato ?cam1) (not (innaffiato ?cam1)))
-      ;;  (and (arato ?cam1)       (seminato ?cam1) (not (innaffiato ?cam1)))
-      ;;)
-      ;;(or
-      ;;  (and (not (arato ?cam2)) (seminato ?cam2) (not (innaffiato ?cam2)))
-      ;;  (and (arato ?cam2)       (seminato ?cam2) (not (innaffiato ?cam2)))
-      ;;)
       (arato ?cam1)
       (arato ?cam2)
       (seminato ?cam1)
@@ -455,9 +447,6 @@
       (not (innaffiato ?cam2))
     )
     :effect (and
-      (arato ?cam1)
-      (arato ?cam2)
-      
       (innaffiato ?cam1)
       (innaffiato ?cam2)
     )
