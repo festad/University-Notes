@@ -5,7 +5,7 @@ quella che genera piani piu' lunghi.
 Il dominio campi_f2 arricchisce la versione base con azioni "raddoppiate"
 come guidare-due, camminare-due, arare-due, seminare-due, innaffiare-due.
 
-Il dominio campi_adj arricchiesce la versione base con
+Il dominio campi_adj arricchisce la versione base con
 arare-vicinato, seminare-vicinato, -innaffiare-vicinato.
 
 E' molto difficile estrapolare considerazioni generali su quale delle due
@@ -19,3 +19,13 @@ migliore delle due precedenti prese singolarmente.
 
 Tutto dipende dalla mappa in cui ci si pone, le sue dimensioni,
 il numero di campi.
+
+Al momento cio' che si puo' concludere e' che
+i domini candidati per essere inviati sono
+campi_f2 e campi_adj.
+
+(campi-mix, sebbene potesse sembrare interessante,
+finora quando ha performato meglio degli altri due
+era meglio di poco, mentre quando ha performato
+peggio era peggio di molto.)
+
