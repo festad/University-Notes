@@ -72,8 +72,15 @@ char *read_file(char *filename, int rows, int cols, int offset)
   // for memory efficiency)
   k = 0;
   int number;
+  char end_line_size = 5;
+  char end_line[end_line_size];
   while(k < rows*cols)
     {
+      if(k % cols == 0 && k != 0)
+	{
+	  fscanf(in_file, " -\n", end_line);
+	  printf("end_line[] -> %s\n", end_line);
+	}
       if(fscanf(in_file, "%d", &number) == 1)
 	{
 	  matrix[k] = number;
