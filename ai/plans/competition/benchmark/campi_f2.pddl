@@ -80,7 +80,7 @@
     :parameters (?cont ?tra ?cam_from ?cam_to)
     :precondition (and
       (contadino ?cont) (TRA ?tra) (CAMPO ?cam_from) (CAMPO ?cam_to)
-      (not (= ?cam_from ?cam_to))
+      ;;(not (= ?cam_from ?cam_to))
       (CONNESSO ?cam_from ?cam_to)
       (at ?cont ?cam_from)
       (at ?tra ?cam_from)
@@ -136,8 +136,8 @@
       (at ?cont ?cam)
       (at ?tra ?cam)
       (not (arato ?cam))
-      (not (seminato ?cam))
-      (not (innaffiato ?cam))
+      ;;(not (seminato ?cam))
+      ;;(not (innaffiato ?cam))
     )
     :effect (and
       (arato ?cam)
@@ -160,7 +160,7 @@
       (at ?tra ?cam)
       (arato ?cam)
       (not (seminato ?cam))
-      (not (innaffiato ?cam))
+      ;;(not (innaffiato ?cam))
     )
     :effect (and
       (seminato ?cam)
@@ -186,7 +186,7 @@
     :parameters (?cont ?cam_from ?cam_to)
     :precondition (and
       (contadino ?cont) (CAMPO ?cam_from) (CAMPO ?cam_to)
-      (not (= ?cam_from ?cam_to))
+      ;;(not (= ?cam_from ?cam_to))
       (CONNESSO ?cam_from ?cam_to)
       (at ?cont ?cam_from)
       (not (impegnato ?cont))
@@ -206,15 +206,6 @@
       (contadino ?cont) (CAMPO ?cam)
       (not (impegnato ?cont))
       (at ?cont ?cam)
-      ;;(or
-        ;; se il campo puo' essere dichiarato seminato
-	;; senza essere dichiarato arato nel testo del
-	;; problema allora bisogna accettare questo caso
-	;; particolare, dopodiche' dichiarare il campo
-	;; come arato per "correggere" l'errore nel testo
-      ;;  (and (not (arato ?cam)) (seminato ?cam) (not (innaffiato ?cam)))
-      ;;  (and (arato ?cam)       (seminato ?cam) (not (innaffiato ?cam)))
-      ;;)
       (arato ?cam)
       (seminato ?cam)
       (not (innaffiato ?cam))
@@ -365,8 +356,8 @@
     :parameters (?cont ?cam_from ?cam_mid ?cam_to)
     :precondition (and
       (contadino ?cont) (CAMPO ?cam_from) (CAMPO ?cam_mid) (CAMPO ?cam_to)
-      (not (= ?cam_from ?cam_mid))
-      (not (= ?cam_mid ?cam_to))
+      ;;(not (= ?cam_from ?cam_mid))
+      ;;(not (= ?cam_mid ?cam_to))
       (not (= ?cam_from ?cam_to))
       (CONNESSO ?cam_from ?cam_mid)
       (CONNESSO ?cam_mid ?cam_to)
@@ -393,11 +384,11 @@
       (at ?cont ?cam1)
       (at ?tra ?cam1)
       (not (arato ?cam1))
-      (not (seminato ?cam1))
-      (not (innaffiato ?cam1))
+      ;;(not (seminato ?cam1))
+      ;;(not (innaffiato ?cam1))
       (not (arato ?cam2))
-      (not (seminato ?cam2))
-      (not (innaffiato ?cam2))
+      ;;(not (seminato ?cam2))
+      ;;(not (innaffiato ?cam2))
     )
     :effect (and
       (arato ?cam1)
@@ -420,10 +411,10 @@
       (at ?tra ?cam1)
       (arato ?cam1)
       (not (seminato ?cam1))
-      (not (innaffiato ?cam1))
+      ;;(not (innaffiato ?cam1))
       (arato ?cam2)
       (not (seminato ?cam2))
-      (not (innaffiato ?cam2))
+      ;;(not (innaffiato ?cam2))
     )
     :effect (and
       (seminato ?cam1)
