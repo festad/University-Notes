@@ -13,7 +13,7 @@
 		(innaffiato ?c)
 		(seminato ?c)
 		(arato ?c)
-		(connnesso ?c1 ?c2)
+		(CONNESSO ?c1 ?c2)
 		(montato ?a))
 
 	(:action cammina
@@ -25,7 +25,7 @@
 			(CAMPO ?dest)
 
 			;;connessione
-			(connesso ?orig ?dest)
+			(CONNESSO ?orig ?dest)
 
 			;;inizio
 			(at ?cont ?orig))
@@ -43,7 +43,7 @@
 			(CAMPO ?dest)
 
 			;;connessione
-			(connesso ?orig ?dest)
+			(CONNESSO ?orig ?dest)
 
 			;;inizio
 			(at ?cont ?orig)
@@ -172,7 +172,7 @@
 			(at ?tra ?lieu)
 
 			;;inizio
-			(arato ?lieu)
+			(arato ?lieu))
 		:effect (and
 			(not (arato ?lieu))
 			(seminato ?lieu)))
@@ -191,4 +191,4 @@
 			(seminato ?lieu))
 		:effect (and
 			(not(seminato ?lieu))
-			(innaffiato ?lieu)))
+			(innaffiato ?lieu))))

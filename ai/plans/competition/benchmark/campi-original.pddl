@@ -2,7 +2,7 @@
   (domain CAMPI)
 
   (:requirements
-    :strips :conditional-effects
+    :strips :conditional-effects :equality
   )
 
   (:predicates
@@ -80,6 +80,7 @@
     :parameters (?cont ?tra ?cam_from ?cam_to)
     :precondition (and
       (contadino ?cont) (TRA ?tra) (CAMPO ?cam_from) (CAMPO ?cam_to)
+      (not (= ?cam_from ?cam_to))
       (CONNESSO ?cam_from ?cam_to)
       (at ?cont ?cam_from)
       (at ?tra ?cam_from)
@@ -127,11 +128,11 @@
     :parameters (?cont ?tra ?aratro ?cam)
     :precondition (and
       (contadino ?cont) (TRA-ARA ?tra) (TRA ?tra) (ARATRO ?aratro) (CAMPO ?cam)
-      ;; (impegnato ?cont)
+      ;;(impegnato ?cont)
       (on ?cont ?tra)
-      ;; (occupato ?tra)
+      ;;(occupato ?tra)
       (equipaggiato ?tra ?aratro)
-      ;; (agganciato ?aratro)
+      ;;(agganciato ?aratro)
       (at ?cont ?cam)
       (at ?tra ?cam)
       (not (arato ?cam))
@@ -150,11 +151,11 @@
     :parameters (?cont ?tra ?seminatore ?cam)
     :precondition (and
       (contadino ?cont) (TRA-SEMINA ?tra) (TRA ?tra) (SEMINATORE ?seminatore) (CAMPO ?cam)
-      ;; (impegnato ?cont)
+      ;;(impegnato ?cont)
       (on ?cont ?tra)
-      ;; (occupato ?tra)
+      ;;(occupato ?tra)
       (equipaggiato ?tra ?seminatore)
-      ;; (agganciato ?seminatore)
+      ;;(agganciato ?seminatore)
       (at ?cont ?cam)
       (at ?tra ?cam)
       (arato ?cam)
@@ -173,7 +174,7 @@
       (at ?cont ?cam)
       (at ?tra ?cam)
       (on ?cont ?tra)
-      ;; (impegnato ?cont)
+      ;;(impegnato ?cont)
     )
     :effect (and
       (not (on ?cont ?tra))
@@ -185,6 +186,7 @@
     :parameters (?cont ?cam_from ?cam_to)
     :precondition (and
       (contadino ?cont) (CAMPO ?cam_from) (CAMPO ?cam_to)
+      (not (= ?cam_from ?cam_to))
       (CONNESSO ?cam_from ?cam_to)
       (at ?cont ?cam_from)
       (not (impegnato ?cont))
@@ -195,6 +197,9 @@
     )
   )
 
+  ;; Nella definizione del problema
+  ;; e' possibile che un campo venga dichiarato
+  ;; come seminato senza essere dichiarato arato?
   (:action innaffiare
     :parameters (?cont ?cam)
     :precondition (and
@@ -202,14 +207,25 @@
       (not (impegnato ?cont))
       (at ?cont ?cam)
       ;;(or
-      ;;(and (not (arato ?cam)) (seminato ?cam) (not (innaffiato ?cam)))
-      ;;(and (arato ?cam)       (seminato ?cam) (not (innaffiato ?cam)))
+        ;; se il campo puo' essere dichiarato seminato
+	;; senza essere dichiarato arato nel testo del
+	;; problema allora bisogna accettare questo caso
+	;; particolare, dopodiche' dichiarare il campo
+	;; come arato per "correggere" l'errore nel testo
+      ;;  (and (not (arato ?cam)) (seminato ?cam) (not (innaffiato ?cam)))
+      ;;  (and (arato ?cam)       (seminato ?cam) (not (innaffiato ?cam)))
       ;;)
       (arato ?cam)
       (seminato ?cam)
       (not (innaffiato ?cam))
     )
     :effect (and
+      ;; solo per correggere l'eventuale
+      ;; errore nel testo per cui il campo
+      ;; e' dichiarato come seminato senza
+      ;; essere stato dichiarato come arato
+      ;; (arato ?cam)
+      
       (innaffiato ?cam)
     )
   )
@@ -277,7 +293,7 @@
       (at ?tra ?cam)
       (occupato ?tra)
       (equipaggiato ?tra ?seminatore)
-      (agganciato ?seminatore) ;; <- might be removed
+      ;;(agganciato ?seminatore) ;; <- might be removed
     )
     :effect (and
       (not (occupato ?tra))
@@ -285,13 +301,5 @@
       (not (agganciato ?seminatore))
     )
   )
-
-  ;;(:action diramazione
-  ;;)
-
-  ;;(:action triangolazione
-  ;;)
-
-
 
 )
