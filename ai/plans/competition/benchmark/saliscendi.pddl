@@ -1,5 +1,5 @@
 (define (domain CAMPI)
-	(:requirements :strips :equality :conditional-effects);;magari tolgo equality...###
+	(:requirements :strips :equality :conditional-effects) ;;magari tolgo equality...###
 	(:predicates
 		(CONTADINO ?c)
 		(CAMPO ?c)
@@ -17,7 +17,7 @@
 
 		(equipaggiato-con-strumento ?t)
 		(equipaggiato-con-aratro ?t ?a)
-		(equipaggiato-con-seminatore ?t ?s)
+		(equipaggiato-con-seminatore ?t ?s))
 
 	(:action cammina
 		:parameters (?cont ?orig ?dest)
@@ -64,7 +64,7 @@
 			(CONTADINO ?cont)
 			(TRA-ARA ?tra)
 			(ARATRO ?arat);; potrei cambiare da ARATRO a montato	###
-			;;(CAMPO ?lieu)
+			(CAMPO ?lieu)
 
 			;;luogo
 			(at ?cont ?lieu)
@@ -72,7 +72,7 @@
 			(at ?arat ?lieu)
 
 			;;inizio
-			(not (equipaggiato-con-strumento ?tra))
+			(not (equipaggiato-con-strumento ?tra)))
 
 		:effect (and
 			(not (at ?arat ?lieu))
@@ -87,14 +87,14 @@
 			(CONTADINO ?cont)
 			(TRA ?tra)
 			(ARATRO ?arat)
-			;;(CAMPO ?lieu)
+			(CAMPO ?lieu)
 
 			;;luogo
 			(at ?cont ?lieu)
 			(at ?tra ?lieu)
 
 			;;inizio
-			(equipaggiato-con-aratro ?tra ?arat)
+			(equipaggiato-con-aratro ?tra ?arat))
 		:effect (and
 			(at ?arat ?lieu)
 			(not (equipaggiato-con-strumento ?tra))
@@ -107,7 +107,7 @@
 			(CONTADINO ?cont)
 			(TRA-SEMINA ?tra)
 			(SEMINATORE ?sem)
-			;;(CAMPO ?lieu)
+			(CAMPO ?lieu)
 
 			;;luogo
 			(at ?cont ?lieu)
@@ -115,12 +115,12 @@
 			(at ?sem ?lieu)
 
 			;;inizio
-			(not (equipaggiato-con-strumento ?tra))
+			(not (equipaggiato-con-strumento ?tra)))
 			
 		:effect (and
 			(not (at ?sem ?lieu))
 			(equipaggiato-con-strumento ?tra)
-			(equipaggiato-con-seminatore ?tra ?sem)
+			(equipaggiato-con-seminatore ?tra ?sem)))
 
 	(:action smonta-seminatore
 		:parameters (?cont ?tra ?sem ?lieu)
@@ -129,7 +129,7 @@
 			(CONTADINO ?cont)
 			(TRA ?tra)
 			(SEMINATORE ?sem)
-			;;(CAMPO ?lieu)
+			(CAMPO ?lieu)
 
 			;;luogo
 			(at ?cont ?lieu)
@@ -148,7 +148,7 @@
 			;;tipi
 			(CONTADINO ?cont)
 			;;(TRA-ARA ?tra)
-			;;(CAMPO ?lieu)
+			(CAMPO ?lieu)
 			;;(ARATRO ?arat)
 
 			(equipaggiato-con-aratro ?tra ?arat)
@@ -160,7 +160,7 @@
 			;;inizio
 			(not (arato ?lieu))
 			(not (seminato ?lieu))
-			(not (innaffiato ?lieu)));;non sicuro		###
+			(not (innaffiato ?lieu)));
 		:effect (and
 			(arato ?lieu)))
 
@@ -170,7 +170,7 @@
 			;;tipi
 			(CONTADINO ?cont)
 			;;(TRA-SEMINA ?tra)
-			;;(CAMPO ?lieu)
+			(CAMPO ?lieu)
 			;;(SEMINATORE ?sem)
 
 			(equipaggiato-con-seminatore ?tra ?sem)
@@ -190,7 +190,7 @@
 		:precondition (and
 			;;tipi
 			(CONTADINO ?cont)
-			;;(CAMPO ?lieu)
+			(CAMPO ?lieu)
 
 			;;luogo
 			(at ?cont ?lieu)
