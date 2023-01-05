@@ -136,17 +136,14 @@
       (at ?cont ?cam)
       (at ?tra ?cam)
       (not (arato ?cam))
-      ;;(not (seminato ?cam))
-      ;;(not (innaffiato ?cam))
+      (not (seminato ?cam))
+      (not (innaffiato ?cam))
     )
     :effect (and
       (arato ?cam)
     )
   )
 
-  ;; Nella definizione del problema
-  ;; e' possibile che un campo venga dichiarato
-  ;; come seminato senza essere dichiarato arato?
   (:action seminare
     :parameters (?cont ?tra ?seminatore ?cam)
     :precondition (and
@@ -160,7 +157,7 @@
       (at ?tra ?cam)
       (arato ?cam)
       (not (seminato ?cam))
-      ;;(not (innaffiato ?cam))
+      (not (innaffiato ?cam))
     )
     :effect (and
       (seminato ?cam)
@@ -200,22 +197,21 @@
   ;; Nella definizione del problema
   ;; e' possibile che un campo venga dichiarato
   ;; come seminato senza essere dichiarato arato?
+  
   (:action innaffiare
     :parameters (?cont ?cam)
     :precondition (and
       (contadino ?cont) (CAMPO ?cam)
       (not (impegnato ?cont))
       (at ?cont ?cam)
-      (arato ?cam)
+      ;;(arato ?cam)
       (seminato ?cam)
       (not (innaffiato ?cam))
     )
     :effect (and
-      ;; solo per correggere l'eventuale
-      ;; errore nel testo per cui il campo
-      ;; e' dichiarato come seminato senza
-      ;; essere stato dichiarato come arato
-      ;; (arato ?cam)
+      ;; Per correggere l'eventuale
+      ;; mancanza nel testo del problema
+      (arato ?cam)
       
       (innaffiato ?cam)
     )
@@ -384,11 +380,11 @@
       (at ?cont ?cam1)
       (at ?tra ?cam1)
       (not (arato ?cam1))
-      ;;(not (seminato ?cam1))
-      ;;(not (innaffiato ?cam1))
+      (not (seminato ?cam1))
+      (not (innaffiato ?cam1))
       (not (arato ?cam2))
-      ;;(not (seminato ?cam2))
-      ;;(not (innaffiato ?cam2))
+      (not (seminato ?cam2))
+      (not (innaffiato ?cam2))
     )
     :effect (and
       (arato ?cam1)
@@ -411,10 +407,10 @@
       (at ?tra ?cam1)
       (arato ?cam1)
       (not (seminato ?cam1))
-      ;;(not (innaffiato ?cam1))
+      (not (innaffiato ?cam1))
       (arato ?cam2)
       (not (seminato ?cam2))
-      ;;(not (innaffiato ?cam2))
+      (not (innaffiato ?cam2))
     )
     :effect (and
       (seminato ?cam1)
@@ -430,24 +426,21 @@
       (not (= ?cam1 ?cam2))
       (CONNESSO ?cam1 ?cam2)
       (at ?cont ?cam1)
-      (arato ?cam1)
-      (arato ?cam2)
+      ;;(arato ?cam1)
+      ;;(arato ?cam2)
       (seminato ?cam1)
       (seminato ?cam2)
       (not (innaffiato ?cam1))
       (not (innaffiato ?cam2))
     )
     :effect (and
+      ;; Per correggere l'eventuale
+      ;; mancanza nel testo del problema
+      (arato ?cam1)
+      (arato ?cam2)
+      
       (innaffiato ?cam1)
       (innaffiato ?cam2)
     )
   )
-
-
-;; SHORTCUT: SALIRE E ARARE
-
-;; Fa' solo rallentare...
-;;
-
-
 )

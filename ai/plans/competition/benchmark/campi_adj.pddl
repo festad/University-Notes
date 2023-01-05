@@ -200,13 +200,14 @@
   ;; Nella definizione del problema
   ;; e' possibile che un campo venga dichiarato
   ;; come seminato senza essere dichiarato arato?
+  
   (:action innaffiare
     :parameters (?cont ?cam)
     :precondition (and
       (contadino ?cont) (CAMPO ?cam)
       (not (impegnato ?cont))
       (at ?cont ?cam)
-      (arato ?cam)
+      ;;(arato ?cam)
       (seminato ?cam)
       (not (innaffiato ?cam))
     )
@@ -215,7 +216,7 @@
       ;; errore nel testo per cui il campo
       ;; e' dichiarato come seminato senza
       ;; essere stato dichiarato come arato
-      ;; (arato ?cam)
+      (arato ?cam)
       
       (innaffiato ?cam)
     )
@@ -386,6 +387,7 @@
 	    (not (innaffiato ?camps))
 	  )
 	  (and
+	    (arato ?camps)
 	    (innaffiato ?camps)
 	  )
 	)
