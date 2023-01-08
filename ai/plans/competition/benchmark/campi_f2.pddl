@@ -76,6 +76,29 @@
     )
   )
 
+  (:action salire-tutti
+    :parameters (?tra ?cam)
+    :precondition (and
+      (TRA ?tra) (CAMPO ?cam)
+      (at ?tra ?cam)
+    )
+    :effect (and
+    (forall (?conts)
+        (when
+	  (and
+	    (contadino ?conts)
+	    (at ?conts ?cam)
+	    (not (impegnato ?conts))
+	  )
+	  (and
+	    (on ?conts ?tra)
+	    (impegnato ?conts)
+	  )
+	)
+      )
+    )
+  )
+
   (:action guidare
     :parameters (?cont ?tra ?cam_from ?cam_to)
     :precondition (and
@@ -176,6 +199,28 @@
     :effect (and
       (not (on ?cont ?tra))
       (not (impegnato ?cont))
+    )
+  )
+
+  (:action scendere-tutti
+    :parameters (?tra ?cam)
+    :precondition (and
+      (TRA ?tra) (CAMPO ?cam)
+      (at ?tra ?cam)
+    )
+    :effect (and
+    (forall (?conts)
+        (when
+	  (and
+	    (contadino ?conts)
+	    (on ?conts ?tra)
+	  )
+	  (and
+	    (not (on ?conts ?tra))
+	    (not (impegnato ?conts))
+	  )
+	)
+      )
     )
   )
 
