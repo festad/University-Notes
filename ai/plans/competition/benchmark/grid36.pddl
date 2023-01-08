@@ -235,8 +235,8 @@ cam35
    
   (:goal (and
 
-(arato cam0)
-(seminato cam4)
+;;(arato cam0)
+;;(seminato cam4)
 (seminato cam5)
 (innaffiato cam6)
 (innaffiato cam19)
