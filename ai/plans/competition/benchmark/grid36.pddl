@@ -1,4 +1,4 @@
-(define (problem Grid25)
+(define (problem Grid36)
   (:domain CAMPI)
   (:objects traA1 traA2 traS1 traS2 aratro1 aratro2 seminatore1 seminatore2
      contadino1 contadino2
@@ -240,9 +240,6 @@ cam35
 (seminato cam5)
 (innaffiato cam6)
 (innaffiato cam19)
-(innaffiato cam35)
-
-
+(innaffiato cam35))
    )
-   )
-  )
+)
