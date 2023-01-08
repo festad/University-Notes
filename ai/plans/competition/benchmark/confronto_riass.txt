@@ -1,47 +1,47 @@
 __grid10l
 adj: 41 - 0.37 seconds
-f2n: 21 - 0.07 seconds
+f2n: 21 - 0.07 seconds*
 ori: 37 - 0.08 seconds
-dav: 33 - 0.02 seconds
+dav: 33 - 0.02 seconds*
 
 __grid15
 adj: 81 - 13.61 seconds
-f2n: 65 - 3.76 seconds
+f2n: 65 - 3.76 seconds*
 ori: 132 - 8.39 seconds
-dav: 104 - 0.36 seconds
+dav: 104 - 0.36 seconds*
 
 __grid25
 adj: 94 - 17.74 seconds
-f2n: 60 - 23.67 seconds
+f2n: 60 - 23.67 seconds*
 ori: 103 - 40.42 seconds
-dav: 116 - 3.17 seconds
+dav: 116 - 3.17 seconds*
 
 __grid30
 adj: 142 - 5.27 seconds
-f2n: 137 - 12.15 seconds
+f2n: 137 - 12.15 seconds*
 ori: 248 - 13.18 seconds
-dav: 210 - 0.81 seconds
+dav: 210 - 0.81 seconds*
 
 __grid36
 adj: 82 - 14.40 seconds
-f2n: 69 - 22.63 seconds
+f2n: 69 - 22.63 seconds*
 ori: 109 - 40.85 seconds
-dav: 86 - 2.14 seconds
+dav: 86 - 2.14 seconds*
 
 __grid40l
 adj: 362 - 777.34 seconds
 f2n: TERMINATO
 ori: TERMINATO
-dav: 225 - 8.48 seconds
+dav: 225 - 8.48 seconds**
 
 __grid40
 adj: 116 - 65.74 seconds
-f2n: 82 - 39.19 seconds
+f2n: 82 - 39.19 seconds**
 ori: 174 - 71.80 seconds
 dav: TERMINATO
 
 __P_campi
 adj: 67 - 1.33 seconds
-f2n: 56 - 0.75 seconds
+f2n: 56 - 0.75 seconds*
 ori: 113 - 1.89 seconds
-dav: 77 - 0.10 seconds
+dav: 77 - 0.10 seconds*
