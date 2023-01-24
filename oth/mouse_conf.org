@@ -1,0 +1,74 @@
+#+title: Audio configuration
+#+author: 719394
+
+#+begin_src sh
+#  sudo pacman -Syu xorg-xinput
+#+end_src
+
+Logout and login.
+
+#+begin_src sh
+# ln -s /usr/share/X11/xorg.conf.d/40-libinput.conf /etc/X11/xorg.conf.d/40-libinput.conf
+#+end_src
+
+Edit /etc/X11/xorg.conf.d/40-libinput.conf:
+
+#+begin_src sh
+# Match on all types of devices but joysticks
+#
+# If you want to configure your devices, do not copy this file.
+# Instead, use a config snippet that contains something like this:
+#
+# Section "InputClass"
+#   Identifier "something or other"
+#   MatchDriver "libinput"
+#
+#   MatchIsTouchpad "on"
+#   ... other Match directives ...
+#   Option "someoption" "value"
+# EndSection
+#
+# This applies the option any libinput device also matched by the other
+# directives. See the xorg.conf(5) man page for more info on
+# matching devices.
+
+Section "InputClass"
+        Identifier "libinput pointer catchall"
+        MatchIsPointer "on"
+        MatchDevicePath "/dev/input/event*"
+        Driver "libinput"
+EndSection
+
+Section "InputClass"
+        Identifier "libinput keyboard catchall"
+        MatchIsKeyboard "on"
+        MatchDevicePath "/dev/input/event*"
+        Driver "libinput"
+EndSection
+
+Section "InputClass"
+        Identifier "libinput touchpad catchall"
+        MatchIsTouchpad "on"
+        MatchDevicePath "/dev/input/event*"
+        Driver "libinput"
+	Option "Tapping" "true"
+	Option "NaturalScrolling" "true"
+	Option "HorizontalScrolling" "true"
+EndSection
+
+Section "InputClass"
+        Identifier "libinput touchscreen catchall"
+        MatchIsTouchscreen "on"
+        MatchDevicePath "/dev/input/event*"
+        Driver "libinput"
+EndSection
+
+Section "InputClass"
+        Identifier "libinput tablet catchall"
+        MatchIsTablet "on"
+        MatchDevicePath "/dev/input/event*"
+        Driver "libinput"
+EndSection
+#+end_src
+
+Logout and login.
