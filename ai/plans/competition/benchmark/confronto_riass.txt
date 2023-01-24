@@ -1,5 +1,5 @@
 __grid10l
-adj: 41 - 0.37 seconds
+adj: 41 - 0.37 seconds  -Best First
 f2n: 21 - 0.07 seconds*
 ori: 37 - 0.08 seconds
 dav: 33 - 0.02 seconds*
@@ -38,7 +38,7 @@ __grid40
 adj: 116 - 65.74 seconds
 f2n: 82 - 39.19 seconds**
 ori: 174 - 71.80 seconds
-dav: TERMINATO
+dav: TERMINATO -Best First
 
 __P_campi
 adj: 67 - 1.33 seconds

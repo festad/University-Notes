@@ -1,11 +1,3 @@
-;;---Dominio semplice---
-;;
-;;Numero infinito di contadini su un trattore
-;;Contadino o strumento su trattore non è più in nessun campo
-;;Movimenti di un campo alla volta
-;;Operazioni su un campo alla volta
-;;per rendere più veloce e non coinvolgere contadini e attrezzatura in alcune azioni, usati predicati occupato, equip_arat, equip_sem, guidato
-
 (define
   (domain CAMPI)
 
@@ -45,7 +37,7 @@
     ;;trattore ha agganciato un seminatore
     (equip_sem ?tra)
 
-    ;;il trattore è governato da almeno un contadino
+    ;;il trattore è governato da un contadino
     (guidato ?tra)
 
     ;;qualunque cosa (x) si trova in un campo y
