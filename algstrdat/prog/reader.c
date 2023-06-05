@@ -1,99 +1,146 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "reader.h"
 
-int main(void)
-{
-  char ROWS = 3;
-  char COLS = 8;
-  char *my_matrix;
-  char offset = 3;
+#define MAX_LINE_LENGTH 1024*1024*5
 
-  my_matrix = read_file("dat.txt", ROWS, COLS, offset);
-
-  // TWO WAYS TO READ THE MATRIX
-  
-  // 1 - WORKS
-  printf(" => First way:\n");
-  for(char i = 0; i < ROWS; i++)
-    {
-      //printf("----------------------\n");
-      for(char j = 0; j < COLS; j++)
-	{
-	  printf("| %4d (#%2d) ", my_matrix[i*COLS + j], i*COLS + j);
-	}
-      printf("|\n");
-    }
-  //printf("----------------------\n");
-
-  // 2 - WORKS
-  printf(" => Second way:\n");
-  for(char i = 0; i < ROWS*COLS; i++)
-    {
-      printf("| %4d (#%2d) ", my_matrix[i], i);
-      if( i!=0 && ((i+1) % COLS) == 0)
-	{
-	  printf("|\n");
-	}
+int count_comment_lines(char *filename) {
+    FILE *in_file = fopen(filename, "r");
+    if(in_file == NULL) {
+        printf("Error! The file %s does not exist.\n", filename);
+        return -1;
     }
 
-  free(my_matrix);
+    char line[MAX_LINE_LENGTH];
+    int comment_lines = 0;
+    while (fgets(line, sizeof(line), in_file)) {
+        if (strncmp(line, ";;;", 3) == 0) {
+            comment_lines++;
+        } else {
+            break;
+        }
+    }
 
+    fclose(in_file);
+    return comment_lines;
 }
 
-// offset: number of lines to skip
-// from the beginning of the file
-char *read_file(char *filename, int rows, int cols, int offset)
-{
-  printf("Reading file: %s\n", filename);
-  printf("  from: line %d\n", (offset+1));
-  printf("  to:   line %d\n", (offset+rows));
-  printf("  (%d x %d) -> %d values\n", rows, cols, rows*cols);
-  FILE *in_file = fopen(filename, "r");
-
-  // Test for file existence
-  if(in_file == NULL)
-    {
-      printf("Error! The file %s does not exist.\n", filename);
-    }
-  
-  char *matrix;
-  matrix = (char *)malloc(sizeof(char)*rows*cols);
-
-  // Drop lines at the beginning
-  int buffer_size = 256;
-  char line[buffer_size];
-  int k = 0;
-  while(fgets(line, buffer_size, in_file) != NULL && ++k < offset);
-
-  // Read integers from <filename> and put them
-  // in the matrix (created as a single array
-  // for memory efficiency)
-  k = 0;
-  int number;
-  char end_line_size = 5;
-  char end_line[end_line_size];
-  while(k < rows*cols)
-    {
-      if(k % cols == 0 && k != 0)
-	{
-	  fscanf(in_file, " -\n", end_line);
-	  printf("end_line[] -> %s\n", end_line);
-	}
-      if(fscanf(in_file, "%d", &number) == 1)
-	{
-	  matrix[k] = number;
-	  k = k+1;
-	}
-      else
-	{
-	  break;
-	}
+int detect_columns(char *filename, int offset) {
+    FILE *in_file = fopen(filename, "r");
+    if(in_file == NULL) {
+        printf("Error! The file %s does not exist.\n", filename);
+        return -1;
     }
 
-  fclose(in_file);
-  printf("Read: %s\n", filename);
-  return matrix;
-  
+    char line[MAX_LINE_LENGTH];
+    int i;
+    for(i = 0; i <= offset; i++) {
+        fgets(line, sizeof(line), in_file);
+    }
+
+    int columns = 0;
+    char* token = strtok(line, " ");
+    while (token) {
+        if (strcmp(token, "-") == 0) {
+            break;
+        }
+        columns++;
+        token = strtok(NULL, " ");
+    }
+
+    fclose(in_file);
+    return columns - 1;
+}
+
+
+Matrix* read_file(char *filename, int rows, int cols, int offset) {
+    FILE *in_file = fopen(filename, "r");
+    if(in_file == NULL) {
+        printf("Error! The file %s does not exist.\n", filename);
+        return NULL;
+    }
+
+    char line[MAX_LINE_LENGTH];
+
+    for(int i = 0; i < offset; i++) {
+        if(!fgets(line, sizeof(line), in_file)) {
+            fclose(in_file);
+            return NULL;
+        }
+    }
+
+    Matrix* matrix = (Matrix*)malloc(sizeof(Matrix));
+    matrix->data = (char *)malloc(sizeof(char)*rows*cols);
+    matrix->rows = rows;
+    matrix->cols = cols;
+
+    int i, j, number;
+    for(i = 0; i < rows; i++) {
+        for(j = 0; j < cols; j++) {
+            if(fscanf(in_file, "%d", &number) != 1) {
+                break;
+            } 
+            matrix->data[i*cols + j] = number;
+        }
+        if(j != cols || fscanf(in_file, " -\n") == EOF) {
+            break;
+        }
+    }
+
+    matrix->rows = i;
+    matrix->cols = (i > 0) ? cols : 0;
+
+    if(i == 0) {
+        free(matrix->data);
+        free(matrix);
+        fclose(in_file);
+        return NULL;
+    }
+
+    fclose(in_file);
+    return matrix;
+}
+
+void free_matrix(Matrix* matrix) {
+    if (matrix) {
+        free(matrix->data);
+        free(matrix);
+    }
+}
+int main(void) {
+    // Counting the commnets
+    int comment_lines = count_comment_lines("dat.txt");
+    printf("Comment lines: %d\n", comment_lines);
+
+    // Detecting the number of columns
+    int COLS = detect_columns("dat.txt", comment_lines);
+    printf("Columns: %d\n", COLS);
+
+    long long mem_size = 4LL * 1024 * 1024 * 1024; // 4GB of memory
+    int loadable_rows = mem_size / (COLS * sizeof(char)); // rows can be loaded at once
+    int offset = comment_lines;
+    printf("-----------------------------------------------\n");
+    printf("Loading %d rows at a time\n", loadable_rows);
+    printf("-----------------------------------------------\n");
+
+    while (1) {
+        Matrix* my_matrix = read_file("dat.txt", loadable_rows, COLS, offset);
+
+        if (my_matrix == NULL) {
+            break;
+        }
+
+        for(int i = 0; i < my_matrix->rows; i++) {
+            for(int j = 0; j < my_matrix->cols; j++) {
+                printf("| %4d ", my_matrix->data[i*COLS + j]);
+            }
+            printf("|\n");
+        }
+
+        offset += my_matrix->rows;
+        free_matrix(my_matrix);
+    }
+    return 0;
 }
