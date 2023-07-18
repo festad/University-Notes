@@ -4,16 +4,21 @@
 
 #include "reader.h"
 
-#define MAX_LINE_LENGTH 1024*1024*5
+// #define MAX_LINE_LENGTH 1024*1024*5
+
+extern long max_line_length;
+
+// (max_line_length - 3) / 2 -> MAX_N_COLUMNS
 
 int count_comment_lines(char *filename) {
+    printf("max_line_length: %d\n", max_line_length);
     FILE *in_file = fopen(filename, "r");
     if(in_file == NULL) {
         printf("Error! The file %s does not exist.\n", filename);
         return -1;
     }
 
-    char line[MAX_LINE_LENGTH];
+    char line[max_line_length];
     int comment_lines = 0;
     while (fgets(line, sizeof(line), in_file)) {
         if (strncmp(line, ";;;", 3) == 0) {
@@ -34,7 +39,7 @@ int detect_columns(char *filename, int offset) {
         return -1;
     }
 
-    char line[MAX_LINE_LENGTH];
+    char line[max_line_length];
     int i;
     for(i = 0; i <= offset; i++) {
         fgets(line, sizeof(line), in_file);
@@ -62,7 +67,7 @@ Matrix* read_file(char *filename, int rows, int cols, int offset) {
         return NULL;
     }
 
-    char line[MAX_LINE_LENGTH];
+    char line[max_line_length];
 
     for(int i = 0; i < offset; i++) {
         if(!fgets(line, sizeof(line), in_file)) {
@@ -108,39 +113,4 @@ void free_matrix(Matrix* matrix) {
         free(matrix->data);
         free(matrix);
     }
-}
-int main(void) {
-    // Counting the commnets
-    int comment_lines = count_comment_lines("dat.txt");
-    printf("Comment lines: %d\n", comment_lines);
-
-    // Detecting the number of columns
-    int COLS = detect_columns("dat.txt", comment_lines);
-    printf("Columns: %d\n", COLS);
-
-    long long mem_size = 4LL * 1024 * 1024 * 1024; // 4GB of memory
-    int loadable_rows = mem_size / (COLS * sizeof(char)); // rows can be loaded at once
-    int offset = comment_lines;
-    printf("-----------------------------------------------\n");
-    printf("Loading %d rows at a time\n", loadable_rows);
-    printf("-----------------------------------------------\n");
-
-    while (1) {
-        Matrix* my_matrix = read_file("dat.txt", loadable_rows, COLS, offset);
-
-        if (my_matrix == NULL) {
-            break;
-        }
-
-        for(int i = 0; i < my_matrix->rows; i++) {
-            for(int j = 0; j < my_matrix->cols; j++) {
-                printf("| %4d ", my_matrix->data[i*COLS + j]);
-            }
-            printf("|\n");
-        }
-
-        offset += my_matrix->rows;
-        free_matrix(my_matrix);
-    }
-    return 0;
 }
