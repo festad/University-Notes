@@ -4,21 +4,21 @@
 
 #include "reader.h"
 
-// #define MAX_LINE_LENGTH 1024*1024*5
+// #define mem_size 1024*1024*5
 
-extern long max_line_length;
+extern long mem_size;
 
-// (max_line_length - 3) / 2 -> MAX_N_COLUMNS
+// (mem_size - 3) / 2 -> MAX_N_COLUMNS
 
 int count_comment_lines(char *filename) {
-    printf("max_line_length: %d\n", max_line_length);
+    printf("mem_size: %d\n", mem_size);
     FILE *in_file = fopen(filename, "r");
     if(in_file == NULL) {
         printf("Error! The file %s does not exist.\n", filename);
         return -1;
     }
 
-    char line[max_line_length];
+    char line[mem_size];
     int comment_lines = 0;
     while (fgets(line, sizeof(line), in_file)) {
         if (strncmp(line, ";;;", 3) == 0) {
@@ -39,7 +39,7 @@ int detect_columns(char *filename, int offset) {
         return -1;
     }
 
-    char line[max_line_length];
+    char line[mem_size];
     int i;
     for(i = 0; i <= offset; i++) {
         fgets(line, sizeof(line), in_file);
@@ -67,7 +67,7 @@ Matrix* read_file(char *filename, int rows, int cols, int offset) {
         return NULL;
     }
 
-    char line[max_line_length];
+    char line[mem_size];
 
     for(int i = 0; i < offset; i++) {
         if(!fgets(line, sizeof(line), in_file)) {
@@ -86,7 +86,7 @@ Matrix* read_file(char *filename, int rows, int cols, int offset) {
         for(j = 0; j < cols; j++) {
             if(fscanf(in_file, "%d", &number) != 1) {
                 break;
-            } 
+            }
             matrix->data[i*cols + j] = number;
         }
         if(j != cols || fscanf(in_file, " -\n") == EOF) {
