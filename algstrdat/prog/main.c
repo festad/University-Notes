@@ -7,6 +7,8 @@ long max_line_length = 1024 * 1024 * 5; // 5 MiB ~ 2_621_438 columns
 
 int main(void) {
 
+    printf("Size of a char: %d\n", sizeof(char));
+
     printf("The source file can contain at most %d columns!\n", (max_line_length-3)/2);
 
     // Counting the commnets
