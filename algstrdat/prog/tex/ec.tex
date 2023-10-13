@@ -46,6 +46,11 @@
 % Logo on every slide at the top-right corner
 \logo{\includegraphics[width=0.1\linewidth]{unibs_logo.pdf}}
 
+% \begin{frame}
+%     \frametitle{Table of contents}
+%     \tableofcontents
+% \end{frame}
+
 \section{Introduction}
 \begin{frame}
     \frametitle{Introduction}
@@ -203,6 +208,41 @@
         \includegraphics[width=0.6\textwidth]{explored_vs_explorable_5x5.pdf}
         % \caption{}
         \label{fig:explored_vs_explorable_5x5}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{Loading portions}
+    The problem to solve might require a huge matrix A,
+    to prevent the computer from running out of memory
+    one of the possible solutions is to load portions of the matrix
+    and solve the problem for each portion, growing incrementally
+    the set of solutions.
+    What is expected is that loading the whole matrix and solving
+    at once is faster than loading portions of the matrix.
+    The results shown in figure (\ref{fig:load_portions_a}) and 
+    (\ref{fig:load_portions_b}) say something more.
+    What can be noticed is that the greatest advantage that comes
+    from decreasing the dimension of the chunk of loaded rows is gained
+    when the dimension is small, then the advantage seem to decrease.
+    In order to understand whether decreasing the dimension of the chunk
+    of loaded rows is always advantageous, we would need to test on much
+    larger instances, and unfortunately the time required to solve such
+    instances is too long. 
+\end{frame}
+
+\begin{frame}
+    % side by side figures "load_portions_a" and "load_portions_b"
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.45\textwidth]{loadable_rows_time_diff.pdf}
+        % \caption{}
+        \label{fig:load_portions_a}
+    \end{figure}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.45\textwidth]{loadable_rows_time_diff_rev.pdf}
+        % \caption{}
+        \label{fig:load_portions_b}
     \end{figure}
 \end{frame}
 
