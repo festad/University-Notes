@@ -252,6 +252,15 @@
     \end{figure}
 \end{frame}
 
+\begin{frame}{}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.75\textwidth]{base_star_5x5.pdf}
+        % \caption{}
+        \label{fig:base_star_5x5}
+    \end{figure}
+\end{frame}
+
 \begin{frame}
 I manually tried to test the behaviour of the algorithm for
 different dimensions of the chunk on a larger problem (1000 rows
@@ -353,16 +362,88 @@ and 15 columns) and
 %     \end{algorithmic}
 % \end{frame}
 
+
 \begin{frame}{}
+    \scriptsize
     \begin{algorithmic}[1]
         \Function{EC}{$A$, $B$, $COV$, $offset$, $filename$, $loadableRows$}
             \State $N \gets \Call{rows}{A}$ \Comment{Number of rows of A}
             \State $M \gets \Call{columns}{A}$ \Comment{Number of columns of A}
-            \State $COV \gets \Call{set}{\emptyset}$
-            \State $reading\_offset \gets 0$
-            \State $new\_COV \gets \Call{EC\_plus}{A, B, offset, reading\_offset, COV, rows, columns, loadable\_rows}$
-            \State \Return $new\_COV$
+            \For {$i \gets 0$ to $N-1$}
+                % row = A[i]
+                \State $row \gets A[i]$     
+                \If {$\Call{sum}{row} == 0$} \Comment{If the row is all 0s}
+                    \For {$t \gets 0$ to $N-1$} \Comment{set the relative
+                    row and column of B to 0}
+                        \State $B[t][i+offset] \gets 0$
+                        \State $B[i+offset][t] \gets 0$
+                    \EndFor
+                    \State \textbf{continue}  
+                \EndIf  
+                    
+                    % if sum(row_data) == M:
+                    % for t in range(N):
+                    %     B[t][i+offset] = 0
+                    %     B[i+offset][t] = 0
+                    % COV.add((offset + i,))
+                    % continue    
+                \If {$\Call{sum}{row} == M$} \Comment{If the row is all 1s}
+                    \For {$t \gets 0$ to $N-1$} \Comment{set the relative
+                    row and column of B to 0}
+                        \State $B[t][i+offset] \gets 0$
+                        \State $B[i+offset][t] \gets 0$
+                    \EndFor
+                    \State $COV \gets COV \cup \{(offset + i,)\}$
+                    \State \textbf{continue}
+                \EndIf
+
+                \State $readingOffset \gets 0$
+
+                \State \Call{WhileCycle}{$A$, $B$, $COV$, $offset$, $filename$, $loadableRows$, $i$, $readingOffset$}
+            \EndFor
         \EndFunction
+    \end{algorithmic}
+\end{frame}
+
+\begin{frame}{}
+    \tiny
+    \begin{algorithmic}
+        \Function{WhileCycle}{$A$, $B$, $COV$, $offset$, $filename$, $loadableRows$, $i$, $readingOffset$}
+
+            \While{$readingOffset < i + offset$}
+                \State $oldA \gets \Call{GetA}{filename, readingOffset, loadableRows}$
+
+                % \State $j \gets 0$ to $\Call{min}{\Call{rows}{oldA}, i + offset - readingOffset} - 1$
+                \State $numRows \gets \Call{rows}{oldA}$
+                \State $endVal \gets \Call{min}{numRows, i + offset - readingOffset} - 1$
+                \For {$j \gets 0$ to $endVal$}
+                    \State $oldRow \gets oldA[j]$
+
+                    \If {$\Call{sum}{oldRow} \in \{0, M\}$}
+                        \State \textbf{continue}
+                    \EndIf
+                    
+                    \If {$\Call{intersect}{oldRow, row}$}
+                        \State $B[j + readingOffset][i + offset] \gets 0$
+                    \Else
+                        \State $I \gets (offset + i, j + readingOffset)$
+                        \State $U \gets \Call{union}{oldRow, row}$
+                        \If {$\Call{sum}{U} == M$}
+                            \State $COV \gets COV \cup \{I\}$
+                            \State $B[j + readingOffset][i + offset] \gets 0$
+                        \Else
+                            \State $B[j + readingOffset][i + offset] \gets 1$
+                            \State $intersect \gets \{k \mid k \in \{0, \dots, j + readingOffset - 1\} \text{ and } B[k][i + offset] \text{ and } B[k][j + readingOffset]\}$
+                            \Comment{intersect is the set of indices of rows of A that have a 1 in both columns $i + offset$ and $j + readingOffset$}
+                            \If {$intersect \neq \emptyset$}
+                                \State $kA \gets \Call{GetA}{filename, intersect, loadableRows}$
+                                \State \Call{Explore}{$I$, $U$, $intersect$, $COV$, $kA$, $B$, $offset$}
+                            \EndIf
+                        \EndIf
+                    \EndIf
+                \EndFor
+            \EndWhile   
+        \EndFunction         
     \end{algorithmic}
 \end{frame}
 
