@@ -9,12 +9,18 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{svg}
+\usepackage{xcolor}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
 
 \usetheme{Madrid}
 
 % unibs color #3d5895
 % \definecolor{unibs}{RGB}{61,88,149}
 \definecolor{unibs}{HTML}{3d5895}
+
+\definecolor{offset}{HTML}{ff1a1a}
+\definecolor{reading_offset}{HTML}{1a40ff}
 
 
 \setbeamercolor{palette primary}{fg=white, bg=unibs}
@@ -223,26 +229,329 @@
     (\ref{fig:load_portions_b}) say something more.
     What can be noticed is that the greatest advantage that comes
     from decreasing the dimension of the chunk of loaded rows is gained
-    when the dimension is small, then the advantage seem to decrease.
-    In order to understand whether decreasing the dimension of the chunk
-    of loaded rows is always advantageous, we would need to test on much
-    larger instances, and unfortunately the time required to solve such
-    instances is too long. 
+    when the dimension is small, then there is no clear advantage,
+    sometimes loading a greater number of rows at once is faster
+    and sometimes it's slower.
 \end{frame}
 
 \begin{frame}
-    % side by side figures "load_portions_a" and "load_portions_b"
     \begin{figure}
         \centering
-        \includegraphics[width=0.45\textwidth]{loadable_rows_time_diff.pdf}
+        \includegraphics[width=0.75\textwidth]{loadable_rows_time_diff.pdf}
         % \caption{}
         \label{fig:load_portions_a}
     \end{figure}
+\end{frame}
+
+\begin{frame}
     \begin{figure}
         \centering
-        \includegraphics[width=0.45\textwidth]{loadable_rows_time_diff_rev.pdf}
+        \includegraphics[width=0.75\textwidth]{loadable_rows_time_diff_rev.pdf}
         % \caption{}
         \label{fig:load_portions_b}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+I manually tried to test the behaviour of the algorithm for
+different dimensions of the chunk on a larger problem (1000 rows
+and 15 columns) and 
+% when loading 1 row at a time the algorithm takes 24.5 seconds, 
+% when loading 2 rows it takes 15.3 seconds,
+% when loading 3 rows it takes 12.3 seconds,
+% when loading 5 rows it takes 9.7 seconds, 
+% when loading 10 rows it takes 7.9 seconds,
+% when loading 20 rows it takes 6.9 seconds,
+% when loading 50 rows it takes 6.5 seconds,
+% when loading 100 rows it takes 6.5 seconds,
+% when loading 400 rows it takes 6.6 seconds.
+\begin{itemize}
+    \item when loading 1 row at a time the algorithm takes 24.5 seconds;
+    \item when loading 2 rows it takes 15.3 seconds;
+    \item when loading 3 rows it takes 12.3 seconds;
+    \item when loading 5 rows it takes 9.7 seconds;
+    \item when loading 10 rows it takes 7.9 seconds;
+    \item when loading 20 rows it takes 6.9 seconds;
+    \item when loading 50 rows it takes 6.5 seconds;
+    \item when loading 100 rows it takes 6.5 seconds;
+    \item when loading 400 rows it takes 6.6 seconds;
+    \item when loading 900 rows it takes 7.1 seconds.
+    \item when loading 1000 rows it takes 7.6 seconds
+\end{itemize}
+\end{frame}
+
+\begin{frame}{EC wrapper}
+    In the following slides the mechanism wrapping the EC algorithm
+    is presented. 
+    The idea is to load a portion of the matrix A, execute the EC algorithm
+    and store the solutions found in a set, then load the next portion of
+    the matrix A, execute the EC algorithm and grow the set of solutions.
+    The important thing to keep in mind is that when the algorithm 
+    is executing on a portion of the matrix A, say from row $i$ to row $j$,
+    the rows from $0$ to $i-1$ are not immediately available, they will
+    be read from within the EC algorithm, again in portions.
+    % color for offset -> #FF1A1A
+    % color for reading offset -> #1A40FF
+    This explains the need for two variables:
+    \textcolor{offset}{offset} and the \textcolor{reading_offset}{reading offset}
+    (the same colors will be used in the schema and the animation to follow.)
+\end{frame}
+
+\begin{frame}{}
+    \begin{itemize}
+        \item \textcolor{offset}{offset} is the index of the first row of the portion
+            of the matrix A that has been passed to the EC algorithm from outside
+        \item \textcolor{reading_offset}{reading offset} is the index of the first row of the portion
+            of the matrix A that is being read by the EC algorithm,
+            reading offset will always start from 0 and will be incremented until
+            the rows are read from 0 to the last row of the portion of the matrix A 
+            that has been passed to the EC algorithm from outside.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{}
+    \begin{algorithmic}[1]
+        % \Function{CalculateFactorial}{$n$}
+        %     \If {$n \leq 1$}
+        %         \State \Return 1
+        %     \Else
+        %         \State $result \gets 1$
+        %         \For{$i \gets 1$ to $n$}
+        %             \State $result \gets result \times i$
+        %         \EndFor
+        %         \State \Return $result$
+        %     \EndIf
+        % \EndFunction
+        % \State $x \gets 5$
+        % \State $y \gets \Call{CalculateFactorial}{x}$
+        % \State \textbf{print} $y$
+        \Function{IncrementalExactCover}{$filename$}
+            \State $rows \gets \Call{GetRows}{filename}$
+            \State $columns \gets \Call{GetColumns}{filename}$
+            \State $B \gets \Call{zeros}{rows, columns}$
+            \State $COV \gets \Call{set}{\emptyset}$
+            \State $offset \gets 0$
+            \While{true}
+                \State $A \gets \Call{GetA}{filename, offset, loadableRows}$
+                % If A is empty, break
+                \If{$A$ is empty}
+                    \State \textbf{break}
+                \EndIf
+                \State \Call{EC}{$A$, $B$, $COV$, $offset$, $filename$, $loadableRows$}
+            \EndWhile
+            \State \Return $COV$
+        \EndFunction
+    \end{algorithmic}
+\end{frame}
+
+% \begin{frame}{}
+%     \begin{algorithmic}[1]
+%         \Function{IncrementalProcess}{$A$, $B$, $COV$, $offset$, $filename$, $loadable\_rows$}
+%             \State $new\_COV$ = \Call{EC}{$A$, $B$, $offset$, $filename$, $loadable\_rows$}
+%             \State $COV \gets COV \cup new\_COV$
+%         \EndFunction
+%     \end{algorithmic}
+% \end{frame}
+
+\begin{frame}{}
+    \begin{algorithmic}[1]
+        \Function{EC}{$A$, $B$, $COV$, $offset$, $filename$, $loadableRows$}
+            \State $N \gets \Call{rows}{A}$ \Comment{Number of rows of A}
+            \State $M \gets \Call{columns}{A}$ \Comment{Number of columns of A}
+            \State $COV \gets \Call{set}{\emptyset}$
+            \State $reading\_offset \gets 0$
+            \State $new\_COV \gets \Call{EC\_plus}{A, B, offset, reading\_offset, COV, rows, columns, loadable\_rows}$
+            \State \Return $new\_COV$
+        \EndFunction
+    \end{algorithmic}
+\end{frame}
+
+
+\begin{frame}{}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.75\textwidth]{partial_loading_mech.pdf}
+        \label{fig:partial_loading_mech}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.45\textwidth]{grid_black.pdf}
+        % \caption{}
+        \label{fig:grid_black}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{}
+    \begin{table}
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            Offset & Reading offset \\
+            \hline
+            0 & 0 \\
+            \hline
+        \end{tabular}
+    \end{table}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.45\textwidth]{grid_3r_1.pdf}
+        % \caption{}
+        \label{fig:grid_3r_1}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{}
+    \begin{table}
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            Offset & Reading offset \\
+            \hline
+            0 & 0 \\
+            \hline
+        \end{tabular}
+    \end{table}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.45\textwidth]{grid_3r_1_ro_1.pdf}
+        % \caption{}
+        \label{fig:grid_3r_1_ro_1}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{}
+    \begin{table}
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            Offset & Reading offset \\
+            \hline
+            3 & 0 \\
+            \hline
+        \end{tabular}
+    \end{table}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.45\textwidth]{grid_3r_2.pdf}
+        % \caption{}
+        \label{fig:grid_3r_2}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{}
+    \begin{table}
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            Offset & Reading offset \\
+            \hline
+            3 & 0 \\
+            \hline
+        \end{tabular}
+    \end{table}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.45\textwidth]{grid_3r_2_ro_1.pdf}
+        % \caption{}
+        \label{fig:grid_3r_2_ro_1}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{}
+    \begin{table}
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            Offset & Reading offset \\
+            \hline
+            3 & 3 \\
+            \hline
+        \end{tabular}
+    \end{table}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.45\textwidth]{grid_3r_2_ro_2.pdf}
+        % \caption{}
+        \label{fig:grid_3r_2_ro_2}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{}
+    \begin{table}
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            Offset & Reading offset \\
+            \hline
+            6 & 0 \\
+            \hline
+        \end{tabular}
+    \end{table}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.45\textwidth]{grid_3r_3.pdf}
+        % \caption{}
+        \label{fig:grid_3r_3}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{}
+    \begin{table}
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            Offset & Reading offset \\
+            \hline
+            6 & 0 \\
+            \hline
+        \end{tabular}
+    \end{table}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.45\textwidth]{grid_3r_3_ro_1.pdf}
+        % \caption{}
+        \label{fig:grid_3r_3_ro_1}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{}
+    \begin{table}
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            Offset & Reading offset \\
+            \hline
+            6 & 3 \\
+            \hline
+        \end{tabular}
+    \end{table}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.45\textwidth]{grid_3r_3_ro_2.pdf}
+        % \caption{}
+        \label{fig:grid_3r_3_ro_2}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{}
+    \begin{table}
+        \centering
+        \begin{tabular}{|c|c|}
+            \hline
+            Offset & Reading offset \\
+            \hline
+            6 & 6 \\
+            \hline
+        \end{tabular}
+    \end{table}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.45\textwidth]{grid_3r_3_ro_3.pdf}
+        % \caption{}
+        \label{fig:grid_3r_3_ro_3}
     \end{figure}
 \end{frame}
 
