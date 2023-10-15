@@ -319,7 +319,7 @@ and 15 columns) and
 \end{frame}
 
 \begin{frame}{}
-    \begin{algorithmic}[1]
+    \begin{algorithmic}
         % \Function{CalculateFactorial}{$n$}
         %     \If {$n \leq 1$}
         %         \State \Return 1
@@ -365,14 +365,14 @@ and 15 columns) and
 
 \begin{frame}{}
     \scriptsize
-    \begin{algorithmic}[1]
+    \begin{algorithmic}
         \Function{EC}{$A$, $B$, $COV$, $offset$, $filename$, $loadableRows$}
             \State $N \gets \Call{rows}{A}$ \Comment{Number of rows of A}
             \State $M \gets \Call{columns}{A}$ \Comment{Number of columns of A}
             \For {$i \gets 0$ to $N-1$}
                 % row = A[i]
                 \State $row \gets A[i]$     
-                \If {$\Call{sum}{row} == 0$} \Comment{If the row is all 0s}
+                \If {$\Call{sum}{row} = 0$} \Comment{If the row is all 0s}
                     \For {$t \gets 0$ to $N-1$} \Comment{set the relative
                     row and column of B to 0}
                         \State $B[t][i+offset] \gets 0$
@@ -387,7 +387,7 @@ and 15 columns) and
                     %     B[i+offset][t] = 0
                     % COV.add((offset + i,))
                     % continue    
-                \If {$\Call{sum}{row} == M$} \Comment{If the row is all 1s}
+                \If {$\Call{sum}{row} = M$} \Comment{If the row is all 1s}
                     \For {$t \gets 0$ to $N-1$} \Comment{set the relative
                     row and column of B to 0}
                         \State $B[t][i+offset] \gets 0$
@@ -428,15 +428,21 @@ and 15 columns) and
                     \Else
                         \State $I \gets (offset + i, j + readingOffset)$
                         \State $U \gets \Call{union}{oldRow, row}$
-                        \If {$\Call{sum}{U} == M$}
+                        \If {$\Call{sum}{U} = M$}
                             \State $COV \gets COV \cup \{I\}$
                             \State $B[j + readingOffset][i + offset] \gets 0$
                         \Else
                             \State $B[j + readingOffset][i + offset] \gets 1$
-                            \State $intersect \gets \{k \mid k \in \{0, \dots, j + readingOffset - 1\} \text{ and } B[k][i + offset] \text{ and } B[k][j + readingOffset]\}$
-                            \Comment{intersect is the set of indices of rows of A that have a 1 in both columns $i + offset$ and $j + readingOffset$}
+                            % \State $intersect \gets \{k \mid k \in \{0, \dots, j + readingOffset - 1\} \text{ and } B[k][i + offset] \text{ and } B[k][j + readingOffset]\}$
+                            \State $intersect \gets []$ % \Comment{intersect is the set of indices of rows of A that have a 1 in both columns $i + offset$ and $j + readingOffset$}
+                            \For {$k \gets 0$ to $j + readingOffset - 1$}
+                                \If {$B[k][i + offset] = 1 \text{ and } B[k][j + readingOffset] = 1$}
+                                    % \State $intersect \gets intersect \cup \{k\}$
+                                    \State \Call{append}{$intersect, k$}
+                                \EndIf
+                            \EndFor
                             \If {$intersect \neq \emptyset$}
-                                \State $kA \gets \Call{GetA}{filename, intersect, loadableRows}$
+                                \State $kA \gets \Call{GetSpecificRowsFromA}{filename, intersect}$
                                 \State \Call{Explore}{$I$, $U$, $intersect$, $COV$, $kA$, $B$, $offset$}
                             \EndIf
                         \EndIf
@@ -444,6 +450,30 @@ and 15 columns) and
                 \EndFor
             \EndWhile   
         \EndFunction         
+    \end{algorithmic}
+\end{frame}
+
+\begin{frame}{}
+    \scriptsize
+    \begin{algorithmic}
+        \Function{Explore}{$I$, $U$, $intersect$, $COV$, $kA$, $B$, $offset$}
+            % \State $kN \gets \Call{rows}{kA}$
+            % \State $kM \gets \Call{columns}{kA}$
+            % \State $B[k][i + offset] \gets 0$
+            \For {$k \in intersect$}
+                \State $Itmp \gets I \cup \{(k)\}$
+                \State $kRow \gets kA[k]$
+                \State $Utmp \gets \Call{union}{U, kRow}$
+                \If {$\Call{sum}{Utmp} == M$}
+                    \State $COV \gets COV \cup \{Itmp\}$
+                \Else {}
+                    \State $intersectTmp \gets \{l \mid l \in intersect \text{ and } l<k \text{ and } B[l][k]\}$
+                    \If {$intersectTmp \neq \emptyset$}
+                        \State \Call{Explore}{$Itmp$, $Utmp$, $intersectTmp$, $COV$, $kA$, $B$, $offset$}
+                    \EndIf
+                \EndIf
+            \EndFor
+        \EndFunction
     \end{algorithmic}
 \end{frame}
 
