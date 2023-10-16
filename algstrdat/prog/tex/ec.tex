@@ -27,6 +27,9 @@
 \setbeamercolor{palette secondary}{fg=white, bg=unibs}
 \setbeamercolor{palette tertiary}{fg=white, bg=unibs}
 \setbeamercolor{palette quaternary}{fg=white, bg=unibs}
+\setbeamercolor{structure}{fg=unibs} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=unibs} % TOC sections
+
 
 
 
@@ -341,7 +344,7 @@ and 15 columns) and
             \State $COV \gets \Call{set}{\emptyset}$
             \State $offset \gets 0$
             \While{true}
-                \State $A \gets \Call{GetA}{filename, offset, loadableRows}$
+                \State $A \gets \Call{GetPortionOfA}{filename, offset, loadableRows}$
                 % If A is empty, break
                 \If{$A$ is empty}
                     \State \textbf{break}
@@ -411,7 +414,7 @@ and 15 columns) and
         \Function{WhileCycle}{$A$, $B$, $COV$, $offset$, $filename$, $loadableRows$, $i$, $readingOffset$}
 
             \While{$readingOffset < i + offset$}
-                \State $oldA \gets \Call{GetA}{filename, readingOffset, loadableRows}$
+                \State $oldA \gets \Call{GetPortionOfA}{filename, readingOffset, loadableRows}$
 
                 % \State $j \gets 0$ to $\Call{min}{\Call{rows}{oldA}, i + offset - readingOffset} - 1$
                 \State $numRows \gets \Call{rows}{oldA}$
@@ -665,5 +668,44 @@ and 15 columns) and
         \label{fig:grid_3r_3_ro_3}
     \end{figure}
 \end{frame}
+
+
+\begin{frame}{Sudoku \footnote[frame]{The following content is 
+    taken from \url{http://www.ams.org/publicoutreach/feature-column/fcarc-kanoodle}}}
+    Any instance of the sudoku problem can be mapped to an isntance of the exact cover problem.
+    Independently of the size of the sudoku grid, which we call $N$ (where $N$ is the number
+    of rows, the number of columns, the number of boxes and the number of possible
+    elements to put in a cell), the exact cover problem will have 4 constraints:
+    \begin{enumerate}
+        \item every cell contains exactly one of the $N$ possible elements;
+        \item every row has exactly one of the $N$ possible elements in each of its $N$ cells;
+        \item every column has exactly one of the $N$ possible elements in each of its $N$ cells;
+        \item every $N\times N$ box has exactly one of the $N$ possible elements in each of its $N$ cells.
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}
+    % \scriptsize
+    Each of these constraints maps to $N^2$ columns of the matrix $A$, that is to say,
+    every set of the exact cover problem has $4\cdot N^2$ elements.
+    The number of sets of the exact cover problem is $N^3$, where $N^2$ is the number of cells
+    and $N$ is the number of possible elements to put in a cell.
+    This is how a 1 is mapped in a row of $A$, where $r,c,b,n \in \{0,\dots,N-1\}$, $i \in \{0,\dots,4\cdot N^2-1\}$,
+    $r$ is the row, $c$ is the column, $b$ is the box, $n$ is the element, $i$ is the index of the column:
+    \begin{enumerate}
+        \item a 1 in the $i$-th cell from the first $N^2$ cells of a row of $A$ means that
+        the $r$-th row and $c$-th cell of the sudoku grid has been filled with an element, without specifying which one,
+        \item a 1 in the $i$-th cell from the second $N^2$ cells of a row of $A$ means that
+        the $r$-th row has been filled with the $n$-th element, where $i = N^2 + r\cdot N + n$;
+        where $i = r\cdot N + c$;
+        \item a 1 in the $i$-th cell from the third $N^2$ cells of a row of $A$ means that
+        the $c$-th column has been filled with the $n$-th element, 
+        where $i = 2\cdot N^2 + c\cdot N + n$;
+        \item a 1 in the $i$-th cell from the fourth $N^2$ cells of a row of $A$ means that
+        the $r$-th row has been filled with the $n$-th element,
+        where $i = 3\cdot N^2 + b\cdot N + n$.
+    \end{enumerate}
+\end{frame}
+
 
 \end{document}

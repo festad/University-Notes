@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.10.14)  15 OCT 2023 23:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.10.14)  16 OCT 2023 20:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -660,24 +660,24 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 ) (./ec.aux)
 \openout1 = `ec.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -732,60 +732,60 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 39.
+Package hyperref Info: Link coloring OFF on input line 42.
  (./ec.out) (./ec.out)
 \@outlinefile=\write5
 \openout5 = `ec.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 39.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 42.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 39.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 42.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 39.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 39.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 39.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 39.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 42.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 39.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 39.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 39.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 42.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 39.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 39.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 39.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 42.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 39.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 39.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 42.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 39.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 42.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 39.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 39.
+(Font)                  OT1/cmss/b/n --> OT1/cmr/b/n on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 39.
+(Font)                  OT1/cmss/b/n --> OT1/cmss/b/n on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 39.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/b/n on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 39.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/b/it on input line 42.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 39.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 39.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/b/n on input line 42.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 42.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
-(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 39.
+(Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 42.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 39.
+(Font)                  OT1/cmss/b/it --> OT1/mathkerncmss/m/sl on input line 42.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 39.
+(Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on input line 42.
  (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
 ) (/usr/share/texmf-dist/tex/latex/translator/translator-bibliography-dictionary-English.dict
@@ -804,34 +804,34 @@ Dictionary: translator-theorem-dictionary, Language: English
 <unibs-circ-logo.pdf, id=38, 118.79025pt x 119.7292pt>
 File: unibs-circ-logo.pdf Graphic file (type pdf)
 <use unibs-circ-logo.pdf>
-Package pdftex.def Info: unibs-circ-logo.pdf  used on input line 50.
+Package pdftex.def Info: unibs-circ-logo.pdf  used on input line 53.
 (pdftex.def)             Requested size: 68.45801pt x 68.99902pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./unibs-circ-logo.pdf>]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 80.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 83.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 80.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 83.
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 80.
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on input line 83.
  (/usr/share/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
 File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/mathkerncmss.
 )
 <unibs_logo.pdf, id=79, 1505.625pt x 677.53125pt>
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 80.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 83.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [2
 
  <./unibs_logo.pdf>]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 104.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 107.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [3
 
@@ -839,11 +839,11 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 104.
 <mem_array.png, id=143, 812.03375pt x 856.19875pt>
 File: mem_array.png Graphic file (type png)
 <use mem_array.png>
-Package pdftex.def Info: mem_array.png  used on input line 114.
+Package pdftex.def Info: mem_array.png  used on input line 117.
 (pdftex.def)             Requested size: 205.37926pt x 216.54448pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 114.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 117.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [4
 
@@ -851,32 +851,32 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 114.
 <mem_matrix.png, id=172, 822.07124pt x 940.51375pt>
 File: mem_matrix.png Graphic file (type png)
 <use mem_matrix.png>
-Package pdftex.def Info: mem_matrix.png  used on input line 124.
+Package pdftex.def Info: mem_matrix.png  used on input line 127.
 (pdftex.def)             Requested size: 188.26346pt x 215.38078pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 124.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 127.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [5
 
  <./mem_matrix.png>]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 136.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 139.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [6
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 154.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 157.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [7
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 161.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 164.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [8
 
@@ -884,18 +884,18 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 161.
 <sol_5x5.pdf, id=281, 1445.4pt x 1445.4pt>
 File: sol_5x5.pdf Graphic file (type pdf)
 <use sol_5x5.pdf>
-Package pdftex.def Info: sol_5x5.pdf  used on input line 170.
+Package pdftex.def Info: sol_5x5.pdf  used on input line 173.
 (pdftex.def)             Requested size: 205.37926pt x 205.37616pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 170.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 173.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [9
 
  <./sol_5x5.pdf>]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 182.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 185.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [10
 
@@ -903,18 +903,18 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 182.
 <explored_5x5.pdf, id=352, 1445.4pt x 1445.4pt>
 File: explored_5x5.pdf Graphic file (type pdf)
 <use explored_5x5.pdf>
-Package pdftex.def Info: explored_5x5.pdf  used on input line 191.
+Package pdftex.def Info: explored_5x5.pdf  used on input line 194.
 (pdftex.def)             Requested size: 205.37926pt x 205.37616pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 191.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 194.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [11
 
  <./explored_5x5.pdf>]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 209.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 212.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [12
 
@@ -922,18 +922,18 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 209.
 <explored_vs_explorable_5x5.pdf, id=429, 1445.4pt x 1445.4pt>
 File: explored_vs_explorable_5x5.pdf Graphic file (type pdf)
 <use explored_vs_explorable_5x5.pdf>
-Package pdftex.def Info: explored_vs_explorable_5x5.pdf  used on input line 218.
+Package pdftex.def Info: explored_vs_explorable_5x5.pdf  used on input line 221.
 (pdftex.def)             Requested size: 205.37926pt x 205.37616pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 218.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 221.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [13
 
  <./explored_vs_explorable_5x5.pdf>]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 235.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 238.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [14
 
@@ -941,11 +941,11 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 235.
 <loadable_rows_time_diff.pdf, id=507, 462.52798pt x 346.89601pt>
 File: loadable_rows_time_diff.pdf Graphic file (type pdf)
 <use loadable_rows_time_diff.pdf>
-Package pdftex.def Info: loadable_rows_time_diff.pdf  used on input line 244.
+Package pdftex.def Info: loadable_rows_time_diff.pdf  used on input line 247.
 (pdftex.def)             Requested size: 256.72147pt x 192.55074pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 244.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 247.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [15
 
@@ -953,11 +953,11 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 244.
 <loadable_rows_time_diff_rev.pdf, id=544, 462.52798pt x 346.89601pt>
 File: loadable_rows_time_diff_rev.pdf Graphic file (type pdf)
 <use loadable_rows_time_diff_rev.pdf>
-Package pdftex.def Info: loadable_rows_time_diff_rev.pdf  used on input line 253.
+Package pdftex.def Info: loadable_rows_time_diff_rev.pdf  used on input line 256.
 (pdftex.def)             Requested size: 256.72147pt x 192.55074pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 253.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 256.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [16
 
@@ -965,68 +965,68 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 253.
 <base_star_5x5.pdf, id=581, 1445.4pt x 1445.4pt>
 File: base_star_5x5.pdf Graphic file (type pdf)
 <use base_star_5x5.pdf>
-Package pdftex.def Info: base_star_5x5.pdf  used on input line 262.
+Package pdftex.def Info: base_star_5x5.pdf  used on input line 265.
 (pdftex.def)             Requested size: 256.72147pt x 256.7202pt.
 
-Overfull \vbox (5.2402pt too high) detected at line 262
+Overfull \vbox (5.2402pt too high) detected at line 265
  []
 
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 262.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 265.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
 [17
 
  <./base_star_5x5.pdf>]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 290.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 293.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [18
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 307.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 310.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [19
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 319.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 322.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [20
 
 ]
 
 LaTeX Font Warning: Font shape `OT1/cmss/m/sc' in size <10.95> not available
-(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 354.
+(Font)              Font shape `OT1/cmr/m/sc' tried instead on input line 357.
 
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 354.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 357.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
 [21
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 406.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 409.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [22
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 454.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 457.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [23
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 478.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 481.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [24
 
@@ -1034,11 +1034,11 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 478.
 <partial_loading_mech.pdf, id=823, 185.0032pt x 78.94109pt>
 File: partial_loading_mech.pdf Graphic file (type pdf)
 <use partial_loading_mech.pdf>
-Package pdftex.def Info: partial_loading_mech.pdf  used on input line 487.
+Package pdftex.def Info: partial_loading_mech.pdf  used on input line 490.
 (pdftex.def)             Requested size: 256.72147pt x 109.5447pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 487.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 490.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [25
 
@@ -1046,11 +1046,11 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 487.
 <grid_black.pdf, id=971, 22.97112pt x 22.87523pt>
 File: grid_black.pdf Graphic file (type pdf)
 <use grid_black.pdf>
-Package pdftex.def Info: grid_black.pdf  used on input line 496.
+Package pdftex.def Info: grid_black.pdf  used on input line 499.
 (pdftex.def)             Requested size: 154.03183pt x 153.40411pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 496.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 499.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [26
 
@@ -1058,11 +1058,11 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 496.
 <grid_3r_1.pdf, id=1000, 22.97112pt x 22.87524pt>
 File: grid_3r_1.pdf Graphic file (type pdf)
 <use grid_3r_1.pdf>
-Package pdftex.def Info: grid_3r_1.pdf  used on input line 515.
+Package pdftex.def Info: grid_3r_1.pdf  used on input line 518.
 (pdftex.def)             Requested size: 154.03183pt x 153.40422pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 515.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 518.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [27
 
@@ -1070,11 +1070,11 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 515.
 <grid_3r_1_ro_1.pdf, id=1029, 22.97112pt x 22.87523pt>
 File: grid_3r_1_ro_1.pdf Graphic file (type pdf)
 <use grid_3r_1_ro_1.pdf>
-Package pdftex.def Info: grid_3r_1_ro_1.pdf  used on input line 534.
+Package pdftex.def Info: grid_3r_1_ro_1.pdf  used on input line 537.
 (pdftex.def)             Requested size: 154.03183pt x 153.40411pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 534.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 537.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [28
 
@@ -1082,11 +1082,11 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 534.
 <grid_3r_2.pdf, id=1058, 22.97112pt x 22.87524pt>
 File: grid_3r_2.pdf Graphic file (type pdf)
 <use grid_3r_2.pdf>
-Package pdftex.def Info: grid_3r_2.pdf  used on input line 553.
+Package pdftex.def Info: grid_3r_2.pdf  used on input line 556.
 (pdftex.def)             Requested size: 154.03183pt x 153.40422pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 553.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 556.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [29
 
@@ -1094,11 +1094,11 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 553.
 <grid_3r_2_ro_1.pdf, id=1088, 22.97112pt x 22.87523pt>
 File: grid_3r_2_ro_1.pdf Graphic file (type pdf)
 <use grid_3r_2_ro_1.pdf>
-Package pdftex.def Info: grid_3r_2_ro_1.pdf  used on input line 572.
+Package pdftex.def Info: grid_3r_2_ro_1.pdf  used on input line 575.
 (pdftex.def)             Requested size: 154.03183pt x 153.40411pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 572.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 575.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [30
 
@@ -1106,11 +1106,11 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 572.
 <grid_3r_2_ro_2.pdf, id=1117, 22.97112pt x 22.87523pt>
 File: grid_3r_2_ro_2.pdf Graphic file (type pdf)
 <use grid_3r_2_ro_2.pdf>
-Package pdftex.def Info: grid_3r_2_ro_2.pdf  used on input line 591.
+Package pdftex.def Info: grid_3r_2_ro_2.pdf  used on input line 594.
 (pdftex.def)             Requested size: 154.03183pt x 153.40411pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 591.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 594.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [31
 
@@ -1118,11 +1118,11 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 591.
 <grid_3r_3.pdf, id=1147, 22.97112pt x 22.87524pt>
 File: grid_3r_3.pdf Graphic file (type pdf)
 <use grid_3r_3.pdf>
-Package pdftex.def Info: grid_3r_3.pdf  used on input line 610.
+Package pdftex.def Info: grid_3r_3.pdf  used on input line 613.
 (pdftex.def)             Requested size: 154.03183pt x 153.40422pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 610.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 613.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [32
 
@@ -1130,11 +1130,11 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 610.
 <grid_3r_3_ro_1.pdf, id=1176, 22.97112pt x 22.87523pt>
 File: grid_3r_3_ro_1.pdf Graphic file (type pdf)
 <use grid_3r_3_ro_1.pdf>
-Package pdftex.def Info: grid_3r_3_ro_1.pdf  used on input line 629.
+Package pdftex.def Info: grid_3r_3_ro_1.pdf  used on input line 632.
 (pdftex.def)             Requested size: 154.03183pt x 153.40411pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 629.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 632.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [33
 
@@ -1142,27 +1142,41 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 629.
 <grid_3r_3_ro_2.pdf, id=1206, 22.97112pt x 22.87523pt>
 File: grid_3r_3_ro_2.pdf Graphic file (type pdf)
 <use grid_3r_3_ro_2.pdf>
-Package pdftex.def Info: grid_3r_3_ro_2.pdf  used on input line 648.
+Package pdftex.def Info: grid_3r_3_ro_2.pdf  used on input line 651.
 (pdftex.def)             Requested size: 154.03183pt x 153.40411pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 648.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 651.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [34
 
  <./grid_3r_3_ro_2.pdf>]
-<grid_3r_3_ro_3.pdf, id=1234, 22.97112pt x 22.87523pt>
+<grid_3r_3_ro_3.pdf, id=1235, 22.97112pt x 22.87523pt>
 File: grid_3r_3_ro_3.pdf Graphic file (type pdf)
 <use grid_3r_3_ro_3.pdf>
-Package pdftex.def Info: grid_3r_3_ro_3.pdf  used on input line 667.
+Package pdftex.def Info: grid_3r_3_ro_3.pdf  used on input line 670.
 (pdftex.def)             Requested size: 154.03183pt x 153.40411pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 667.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 670.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [35
 
  <./grid_3r_3_ro_3.pdf>]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 685.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [36
+
+]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 708.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [37
+
+]
 \tf@nav=\write6
 \openout6 = `ec.nav'.
 
@@ -1177,18 +1191,18 @@ Package rerunfilecheck Info: File `ec.out' has not changed.
 (rerunfilecheck)             Checksum: E94270569C3FF27D40BBB991BD728E5A;388.
  ) 
 Here is how much of TeX's memory you used:
- 26130 strings out of 477985
- 500200 string characters out of 5840057
+ 26208 strings out of 477985
+ 501766 string characters out of 5840057
  1874388 words of memory out of 5000000
- 45681 multiletter control sequences out of 15000+600000
- 522987 words of font info for 70 fonts, out of 8000000 for 9000
+ 45747 multiletter control sequences out of 15000+600000
+ 529211 words of font info for 93 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 128i,15n,122p,459b,563s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on ec.pdf (35 pages, 554818 bytes).
+ 128i,15n,122p,459b,729s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on ec.pdf (37 pages, 584275 bytes).
 PDF statistics:
- 1350 PDF objects out of 1440 (max. 8388607)
- 1164 compressed objects within 12 object streams
- 93 named destinations out of 1000 (max. 500000)
+ 1418 PDF objects out of 1440 (max. 8388607)
+ 1225 compressed objects within 13 object streams
+ 97 named destinations out of 1000 (max. 500000)
  214 words of extra memory for PDF output out of 10000 (max. 10000000)
 
