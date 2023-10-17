@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1697572101 "/home/festad/mygit/University-Notes/algstrdat/prog/tex/ec.tex" "ec.pdf" "ec" 1697572104 0
-  "/home/festad/mygit/University-Notes/algstrdat/prog/tex/ec.tex" 1697572098 37524 45fe39a5777948673dd63569f828c6e7 ""
+["pdflatex"] 1697572707 "/home/festad/mygit/University-Notes/algstrdat/prog/tex/ec.tex" "ec.pdf" "ec" 1697572710 0
+  "/home/festad/mygit/University-Notes/algstrdat/prog/tex/ec.tex" 1697572619 37524 45fe39a5777948673dd63569f828c6e7 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1689853683 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1689853683 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1689853683 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -243,10 +243,10 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1697288663 4480252 045e2e847a54793644911375b39d1f66 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1697288628 6768060 53d44a6995e7f1c00857d0ee9a4f0a74 ""
   "base_star_5x5.pdf" 1697472272 16059 b68dbb825a62390df6e67d0a4c8d489c ""
-  "ec.aux" 1697572104 10964 570c8f0799b64c7d185a8cf7f24367c7 "pdflatex"
-  "ec.nav" 1697572104 5226 c25842b914e5b581a60a44741f9f7cd7 "pdflatex"
-  "ec.out" 1697572104 388 e94270569c3ff27d40bbb991bd728e5a "pdflatex"
-  "ec.tex" 1697572098 37524 45fe39a5777948673dd63569f828c6e7 ""
+  "ec.aux" 1697572709 10964 570c8f0799b64c7d185a8cf7f24367c7 "pdflatex"
+  "ec.nav" 1697572709 5226 c25842b914e5b581a60a44741f9f7cd7 "pdflatex"
+  "ec.out" 1697572709 388 e94270569c3ff27d40bbb991bd728e5a "pdflatex"
+  "ec.tex" 1697572619 37524 45fe39a5777948673dd63569f828c6e7 ""
   "explored_5x5.pdf" 1697472272 12323 e2781e8401e77cdcbd804587b1525c75 ""
   "explored_nodes_prob.pdf" 1697571739 13609 e7fe6ce172441d77845eb568e3d1ed15 ""
   "explored_vs_explorable_5x5.pdf" 1697472272 14642 df95d627fc8661dc9db6d44aa3426587 ""
@@ -264,10 +264,10 @@
   "loadable_rows_time_diff_rev.pdf" 1697472272 16945 2c6e8fafd8321cddabb774220a607917 ""
   "mem_array.png" 1697472272 61525 3260aec2fc1bee50998c3725b3114829 ""
   "mem_matrix.png" 1697472272 76378 b6198168ce95d806a373e8b64822a818 ""
-  "partial_loading_mech.pdf" 1697472669 28261 82336a7a29958d62b1fd64c754aaac79 ""
+  "partial_loading_mech.pdf" 1697572707 28261 263753abea342a67b1ff544313b46af0 ""
   "sol_5x5.pdf" 1697472272 19580 3f912b615b52160332167978224cc38d ""
   "solutions_prob.pdf" 1697571739 18943 2e79351d2ff753d111741aec5e795675 ""
-  "time_to_solve_prob.pdf" 1697571739 12376 6ebbb238c845f91ecee352fd8476d580 ""
+  "time_to_solve_prob.pdf" 1697572336 12950 f0cdbdb1c18e6a241aabf8f9775f3c18 ""
   "unibs-circ-logo.pdf" 1697472272 43245 a50bb90e9d214c4a8fb4a762f88dd314 ""
   "unibs_logo.pdf" 1697472272 74876 8c0ca50d1db9bac6a319dbf6440964fb ""
   (generated)
