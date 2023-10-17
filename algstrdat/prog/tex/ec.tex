@@ -292,6 +292,54 @@ and 15 columns) and
 \end{itemize}
 \end{frame}
 
+\begin{frame}{More or less 1s}
+    For a better comprehension of how the number of explored nodes 
+    depends on the structure of the problem, one possibility
+    is to generate random exact cover problems varying the sparsity
+    of the matrix $A$.
+    The intuition is that the more 1s there are in each row
+    of the matrix $A$, the more difficult it is for the problem
+    to have different rows that are compatible,
+    hence, the more difficult it is for the algorithm to find
+    the solutions and the more nodes it has to explore.
+    The more 0s there are in each row of the matrix $A$, the more
+    likely it is for the problem to find solutions,
+    each partition will contain more rows since each row contains
+    fewer 1s, hence, the algorithm will have less difficulties
+    in finding the solutions and will explore less nodes.
+    The figures (\ref{fig:explored_nodes_prob}), (\ref{fig:solutions_prob})
+    and (\ref{fig:time_to_solve_prob}) show the results of the experiments
+    and, the larger the number of columns (lower rows), the more
+    the more our intuition is confirmed.
+\end{frame}
+
+\begin{frame}{}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.75\textwidth]{explored_nodes_prob.pdf}
+        % \caption{}
+        \label{fig:explored_nodes_prob}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.75\textwidth]{solutions_prob.pdf}
+        % \caption{}
+        \label{fig:solutions_prob}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.75\textwidth]{time_to_solve_prob.pdf}
+        % \caption{}
+        \label{fig:time_to_solve_prob}
+    \end{figure}
+\end{frame}
+
 \begin{frame}{EC wrapper}
     In the following slides the mechanism wrapping the EC algorithm
     is presented. 
@@ -690,22 +738,244 @@ and 15 columns) and
     every set of the exact cover problem has $4\cdot N^2$ elements.
     The number of sets of the exact cover problem is $N^3$, where $N^2$ is the number of cells
     and $N$ is the number of possible elements to put in a cell.
-    This is how a 1 is mapped in a row of $A$, where $r,c,b,n \in \{0,\dots,N-1\}$, $i \in \{0,\dots,4\cdot N^2-1\}$,
-    $r$ is the row, $c$ is the column, $b$ is the box, $n$ is the element, $i$ is the index of the column:
+    This is how a 1 is mapped in a row of $A$, where \\ 
+    $r,c,n \in \{0,\dots,N-1\}$, $i \in \{0,\dots,4\cdot N^2-1\}$, \\
+    $r$ is the row, \\
+    $c$ is the column, \\
+    $n$ is the element, \\
+    $i$ is the index of the column of $A$:
+\end{frame}
+\begin{frame}    
     \begin{enumerate}
         \item a 1 in the $i$-th cell from the first $N^2$ cells of a row of $A$ means that
         the $r$-th row and $c$-th cell of the sudoku grid has been filled with an element, without specifying which one,
+        where $i = r\cdot N + c$;
         \item a 1 in the $i$-th cell from the second $N^2$ cells of a row of $A$ means that
         the $r$-th row has been filled with the $n$-th element, where $i = N^2 + r\cdot N + n$;
-        where $i = r\cdot N + c$;
         \item a 1 in the $i$-th cell from the third $N^2$ cells of a row of $A$ means that
         the $c$-th column has been filled with the $n$-th element, 
         where $i = 2\cdot N^2 + c\cdot N + n$;
         \item a 1 in the $i$-th cell from the fourth $N^2$ cells of a row of $A$ means that
         the $r$-th row has been filled with the $n$-th element,
-        where $i = 3\cdot N^2 + b\cdot N + n$.
+        % floor(r/N^2) in latex is 
+        where $i = 3\cdot N^2 + \left(\left\lfloor\frac{r}{\sqrt{N}}\right\rfloor \sqrt{N}
+        + \left\lfloor\frac{c}{\sqrt{N}}\right\rfloor\right)\cdot N + n$.
     \end{enumerate}
 \end{frame}
+\begin{frame}{}
+    In a sudoku problem there always are some numbers already written in the grid,
+    the presence of the numbers make the problem easier to solve, this reflects on the 
+    exact cover problem being easier to solve, the way it becomes easier to solve is that
+    the number of sets to explore decreases. One possibility is to simply remove the 
+    sets that correspond to the cells that already have a number written in them but,
+    in order to be able to write an algorithm that maps the solution to the exact cover problem 
+    back to the solution to the sudoku, it's easier to keep the sets and make them all 0s rows,
+    we can do this because our algorithm ignores the only 0s rows, so it's like pruning the tree.
+\end{frame}
 
+\begin{frame}{}
+    % CODE TO TRANSLATE INTO PSEUDOCODE
+    % def sudoku_to_exact_cover(sudoku, N):
+    % constraints = 4  # Cell, Row, Column, Box
+    % cover_matrix = [[0] * (N * N * constraints) for _ in range(N * N * N)]
+    % divider = int(N ** 0.5)
+    % for r in range(N):
+    %     for c in range(N):
+    %         for n in range(N):
+    %             # Calculate row index for cover_matrix
+    %             idx = (r * N + c) * N + n
+                
+    %             # Cell constraint - first N^2 columns
+    %             cover_matrix[idx][r * N + c] = 1
+
+    %             # Row constraint - second N^2 columns
+    %             cover_matrix[idx][N * N + r * N + n] = 1
+
+    %             # Column constraint - third N^2 columns
+    %             cover_matrix[idx][2 * N * N + c * N + n] = 1
+
+    %             # Box constraint - last N^2 columns
+    %             box_row = r // divider
+    %             box_col = c // divider
+    %             box_num = box_row * divider + box_col  # This has changed from 3 to 2 for 4x4 Sudoku
+    %             cover_matrix[idx][3 * N * N + box_num * N + n] = 1
+                
+    % # Prune rows that conflict with given Sudoku puzzle
+    % # by setting them to all zeros
+
+    % rows_to_remove = []
+    % for r in range(N):
+    %     for c in range(N):
+    %         num = sudoku[r * N + c]-1
+    %         if num+1:
+    %             start_idx = (r * N + c) * N
+    %             for i in range(N):
+    %                 if i != num:
+    %                     rows_to_remove.append(start_idx + i)
+
+
+    % for idx in sorted(rows_to_remove):
+    %     # Setting the row to all zeros
+    %     cover_matrix[idx] = [0] * (N * N * constraints)
+                
+    % return cover_matrix
+    \
+    \begin{algorithmic}
+        \Function{SudokuToExactCover}{$sudoku[], N$}
+            \Comment{$sudoku$ is an array of length $N^2$ containing the numbers written in the sudoku grid}
+            \State $nConstraints \gets 4$
+            \State $coverMatrix \gets \Call{zeros}{N^3, N^2\cdot nConstraints}$
+            \State \Call{FillA}{coverMatrix, N}
+            % \For{$r \gets 0$ to $N-1$}
+            %     \For{$c \gets 0$ to $N-1$}
+            %         \For{$n \gets 0$ to $N-1$}
+            %             \State $idx \gets (r\cdot N + c)\cdot N + n$
+            %             \State $coverMatrix[idx][r\cdot N + c] \gets 1$
+            %             \State $coverMatrix[idx][N^2 + r\cdot N + n] \gets 1$
+            %             \State $coverMatrix[idx][2\cdot N^2 + c\cdot N + n] \gets 1$
+            %             \State $boxRow \gets \lfloor r / \sqrt{N} \rfloor$
+            %             \State $boxCol \gets \lfloor c / \sqrt{N} \rfloor$
+            %             \State $boxNum \gets boxRow\cdot \sqrt{N} + boxCol$
+            %             \State $coverMatrix[idx][3\cdot N^2 + boxNum\cdot N + n] \gets 1$
+            %         \EndFor
+            %     \EndFor
+            % \EndFor
+            \State $rowsToRemove \gets \Call{set}{\emptyset}$
+            \State \Call{PruneRows}{$rowsToRemove$, $sudoku$, $N$}
+            % \For{$r \gets 0$ to $N-1$}
+            %     \For{$c \gets 0$ to $N-1$}
+            %         \State $symbol \gets sudoku[r\cdot N + c] - 1$ \Comment{Numbers in a sudoku 
+            %         usually start from 1, but in the matrix A they start from 0}
+            %         \If{$num$ is not \textbf{NULL}} \Comment{\textbf{NULL} means that the cell is empty}
+            %             \State $startIdx \gets (r\cdot N + c)\cdot N$
+            %             \For{$i \gets 0$ to $N-1$}
+            %                 \If{$i \neq num$}
+            %                     \State $rowsToRemove \gets rowsToRemove \cup \{startIdx + i\}$
+            %                 \EndIf
+            %             \EndFor
+            %         \EndIf
+            %     \EndFor
+            % \EndFor
+            \For{$idx \in rowsToRemove$}
+                \State $coverMatrix[idx] \gets \Call{zeros}{N^2\cdot nConstraints}$
+            \EndFor
+            \State \Return $coverMatrix$
+        \EndFunction
+    \end{algorithmic}
+\end{frame}
+
+\begin{frame}{}
+    \begin{algorithmic}
+        \Function{FillA}{$coverMatrix$, $N$}
+            \For{$r \gets 0$ to $N-1$}
+                \For{$c \gets 0$ to $N-1$}
+                    \For{$n \gets 0$ to $N-1$}
+                        \State $idx \gets (r\cdot N + c)\cdot N + n$
+                        \State $coverMatrix[idx][r\cdot N + c] \gets 1$
+                        \State $coverMatrix[idx][N^2 + r\cdot N + n] \gets 1$
+                        \State $coverMatrix[idx][2\cdot N^2 + c\cdot N + n] \gets 1$
+                        \State $boxRow \gets \lfloor r / \sqrt{N} \rfloor$
+                        \State $boxCol \gets \lfloor c / \sqrt{N} \rfloor$
+                        \State $boxNum \gets boxRow\cdot \sqrt{N} + boxCol$
+                        \State $coverMatrix[idx][3\cdot N^2 + boxNum\cdot N + n] \gets 1$
+                    \EndFor
+                \EndFor
+            \EndFor
+        \EndFunction
+    \end{algorithmic}
+\end{frame}
+
+\begin{frame}{}
+    \begin{algorithmic}
+        \Function{PruneRows}{$rowsToRemove$, $sudoku$, $N$}
+            \For{$r \gets 0$ to $N-1$}
+                \For{$c \gets 0$ to $N-1$}
+                    \State $symbol \gets sudoku[r\cdot N + c] - 1$ \Comment{Numbers in a sudoku 
+                    usually start from 1, but in the matrix A they start from 0}
+                    \If{$num$ is not \textbf{NULL}}
+                        \State $startIdx \gets (r\cdot N + c)\cdot N$
+                        \For{$i \gets 0$ to $N-1$}
+                            \If{$i \neq num$}
+                                \State $rowsToRemove \gets rowsToRemove \cup \{startIdx + i\}$
+                            \EndIf
+                        \EndFor
+                    \EndIf
+                \EndFor
+            \EndFor
+        \EndFunction
+    \end{algorithmic}
+\end{frame}
+
+\begin{frame}{}
+    % def exact_cover_solution_to_sudoku(partition, N):
+    % solution = [[0] * N for _ in range(N)]
+    
+    % for idx in partition:
+    %     r, c, n = idx // (N * N), (idx // N) % N, (idx % N) + 1
+    %     solution[r][c] = n
+        
+    % return solution
+    \begin{algorithmic}
+        \Function{ExactCoverSolutionToSudoku}{$ecSolution[], N$}
+            \State $sudokuSolution \gets \Call{zeros}{N, N}$
+            \For{$idx \in ecSolution$}
+                \State $r \gets \left\lfloor \frac{idx}{(N^2)} \right\rfloor$
+                \State $c \gets \left\lfloor (\frac{idx}{N}) \mod N \right\rfloor$
+                \State $n \gets (idx \mod N) + 1$
+                \State $sudokuSolution[r][c] \gets n$
+            \EndFor
+            \State \Return $sudokuSolution$
+        \EndFunction
+    \end{algorithmic}
+\end{frame}
+
+\begin{frame}{Generating Exact Cover problems}
+    Having a module that generates exact cover problems given the 
+    number of sets and the cardinality of the domain of the sets is
+    useful for testing purposes.
+    The idea of my choice to generate the exact cover problem is to ensure
+    that the problem has at least a solution (that is, at least a set 
+    of sets that cover all the elements of the domain creating a partition),
+    this is done by setting randomly $M$ rows of the matrix $A$ to 
+    the canonical base of $\mathbb{R}^M$.
+    The precondition for this is that $N \geq M$.
+    The rows of the matrix $A$ that are not set to the canonical base
+    are set randomly, each of their $M$ cells is set to 1 or 0 with
+    probability $p=0.5$.
+\end{frame}
+
+\begin{frame}{}
+    \begin{algorithmic}
+        \Function{GenerateExactCover}{$N$, $M$}
+            \If {$N < M$}
+                \State \Return \textbf{NULL}
+            \EndIf
+            \State $A \gets \Call{zeros}{N, M}$
+            % # Choose a solution
+            % selected_rows = random.sample(range(N), M)
+            % for i, row in enumerate(selected_rows):
+            %     matrix[row][i] = 1            
+            \State $idxCanonicalBase[] \gets \Call{RandomSample}{\{0,\dots,N-1\}, M}$ 
+            \Comment{Sample from $\{0,\dots,N-1\}$ without replacement for $M$ times}
+            \For{$i \gets 0$ to $M-1$}
+                \State $A[idxCanonicalBase[i]][i] \gets 1$
+            \EndFor
+
+            % # Add noise to remaining rows
+            % for i in range(N):
+            %     if i not in selected_rows:
+            %         for j in range(M):
+            %             matrix[i][j] = random.choice([0, 1])  
+            \For{$i \gets 0$ to $N-1$}
+                \If{$i \notin idxCanonicalBase$}
+                    \For{$j \gets 0$ to $M-1$}
+                        \State $A[i][j] \gets \Call{RandomChoice}{\{0,1\}}$
+                    \EndFor
+                \EndIf
+            \EndFor
+            \State \Return $A$
+        \EndFunction
+    \end{algorithmic}
+\end{frame}          
 
 \end{document}
