@@ -258,11 +258,21 @@
 \begin{frame}{}
     \begin{figure}
         \centering
+        \includegraphics[width=0.75\textwidth]{loadable_rows_time_diff_shuffled.pdf}
+        % \caption{}
+        \label{fig:plus_star_5x5}
+    \end{figure}
+\end{frame}
+
+\begin{frame}{}
+    \begin{figure}
+        \centering
         \includegraphics[width=0.75\textwidth]{base_star_5x5.pdf}
         % \caption{}
         \label{fig:base_star_5x5}
     \end{figure}
 \end{frame}
+
 
 \begin{frame}
 I manually tried to test the behaviour of the algorithm for
@@ -876,8 +886,8 @@ and 15 columns) and
                         \State $coverMatrix[idx][2\cdot N^2 + c\cdot N + n] \gets 1$
                         \State $boxRow \gets \lfloor r / \sqrt{N} \rfloor$
                         \State $boxCol \gets \lfloor c / \sqrt{N} \rfloor$
-                        \State $boxNum \gets boxRow\cdot \sqrt{N} + boxCol$
-                        \State $coverMatrix[idx][3\cdot N^2 + boxNum\cdot N + n] \gets 1$
+                        \State $b \gets boxRow\cdot \sqrt{N} + boxCol$
+                        \State $coverMatrix[idx][3\cdot N^2 + b\cdot N + n] \gets 1$
                     \EndFor
                 \EndFor
             \EndFor
@@ -941,7 +951,7 @@ and 15 columns) and
     The precondition for this is that $N \geq M$.
     The rows of the matrix $A$ that are not set to the canonical base
     are set randomly, each of their $M$ cells is set to 1 or 0 with
-    probability $p=0.5$.
+    a custom probability, the default one is $p=0.5$.
 \end{frame}
 
 \begin{frame}{}
