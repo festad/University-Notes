@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.10.14)  17 OCT 2023 22:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Arch Linux) (preloaded format=pdflatex 2023.10.14)  18 OCT 2023 16:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -786,11 +786,11 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 62.
  [3
 
  <./drawings/uc-user.pdf>]
-<drawings/uc-kcadmin.pdf, id=172, 241.86093pt x 152.80374pt>
+<drawings/uc-kcadmin.pdf, id=172, 216.63455pt x 144.4871pt>
 File: drawings/uc-kcadmin.pdf Graphic file (type pdf)
 <use drawings/uc-kcadmin.pdf>
 Package pdftex.def Info: drawings/uc-kcadmin.pdf  used on input line 70.
-(pdftex.def)             Requested size: 308.06367pt x 194.64148pt.
+(pdftex.def)             Requested size: 308.06367pt x 205.47514pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
 Package pdftex.def Info: unibs_logo.pdf  used on input line 70.
@@ -834,16 +834,20 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 90.
  [7
 
  <./drawings/uc-organizer.pdf>]
-<drawings/uc-pilot.pdf, id=310, 268.87172pt x 168.91774pt>
+<drawings/uc-pilot.pdf, id=310, 250.08957pt x 197.1866pt>
 File: drawings/uc-pilot.pdf Graphic file (type pdf)
 <use drawings/uc-pilot.pdf>
 Package pdftex.def Info: drawings/uc-pilot.pdf  used on input line 98.
-(pdftex.def)             Requested size: 308.06367pt x 193.55797pt.
+(pdftex.def)             Requested size: 308.06367pt x 242.92018pt.
+
+Overfull \vbox (13.8496pt too high) detected at line 98
+ []
+
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
 Package pdftex.def Info: unibs_logo.pdf  used on input line 98.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
- [8
+[8
 
  <./drawings/uc-pilot.pdf>]
 <drawings/uc-visitor.pdf, id=344, 89.75748pt x 140.44417pt>
@@ -913,7 +917,7 @@ Here is how much of TeX's memory you used:
  14 hyphenation exceptions out of 8191
  128i,15n,122p,470b,563s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on karting-report.pdf (12 pages, 271691 bytes).
+Output written on karting-report.pdf (12 pages, 272839 bytes).
 PDF statistics:
  484 PDF objects out of 1000 (max. 8388607)
  422 compressed objects within 5 object streams

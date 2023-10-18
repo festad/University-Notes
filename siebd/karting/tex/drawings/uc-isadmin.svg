@@ -29,8 +29,8 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="2.7120321"
-     inkscape:cx="119.83634"
-     inkscape:cy="92.734891"
+     inkscape:cx="203.90614"
+     inkscape:cy="113.75234"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -67,7 +67,7 @@
        width="86.241035"
        height="61.669155"
        id="page1"
-       margin="0 0 0"
+       margin="0"
        bleed="0"
        inkscape:export-filename="uc-isadmin.pdf"
        inkscape:export-xdpi="300"
@@ -344,13 +344,15 @@
          y="38.476673"
          id="tspan11-0-5-2">&lt;&lt;include&gt;&gt;</tspan></text>
     <path
-       style="fill:#000000;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3;stroke-dasharray:0.600001, 0.600001;stroke-dashoffset:0;marker-start:url(#marker6)"
-       d="M 103.40764,39.518317 81.842134,39.381887"
-       id="path3" />
+       style="fill:none;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3;stroke-dasharray:0.600001, 0.600001;stroke-dashoffset:0;marker-start:url(#marker6)"
+       d="M 103.40764,39.518317 C 96.371235,42.791555 90.63627,38.352142 81.805168,38.29235"
+       id="path3"
+       sodipodi:nodetypes="cc" />
     <path
-       style="fill:#000000;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3;stroke-dasharray:0.600001, 0.600001;stroke-dashoffset:0;marker-start:url(#marker5)"
-       d="M 74.375054,43.929435 71.951702,56.041241"
-       id="path4" />
+       style="fill:none;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3;stroke-dasharray:0.600001, 0.600001;stroke-dashoffset:0;marker-start:url(#marker5)"
+       d="m 74.375054,43.929435 c 2.340995,5.267773 -2.407868,7.976388 -5.959487,11.117161"
+       id="path4"
+       sodipodi:nodetypes="cc" />
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.53377px;line-height:1.46278px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -375,5 +377,20 @@
        cy="79.789978"
        rx="9.9496403"
        ry="4.9496403" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3;stroke-dasharray:0.4, 0.799999;marker-end:url(#marker6)"
+       d="m 75.02062,59.871959 c 3.209799,-0.118377 1.341782,-6.33172 5.913374,-6.645449"
+       id="path2"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3;stroke-dasharray:0.4, 0.799999;marker-end:url(#marker6)"
+       d="m 73.516076,63.671809 c 5.677542,2.109075 6.120893,4.520329 0.463787,7.283775"
+       id="path7"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3;stroke-dasharray:0.4, 0.799999;marker-end:url(#marker6)"
+       d="m 81.747242,54.643021 c -7.12916,3.571935 6.255848,10.288164 5.445777,19.399393"
+       id="path8"
+       sodipodi:nodetypes="cc" />
   </g>
 </svg>

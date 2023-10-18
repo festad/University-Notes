@@ -28,8 +28,8 @@
      inkscape:document-units="mm"
      showgrid="true"
      inkscape:zoom="3.3215472"
-     inkscape:cx="158.35993"
-     inkscape:cy="116.36143"
+     inkscape:cx="158.35994"
+     inkscape:cy="116.36144"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -80,25 +80,6 @@
        width="2.7297921"
        height="8.1010084"
        id="rect4" />
-    <marker
-       style="overflow:visible"
-       id="Triangle-3"
-       refX="0"
-       refY="0"
-       orient="auto-start-reverse"
-       inkscape:stockid="Triangle arrow"
-       markerWidth="1"
-       markerHeight="1"
-       viewBox="0 0 1 1"
-       inkscape:isstock="true"
-       inkscape:collect="always"
-       preserveAspectRatio="xMidYMid">
-      <path
-         transform="scale(0.5)"
-         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
-         d="M 5.77,0 -2.88,5 V -5 Z"
-         id="path135-6" />
-    </marker>
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -222,7 +203,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.53377px;line-height:1.46278px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          x="83.816284"
          y="49.736401"
-         id="tspan3-9">R.U. on </tspan><tspan
+         id="tspan3-9">R. on </tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:1.53377px;line-height:1.46278px;font-family:Sans;-inkscape-font-specification:'Sans, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-miterlimit:3;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          x="83.816284"
@@ -264,9 +245,10 @@
          y="38.021099"
          id="tspan11-0-5-2-2-3">&lt;&lt;include&gt;&gt;</tspan></text>
     <path
-       style="fill:#000000;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3;stroke-dasharray:0.600001, 0.600001;marker-end:url(#Triangle-3)"
-       d="m 57.692049,32.88099 -0.06189,10.692746"
-       id="path7-1" />
+       style="fill:#000000;stroke:#000000;stroke-width:0.1;stroke-miterlimit:3;stroke-dasharray:0.600001, 0.600001;marker-start:url(#Triangle)"
+       d="M 57.692049,32.88099 57.504451,44.144712"
+       id="path7-1"
+       sodipodi:nodetypes="cc" />
     <g
        id="g1"
        transform="translate(-23.064662,23.287767)">
