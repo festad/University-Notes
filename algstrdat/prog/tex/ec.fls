@@ -1516,6 +1516,11 @@ INPUT ./sol_5x5.pdf
 INPUT sol_5x5.pdf
 INPUT ./sol_5x5.pdf
 INPUT ./sol_5x5.pdf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
+INPUT ./unibs_logo.pdf
+INPUT ./unibs_logo.pdf
+INPUT unibs_logo.pdf
+INPUT ./unibs_logo.pdf
 INPUT ./unibs_logo.pdf
 INPUT ./unibs_logo.pdf
 INPUT unibs_logo.pdf
@@ -1577,11 +1582,17 @@ INPUT ./unibs_logo.pdf
 INPUT ./unibs_logo.pdf
 INPUT unibs_logo.pdf
 INPUT ./unibs_logo.pdf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssi12.tfm
+INPUT ./unibs_logo.pdf
+INPUT ./unibs_logo.pdf
+INPUT unibs_logo.pdf
+INPUT ./unibs_logo.pdf
 INPUT ./base_star_5x5.pdf
 INPUT ./base_star_5x5.pdf
 INPUT base_star_5x5.pdf
 INPUT ./base_star_5x5.pdf
 INPUT ./base_star_5x5.pdf
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
 INPUT ./unibs_logo.pdf
 INPUT ./unibs_logo.pdf
 INPUT unibs_logo.pdf
@@ -1756,7 +1767,6 @@ INPUT ./unibs_logo.pdf
 INPUT ./unibs_logo.pdf
 INPUT unibs_logo.pdf
 INPUT ./unibs_logo.pdf
-INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
@@ -1836,6 +1846,7 @@ INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb
+INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb
