@@ -212,20 +212,19 @@
 \end{frame}
 
 \begin{frame}{Explorable nodes}
-    The implemented algorithm chooses to prune the nodes in the tree
-    that cannot lead to a plausible solution.
-    If the algorithm were to explore all the possible nodes, then for the 
-    $i$-th set the number of nodes to explore would be $2^i$,
-    hence, if $n$ is the number of sets (rows of A),
-    the number of nodes to explore would be $\sum_{i=0}^{n-1} 2^i = 2^n - 1$.
+    The implemented algorithm chooses to prune many subtrees
+    that will not lead to a plausible solution.
+    Professor Marina Zanella showed that if the algorithm was blind and didn't prune any subtree,
+    then the number of nodes to be explored would be:
+    \begin{equation*}
+        \sum_{i=1}^{N}\sum_{j=1}^{i}\binom{i}{j} = 2^N-1.
+    \end{equation*}
 
     In figure (\ref{fig:explored_vs_explorable_5x5}) the enormous difference
     between the number of explored nodes and the number of explorable nodes is shown.
-    the number of explorable nodes is not exactly $2^n - 1$ because
-    the actual computation to represent the explorable nodes is 
-    $\sum_{i\in\mathcal{E}}2^i$ where $\mathcal{E}$ is the set of
-    explorable  indices
-    pointing to rows of A different from an all-zero row (which would be,
+    The number of explorable nodes is not always exactly $2^N - 1$ because
+    the actual computation to find the explorable nodes takes into 
+    account only rows of A different from an all-zero row (which would be,
     by definition, compatible with any other row).
 \end{frame}
 
