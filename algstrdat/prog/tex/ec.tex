@@ -60,9 +60,10 @@
 %     \tableofcontents
 % \end{frame}
 
-\section{Introduction}
-\begin{frame}
-    \frametitle{Introduction}
+% \section{Introduction}
+
+\begin{frame}{Introduction}
+    % \frametitle{Introduction}
 
     The following presentation provides a self-contained report on the 
     implementation of the exact cover problem provided by prof. Marina Zanella
@@ -82,28 +83,75 @@
 
 \end{frame}
 
-\section*{Data structures}
+% \section*{Data structures}
+
+\begin{frame}{Memory management}
+    The language of choice for this implementation of the algorithm
+    to solve the Exact Cover problem is Python, the next slides recall
+    the important aspects about memory management that need to be 
+    considered when deciding which data structure works better for the
+    given task.
+    In Python, when a value is assigned to a variable, an object is created, this
+    causes the variable to require memory overhead: after
+    allocating $\texttt{i} = 1$ or $\texttt{i} = \texttt{True}$, the memory occupied by
+    $i$ is 28 bytes.
+    The variable $i$ does not memorize the raw value of 1 or \texttt{True}, it holds
+    a pointer to the object that, among other quantities useful to the Python
+    runtime environment, contains the raw value of 1.
+\end{frame}
+
+\begin{frame}{}
+    A list in Python is a linked list, each position $\texttt{list[i]}$ holds a pointer to the
+    respective object
+    (a boolean, an integer, anything...).
+    The variable $\texttt{list[]}$ in itself doesn't contain any raw value but somewhere else
+    $\texttt{len(list)}$ objects (of size 28 bytes when dealing with integers or booleans)
+    have been stored and referenced by the pointers contained in $\texttt{list}$.
+    Popular libraries such as \texttt{Numpy} or \texttt{bitarray} work differently,
+    a \texttt{Numpy} array does not contain a list of references to objects, it contains
+    a reference to an object that handles contiguous blocks of memory, the needed
+    values (integers or booleans) are not stored as objects (each one containing additional metadata
+    that, together with the value, would reach 28 bytes or more), they are stored in a raw format,
+    this way a lot of memory is saved.
+    \texttt{Numpy} dedicates 1 byte to store a \texttt{True} or \texttt{False}, it is much less
+    than 28 bytes, and \texttt{bitarray} does an even better job, it allocates 1 bit for a boolean,
+    drastically reducing memory usage.
+\end{frame}
 
 \begin{frame}
-    \frametitle{Data structures}
+    There is an important detail to clarify:
+    when analyzing the space used by an element (the first) of the 
+    \texttt{bitarray} by calling $\texttt{sys.getsizeof(my\_bitarray[0])}$ (where
+    \texttt{my\_bitarray} is a \texttt{bitarray} containing booleans) the result is 28 bytes instead of a single bit, 
+    this might look contradictory with the previous claim that \texttt{bitarray} dedicates a single
+    bit for a boolean, the contradiction is only apparent because when invoking $\texttt{my\_bitarray[0]}$ 
+    the Python runtime environment checks the single bit allocated by the \texttt{bitarray} object and
+    creates on the fly a new object containing the corresponding boolean value required plus the overhead
+    that every object in Python has.
+\end{frame}
 
+\begin{frame}{}
+    % \frametitle{Data structures}
     To pursue the goal of implementing the algorithm, the matrices A and B need
     to be stored in an appropriate data structure. Since the matrices contain
     only 0s and 1s, the first idea might be to store boolean values instead
     of integers, however, using 
     % True and False written in code style
-    \texttt{True} and \texttt{False} gives no advantage.
-    One popular library that provides boolean arrays and matrices is
-    \texttt{numpy}, which I compare with the less popular \texttt{bitarray}
-    library and show the results in figures (\ref{fig:mem_array}) and 
-    (\ref{fig:mem_matrix}).
-    The elements of a \texttt{numpy} array or matrix occupy less memory than
-    the elements of a \texttt{bitarray} array or matrix, however,
-    the \texttt{numpy} variable storing the array occupies more memory 
-    than the \texttt{bitarray} variable storing the array.
-    Given the absence of matrix operations, I don't see any 
-    particular advantage in using \texttt{numpy} over \texttt{bitarray}.
-    
+    \texttt{True} and \texttt{False} gives no advantage since both integers and
+    booleans are objects and both bring an important overhead with themselves.
+    % One popular library that provides boolean arrays and matrices is
+    % \texttt{numpy}, which I compare with the less popular \texttt{bitarray}
+    % library and show the results in figures (\ref{fig:mem_array}) and 
+    % (\ref{fig:mem_matrix}).
+    The \texttt{bitarray} library is the most efficient in  terms of memory usage,
+    however, \texttt{Numpy} offers many other advantages, such as speed (operations
+    are written in \texttt{C}).
+    Since complex matrix operations are not required in this algorithm, I think
+    that the advantage \texttt{Numpy} can give in terms of speed is less valuable
+    than the advantage in terms of memory consumption offered by \texttt{bitarray}.
+    The presented implementation has a focus on memory efficiency, the slide \textit{EC wrapper} describes
+    another choice to sacrifice time efficiency over memory efficiency which is mainly to
+    load portions of the file containing the problem rather than the whole file at once.
 \end{frame}
 
 \begin{frame}
@@ -138,10 +186,10 @@
     and the stack of the recursive calls.
 \end{frame}
 
-\section*{Exploring the solutions}
+% \section*{Exploring the solutions}
 
-\begin{frame}
-    \frametitle{Exploring the solutions}
+\begin{frame}{Exploring the solutions}
+    % \frametitle{}
     Different choices of the cardinality of the domain (columns of the matrix A) and
     the number of sets (rows of the matrix A, rows and columns of the matrix B) 
     lead to different values of:
