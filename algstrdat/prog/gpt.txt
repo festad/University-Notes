@@ -1,0 +1,278 @@
+
+I will implement an algorithm solving the exact cover problem, I won't use Knuth's Dancing Link but an algorithm my professor implemented to test it.
+I will read a file like this:
+
+;;; HEADER
+;;; header
+;;; H34D38
+1 0 1 1 0 1 1 1 1 0 0 0 0 -
+1 0 0 1 0 0 0 0 0 1 1 1 1 -
+1 1 1 1 1 1 1 1 1 0 0 0 0 -
+
+This file has the first three lines commented, then it represents the matrix A which has N rows and M columns where N is the number of sets and M is the cardinality of the set of possible elements.
+The element A[i,j] is 1 when the j-th element of the domain is present in the i-th set.
+
+The algorithm will incrementally build the matrix B which is an N x N matrix, symmetrical, with j>i, which contains 1 in B[i,j] when the three following conditions are met:
+- i != j
+- the intersection of the set i and the set j is empty, which means that the rows i and j of the matrix A don't have "1" under the same column
+- the union of the set i and the set j is not M, which means that the rows i and j, if they were to be "summed", wouldn't have all "1" in their M slots
+
+This is the pseudocode, notice that I don't use the indexes starting from 0 to N-1 like in Python but I used the indexes from 1 to N, this will need to be fixed since I want the algorithm in Python
+
+An example of the "tree" exploration would be e.g. analyzing the set 5:
+5, 51, 52, 521, 53, 531, 532, 5321, 54, 541, 542, 5421, 543, 5431, 5432, 54321.
+By lexicographical order I mean that they are in the order they are read top down in the file.
+
+This is the current pseudocode:
+
+procedure EC(A)
+
+    COV <- {}
+
+    for i <- 1 to rows[A] do
+
+        if A[i] == empty then
+            break
+
+        if A[i] == M then 
+            insert {i} into COV
+            break
+        
+        add to B the column relative to i
+
+        for j <- 1 to i-1 do
+            if intersect(A[j], A[i]) != empty then
+                B[j,i] <- 0
+            else
+                I <- {i,j}
+                U <- union(A[i], A[j])
+                if U == M then
+                    insert I into COV
+                    B[j,i] <- 1
+                else
+                    B[j,i] <- 1
+                    inter <- intersect(B[1:j-1, i], B[1:j-1, j])
+                    if inter != empty then
+                        explore(I, U, inter)
+
+procedure explore(I, U, inter, COV)
+    for all k in inter sorted in lexicographical order do
+        i_temp <- union(I, {k})
+        u_temp <- union(U, A[k])
+
+        if u_temp == M then
+            insert i_temp into COV
+        else
+            inter_temp <- intersect(inter, B[1:k-1, k])
+            if inter_temp != empty then
+                explore(i_temp, u_temp, inter_temp)
+
+Careful to the line
+inter <- intersect(B[1:j-1, i], B[1:j-1, j])
+because B[1:0,h] means an empty set, but in the Python implementation the indexes are not the same.
+
+This is what I did by now:
+
+READER.C
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#include "reader.h"
+
+// #define mem_size 1024*1024*5
+
+extern long mem_size;
+
+// (mem_size - 3) / 2 -> MAX_N_COLUMNS
+
+int count_comment_lines(char *filename) {
+    printf("mem_size: %d\n", mem_size);
+    FILE *in_file = fopen(filename, "r");
+    if(in_file == NULL) {
+        printf("Error! The file %s does not exist.\n", filename);
+        return -1;
+    }
+
+    char line[mem_size];
+    int comment_lines = 0;
+    while (fgets(line, sizeof(line), in_file)) {
+        if (strncmp(line, ";;;", 3) == 0) {
+            comment_lines++;
+        } else {
+            break;
+        }
+    }
+
+    fclose(in_file);
+    return comment_lines;
+}
+
+int detect_columns(char *filename, int offset) {
+    FILE *in_file = fopen(filename, "r");
+    if(in_file == NULL) {
+        printf("Error! The file %s does not exist.\n", filename);
+        return -1;
+    }
+
+    char line[mem_size];
+    int i;
+    for(i = 0; i <= offset; i++) {
+        fgets(line, sizeof(line), in_file);
+    }
+
+    int columns = 0;
+    char* token = strtok(line, " ");
+    while (token) {
+        if (strcmp(token, "-") == 0) {
+            break;
+        }
+        columns++;
+        token = strtok(NULL, " ");
+    }
+
+    fclose(in_file);
+    return columns - 1;
+}
+
+
+Matrix* read_file(char *filename, int rows, int cols, int offset) {
+    FILE *in_file = fopen(filename, "r");
+    if(in_file == NULL) {
+        printf("Error! The file %s does not exist.\n", filename);
+        return NULL;
+    }
+
+    char line[mem_size];
+
+    for(int i = 0; i < offset; i++) {
+        if(!fgets(line, sizeof(line), in_file)) {
+            fclose(in_file);
+            return NULL;
+        }
+    }
+
+    Matrix* matrix = (Matrix*)malloc(sizeof(Matrix));
+    matrix->data = (char *)malloc(sizeof(char)*rows*cols);
+    matrix->rows = rows;
+    matrix->cols = cols;
+
+    int i, j, number;
+    for(i = 0; i < rows; i++) {
+        for(j = 0; j < cols; j++) {
+            if(fscanf(in_file, "%d", &number) != 1) {
+                break;
+            }
+            matrix->data[i*cols + j] = number;
+        }
+        if(j != cols || fscanf(in_file, " -\n") == EOF) {
+            break;
+        }
+    }
+
+    matrix->rows = i;
+    matrix->cols = (i > 0) ? cols : 0;
+
+    if(i == 0) {
+        free(matrix->data);
+        free(matrix);
+        fclose(in_file);
+        return NULL;
+    }
+
+    fclose(in_file);
+    return matrix;
+}
+
+void free_matrix(Matrix* matrix) {
+    if (matrix) {
+        free(matrix->data);
+        free(matrix);
+    }
+}
+
+READER.H
+
+#ifndef READER_H
+#define READER_H
+
+typedef struct {
+    char *data;
+    int rows;
+    int cols;
+} Matrix;
+
+int count_comment_lines(char *filename);
+int detect_columns(char *filename, int offset);
+Matrix* read_file(char *filename, int rows, int cols, int offset);
+void free_matrix(Matrix* matrix);
+
+#endif /* READER_H */
+
+
+MAIN.C
+
+#include<stdio.h>
+#include"reader.h"
+
+// Custom memory size (RAM in bytes)
+long long mem_size = 1024*1024;
+
+int main(void) {
+
+    // Approximating the maximum number of columns given a custom memory size
+    printf("Given that the available ram is %ldB\n", mem_size);
+    printf("each file describing a problem can contain at most %ld columns!\n", (mem_size-3)/2);
+
+    // Counting the comments
+    int comment_lines = count_comment_lines("dat.txt");
+    printf("Comment lines: %d\n", comment_lines);
+
+    // Detecting the number of columns
+    int n_columns = detect_columns("dat.txt", comment_lines);
+    printf("Columns: %d\n", n_columns);
+
+    // 
+
+    // Calculating the number of rows that can be loaded at once,
+    // given the memory size and the number of columns, 
+    // in theory if the number of columns was big enough,
+    // the number of loadable rows would be 1
+    int loadable_rows = mem_size / (n_columns * sizeof(char)); // rows can be loaded at once
+    int offset = comment_lines;
+
+    printf("-----------------------------------------------\n");
+    printf("Loading %d rows at a time\n", loadable_rows);
+    printf("-----------------------------------------------\n");
+
+    int batch = 0;
+
+    while (1) {
+        printf("Batch: %d\n", batch);
+
+        Matrix* my_matrix = read_file("dat.txt", loadable_rows, n_columns, offset);
+
+        if (my_matrix == NULL) {
+            break;
+        }
+
+        for(int i = 0; i < my_matrix->rows; i++) {
+            for(int j = 0; j < my_matrix->cols; j++) {
+                printf("| %4d ", my_matrix->data[i*n_columns + j]);
+            }
+            printf("|\n");
+        }
+
+        offset += my_matrix->rows;
+        batch++;
+        free_matrix(my_matrix);
+    }
+    return 0;
+}
+
+I'd like two new files ec.c and ec.h that create functions and data structures needed to implement the algorithm. It's important that the input file can be reader not at once but divided in portions, since it might be too big for the ram.
+COV can be thought of the solution that, at the end, contains all the partitions (each one described by the set among the N indices indicating the sets that create the partition), COV could be thought of as a symmetric matrix implemented as array of arrays with the element COV[i,j] = 1 when the set j belongs to the partition i, where the number of rows is the number of the partitions found and the number of columns is N, the number of sets; an alternative to save memory could be a list of binary strings or a list of integers.
+
+The output file is a txt file in which each line represents one of the partitions found as a set of the indices of the sets that compose said partition, to make the file readable and testable we need to identify each set of the input file with an index and that said index as a comment at the beginning of the input file, you can append the comment at the end of the header.
+We also need to make the software able to be stopped before it finishes, maybe setting a maximum iterations limit, and in that case it must be able to give the partial solution found, specifying at which point it stopped, that is, for which results the computation was not completed.
