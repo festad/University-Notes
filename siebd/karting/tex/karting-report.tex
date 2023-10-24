@@ -1,0 +1,218 @@
+% beamer presentation
+% Karting report
+
+\documentclass{beamer}
+% english language
+\usepackage[english]{babel}
+
+% tables
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{color}
+
+\usetheme{Madrid}
+
+% unibs color #3d5895
+% \definecolor{unibs}{RGB}{61,88,149}
+\definecolor{unibs}{HTML}{3d5895}
+
+
+\setbeamercolor{palette primary}{fg=white, bg=unibs}
+\setbeamercolor{palette secondary}{fg=white, bg=unibs}
+\setbeamercolor{palette tertiary}{fg=white, bg=unibs}
+\setbeamercolor{palette quaternary}{fg=white, bg=unibs}
+
+\title{Karting report}
+\author{Denis Festa}
+\date{\today}
+
+\begin{document}
+
+
+\begin{frame}
+    \titlepage
+    \centering
+    \includegraphics[width=0.2\linewidth]{unibs-circ-logo.pdf}
+\end{frame}
+
+\logo{\includegraphics[width=0.1\linewidth]{unibs_logo.pdf}}
+
+
+\section*{User groups}
+
+\begin{frame}
+\frametitle{User groups}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\linewidth]{drawings/users.pdf}
+    \caption{User groups}
+\end{figure}
+\end{frame}
+
+\section*{Use cases}
+
+\subsection*{User}
+
+\begin{frame}
+    \frametitle{User}
+    \centering
+    \includegraphics[width=0.9\linewidth]{drawings/uc-user.pdf}
+\end{frame}
+
+\subsection*{Intranet}
+
+\begin{frame}
+    \frametitle{Kart center administrator}
+    \centering
+    \includegraphics[width=0.9\linewidth]{drawings/uc-kcadmin.pdf}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Clerk}
+    \centering
+    \includegraphics[width=0.9\linewidth]{drawings/uc-clerk.pdf}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Information system administrator}
+    \centering
+    \includegraphics[width=0.9\linewidth]{drawings/uc-isadmin.pdf}
+\end{frame}
+
+\subsection*{Extranet}
+
+\begin{frame}
+    \frametitle{Organizer}
+    \centering
+    \includegraphics[width=0.9\linewidth]{drawings/uc-organizer.pdf}
+\end{frame}
+
+\subsection*{Internet}
+
+\begin{frame}
+    \frametitle{Pilot}
+    \centering
+    \includegraphics[width=0.9\linewidth]{drawings/uc-pilot.pdf}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Visitor}
+    \centering
+    \includegraphics[width=0.3\linewidth]{drawings/uc-visitor.pdf}
+\end{frame}
+
+\begin{frame}
+\frametitle{Karting center administrator}
+
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Group name & \textbf{Karting center administrator} \\
+    \hline
+    Profile data & Name, Surname, e-mail address, password, address, phone number \\
+    \hline
+    Super group & Intranet \\
+    \hline
+    Sub group & None \\
+    \hline
+    Relevant use cases & CRUD on events, races, pilots, tracks, leaderboard, 
+    login, logout \\
+    \hline
+    Read & All \\
+    \hline
+    Write & All \\
+    \hline
+    \end{tabular}
+    \end{table}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Pilot}
+
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Group name & \textbf{Pilot} \\
+    \hline
+    Profile data & Name, Surname, e-mail address, password, address, phone number \\
+    \hline
+    Super group & Internet \\
+    \hline
+    Sub group & None \\
+    \hline
+    Relevant use cases & Create a race, Apply for an event, 
+    login, logout \\
+    \hline
+    Read & All \\
+    \hline
+    Write & Race, Leaderboard \\
+    \hline
+    \end{tabular}
+    \end{table}
+
+\end{frame}
+
+
+\section*{Data dictionary}
+\begin{frame}
+\frametitle{Data dictionary}
+
+% Table with two columns and 9 rows:
+% - Name
+% - Synonym
+% - Description
+% - Example of instance
+% - Properties
+% - Components
+% - Relations
+% - Superconcepts
+% - Subconcepts
+
+% table 9x2
+\begin{table}
+\tiny
+\begin{tabular}{|p{2cm}|p{6cm}|}
+\hline
+Name & \textbf{Karting center} \\
+\hline
+Synonym & Karting \\
+\hline
+Description & A karting center hosting events and races that amuse
+A karting center hosting events and races that amuse
+A karting center hosting events and races that amuse\\
+\hline
+Example of instance & Karting center of Laval\\
+\hline
+Properties & 
+Name,
+Address, 
+Phone number \\
+\hline
+Components &
+Tracks,
+Events,
+Leaderboard \\
+\hline
+Relations &
+Hosts, 
+Organizes \\
+\hline
+Superconcepts & None \\
+\hline
+Subconcepts & None \\
+\hline
+\end{tabular}
+\end{table}
+
+\end{frame}
+
+% Quando voglio visitare un nuovo arrivo
+% utilizzo non una query ma una derivata
+% che calcola la query una volta sola
+
+\end{document}
