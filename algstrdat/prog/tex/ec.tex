@@ -70,15 +70,16 @@
     (University of Brescia, Italy).
     The language of choice is Python for its simplicity and readability.
     The code is available at \url{https://www.kaggle.com/code/denisfesta/exact-cover-problem}.
-    The following points discuss:
+    The following slides discuss:
     \begin{itemize}
-        \item the choice of the data structures for the algorithm in its basic form;
+        \item memory management in Python and chosen data structures;
+        % \item the choice of the data structures for the algorithm in its basic form;
         \item the exploration of the solutions to different problems;
-        \item the comparison between loading portions of the file and loading the 
-            whole file;
-        \item the comparison between the basic algorithm and the \textit{plus} 
-            algorithm;
-        \item the application of the algorithm to the sudoku problem.
+        \item the mechanism of loading portions of the problem to solve;
+        % \item the comparison between the basic algorithm and the \textit{plus} 
+        %     algorithm;
+        \item conversion of the sudoku problem to an exact cover problem;
+        \item generating random exact cover problems;
     \end{itemize}
 
 \end{frame}
@@ -86,10 +87,11 @@
 % \section*{Data structures}
 
 \begin{frame}{Memory management}
+    \small
     The language of choice for this implementation of the algorithm
     to solve the Exact Cover problem is Python, the next slides recall
     the important aspects about memory management that need to be 
-    considered when deciding which data structure works better for the
+    considered when deciding which data structures work better for the
     given task.
     In Python, when a value is assigned to a variable, an object is created, this
     causes the variable to require memory overhead: after
@@ -97,11 +99,21 @@
     $i$ is 28 bytes.
     The variable $i$ does not memorize the raw value of 1 or \texttt{True}, it holds
     a pointer to the object that, among other quantities useful to the Python
-    runtime environment, contains the raw value of 1.
+    runtime environment, contains the raw value of 1. The quantities
+    stored for each object are:
+    \begin{itemize}
+        \item Reference count: Information on how many references there 
+        are to the object, so Python's garbage collector can reclaim it 
+        when there are no references left. 
+        \item Type information: Data on the object's type, which Python 
+        uses to figure out what operations can be performed on the object.
+        \item Object-specific data: For integers, this is the numerical value. 
+        For booleans, this could be a simple flag indicating true or false.
+    \end{itemize}
 \end{frame}
 
 \begin{frame}{}
-    A list in Python is a linked list, each position $\texttt{list[i]}$ holds a pointer to the
+    The default list in Python is a linked list, each position $\texttt{list[i]}$ holds a pointer to the
     respective object
     (a boolean, an integer, anything...).
     The variable $\texttt{list[]}$ in itself doesn't contain any raw value but somewhere else
@@ -291,7 +303,7 @@
     to prevent the computer from running out of memory
     one of the possible solutions is to load portions of the matrix
     and solve the problem for each portion, growing incrementally
-    the set of solutions.
+    the set of solutions (this mechanism is described in the slide \textit{EC wrapper}).
     What is expected is that loading the whole matrix and solving
     at once is faster than loading portions of the matrix.
     The results shown in figure (\ref{fig:loadable_rows_time_diff}), 
