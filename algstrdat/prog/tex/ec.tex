@@ -166,6 +166,25 @@
     load portions of the file containing the problem rather than the whole file at once.
 \end{frame}
 
+\begin{frame}{}
+    Figure (\ref{fig:mem_array}) shows different data structures to store a list of boolean values.
+    The first two scenarios show that the memory required to a list of
+    1000 pointers to objects of type \texttt{boolean} and \texttt{integer} is 
+    the same (8056 bytes), each object referenced by each pointer requires 28 bytes,
+    and these 28 bytes are to be considered as memory occupation.
+    No advantage comes from using \texttt{boolean} instead of \texttt{integer}.
+    The \texttt{Numpy} array requires 1112 bytes to store the raw values of 
+    the 1000 booleans (around 8.896 bits per boolean), then when a single boolean
+    is accessed, the Python runtime environment creates an object on the 
+    fly containing the
+    boolean value plus the overhead, and it's 25 bytes, these 25 bytes are not
+    to be considered as memory occupation, they are not actually used to store
+    the values, they are used only when the value is accessed.
+    The \texttt{bitarray} array requires 216 bytes to store the raw values of
+    the 1000 booleans (around 1.728 bits per boolean), then when a single boolean
+    is accessed, the Python runtime environment again creates the object on the fly.
+\end{frame}
+
 \begin{frame}
         % picture "mem_array.png" here
         \begin{figure}
@@ -177,13 +196,32 @@
 \end{frame}
 
 \begin{frame}
-        % picture "mem_matrix.png" here
         \begin{figure}
             \centering
-            \includegraphics[width=0.55\textwidth]{mem_matrix.png}
-            % \caption{}
+            \includegraphics[width=0.55\textwidth]{mem_matrix_1.png}
+            \caption{The \texttt{Numpy} matrix requires 30128 bytes to store the raw values of
+            the 30000 booleans (around 8.03 bits per boolean).}
             \label{fig:mem_matrix}
         \end{figure}
+\end{frame}
+
+% mem_matrix_2
+\begin{frame}{}
+        % \small
+        \begin{figure}
+            % \tiny
+            \centering
+            \includegraphics[width=0.55\textwidth]{mem_matrix_2.png}
+            \caption{Notice the difference amond the two cases. In the first scenario we 
+            have a list of bitarrays, although the bitarrays are stored in a contiguous
+            block of memory, a different object is dedicated to each bitarray, creating
+            an overhead. In the second scenario we have a single bitarray, a single object is
+            dedicated to the bitarray, which has the shape of a flattened matrix,
+            it occupies 4060 bytes to store 30000 booleans (around 1.082 bits per boolean).
+            The second choice is the one I made.}
+            \label{fig:mem_matrix_2}
+        \end{figure}
+    
 \end{frame}
 
 \begin{frame}
@@ -202,8 +240,8 @@
 
 \begin{frame}{Exploring the solutions}
     % \frametitle{}
-    Different choices of the cardinality of the domain (columns of the matrix A) and
-    the number of sets (rows of the matrix A, rows and columns of the matrix B) 
+    Different cardinalities of the domain (columns of the matrix A) and
+    different numbers of sets (rows of the matrix A, rows and columns of the matrix B) 
     lead to different values of:
     \begin{itemize}
         \item the number of solutions found;
