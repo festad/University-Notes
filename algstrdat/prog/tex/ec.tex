@@ -79,7 +79,7 @@
         % \item the comparison between the basic algorithm and the \textit{plus} 
         %     algorithm;
         \item conversion of the sudoku problem to an exact cover problem;
-        \item generating random exact cover problems;
+        \item generating random exact cover problems.
     \end{itemize}
 
 \end{frame}
@@ -89,7 +89,7 @@
 \begin{frame}{Memory management}
     \small
     The language of choice for this implementation of the algorithm
-    to solve the Exact Cover problem is Python, the next slides recall
+    to solve the Exact Cover problem is Python, next slides recall
     the important aspects about memory management that need to be 
     considered when deciding which data structures work better for the
     given task.
@@ -102,12 +102,12 @@
     runtime environment, contains the raw value of 1. The quantities
     stored for each object are:
     \begin{itemize}
-        \item Reference count: Information on how many references there 
-        are to the object, so Python's garbage collector can reclaim it 
+        \item reference count: information on how many references there 
+        are to the object, so that Python's garbage collector can reclaim it 
         when there are no references left. 
-        \item Type information: Data on the object's type, which Python 
+        \item Type information: data on the object's type, which Python 
         uses to figure out what operations can be performed on the object.
-        \item Object-specific data: For integers, this is the numerical value. 
+        \item Object-specific data: for integers, this is the numerical value. 
         For booleans, this could be a simple flag indicating true or false.
     \end{itemize}
 \end{frame}
@@ -116,14 +116,14 @@
     The default list in Python is a linked list, each position $\texttt{list[i]}$ holds a pointer to the
     respective object
     (a boolean, an integer, anything...).
-    The variable $\texttt{list[]}$ in itself doesn't contain any raw value but somewhere else
-    $\texttt{len(list)}$ objects (of size 28 bytes when dealing with integers or booleans)
-    have been stored and referenced by the pointers contained in $\texttt{list}$.
+    The variable $\texttt{list[]}$ in itself does not contain any raw value but somewhere else
+    $\#\texttt{len(list)}$ objects (of size 28 bytes when dealing with integers or booleans)
+    have been stored and referenced to by the pointers contained in $\texttt{list}$.
     Popular libraries such as \texttt{Numpy} or \texttt{bitarray} work differently,
     a \texttt{Numpy} array does not contain a list of references to objects, it contains
     a reference to an object that handles contiguous blocks of memory, the needed
-    values (integers or booleans) are not stored as objects (each one containing additional metadata
-    that, together with the value, would reach 28 bytes or more), they are stored in a raw format,
+    values (integers or booleans) are not stored as objects (each of them containing additional metadata
+    that, together with the value, would reach 28 bytes), they are stored in a raw format,
     this way a lot of memory is saved.
     \texttt{Numpy} dedicates 1 byte to store a \texttt{True} or \texttt{False}, it is much less
     than 28 bytes, and \texttt{bitarray} does an even better job, it allocates 1 bit for a boolean,
@@ -162,8 +162,8 @@
     that the advantage \texttt{Numpy} can give in terms of speed is less valuable
     than the advantage in terms of memory consumption offered by \texttt{bitarray}.
     The presented implementation has a focus on memory efficiency, the slide \textit{EC wrapper} describes
-    another choice to sacrifice time efficiency over memory efficiency which is mainly to
-    load portions of the file containing the problem rather than the whole file at once.
+    another choice to sacrifice time efficiency over memory efficiency which is mainly about
+    loading portions of the file containing the problem rather than the whole file at once.
 \end{frame}
 
 \begin{frame}{}
