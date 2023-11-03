@@ -1625,6 +1625,10 @@ INPUT ./unibs_logo.pdf
 INPUT ./unibs_logo.pdf
 INPUT unibs_logo.pdf
 INPUT ./unibs_logo.pdf
+INPUT ./unibs_logo.pdf
+INPUT ./unibs_logo.pdf
+INPUT unibs_logo.pdf
+INPUT ./unibs_logo.pdf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssi12.tfm
 INPUT ./unibs_logo.pdf
 INPUT ./unibs_logo.pdf
@@ -1636,10 +1640,6 @@ INPUT base_star_5x5.pdf
 INPUT ./base_star_5x5.pdf
 INPUT ./base_star_5x5.pdf
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmssi10.tfm
-INPUT ./unibs_logo.pdf
-INPUT ./unibs_logo.pdf
-INPUT unibs_logo.pdf
-INPUT ./unibs_logo.pdf
 INPUT ./unibs_logo.pdf
 INPUT ./unibs_logo.pdf
 INPUT unibs_logo.pdf
