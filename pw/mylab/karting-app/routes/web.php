@@ -3,8 +3,10 @@
 use Illuminate\Support\Facades\Route;
 
 
-use App\Http\Controllers\EventController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\PilotController;
+
+use App\Http\Controllers\EventController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,9 +27,8 @@ Route::get('/register', function() {
     return view('register');
 })->name('register');
 
-Route::post('/register', function() {
-    return "register";
-})->name('register.submit');
+Route::post('/register', [UserController::class, 'register'])->name('register.submit');
+
 
 Route::get('/events', function() {
     return view('events');
