@@ -32,7 +32,7 @@ class PilotFactory extends Factory
             'user_id' => $new_user->id,
             'age' => $this->faker->numberBetween(18, 60),
             'weight' => $this->faker->numberBetween(50, 100),
-            'category' => $this->faker->randomElement(['newbie', 'medium', 'advanced']),
+            'category' => $this->faker->randomElement(['Newbie', 'Amateur', 'Pro', 'Legend']),
         ];
     }
 }

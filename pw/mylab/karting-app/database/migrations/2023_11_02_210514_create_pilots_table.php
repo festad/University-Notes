@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
             $table->integer('age');
             $table->integer('weight');
-            $table->enum('category', ['newbie', 'medium', 'advanced']);
+            $table->enum('category', ['Newbie', 'Amateur', 'Pro', 'Legend']);
             $table->timestamps();
         });
     }
