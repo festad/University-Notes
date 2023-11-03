@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\PilotController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,4 +28,11 @@ Route::get('/register', function() {
 Route::post('/register', function() {
     return "register";
 })->name('register.submit');
+
+Route::get('/events', function() {
+    return view('events');
+})->name('events');
+
+Route::get('/events/{eventId}/pilots', [EventController::class, 'getPilots'])->name('events.pilots');
+
 

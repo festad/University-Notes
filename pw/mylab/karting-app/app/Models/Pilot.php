@@ -34,4 +34,14 @@ class Pilot extends Model
         return $this->belongsTo(User::class);
     }
 
+    public function getName()
+    {
+        return $this->user->name;
+    }
+
+    public function getEmail()
+    {
+        return $this->user->email;
+    }
+
 }
