@@ -44,4 +44,23 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+
+
+    // Many-to-many relationship with the Role model
+    // specifying that it happens through the table 
+    // 'role_user'
+    public function roles()
+    {
+        return $this->belongsToMany(Role::class, 'role_user');
+    }
+
+    // Does the user have a specific role?
+    // The table roles has a column "name"
+    // that can be compared with the $role parameter
+    public function hasRole(string $role)
+    {
+        return $this->roles()->where('name', $role)->exists();
+    }
+
+
 }
