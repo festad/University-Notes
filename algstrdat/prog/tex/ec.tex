@@ -919,7 +919,7 @@
     sets that correspond to the cells that already have a number written into them but,
     in order to be able to write an algorithm that maps from the solution to the exact cover problem 
     back to the solution to the sudoku, it is easier to keep empty sets (all 0s rows),
-    we can do this because our algorithm ignores the only 0s rows, so the search tree will be pruned anyway
+    we can do this because our algorithm ignores the only 0s rows, hence the search tree will be pruned anyway
     during the execution of the algorithm.
 \end{frame}
 
@@ -1096,7 +1096,7 @@
 
 \begin{frame}{}
     \begin{algorithmic}
-        \Function{GenerateExactCover}{$N$, $M$}
+        \Function{GenerateExactCover}{$N$, $M$, $p$}
             \If {$N < M$}
                 \State \Return \textbf{NULL}
             \EndIf
@@ -1119,7 +1119,7 @@
             \For{$i \gets 0$ to $N-1$}
                 \If{$i \notin idxCanonicalBase$}
                     \For{$j \gets 0$ to $M-1$}
-                        \State $A[i][j] \gets \Call{RandomChoice}{\{0,1\}}$
+                        \State $A[i][j] \gets \Call{RandomChoice}{\{0,1\}, p}$
                     \EndFor
                 \EndIf
             \EndFor

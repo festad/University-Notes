@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1699214911 "/home/festad/mygit/University-Notes/algstrdat/prog/tex/ec.tex" "ec.pdf" "ec" 1699214914 0
-  "/home/festad/mygit/University-Notes/algstrdat/prog/tex/ec.tex" 1699214911 48081 25eba0a5b1ed7c2b1ef67eb81ef98427 ""
+["pdflatex"] 1699215580 "/home/festad/mygit/University-Notes/algstrdat/prog/tex/ec.tex" "ec.pdf" "ec" 1699215583 0
+  "/home/festad/mygit/University-Notes/algstrdat/prog/tex/ec.tex" 1699215580 48092 1b1ebbb04f1c5937aaf78e56163822f8 ""
   "/usr/share/texmf-dist/fonts/map/fontname/texfonts.map" 1689853683 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1689853683 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1689853683 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -246,10 +246,10 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1697288663 4480252 045e2e847a54793644911375b39d1f66 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1697288628 6768060 53d44a6995e7f1c00857d0ee9a4f0a74 ""
   "base_star_5x5.pdf" 1699191763 16059 b68dbb825a62390df6e67d0a4c8d489c ""
-  "ec.aux" 1699214913 11079 9dfbfe9b26c43cc637b2e8d5af83df9b "pdflatex"
-  "ec.nav" 1699214913 5480 67e66caa9918ea157bd94b693e086b74 "pdflatex"
-  "ec.out" 1699214912 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "ec.tex" 1699214911 48081 25eba0a5b1ed7c2b1ef67eb81ef98427 ""
+  "ec.aux" 1699215582 11079 9dfbfe9b26c43cc637b2e8d5af83df9b "pdflatex"
+  "ec.nav" 1699215582 5480 67e66caa9918ea157bd94b693e086b74 "pdflatex"
+  "ec.out" 1699215581 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "ec.tex" 1699215580 48092 1b1ebbb04f1c5937aaf78e56163822f8 ""
   "explored_5x5.pdf" 1699191763 12323 e2781e8401e77cdcbd804587b1525c75 ""
   "explored_nodes_prob.pdf" 1699191763 13609 e7fe6ce172441d77845eb568e3d1ed15 ""
   "explored_vs_explorable_5x5.pdf" 1699191763 14642 df95d627fc8661dc9db6d44aa3426587 ""
