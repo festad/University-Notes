@@ -29,12 +29,13 @@ Route::get('/register', function() {
 
 Route::post('/register', [UserController::class, 'register'])->name('register.submit');
 
+Route::post('/register/check-email', [UserController::class, 'checkEmail'])->name('register.check-email');
 
 Route::get('/events', function() {
     return view('events');
 })->name('events');
 
-Route::get('/events/{eventId}/pilots', [EventController::class, 'getPilots'])->name('events.pilots');
+Route::post('/events/pilots', [EventController::class, 'getPilots'])->name('events.pilots');
 
 Route::get('/login', function() {
     return view('login');

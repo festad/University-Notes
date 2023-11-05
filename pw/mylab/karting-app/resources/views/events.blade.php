@@ -38,9 +38,6 @@
 
 @push('scripts')
 <script>
-
-    var basePilotsUrl = "{{ route('events.pilots', ['eventId' => '__eventId__']) }}";
-
     $(document).ready(function() {
         // Load pilots for the selected event on page load
         loadPilots($('#eventSelector').val());
@@ -54,8 +51,12 @@
         function loadPilots(eventId) {
             $.ajax({
                 // passing eventId to the route
-                url: basePilotsUrl.replace('__eventId__', eventId),
-                type: 'GET',
+                url: '{{ route('events.pilots') }}',
+                type: 'POST',
+                data: {
+                    _token: $('meta[name="csrf-token"]').attr('content'),
+                    eventId: eventId
+                },
                 success: function(pilots) {
 
                     // Clear the existing table

@@ -20,6 +20,18 @@ use Illuminate\Support\Facades\Validator;
 
 class UserController extends Controller
 {
+
+    public function checkEmail(Request $request)
+    {
+        $email = $request->input('email');
+        $user = User::where('email', $email)->first();
+        if ($user) {
+            return response()->json(['message' => 'Email already exists.'], 200);
+        } else {
+            return response()->json(['message' => 'Email is available.'], 200);
+        }
+    }
+
     public function register(Request $request)
     {
         // $validator = Validator::make($request->all(), [
@@ -42,6 +54,12 @@ class UserController extends Controller
             $user->name = $request->input('name');
             $user->email = $request->input('email');
             $user->password = Hash::make($request->input('password'));
+
+            // If the email is already taken, throw an exception
+            if (User::where('email', $user->email)->first()) {
+                throw new \Exception('Email already exists.');
+            }
+
             $user->save(); // Save the user to get the ID for the role record.
 
             if ($request->input('role') == 'organizer') {

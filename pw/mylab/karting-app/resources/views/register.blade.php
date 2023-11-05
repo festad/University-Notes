@@ -30,6 +30,7 @@
         <div class="form-group">
             <label for="email">Email:</label>
             <input type="email" class="form-control" name="email" id="email" required>
+            <div id="emailFeedback"></div> <!-- Add this line -->
         </div>
         
         <!-- Password -->
@@ -81,9 +82,8 @@
             </div>
         </div>
 
-        <!-- Submit Button -->
-        <button type="submit" class="btn btn-primary">Register</button>
-
+        <!-- Submit Button disabled by default-->
+        <button type="submit" class="btn btn-primary" disabled>Submit</button>
     </form>
 </div>
 @endsection
@@ -112,6 +112,41 @@
         // Initialize on page load in case the role is pre-selected
         toggleRoleFields();
     });
+
+    // AJAX call to check if email exists
+    $('#email').on('input', function() {
+        var email = $(this).val();
+        // if the email satisfies a basic regex
+        // such as 'example@example.eg'
+        if (email.match(/.+@.+\..+.+/)) {
+
+            // POST method (parameter 'email' is passed in the request body)
+            $.ajax({
+                url: '{{ route('register.check-email') }}',
+                type: 'POST',
+                data: { 
+                    // Include the CSRF token
+                    _token: $('meta[name="csrf-token"]').attr('content'),
+                    email: email 
+                },
+                success: function(response) {
+                    if (response.message === 'Email already exists.') {
+                        $('#emailFeedback').text(response.message).css('color', 'red');
+                        $('button[type="submit"]').prop('disabled', true);
+                    } else {
+                        $('#emailFeedback').text(response.message).css('color', 'green');
+                        $('button[type="submit"]').prop('disabled', false);
+                    }
+                },
+                error: function(xhr, textStatus, errorThrown) {
+                    console.error(errorThrown);
+                }
+            });
+        } else {
+            $('#emailFeedback').text('example@example.eg').css('color', 'grey');
+            $('button[type="submit"]').prop('disabled', true);
+        }
+    });    
 </script>
 @endpush
 

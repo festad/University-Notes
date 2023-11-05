@@ -10,8 +10,9 @@ class EventController extends Controller
     // Given an event id, return
     // the pilots in that event.
     // The name, weight, age and category will be returned.
-    public function getPilots($eventId)
+    public function getPilots(Request $request)
     {
+        $eventId = $request->input('eventId');
         $pilots = Event::find($eventId)->pilots;
     
         if (!$pilots) {
