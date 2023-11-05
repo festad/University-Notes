@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 use Illuminate\Support\Facades\DB;
 
+// Import auth
+use Illuminate\Support\Facades\Auth;
+
 use App\Models\User;
 use App\Models\Organizer;
 use App\Models\Pilot;
@@ -70,4 +73,24 @@ class UserController extends Controller
             return redirect()->route('register')->withErrors($e->getMessage())->withInput();
         }
     }
+
+    public function login(Request $request)
+    {
+        $credentials = $request->only('email', 'password');
+
+        // Attempt to authenticate the user
+        if (Auth::attempt($credentials)) {
+            // Authentication passed...
+            return redirect()->route('events');
+        } else {
+            return redirect()->route('login')->withErrors('Invalid credentials.');
+        }
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect()->route('welcome'); // Redirect to the welcome page after logout
+    }
+
 }

@@ -21,7 +21,7 @@ use App\Http\Controllers\EventController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 
 Route::get('/register', function() {
     return view('register');
@@ -35,5 +35,14 @@ Route::get('/events', function() {
 })->name('events');
 
 Route::get('/events/{eventId}/pilots', [EventController::class, 'getPilots'])->name('events.pilots');
+
+Route::get('/login', function() {
+    return view('login');
+})->name('login');
+
+Route::post('/login', [UserController::class, 'login'])->name('login.submit');
+
+Route::get('/logout', [UserController::class, 'logout'])->name('logout');
+
 
 
