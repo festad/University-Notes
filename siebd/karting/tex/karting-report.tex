@@ -180,27 +180,34 @@
 \hline
 Name & \textbf{Karting center} \\
 \hline
-Synonym & Karting \\
+Synonym & Go-karting center \\
 \hline
-Description & A karting center hosting events and races that amuse
-A karting center hosting events and races that amuse
-A karting center hosting events and races that amuse\\
+Description & Karting center \\
 \hline
-Example of instance & Karting center of Laval\\
+Example of instance & 
+Name: Mantova Karting Center \newline
+\textit{City}: Mantova \newline
+\textit{nPilots}: 5937 \newline
+\textit{nRaces}: 12485 \newline
+\textit{nEvents}:74 \newline
+\textit{avgReviewScore}: 3.9 \\
 \hline
 Properties & 
-Name,
-Address, 
-Phone number \\
+Name: the name of the karting center\newline
+\textit{City}: the city where the karting center is located\newline
+\textit{nPilots}: the number of pilots that have raced in the karting center \newline
+\textit{nRaces}: the number of races that took place in the karting center \newline
+\textit{nEvents}: the number of events that had at least one race hosted by the karting center \newline
+\textit{avgReviewScore}: the average score of the reviews of the karting center \\
 \hline
-Components &
-Tracks,
-Events,
-Leaderboard \\
+Components & None \\
 \hline
 Relations &
-Hosts, 
-Organizes \\
+KartingCenter\_City (N:1): the city where the karting center is located \newline
+KartingCenter\_KartingCenterAdmin (N:1): the karting center administrator of the karting center \newline
+KartingCenter\_Clerk (1:N): the clerks of the karting center \newline
+KartingCenter\_KartingCenterReview (1:N): the reviews of the karting center \newline
+KartingCenter\_Track (1:N): the tracks of the karting center \\
 \hline
 Superconcepts & None \\
 \hline
@@ -210,6 +217,92 @@ Subconcepts & None \\
 \end{table}
 
 \end{frame}
+
+\begin{frame}
+\begin{table}
+\tiny
+\begin{tabular}{|p{2cm}|p{6cm}|}
+\hline
+Name & \textbf{City} \\
+\hline
+Synonym & None \\
+\hline
+Description & City \\
+\hline
+Example of instance & 
+Name: Mantova \\
+\hline
+Properties & 
+Name: the name of the city \\
+\hline
+Components & None \\
+\hline
+Relations &
+City\_KartingCenter (1:N): the karting centers located in the city \newline
+\textit{City\_Track} (1:N): the tracks (inside a karting center) located in the city \newline
+\textit{City\_Event} (N:N): the events that had at least one race on a track of a karting center
+located in the city \\
+\hline
+Superconcepts & None \\
+\hline
+Subconcepts & None \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\begin{table}
+\tiny
+\begin{tabular}{|p{2cm}|p{6cm}|}
+\hline
+Name & \textbf{Track} \\
+\hline
+Synonym & Circuit \\
+\hline
+Description & Track \\
+\hline
+Example of instance &
+Name: T1 \newline
+Length: 700m \newline
+\textit{City}: Mantova \newline
+\textit{AsphaltType}: resin \newline
+\textit{nRentalGoKarts}: 23 \newline
+\textit{Difficulty}: Intermediate \newline
+\textit{nPilots}: 3873 \newline
+\textit{nRaces}: 7437 \newline
+\textit{nEvents}: 43 \newline
+\textit{avgReviewScore}: 4.2 \\
+\hline
+Properties &
+Name: the name of the track \newline
+Length: the length of the track \newline
+\textit{City}: the city where the karting center the track belongs to is located \newline
+\textit{AsphaltType}: the type of asphalt of the track \newline
+\textit{nRentalGoKarts}: the number of rental go-karts available in the track \newline
+\textit{Difficulty}: the difficulty of the track \newline
+\textit{nPilots}: the number of pilots that have raced on the track \newline
+\textit{nRaces}: the number of races that took place on the track \newline
+\textit{nEvents}: the number of events that had at least one race on the track \newline
+\textit{avgReviewScore}: the average score of the reviews of the track \\
+\hline
+Components & 
+Timetable: the timetable of the track \newline
+Leaderboard: the leaderboard of the track \\
+\hline
+Relations &
+Track\_KartingCenter (N:1): the karting center the track belongs to \\
+\hline
+Superconcepts & None \\
+\hline
+Subconcepts & None \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+
+
 
 % Quando voglio visitare un nuovo arrivo
 % utilizzo non una query ma una derivata
