@@ -160,7 +160,7 @@
 
 \section*{Data dictionary}
 \begin{frame}
-\frametitle{Data dictionary}
+\frametitle{Karting center}
 
 % Table with two columns and 9 rows:
 % - Name
@@ -202,12 +202,27 @@ Name: the name of the karting center\newline
 \hline
 Components & None \\
 \hline
+\end{tabular}
+\end{table}
+
+\end{frame}
+
+\begin{frame}
+\begin{table}
+\tiny
+\begin{tabular}{|p{2cm}|p{6cm}|}
+\hline
 Relations &
 KartingCenter\_City (N:1): the city where the karting center is located \newline
 KartingCenter\_KartingCenterAdmin (N:1): the karting center administrator of the karting center \newline
 KartingCenter\_Clerk (1:N): the clerks of the karting center \newline
 KartingCenter\_KartingCenterReview (1:N): the reviews of the karting center \newline
-KartingCenter\_Track (1:N): the tracks of the karting center \\
+KartingCenter\_Track (1:N): the tracks of the karting center \newline
+\textit{KartingCenter\_NPilotsRange} (N:1) the range within the number of pilots that have raced in the karting center falls \newline
+\textit{KartingCenter\_NRacesRange} (N:1) the range within the number of races that took place in the karting center falls \newline
+\textit{KartingCenter\_NEventsRange} (N:1) the range within the number of events that took place in the karting center falls \newline
+\textit{KartingCenter\_KCReviewScoreRange} (N:1) the range within the average score of the reviews of the karting center falls \newline
+\textit{KartingCenter\_Event} (N:N) the events the karting center hosted \\
 \hline
 Superconcepts & None \\
 \hline
@@ -215,10 +230,10 @@ Subconcepts & None \\
 \hline
 \end{tabular}
 \end{table}
-
 \end{frame}
 
 \begin{frame}
+\frametitle{City}
 \begin{table}
 \tiny
 \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -252,6 +267,7 @@ Subconcepts & None \\
 \end{frame}
 
 \begin{frame}
+\frametitle{Track}
 \begin{table}
 \tiny
 \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -288,10 +304,69 @@ Length: the length of the track \newline
 \hline
 Components & 
 Timetable: the timetable of the track \newline
-Leaderboard: the leaderboard of the track \\
+Leaderboard: a leaderboard of the track \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\begin{table}
+\tiny
+\begin{tabular}{|p{2cm}|p{6cm}|}
 \hline
 Relations &
-Track\_KartingCenter (N:1): the karting center the track belongs to \\
+Track\_KartingCenter (N:1): the karting center the track belongs to \newline
+Track\_TrackReview (1:N): the reviews of the track \newline
+Track\_Timetable (1:1): the timetable of the track \newline
+Track\_Leaderboard (1:N): the leaderboards of the track \newline
+Track\_Race (1:N): the races that took place on the track \newline
+Track\_GoKart (1:N): the go-karts dedicated to the track \newline
+Track\_GoKartModel (N:N): the go-kart models allowed on the track \newline
+Track\_TrackAshpalt (N:1): the asphalt of the track \newline
+Track\_TrackDifficulty (N:1): the difficulty of the track \newline
+Track\_Pilot (N:N): the pilots that have the track as one of their favorite \newline
+\textit{Track\_City} (N:1): the city where the karting center the track belongs to is located \newline
+\textit{Track\_TrackLengthRange} (N:1): the range within the length of the track falls \newline
+\textit{Track\_NPilotsRange} (N:1): the range within the number of pilots that have raced on the track falls \newline
+\textit{Track\_NRacesRange} (N:1): the range within the number of races that took place on the track falls \newline
+\textit{Track\_NEventsRange} (N:1): the range within the number of events that took place on the track falls \newline
+\textit{Track\_TrackReviewScoreRange} (N:1): the range within the average score of the reviews of the track falls \\
+\hline
+Superconcepts & None \\
+\hline
+Subconcepts & 
+PopularTrack: a track that is recurrent in the list of favorite tracks of pilots \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Go-kart}
+\begin{table}
+\tiny
+\begin{tabular}{|p{2cm}|p{6cm}|}
+\hline
+Name & \textbf{Go-kart} \\
+\hline
+Synonym & Kart \\
+\hline
+Description & Go-kart \\
+\hline
+Example of instance &
+Name: T1.1 \newline
+GoKartModel: Sodi RX7 \\
+\hline
+Properties &
+Name: the name of the go-kart \newline
+\textit{GoKartModel}: the model of the go-kart \\
+\hline
+Components & None \\
+\hline
+Relations &
+GoKart\_Track (N:1): the track the go-kart is dedicated to \newline
+GoKart\_GoKartModel (N:1): the model of the go-kart \\
 \hline
 Superconcepts & None \\
 \hline
@@ -301,8 +376,253 @@ Subconcepts & None \\
 \end{table}
 \end{frame}
 
+\begin{frame}
+\frametitle{Timetable}
+\begin{table}
+\tiny
+\begin{tabular}{|p{2cm}|p{6cm}|}
+\hline
+Name & \textbf{Timetable} \\
+\hline
+Synonym & None \\
+\hline
+Description & Timetable \\
+\hline
+Example of instance &
+\textit{TrackName}: T1 \\
+\hline
+Properties &
+\textit{TrackName}: the name of the track \\
+\hline
+Components & None \\
+\hline
+Relations &
+Timetable\_Track (1:1): the track the timetable belongs to \newline
+Timetable\_Reservation (1:N): the reservations of the timetable \\
+\hline
+Superconcepts & None \\
+\hline
+Subconcepts & None \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
 
+\begin{frame}
+\frametitle{Leaderboard}
+\begin{table}
+\tiny
+\begin{tabular}{|p{2cm}|p{6cm}|}
+\hline
+Name & \textbf{Leaderboard} \\
+\hline
+Synonym & Ranking \\
+\hline
+Description & Leaderboard \\
+\hline
+Example of instance &
+Title: Best of the week \newline
+\textit{TrackName}: T1 \\
+\hline
+Properties &
+Title: the title of the leaderboard \newline
+\textit{TrackName}: the name of the track \\
+\hline
+Components & None \\
+\hline
+Relations &
+Leaderboard\_Track (N:1): the track each leaderboard belongs to \newline
+\textit{Leaderboard\_LapTime} (1:N): the lap times the leaderboard focuses on \\
+\hline
+Superconcepts & None \\
+\hline
+Subconcepts & None \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
 
+\begin{frame}
+\frametitle{Race}
+\begin{table}
+\tiny
+\begin{tabular}{|p{2cm}|p{6cm}|}
+\hline
+Name & \textbf{Race} \\
+\hline
+Synonym & None \\
+\hline
+Description & Race \\
+\hline
+Example of instance &
+ID: 2036 \newline
+Date: 2024-02-15 \newline
+Start: 15:00 \newline
+End: 15:09 \newline
+ForEvent: false \newline
+\textit{GoKartingCenterName}: Mantova Karting Center \newline
+\textit{TrackName}: T1 \newline
+\textit{nPartecipants}: 8 \newline
+\textit{fastestLapTime}: 00:00:48.595 \\
+\hline
+Properties &
+ID \newline
+Date \newline
+Start \newline
+End \newline
+ForEvent: whether the race was created by an organizer for an event or not \newline
+\textit{GoKartingCenterName} \newline
+\textit{TrackName}: the name of the track that hosts the race \newline
+\textit{nPartecipants} \newline
+\textit{fastestLapTime} \\
+\hline
+Components & None \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\begin{table}
+\tiny
+\begin{tabular}{|p{2cm}|p{6cm}|}
+\hline
+Relations & 
+Race\_Track (N:1): the track the race has been raced on \newline
+Race\_Reservation (1:1): the reservation that has been made for the race \newline
+Race\_Pilot (1:N): the pilots that participated in the race \newline
+Race\_Pilot (N:1): the pilot who has this race as his/her last race \newline
+Race\_LapTime (1:N): every lap-time of every pilot that participated in the race \newline
+Race\_Event (N:1): the event the race is part of \\
+\hline
+Superconcepts & None \\
+\hline
+Subconcepts & None \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Reservation}
+\begin{table}
+\tiny
+\begin{tabular}{|p{2cm}|p{6cm}|}
+\hline
+Name & \textbf{Reservation} \\
+\hline
+Synonym & Booking \\
+\hline
+Description & Reservation \\
+\hline
+Example of instance &
+Date: 2024-02-15 \newline
+Start: 15:00 \newline
+End: 15:09 \newline
+\textit{ReservedByPilot}: Denis Festa \newline
+\textit{ReservedByOrganizer}: None \newline
+\textit{ConfirmedByClerk}: Jessica \\
+\hline
+Properties &
+Date \newline
+Start \newline
+End \newline
+\textit{ReservedByPilot}: the pilot who made the reservation (this property 
+is mutually exclusive with \textit{ReservedByOrganizer}) \newline
+\textit{ReservedByOrganizer}: the organizer who made the reservation (this property
+is mutually exclusive with \textit{ReservedByPilot}) \newline
+\textit{ConfirmedByClerk}: the clerk who confirmed the reservation \\
+\hline
+Components & None \\
+\hline
+Relations &
+Reservation\_Timetable (N:1): the timetable where the reservation is stored \newline
+Reservation\_Pilot (N:1): the pilot who made the reservation \newline
+Reservation\_Organizer (N:1): the organizer who made the reservation \newline
+Reservation\_Clerk (N:1): the clerk who confirmed the reservation \newline
+Reservation\_Race (N:1): the race this reservation has been made for \\
+\hline
+Superconcepts & None \\
+\hline
+Subconcepts & None \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Lap-time}
+\begin{table}
+\tiny
+\begin{tabular}{|p{2cm}|p{6cm}|}
+\hline
+Name & \textbf{Lap-time} \\
+\hline
+Synonym & Lap \\
+\hline
+Description & Lap-time \\
+\hline
+Example of instance &
+LapNumber: 7 \newline
+LapTime: 00:00:48.595 \\
+\hline
+Properties &
+LapNumber: the \textit{LapNumber}-th lap \newline
+LapTime: the time measured for the \textit{LapNumber}-th lap for 
+a particular pilot \\
+\hline
+Components & None \\
+\hline
+Relations & 
+LapTime\_Pilot (N:1): the pilot who made the lap-time \newline
+LapTime\_Race (N:1): the race where the lap-time has been made \newline
+\textit{LapTime\_Leaderboard} (N:N): the leaderboards where the lap-time is displayed \\
+\hline
+Superconcepts & None \\
+\hline
+Subconcepts & None \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Application}
+\begin{table}
+\tiny
+\begin{tabular}{|p{2cm}|p{6cm}|}
+\hline
+Name & \textbf{Application} \\
+\hline
+Synonym & Request \\
+\hline
+Description & Application \\
+\hline
+Example of instance &
+Confirmed: true \newline
+\textit{EventName}: Mantova Karting Cup 2024 \newline
+\textit{RequestFromPilot}: Denis Festa \\
+\hline
+Properties &
+Confirmed: whether the application has been confirmed or not (the organizer who
+created the event is the
+only one who can accept an application) \newline
+\textit{EventName}: the name of the event the application has been made for \newline
+\textit{RequestFromPilot}: the pilot who made the application \\
+\hline
+Components & None \\
+\hline
+Relations &
+Application\_Pilot (N:1): the pilot who made the application \newline
+Application\_Event (N:1): the event the application has been made for \\
+\hline
+Superconcepts & None \\
+\hline
+Subconcepts & None \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
 
 % Quando voglio visitare un nuovo arrivo
 % utilizzo non una query ma una derivata
