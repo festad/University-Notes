@@ -336,7 +336,7 @@ Track\_Pilot (N:N): the pilots that have the track as one of their favorite \new
 Superconcepts & None \\
 \hline
 Subconcepts & 
-PopularTrack: a track that is recurrent in the list of favorite tracks of pilots \\
+Popular track: a track that is recurrent in the list of favorite tracks of pilots \\
 \hline
 \end{tabular}
 \end{table}
@@ -623,6 +623,81 @@ Subconcepts & None \\
 \end{tabular}
 \end{table}
 \end{frame}
+
+\begin{frame}
+\frametitle{Event}
+\begin{table}
+\tiny
+\begin{tabular}{|p{2cm}|p{6cm}|}
+\hline
+Name & Event \\
+\hline
+Synonym & Tournament \\
+\hline
+Description & Event \\
+\hline
+Example of instance &
+Name: Mantova Karting Cup 2024 \newline
+Price: 100 \newline
+\textit{FirstDate}: 2024-02-15 \newline
+\textit{OrganizerName}: WD40 \newline
+\textit{EventCategory}: Open \newline
+\textit{nPartecipants}: 64 \newline
+\textit{nRaces}: 12 \newline
+\textit{nReviews}: 23 \newline
+\textit{avgReviewScore}: 4.5 \\
+\hline
+Properties &
+Name: the name of the event \newline
+Price: the price of the event \newline
+\textit{FirstDate}: the date of the first race of the event \newline
+\textit{OrganizerName}: the username of the organizer who created the event \newline
+\textit{EventCategory}: the category of the event (\textit{open, intermediate, pro})\newline
+\textit{nPartecipants}: the number of pilots who applied for the event and whose application was confirmed\newline
+\textit{nRaces}: the number of races of the event \newline
+\textit{nReviews}: the number of written reviews about the event \newline
+\textit{avgReviewScore}: the average score of the reviews about the event \\
+\hline
+Components & None \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\begin{table}
+\tiny
+\begin{tabular}{|p{2cm}|p{6cm}|}
+\hline
+Relations &
+Event\_Organizer (N:1): the organizer who created the event \newline
+Event\_Application (1:N): the applications received for the event \newline
+Event\_Race (1:N): the races of the event \newline
+Event\_EventCategory (N:1): the category of the event \newline
+Event\_EventReview (1:N): the reviews about the event \newline
+\textit{Event\_EReviewScoreRange} (N:1): the range within the average score of the reviews about the event falls \newline
+\textit{Event\_Pilot} (N:N): the pilots who applied for the event and whose application was confirmed \newline
+\textit{Event\_PriceRange} (N:1): the range within the price of the event falls \newline
+\textit{Event\_City} (N:N): the cities where the races of the event took place \newline
+\textit{Event\_Track} (N:N): the tracks that hosted the races of the event \newline
+\textit{Event\_KartingCenter} (N:N): the karting centers whose tracks hosted the races of the event \\
+\hline
+Superconcepts & None \\
+\hline
+Subconcepts & Controversial event, Popular evenet, Upcoming event \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+
+
+
+
+
+
+
+
 
 % Quando voglio visitare un nuovo arrivo
 % utilizzo non una query ma una derivata
