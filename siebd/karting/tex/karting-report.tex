@@ -229,7 +229,8 @@
         \hline
         Title & \textbf{Read reviews on karting center} \\
         \hline
-        Goal & The user chooses one karting center to focus on and scrolls the reviews it received. \\
+        Goal & The user chooses one karting center to focus on and scrolls the reviews it received (from pilots
+        that had at least one race on one track of the karting center). \\
         \hline
         Precondition & The user chose a karting center from a list of karting centers (obtained from any of the previous use cases).\\
         \hline
@@ -475,7 +476,8 @@
         \hline
         Title & \textbf{Read reviews on track} \\
         \hline
-        Goal & The user chooses one track to focus on and scrolls the reviews it received. \\
+        Goal & The user chooses one track to focus on and scrolls the reviews it received (from pilots
+        that had at least one race on it). \\
         \hline
         Precondition & The user chose a track from a list of tracks (obtained from any of the previous use cases).\\
         \hline
@@ -810,6 +812,74 @@
 \end{table}
 \end{frame}
 
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Read details on event} \\
+        \hline
+        Goal & The user chooses one event to focus on and reads its details. \\
+        \hline
+        Precondition & The user chose an event from a list of events (obtained from any of the previous use cases).\\
+        \hline
+        Postcondition & The user obtains the details on the event and can move on to other related
+        informations (e.g. races, pilots) \\
+        \hline
+        Workflow &
+        - The user chooses one event from a list. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline  
+        Title & \textbf{Explore pilots from event} \\
+        \hline
+        Goal & The user chooses one event to focus on and explores the pilots that partecipated to the event. \\
+        \hline
+        Precondition & The user chose an event from a list of events (obtained from any of the previous use cases).\\
+        \hline
+        Postcondition & The user obtains a list of pilots in the area dedicated to pilots. \\
+        \hline
+        Workflow &
+        - The user moves from the area dedicated to the details of the event to the
+        area dedicated to pilots through a click. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline  
+        Title & \textbf{Read reviews on event} \\
+        \hline
+        Goal & The user chooses one event to focus on and scrolls the reviews it received (from pilots that 
+        participated to the event). \\
+        \hline
+        Precondition & The user chose an event from a list of events (obtained from any of the previous use cases).\\
+        \hline
+        Postcondition & The user obtains the reviews on the event in the area dedicated to reviews. \\
+        \hline
+        Workflow &
+        - The user moves from the area dedicated to the details of the event to the
+        area dedicated to reviews through a click. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+
 
 % %%%%% EVENT DETAILS, RACES FROM EVENT, PILOTS FROM EVENT, REVIEWS ON EVENT
 
@@ -865,6 +935,185 @@
     \centering
     \includegraphics[width=0.9\linewidth]{drawio/pilot.pdf}
 \end{frame}
+
+% %%%%% PILOT USE CASE SHEET %%%%%
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Read my details} \\
+        \hline
+        Goal & The user reads its own personal informations, already available in the homepage.\\
+        \hline
+        Precondition & The user logged in. \\
+        \hline
+        Postcondition & The user obtains its personal informations. \\
+        \hline
+        Workflow &
+        - The user logs in and reads the informations already present in the homepage. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore not yet confirmed reservations} \\
+        \hline
+        Goal & The user explores the reservations he made that are not yet confirmed by any clerk \\
+        \hline
+        Precondition & The user logged in. \\
+        \hline
+        Postcondition & The user obtains the list of reservations that are not yet confirmed by any clerk. \\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to reservations and the list is already provided. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{C.U.D. races and reservations} \\
+        \hline
+        Goal & The user asks for a reservation to have a race on a track of a karting center. \\
+        \hline
+        Precondition & The user logged in. \\
+        \hline
+        Postcondition & A race and its relative reservation (a weak entity of the race) are created, updated or deleted. \\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to reservations. \newline
+        - A: the user selects a reservation from those not yet confirmed and updates it or deletes it. \newline
+        - B: the user creates a new reservation without the need to select one from those not yet confirmed. \newline
+        Note: the existence of the reservation is hidden to the user when he creates/updates/deletes the race,
+        the reservation just takes some of the attributes of the race (Date, Start, End) and is shared with the clerks
+        of the karting center, who can confirm it or not. The user can only see the reservations that are
+        confirmed or not, he does not edit them directly but only through the actions on the race. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore confirmed reservations} \\
+        \hline
+        Goal & The user explores the reservations he made that are confirmed by a clerk \\
+        \hline
+        Precondition & The user logged in. \\
+        \hline
+        Postcondition & The user obtains the list of reservations that are confirmed by a clerk. \\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to reservations and the list is already provided. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore my past races} \\
+        \hline
+        Goal & The user explores the races he had in the past (not the races he booked through the previous 
+        use case). \\
+        \hline
+        Precondition & The user logged in. \\
+        \hline  
+        Postcondition & The user obtains the list of past races. \\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to races
+        and the list is already provided. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Read details on race} \\
+        \hline
+        Goal & The user chooses one race to focus on and reads its details. \\
+        \hline
+        Precondition & The user logged in. \\
+        \hline
+        Postcondition & The user obtains the details on the race and related informations such as the best lap-time of
+        that race (it could be from the user himself or another pilot). \\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to races. \newline
+        - The user chooses one race from the list of past races. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Create review of karting center} \\
+        \hline
+        Goal & The user creates a review of a karting center. \\
+        \hline
+        Precondition & The user logged in and had at least one race that will allow him to write 
+        reviews for the track and the karting center that hosted that race. \\
+        \hline
+        Postcondition & The review is stored and a clerk of the karting center will be able to 
+        read it and remove it if it is considered inappropriate. \\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to reviews. \newline
+        - From the list of past races, the user selects the option to write a review of the karting center that
+        hosted the chosen race from the list. \newline
+        - The user chooses a score, writes the review and submits it. \\
+        \hline
+        \end{tabular}
+    \end{table}
+
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Create review of track} \\
+        \hline
+        Goal, precondition, postcondition, workflow & Equivalent to the previous use case, but the review is of a track. \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
 
 \begin{frame}
     \frametitle{Visitor}
@@ -924,6 +1173,8 @@
     \end{table}
 
 \end{frame}
+
+
 
 
 \section*{Data dictionary}
