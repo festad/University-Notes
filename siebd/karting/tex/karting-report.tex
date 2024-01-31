@@ -46,8 +46,8 @@
 \frametitle{User groups}
 \begin{figure}
     \centering
-    \includegraphics[width=0.4\linewidth]{drawings/users.pdf}
-    \caption{User groups}
+    \includegraphics[width=0.8\linewidth]{drawio/users-uc.pdf}
+    % \caption{User groups}
 \end{figure}
 \end{frame}
 
@@ -58,27 +58,796 @@
 \begin{frame}
     \frametitle{User}
     \centering
-    \includegraphics[width=0.9\linewidth]{drawings/uc-user.pdf}
+    \includegraphics[width=0.8\linewidth]{drawio/user.pdf}
 \end{frame}
+
+% %%%%%%%%%% KARTING CENTER AREA %%%%%%%%%%%%%%%
+
+\begin{frame}
+\frametitle{Specification sheet}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Explore karting centers by city} \\
+    \hline
+    Goal & The user seeks karting centers selecting one city at a time. \\
+    \hline
+    Precondition & The user is in the area (of the public view) dedicated to karting centers.\\
+    \hline
+    Postcondition & The user obtains the list of karting centers from which he can move on.\\
+    \hline
+    Workflow &
+    - The user moves to the area dedicated to karting centers. \newline
+    - The user selects a city. \\
+    \hline
+    \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore karting centers by number of races} \\
+        \hline
+        Goal & The user seeks karting centers selecting one range of number of races (that
+        were hosted on any of the tracks of the karting center) at a time. \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to karting centers.\\
+        \hline
+        Postcondition & The user obtains the list of karting centers from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to karting centers. \newline
+        - The user selects a range of number of races. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore karting centers by number of pilots} \\
+        \hline
+        Goal & The user seeks karting centers selecting one range of number of pilots (who had a race on 
+        any of the tracks of the karting center) at a time. \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to karting centers.\\
+        \hline
+        Postcondition & The user obtains the list of karting centers from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to karting centers. \newline
+        - The user selects a range of number of pilots. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore karting centers by number of events} \\
+        \hline
+        Goal & The user seeks karting centers selecting one range of number of events (that had
+        at least one race hosted on 
+        any of the tracks of the karting center) at a time. \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to karting centers.\\
+        \hline
+        Postcondition & The user obtains the list of karting centers from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to karting centers. \newline
+        - The user selects a range of number of events. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore karting centers by average review score} \\
+        \hline
+        Goal & The user seeks karting centers selecting one range of average review scores (given to the karting center by all the pilots
+        that had at least one race on one of the tracks of the karting center) at a time. \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to karting centers.\\
+        \hline
+        Postcondition & The user obtains the list of karting centers from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to karting centers. \newline
+        - The user selects a range of scores (the ranges are the same for karting centes, tracks and events). \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{View all karting centers hosting upcoming events} \\
+        \hline
+        Goal & The user scrolls through the list of karting centers that are going to host an upcoming event. \\
+        \hline
+        Precondition & The user already has this information in the homepage.\\
+        \hline
+        Postcondition & The user obtains the list of karting centers from which he can move on.\\
+        \hline
+        Workflow &
+        - The user reaches the homepage. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Read details on karting center} \\
+        \hline
+        Goal & The user chooses one karting center to focus on and reads its details. \\
+        \hline
+        Precondition & The user chose a karting center from a list of karting centers (obtained from any of the previous use cases).\\
+        \hline
+        Postcondition & The user obtains the details on the karting center and can move on to other related informations (e.g. tracks, reviews)\\
+        \hline
+        Workflow &
+        - The user chooses one karting center from a list. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Read reviews on karting center} \\
+        \hline
+        Goal & The user chooses one karting center to focus on and scrolls the reviews it received. \\
+        \hline
+        Precondition & The user chose a karting center from a list of karting centers (obtained from any of the previous use cases).\\
+        \hline
+        Postcondition & The user obtains the reviews on the karting center in the area dedicated to reviews. \\
+        \hline
+        Workflow &
+        - The user moves from the page dedicated to the details of the karting center to the
+        page dedicated to reviews through a click. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore tracks in a karting center} \\
+        \hline
+        Goal & The user chooses one karting center to focus on and explores the tracks it offers. \\
+        \hline
+        Precondition & The user chose a karting center from a list of karting centers (obtained from any of the previous use cases).\\
+        \hline
+        Postcondition & The user obtains the tracks offered by the karting center in the area dedicated to tracks. \\
+        \hline
+        Workflow &
+        - The user moves from the page dedicated to the details of the karting center to the
+        page dedicated to tracks through a click. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore tracks by asphalt type} \\
+        \hline
+        Goal & The user seeks tracks selecting one asphalt type at a time. \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+        \hline
+        Postcondition & The user obtains the list of tracks from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to tracks. \newline
+        - The user selects an asphalt type. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore tracks by difficulty} \\
+        \hline
+        Goal & The user seeks tracks selecting one difficulty at a time. \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+        \hline
+        Postcondition & The user obtains the list of tracks from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to tracks. \newline
+        - The user selects a difficulty. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore tracks by length} \\
+        \hline
+        Goal & The user seeks tracks selecting one range of lengths at a time. \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+        \hline
+        Postcondition & The user obtains the list of tracks from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to tracks. \newline
+        - The user selects a range of lengths. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore tracks by city} \\
+        \hline
+        Goal & The user seeks tracks selecting one city at a time. \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+        \hline
+        Postcondition & The user obtains the list of tracks from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to tracks. \newline
+        - The user selects a city. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore tracks by number of races} \\
+        \hline
+        Goal & The user seeks tracks selecting one range of number of races
+        (that took place on the track) at a time. \\ 
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+        \hline
+        Postcondition & The user obtains the list of tracks from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to tracks. \newline
+        - The user selects a range of number of races. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore tracks by number of pilots} \\
+        \hline
+        Goal & The user seeks tracks selecting one range of number of pilots
+        (who had a race on the track) at a time. \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+        \hline
+        Postcondition & The user obtains the list of tracks from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to tracks. \newline
+        - The user selects a range of number of pilots. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore tracks by number of events} \\
+        \hline
+        Goal & The user seeks tracks selecting one range of number of events
+        (that had at least one race hosted on the track) at a time. \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+        \hline
+        Postcondition & The user obtains the list of tracks from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to tracks. \newline
+        - The user selects a range of number of events. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore tracks by average review score} \\
+        \hline
+        Goal & The user seeks tracks selecting one range of average review scores (given to the track by all the pilots
+        that had at least one race on the track) at a time. \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+        \hline
+        Postcondition & The user obtains the list of tracks from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to tracks. \newline
+        - The user selects a range of scores (the ranges are the same for karting centes, tracks and events). \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Read details on track} \\
+        \hline
+        Goal & The user chooses one track to focus on and reads its details. \\
+        \hline
+        Precondition & The user chose a track from a list of tracks (obtained from any of the previous use cases).\\
+        \hline
+        Postcondition & The user obtains the details on the track and can move on to other related informations (e.g. pilots, leaderboards, races, reviews)\\
+        \hline
+        Workflow &
+        - The user chooses one karting center from a list. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Read reviews on track} \\
+        \hline
+        Goal & The user chooses one track to focus on and scrolls the reviews it received. \\
+        \hline
+        Precondition & The user chose a track from a list of tracks (obtained from any of the previous use cases).\\
+        \hline
+        Postcondition & The user obtains the reviews on the tracks in the area dedicated to reviews. \\
+        \hline
+        Workflow &
+        - The user moves from the area dedicated to the details of the track to the
+        area dedicated to reviews through a click. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore leaderboards} \\
+        \hline
+        Goal & The user chooses one track to focus on and explores the leaderboards associated
+        to the track (leaderboards are filtering on the whole record of laptimes obtained by pilots in a race,
+        a leaderboard can focus on the last month, the last year, sex, weight...) \\
+        \hline
+        Precondition & The user chose a track from a list of tracks (obtained from any of the previous use cases).\\
+        \hline
+        Postcondition & The user obtains the list of leaderboards in the area dedicated to leaderboards. \\
+        \hline
+        Workflow &
+        - The user moves from the area dedicated to the details of the track to the
+        area dedicated to leaderboards through a click. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore races from track} \\
+        \hline
+        Goal & The user chooses one track to focus on and explores the races that took place on the track. \\
+        \hline
+        Precondition & The user chose a track from a list of tracks (obtained from any of the previous use cases).\\
+        \hline
+        Postcondition & The user obtains the list of races in the area dedicated to races. \\
+        \hline
+        Workflow &
+        - The user moves from the area dedicated to the details of the track to the
+        area dedicated to races through a click. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore lap-times of a race} \\
+        \hline
+        Goal & The user chooses one race to focus on and reads all the lap-times made by all the pilots 
+        that participated to the race.\\
+        \hline
+        Precondition & The user chose a race from a list of races (obtained from a track, an event or a pilot).\\
+        \hline
+        Postcondition & The user obtains the list of lap-times in the area dedicated to lap-times. \\
+        \hline
+        Workflow &
+        - The user moves from the area dedicated to the details of the race to the
+        area dedicated to lap-times through a click. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore pilots from track} \\
+        \hline
+        Goal & The user chooses one track to focus on and explores the pilots that had at least one race on the track. \\
+        \hline
+        Precondition & The user chose a track from a list of tracks (obtained from any of the previous use cases).\\
+        \hline
+        Postcondition & The user obtains the list of pilots in the area dedicated to pilots. \\
+        \hline
+        Workflow &
+        - The user moves from the area dedicated to the details of the track to the
+        area dedicated to pilots through a click. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Read details on pilot} \\
+        \hline
+        Goal & The user chooses one pilot to focus on and reads its details. \\
+        \hline
+        Precondition & The user chose a pilot from a list of pilots (obtained from a track, a race, an event).\\
+        \hline
+        Postcondition & The user obtains the details on the pilot and can move on to other related informations (e.g. races, events). \\
+        \hline
+        Workflow &
+        - The user chooses one pilot from a list. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore events from pilot} \\
+        \hline
+        Goal & The user chooses one pilot to focus on and explores the events that the pilot attended. \\
+        \hline
+        Precondition & The user chose a pilot from a list of pilots (obtained from a track, a race, an event).\\
+        \hline
+        Postcondition & The user obtains a list of events in the area dedicated to events. \\
+        \hline
+        Workflow &
+        - The user moves from the area dedicated to the details of the pilot to the
+        area dedicated to events through a click. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore races from pilot} \\
+        \hline
+        Goal & The user chooses one pilot to focus on and explores the races that the pilot had. \\
+        \hline
+        Precondition & The user chose a pilot from a list of pilots (obtained from a track, a race, an event).\\
+        \hline
+        Postcondition & The user obtains a list of races in the area dedicated to races. \\
+        \hline
+        Workflow &
+        - The user moves from the area dedicated to the details of the pilot to the
+        area dedicated to races through a click. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+% EXPLORE EVENTS
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore events by city} \\
+        \hline
+        Goal & The user explres events selecting one city at a time. \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to events.\\
+        \hline
+        Postcondition & The user obtains the list of events from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to events. \newline
+        - The user selects a city. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore events by average review score} \\
+        \hline
+        Goal & The user explores events selecting one range of average review scores (given to the event by all the pilots
+        that partecipated to it) at a time. \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to events.\\
+        \hline
+        Postcondition & The user obtains the list of events from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to events. \newline
+        - The user selects a range of scores (the ranges are the same for karting centes, tracks and events). \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore events by price} \\
+        \hline
+        Goal & The user explores events selecting one range of prices at a time. \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to events.\\
+        \hline
+        Postcondition & The user obtains the list of events from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to events. \newline
+        - The user selects a range of prices. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore events by category} \\
+        \hline
+        Goal & The user explores events selecting one category at a time. \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to events.\\
+        \hline
+        Postcondition & The user obtains the list of events from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to events. \newline
+        - The user selects a category. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore events by popularity} \\
+        \hline
+        Goal & The user explores only the events considered popular (those that have
+        at least $N$ partecipants and $M$ reviews) \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to events.\\
+        \hline
+        Postcondition & The user obtains the list of events from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to events. \newline
+        - The user chooses an event from the list of popular events already provided in the area
+        dedicated to events. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore upcoming events} \\
+        \hline
+        Goal & The user explores only the upcoming events (those whose first race still has to take place). \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to events or in the homepage (which 
+        already shows the list of upcoming events, the list of tracks that will be involved and the list of 
+        karting centers that will be involved). \\
+        \hline
+        Postcondition & The user obtains the list of events from which he can move on.\\
+        \hline
+        Workflow &
+        - A: the user chooses an event from the list of upcoming events already provided in the homepage.\newline
+        - B.1: the user moves to the area dedicated to events. \newline
+        - B.2: the user chooses an event from the list of upcoming events already provided in the area dedicated
+        to events. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore controversial events} \\
+        \hline
+        Goal & The user explores only the controversial events (those that have at least $N$ reviews under 25\% of the maximum score
+        and at least $M$ reviews over 75\% of the maximum score). \\
+        \hline
+        Precondition & The user is in the area (of the public view) dedicated to events.\\
+        \hline
+        Postcondition & The user obtains the list of events from which he can move on.\\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to events. \newline
+        - The user chooses an event from the list of controversial events already provided in the area dedicated to events. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+
+% %%%%% EVENT DETAILS, RACES FROM EVENT, PILOTS FROM EVENT, REVIEWS ON EVENT
+
+
+% 
+% 
+% 
+% 
+% INTRANET
+% 
+% 
+% 
+% 
 
 \subsection*{Intranet}
 
 \begin{frame}
-    \frametitle{Kart center administrator}
+    \frametitle{Intranet}
     \centering
-    \includegraphics[width=0.9\linewidth]{drawings/uc-kcadmin.pdf}
+    \includegraphics[width=0.7\linewidth]{drawio/intranet.pdf}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Karting center administrator}
+    \centering
+    \includegraphics[width=0.7\linewidth]{drawio/karting-center-admin.pdf}
 \end{frame}
 
 \begin{frame}
     \frametitle{Clerk}
     \centering
-    \includegraphics[width=0.9\linewidth]{drawings/uc-clerk.pdf}
+    \includegraphics[width=0.9\linewidth]{drawio/clerk.pdf}
 \end{frame}
 
 \begin{frame}
     \frametitle{Information system administrator}
     \centering
-    \includegraphics[width=0.9\linewidth]{drawings/uc-isadmin.pdf}
+    \includegraphics[width=0.7\linewidth]{drawio/is-admin.pdf}
 \end{frame}
 
 \subsection*{Extranet}
@@ -86,7 +855,7 @@
 \begin{frame}
     \frametitle{Organizer}
     \centering
-    \includegraphics[width=0.9\linewidth]{drawings/uc-organizer.pdf}
+    \includegraphics[width=0.9\linewidth]{drawio/organizer.pdf}
 \end{frame}
 
 \subsection*{Internet}
@@ -94,13 +863,13 @@
 \begin{frame}
     \frametitle{Pilot}
     \centering
-    \includegraphics[width=0.9\linewidth]{drawings/uc-pilot.pdf}
+    \includegraphics[width=0.9\linewidth]{drawio/pilot.pdf}
 \end{frame}
 
 \begin{frame}
     \frametitle{Visitor}
     \centering
-    \includegraphics[width=0.3\linewidth]{drawings/uc-visitor.pdf}
+    \includegraphics[width=0.3\linewidth]{drawio/visitor.pdf}
 \end{frame}
 
 \begin{frame}
@@ -127,7 +896,6 @@
     \hline
     \end{tabular}
     \end{table}
-
 \end{frame}
 
 \begin{frame}
