@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.7.18)  31 JAN 2024 23:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.7.18)  1 FEB 2024 02:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1266,201 +1266,313 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 929.
  [44
 
  <./drawio/organizer.pdf>]
-<drawio/pilot.pdf, id=1305, 722.7pt x 507.81718pt>
-File: drawio/pilot.pdf Graphic file (type pdf)
-<use drawio/pilot.pdf>
-Package pdftex.def Info: drawio/pilot.pdf  used on input line 937.
-(pdftex.def)             Requested size: 308.06367pt x 216.46645pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 937.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 953.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [45
 
- <./drawio/pilot.pdf>]
+]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 960.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 978.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [46
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 981.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1004.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [47
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1009.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1028.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [48
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1031.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1052.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [49
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1054.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1102.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [50
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1077.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1124.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [51
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1115--1115
-[]|\OT1/cmss/m/n/6 Goal, pre-con-di-tion,
- []
-
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1115.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1146.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
-[52
+ [52
 
 ]
-<drawio/visitor.pdf, id=1526, 145.50359pt x 182.6022pt>
-File: drawio/visitor.pdf Graphic file (type pdf)
-<use drawio/visitor.pdf>
-Package pdftex.def Info: drawio/visitor.pdf  used on input line 1122.
-(pdftex.def)             Requested size: 102.68962pt x 128.87387pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1122.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1171.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [53
 
- <./drawio/visitor.pdf>]
+]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1148.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1191.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [54
 
 ]
+<drawio/pilot.pdf, id=1569, 722.7pt x 507.81718pt>
+File: drawio/pilot.pdf Graphic file (type pdf)
+<use drawio/pilot.pdf>
+Package pdftex.def Info: drawio/pilot.pdf  used on input line 1200.
+(pdftex.def)             Requested size: 308.06367pt x 216.46645pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1175.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1200.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [55
 
-]
+ <./drawio/pilot.pdf>]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1227.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1223.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [56
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1252.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1244.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [57
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1286.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1272.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [58
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1330.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1294.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [59
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1362.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1317.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [60
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1396.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1340.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [61
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 1378--1378
+[]|\OT1/cmss/m/n/6 Goal, pre-con-di-tion,
+ []
+
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1428.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1378.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
-
 [62
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1462.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1401.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [63
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1502.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1423.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [64
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1523.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1446.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [65
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1570.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1470.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [66
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1606.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1494.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [67
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1644.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1520.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [68
 
 ]
+<drawio/visitor.pdf, id=1949, 145.50359pt x 182.6022pt>
+File: drawio/visitor.pdf Graphic file (type pdf)
+<use drawio/visitor.pdf>
+Package pdftex.def Info: drawio/visitor.pdf  used on input line 1528.
+(pdftex.def)             Requested size: 102.68962pt x 128.87387pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1684.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1528.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
  [69
+
+ <./drawio/visitor.pdf>]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1554.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [70
 
 ]
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
-Package pdftex.def Info: unibs_logo.pdf  used on input line 1710.
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1581.
 (pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
- [70
+ [71
+
+]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1633.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+
+[72
+
+]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1658.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [73
+
+]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1692.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [74
+
+]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1736.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [75
+
+]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1768.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [76
+
+]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1802.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [77
+
+]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1834.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [78
+
+]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1868.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [79
+
+]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1908.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [80
+
+]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1929.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [81
+
+]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 1976.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [82
+
+]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 2012.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [83
+
+]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 2050.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [84
+
+]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 2090.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [85
+
+]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 2116.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [86
 
 ]
 \tf@nav=\write6
@@ -1472,15 +1584,16 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 1710.
 \tf@snm=\write8
 \openout8 = `karting-report.snm'.
 
- (./karting-report.aux)
+
+(./karting-report.aux)
 Package rerunfilecheck Info: File `karting-report.out' has not changed.
-(rerunfilecheck)             Checksum: 59D581DD3A8C7A265C24F8D15539D023;684.
+(rerunfilecheck)             Checksum: FF82A4144F801A497A363390CCEDBF88;684.
  ) 
 Here is how much of TeX's memory you used:
- 24206 strings out of 480247
- 460898 string characters out of 5896151
- 725953 words of memory out of 5000000
- 41532 multiletter control sequences out of 15000+600000
+ 24270 strings out of 480247
+ 461490 string characters out of 5896151
+ 725952 words of memory out of 5000000
+ 41564 multiletter control sequences out of 15000+600000
  474268 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,15n,104p,421b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1489,10 +1602,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb>
-Output written on karting-report.pdf (70 pages, 748824 bytes).
+Output written on karting-report.pdf (86 pages, 780367 bytes).
 PDF statistics:
- 2067 PDF objects out of 2073 (max. 8388607)
- 1922 compressed objects within 20 object streams
- 148 named destinations out of 1000 (max. 500000)
+ 2496 PDF objects out of 2984 (max. 8388607)
+ 2331 compressed objects within 24 object streams
+ 180 named destinations out of 1000 (max. 500000)
  190 words of extra memory for PDF output out of 10000 (max. 10000000)
 

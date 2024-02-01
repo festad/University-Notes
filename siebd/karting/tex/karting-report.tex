@@ -928,6 +928,269 @@
     \includegraphics[width=0.9\linewidth]{drawio/organizer.pdf}
 \end{frame}
 
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore my events} \\
+        \hline
+        Goal & The user explores the events he created. \\
+        \hline
+        Precondition & The user logged in and created at least one event.\\
+        \hline
+        Postcondition & The user obtains the list of events he created. \\
+        \hline
+        Workflow &
+        - A: the user already has a list of events he created and the applications received for each event 
+        in the homepage. \newline
+        - B: the user moves to the area dedicated to events and the list is already provided. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Read details on my event} \\
+        \hline
+        Goal & The user chooses one event to focus on and reads its details. \\
+        \hline
+        Precondition & The user logged in. \\
+        \hline
+        Postcondition & The user obtains the details on the event and 
+        can move on to other related informations (e.g. applications). \\
+        \hline
+        Workflow &
+        - A: the user chooses one event from the list of events he created in the homepage. \newline
+        - B.1: the user moves to the area dedicated to events. \newline
+        - B.2: the user chooses one event from the list of events he created in the area dedicated to events. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{U.D. events} \\
+        \hline
+        Goal & The user updates or deletes an event he created. \\
+        \hline
+        Precondition & The user logged in and he created at least one event. \\
+        \hline
+        Postcondition & The event is updated or deleted, the modifications might affect the races created for the track 
+        and the participations of the pilots to the races of the event but the applications made by pilots are not affected. \\
+        \hline
+        Workflow &
+        - A: the user chooses one event from the list of events he created in the homepage. \newline
+        - B.1: the user moves to the area dedicated to events. \newline
+        - B.2: the user chooses one event from the list of events he created in the area dedicated to events. \newline
+        - The user chooses the option to update or delete the event. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Create event} \\
+        \hline
+        Goal & The user creates a new event. \\
+        \hline
+        Precondition & The user logged in and created at least one race.\\
+        \hline
+        Postcondition & The event is created and pilots can apply to it. \\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to events. \newline
+        - The user chooses the option to create a new event (he will need to choose among races he created
+        to fill the event). \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore not yet confirmed applications} \\
+        \hline
+        Goal & The user explores the applications received for his events that he did not confirm yet. \\
+        \hline
+        Precondition & The user logged in, created at least one event and at least one pilot applied to it.\\
+        \hline
+        Postcondition & The user obtains the list of applications that he did not confirm yet. \\
+        \hline
+        Workflow &
+        - A: the user chooses one event from the list of events he created in the homepage. \newline
+        - B.1: the user moves to the area dedicated to events. \newline
+        - B.2: the user chooses one event from the list of events he created in the area dedicated to events. \newline
+        (- The list of applications not yet confirmed is already provided.) \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+
+% \begin{frame}
+%     \frametitle{Specification sheet}
+%     \begin{table}
+%         \tiny
+%         \begin{tabular}{|p{2cm}|p{6cm}|}
+%         \hline
+%         Title & \textbf{Explore not yet confirmed applications} \\
+%         \hline
+%         Goal & The user explores the applications received for his events that he did not confirm yet. \\
+%         \hline
+%         Precondition & The user logged in, created at least one event and at least one pilot applied to it.\\
+%         \hline
+%         Postcondition & The user obtains the list of applications that he did not confirm yet. \\
+%         \hline
+%         Workflow &
+%         - The user follows the same steps as in the use case \textbf{Read details on my event}
+%         and the list of applications not yet confirmed is already provided. \\
+%         \hline
+%         \end{tabular}
+% \end{table}
+% \end{frame}
+
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Confirm application} \\
+        \hline
+        Goal & The user confirms an application received for one of his events. \\
+        \hline
+        Precondition & The user logged in, created at least one event and at least one pilot applied to it.\\
+        \hline
+        Postcondition & The application is confirmed and the pilot is automatically inserted as a partecipant
+        to all of the races of the event (this might change, e.g. in case the organizer decides to organize races 
+        in a tournament fashion, but the application will not be affected). \\
+        \hline
+        Workflow &
+        - A: the user chooses one event from the list of events he created in the homepage. \newline
+        - B.1: the user moves to the area dedicated to events. \newline
+        - B.2: the user chooses one event from the list of events he created in the area dedicated to events. \newline
+        - The user chooses the option to accept an application from the list of applications not yet confirmed. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore races of the event} \\
+        \hline
+        Precondition & The user logged in, created at least one event and the event has at least one race. \\
+        \hline
+        Postcondition & The user obtains the list of races of a specific event. \\
+        \hline
+        Workflow &
+        - A: the user chooses one event from the list of events he created in the homepage. \newline
+        - B.1: the user moves to the area dedicated to events. \newline
+        - B.2: the user chooses one event from the list of events he created in the area dedicated to events. \newline
+        (- The list of races of the chosen event is already provided.) \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Read details on race} \\
+        \hline
+        Precondition & The user logged in, created at least one event and the event has at least one race. \\
+        \hline
+        Postcondition & The user obtains the details on the race and can move on (e.g. updating or deleting it.) \\
+        \hline
+        Workflow &
+        - A: the user chooses one event from the list of events he created in the homepage. \newline
+        - B.1: the user moves to the area dedicated to events. \newline
+        - B.2: the user chooses one event from the list of events he created in the area dedicated to events. \newline
+        - The user chooses one race from the list of races of the chosen event. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{U.D. race} \\
+        \hline
+        Precondition & The user logged in, created at least one event and the event has at least one race. \\
+        \hline
+        Postcondition & The race gets updated or deleted, this affects the relations with the pilots (\textit{partecipation})
+        but not the application of the pilots to the event. \\
+        \hline
+        Workflow &
+        - A: the user chooses one event from the list of events he created in the homepage. \newline
+        - B.1: the user moves to the area dedicated to events. \newline
+        - B.2: the user chooses one event from the list of events he created in the area dedicated to events. \newline
+        - The user chooses one race from the list of races of the chosen event. \newline
+        - The user chooses the option to update or delete the race. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Create race} \\
+        \hline
+        Precondition & The user logged in. \\
+        \hline
+        Postcondition & A new race is available to the user to be added to an event. \\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to events. \newline
+        - The user chooses the option to create a new race. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+
 \subsection*{Internet}
 
 \begin{frame}
@@ -1113,6 +1376,149 @@
         \end{tabular}
     \end{table}
 \end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore upcoming events applied to but not confirmed yet} \\
+        \hline
+        Goal & The user explores the events that he applied to 
+        and that have not been confirmed by an organizer yet. \\
+        \hline
+        Precondition & The user logged in. \\
+        \hline
+        Postcondition & The user obtains the list of events that he 
+        applied to and that have not been confirmed yet. \\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to events and the list is already provided. \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore upcoming events not applied to} \\
+        \hline
+        Goal & The user explores the upcoming events that he did not apply to. \\
+        \hline
+        Precondition & The user logged in. \\
+        \hline
+        Postcondition & The user obtains the list of upcoming events that he did not apply to. \\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to events and the list is already provided. \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore my past events} \\
+        \hline
+        Goal & The user explores the events that he attended in the past. \\
+        \hline
+        Precondition & The user logged in and attended at least one event in the past. \\
+        \hline
+        Postcondition & The user obtains the list of events that he attended in the past. \\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to events. \newline
+        - The user selects the option to explore the events that he attended in the past. \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Apply to an event} \\
+        \hline
+        Goal & The user applies to an event. \\
+        \hline
+        Precondition & The user logged in and he has not already applied to the event. \\
+        \hline
+        Postcondition & The user applies to the event and the organizer will be able to see and confirm the application. \\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to events. \newline
+        - The user selects one event from the list of upcoming events that he did not apply to. \newline
+        - The user applies to the event. \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Read details on event} \\
+        \hline
+        Goal & The user chooses one event to focus on and reads its details. \\
+        \hline
+        Precondition & The user logged in. \\
+        \hline
+        Postcondition & The user obtains the details on the event. \\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to events. \newline
+        - A: the user chooses one event from the list of upcoming events (both applied to and not applied to). \newline
+        - B.1: the user chooses the option to explore the events that he attended in the past. \newline
+        - B.2: the user chooses one event from the list of past events. \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Create review of event} \\
+        \hline
+        Goal & The user creates a review of an event he has attended in the past. \\
+        \hline
+        Precondition & The user logged in and attended at least one event in the past. \\
+        \hline
+        Postcondition & The review is stored and the organizer of the event and the clerks of all the 
+        karting centers that hosted at least one race of the event will be able to read it, clerks will 
+        be able to remove it if it is considered inappropriate. \\
+        \hline
+        Workflow &
+        - The user moves to the area dedicated to events. \newline
+        - The user chooses the option to explore the events that he attended in the past. \newline
+        - The user selects the option to write a review from one of the events in the list. \newline
+        - The user chooses a score, writes the review and submits it. \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
 
 
 \begin{frame}
