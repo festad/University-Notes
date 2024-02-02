@@ -11,6 +11,8 @@
 \usepackage{hyperref}
 \usepackage{listings}
 \usepackage{color}
+\usepackage{array}
+\usepackage{multirow}
 
 \usetheme{Madrid}
 
@@ -38,6 +40,16 @@
 \end{frame}
 
 \logo{\includegraphics[width=0.1\linewidth]{unibs_logo.pdf}}
+
+\begin{frame}
+This web information systems allows different actors to cooperate
+to give a wonderful experience to all go-karting lovers.
+The visitor will be able to explore our different tracks: longer and shorter,
+indoor and outdoor, asphalt and resin... which will be your favourite? Come to visit our 
+go-karting centers to find out.
+You will need to register before his first race, then 
+\end{frame}
+
 
 
 \section*{User groups}
@@ -300,8 +312,8 @@
         - Explore reservations (related to my karting center) \newline
         - Confirm reservation \newline
         - Explore reviews on my karting center \newline
-        - Read review on my karting center \newline
-        - Delete review \newline
+        - Read review on karting center \newline
+        - Delete review on karting center\newline
         - Explore reviews on the tracks of my karting center \newline
         - Read review on track \newline
         - Delete review on track\newline
@@ -3018,7 +3030,7 @@
 \tiny
 \begin{tabular}{|p{2cm}|p{6cm}|}
 \hline
-Name & \textbf{Karting center} \\
+Name & \textbf{KartingCenter} \\
 \hline
 Synonym & Go-karting center \\
 \hline
@@ -3040,7 +3052,7 @@ Name: the name of the karting center\newline
 \textit{nEvents}: the number of events that had at least one race hosted by the karting center \newline
 \textit{avgReviewScore}: the average score of the reviews of the karting center \\
 \hline
-Components & None \\
+Components & KartingCenterReview \\
 \hline
 \end{tabular}
 \end{table}
@@ -3143,8 +3155,7 @@ Length: the length of the track \newline
 \textit{avgReviewScore}: the average score of the reviews of the track \\
 \hline
 Components & 
-Timetable: the timetable of the track \newline
-Leaderboard: a leaderboard of the track \\
+Timetable, Leaderboard, TrackReview \\
 \hline
 \end{tabular}
 \end{table}
@@ -3500,7 +3511,7 @@ Price: the price of the event \newline
 \textit{nReviews}: the number of written reviews about the event \newline
 \textit{avgReviewScore}: the average score of the reviews about the event \\
 \hline
-Components & None \\
+Components & EventReview \\
 \hline
 \end{tabular}
 \end{table}
@@ -4338,8 +4349,309 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \end{table}
 \end{frame}
 
+\subsection*{Site views}
 
+% \begin{frame}
+%     \frametitle{Site views}
+%     \begin{table}[ht]
+%         \centering
+%         \tiny
+%         \begin{tabular}{|m{2cm}|m{5cm}|m{2cm}|m{1cm}|}
+%         \hline
+%         \multicolumn{1}{|c|}{\textbf{Site View}} & \multicolumn{3}{c|}{\textbf{News Content Management}} \\ 
+%         \hline
+%         Description & \multicolumn{3}{m{8cm}|}{Includes the pages through which the Mar-Com Manager
+%          will access content management functions, for inserting or updating content about news categories and news items.} \\
+%         \hline
+%         User Groups & \multicolumn{3}{m{8cm}|}{Mar-Com Manager} \\
+%         \hline
+%         Use Cases & \multicolumn{3}{m{8cm}|}{“Login”, “Add a news category”, 
+%         “Edit a news category”, “Remove a news category”, “Add a news item”, “Edit a news item”, “Remove a news item”.} \\
+%         \hline
+%         \multicolumn{4}{|c|}{\textbf{Site View Map}} \\
+%         \hline
+%         \textbf{Area Name} & \textbf{Area Description} & \textbf{Objects} & \textbf{Priority} \\
+%         \hline
+%         News Content Management & In the default page, the user accesses the list
+%          of countries for which he is content manager and selects a country to administer. 
+%          In the News Category page, the user accesses the list of news categories for the selected country. 
+%          Here, the user can perform content management functions over news categories, according to 
+%          the use cases “Add a news category”, “Edit a news category”, “Remove a news category”. Otherwise, 
+%          he can select one category, and access the list of the available news items in the selected category. 
+%          In the News page, the user can perform content management functions over a selected news item according 
+%          to the use cases “Add a news item”, “Edit a news item”, “Remove a news item”. & NewsCategory NewsItem & High \\
+%         \hline
+%         \end{tabular}
+%     \end{table}
+% \end{frame}
+    
+\begin{frame}
+    \frametitle{Site views}
+    \begin{table}
+        \centering
+        \tiny
+        \setlength{\tabcolsep}{1pt}
+        \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
+        \hline
+        \multicolumn{1}{|c|}{\textbf{Site View}} & \multicolumn{3}{c|}{\textbf{Public view}} \\ 
+        \hline
+        Description & \multicolumn{3}{m{8cm}|}{Empty} \\
+        \hline
+        User Groups & \multicolumn{3}{m{8cm}|}{Visitor, Pilot, Clerk, Organizer, 
+        Karting center administrator, Information system administrator} \\
+        \hline
+        Use Cases & \multicolumn{3}{m{8cm}|}{Register, Login, Explore karting centers by city, 
+        Explore karting centers by number of races, Explore karting centers by number of pilots, 
+        Explore karting centers by number of events, Explore karting centers by average review score, 
+        View all karting centers hosting upcoming events, Read details on karting center, 
+        Read reviews on karting center, Explore tracks in a karting center, Explore events by karting center, 
+        Explore tracks by asphalt type, Explore tracks by difficulty, Explore tracks by length, 
+        Explore tracks by city, Explore tracks by number of races, Explore tracks by number of pilots, 
+        Explore tracks by number of events, Explore tracks by average review score, Read details on track, 
+        Read reviews on track, Explore events by track, Explore leaderboards, Explore races from track, 
+        Explore lap-times of a race, Explore pilots from track, Read details on pilot, Explore events from pilot, 
+        Explore races from pilot, Explore events by city, Explore events by average review score, 
+        Explore events by price, Explore events by category, Explore events by popularity, 
+        Explore upcoming events, Explore controversial events, Read details on event, 
+        Explore karting centers by event, Explore tracks by event, Explore pilots from event, 
+        Explore races from event, Read reviews on event.
+        } \\
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Site View Map}} \\
+        \hline
+        \textbf{Area Name} & \textbf{Area Description} & \textbf{Objects} & \textbf{Priority} \\
+        \hline
+        Home & Empty & UpcomingEvent, Track, KartingCenter & High \\
+        \hline
+        % continue
+        \end{tabular}
+    \end{table}
+\end{frame}
+\begin{frame}
+    \frametitle{Site views}
+    \begin{table}
+        \centering
+        \tiny
+        \setlength{\tabcolsep}{1pt}
+        \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
+        % continue
+        \hline
+        KartingCenter & Empty & KartingCenter, City, NPilotsRange, NRacesRange, NEventsRange, ReviewScoreRange & High \\
+        \hline
+        Tracks & Empty & Track, TrackAsphalt, TrackDifficulty, TrackLengthRange, City, NPilotsRange, NRacesRange, NEventsRange, ReviewScoreRange,
+        GoKartModel, PopularTrack & High \\
+        \hline
+        Event & Empty & Event, City, ReviewScoreRange, PriceRange, EventCategory, PopularEvent, ControversialEvent, 
+        UpcomingEvent & High \\
+        \hline
+        Race & Empty & Race & Medium \\
+        \hline
+        Pilot & Empty & Pilot & Medium \\
+        \hline
+        Laptime & Empty & LapTime & Low \\
+        \hline
+        Leaderboard & Empty & Leaderboard & Medium \\
+        \hline
+        Review & Empty & KartingCenterReview, TrackReview, EventReview & Medium \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
 
+\begin{frame}
+    \frametitle{Site views}
+    \begin{table}
+        \centering
+        \tiny
+        \setlength{\tabcolsep}{1pt}
+        \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
+        \hline
+        \multicolumn{1}{|c|}{\textbf{Site View}} & \multicolumn{3}{c|}{\textbf{Pilot}} \\
+        \hline
+        Description & \multicolumn{3}{m{8cm}|}{Empty} \\
+        \hline
+        User Groups & \multicolumn{3}{m{8cm}|}{Pilot} \\
+        \hline
+        Use Cases & \multicolumn{3}{m{8cm}|}{Logout,
+        Read my details, Explore not yet confirmed reservations, 
+        C.U.D. races and reservations, Explore confirmed reservations, 
+        Explore my past races, Read details on race, Create review of karting center, 
+        Create review of track, Explore upcoming events applied to but not confirmed yet, 
+        Explore upcoming events not applied to, Explore my past events, Apply to an event, 
+        Read details on event, Create review of event.} \\
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Site View Map}} \\
+        \hline
+        \textbf{Area Name} & \textbf{Area Description} & \textbf{Objects} & \textbf{Priority} \\
+        \hline
+        Home & Empty & Pilot, Race, Event & High \\
+        \hline
+        Reservations & Empty & Race, Reservation & High \\
+        \hline
+        Race & Empty & Race, LapTime, KartingCenter, KartingCenterReview, Track, TrackReview
+        (Pilot, Track, Timetable and KartingCenter when operating on Race) & High \\
+        \hline
+        Event & Empty & Event, EventReview, Application & High \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Site views}
+    \begin{table}
+        \centering
+        \tiny
+        \setlength{\tabcolsep}{1pt}
+        \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
+        \hline
+        \multicolumn{1}{|c|}{\textbf{Site View}} & \multicolumn{3}{c|}{\textbf{Organizer}} \\
+        \hline
+        Description & \multicolumn{3}{m{8cm}|}{Empty} \\
+        \hline
+        User Groups & \multicolumn{3}{m{8cm}|}{Organizer, Information system administrator} \\
+        \hline
+        Use Cases & \multicolumn{3}{m{8cm}|}{Logout, Explore my events, Read details on my event,
+        U.D. events, Create event, Explore not yet confirmed applications, Confirm application, 
+        Explore races of the event, Read details on race, U.D. race, Create race} \\
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Site View Map}} \\
+        \hline
+        \textbf{Area Name} & \textbf{Area Description} & \textbf{Objects} & \textbf{Priority} \\
+        \hline
+        Home & Empty & Event, Application & High \\
+        \hline
+        Event & Empty & Event, Application, Race (EventCategory and Organizer when operating on Event,
+        Pilot, Track, Timetable and KartingCenter when operating on Race)
+        & High \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Site views}
+    \begin{table}
+        \centering
+        \tiny
+        \setlength{\tabcolsep}{1pt}
+        \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
+        \hline
+        \multicolumn{1}{|c|}{\textbf{Site View}} & \multicolumn{3}{c|}{\textbf{Clerk}} \\
+        \hline
+        Description & \multicolumn{3}{m{8cm}|}{Empty} \\
+        \hline
+        User Groups & \multicolumn{3}{m{8cm}|}{Clerk, 
+        Information system administrator, Karting center administrator} \\
+        \hline
+        Use Cases & \multicolumn{3}{m{8cm}|}{Logout, Explore reservations, Confirm reservation,
+        Explore reviews on karting center, Read review on karting center, Delete review on karting center,
+        Explore reviews on track, Read review on track, Delete review on track, Explore reviews on event,
+        Read review on event, Delete review on event} \\
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Site View Map}} \\
+        \hline
+        \textbf{Area Name} & \textbf{Area Description} & \textbf{Objects} & \textbf{Priority} \\
+        \hline
+        Home & Empty & Clerk, KartingCenterReview, TrackReview, EventReview & High \\
+        \hline
+        Reservation & Empty & Track, Reservation (Timetable as the list of reservations) & High \\
+        \hline
+        Review & Empty & KartingCenterReview, TrackReview, EventReview, Pilot & High \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Site views}
+    \begin{table}
+        \centering
+        \tiny
+        \setlength{\tabcolsep}{1pt}
+        \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
+        \hline
+        \multicolumn{1}{|c|}{\textbf{Site View}} & \multicolumn{3}{c|}{\textbf{Karting center administrator}} \\
+        \hline
+        Description & \multicolumn{3}{m{8cm}|}{Empty} \\
+        \hline
+        User Groups & \multicolumn{3}{m{8cm}|}{Karting center administrator, Information system administrator} \\
+        \hline
+        Use Cases & \multicolumn{3}{m{8cm}|}{Logout, Explore my karting centers, 
+        Explore pilots by karting center, Explore pilots, Read details on pilot, U.D. pilot, 
+        Create pilot, Explore clerks by karting center, Explore clerks, Read details on clerk, 
+        U.D. clerk, Create clerk, Explore tracks (related to my karting centers), 
+        Explore tracks by karting center, Read details on track, U.D. track, 
+        Create track, Explore races (related to my karting centers), Read details on race, 
+        U.D. race, Create race, Explore go-karts dedicated to tracks of my karting centers, 
+        U.D. go-kart dedicated to track, Create go-kart} \\
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Site View Map}} \\
+        \hline
+        \textbf{Area Name} & \textbf{Area Description} & \textbf{Objects} & \textbf{Priority} \\
+        \hline
+        Home & Empty & KartingCenterAdministrator, KartingCenter, Pilot, Clerk, Track & High \\
+        \hline
+        KartingCenter & Empty & KartingCenter, City & High \\
+        \hline
+        Track & Empty & Track, (GoKartModel, TrackAsphalt and
+        Track when operating on Track) & High \\
+        \hline
+        Race & Empty & Race, Reservation (Timetable as the list of reservations, 
+        Pilot, Track and KartingCenter when operating on Race) & High \\
+        \hline
+        Pilot & Empty & Pilot & High \\
+        \hline
+        Clerk & Empty & Clerk (Karting center when operating on Clerk) & High \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Site views}
+    \begin{table}
+        \centering
+        \tiny
+        \setlength{\tabcolsep}{1pt}
+        \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
+        \hline
+        \multicolumn{1}{|c|}{\textbf{Site View}} & \multicolumn{3}{c|}{\textbf{Information system administrator}} \\
+        \hline
+        Description & \multicolumn{3}{m{8cm}|}{Empty} \\
+        \hline
+        User Groups & \multicolumn{3}{m{8cm}|}{Information system administrator} \\
+        \hline
+        Use Cases & \multicolumn{3}{m{8cm}|}{Logout, Explore karting center administrators, 
+        Read details on karting center administrator, U.D. karting center administrator, 
+        Create karting center administrator, Explore karting centers, 
+        Read details on karting center, U.D. karting center, Create karting center, 
+        Explore organizers, Read details on organizer, U.D. organizer, Create organizer, 
+        C.R.U.D. cities, C.R.U.D. go-kart models, C.R.U.D. track asphalt types, 
+        C.R.U.D. track difficulties, C.R.U.D. track length ranges, C.R.U.D. review score ranges, 
+        C.R.U.D. n. pilots ranges, C.R.U.D. n. races ranges, C.R.U.D. n. events ranges, 
+        C.R.U.D. price ranges, C.R.U.D. event categories } \\
+        \hline
+        \multicolumn{4}{|c|}{\textbf{Site View Map}} \\
+        \hline
+        \textbf{Area Name} & \textbf{Area Description} & \textbf{Objects} & \textbf{Priority} \\
+        \hline
+        Home & Empty & Admin & High \\
+        \hline
+        K.C.Administrator & Empty & KartingCenterAdministrator (KartingCenter when operating
+        on KartingCenterAdministrator) & High \\
+        \hline
+        KartingCenter & Empty & KartingCenter, (City and KartingCenterAdministrator when creating KartingCenter, KartingCenterReview 
+        deleted when deleting KartingCenter) & High \\
+        \hline
+        Organizer & Empty & Organizer & High \\
+        \hline
+        AuxiliaryEntity & Empty & City, GoKartModel, 
+        TrackAsphalt, TrackDifficulty, TrackLengthRange, ReviewScoreRange, NPilotsRange, NRacesRange, NEventsRange, PriceRange, EventCategory & Medium \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
 
 
 
