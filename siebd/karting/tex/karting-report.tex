@@ -51,6 +51,115 @@
 \end{figure}
 \end{frame}
 
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Group name & \textbf{User} \\
+        \hline
+        Description & Empty \\
+        \hline
+        Profile data & None \\
+        Supergroup & None \\
+        \hline
+        Subgroups & None \\
+        \hline
+        Use cases &
+        - Explore karting centers by city \newline
+        - Explore karting centers by number of races \newline
+        - Explore karting centers by number of pilots \newline
+        - Explore karting centers by number of events \newline
+        - Explore karting centers by average review score \newline
+        - View all karting centers hosting upcoming events \newline
+        - Read details on karting center \newline
+        - Read reviews on karting center \newline
+        - Explore tracks in a karting center \newline
+        - Explore events by karting center \newline
+        - Explore tracks by asphalt type \newline
+        - Explore tracks by difficulty \newline
+        - Explore tracks by length \newline
+        - Explore tracks by city \newline
+        - Explore tracks by number of races \newline
+        - Explore tracks by number of pilots \newline
+        - Explore tracks by number of events \newline
+        - Explore tracks by average review score \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+% continue table
+\begin{frame}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Use cases &
+        - Read details on track \newline
+        - Read reviews on track \newline
+        - Explore events by track \newline
+        - Explore leaderboards \newline
+        - Explore races from track \newline
+        - Explore lap-times of a race \newline
+        - Explore pilots from track \newline
+        - Read details on pilot \newline
+        - Explore events from pilot \newline
+        - Explore races from pilot \newline
+        - Explore events by city \newline
+        - Explore events by average review score \newline
+        - Explore events by price \newline
+        - Explore events by category \newline
+        - Explore events by popularity \newline
+        - Explore upcoming events \newline
+        - Explore controversial events \newline
+        - Read details on event \newline
+        - Explore karting centers by event \newline
+        - Explore tracks by event \newline
+        - Explore pilots from event \newline
+        - Explore races from event \newline
+        - Read reviews on event \\
+        \hline
+        Read & Karting center, Track (and Popular track) and implicitly Timetable, Race, Pilot, Event (and its subentities),
+        Review on karting center, Review on track, Review on event, Leaderboard, Lap-time, \newline
+        City, Go-kart model, Track asphalt type, Track length range, Review score range, N. pilots range,
+        N. races range, N. events range, Price range, Event category. \\
+        \hline
+        Write & None \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Group name & \textbf{Intranet} \\
+        \hline
+        Description & Empty \\
+        \hline
+        Profile data & None \\
+        Supergroup & User \\
+        \hline
+        Subgroups & Information System Administrator, Karting center administrator, Clerk \\
+        \hline
+        Use cases &
+        - Login/Logout \newline
+        - Read my details \\
+        \hline
+        Read & Everything the generic user can read\\
+        \hline
+        Write & None \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
 \begin{frame}
     \frametitle{Specification sheet}
     \begin{table}
@@ -82,6 +191,7 @@
         - C.R.U.D. cities \newline
         - C.R.U.D. go-kart models \newline
         - C.R.U.D. track asphalt types \newline
+        - C.R.U.D. track difficulies \newline
         - C.R.U.D. track length ranges \newline
         - C.R.U.D. review score ranges \newline
         - C.R.U.D. n. pilots ranges \newline
@@ -127,10 +237,12 @@
     Use cases & 
     - Explore my karting centers \newline
     - Explore pilots by karting center \newline
+    - Explore pilots \newline
     - Read details on pilot \newline
     - U.D. pilot \newline
     - Create pilot \newline
     - Explore clerks by karting center \newline
+    - Explore clerks \newline
     - Read details on clerk \newline
     - U.D. clerk \newline
     - Create clerk \newline
@@ -156,18 +268,195 @@
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
         \hline
-        Read & Clerks (related to my karting centers), go-karts (related to my karting centers), everything that every clerk of my karting centers can read,
+        Read & Clerks (related to my karting centers), go-karts (related to my karting centers), 
+        everything that every clerk of my karting centers can read,
         everything that the generic user can read. \\
         \hline
-        Write & Karting center (only mine, only to update, not to create nor delete), Clerk (only mine), Track (only mine), Race (only for my karting centers), Go-kart (only for my karting centers),
+        Write & Karting center (only mine, only to update, not to create nor delete), 
+        Clerk (only mine), Track (only mine), Race (only for my karting centers) and implicitly Reservation, 
+        Go-kart (only for my karting centers),
         everything that every clerk of my karting centers can write. \\
         \hline
         \end{tabular}
     \end{table}
 \end{frame}
 
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Group name & \textbf{Clerk} \\
+        \hline
+        Description & Empty \\
+        \hline
+        Profile data & Username, Password, Email, Name, Surname, Address \\
+        Supergroup & Intranet \\
+        \hline
+        Subgroups & None \\
+        \hline
+        Use cases &
+        - Explore reservations (related to my karting center) \newline
+        - Confirm reservation \newline
+        - Explore reviews on my karting center \newline
+        - Read review on my karting center \newline
+        - Delete review \newline
+        - Explore reviews on the tracks of my karting center \newline
+        - Read review on track \newline
+        - Delete review on track\newline
+        - Explore reviews on events (that involved my karting center) \newline
+        - Read review on event \newline
+        - Delete review on event\\
+        \hline
+        Read & Reservation (only for my karting centers), everything 
+        that the generic user can read. \\
+        \hline
+        Write & Review on Karting center (only mine, only deleting), Review on Track (only of mine karting center, only deleting), 
+        Review on Event (only involving my karting center, only deleting), Reservation (only for my karting centers, only to confirm). \newline
+        Indirectly: Karting center, Track, Event (when deleting a review, implicitly some of their 
+        attributes are alterated, e.g. \textit{avgReviewScore}, \textit{nReviews}). \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Group name & \textbf{Organizer} \\
+        \hline
+        Description & Empty \\
+        \hline
+        Profile data & Username, Password, Email, Name, Surname, Address \\
+        \hline
+        Supergroup & User \\
+        \hline
+        Subgroups & None \\
+        \hline
+        Use cases &
+        - Explore my events \newline
+        - Read details on my event \newline
+        - U.D. events \newline
+        - Create event \newline
+        - Explore not yet confirmed applications \newline
+        - Confirm application \newline
+        - Explore races of the event \newline
+        - Read details on race \newline
+        - U.D. race \newline
+        - Create race \\
+        \hline
+        Read & Application (only to my events), everything that the generic user can read. \\
+        \hline
+        Write & Event (C.R.U.D. only mine), Race (C.R.U.D. only for my events) and implicitly Reservation, Application (only to my events, only to confirm). \newline
+        Indirectly: Karting center, Track, Pilot (when organizing events, implicitly some of their 
+        attributes are alterated, e.g. \textit{nRaces}, \textit{nEvents}). \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Group name & \textbf{Internet} \\
+        \hline
+        Description & Empty \\
+        \hline
+        Profile data & None \\
+        Supergroup & User \\
+        \hline
+        Subgroups & Pilot, Visitor \\
+        \hline
+        Use cases & None \\
+        \hline
+        Read & Everything the generic user can read \\
+        \hline
+        Write & None \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
 
 
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Group name & \textbf{Pilot} \\
+        \hline
+        Description & Empty \\
+        \hline
+        Profile data & Username, Password, Email, Name, Surname, Address \\
+        Supergroup & Internet \\
+        \hline
+        Subgroups & None \\
+        \hline
+        Use cases &
+        - Login/Logout \newline
+        - Read my details \newline
+        - Explore not yet confirmed reservations \newline
+        - C.U.D. races and reservations
+        - Explore confirmed reservations \newline
+        - Explore my past races \newline
+        - Read details on race \newline
+        - Create review of karting center \newline
+        - Create review of track \newline
+        - Explore upcoming events applied to but not confirmed yet \newline
+        - Explore upcoming events not applied to \newline
+        - Explore my past events \newline
+        - Apply to an event \newline
+        - Read details on event \newline
+        - Create review of event \\
+        \hline
+        Read & Reservation (only mine), everything that the generic user can read,
+        Race (those that still have to take place, created by me) and implicitly Review,
+        Application (only mine). \\
+        Write & Race (only mine) and implicitly Reservation, Review on karting center, 
+        Review on track, Review on event, Application (only mine). \newline
+        Indirectly: Karting center, Track, Event (when participating to a race or writing a review, implicitly some of their 
+        attributes are alterated, e.g. \textit{nPilots}, \textit{nRaces}, \textit{avgReviewScore}). \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Group name & \textbf{Visitor} \\
+        \hline
+        Description & Empty \\
+        \hline
+        Profile data & None \\
+        Supergroup & Internet \\
+        \hline
+        Subgroups & None \\
+        \hline
+        Use cases &
+        - Register \\
+        \hline
+        Read & Everything the generic user can read \\
+        \hline
+        Write & None \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+
+% TODO ADD EXPLORE EVENT BY KARTING CENTER AND ADD EXPLORE EVENT BY TRACK
 
 
 \section*{Use cases}
@@ -190,7 +479,7 @@
     \hline
     Title & \textbf{Explore karting centers by city} \\
     \hline
-    Goal & The user seeks karting centers selecting one city at a time. \\
+    Goal & The user explores karting centers selecting one city at a time. \\
     \hline
     Precondition & The user is in the area (of the public view) dedicated to karting centers.\\
     \hline
@@ -212,7 +501,7 @@
         \hline
         Title & \textbf{Explore karting centers by number of races} \\
         \hline
-        Goal & The user seeks karting centers selecting one range of number of races (that
+        Goal & The user explores karting centers selecting one range of number of races (that
         were hosted on any of the tracks of the karting center) at a time. \\
         \hline
         Precondition & The user is in the area (of the public view) dedicated to karting centers.\\
@@ -236,7 +525,7 @@
         \hline
         Title & \textbf{Explore karting centers by number of pilots} \\
         \hline
-        Goal & The user seeks karting centers selecting one range of number of pilots (who had a race on 
+        Goal & The user explores karting centers selecting one range of number of pilots (who had a race on 
         any of the tracks of the karting center) at a time. \\
         \hline
         Precondition & The user is in the area (of the public view) dedicated to karting centers.\\
@@ -259,7 +548,7 @@
         \hline
         Title & \textbf{Explore karting centers by number of events} \\
         \hline
-        Goal & The user seeks karting centers selecting one range of number of events (that had
+        Goal & The user explores karting centers selecting one range of number of events (that had
         at least one race hosted on 
         any of the tracks of the karting center) at a time. \\
         \hline
@@ -283,7 +572,7 @@
         \hline
         Title & \textbf{Explore karting centers by average review score} \\
         \hline
-        Goal & The user seeks karting centers selecting one range of average review scores (given to the karting center by all the pilots
+        Goal & The user explores karting centers selecting one range of average review scores (given to the karting center by all the pilots
         that had at least one race on one of the tracks of the karting center) at a time. \\
         \hline
         Precondition & The user is in the area (of the public view) dedicated to karting centers.\\
@@ -391,9 +680,33 @@
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
         \hline
+        Title & \textbf{Explore events by karting center} \\
+        \hline
+        Goal & The user chooses one karting center to focus on and explores the events that had at least one 
+        of their races hosted by a track of the karting center. \\
+        \hline
+        Precondition & The user chose a karting center from a list of karting centers (obtained from any of the previous use cases).\\
+        \hline
+        Postcondition & The user obtains the events in the area dedicated to events. \\
+        \hline
+        Workflow &
+        - The user moves from the page dedicated to the details of the karting center to the
+        page dedicated to events through a click. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
         Title & \textbf{Explore tracks by asphalt type} \\
         \hline
-        Goal & The user seeks tracks selecting one asphalt type at a time. \\
+        Goal & The user explores tracks selecting one asphalt type at a time. \\
         \hline
         Precondition & The user is in the area (of the public view) dedicated to tracks.\\
         \hline
@@ -415,7 +728,7 @@
         \hline
         Title & \textbf{Explore tracks by difficulty} \\
         \hline
-        Goal & The user seeks tracks selecting one difficulty at a time. \\
+        Goal & The user explores tracks selecting one difficulty at a time. \\
         \hline
         Precondition & The user is in the area (of the public view) dedicated to tracks.\\
         \hline
@@ -437,7 +750,7 @@
         \hline
         Title & \textbf{Explore tracks by length} \\
         \hline
-        Goal & The user seeks tracks selecting one range of lengths at a time. \\
+        Goal & The user explores tracks selecting one range of lengths at a time. \\
         \hline
         Precondition & The user is in the area (of the public view) dedicated to tracks.\\
         \hline
@@ -459,7 +772,7 @@
         \hline
         Title & \textbf{Explore tracks by city} \\
         \hline
-        Goal & The user seeks tracks selecting one city at a time. \\
+        Goal & The user explores tracks selecting one city at a time. \\
         \hline
         Precondition & The user is in the area (of the public view) dedicated to tracks.\\
         \hline
@@ -481,7 +794,7 @@
         \hline
         Title & \textbf{Explore tracks by number of races} \\
         \hline
-        Goal & The user seeks tracks selecting one range of number of races
+        Goal & The user explores tracks selecting one range of number of races
         (that took place on the track) at a time. \\ 
         \hline
         Precondition & The user is in the area (of the public view) dedicated to tracks.\\
@@ -504,7 +817,7 @@
         \hline
         Title & \textbf{Explore tracks by number of pilots} \\
         \hline
-        Goal & The user seeks tracks selecting one range of number of pilots
+        Goal & The user explores tracks selecting one range of number of pilots
         (who had a race on the track) at a time. \\
         \hline
         Precondition & The user is in the area (of the public view) dedicated to tracks.\\
@@ -528,7 +841,7 @@
         \hline
         Title & \textbf{Explore tracks by number of events} \\
         \hline
-        Goal & The user seeks tracks selecting one range of number of events
+        Goal & The user explores tracks selecting one range of number of events
         (that had at least one race hosted on the track) at a time. \\
         \hline
         Precondition & The user is in the area (of the public view) dedicated to tracks.\\
@@ -551,7 +864,7 @@
         \hline
         Title & \textbf{Explore tracks by average review score} \\
         \hline
-        Goal & The user seeks tracks selecting one range of average review scores (given to the track by all the pilots
+        Goal & The user explores tracks selecting one range of average review scores (given to the track by all the pilots
         that had at least one race on the track) at a time. \\
         \hline
         Precondition & The user is in the area (of the public view) dedicated to tracks.\\
@@ -605,6 +918,29 @@
         Workflow &
         - The user moves from the area dedicated to the details of the track to the
         area dedicated to reviews through a click. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore events by track} \\
+        \hline
+        Goal & The user chooses one track to focus on and explores the events that had at least one
+        of their races hosted by the track. \\
+        \hline
+        Precondition & The user chose a track from a list of tracks (obtained from any of the previous use cases).\\
+        \hline
+        Postcondition & The user obtains the events in the area dedicated to events. \\
+        \hline
+        Workflow &
+        - The user moves from the area dedicated to the details of the track to the
+        area dedicated to events through a click. \\
         \hline
         \end{tabular}
 \end{table}
@@ -800,7 +1136,7 @@
         Title & \textbf{Explore events by average review score} \\
         \hline
         Goal & The user explores events selecting one range of average review scores (given to the event by all the pilots
-        that partecipated to it) at a time. \\
+        that partcipated to it) at a time. \\
         \hline
         Precondition & The user is in the area (of the public view) dedicated to events.\\
         \hline
@@ -867,7 +1203,7 @@
         Title & \textbf{Explore events by popularity} \\
         \hline
         Goal & The user explores only the events considered popular (those that have
-        at least $N$ partecipants and at least $M$ reviews) \\
+        at least $N$ participants and at least $M$ reviews) \\
         \hline
         Precondition & The user is in the area (of the public view) dedicated to events.\\
         \hline
@@ -958,10 +1294,56 @@
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore karting centers by event} \\
+        \hline
+        Goal & The user chooses one event to focus on and explores the karting centers that hosted at least
+        one race of the event. \\
+        \hline
+        Precondition & The user chose an event from a list of events (obtained from any of the previous use cases).\\
+        \hline
+        Postcondition & The user obtains the list of karting centers in the area dedicated to karting centers. \\
+        \hline
+        Workflow &
+        - The user moves from the area dedicated to the details of the event to the
+        area dedicated to karting centers through a click. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Title & \textbf{Explore tracks by event} \\
+        \hline
+        Goal & The user chooses one event to focus on and explores the tracks that hosted at least
+        one race of the event. \\
+        \hline
+        Precondition & The user chose an event from a list of events (obtained from any of the previous use cases).\\
+        \hline
+        Postcondition & The user obtains the list of tracks in the area dedicated to tracks. \\
+        \hline
+        Workflow &
+        - The user moves from the area dedicated to the details of the event to the
+        area dedicated to tracks through a click. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
         \hline  
         Title & \textbf{Explore pilots from event} \\
         \hline
-        Goal & The user chooses one event to focus on and explores the pilots that partecipated to the event. \\
+        Goal & The user chooses one event to focus on and explores the pilots that participated to the event. \\
         \hline
         Precondition & The user chose an event from a list of events (obtained from any of the previous use cases).\\
         \hline
@@ -974,6 +1356,31 @@
         \end{tabular}
 \end{table}
 \end{frame}
+
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline  
+        Title & \textbf{Explore races from event} \\
+        \hline
+        Goal & The user chooses one event to focus on and
+        explores the races that the event organized. \\
+        \hline
+        Precondition & The user chose an event from a list of events (obtained from any of the previous use cases).\\
+        \hline
+        Postcondition & The user obtains
+        a list of races in the area dedicated to races. \\
+        \hline
+        Workflow &
+        - The user moves from the area dedicated to the details of the event to the
+        area dedicated to races through a click. \\
+        \hline
+        \end{tabular}
+\end{table}
+\end{frame}
+
 
 \begin{frame}
     \frametitle{Specification sheet}
@@ -1059,7 +1466,7 @@
         \hline  
         Title & \textbf{Explore pilots by karting center} \\
         \hline
-        Goal & The user explores the pilots that partecipated in at
+        Goal & The user explores the pilots that participated in at
         least one race on a track of a karting center the user manages. \\
         \hline
         Precondition & The user logged in, manages at least one karting center and at least one pilot
@@ -1903,7 +2310,7 @@
 \end{frame}
 
 \begin{frame}
-    The karting center administrator is responsible for the management of 
+    The information system administrator is responsible for the management of 
     all those entities useful to the visitors to navigate the site.
     He has the possibility to create, update and delete the following entities:
     \begin{itemize}
@@ -2090,7 +2497,7 @@
         \hline
         Precondition & The user logged in, created at least one event and at least one pilot applied to it.\\
         \hline
-        Postcondition & The application is confirmed and the pilot is automatically inserted as a partecipant
+        Postcondition & The application is confirmed and the pilot is automatically inserted as a participant
         to all of the races of the event (this might change, e.g. in case the organizer decides to organize races 
         in a tournament fashion, but the application will not be affected). \\
         \hline
@@ -2159,7 +2566,7 @@
         \hline
         Precondition & The user logged in, created at least one event and the event has at least one race. \\
         \hline
-        Postcondition & The race gets updated or deleted, this affects the relations with the pilots (\textit{partecipation})
+        Postcondition & The race gets updated or deleted, this affects the relations with the pilots (\textit{participation})
         but not the application of the pilots to the event. \\
         \hline
         Workflow &
@@ -2666,7 +3073,7 @@ Subconcepts & None \\
 \end{frame}
 
 \begin{frame}
-\frametitle{City}
+\frametitle{Data dictionary}
 \begin{table}
 \tiny
 \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2700,7 +3107,7 @@ Subconcepts & None \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Track}
+\frametitle{Data dictionary}
 \begin{table}
 \tiny
 \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2776,7 +3183,7 @@ PopularTrack: a track that is recurrent in the list of favourite tracks of pilot
 \end{frame}
 
 \begin{frame}
-\frametitle{Go-kart}
+\frametitle{Data dictionary}
 \begin{table}
 \tiny
 \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2810,7 +3217,7 @@ Subconcepts & None \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Timetable}
+\frametitle{Data dictionary}
 \begin{table}
 \tiny
 \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2842,7 +3249,7 @@ Subconcepts & None \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Leaderboard}
+\frametitle{Data dictionary}
 \begin{table}
 \tiny
 \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2876,7 +3283,7 @@ Subconcepts & None \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Race}
+\frametitle{Data dictionary}
 \begin{table}
 \tiny
 \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2895,7 +3302,7 @@ End: 15:09 \newline
 ForEvent: false \newline
 \textit{GoKartingCenterName}: Mantova Karting Center \newline
 \textit{TrackName}: T1 \newline
-\textit{nPartecipants}: 8 \newline
+\textit{nParticipants}: 8 \newline
 \textit{fastestLapTime}: 00:00:48.595 \\
 \hline
 Properties &
@@ -2906,7 +3313,7 @@ End \newline
 ForEvent: whether the race was created by an organizer for an event or not \newline
 \textit{GoKartingCenterName} \newline
 \textit{TrackName}: the name of the track that hosts the race \newline
-\textit{nPartecipants} \newline
+\textit{nParticipants} \newline
 \textit{fastestLapTime} \\
 \hline
 Components & Reservation \\
@@ -2938,7 +3345,7 @@ Subconcepts & None \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Reservation}
+\frametitle{Data dictionary}
 \begin{table}
 \tiny
 \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2985,7 +3392,7 @@ Subconcepts & None \\
 \end{frame}
 
 \begin{frame}
-\frametitle{Lap-time}
+\frametitle{Data dictionary}
 \begin{table}
 \tiny
 \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -3077,7 +3484,7 @@ Price: 100 \newline
 \textit{FirstDate}: 2024-02-15 \newline
 \textit{OrganizerName}: WD40 \newline
 \textit{EventCategory}: Open \newline
-\textit{nPartecipants}: 64 \newline
+\textit{nParticipants}: 64 \newline
 \textit{nRaces}: 12 \newline
 \textit{nReviews}: 23 \newline
 \textit{avgReviewScore}: 4.5 \\
@@ -3088,7 +3495,7 @@ Price: the price of the event \newline
 \textit{FirstDate}: the date of the first race of the event \newline
 \textit{OrganizerName}: the username of the organizer who created the event \newline
 \textit{EventCategory}: the category of the event (\textit{open, intermediate, pro})\newline
-\textit{nPartecipants}: the number of pilots who applied for the event and whose application was confirmed\newline
+\textit{nParticipants}: the number of pilots who applied for the event and whose application was confirmed\newline
 \textit{nRaces}: the number of races of the event \newline
 \textit{nReviews}: the number of written reviews about the event \newline
 \textit{avgReviewScore}: the average score of the reviews about the event \\
@@ -3811,7 +4218,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     Synonym & None \\
     \hline
     Description & A popular event is an event that already took place, 
-    to which at least $N$ pilots partecipated 
+    to which at least $N$ pilots participated 
     and that received at least $N$ reviews. \newline
     This subclass of \textbf{Event} is to be considered as a \textbf{view} of the database. \\
     \hline
@@ -3921,7 +4328,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     Components & None \\
     \hline
     Relations &
-    EventCategory\_Event (1:N): the events with that category \\
+    EventCategory\_Event (1:N): the events from that category \\
     \hline
     Superconcepts & None \\
     \hline
