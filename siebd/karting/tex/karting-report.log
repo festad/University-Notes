@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.7.18)  2 FEB 2024 16:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.7.18)  3 FEB 2024 03:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -912,7 +912,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 \c@lstlisting=\count349
  (./karting-report.nav)
-<unibs-circ-logo.pdf, id=70, 118.79025pt x 119.7292pt>
+<unibs-circ-logo.pdf, id=74, 118.79025pt x 119.7292pt>
 File: unibs-circ-logo.pdf Graphic file (type pdf)
 <use unibs-circ-logo.pdf>
 Package pdftex.def Info: unibs-circ-logo.pdf  used on input line 40.
@@ -920,7 +920,7 @@ Package pdftex.def Info: unibs-circ-logo.pdf  used on input line 40.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./unibs-circ-logo.pdf>]
-<unibs_logo.pdf, id=109, 1505.625pt x 677.53125pt>
+<unibs_logo.pdf, id=113, 1505.625pt x 677.53125pt>
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
 Package pdftex.def Info: unibs_logo.pdf  used on input line 51.
@@ -928,7 +928,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 51.
  [2
 
  <./unibs_logo.pdf>]
-<drawio/users-uc.pdf, id=137, 579.12357pt x 435.54718pt>
+<drawio/users-uc.pdf, id=141, 579.12357pt x 435.54718pt>
 File: drawio/users-uc.pdf Graphic file (type pdf)
 <use drawio/users-uc.pdf>
 Package pdftex.def Info: drawio/users-uc.pdf  used on input line 64.
@@ -1040,7 +1040,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 468.
  [15
 
 ]
-<drawio/user.pdf, id=493, 975.645pt x 725.8317pt>
+<drawio/user.pdf, id=497, 975.645pt x 725.8317pt>
 File: drawio/user.pdf Graphic file (type pdf)
 <use drawio/user.pdf>
 Package pdftex.def Info: drawio/user.pdf  used on input line 482.
@@ -1342,7 +1342,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 1418.
  [57
 
 ]
-<drawio/intranet.pdf, id=1614, 290.0436pt x 218.7372pt>
+<drawio/intranet.pdf, id=1618, 290.0436pt x 218.7372pt>
 File: drawio/intranet.pdf Graphic file (type pdf)
 <use drawio/intranet.pdf>
 Package pdftex.def Info: drawio/intranet.pdf  used on input line 1441.
@@ -1354,7 +1354,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 1441.
  [58
 
  <./drawio/intranet.pdf>]
-<drawio/karting-center-admin.pdf, id=1653, 794.97pt x 653.56169pt>
+<drawio/karting-center-admin.pdf, id=1657, 794.97pt x 653.56169pt>
 File: drawio/karting-center-admin.pdf Graphic file (type pdf)
 <use drawio/karting-center-admin.pdf>
 Package pdftex.def Info: drawio/karting-center-admin.pdf  used on input line 14
@@ -1505,7 +1505,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 1909.
  [73
 
 ]
-<drawio/clerk.pdf, id=2060, 651.39355pt x 435.54718pt>
+<drawio/clerk.pdf, id=2064, 651.39355pt x 435.54718pt>
 File: drawio/clerk.pdf Graphic file (type pdf)
 <use drawio/clerk.pdf>
 Package pdftex.def Info: drawio/clerk.pdf  used on input line 1917.
@@ -1570,7 +1570,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 2122.
 [79
 
 ]
-<drawio/is-admin.pdf, id=2230, 867.24pt x 435.54718pt>
+<drawio/is-admin.pdf, id=2234, 867.24pt x 435.54718pt>
 File: drawio/is-admin.pdf Graphic file (type pdf)
 <use drawio/is-admin.pdf>
 Package pdftex.def Info: drawio/is-admin.pdf  used on input line 2130.
@@ -1653,7 +1653,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 2341.
  [85
 
 ]
-<drawio/organizer.pdf, id=2400, 794.97pt x 435.54718pt>
+<drawio/organizer.pdf, id=2404, 794.97pt x 435.54718pt>
 File: drawio/organizer.pdf Graphic file (type pdf)
 <use drawio/organizer.pdf>
 Package pdftex.def Info: drawio/organizer.pdf  used on input line 2351.
@@ -1736,7 +1736,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 2613.
  [96
 
 ]
-<drawio/pilot.pdf, id=2700, 722.7pt x 507.81718pt>
+<drawio/pilot.pdf, id=2704, 722.7pt x 507.81718pt>
 File: drawio/pilot.pdf Graphic file (type pdf)
 <use drawio/pilot.pdf>
 Package pdftex.def Info: drawio/pilot.pdf  used on input line 2624.
@@ -1843,7 +1843,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 2944.
  [110
 
 ]
-<drawio/visitor.pdf, id=3081, 145.50359pt x 182.6022pt>
+<drawio/visitor.pdf, id=3085, 145.50359pt x 182.6022pt>
 File: drawio/visitor.pdf Graphic file (type pdf)
 <use drawio/visitor.pdf>
 Package pdftex.def Info: drawio/visitor.pdf  used on input line 2952.
@@ -2303,6 +2303,30 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 4654.
 [157
 
 ]
+<drawio/public-view.pdf, id=4337, 1084.05pt x 796.89719pt>
+File: drawio/public-view.pdf Graphic file (type pdf)
+<use drawio/public-view.pdf>
+Package pdftex.def Info: drawio/public-view.pdf  used on input line 4664.
+(pdftex.def)             Requested size: 273.83728pt x 201.3031pt.
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 4664.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [158
+
+ <./drawio/public-view.pdf>]
+<drawio/pilot-view.pdf, id=4376, 1084.05pt x 725.8317pt>
+File: drawio/pilot-view.pdf Graphic file (type pdf)
+<use drawio/pilot-view.pdf>
+Package pdftex.def Info: drawio/pilot-view.pdf  used on input line 4672.
+(pdftex.def)             Requested size: 273.83728pt x 183.35135pt.
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 4672.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [159
+
+ <./drawio/pilot-view.pdf>]
 \tf@nav=\write6
 \openout6 = `karting-report.nav'.
 
@@ -2312,15 +2336,16 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 4654.
 \tf@snm=\write8
 \openout8 = `karting-report.snm'.
 
- (./karting-report.aux)
+
+(./karting-report.aux)
 Package rerunfilecheck Info: File `karting-report.out' has not changed.
-(rerunfilecheck)             Checksum: B585C14F79B69871734B766D145F4217;1230.
+(rerunfilecheck)             Checksum: E2F05BB6F2E773C79E08B3544076FE86;1406.
  ) 
 Here is how much of TeX's memory you used:
- 24699 strings out of 480247
- 467108 string characters out of 5896151
- 742768 words of memory out of 5000000
- 41837 multiletter control sequences out of 15000+600000
+ 24725 strings out of 480247
+ 467635 string characters out of 5896151
+ 742943 words of memory out of 5000000
+ 41856 multiletter control sequences out of 15000+600000
  474268 words of font info for 46 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,15n,104p,421b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2329,10 +2354,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb>
-Output written on karting-report.pdf (157 pages, 1003061 bytes).
+Output written on karting-report.pdf (159 pages, 1095095 bytes).
 PDF statistics:
- 4431 PDF objects out of 5155 (max. 8388607)
- 4176 compressed objects within 42 object streams
- 332 named destinations out of 1000 (max. 500000)
- 228 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4517 PDF objects out of 5155 (max. 8388607)
+ 4249 compressed objects within 43 object streams
+ 337 named destinations out of 1000 (max. 500000)
+ 246 words of extra memory for PDF output out of 10000 (max. 10000000)
 
