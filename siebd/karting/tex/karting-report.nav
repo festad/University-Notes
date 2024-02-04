@@ -344,13 +344,33 @@
 \headcommand {\slideentry {3}{4}{7}{157/157}{Site views}{0}}
 \headcommand {\beamer@framepages {157}{157}}
 \headcommand {\beamer@subsectionpages {151}{157}}
-\headcommand {\beamer@subsectionentry {0}{3}{5}{158}{Coarse hypertext model}}
-\headcommand {\slideentry {3}{5}{1}{158/158}{Coarse hypertext model}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{5}{158}{Subschemes}}
+\headcommand {\slideentry {3}{5}{1}{158/158}{Subschemes}{0}}
 \headcommand {\beamer@framepages {158}{158}}
-\headcommand {\slideentry {3}{5}{2}{159/159}{Coarse hypertext model}{0}}
+\headcommand {\slideentry {3}{5}{2}{159/159}{Subschemes}{0}}
 \headcommand {\beamer@framepages {159}{159}}
-\headcommand {\beamer@partpages {1}{159}}
-\headcommand {\beamer@subsectionpages {158}{159}}
-\headcommand {\beamer@sectionpages {112}{159}}
-\headcommand {\beamer@documentpages {159}}
-\headcommand {\gdef \inserttotalframenumber {159}}
+\headcommand {\slideentry {3}{5}{3}{160/160}{Subschemes}{0}}
+\headcommand {\beamer@framepages {160}{160}}
+\headcommand {\slideentry {3}{5}{4}{161/161}{Subschemes}{0}}
+\headcommand {\beamer@framepages {161}{161}}
+\headcommand {\slideentry {3}{5}{5}{162/162}{Subschemes}{0}}
+\headcommand {\beamer@framepages {162}{162}}
+\headcommand {\beamer@subsectionpages {158}{162}}
+\headcommand {\beamer@subsectionentry {0}{3}{6}{163}{Coarse hypertext model}}
+\headcommand {\slideentry {3}{6}{1}{163/163}{Coarse hypertext model}{0}}
+\headcommand {\beamer@framepages {163}{163}}
+\headcommand {\slideentry {3}{6}{2}{164/164}{Coarse hypertext model}{0}}
+\headcommand {\beamer@framepages {164}{164}}
+\headcommand {\slideentry {3}{6}{3}{165/165}{Coarse hypertext model}{0}}
+\headcommand {\beamer@framepages {165}{165}}
+\headcommand {\slideentry {3}{6}{4}{166/166}{Coarse hypertext model}{0}}
+\headcommand {\beamer@framepages {166}{166}}
+\headcommand {\slideentry {3}{6}{5}{167/167}{Coarse hypertext model}{0}}
+\headcommand {\beamer@framepages {167}{167}}
+\headcommand {\slideentry {3}{6}{6}{168/168}{Coarse hypertext model}{0}}
+\headcommand {\beamer@framepages {168}{168}}
+\headcommand {\beamer@partpages {1}{168}}
+\headcommand {\beamer@subsectionpages {163}{168}}
+\headcommand {\beamer@sectionpages {112}{168}}
+\headcommand {\beamer@documentpages {168}}
+\headcommand {\gdef \inserttotalframenumber {168}}
