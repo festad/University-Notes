@@ -4114,7 +4114,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     Synonym & None \\
     \hline
     Description & A filtering of the karting centers and tracks based on the number of 
-    pilots who participated to at least one race on the track of the karting center. \\
+    pilots who participated to at least one race on the track of the karting center. 
     who participated in at least one race on the track of the karting center. \\
     \hline
     Example of instance &
@@ -5193,6 +5193,68 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \centering
         \includegraphics[width=1\textwidth]{drawio/is-admin-view.pdf}
     \end{figure}
+\end{frame}
+
+\section{Future work}
+\begin{frame}{Future work}
+Explaining the possible improvements to the current work
+would take at least as many slides as the ones presented so far,
+so here it is mentioned what I consider be one of the most difficult choices 
+to make...
+\end{frame}
+
+\begin{frame}{Which are the real weak entities}
+    \scriptsize
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\textwidth]{drawio/del-race.png}
+        \label{fig:delete-race}
+    \end{figure} 
+    The deletion of an entity implies the deletion of its weak entities, 
+    e.g. the deletion of a karting center implies the deletion of its reviews.
+    In many cases there is no need to overthink about what should be deleted together 
+    with an entity, e.g. in figure \ref{fig:delete-race} is shown the deletion 
+    of a race: its weak entities lap-time and reservation are deleted together with it.
+\end{frame}
+
+\begin{frame}{Which are the real weak entities}
+    \scriptsize
+    % picture called delete-karting-center.png
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\textwidth]{drawio/del-karting-center.png}
+        \label{fig:delete-karting-center}
+    \end{figure}
+    Sometimes it is not trivial to choose whether an entity should be the weak
+    entity of another one or not, e.g. the deletion of a karting center should or 
+    should not imply the deletion of its tracks?    
+    The choice made in \kc{} is that the deletion of a karting center does 
+    not imply the deletion of its tracks (as shown in figure \ref{fig:delete-karting-center}),
+    in fact, another karting center could buy the tracks of the karting center being deleted.
+\end{frame}
+
+\begin{frame}{Which are the real weak entities}
+    \scriptsize
+    % picture called delete-karting-center.png
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\textwidth]{drawio/del-track.png}
+        \label{fig:delete-track}
+    \end{figure}
+    The deletion of a track is another example where the choice of what to delete is not obvious:
+    a race can happen only if hosted by a track, this leads to the conclusion that the race is a weak entity 
+    of the track, but does the deletion of a track really imply the deletion of all the informations on the races 
+    that happened on it? Although as of now the race is a weak entity of the track, in \kc{} (as shown
+    in figure \ref{fig:delete-track}) the deletion of a track does 
+    not imply the deletion of all the races that happened on it, in fact, 
+    keeping the information on how many races happened 
+    in the karting center or how the pilots performed compared to each other
+    might still be relevant independently of the existence of the track.
+    Notice that the deletion of a track still implies the deletion of the other two weak entities, timetable and leaderboard.
+    Another specific choice made in \kc{} is that the reservation, a weak entity of the race but not of the track, is deleted together 
+    with the track because, differently from the race, does not carry relevant information in addition to the race that is kept.
+    
+    In a future work, it is worth to reconsider the policies on what to delete \textit{in cascade} with the deletion of an entity.
 \end{frame}
 
 \end{document}

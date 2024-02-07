@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.7.18)  7 FEB 2024 16:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.7.18)  7 FEB 2024 23:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -912,7 +912,7 @@ Dictionary: translator-theorem-dictionary, Language: English
 )
 \c@lstlisting=\count349
  (./karting-report.nav)
-<unibs-circ-logo.pdf, id=66, 118.79025pt x 119.7292pt>
+<unibs-circ-logo.pdf, id=70, 118.79025pt x 119.7292pt>
 File: unibs-circ-logo.pdf Graphic file (type pdf)
 <use unibs-circ-logo.pdf>
 Package pdftex.def Info: unibs-circ-logo.pdf  used on input line 52.
@@ -921,7 +921,7 @@ Package pdftex.def Info: unibs-circ-logo.pdf  used on input line 52.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./unibs-circ-logo.pdf>] (.
 /karting-report.toc)
-<unibs_logo.pdf, id=126, 1505.625pt x 677.53125pt>
+<unibs_logo.pdf, id=131, 1505.625pt x 677.53125pt>
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
 Package pdftex.def Info: unibs_logo.pdf  used on input line 59.
@@ -936,7 +936,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 86.
  [3
 
 ]
-<drawio/users-uc.pdf, id=192, 579.12357pt x 435.54718pt>
+<drawio/users-uc.pdf, id=198, 579.12357pt x 435.54718pt>
 File: drawio/users-uc.pdf Graphic file (type pdf)
 <use drawio/users-uc.pdf>
 Package pdftex.def Info: drawio/users-uc.pdf  used on input line 101.
@@ -1056,7 +1056,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 549.
  [17
 
 ]
-<drawio/user.pdf, id=573, 975.645pt x 725.8317pt>
+<drawio/user.pdf, id=579, 975.645pt x 725.8317pt>
 File: drawio/user.pdf Graphic file (type pdf)
 <use drawio/user.pdf>
 Package pdftex.def Info: drawio/user.pdf  used on input line 563.
@@ -1216,7 +1216,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 1539.
  [39
 
 ]
-<drawio/intranet.pdf, id=1166, 290.0436pt x 218.7372pt>
+<drawio/intranet.pdf, id=1172, 290.0436pt x 218.7372pt>
 File: drawio/intranet.pdf Graphic file (type pdf)
 <use drawio/intranet.pdf>
 Package pdftex.def Info: drawio/intranet.pdf  used on input line 1562.
@@ -1228,7 +1228,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 1562.
  [40
 
  <./drawio/intranet.pdf>]
-<drawio/karting-center-admin.pdf, id=1203, 794.97pt x 653.56169pt>
+<drawio/karting-center-admin.pdf, id=1209, 794.97pt x 653.56169pt>
 File: drawio/karting-center-admin.pdf Graphic file (type pdf)
 <use drawio/karting-center-admin.pdf>
 Package pdftex.def Info: drawio/karting-center-admin.pdf  used on input line 15
@@ -1344,7 +1344,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 2015.
  [50
 
 ]
-<drawio/clerk.pdf, id=1478, 651.39355pt x 435.54718pt>
+<drawio/clerk.pdf, id=1484, 651.39355pt x 435.54718pt>
 File: drawio/clerk.pdf Graphic file (type pdf)
 <use drawio/clerk.pdf>
 Package pdftex.def Info: drawio/clerk.pdf  used on input line 2023.
@@ -1402,7 +1402,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 2225.
 [55
 
 ]
-<drawio/is-admin.pdf, id=1620, 867.24pt x 435.54718pt>
+<drawio/is-admin.pdf, id=1626, 867.24pt x 435.54718pt>
 File: drawio/is-admin.pdf Graphic file (type pdf)
 <use drawio/is-admin.pdf>
 Package pdftex.def Info: drawio/is-admin.pdf  used on input line 2233.
@@ -1485,7 +1485,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 2445.
  [61
 
 ]
-<drawio/organizer.pdf, id=1788, 794.97pt x 435.54718pt>
+<drawio/organizer.pdf, id=1794, 794.97pt x 435.54718pt>
 File: drawio/organizer.pdf Graphic file (type pdf)
 <use drawio/organizer.pdf>
 Package pdftex.def Info: drawio/organizer.pdf  used on input line 2453.
@@ -1532,7 +1532,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 2703.
  [67
 
 ]
-<drawio/pilot.pdf, id=1956, 722.7pt x 507.81718pt>
+<drawio/pilot.pdf, id=1962, 722.7pt x 507.81718pt>
 File: drawio/pilot.pdf Graphic file (type pdf)
 <use drawio/pilot.pdf>
 Package pdftex.def Info: drawio/pilot.pdf  used on input line 2714.
@@ -1590,7 +1590,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 3013.
  [74
 
 ]
-<drawio/visitor.pdf, id=2151, 145.50359pt x 182.6022pt>
+<drawio/visitor.pdf, id=2157, 145.50359pt x 182.6022pt>
 File: drawio/visitor.pdf Graphic file (type pdf)
 <use drawio/visitor.pdf>
 Package pdftex.def Info: drawio/visitor.pdf  used on input line 3021.
@@ -2098,7 +2098,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 4990.
  [128
 
 ]
-<drawio/core-subschemes.pdf, id=3586, 1084.05pt x 869.16718pt>
+<drawio/core-subschemes.pdf, id=3592, 1084.05pt x 869.16718pt>
 File: drawio/core-subschemes.pdf Graphic file (type pdf)
 <use drawio/core-subschemes.pdf>
 Package pdftex.def Info: drawio/core-subschemes.pdf  used on input line 4999.
@@ -2110,7 +2110,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 4999.
  [129
 
  <./drawio/core-subschemes.pdf>]
-<drawio/personalization-subschemes.pdf, id=3621, 1084.05pt x 869.16718pt>
+<drawio/personalization-subschemes.pdf, id=3627, 1084.05pt x 869.16718pt>
 File: drawio/personalization-subschemes.pdf Graphic file (type pdf)
 <use drawio/personalization-subschemes.pdf>
 Package pdftex.def Info: drawio/personalization-subschemes.pdf  used on input l
@@ -2123,7 +2123,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 5007.
  [130
 
  <./drawio/personalization-subschemes.pdf>]
-<drawio/interconnection-subschemes.pdf, id=3657, 1084.05pt x 869.16718pt>
+<drawio/interconnection-subschemes.pdf, id=3663, 1084.05pt x 869.16718pt>
 File: drawio/interconnection-subschemes.pdf Graphic file (type pdf)
 <use drawio/interconnection-subschemes.pdf>
 Package pdftex.def Info: drawio/interconnection-subschemes.pdf  used on input l
@@ -2136,12 +2136,12 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 5015.
  [131
 
  <./drawio/interconnection-subschemes.pdf>]
-<drawio/access-subschemes.pdf, id=3693, 1219.6767pt x 977.57219pt>
+<drawio/access-subschemes.pdf, id=3699, 1084.05pt x 869.16718pt>
 File: drawio/access-subschemes.pdf Graphic file (type pdf)
 <use drawio/access-subschemes.pdf>
 Package pdftex.def Info: drawio/access-subschemes.pdf  used on input line 5023.
 
-(pdftex.def)             Requested size: 239.60567pt x 192.03542pt.
+(pdftex.def)             Requested size: 239.60567pt x 192.10594pt.
 File: unibs_logo.pdf Graphic file (type pdf)
 <use unibs_logo.pdf>
 Package pdftex.def Info: unibs_logo.pdf  used on input line 5023.
@@ -2149,7 +2149,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 5023.
  [132
 
  <./drawio/access-subschemes.pdf>]
-<drawio/core-subschemes-cropped.pdf, id=3748, 826.04607pt x 398.4486pt>
+<drawio/core-subschemes-cropped.pdf, id=3734, 826.04607pt x 398.4486pt>
 File: drawio/core-subschemes-cropped.pdf Graphic file (type pdf)
 <use drawio/core-subschemes-cropped.pdf>
 Package pdftex.def Info: drawio/core-subschemes-cropped.pdf  used on input line
@@ -2162,7 +2162,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 5033.
  [133
 
  <./drawio/core-subschemes-cropped.pdf>]
-<drawio/personalization-subschemes-cropped.pdf, id=3785, 986.72638pt x 604.1771
+<drawio/personalization-subschemes-cropped.pdf, id=3770, 986.72638pt x 604.1771
 9pt>
 File: drawio/personalization-subschemes-cropped.pdf Graphic file (type pdf)
 <use drawio/personalization-subschemes-cropped.pdf>
@@ -2190,7 +2190,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 5074.
  [136
 
 ]
-<drawio/interconnection-subschemes-cropped.pdf, id=3873, 668.4975pt x 427.5975p
+<drawio/interconnection-subschemes-cropped.pdf, id=3859, 668.4975pt x 427.5975p
 t>
 File: drawio/interconnection-subschemes-cropped.pdf Graphic file (type pdf)
 <use drawio/interconnection-subschemes-cropped.pdf>
@@ -2211,7 +2211,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 5104.
  [138
 
 ]
-<drawio/access-subschemes-cropped.pdf, id=3936, 934.45107pt x 554.07pt>
+<drawio/access-subschemes-cropped.pdf, id=3922, 934.45107pt x 554.07pt>
 File: drawio/access-subschemes-cropped.pdf Graphic file (type pdf)
 <use drawio/access-subschemes-cropped.pdf>
 Package pdftex.def Info: drawio/access-subschemes-cropped.pdf  used on input li
@@ -2245,7 +2245,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 5148.
  [142
 
 ]
-<drawio/public-view.pdf, id=4050, 1084.05pt x 796.89719pt>
+<drawio/public-view.pdf, id=4037, 1084.05pt x 796.89719pt>
 File: drawio/public-view.pdf Graphic file (type pdf)
 <use drawio/public-view.pdf>
 Package pdftex.def Info: drawio/public-view.pdf  used on input line 5156.
@@ -2261,7 +2261,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 5156.
 [143
 
  <./drawio/public-view.pdf>]
-<drawio/pilot-view.pdf, id=4090, 1047.915pt x 725.8317pt>
+<drawio/pilot-view.pdf, id=4077, 1047.915pt x 725.8317pt>
 File: drawio/pilot-view.pdf Graphic file (type pdf)
 <use drawio/pilot-view.pdf>
 Package pdftex.def Info: drawio/pilot-view.pdf  used on input line 5164.
@@ -2273,7 +2273,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 5164.
  [144
 
  <./drawio/pilot-view.pdf>]
-<drawio/organizer-view.pdf, id=4131, 939.51pt x 545.1567pt>
+<drawio/organizer-view.pdf, id=4118, 939.51pt x 545.1567pt>
 File: drawio/organizer-view.pdf Graphic file (type pdf)
 <use drawio/organizer-view.pdf>
 Package pdftex.def Info: drawio/organizer-view.pdf  used on input line 5172.
@@ -2285,7 +2285,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 5172.
  [145
 
  <./drawio/organizer-view.pdf>]
-<drawio/clerk-view.pdf, id=4172, 831.105pt x 617.4267pt>
+<drawio/clerk-view.pdf, id=4159, 831.105pt x 617.4267pt>
 File: drawio/clerk-view.pdf Graphic file (type pdf)
 <use drawio/clerk-view.pdf>
 Package pdftex.def Info: drawio/clerk-view.pdf  used on input line 5180.
@@ -2297,7 +2297,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 5180.
  [146
 
  <./drawio/clerk-view.pdf>]
-<drawio/karting-center-admin-view.pdf, id=4212, 975.645pt x 977.57219pt>
+<drawio/karting-center-admin-view.pdf, id=4199, 975.645pt x 977.57219pt>
 File: drawio/karting-center-admin-view.pdf Graphic file (type pdf)
 <use drawio/karting-center-admin-view.pdf>
 Package pdftex.def Info: drawio/karting-center-admin-view.pdf  used on input li
@@ -2310,7 +2310,7 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 5188.
  [147
 
  <./drawio/karting-center-admin-view.pdf>]
-<drawio/is-admin-view.pdf, id=4252, 975.645pt x 617.4267pt>
+<drawio/is-admin-view.pdf, id=4239, 975.645pt x 617.4267pt>
 File: drawio/is-admin-view.pdf Graphic file (type pdf)
 <use drawio/is-admin-view.pdf>
 Package pdftex.def Info: drawio/is-admin-view.pdf  used on input line 5196.
@@ -2322,6 +2322,50 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 5196.
  [148
 
  <./drawio/is-admin-view.pdf>]
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 5204.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [149
+
+]
+<drawio/del-race.png, id=4304, 832.10875pt x 528.97626pt>
+File: drawio/del-race.png Graphic file (type png)
+<use drawio/del-race.png>
+Package pdftex.def Info: drawio/del-race.png  used on input line 5218.
+(pdftex.def)             Requested size: 171.14764pt x 108.79597pt.
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 5218.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [150
+
+ <./drawio/del-race.png>]
+<drawio/del-karting-center.png, id=4335, 660.4675pt x 478.78876pt>
+File: drawio/del-karting-center.png Graphic file (type png)
+<use drawio/del-karting-center.png>
+Package pdftex.def Info: drawio/del-karting-center.png  used on input line 5234
+.
+(pdftex.def)             Requested size: 171.14764pt x 124.0657pt.
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 5234.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [151
+
+ <./drawio/del-karting-center.png>]
+<drawio/del-track.png, id=4366, 1587.9325pt x 639.38875pt>
+File: drawio/del-track.png Graphic file (type png)
+<use drawio/del-track.png>
+Package pdftex.def Info: drawio/del-track.png  used on input line 5258.
+(pdftex.def)             Requested size: 171.14764pt x 68.90855pt.
+File: unibs_logo.pdf Graphic file (type pdf)
+<use unibs_logo.pdf>
+Package pdftex.def Info: unibs_logo.pdf  used on input line 5258.
+(pdftex.def)             Requested size: 34.23161pt x 15.40404pt.
+ [152
+
+ <./drawio/del-track.png>]
 \tf@nav=\write6
 \openout6 = `karting-report.nav'.
 
@@ -2333,13 +2377,13 @@ Package pdftex.def Info: unibs_logo.pdf  used on input line 5196.
 
  (./karting-report.aux)
 Package rerunfilecheck Info: File `karting-report.out' has not changed.
-(rerunfilecheck)             Checksum: A5E06D81777B82B4C36B8E80197E4DAE;1293.
+(rerunfilecheck)             Checksum: 79C0DECCDC029BC574030F0A5AEC3A46;1395.
  ) 
 Here is how much of TeX's memory you used:
- 24897 strings out of 480247
- 474025 string characters out of 5896151
- 741995 words of memory out of 5000000
- 42026 multiletter control sequences out of 15000+600000
+ 24946 strings out of 480247
+ 474900 string characters out of 5896151
+ 742572 words of memory out of 5000000
+ 42059 multiletter control sequences out of 15000+600000
  479964 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  99i,15n,104p,421b,676s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2352,10 +2396,10 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/share/texlive/texmf-dist
 ts/type1/public/amsfonts/cm/cmssi10.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmssi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmsy8.pfb>
-Output written on karting-report.pdf (148 pages, 1467921 bytes).
+Output written on karting-report.pdf (152 pages, 1589630 bytes).
 PDF statistics:
- 4403 PDF objects out of 5155 (max. 8388607)
- 4095 compressed objects within 41 object streams
- 314 named destinations out of 1000 (max. 500000)
- 296 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 4510 PDF objects out of 5155 (max. 8388607)
+ 4191 compressed objects within 42 object streams
+ 326 named destinations out of 1000 (max. 500000)
+ 319 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -15,3 +15,4 @@
 \beamer@subsectionintoc {3}{1}{Objects' classification}{128}{0}{2}
 \beamer@sectionintoc {4}{Hypertext model}{141}{0}{3}
 \beamer@subsectionintoc {4}{1}{Coarse hypertext model}{142}{0}{3}
+\beamer@sectionintoc {5}{Future work}{149}{0}{4}
