@@ -13,6 +13,10 @@
 \usepackage{color}
 \usepackage{array}
 \usepackage{multirow}
+% math
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
 
 \usetheme{Madrid}
 
@@ -30,8 +34,16 @@
 \author{Denis Festa}
 \date{\today}
 
+\newcommand{\kc}{WeRace}
+
+% \begin{frame}
+%     \frametitle{Index}
+%     \tableofcontents
+% \end{frame}
+
 \begin{document}
 
+\section*{Introduction}
 
 \begin{frame}
     \titlepage
@@ -42,17 +54,42 @@
 \logo{\includegraphics[width=0.1\linewidth]{unibs_logo.pdf}}
 
 \begin{frame}
-This web information systems allows different actors to cooperate
-to give a wonderful experience to all go-karting lovers.
-The visitor will be able to explore our different tracks: longer and shorter,
-indoor and outdoor, asphalt and resin... which will be your favourite? Come to visit our 
-go-karting centers to find out.
-You will need to register before his first race, then 
+    \frametitle{Index}
+    \tableofcontents
+\end{frame}
+
+
+\begin{frame}
+\footnotesize
+\kc{} is a web information system that allows different actors to cooperate
+to give the best experience possible to the karting community.
+Visitors can explore our website, discover tracks and karting centers 
+near to where they live and also events that, like a tour, take place 
+in different tracks and karting centers. When visitors feel ready
+to have they first race, they can register as pilots from home or 
+at the closest karting center. \kc{} allows pilots to organize
+their own races by choosing a track of a karting center, picking a date 
+and a time and inserting the names of the pilots that will participate,
+then the system will create a reservation that the clerk of the target karting center
+will confirm. Organizers can create events, that is, a sequence of races that can take
+place on different tracks, they can insert pilots of their choice and they can accept
+applications from pilots that want to participate. Similarly to before, the system 
+will create reservations that the clerks of the karting centers will confirm.
+Karting center administrators can manage their karting centers by adding new
+tracks and go-karts or registering new pilots and clerks.
+Clerks can confirm reservations from pilots and organizers and moderate reviews
+that pilots write about karting centers, tracks and events.
+The information system administrator can manage the system by creating new karting centers,
+karting center administrators and organizers, they can also take care of all the
+entities that help the visitors to navigate the website, such as cities, all the different 
+categories or ranges useful to filter the karting centers, tracks and events.
 \end{frame}
 
 
 
-\section*{User groups}
+\section{Requirements analysis}
+
+\subsection{User groups}
 
 \begin{frame}
 \frametitle{User groups}
@@ -72,12 +109,15 @@ You will need to register before his first race, then
         \hline
         Group name & \textbf{User} \\
         \hline
-        Description & Empty \\
+        Description & The generic user can explore karting centers, tracks, events, the races that
+        took place on tracks, the races an event organized and the races a particular pilot had.
+        Different filtering mechanisms are made available to the user to help him in his search. \\
         \hline
         Profile data & None \\
+        \hline
         Supergroup & None \\
         \hline
-        Subgroups & None \\
+        Subgroups & Intranet, Organizer, Internet\\
         \hline
         Use cases &
         - Explore karting centers by city \newline
@@ -104,6 +144,7 @@ You will need to register before his first race, then
 \end{frame}
 % continue table
 \begin{frame}
+    \frametitle{Specification sheet}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -153,20 +194,22 @@ You will need to register before his first race, then
         \hline
         Group name & \textbf{Intranet} \\
         \hline
-        Description & Empty \\
+        Description & The users of the intranet side of kc{} are 
+        all registered and act on the karting center in different ways. \\
         \hline
-        Profile data & None \\
+        Profile data & Username, Password, Email, Name, Surname, Address \\
+        \hline
         Supergroup & User \\
         \hline
-        Subgroups & Information System Administrator, Karting center administrator, Clerk \\
+        Subgroups & Information system administrator, Karting center administrator, Clerk \\
         \hline
         Use cases &
         - Login/Logout \newline
         - Read my details \\
         \hline
-        Read & Everything the generic user can read\\
+        Read & Everything the generic user can read \\
         \hline
-        Write & None \\
+        Write & Karting center (in different ways) \\
         \hline
         \end{tabular}
     \end{table}
@@ -178,11 +221,14 @@ You will need to register before his first race, then
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
         \hline
-        Group name & \textbf{Information System Administrator} \\
+        Group name & \textbf{Information system administrator} \\
         \hline
-        Description & Empty \\
+        Description & The information system administrator has the right to create, update and delete karting centers,
+        karting centers' administrators, organizers and all the filtering mechanisms that help the user to navigate the website;
+        then he can do everything that the karting center administrator (and thus the clerk) can do by authenticating as one of them. \\
         \hline
-        Profile data & Username, Password, Email, Name, Surname, Address \\
+        Profile data & None \\
+        \hline
         Supergroup & Intranet \\
         \hline
         Subgroups & None \\
@@ -203,7 +249,19 @@ You will need to register before his first race, then
         - C.R.U.D. cities \newline
         - C.R.U.D. go-kart models \newline
         - C.R.U.D. track asphalt types \newline
-        - C.R.U.D. track difficulies \newline
+        - C.R.U.D. track difficulies \\
+        \hline
+        \end{tabular}
+    \end{table}
+\end{frame}
+% continue table
+\begin{frame}
+    \frametitle{Specification sheet}
+    \begin{table}
+        \tiny
+        \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Use cases &
         - C.R.U.D. track length ranges \newline
         - C.R.U.D. review score ranges \newline
         - C.R.U.D. n. pilots ranges \newline
@@ -211,15 +269,6 @@ You will need to register before his first race, then
         - C.R.U.D. n. events ranges \newline
         - C.R.U.D. price ranges \newline
         - C.R.U.D. event categories \\
-        \hline
-        \end{tabular}
-    \end{table}
-\end{frame}
-% continue table
-\begin{frame}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
         \hline
         Read & Everything \\
         \hline
@@ -239,9 +288,13 @@ You will need to register before his first race, then
     \hline
     Group name & \textbf{Karting center administrator} \\
     \hline
-    Description & Empty \\
+    Description & The karting center administrator can only operating on the karting centers he is in charge of
+    (every karting center can have at most one administrator), he can create, update or delete tracks, go-karts
+    dedicated to tracks, races (and implicitly the associated reservations), clerks and pilots.
+    He can also do everything that the clerk can do by authenticating as one of them. \\
     \hline
-    Profile data & Username, Password, Email, Name, Surname, Address \\
+    Profile data & None \\
+    \hline
     Supergroup & Intranet \\
     \hline
     Subgroups & None \\
@@ -257,7 +310,19 @@ You will need to register before his first race, then
     - Explore clerks \newline
     - Read details on clerk \newline
     - U.D. clerk \newline
-    - Create clerk \newline
+    - Create clerk \\
+    \hline
+    \end{tabular}
+\end{table}
+\end{frame}
+% continue table
+\begin{frame}
+\frametitle{Specification sheet}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Use cases &
     - Explore tracks (related to my karting centers)\newline
     - Explore tracks by karting center \newline
     - Read details on track \newline
@@ -271,26 +336,17 @@ You will need to register before his first race, then
     - U.D. go-kart dedicated to track \newline
     - Create go-kart \\
     \hline
+    Read & Clerks (related to my karting centers), go-karts (related to my karting centers), 
+    everything that every clerk of my karting centers can read,
+    everything that the generic user can read. \\
+    \hline
+    Write & Karting center (only mine, only to update, not to create nor delete), 
+    Clerk (only mine), Track (only mine), Race (only for my karting centers) and implicitly Reservation, 
+    Go-kart (only for my karting centers),
+    everything that every clerk of my karting centers can write. \\
+    \hline
     \end{tabular}
 \end{table}
-\end{frame}
-% continue table
-\begin{frame}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Read & Clerks (related to my karting centers), go-karts (related to my karting centers), 
-        everything that every clerk of my karting centers can read,
-        everything that the generic user can read. \\
-        \hline
-        Write & Karting center (only mine, only to update, not to create nor delete), 
-        Clerk (only mine), Track (only mine), Race (only for my karting centers) and implicitly Reservation, 
-        Go-kart (only for my karting centers),
-        everything that every clerk of my karting centers can write. \\
-        \hline
-        \end{tabular}
-    \end{table}
 \end{frame}
 
 \begin{frame}
@@ -301,9 +357,12 @@ You will need to register before his first race, then
         \hline
         Group name & \textbf{Clerk} \\
         \hline
-        Description & Empty \\
+        Description & The clerk of a karting center can help the administrator by confirming the reservations requested
+        by pilots and organizers, he can also moderate the reviews that pilots write about the karting center, the tracks
+        and the events. Every clerk works for at most one karting center and every karting center can have more than one clerk. \\
         \hline
-        Profile data & Username, Password, Email, Name, Surname, Address \\
+        Profile data & None \\
+        \hline
         Supergroup & Intranet \\
         \hline
         Subgroups & None \\
@@ -341,7 +400,9 @@ You will need to register before his first race, then
         \hline
         Group name & \textbf{Organizer} \\
         \hline
-        Description & Empty \\
+        Description & The organizer can create events that pilots with different experience levels can participate to,
+        competing on different tracks of different karting centers. The organizer can invite pilots by inserting their names
+        when creating the event (in the same way the pilot can) and can accept applications from pilots. \\
         \hline
         Profile data & Username, Password, Email, Name, Surname, Address \\
         \hline
@@ -379,9 +440,10 @@ You will need to register before his first race, then
         \hline
         Group name & \textbf{Internet} \\
         \hline
-        Description & Empty \\
+        Description & The internet side of \kc{} has mainly an explorative role. \\
         \hline
         Profile data & None \\
+        \hline
         Supergroup & User \\
         \hline
         Subgroups & Pilot, Visitor \\
@@ -405,9 +467,13 @@ You will need to register before his first race, then
         \hline
         Group name & \textbf{Pilot} \\
         \hline
-        Description & Empty \\
+        Description & The pilot is a registered user, he can ask for reservations to have custom races
+        at a track of his choice and with pilots of his choice, he can also apply to events and
+        finally he can write reviews on karting centers, tracks and events.
+        He can do everything that the generic user can do. \\
         \hline
-        Profile data & Username, Password, Email, Name, Surname, Address \\
+        Profile data & Username, Password, Email, Name, Surname, Address, Age, Weight \\
+        \hline
         Supergroup & Internet \\
         \hline
         Subgroups & None \\
@@ -429,9 +495,20 @@ You will need to register before his first race, then
         - Read details on event \newline
         - Create review of event \\
         \hline
-        Read & Reservation (only mine), everything that the generic user can read,
+        \end{tabular}
+    \end{table}
+\end{frame}
+% continue table
+\begin{frame}
+    \frametitle{Specification sheet}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+        \hline
+        Read & Reservation (only mine),
         Race (those that still have to take place, created by me) and implicitly Review,
-        Application (only mine). \\
+        Application (only mine), everything that the internet user can read. \\
+        \hline
         Write & Race (only mine) and implicitly Reservation, Review on karting center, 
         Review on track, Review on event, Application (only mine). \newline
         Indirectly: Karting center, Track, Event (when participating to a race or writing a review, implicitly some of their 
@@ -449,9 +526,13 @@ You will need to register before his first race, then
         \hline
         Group name & \textbf{Visitor} \\
         \hline
-        Description & Empty \\
+        Description & The visitor has a passive and yet fundamental role to \kc{}, he can 
+        explore the website and, if he feels involved enough, can sign up on his own or at any
+        karting center: obviously if he gets registered at karting center A will be able to
+        ask for reservations for custom races to any other karting center partner of \kc{}.  \\
         \hline
         Profile data & None \\
+        \hline
         Supergroup & Internet \\
         \hline
         Subgroups & None \\
@@ -459,7 +540,7 @@ You will need to register before his first race, then
         Use cases &
         - Register \\
         \hline
-        Read & Everything the generic user can read \\
+        Read & Everything the internet user can read \\
         \hline
         Write & None \\
         \hline
@@ -471,9 +552,9 @@ You will need to register before his first race, then
 % TODO ADD EXPLORE EVENT BY KARTING CENTER AND ADD EXPLORE EVENT BY TRACK
 
 
-\section*{Use cases}
+\subsection{Use cases}
 
-\subsection*{User}
+\subsubsection{User}
 
 \begin{frame}
     \frametitle{User}
@@ -484,7 +565,7 @@ You will need to register before his first race, then
 % %%%%%%%%%% KARTING CENTER AREA %%%%%%%%%%%%%%%
 
 \begin{frame}
-\frametitle{Specification sheet}
+\frametitle{User}
 \begin{table}
     \tiny
     \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -503,10 +584,7 @@ You will need to register before his first race, then
     \hline
     \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -528,9 +606,14 @@ You will need to register before his first race, then
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -550,34 +633,36 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Explore karting centers by number of events} \\
-        \hline
-        Goal & The user explores karting centers selecting one range of number of events (that had
-        at least one race hosted on 
-        any of the tracks of the karting center) at a time. \\
-        \hline
-        Precondition & The user is in the area (of the public view) dedicated to karting centers.\\
-        \hline
-        Postcondition & The user obtains the list of karting centers from which he can move on.\\
-        \hline
-        Workflow &
-        - The user moves to the area dedicated to karting centers. \newline
-        - The user selects a range of number of events. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Explore karting centers by number of events} \\
+    \hline
+    Goal & The user explores karting centers selecting one range of number of events (that had
+    at least one race hosted on 
+    any of the tracks of the karting center) at a time. \\
+    \hline
+    Precondition & The user is in the area (of the public view) dedicated to karting centers.\\
+    \hline
+    Postcondition & The user obtains the list of karting centers from which he can move on.\\
+    \hline
+    Workflow &
+    - The user moves to the area dedicated to karting centers. \newline
+    - The user selects a range of number of events. \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -597,31 +682,33 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{View all karting centers hosting upcoming events} \\
-        \hline
-        Goal & The user scrolls through the list of karting centers that are going to host an upcoming event. \\
-        \hline
-        Precondition & The user already has this information in the homepage.\\
-        \hline
-        Postcondition & The user obtains the list of karting centers from which he can move on.\\
-        \hline
-        Workflow &
-        - The user reaches the homepage. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{View all karting centers hosting upcoming events} \\
+    \hline
+    Goal & The user scrolls through the list of karting centers that are going to host an upcoming event. \\
+    \hline
+    Precondition & The user already has this information in the homepage.\\
+    \hline
+    Postcondition & The user obtains the list of karting centers from which he can move on.\\
+    \hline
+    Workflow &
+    - The user reaches the homepage. \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -639,33 +726,35 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Read reviews on karting center} \\
-        \hline
-        Goal & The user chooses one karting center to focus on and scrolls the reviews it received (from pilots
-        that had at least one race on one track of the karting center). \\
-        \hline
-        Precondition & The user chose a karting center from a list of karting centers (obtained from any of the previous use cases).\\
-        \hline
-        Postcondition & The user obtains the reviews on the karting center in the area dedicated to reviews. \\
-        \hline
-        Workflow &
-        - The user moves from the page dedicated to the details of the karting center to the
-        page dedicated to reviews through a click. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Read reviews on karting center} \\
+    \hline
+    Goal & The user chooses one karting center to focus on and scrolls the reviews it received (from pilots
+    that had at least one race on one track of the karting center). \\
+    \hline
+    Precondition & The user chose a karting center from a list of karting centers (obtained from any of the previous use cases).\\
+    \hline
+    Postcondition & The user obtains the reviews on the karting center in the area dedicated to reviews. \\
+    \hline
+    Workflow &
+    - The user moves from the page dedicated to the details of the karting center to the
+    page dedicated to reviews through a click. \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -684,34 +773,36 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Explore events by karting center} \\
-        \hline
-        Goal & The user chooses one karting center to focus on and explores the events that had at least one 
-        of their races hosted by a track of the karting center. \\
-        \hline
-        Precondition & The user chose a karting center from a list of karting centers (obtained from any of the previous use cases).\\
-        \hline
-        Postcondition & The user obtains the events in the area dedicated to events. \\
-        \hline
-        Workflow &
-        - The user moves from the page dedicated to the details of the karting center to the
-        page dedicated to events through a click. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Explore events by karting center} \\
+    \hline
+    Goal & The user chooses one karting center to focus on and explores the events that had at least one 
+    of their races hosted by a track of the karting center. \\
+    \hline
+    Precondition & The user chose a karting center from a list of karting centers (obtained from any of the previous use cases).\\
+    \hline
+    Postcondition & The user obtains the events in the area dedicated to events. \\
+    \hline
+    Workflow &
+    - The user moves from the page dedicated to the details of the karting center to the
+    page dedicated to events through a click. \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -730,32 +821,34 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Explore tracks by difficulty} \\
-        \hline
-        Goal & The user explores tracks selecting one difficulty at a time. \\
-        \hline
-        Precondition & The user is in the area (of the public view) dedicated to tracks.\\
-        \hline
-        Postcondition & The user obtains the list of tracks from which he can move on.\\
-        \hline
-        Workflow &
-        - The user moves to the area dedicated to tracks. \newline
-        - The user selects a difficulty. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Explore tracks by difficulty} \\
+    \hline
+    Goal & The user explores tracks selecting one difficulty at a time. \\
+    \hline
+    Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+    \hline
+    Postcondition & The user obtains the list of tracks from which he can move on.\\
+    \hline
+    Workflow &
+    - The user moves to the area dedicated to tracks. \newline
+    - The user selects a difficulty. \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -774,32 +867,34 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Explore tracks by city} \\
-        \hline
-        Goal & The user explores tracks selecting one city at a time. \\
-        \hline
-        Precondition & The user is in the area (of the public view) dedicated to tracks.\\
-        \hline
-        Postcondition & The user obtains the list of tracks from which he can move on.\\
-        \hline
-        Workflow &
-        - The user moves to the area dedicated to tracks. \newline
-        - The user selects a city. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Explore tracks by city} \\
+    \hline
+    Goal & The user explores tracks selecting one city at a time. \\
+    \hline
+    Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+    \hline
+    Postcondition & The user obtains the list of tracks from which he can move on.\\
+    \hline
+    Workflow &
+    - The user moves to the area dedicated to tracks. \newline
+    - The user selects a city. \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -819,34 +914,36 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Explore tracks by number of pilots} \\
-        \hline
-        Goal & The user explores tracks selecting one range of number of pilots
-        (who had a race on the track) at a time. \\
-        \hline
-        Precondition & The user is in the area (of the public view) dedicated to tracks.\\
-        \hline
-        Postcondition & The user obtains the list of tracks from which he can move on.\\
-        \hline
-        Workflow &
-        - The user moves to the area dedicated to tracks. \newline
-        - The user selects a range of number of pilots. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Explore tracks by number of pilots} \\
+    \hline
+    Goal & The user explores tracks selecting one range of number of pilots
+    (who had a race on the track) at a time. \\
+    \hline
+    Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+    \hline
+    Postcondition & The user obtains the list of tracks from which he can move on.\\
+    \hline
+    Workflow &
+    - The user moves to the area dedicated to tracks. \newline
+    - The user selects a range of number of pilots. \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -866,33 +963,35 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Explore tracks by average review score} \\
-        \hline
-        Goal & The user explores tracks selecting one range of average review scores (given to the track by all the pilots
-        that had at least one race on the track) at a time. \\
-        \hline
-        Precondition & The user is in the area (of the public view) dedicated to tracks.\\
-        \hline
-        Postcondition & The user obtains the list of tracks from which he can move on.\\
-        \hline
-        Workflow &
-        - The user moves to the area dedicated to tracks. \newline
-        - The user selects a range of scores (the ranges are the same for karting centes, tracks and events). \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Explore tracks by average review score} \\
+    \hline
+    Goal & The user explores tracks selecting one range of average review scores (given to the track by all the pilots
+    that had at least one race on the track) at a time. \\
+    \hline
+    Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+    \hline
+    Postcondition & The user obtains the list of tracks from which he can move on.\\
+    \hline
+    Workflow &
+    - The user moves to the area dedicated to tracks. \newline
+    - The user selects a range of scores (the ranges are the same for karting centes, tracks and events). \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -910,33 +1009,35 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Read reviews on track} \\
-        \hline
-        Goal & The user chooses one track to focus on and scrolls the reviews it received (from pilots
-        that had at least one race on it). \\
-        \hline
-        Precondition & The user chose a track from a list of tracks (obtained from any of the previous use cases).\\
-        \hline
-        Postcondition & The user obtains the reviews on the tracks in the area dedicated to reviews. \\
-        \hline
-        Workflow &
-        - The user moves from the area dedicated to the details of the track to the
-        area dedicated to reviews through a click. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Read reviews on track} \\
+    \hline
+    Goal & The user chooses one track to focus on and scrolls the reviews it received (from pilots
+    that had at least one race on it). \\
+    \hline
+    Precondition & The user chose a track from a list of tracks (obtained from any of the previous use cases).\\
+    \hline
+    Postcondition & The user obtains the reviews on the tracks in the area dedicated to reviews. \\
+    \hline
+    Workflow &
+    - The user moves from the area dedicated to the details of the track to the
+    area dedicated to reviews through a click. \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -956,34 +1057,36 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Explore leaderboards} \\
-        \hline
-        Goal & The user chooses one track to focus on and explores the leaderboards associated
-        to the track (leaderboards are filtering on the whole record of laptimes obtained by pilots in a race,
-        a leaderboard can focus on the last month, the last year, sex, weight...) \\
-        \hline
-        Precondition & The user chose a track from a list of tracks (obtained from any of the previous use cases).\\
-        \hline
-        Postcondition & The user obtains the list of leaderboards in the area dedicated to leaderboards. \\
-        \hline
-        Workflow &
-        - The user moves from the area dedicated to the details of the track to the
-        area dedicated to leaderboards through a click. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Explore leaderboards} \\
+    \hline
+    Goal & The user chooses one track to focus on and explores the leaderboards associated
+    to the track (leaderboards are filtering on the whole record of laptimes obtained by pilots in a race,
+    a leaderboard can focus on the last month, the last year, weight...) \\
+    \hline
+    Precondition & The user chose a track from a list of tracks (obtained from any of the previous use cases).\\
+    \hline
+    Postcondition & The user obtains the list of leaderboards in the area dedicated to leaderboards. \\
+    \hline
+    Workflow &
+    - The user moves from the area dedicated to the details of the track to the
+    area dedicated to leaderboards through a click. \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1002,33 +1105,35 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Explore lap-times of a race} \\
-        \hline
-        Goal & The user chooses one race to focus on and reads all the lap-times made by all the pilots 
-        that participated to the race.\\
-        \hline
-        Precondition & The user chose a race from a list of races (obtained from a track, an event or a pilot).\\
-        \hline
-        Postcondition & The user obtains the list of lap-times in the area dedicated to lap-times. \\
-        \hline
-        Workflow &
-        - The user moves from the area dedicated to the details of the race to the
-        area dedicated to lap-times through a click. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Explore lap-times of a race} \\
+    \hline
+    Goal & The user chooses one race to focus on and reads all the lap-times made by all the pilots 
+    that participated to the race.\\
+    \hline
+    Precondition & The user chose a race from a list of races (obtained from a track, an event or a pilot).\\
+    \hline
+    Postcondition & The user obtains the list of lap-times in the area dedicated to lap-times. \\
+    \hline
+    Workflow &
+    - The user moves from the area dedicated to the details of the race to the
+    area dedicated to lap-times through a click. \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1047,31 +1152,33 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Read details on pilot} \\
-        \hline
-        Goal & The user chooses one pilot to focus on and reads its details. \\
-        \hline
-        Precondition & The user chose a pilot from a list of pilots (obtained from a track, a race, an event).\\
-        \hline
-        Postcondition & The user obtains the details on the pilot and can move on to other related informations (e.g. races, events). \\
-        \hline
-        Workflow &
-        - The user chooses one pilot from a list. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Read details on pilot} \\
+    \hline
+    Goal & The user chooses one pilot to focus on and reads its details. \\
+    \hline
+    Precondition & The user chose a pilot from a list of pilots (obtained from a track, a race, an event).\\
+    \hline
+    Postcondition & The user obtains the details on the pilot and can move on to other related informations (e.g. races, events). \\
+    \hline
+    Workflow &
+    - The user chooses one pilot from a list. \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1090,34 +1197,36 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Explore races from pilot} \\
-        \hline
-        Goal & The user chooses one pilot to focus on and explores the races that the pilot had. \\
-        \hline
-        Precondition & The user chose a pilot from a list of pilots (obtained from a track, a race, an event).\\
-        \hline
-        Postcondition & The user obtains a list of races in the area dedicated to races. \\
-        \hline
-        Workflow &
-        - The user moves from the area dedicated to the details of the pilot to the
-        area dedicated to races through a click. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Explore races from pilot} \\
+    \hline
+    Goal & The user chooses one pilot to focus on and explores the races that the pilot had. \\
+    \hline
+    Precondition & The user chose a pilot from a list of pilots (obtained from a track, a race, an event).\\
+    \hline
+    Postcondition & The user obtains a list of races in the area dedicated to races. \\
+    \hline
+    Workflow &
+    - The user moves from the area dedicated to the details of the pilot to the
+    area dedicated to races through a click. \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
+
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
 
 % EXPLORE EVENTS
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1136,34 +1245,36 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Explore events by average review score} \\
-        \hline
-        Goal & The user explores events selecting one range of average review scores (given to the event by all the pilots
-        that partcipated to it) at a time. \\
-        \hline
-        Precondition & The user is in the area (of the public view) dedicated to events.\\
-        \hline
-        Postcondition & The user obtains the list of events from which he can move on.\\
-        \hline
-        Workflow &
-        - The user moves to the area dedicated to events. \newline
-        - The user selects a range of scores (the ranges are the same for karting centes, tracks and events). \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Explore events by average review score} \\
+    \hline
+    Goal & The user explores events selecting one range of average review scores (given to the event by all the pilots
+    that partcipated to it) at a time. \\
+    \hline
+    Precondition & The user is in the area (of the public view) dedicated to events.\\
+    \hline
+    Postcondition & The user obtains the list of events from which he can move on.\\
+    \hline
+    Workflow &
+    - The user moves to the area dedicated to events. \newline
+    - The user selects a range of scores (the ranges are the same for karting centes, tracks and events). \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1182,32 +1293,34 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Explore events by category} \\
-        \hline
-        Goal & The user explores events selecting one category at a time. \\
-        \hline
-        Precondition & The user is in the area (of the public view) dedicated to events.\\
-        \hline
-        Postcondition & The user obtains the list of events from which he can move on.\\
-        \hline
-        Workflow &
-        - The user moves to the area dedicated to events. \newline
-        - The user selects a category. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Explore events by category} \\
+    \hline
+    Goal & The user explores events selecting one category at a time. \\
+    \hline
+    Precondition & The user is in the area (of the public view) dedicated to events.\\
+    \hline
+    Postcondition & The user obtains the list of events from which he can move on.\\
+    \hline
+    Workflow &
+    - The user moves to the area dedicated to events. \newline
+    - The user selects a category. \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1228,36 +1341,38 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Explore upcoming events} \\
-        \hline
-        Goal & The user explores only the upcoming events (those whose first race still has to take place). \\
-        \hline
-        Precondition & The user is in the area (of the public view) dedicated to events or in the homepage (which 
-        already shows the list of upcoming events, the list of tracks that will be involved and the list of 
-        karting centers that will be involved). \\
-        \hline
-        Postcondition & The user obtains the list of events from which he can move on.\\
-        \hline
-        Workflow &
-        - A: the user chooses an event from the list of upcoming events already provided in the homepage.\newline
-        - B.1: the user moves to the area dedicated to events. \newline
-        - B.2: the user chooses an event from the list of upcoming events already provided in the area dedicated
-        to events. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Explore upcoming events} \\
+    \hline
+    Goal & The user explores only the upcoming events (those whose first race still has to take place). \\
+    \hline
+    Precondition & The user is in the area (of the public view) dedicated to events or in the homepage (which 
+    already shows the list of upcoming events, the list of tracks that will be involved and the list of 
+    karting centers that will be involved). \\
+    \hline
+    Postcondition & The user obtains the list of events from which he can move on.\\
+    \hline
+    Workflow &
+    - A: the user chooses an event from the list of upcoming events already provided in the homepage.\newline
+    - B.1: the user moves to the area dedicated to events. \newline
+    - B.2: the user chooses an event from the list of upcoming events already provided in the area dedicated
+    to events. \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1277,32 +1392,34 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Read details on event} \\
-        \hline
-        Goal & The user chooses one event to focus on and reads its details. \\
-        \hline
-        Precondition & The user chose an event from a list of events (obtained from any of the previous use cases).\\
-        \hline
-        Postcondition & The user obtains the details on the event and can move on to other related
-        informations (e.g. races, pilots) \\
-        \hline
-        Workflow &
-        - The user chooses one event from a list. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Read details on event} \\
+    \hline
+    Goal & The user chooses one event to focus on and reads its details. \\
+    \hline
+    Precondition & The user chose an event from a list of events (obtained from any of the previous use cases).\\
+    \hline
+    Postcondition & The user obtains the details on the event and can move on to other related
+    informations (e.g. races, pilots) \\
+    \hline
+    Workflow &
+    - The user chooses one event from a list. \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1322,33 +1439,35 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Explore tracks by event} \\
-        \hline
-        Goal & The user chooses one event to focus on and explores the tracks that hosted at least
-        one race of the event. \\
-        \hline
-        Precondition & The user chose an event from a list of events (obtained from any of the previous use cases).\\
-        \hline
-        Postcondition & The user obtains the list of tracks in the area dedicated to tracks. \\
-        \hline
-        Workflow &
-        - The user moves from the area dedicated to the details of the event to the
-        area dedicated to tracks through a click. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Explore tracks by event} \\
+    \hline
+    Goal & The user chooses one event to focus on and explores the tracks that hosted at least
+    one race of the event. \\
+    \hline
+    Precondition & The user chose an event from a list of events (obtained from any of the previous use cases).\\
+    \hline
+    Postcondition & The user obtains the list of tracks in the area dedicated to tracks. \\
+    \hline
+    Workflow &
+    - The user moves from the area dedicated to the details of the event to the
+    area dedicated to tracks through a click. \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1367,35 +1486,37 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline  
-        Title & \textbf{Explore races from event} \\
-        \hline
-        Goal & The user chooses one event to focus on and
-        explores the races that the event organized. \\
-        \hline
-        Precondition & The user chose an event from a list of events (obtained from any of the previous use cases).\\
-        \hline
-        Postcondition & The user obtains
-        a list of races in the area dedicated to races. \\
-        \hline
-        Workflow &
-        - The user moves from the area dedicated to the details of the event to the
-        area dedicated to races through a click. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline  
+    Title & \textbf{Explore races from event} \\
+    \hline
+    Goal & The user chooses one event to focus on and
+    explores the races that the event organized. \\
+    \hline
+    Precondition & The user chose an event from a list of events (obtained from any of the previous use cases).\\
+    \hline
+    Postcondition & The user obtains
+    a list of races in the area dedicated to races. \\
+    \hline
+    Workflow &
+    - The user moves from the area dedicated to the details of the event to the
+    area dedicated to races through a click. \\
+    \hline
+    \end{tabular}
 \end{table}
 \end{frame}
 
+% \begin{frame}
+%     \frametitle{User}
+
+% \end{frame}
+
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{User}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1432,7 +1553,7 @@ You will need to register before his first race, then
 % 
 % 
 
-\subsection*{Intranet}
+\subsubsection{Intranet}
 
 \begin{frame}
     \frametitle{Intranet}
@@ -1440,7 +1561,7 @@ You will need to register before his first race, then
     \includegraphics[width=0.7\linewidth]{drawio/intranet.pdf}
 \end{frame}
 
-\subsubsection*{Karting center administrator}
+% \subsubsection*{Karting center administrator}
 
 \begin{frame}
     \frametitle{Karting center administrator}
@@ -1449,7 +1570,7 @@ You will need to register before his first race, then
 \end{frame}
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Karting center administrator}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1468,36 +1589,29 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline  
-        Title & \textbf{Explore pilots by karting center} \\
-        \hline
-        Goal & The user explores the pilots that participated in at
-        least one race on a track of a karting center the user manages. \\
-        \hline
-        Precondition & The user logged in, manages at least one karting center and at least one pilot
-        had a race on a track of the karting center.\\
-        \hline
-        Postcondition & The user obtains the list of pilots in the area dedicated to pilots. \\
-        \hline
-        Workflow &
-        - The user chooses the option to explore pilots of a karting center 
-        from the list (provided in the homepage) of karting centers he manages. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline  
+    Title & \textbf{Explore pilots by karting center} \\
+    \hline
+    Goal & The user explores the pilots that participated in at
+    least one race on a track of a karting center the user manages. \\
+    \hline
+    Precondition & The user logged in, manages at least one karting center and at least one pilot
+    had a race on a track of the karting center.\\
+    \hline
+    Postcondition & The user obtains the list of pilots in the area dedicated to pilots. \\
+    \hline
+    Workflow &
+    - The user chooses the option to explore pilots of a karting center 
+    from the list (provided in the homepage) of karting centers he manages. \\
+    \hline
+    \end{tabular}
 \end{table}
-\end{frame}
 
-
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
+\begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
         \hline  
@@ -1515,11 +1629,11 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
+
 \end{frame}
 
-
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Karting center administrator}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1540,56 +1654,50 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline  
-        Title & \textbf{U.D. pilots} \\
-        \hline
-        Goal & The user updates or deletes a pilot. \\
-        \hline
-        Precondition & The user logged in. \\
-        \hline
-        Postcondition & The chosen pilot is updated or deleted. \\
-        \hline
-        Workflow &
-        - The user moves to the area dedicated to pilots. \newline
-        - The user chooses the option to update or delete a pilot from 
-        the list of all pilots (provided in the area dedicated to pilots). \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline  
+    Title & \textbf{U.D. pilots} \\
+    \hline
+    Goal & The user updates or deletes a pilot. \\
+    \hline
+    Precondition & The user logged in. \\
+    \hline
+    Postcondition & The chosen pilot is updated or deleted. \\
+    \hline
+    Workflow &
+    - The user moves to the area dedicated to pilots. \newline
+    - The user chooses the option to update or delete a pilot from 
+    the list of all pilots (provided in the area dedicated to pilots). \\
+    \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}
+\tiny
+\begin{tabular}{|p{2cm}|p{6cm}|}
+\hline  
+Title & \textbf{Create pilots} \\
+\hline
+Goal & The user creates a new pilot. \\
+\hline
+Precondition & The user logged in. \\
+\hline
+Postcondition & The pilot is created. \\
+\hline
+Workflow &
+- The user moves to the area dedicated to pilots. \newline
+- The user chooses the option to create a new pilot. \\
+\hline
+\end{tabular}
 \end{table}
 \end{frame}
 
 
 \begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline  
-        Title & \textbf{Create pilots} \\
-        \hline
-        Goal & The user creates a new pilot. \\
-        \hline
-        Precondition & The user logged in. \\
-        \hline
-        Postcondition & The pilot is created. \\
-        \hline
-        Workflow &
-        - The user moves to the area dedicated to pilots. \newline
-        - The user chooses the option to create a new pilot. \\
-        \hline
-        \end{tabular}
-\end{table}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Karting center administrator}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1630,7 +1738,7 @@ You will need to register before his first race, then
 
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Karting center administrator}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1679,7 +1787,7 @@ You will need to register before his first race, then
 \end{frame}
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Karting center administrator}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1723,7 +1831,7 @@ You will need to register before his first race, then
 \end{frame}
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Karting center administrator}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1773,7 +1881,7 @@ You will need to register before his first race, then
 \end{frame}
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Karting center administrator}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1824,7 +1932,7 @@ You will need to register before his first race, then
 
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Karting center administrator}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1848,40 +1956,38 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline  
-        Title & \textbf{U.D. go-karts (TODO)} \\
-        \hline
-        Goal & The user updates or deletes a go-kart. \\
-        \hline
-        Precondition & The user logged in and manages at least one karting center that has at least
-        one track that has at least one go-kart dedicated to it. \\
-        \hline
-        Postcondition & The chosen go-kart is updated or deleted. \\
-        \hline
-        Workflow &
-        - A: the user chooses a track from the list of tracks (provided in the homepage) 
-        of the karting centers
-        he manages. \newline
-        - B: the user moves to the area dedicated to tracks and chooses a track from the list of tracks
-        (provided in the area dedicated to tracks) of the karting centers he manages. \newline
-        - The user chooses the option to update or delete a go-kart from the list of go-karts
-        provided in the same page with the details on the track. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline  
+    Title & \textbf{U.D. go-karts (TODO)} \\
+    \hline
+    Goal & The user updates or deletes a go-kart. \\
+    \hline
+    Precondition & The user logged in and manages at least one karting center that has at least
+    one track that has at least one go-kart dedicated to it. \\
+    \hline
+    Postcondition & The chosen go-kart is updated or deleted. \\
+    \hline
+    Workflow &
+    - A: the user chooses a track from the list of tracks (provided in the homepage) 
+    of the karting centers
+    he manages. \newline
+    - B: the user moves to the area dedicated to tracks and chooses a track from the list of tracks
+    (provided in the area dedicated to tracks) of the karting centers he manages. \newline
+    - The user chooses the option to update or delete a go-kart from the list of go-karts
+    provided in the same page with the details on the track. \\
+    \hline
+    \end{tabular}
 \end{table}
+
 \end{frame}
 
 
+
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Karting center administrator}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1908,7 +2014,7 @@ You will need to register before his first race, then
 \end{table}
 \end{frame}
 
-\subsubsection*{Clerk}
+% \subsubsubsection{Clerk}
 
 \begin{frame}
     \frametitle{Clerk}
@@ -1917,7 +2023,7 @@ You will need to register before his first race, then
 \end{frame}
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Clerk}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -1938,36 +2044,33 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline  
-        Title & \textbf{Confirm reservation} \\
-        \hline
-        Goal & The user confirms a reservation. \\
-        \hline
-        Precondition & The user logged in and works for a karting center that received
-        at least a request for reservation on a track. \\
-        \hline
-        Postcondition & The reservation is confirmed (it now has both a pilot/organizer and a clerk associated
-        to it). \\
-        \hline
-        Workflow &
-        - The user moves to the area dedicated to reservations. \newline
-        - The user chooses the option to confirm a reservation from the list of reservations. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline  
+    Title & \textbf{Confirm reservation} \\
+    \hline
+    Goal & The user confirms a reservation. \\
+    \hline
+    Precondition & The user logged in and works for a karting center that received
+    at least a request for reservation on a track. \\
+    \hline
+    Postcondition & The reservation is confirmed (it now has both a pilot/organizer and a clerk associated
+    to it). \\
+    \hline
+    Workflow &
+    - The user moves to the area dedicated to reservations. \newline
+    - The user chooses the option to confirm a reservation from the list of reservations. \\
+    \hline
+    \end{tabular}
 \end{table}
+
 \end{frame}
 
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Clerk}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2029,7 +2132,7 @@ You will need to register before his first race, then
 \end{frame}
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Clerk}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2075,7 +2178,7 @@ You will need to register before his first race, then
 \end{frame}
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Clerk}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2121,7 +2224,7 @@ You will need to register before his first race, then
 
 \end{frame}
 
-\subsubsection*{Information system administrator}
+% \subsubsection*{Information system administrator}
 
 \begin{frame}
     \frametitle{Information system administrator}
@@ -2130,7 +2233,7 @@ You will need to register before his first race, then
 \end{frame}
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Information system administrator}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2176,7 +2279,7 @@ You will need to register before his first race, then
 \end{frame}
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Information system administrator}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2225,7 +2328,7 @@ You will need to register before his first race, then
 \end{frame}
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Information system administrator}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2275,7 +2378,7 @@ You will need to register before his first race, then
 \end{frame}
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Information system administrator}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2322,6 +2425,7 @@ You will need to register before his first race, then
 \end{frame}
 
 \begin{frame}
+    \frametitle{Information system administrator}
     The information system administrator is responsible for the management of 
     all those entities useful to the visitors to navigate the site.
     He has the possibility to create, update and delete the following entities:
@@ -2340,9 +2444,7 @@ You will need to register before his first race, then
     \end{itemize} 
 \end{frame}
 
-\subsection*{Extranet}
-
-\subsubsection*{Pilot}
+\subsubsection{Extranet}
 
 \begin{frame}
     \frametitle{Organizer}
@@ -2352,7 +2454,7 @@ You will need to register before his first race, then
 
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Organizer}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2372,36 +2474,33 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Read details on my event} \\
-        \hline
-        Goal & The user chooses one event to focus on and reads its details. \\
-        \hline
-        Precondition & The user logged in. \\
-        \hline
-        Postcondition & The user obtains the details on the event and 
-        can move on to other related informations (e.g. applications). \\
-        \hline
-        Workflow &
-        - A: the user chooses one event from the list of events he created in the homepage. \newline
-        - B.1: the user moves to the area dedicated to events. \newline
-        - B.2: the user chooses one event from the list of events he created in the area dedicated to events. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Read details on my event} \\
+    \hline
+    Goal & The user chooses one event to focus on and reads its details. \\
+    \hline
+    Precondition & The user logged in. \\
+    \hline
+    Postcondition & The user obtains the details on the event and 
+    can move on to other related informations (e.g. applications). \\
+    \hline
+    Workflow &
+    - A: the user chooses one event from the list of events he created in the homepage. \newline
+    - B.1: the user moves to the area dedicated to events. \newline
+    - B.2: the user chooses one event from the list of events he created in the area dedicated to events. \\
+    \hline
+    \end{tabular}
 \end{table}
+
 \end{frame}
 
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Organizer}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2423,34 +2522,31 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Create event} \\
-        \hline
-        Goal & The user creates a new event. \\
-        \hline
-        Precondition & The user logged in and created at least one race.\\
-        \hline
-        Postcondition & The event is created and pilots can apply to it. \\
-        \hline
-        Workflow &
-        - The user moves to the area dedicated to events. \newline
-        - The user chooses the option to create a new event (he will need to choose among races he created
-        to fill the event). \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Create event} \\
+    \hline
+    Goal & The user creates a new event. \\
+    \hline
+    Precondition & The user logged in and created at least one race.\\
+    \hline
+    Postcondition & The event is created and pilots can apply to it. \\
+    \hline
+    Workflow &
+    - The user moves to the area dedicated to events. \newline
+    - The user chooses the option to create a new event (he will need to choose among races he created
+    to fill the event). \\
+    \hline
+    \end{tabular}
 \end{table}
+
 \end{frame}
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Organizer}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2471,6 +2567,30 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
+
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Confirm application} \\
+    \hline
+    Goal & The user confirms an application received for one of his events. \\
+    \hline
+    Precondition & The user logged in, created at least one event and at least one pilot applied to it.\\
+    \hline
+    Postcondition & The application is confirmed and the pilot is automatically inserted as a participant
+    to all of the races of the event (this might change, e.g. in case the organizer decides to organize races 
+    in a tournament fashion, but the application will not be affected). \\
+    \hline
+    Workflow &
+    - A: the user chooses one event from the list of events he created in the homepage. \newline
+    - B.1: the user moves to the area dedicated to events. \newline
+    - B.2: the user chooses one event from the list of events he created in the area dedicated to events. \newline
+    - The user chooses the option to accept an application from the list of applications not yet confirmed. \\
+    \hline
+    \end{tabular}
+\end{table}
+
 \end{frame}
 
 
@@ -2498,33 +2618,7 @@ You will need to register before his first race, then
 
 
 \begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Confirm application} \\
-        \hline
-        Goal & The user confirms an application received for one of his events. \\
-        \hline
-        Precondition & The user logged in, created at least one event and at least one pilot applied to it.\\
-        \hline
-        Postcondition & The application is confirmed and the pilot is automatically inserted as a participant
-        to all of the races of the event (this might change, e.g. in case the organizer decides to organize races 
-        in a tournament fashion, but the application will not be affected). \\
-        \hline
-        Workflow &
-        - A: the user chooses one event from the list of events he created in the homepage. \newline
-        - B.1: the user moves to the area dedicated to events. \newline
-        - B.2: the user chooses one event from the list of events he created in the area dedicated to events. \newline
-        - The user chooses the option to accept an application from the list of applications not yet confirmed. \\
-        \hline
-        \end{tabular}
-\end{table}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Organizer}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2543,33 +2637,31 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Read details on race} \\
-        \hline
-        Precondition & The user logged in, created at least one event and the event has at least one race. \\
-        \hline
-        Postcondition & The user obtains the details on the race and can move on (e.g. updating or deleting it.) \\
-        \hline
-        Workflow &
-        - A: the user chooses one event from the list of events he created in the homepage. \newline
-        - B.1: the user moves to the area dedicated to events. \newline
-        - B.2: the user chooses one event from the list of events he created in the area dedicated to events. \newline
-        - The user chooses one race from the list of races of the chosen event. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Read details on race} \\
+    \hline
+    Precondition & The user logged in, created at least one event and the event has at least one race. \\
+    \hline
+    Postcondition & The user obtains the details on the race and can move on (e.g. updating or deleting it.) \\
+    \hline
+    Workflow &
+    - A: the user chooses one event from the list of events he created in the homepage. \newline
+    - B.1: the user moves to the area dedicated to events. \newline
+    - B.2: the user chooses one event from the list of events he created in the area dedicated to events. \newline
+    - The user chooses one race from the list of races of the chosen event. \\
+    \hline
+    \end{tabular}
 \end{table}
+
 \end{frame}
 
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Organizer}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2590,32 +2682,30 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Create race} \\
-        \hline
-        Precondition & The user logged in. \\
-        \hline
-        Postcondition & A new race is available to the user to be added to an event. \\
-        \hline
-        Workflow &
-        - The user moves to the area dedicated to events. \newline
-        - The user chooses the option to create a new race. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Create race} \\
+    \hline
+    Precondition & The user logged in. \\
+    \hline
+    Postcondition & A new race is available to the user to be added to an event. \\
+    \hline
+    Workflow &
+    - The user moves to the area dedicated to events. \newline
+    - The user chooses the option to create a new race. \\
+    \hline
+    \end{tabular}
 \end{table}
+
 \end{frame}
 
 
-\subsection*{Internet}
+\subsubsection{Internet}
 
-\subsubsection*{Pilot}
+% \subsubsection*{Pilot}
 
 \begin{frame}
     \frametitle{Pilot}
@@ -2626,7 +2716,7 @@ You will need to register before his first race, then
 % %%%%% PILOT USE CASE SHEET %%%%%
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Pilot}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2644,32 +2734,29 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Explore not yet confirmed reservations} \\
-        \hline
-        Goal & The user explores the reservations he made that are not yet confirmed by any clerk \\
-        \hline
-        Precondition & The user logged in. \\
-        \hline
-        Postcondition & The user obtains the list of reservations that are not yet confirmed by any clerk. \\
-        \hline
-        Workflow &
-        - The user moves to the area dedicated to reservations and the list is already provided. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Explore not yet confirmed reservations} \\
+    \hline
+    Goal & The user explores the reservations he made that are not yet confirmed by any clerk \\
+    \hline
+    Precondition & The user logged in. \\
+    \hline
+    Postcondition & The user obtains the list of reservations that are not yet confirmed by any clerk. \\
+    \hline
+    Workflow &
+    - The user moves to the area dedicated to reservations and the list is already provided. \\
+    \hline
+    \end{tabular}
 \end{table}
+
 \end{frame}
 
-
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Pilot}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2697,7 +2784,7 @@ You will need to register before his first race, then
 
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Pilot}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2715,57 +2802,52 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Explore my past races} \\
-        \hline
-        Goal & The user explores the races he had in the past (not the races he booked through the previous 
-        use case). \\
-        \hline
-        Precondition & The user logged in. \\
-        \hline  
-        Postcondition & The user obtains the list of past races. \\
-        \hline
-        Workflow &
-        - The user moves to the area dedicated to races
-        and the list is already provided. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Explore my past races} \\
+    \hline
+    Goal & The user explores the races he had in the past (not the races he booked through the previous 
+    use case). \\
+    \hline
+    Precondition & The user logged in. \\
+    \hline  
+    Postcondition & The user obtains the list of past races. \\
+    \hline
+    Workflow &
+    - The user moves to the area dedicated to races
+    and the list is already provided. \\
+    \hline
+    \end{tabular}
 \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
-    \begin{table}
-        \tiny
-        \begin{tabular}{|p{2cm}|p{6cm}|}
-        \hline
-        Title & \textbf{Read details on race} \\
-        \hline
-        Goal & The user chooses one race to focus on and reads its details. \\
-        \hline
-        Precondition & The user logged in. \\
-        \hline
-        Postcondition & The user obtains the details on the race and related informations such as the best lap-time of
-        that race (it could be from the user himself or another pilot). \\
-        \hline
-        Workflow &
-        - The user moves to the area dedicated to races. \newline
-        - The user chooses one race from the list of past races. \\
-        \hline
-        \end{tabular}
+\begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
+    \hline
+    Title & \textbf{Read details on race} \\
+    \hline
+    Goal & The user chooses one race to focus on and reads its details. \\
+    \hline
+    Precondition & The user logged in. \\
+    \hline
+    Postcondition & The user obtains the details on the race and related informations such as the best lap-time of
+    that race (it could be from the user himself or another pilot). \\
+    \hline
+    Workflow &
+    - The user moves to the area dedicated to races. \newline
+    - The user chooses one race from the list of past races. \\
+    \hline
+    \end{tabular}
 \end{table}
+
 \end{frame}
 
 
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Pilot}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2799,10 +2881,7 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
     \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2824,9 +2903,8 @@ You will need to register before his first race, then
     \end{table}
 \end{frame}
 
-
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Pilot}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2844,11 +2922,7 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
     \end{table}
-\end{frame}
 
-
-\begin{frame}
-    \frametitle{Specification sheet}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2867,11 +2941,7 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
     \end{table}
-\end{frame}
 
-
-\begin{frame}
-    \frametitle{Specification sheet}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2890,11 +2960,12 @@ You will need to register before his first race, then
         - The user applies to the event. \\
         \hline
         \end{tabular}
-    \end{table}
+    \end{table}    
 \end{frame}
 
+
 \begin{frame}
-    \frametitle{Specification sheet}
+    \frametitle{Pilot}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2915,10 +2986,7 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
     \end{table}
-\end{frame}
 
-\begin{frame}
-    \frametitle{Specification sheet}
     \begin{table}
         \tiny
         \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -2941,9 +3009,10 @@ You will need to register before his first race, then
         \hline
         \end{tabular}
     \end{table}
+
 \end{frame}
 
-\subsubsection*{Visitor}
+% \subsubsection*{Visitor}
 
 \begin{frame}
     \frametitle{Visitor}
@@ -3007,9 +3076,9 @@ You will need to register before his first race, then
 
 % %%%%%%% DICTIONARY %%%%%%%
 
-\section*{Data dictionary}
+\subsection{Data dictionary}
 
-\subsection*{Primary entities}
+\subsubsection{Primary entities}
 
 \begin{frame}
 \frametitle{Data dictionary}
@@ -3034,7 +3103,10 @@ Name & \textbf{KartingCenter} \\
 \hline
 Synonym & Go-karting center \\
 \hline
-Description & Karting center \\
+Description & The karting center is one of the three core entities of \kc{},
+it is a place where newcomers can register and gain experience in go-kart racing.
+Karting centers have usually one track and sometimes more, they host events and 
+get reviewed by pilots. \\
 \hline
 Example of instance & 
 Name: Mantova Karting Center \newline
@@ -3060,6 +3132,7 @@ Components & KartingCenterReview \\
 \end{frame}
 
 \begin{frame}
+\frametitle{Data dictionary}
 \begin{table}
 \tiny
 \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -3094,7 +3167,8 @@ Name & \textbf{City} \\
 \hline
 Synonym & None \\
 \hline
-Description & City \\
+Description & A city can be the location of more karting centers (thus tracks)
+and events. \\
 \hline
 Example of instance & 
 Name: Mantova \\
@@ -3128,7 +3202,13 @@ Name & \textbf{Track} \\
 \hline
 Synonym & Circuit \\
 \hline
-Description & Track \\
+Description & A track (the second core entity) is the place where races
+take place, it hosts races that are parts of events as well 
+and receives reviews from pilots. 
+A track can have different asphalt types, such as asphalt,
+concrete, epoxy resin, tarmac, etc. Tracks can be considered
+easier or harder based on the number of turns or the length,
+and they can adopt different go-kart models. \\
 \hline
 Example of instance &
 Name: T1 \newline
@@ -3154,17 +3234,18 @@ Length: the length of the track \newline
 \textit{nEvents}: the number of events that had at least one race on the track \newline
 \textit{avgReviewScore}: the average score of the reviews of the track \\
 \hline
-Components & 
-Timetable, Leaderboard, TrackReview \\
-\hline
 \end{tabular}
 \end{table}
 \end{frame}
 
 \begin{frame}
+\frametitle{Data dictionary}
 \begin{table}
 \tiny
 \begin{tabular}{|p{2cm}|p{6cm}|}
+\hline
+Components & 
+Timetable, Leaderboard, TrackReview, Race \\
 \hline
 Relations &
 Track\_KartingCenter (N:1): the karting center the track belongs to \newline
@@ -3187,7 +3268,7 @@ Track\_Pilot (N:N): the pilots that have the track as one of their favourite \ne
 Superconcepts & None \\
 \hline
 Subconcepts & 
-PopularTrack: a track that is recurrent in the list of favourite tracks of pilots \\
+PopularTrack \\
 \hline
 \end{tabular}
 \end{table}
@@ -3203,7 +3284,9 @@ Name & \textbf{Go-kart} \\
 \hline
 Synonym & Kart \\
 \hline
-Description & Go-kart \\
+Description & Go-karts are the vehicles used 
+during races, they are dedicated to a specific track
+and different models can be accepted on the same track. \\
 \hline
 Example of instance &
 Name: T1.1 \newline
@@ -3217,7 +3300,8 @@ Components & None \\
 \hline
 Relations &
 GoKart\_Track (N:1): the track the go-kart is dedicated to \newline
-GoKart\_GoKartModel (N:1): the model of the go-kart \\
+GoKart\_GoKartModel (N:1): the model of the go-kart \newline
+GoKart\_LapTime (1:N): the lap-times made using this go-kart \\
 \hline
 Superconcepts & None \\
 \hline
@@ -3237,7 +3321,10 @@ Name & \textbf{Timetable} \\
 \hline
 Synonym & None \\
 \hline
-Description & Timetable \\
+Description & The timetable of a track can be considered
+as a calendar that keeps track of all the reservations made,
+for simplicity in \kc{} the timetable is a weak entity of the track
+that only has relations with reservations. \\
 \hline
 Example of instance &
 \textit{TrackName}: T1 \\
@@ -3269,7 +3356,16 @@ Name & \textbf{Leaderboard} \\
 \hline
 Synonym & Ranking \\
 \hline
-Description & Leaderboard \\
+Description & A leaderboard of a track is 
+a list of lap-times made by pilots during races,
+filtered and sorted by different criteria, e.g. 
+a leaderboard can show the best lap-times of the week
+made by pilots that are in the range of 18-25 years old,
+or the best lap-times of the month made by pilots that 
+have a weight between 70 and 80 kg, or the best lap-times ever
+made by pilots using a Sodi RX7.
+In the future \kc{} might implement leaderboards that filter
+by different genders (taking care of being as inclusive as possible). \\
 \hline
 Example of instance &
 Title: Best of the week \newline
@@ -3303,7 +3399,16 @@ Name & \textbf{Race} \\
 \hline
 Synonym & None \\
 \hline
-Description & Race \\
+Description & A race is a competition involving many 
+(but it could be just one) pilots that, everytime they complete
+a lap, generate a lap-time. A race can be created on the spot by
+the karting center administrator or a reservation can be made by
+a pilot or an organizer, such reservation is then confirmed by a clerk.
+The difficulty in handling a race is that it gets first created by
+a pilot or an organizer, together with its reservation, and 
+during the race different relations are automatically created
+with the help of a telemetry system that records the lap-times
+of the pilots. \\
 \hline
 Example of instance &
 ID: 2036 \newline
@@ -3327,13 +3432,14 @@ ForEvent: whether the race was created by an organizer for an event or not \newl
 \textit{nParticipants} \newline
 \textit{fastestLapTime} \\
 \hline
-Components & Reservation \\
+Components & Reservation, Lap-time \\
 \hline
 \end{tabular}
 \end{table}
 \end{frame}
 
 \begin{frame}
+\frametitle{Data dictionary}
 \begin{table}
 \tiny
 \begin{tabular}{|p{2cm}|p{6cm}|}
@@ -3365,7 +3471,18 @@ Name & \textbf{Reservation} \\
 \hline
 Synonym & Booking \\
 \hline
-Description & Reservation \\
+Description & A reservation is a weak entity of a race,
+it is created automatically when a pilot or an organizer 
+makes a reservation and it is later confirmed by a clerk.
+When the karting center administrator creates 
+a race on the spot, as by February 2024, the associated
+reservation is created automatically and connected to a 
+fictitious organizer created apriori, then confirmed automatically
+by a fictitious clerk created apriori for every karting center.
+Further improvements might allow the reservation to be created
+without the need of such fictitious instances that only 
+cause an overload for the simple sake of not leaving empty fields 
+in the reservation. \\ 
 \hline
 Example of instance &
 Date: 2024-02-15 \newline
@@ -3386,6 +3503,16 @@ is mutually exclusive with \textit{ReservedByPilot}) \newline
 \textit{ConfirmedByClerk}: the clerk who confirmed the reservation \\
 \hline
 Components & None \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\frametitle{Data dictionary}
+\begin{table}
+\tiny
+\begin{tabular}{|p{2cm}|p{6cm}|}
 \hline
 Relations &
 Reservation\_Timetable (N:1): the timetable where the reservation is stored \newline
@@ -3412,16 +3539,30 @@ Name & \textbf{Lap-time} \\
 \hline
 Synonym & Lap \\
 \hline
-Description & Lap-time \\
+Description & A lap-time is the measurement 
+of the time taken by a pilot to complete a lap 
+of a track with a go-kart. 
+Every race has a best lap-time,
+chances that more pilots made lap-times with the same
+best time are very low, but in any case the they are both stored
+so there is no worry about one of the two being forgotten or not
+getting the credit it deserves.
+the best lap-time chosen for the race in this case is the one 
+that has been made first, in any leaderboard the \textit{discarded}
+lap-time can be shown as the first one in the list in case the sorting
+policy sorts ties by the name of the pilot or its weight or its age. \\
 \hline
 Example of instance &
 LapNumber: 7 \newline
-LapTime: 00:00:48.595 \\
+LapTime: 00:00:48.595 \newline
+\textit{GoKartModel}: Sodi RX7 \\
+\textit{PilotUsername}: denisfesta \\
 \hline
 Properties &
 LapNumber: the \textit{LapNumber}-th lap \newline
 LapTime: the time measured for the \textit{LapNumber}-th lap for 
-a particular pilot \\
+a particular pilot \newline
+\textit{GoKartModel}: the go-kart model used by the pilot \\
 \hline
 Components & None \\
 \hline
@@ -3449,7 +3590,9 @@ Name & \textbf{Application} \\
 \hline
 Synonym & Request \\
 \hline
-Description & Application \\
+Description & An application is a weak entity of an event, it is created
+by a pilot who wants to participate to an event and approved by the organizer
+of the event. \\
 \hline
 Example of instance &
 Confirmed: true \newline
@@ -3487,7 +3630,14 @@ Name & \textbf{Event} \\
 \hline
 Synonym & Tournament \\
 \hline
-Description & Event \\
+Description & An event (the third core entity) is a sequence of races organized on different
+tracks (but it could be the same track) of different karting centers
+and involves many pilots whose applications were all accepted by the organizer
+or who were directly inserted as participants by the organizer.
+Events can have different targets such as being open to everyone,
+to intermediate or to pro pilots, the organizer will decide whether 
+accepting or not the applications based on the record of the pilots
+requesting to participate. \\
 \hline
 Example of instance &
 Name: Mantova Karting Cup 2024 \newline
@@ -3505,22 +3655,26 @@ Name: the name of the event \newline
 Price: the price of the event \newline
 \textit{FirstDate}: the date of the first race of the event \newline
 \textit{OrganizerName}: the username of the organizer who created the event \newline
-\textit{EventCategory}: the category of the event (\textit{open, intermediate, pro})\newline
-\textit{nParticipants}: the number of pilots who applied for the event and whose application was confirmed\newline
-\textit{nRaces}: the number of races of the event \newline
-\textit{nReviews}: the number of written reviews about the event \newline
-\textit{avgReviewScore}: the average score of the reviews about the event \\
+\textit{EventCategory}: the category of the event (\textit{open, intermediate, pro}) \\
 \hline
-Components & EventReview \\
-\hline
+% continue
 \end{tabular}
 \end{table}
 \end{frame}
 
 \begin{frame}
+\frametitle{Data dictionary}
 \begin{table}
 \tiny
 \begin{tabular}{|p{2cm}|p{6cm}|}
+\hline
+Properties & 
+\textit{nParticipants}: the number of pilots who applied for the event and whose application was confirmed\newline
+\textit{nRaces}: the number of races of the event \newline
+\textit{nReviews}: the number of written reviews about the event \newline
+\textit{avgReviewScore}: the average score of the reviews about the event \\
+\hline
+Components & EventReview, Application \\
 \hline
 Relations &
 Event\_Organizer (N:1): the organizer who created the event \newline
@@ -3553,7 +3707,8 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & Opinion \\
     \hline
-    Description & Review \\
+    Description & A review is a text written by a pilot about a karting center, a track or an event,
+    accompanied by a score from 1 to $N$. \\
     \hline
     Example of instance &
     TextReview: Fantastic track, with a lot of bumps and holes. \newline
@@ -3584,11 +3739,11 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     Name & \textbf{KartingCenterReview} \\
     \hline
     Synonym & None \\
-    \hline
-    Description & Karting center review \\
+    % \hline
+    % Description & Karting center review \\
     \hline
     Example of instance &
-    TextReview (inherited from \textbf{Review}): Very rude and violent staff, but nice tracks! \newline
+    TextReview (inherited from \textbf{Review}): Very rude and violent staff but nice tracks! \newline
     Score (inherited from \textbf{Review}): 4/5 \\
     \hline
     Properties & None \\
@@ -3616,8 +3771,8 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     Name & \textbf{TrackReview} \\
     \hline
     Synonym & None \\
-    \hline
-    Description & Track review \\
+    % \hline
+    % Description & Track review \\
     \hline
     Example of instance &
     TextReview (inherited from \textbf{Review}): The track is very nice, but the asphalt is not in good conditions. \newline
@@ -3648,8 +3803,8 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     Name & \textbf{EventReview} \\
     \hline
     Synonym & None \\
-    \hline
-    Description & Event review \\
+    % \hline
+    % Description & Event review \\
     \hline
     Example of instance &
     TextReview (inherited from \textbf{Review}): The event was a mess, delayed a couple of times and 
@@ -3672,7 +3827,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \end{table}
 \end{frame}
 
-\subsection*{Users' entities}
+\subsubsection{Users' entities}
 
 \begin{frame}
     \frametitle{Data dictionary}
@@ -3684,7 +3839,9 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & User \\
+    Description & This entity represents a registered user
+    (not to be confused with the generic user, whose informations
+    are not stored anywhere) who can login or logout. \\
     \hline
     Example of instance &
     Username: denisfesta \newline
@@ -3722,9 +3879,9 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Name & \textbf{Admin} \\
     \hline
-    Synonym & Administrator \\
+    Synonym & Information system administrator \\
     \hline
-    Description & The administrator does not have any relation with other 
+    Description & The information system administrator does not have any relation with other 
     entities of the information system but is needed to create karting center administrators,
     organizers and all the auxiliary objects useful for the visitor to explore easily. \\
     \hline
@@ -3754,7 +3911,12 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & Karting center administrator \\
+    Description & The karting center administrator is in charge of one or more 
+    karting centers, he can create tracks and go-karts, create race on the spot,
+    register newcomers on-site (or delete pilots for their misconduct), 
+    register clerks and assign them one of the karting centers he is in charge of,
+    make modifications to the karting centers but not 
+    delete or create new karting centers. \\
     \hline
     Example of instance & Empty (all the properties are inherited from \textbf{User}) \\
     \hline
@@ -3783,7 +3945,8 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & Clerk \\
+    Description & The clerk is in charge of confirming reservations made by pilots or organizers and 
+    moderating the reviews written by pilots. \\
     \hline
     Example of instance & Empty (all the properties are inherited from \textbf{User}) \\
     \hline
@@ -3813,7 +3976,10 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & Organizer \\
+    Description & The organizer can create events by putting together
+    different races he already created and asked for reservations,
+    while creating races he can manually insert pilots of his choice
+    he can also accept or refuse applications made by pilots. \\
     \hline
     Example of instance & Empty (all the properties are inherited from \textbf{User}) \\
     \hline
@@ -3844,7 +4010,13 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & Pilot \\
+    Description & The pilot can make participate to events (if his application
+    is accepted by the organizer or is directly inserted by the organizer),
+    he can participate to race created by other pilots or create his own
+    races and make reservations for them. 
+    He can also write reviews about karting centers, tracks and events.
+    He can choose his favourite tracks to help making them popular,
+    scroll his past races and lap-times. \\
     \hline
     Example of instance &
     Username (inherited from \textbf{User}): denisfesta \newline
@@ -3861,6 +4033,17 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     Weight: the weight of the pilot \\
     \hline
     Components & None \\
+    \hline
+    % continue
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Data dictionary}
+    \begin{table}
+    \tiny
+    \begin{tabular}{|p{2cm}|p{6cm}|}
     \hline
     Relations &
     Pilot\_KartingCenterReview (1:N): the reviews the pilot wrote about karting centers \newline
@@ -3882,7 +4065,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \end{table}
 \end{frame}
 
-\subsection*{Auxiliary entities}
+\subsubsection{Auxiliary entities}
 
 \begin{frame}
     \frametitle{Data dictionary}
@@ -3894,7 +4077,8 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & Review score range \\
+    Description & A filtering of the three types of reviews (karting center, track, event)
+    based on the average score of the reviews. \\
     \hline
     Example of instance &
     LowerBoundIncluded: 1 \newline
@@ -3929,7 +4113,9 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & A range of number of pilots \\
+    Description & A filtering of the karting centers and tracks based on the number of 
+    pilots who participated to at least one race on the track of the karting center. \\
+    who participated in at least one race on the track of the karting center. \\
     \hline
     Example of instance &
     LowerBoundIncluded: 0 \newline
@@ -3963,7 +4149,9 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & A range of number of races \\
+    Description & A filtering of the karting centers and tracks based on the number of
+    races that took place on the track of the karting center or on the karting center 
+    in general (the sum of the number of races on all the tracks of the karting center). \\
     \hline
     Example of instance &
     LowerBoundIncluded: 10000 \newline
@@ -3998,7 +4186,10 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & A range of number of events \\
+    Description & A filtering of the karting centers and tracks based on the number of
+    events that took place on the track of the karting center or on the karting center
+    (an event that has two races on two different tracks of the same karting center 
+    is counted as one event for the karting center). \\
     \hline
     Example of instance &
     LowerBoundIncluded: 0 \newline
@@ -4032,7 +4223,8 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & Go-kart model \\
+    Description & There exist many different rental go-kart models,
+    such as Sodi RX7, Sodi SR4, CRG Centurion, OTL Storm Prokart, etc. \\
     \hline
     Example of instance &
     GoKartModel: Sodi RX7 \\
@@ -4065,7 +4257,8 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & Track asphalt \\
+    Description & A track can have different types of asphalt,
+    such as asphalt, concrete, resin, tarmac, etc. \\
     \hline
     Example of instance &
     TrackAsphalt: Asphalt \\
@@ -4097,7 +4290,9 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & Track difficulty \\
+    Description & Track difficulty is a subjective measure of the difficulty of a track,
+    it is decided by the karting center administrator based on the number of turns,
+    the length of the track and other factors. \\
     \hline
     Example of instance &
     TrackDifficulty: Intermediate \\
@@ -4129,7 +4324,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & Track length range \\
+    Description & A filtering of the tracks based on their length. \\
     \hline
     Example of instance &
     LowerBoundIncluded: 0 \newline
@@ -4161,7 +4356,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Name & \textbf{PopularTrack} \\
     \hline
-    Synonym & None \\
+    Synonym & Famous track \\
     \hline
     Description & A popular track is a track that has been selected as favorite by
     at least $N$ pilots.\newline
@@ -4292,7 +4487,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & A range of price of the events \\
+    Description & A filtering of the events based on their price. \\
     \hline
     Example of instance &
     LowerBoundIncluded: 0 \newline
@@ -4349,7 +4544,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \end{table}
 \end{frame}
 
-\subsection*{Site views}
+\subsection{Site views}
 
 % \begin{frame}
 %     \frametitle{Site views}
@@ -4421,7 +4616,10 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \hline
         \textbf{Area Name} & \textbf{Area Description} & \textbf{Objects} & \textbf{Priority} \\
         \hline
-        Home & Empty & UpcomingEvent, Track, KartingCenter & High \\
+        Home & The visitor is welcomed with a list of upcoming events,
+        the tracks on which the events will take place and the karting centers hosting the events.
+        By choosing one element from one of the three lists, he can move to other areas.
+        & UpcomingEvent, Track, KartingCenter & High \\
         \hline
         % continue
         \end{tabular}
@@ -4436,23 +4634,58 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
         % continue
         \hline
-        KartingCenter & Empty & KartingCenter, City, NPilotsRange, NRacesRange, NEventsRange, ReviewScoreRange & High \\
+        KartingCenter & The default page allows the visitor to explore karting centers
+        by filtering them using different criteria (access subschemes), then, when he selects a karting center,
+        he can read its details and move to other areas to get further informations related to the karting center.
+         & KartingCenter, City, NPilotsRange, NRacesRange, NEventsRange, ReviewScoreRange & High \\
         \hline
-        Tracks & Empty & Track, TrackAsphalt, TrackDifficulty, TrackLengthRange, City, NPilotsRange, NRacesRange, NEventsRange, ReviewScoreRange,
+        Track & The default page allows the visitor to explore tracks
+        by filtering them using different criteria (access subschemes), then, when he selects a track,
+        he can read its details and move to other areas to get further informations related to the track.
+        & Track, TrackAsphalt, TrackDifficulty, TrackLengthRange, City, NPilotsRange, NRacesRange, NEventsRange, ReviewScoreRange,
         GoKartModel, PopularTrack & High \\
         \hline
-        Event & Empty & Event, City, ReviewScoreRange, PriceRange, EventCategory, PopularEvent, ControversialEvent, 
+        Event & The default page allows the visitor to explore events
+        by filtering them using different criteria (access subschemes), then, when he selects an event,
+        he can read its details and move to other areas to get further informations related to the event.
+         & Event, City, ReviewScoreRange, PriceRange, EventCategory, PopularEvent, ControversialEvent, 
         UpcomingEvent & High \\
         \hline
-        Race & Empty & Race & Medium \\
+        \end{tabular}
+    \end{table}
+\end{frame}
+% continue
+\begin{frame}
+    \frametitle{Site views}
+    \begin{table}
+        \centering
+        \tiny
+        \setlength{\tabcolsep}{1pt}
+        \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
         \hline
-        Pilot & Empty & Pilot & Medium \\
+        Race & The area is reached by selecting a track, an event or a pilot and gives the visitor
+        a list of races, by choosing one he can read its details and move to other areas to get further informations
+        related to the race.
+         & Race & Medium \\
         \hline
-        Laptime & Empty & LapTime & Low \\
+        Pilot & The area is reached by selecting a track, a race or an event and gives the visitor
+        a list of pilots, by choosing one he can read its details and move to other areas to get further informations
+        related to the pilot.
+         & Pilot & Medium \\
         \hline
-        Leaderboard & Empty & Leaderboard & Medium \\
+        Laptime & The area is reached by
+        selecting a race and gives the visitor a list of lap-times, by choosing one he can read its details
+        and move to other areas to get further informations related to the lap-time.
+         & LapTime & Low \\
         \hline
-        Review & Empty & KartingCenterReview, TrackReview, EventReview & Medium \\
+        Leaderboard & The area is reached by selecting a karting center or a track
+        and gives the visitor a list of leaderboards, by choosing one he can read its details
+        and move to the pilot area to get further informations related to the pilot who made the lap-time.
+         & Leaderboard & Medium \\
+        \hline
+        Review & The area is reached by either selecting a karting center, a track or an event
+        and gives the visitor a list of reviews related to the selected object, by choosing one he can read its details.
+         & KartingCenterReview, TrackReview, EventReview & Medium \\
         \hline
         \end{tabular}
     \end{table}
@@ -4484,14 +4717,38 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \hline
         \textbf{Area Name} & \textbf{Area Description} & \textbf{Objects} & \textbf{Priority} \\
         \hline
-        Home & Empty & Pilot, Race, Event & High \\
+        Home & The pilot is welcomed with his details, a list of his past races 
+        and a list of events that he applied to and were confirmed.
+         & Pilot, Race, Event & High \\
+         \hline
+        %  continue
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Site views}
+    \begin{table}
+        \centering
+        \tiny
+        \setlength{\tabcolsep}{1pt}
+        \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
         \hline
-        Reservations & Empty & Race, Reservation & High \\
+        Reservations & The default page shows a list of confirmed reservations and a list of not yet confirmed reservations,
+        by choosing an element from the second list the pilot can move to another page to edit or delete the reservation, the same page allows
+        to create a new race and reservation.
+         & Race, Reservation & High \\
         \hline
-        Race & Empty & Race, LapTime, KartingCenter, KartingCenterReview, Track, TrackReview
+        Race & The area shows a list of past races the pilot participated in, by choosing one he can read its details,
+        write a review of the karting center or the track that hosted the race.
+         & Race, LapTime, KartingCenter, KartingCenterReview, Track, TrackReview
         (Pilot, Track, Timetable and KartingCenter when operating on Race) & High \\
         \hline
-        Event & Empty & Event, EventReview, Application & High \\
+        Event & The area shows a list of events the pilot applied to but 
+        the application was not yet confirmed and 
+        a list of upcoming events the pilot did not apply to, by choosing one from the second list
+         he can apply to it. The pilot can also write a review about the events he participated in.
+         & Event, EventReview, Application & High \\
         \hline
         \end{tabular}
     \end{table}
@@ -4519,9 +4776,15 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \hline
         \textbf{Area Name} & \textbf{Area Description} & \textbf{Objects} & \textbf{Priority} \\
         \hline
-        Home & Empty & Event, Application & High \\
+        Home & The organizer is welcomed with a list of the events he created and a list
+        of the applications he received.
+         & Event, Application & High \\
         \hline
-        Event & Empty & Event, Application, Race (EventCategory and Organizer when operating on Event,
+        Event & The area shows the list of events the organizer created in the default page,
+        then by choosing one among the not yet confirmed applications he can confirm it.
+        The organizer can also edit, delete or create new races that he can use to 
+        create new events or to add to the existing ones.
+         & Event, Application, Race (EventCategory and Organizer when operating on Event,
         Pilot, Track, Timetable and KartingCenter when operating on Race)
         & High \\
         \hline
@@ -4553,11 +4816,18 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \hline
         \textbf{Area Name} & \textbf{Area Description} & \textbf{Objects} & \textbf{Priority} \\
         \hline
-        Home & Empty & Clerk, KartingCenterReview, TrackReview, EventReview & High \\
+        Home & The clerk is welcomed with a list of the reviews on the karting center he works for,
+        on the tracks of the karting center and on the events hosted by the karting center.
+         & Clerk, KartingCenterReview, TrackReview, EventReview & High \\
         \hline
-        Reservation & Empty & Track, Reservation (Timetable as the list of reservations) & High \\
+        Reservation & The area shows a list of reservations made by pilots to the karting center,
+        by choosing one he can confirm it.
+         & Track, Reservation (Timetable as the list of reservations) & High \\
         \hline
-        Review & Empty & KartingCenterReview, TrackReview, EventReview, Pilot & High \\
+        Review & The review area is reached by selecting a review from the default page of the default area. 
+        The clerk can read it and delete it
+        if considered inappropriate.
+         & KartingCenterReview, TrackReview, EventReview, Pilot & High \\
         \hline
         \end{tabular}
     \end{table}
@@ -4590,19 +4860,46 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \hline
         \textbf{Area Name} & \textbf{Area Description} & \textbf{Objects} & \textbf{Priority} \\
         \hline
-        Home & Empty & KartingCenterAdministrator, KartingCenter, Pilot, Clerk, Track & High \\
+        Home & The karting center administrator is welcomed with a list of his karting centers,
+        by choosing one he can get the list of tracks, the list of clerks or the list of pilots
+        related to the selected karting center.
+         & KartingCenterAdministrator, KartingCenter, Pilot, Clerk, Track & High \\
         \hline
-        KartingCenter & Empty & KartingCenter, City & High \\
+        KartingCenter & The area shows a list of karting centers the administrator is responsible for,
+        by choosing one he can edit or delete it, or create a new one.
+         & KartingCenter, City & High \\
         \hline
-        Track & Empty & Track, (GoKartModel, TrackAsphalt and
+        % continue
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Site views}
+    \begin{table}
+        \centering
+        \tiny
+        \setlength{\tabcolsep}{1pt}
+        \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
+        % continue
+        \hline
+        Track & The area shows the list of all the tracks from all the karting centers
+        the administrator is responsible for, by choosing one he can edit or delete it, or create a new one.
+         & Track, (GoKartModel, TrackAsphalt and
         Track when operating on Track) & High \\
         \hline
-        Race & Empty & Race, Reservation (Timetable as the list of reservations, 
+        Race & The area shows the list of all the races 
+        from all the karting centers the administrator is responsible for, by choosing one he can edit or delete it, or create a new one.
+         & Race, Reservation (Timetable as the list of reservations, 
         Pilot, Track and KartingCenter when operating on Race) & High \\
         \hline
-        Pilot & Empty & Pilot & High \\
+        Pilot & The area shows the list of all the pilots (also from other karting centers),
+        by choosing one he can edit or delete it, or create a new one.
+         & Pilot & High \\
         \hline
-        Clerk & Empty & Clerk (Karting center when operating on Clerk) & High \\
+        Clerk & The area shows the list of all the clerks that work in a 
+        karting center the administrator is responsible for, by choosing one he can edit or delete it, or create a new one.
+         & Clerk (Karting center when operating on Clerk) & High \\
         \hline
         \end{tabular}
     \end{table}
@@ -4636,28 +4933,60 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \hline
         \textbf{Area Name} & \textbf{Area Description} & \textbf{Objects} & \textbf{Priority} \\
         \hline
-        Home & Empty & Admin & High \\
+        Home & The area welcomes the information system administrator with his own details.
+         & Admin & High \\
         \hline
-        K.C.Administrator & Empty & KartingCenterAdministrator (KartingCenter when operating
+        K.C.Administrator & The area shows a list of all the karting center administrators,
+        by choosing one he can edit or delete it, or create a new one.
+         & KartingCenterAdministrator (KartingCenter when operating
         on KartingCenterAdministrator) & High \\
         \hline
-        KartingCenter & Empty & KartingCenter, (City and KartingCenterAdministrator when creating KartingCenter, KartingCenterReview 
+        % continue
+        \end{tabular}
+    \end{table}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Site views}
+    \begin{table}
+        \centering
+        \tiny
+        \setlength{\tabcolsep}{1pt}
+        \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
+        % continue
+        \hline
+        KartingCenter & The area shows a list of all the karting centers,
+        by choosing one he can edit or delete it, or create a new one.
+         & KartingCenter, (City and KartingCenterAdministrator when creating KartingCenter, KartingCenterReview 
         deleted when deleting KartingCenter) & High \\
         \hline
-        Organizer & Empty & Organizer & High \\
+        Organizer & The area shows a list of all the organizers,
+        by choosing one he can edit or delete it, or create a new one.
+         & Organizer & High \\
         \hline
-        AuxiliaryEntity & Empty & City, GoKartModel, 
+        AuxiliaryEntity & The area allows to create, read, update and delete the auxiliary entities.
+         & City, GoKartModel, 
         TrackAsphalt, TrackDifficulty, TrackLengthRange, ReviewScoreRange, NPilotsRange, NRacesRange, NEventsRange, PriceRange, EventCategory & Medium \\
         \hline
         \end{tabular}
     \end{table}
 \end{frame}
 
-\subsection*{Subschemes}
+\section{Data model}
+
+\subsection{Objects' classification}
 
 \begin{frame}
     \frametitle{Subschemes}
-    Subschemes adopted in the project.
+    In \kc{} the core entities are \textbf{Karting center}, \textbf{Track}, and \textbf{Event},
+    the union of each entity with the set of its weak entities forms the core subscheme associated to the core entity. 
+    Core entities are accessible one from the other through different paths, the interconnection subschemes
+    allow for a fluent navigation between them without the need to go back to the home page.  
+    In order to provide a better experience for the user, the core entities are made accessible through
+    two other types of subschemes: the visitor will benefit from access subschemes, the registered users will additionally
+    benefit from personalization subschemes.
+    \footnotetext{The following four slides are thought to be scrolled in full screen just to grasp the whole picture, 
+    then each subscheme will be zoomed in.}
 \end{frame}
 
 
@@ -4666,6 +4995,14 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \begin{figure}
         \centering
         \includegraphics[width=0.7\linewidth]{drawio/core-subschemes.pdf}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Personalization}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.7\linewidth]{drawio/personalization-subschemes.pdf}
     \end{figure}
 \end{frame}
 
@@ -4685,23 +5022,136 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \end{figure}
 \end{frame}
 
+% *cropped.pdf
+
 \begin{frame}
-    \frametitle{Personalization}
+    \frametitle{Core subschemes}
     \begin{figure}
         \centering
-        \includegraphics[width=0.7\linewidth]{drawio/personalization-subschemes.pdf}
+        \includegraphics[width=1\linewidth]{drawio/core-subschemes-cropped.pdf}
     \end{figure}
 \end{frame}
 
+\begin{frame}
+    \frametitle{Personalization subschemes}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{drawio/personalization-subschemes-cropped.pdf}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Personalization subschemes}
+    \scriptsize
+    Among the five registered users, the information system admin is the one that does not need a 
+    personalization subscheme, his duty is to manage the system and, with it, all the entities, without
+    a specific focus on some instances with respect to others.
+    The \textbf{Pilot} is the user with the highest number of personalization subschemes: 
+    \begin{itemize}
+        \item he is the only one able to write the three types of reviews,
+        \item he can participate to races (and, as a particular case,
+        he has a personalized access to his last race),
+        \item for every race he participate to, he has a personalized list of his lap-times (made public, but still
+        personalized to him),
+        \item he can ask for a reservation on a track of a karting center,
+        \item he can apply to events (and, as a particular case, he is accepted to participate
+        to an event),
+        \item he has a personalized list of his favourite tracks.
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Personalization subschemes}
+    \scriptsize
+    The \textbf{Organizer} has a personalized access to the reservations he made to create races that are part of his events,
+    then he has access to his events, he does not need a personalized access to the applications he received and confirmed
+    because all the applications received must have been to one of his events and he is the only one able to accept them,
+    so the personalized access to the events is sufficient.\\
+    The \textbf{Clerk} has a personalized access to the karting center he works for, all the clerks of a karting center can 
+    access the same list of not yet confirmed reservations to a track of the karting center, once a reservation is confirmed, the name of the clerk who confirmed it
+    is associated to the reservation, and this the second personalized access of the clerk.\\
+    The \textbf{Karting center administrator} has a personalized access to the karting centers he is responsible for.
+\end{frame}
 
 
-\subsection*{Coarse hypertext model}
+\begin{frame}
+    \frametitle{Interconnection subschemes}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{drawio/interconnection-subschemes-cropped.pdf}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Intreconnection subschemes}
+    \scriptsize
+    The core entities are reachable one from the other through different paths, among which two most important can be identified, which recursively
+    contain the other interconnection subschemes:
+    \begin{itemize}
+        \item the karting center has many tracks (this relationship is already an interconnection subscheme between \textbf{Karting center} and \textbf{Track}),
+        and the tracks are the places where the races take place, so when a race is part of an event, the event is connected to different karting centers 
+        through the path \textbf{Event} $\rightarrow$ Race $\rightarrow$ \textbf{Track} $\rightarrow$ \textbf{Karting center}, this path also allows
+        the track to be connected to the event, and this is another interconnection subscheme between \textbf{Event} and \textbf{Track}.
+        \item The pilot can participate to different races and events, so e.g. when a visitor is exploring a leaderboard and sees the name of 
+        a pilot, he might be interested in knowing more about the events he participated to, and these events might have been hosted by different karting centers 
+        from the one that has the track whose leaderboard the visitor was started from. The path \textbf{Karting center} $\rightarrow$ \textbf{Track} $\rightarrow$
+        Race $\rightarrow$ Pilot $\rightarrow$ \textbf{Event} is the interconnection subscheme between \textbf{Karting center} and \textbf{Event} that can lead from pilot
+        that raced in a karting center to other events the pilot participated to, and the inverse path can lead from an event to the pilots that raced in it
+        and what other karting centers they raced in.
+    \end{itemize}
+    There are many different paths that can be followed to also reach different instances from the same entity, the first path is the most \textit{reasonable} and the 
+    second is an example of a possible navigation that the visitor might want to follow.
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{Access subschemes}
+    \begin{figure}
+        \centering
+        \includegraphics[width=1\linewidth]{drawio/access-subschemes-cropped.pdf}
+    \end{figure}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Access subschemes}
+    \scriptsize
+    The access subschemes are the most important for the visitor, they allow him to reach the core entities
+    through an explorative research rather than a lookup search. The visitor is offered a series of filters to reach the core entities,
+    the filters are not to be mistaken for weak entities, they are categorization criteria that can be created before even creating
+    the core entities. It is worth noticing that among the access subschemes there are some entities that extend the core entities
+    (PopularTrack, PopularEvent, ControversialEvent, UpcomingEvent), these should not be considered as real extensions of the core entities 
+    as it happens in an object-oriented model, they are to be considered as a materialized view of the database, a stored query that filters out
+    many of the instances of the core entities, keeping only those that satisfy a certain condition.
+\end{frame}
+
+\section{Hypertext model}
+
+\begin{frame}
+    \frametitle{Hypertext model}
+    The hypertext model is composed of a preliminar phase that produces a coarse hypertext model,
+    followed by a detailed phase that produces the detailed hypertext model.
+    The second phase is not presented in this report, but a prototype created with the tool \textit{Webratio} will be made available.
+\end{frame}
+
+\subsection{Coarse hypertext model}
+
+\begin{frame}
+    \frametitle{Coarse hypertext model}
+    In addition to the commonly used primitives
+        $$\text{Core}(\text{core\_entity},\text{component}_1,\dots,\text{component}_N),$$
+        $$\text{Access}(\text{Core\_entity},\text{access\_entity},\dots,\text{access\_entity}_N),$$
+        $$\text{Interconnection}(\text{entity}_1, \text{role}_1, \dots, \text{role}_N),$$
+        $$\text{Personalization}(\text{entity}_1, \text{role}, \dots, \text{role}_N)$$
+        and others, we adopt the primitive 
+    $$ \text{CoreSub.}(\text{core\_weak\_entity}_1,\dots,\text{core\_weak\_entity}_N) $$
+    to represent the focus of a page on the components only of a core entity, without the need to show the core entity itself.
+\end{frame}
 
 \begin{frame}
     \frametitle{Public view}
     \begin{figure}
         \centering
-        \includegraphics[width=0.8\textwidth]{drawio/public-view.pdf}
+        \includegraphics[width=0.9\textwidth]{drawio/public-view.pdf}
     \end{figure}
 \end{frame}
 
@@ -4709,7 +5159,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \frametitle{Pilot}
     \begin{figure}
         \centering
-        \includegraphics[width=0.8\textwidth]{drawio/pilot-view.pdf}
+        \includegraphics[width=0.9\textwidth]{drawio/pilot-view.pdf}
     \end{figure}
 \end{frame}
 
@@ -4717,7 +5167,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \frametitle{Organizer}
     \begin{figure}
         \centering
-        \includegraphics[width=0.8\textwidth]{drawio/organizer-view.pdf}
+        \includegraphics[width=1\textwidth]{drawio/organizer-view.pdf}
     \end{figure}
 \end{frame}
 
@@ -4741,34 +5191,8 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \frametitle{Information system administrator}
     \begin{figure}
         \centering
-        \includegraphics[width=0.8\textwidth]{drawio/is-admin-view.pdf}
+        \includegraphics[width=1\textwidth]{drawio/is-admin-view.pdf}
     \end{figure}
 \end{frame}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-% Quando voglio visitare un nuovo arrivo
-% utilizzo non una query ma una derivata
-% che calcola la query una volta sola
 
 \end{document}
