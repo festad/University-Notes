@@ -71,18 +71,18 @@ at the closest karting center. \kc{} allows pilots to organize
 their own races by choosing a track of a karting center, picking a date 
 and a time and inserting the names of the pilots that will participate,
 then the system will create a reservation that the clerk of the target karting center
-will confirm. Organizers can create events, that is, a sequence of races that can take
-place on different tracks, they can insert pilots of their choice and they can accept
+will confirm. Organizers can create events (an event is a sequence of races that can take
+place on different tracks), they can insert pilots of their choice and they can accept
 applications from pilots that want to participate. Similarly to before, the system 
 will create reservations that the clerks of the karting centers will confirm.
 Karting center administrators can manage their karting centers by adding new
 tracks and go-karts or registering new pilots and clerks.
 Clerks can confirm reservations from pilots and organizers and moderate reviews
 that pilots write about karting centers, tracks and events.
-The information system administrator can manage the system by creating new karting centers,
+The information system administrator can manage the information system by creating new karting centers,
 karting center administrators and organizers, they can also take care of all the
-entities that help the visitors to navigate the website, such as cities, all the different 
-categories or ranges useful to filter the karting centers, tracks and events.
+entities that help the visitors to navigate the website, such as cities, categories or ranges 
+useful to filter karting centers, tracks and events.
 \end{frame}
 
 
@@ -110,8 +110,8 @@ categories or ranges useful to filter the karting centers, tracks and events.
         Group name & \textbf{User} \\
         \hline
         Description & The generic user can explore karting centers, tracks, events, the races that
-        took place on tracks, the races an event organized and the races a particular pilot had.
-        Different filtering mechanisms are made available to the user to help him in his search. \\
+        took place on tracks, the races an event organized, the races a particular pilot had, and more...
+        Different filtering mechanisms are made available to the user to help him throughout hhis navigation. \\
         \hline
         Profile data & None \\
         \hline
@@ -174,7 +174,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         - Explore races from event \newline
         - Read reviews on event \\
         \hline
-        Read & Karting center, Track (and Popular track) and implicitly Timetable, Race, Pilot, Event (and its subentities),
+        Read & Karting center, Track (and Popular track) and implicitly Timetable through Reservation, Race, Pilot, Event (and its subentities),
         Review on karting center, Review on track, Review on event, Leaderboard, Lap-time, \newline
         City, Go-kart model, Track asphalt type, Track length range, Review score range, N. pilots range,
         N. races range, N. events range, Price range, Event category. \\
@@ -194,7 +194,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         \hline
         Group name & \textbf{Intranet} \\
         \hline
-        Description & The users of the intranet side of kc{} are 
+        Description & The users of the intranet side of \kc{} are 
         all registered and act on the karting center in different ways. \\
         \hline
         Profile data & Username, Password, Email, Name, Surname, Address \\
@@ -209,7 +209,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         \hline
         Read & Everything the generic user can read \\
         \hline
-        Write & Karting center (in different ways) \\
+        Write & Karting center (in different ways depending on the subgroup) \\
         \hline
         \end{tabular}
     \end{table}
@@ -224,7 +224,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         Group name & \textbf{Information system administrator} \\
         \hline
         Description & The information system administrator has the right to create, update and delete karting centers,
-        karting centers' administrators, organizers and all the filtering mechanisms that help the user to navigate the website;
+        karting center administrators, organizers and all the filtering mechanisms that help the user to navigate the website;
         then he can do everything that the karting center administrator (and thus the clerk) can do by authenticating as one of them. \\
         \hline
         Profile data & None \\
@@ -249,7 +249,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         - C.R.U.D. cities \newline
         - C.R.U.D. go-kart models \newline
         - C.R.U.D. track asphalt types \newline
-        - C.R.U.D. track difficulies \\
+        - C.R.U.D. track difficulties \\
         \hline
         \end{tabular}
     \end{table}
@@ -273,8 +273,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         Read & Everything \\
         \hline
         Write & Karting center, Karting center administrator, Organizer, City, Go-kart model, Track asphalt type, Track length range, Review score range, N. pilots range,
-        N. races range, N. events range, Price range, Event category, everything that every karting center administrator can write (thus, also everything that every clerk can write) and 
-        everything that every organizer can write. \\
+        N. races range, N. events range, Price range, Event category, everything that every karting center administrator can write (thus, also everything that every clerk can write).\\
         \hline
         \end{tabular}
     \end{table}
@@ -341,7 +340,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
     everything that the generic user can read. \\
     \hline
     Write & Karting center (only mine, only to update, not to create nor delete), 
-    Clerk (only mine), Track (only mine), Race (only for my karting centers) and implicitly Reservation, 
+    Clerk (only mine), Pilot (C.R.U.D. on all the pilots), Track (only mine), Race (only for my karting centers) and implicitly Reservation, 
     Go-kart (only for my karting centers),
     everything that every clerk of my karting centers can write. \\
     \hline
@@ -357,7 +356,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         \hline
         Group name & \textbf{Clerk} \\
         \hline
-        Description & The clerk of a karting center can help the administrator by confirming the reservations requested
+        Description & The clerk of a karting center can help the karting center administrator by confirming the reservations requested
         by pilots and organizers, he can also moderate the reviews that pilots write about the karting center, the tracks
         and the events. Every clerk works for at most one karting center and every karting center can have more than one clerk. \\
         \hline
@@ -383,7 +382,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         Read & Reservation (only for my karting centers), everything 
         that the generic user can read. \\
         \hline
-        Write & Review on Karting center (only mine, only deleting), Review on Track (only of mine karting center, only deleting), 
+        Write & Review on Karting center (only mine, only deleting), Review on Track (only of my karting center, only deleting), 
         Review on Event (only involving my karting center, only deleting), Reservation (only for my karting centers, only to confirm). \newline
         Indirectly: Karting center, Track, Event (when deleting a review, implicitly some of their 
         attributes are alterated, e.g. \textit{avgReviewScore}, \textit{nReviews}). \\
@@ -505,8 +504,8 @@ categories or ranges useful to filter the karting centers, tracks and events.
     \tiny
     \begin{tabular}{|p{2cm}|p{6cm}|}
         \hline
-        Read & Reservation (only mine),
-        Race (those that still have to take place, created by me) and implicitly Review,
+        Read & 
+        Race (those that still have to take place, created by me),
         Application (only mine), everything that the internet user can read. \\
         \hline
         Write & Race (only mine) and implicitly Reservation, Review on karting center, 
@@ -542,7 +541,8 @@ categories or ranges useful to filter the karting centers, tracks and events.
         \hline
         Read & Everything the internet user can read \\
         \hline
-        Write & None \\
+        Write & Pilot (as of now, the functionality to register
+        off-site is not yet implemented). \\
         \hline
         \end{tabular}
     \end{table}
@@ -574,7 +574,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
     \hline
     Goal & The user explores karting centers selecting one city at a time. \\
     \hline
-    Precondition & The user is in the area (of the public view) dedicated to karting centers.\\
+    Precondition & None \\
     \hline
     Postcondition & The user obtains the list of karting centers from which he can move on.\\
     \hline
@@ -594,7 +594,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         Goal & The user explores karting centers selecting one range of number of races (that
         were hosted on any of the tracks of the karting center) at a time. \\
         \hline
-        Precondition & The user is in the area (of the public view) dedicated to karting centers.\\
+        Precondition & None \\
         \hline
         Postcondition & The user obtains the list of karting centers from which he can move on.\\
         \hline
@@ -623,7 +623,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         Goal & The user explores karting centers selecting one range of number of pilots (who had a race on 
         any of the tracks of the karting center) at a time. \\
         \hline
-        Precondition & The user is in the area (of the public view) dedicated to karting centers.\\
+        Precondition & None \\
         \hline
         Postcondition & The user obtains the list of karting centers from which he can move on.\\
         \hline
@@ -644,7 +644,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
     at least one race hosted on 
     any of the tracks of the karting center) at a time. \\
     \hline
-    Precondition & The user is in the area (of the public view) dedicated to karting centers.\\
+    Precondition & None \\
     \hline
     Postcondition & The user obtains the list of karting centers from which he can move on.\\
     \hline
@@ -672,7 +672,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         Goal & The user explores karting centers selecting one range of average review scores (given to the karting center by all the pilots
         that had at least one race on one of the tracks of the karting center) at a time. \\
         \hline
-        Precondition & The user is in the area (of the public view) dedicated to karting centers.\\
+        Precondition & None \\
         \hline
         Postcondition & The user obtains the list of karting centers from which he can move on.\\
         \hline
@@ -691,12 +691,12 @@ categories or ranges useful to filter the karting centers, tracks and events.
     \hline
     Goal & The user scrolls through the list of karting centers that are going to host an upcoming event. \\
     \hline
-    Precondition & The user already has this information in the homepage.\\
+    Precondition & None \\
     \hline
     Postcondition & The user obtains the list of karting centers from which he can move on.\\
     \hline
     Workflow &
-    - The user reaches the homepage. \\
+    - The user already has this information the homepage. \\
     \hline
     \end{tabular}
 \end{table}
@@ -717,7 +717,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         \hline
         Goal & The user chooses one karting center to focus on and reads its details. \\
         \hline
-        Precondition & The user chose a karting center from a list of karting centers (obtained from any of the previous use cases).\\
+        Precondition & The user got a list of karting centers (obtained from any of the previous use cases). \\
         \hline
         Postcondition & The user obtains the details on the karting center and can move on to other related informations (e.g. tracks, reviews)\\
         \hline
@@ -811,7 +811,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         \hline
         Goal & The user explores tracks selecting one asphalt type at a time. \\
         \hline
-        Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+        Precondition & None \\
         \hline
         Postcondition & The user obtains the list of tracks from which he can move on.\\
         \hline
@@ -830,7 +830,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
     \hline
     Goal & The user explores tracks selecting one difficulty at a time. \\
     \hline
-    Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+    Precondition & None \\
     \hline
     Postcondition & The user obtains the list of tracks from which he can move on.\\
     \hline
@@ -857,7 +857,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         \hline
         Goal & The user explores tracks selecting one range of lengths at a time. \\
         \hline
-        Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+        Precondition & None \\
         \hline
         Postcondition & The user obtains the list of tracks from which he can move on.\\
         \hline
@@ -876,7 +876,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
     \hline
     Goal & The user explores tracks selecting one city at a time. \\
     \hline
-    Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+    Precondition & None \\
     \hline
     Postcondition & The user obtains the list of tracks from which he can move on.\\
     \hline
@@ -904,7 +904,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         Goal & The user explores tracks selecting one range of number of races
         (that took place on the track) at a time. \\ 
         \hline
-        Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+        Precondition & None \\
         \hline
         Postcondition & The user obtains the list of tracks from which he can move on.\\
         \hline
@@ -924,7 +924,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
     Goal & The user explores tracks selecting one range of number of pilots
     (who had a race on the track) at a time. \\
     \hline
-    Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+    Precondition & None \\
     \hline
     Postcondition & The user obtains the list of tracks from which he can move on.\\
     \hline
@@ -953,7 +953,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         Goal & The user explores tracks selecting one range of number of events
         (that had at least one race hosted on the track) at a time. \\
         \hline
-        Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+        Precondition & None \\
         \hline
         Postcondition & The user obtains the list of tracks from which he can move on.\\
         \hline
@@ -973,7 +973,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
     Goal & The user explores tracks selecting one range of average review scores (given to the track by all the pilots
     that had at least one race on the track) at a time. \\
     \hline
-    Precondition & The user is in the area (of the public view) dedicated to tracks.\\
+    Precondition & None \\
     \hline
     Postcondition & The user obtains the list of tracks from which he can move on.\\
     \hline
@@ -1000,12 +1000,12 @@ categories or ranges useful to filter the karting centers, tracks and events.
         \hline
         Goal & The user chooses one track to focus on and reads its details. \\
         \hline
-        Precondition & The user chose a track from a list of tracks (obtained from any of the previous use cases).\\
+        Precondition & The user got a list of tracks (obtained from any of the previous use cases).\\
         \hline
         Postcondition & The user obtains the details on the track and can move on to other related informations (e.g. pilots, leaderboards, races, reviews)\\
         \hline
         Workflow &
-        - The user chooses one karting center from a list. \\
+        - The user chooses one track from a list. \\
         \hline
         \end{tabular}
 \end{table}
@@ -1161,7 +1161,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
     \hline
     Goal & The user chooses one pilot to focus on and reads its details. \\
     \hline
-    Precondition & The user chose a pilot from a list of pilots (obtained from a track, a race, an event).\\
+    Precondition & The user got a list of pilots from a track or an event.\\
     \hline
     Postcondition & The user obtains the details on the pilot and can move on to other related informations (e.g. races, events). \\
     \hline
@@ -1235,7 +1235,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         \hline
         Goal & The user explres events selecting one city at a time. \\
         \hline
-        Precondition & The user is in the area (of the public view) dedicated to events.\\
+        Precondition & None \\
         \hline
         Postcondition & The user obtains the list of events from which he can move on.\\
         \hline
@@ -1255,7 +1255,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
     Goal & The user explores events selecting one range of average review scores (given to the event by all the pilots
     that partcipated to it) at a time. \\
     \hline
-    Precondition & The user is in the area (of the public view) dedicated to events.\\
+    Precondition & None \\
     \hline
     Postcondition & The user obtains the list of events from which he can move on.\\
     \hline
@@ -1283,7 +1283,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         \hline
         Goal & The user explores events selecting one range of prices at a time. \\
         \hline
-        Precondition & The user is in the area (of the public view) dedicated to events.\\
+        Precondition & None \\
         \hline
         Postcondition & The user obtains the list of events from which he can move on.\\
         \hline
@@ -1302,7 +1302,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
     \hline
     Goal & The user explores events selecting one category at a time. \\
     \hline
-    Precondition & The user is in the area (of the public view) dedicated to events.\\
+    Precondition & None \\
     \hline
     Postcondition & The user obtains the list of events from which he can move on.\\
     \hline
@@ -1330,7 +1330,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         Goal & The user explores only the events considered popular (those that have
         at least $N$ participants and at least $M$ reviews) \\
         \hline
-        Precondition & The user is in the area (of the public view) dedicated to events.\\
+        Precondition & None \\
         \hline
         Postcondition & The user obtains the list of events from which he can move on.\\
         \hline
@@ -1350,14 +1350,12 @@ categories or ranges useful to filter the karting centers, tracks and events.
     \hline
     Goal & The user explores only the upcoming events (those whose first race still has to take place). \\
     \hline
-    Precondition & The user is in the area (of the public view) dedicated to events or in the homepage (which 
-    already shows the list of upcoming events, the list of tracks that will be involved and the list of 
-    karting centers that will be involved). \\
+    Precondition & None \\
     \hline
     Postcondition & The user obtains the list of events from which he can move on.\\
     \hline
     Workflow &
-    - A: the user chooses an event from the list of upcoming events already provided in the homepage.\newline
+    - A: the user chooses an event from the list of upcoming events already provided in the homepage. \newline
     - B.1: the user moves to the area dedicated to events. \newline
     - B.2: the user chooses an event from the list of upcoming events already provided in the area dedicated
     to events. \\
@@ -1382,7 +1380,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         Goal & The user explores only the controversial events (those that have at least $N$ reviews under 25\% of the maximum score
         and at least $M$ reviews over 75\% of the maximum score). \\
         \hline
-        Precondition & The user is in the area (of the public view) dedicated to events.\\
+        Precondition & None \\
         \hline
         Postcondition & The user obtains the list of events from which he can move on.\\
         \hline
@@ -1401,7 +1399,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
     \hline
     Goal & The user chooses one event to focus on and reads its details. \\
     \hline
-    Precondition & The user chose an event from a list of events (obtained from any of the previous use cases).\\
+    Precondition & The user got a list of events (obtained from any of the previous use cases).\\
     \hline
     Postcondition & The user obtains the details on the event and can move on to other related
     informations (e.g. races, pilots) \\
@@ -1478,7 +1476,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
         \hline
         Precondition & The user chose an event from a list of events (obtained from any of the previous use cases).\\
         \hline
-        Postcondition & The user obtains a list of pilots in the area dedicated to pilots. \\
+        Postcondition & The user obtains the list of pilots in the area dedicated to pilots. \\
         \hline
         Workflow &
         - The user moves from the area dedicated to the details of the event to the
@@ -1499,7 +1497,7 @@ categories or ranges useful to filter the karting centers, tracks and events.
     Precondition & The user chose an event from a list of events (obtained from any of the previous use cases).\\
     \hline
     Postcondition & The user obtains
-    a list of races in the area dedicated to races. \\
+    the list of races in the area dedicated to races. \\
     \hline
     Workflow &
     - The user moves from the area dedicated to the details of the event to the
@@ -1728,7 +1726,7 @@ Workflow &
     The user explores the tracks that are part of a karting center the user manages. It is of course
     possible for a karting center administrator to explore all the tracks of all the karting centers
     the same way is is for a visitor, but the site view dedicated to the karting center administrator
-    focuses on showing him custom informations. This is not true for the access of the karting center administrator 
+    focuses on showing him customized informations. This is not true for the access of the karting center administrator 
     to clerks, he cannot even read informations about clerks from other karting centers, not in his dedicated 
     site view, neither in the visitor's site view.\\
     \hline
@@ -1796,7 +1794,7 @@ Workflow &
         \hline
         Goal & The user chooses one clerk to focus on and reads its details. \\
         \hline
-        Precondition & The user chose a clerk from a list of clerks (obtained from the homepage,
+        Precondition & The user got a list of clerks (obtained from the homepage,
         from the area dedicated to clerks.)\\
         \hline
         Postcondition & The user obtains the details on the clerk (in the area dedicated to clerks). \\
@@ -1840,7 +1838,8 @@ Workflow &
         \hline
         Goal & The user updates or deletes a clerk. \\
         \hline
-        Precondition & The user logged in. \\
+        Precondition & The user logged in, manages at least one karting
+        center and at least a clerk works for the karting center. \\
         \hline
         Postcondition & The chosen clerk is updated or deleted. \\
         \hline
@@ -1871,7 +1870,7 @@ Workflow &
     \hline  
     Title & \textbf{U.D. races} \\
     \hline
-    Goal, Precondition, Postcondition, Workflow & Similar to the use case \textbf{U.D. races}.
+    Goal, Precondition, Postcondition, Workflow & Similar to the use case \textbf{U.D. clerks}.
     The user can udpdate or delete races that took place or are going to take place on a track 
     of a karting center he manages; when he does, the list of reservations on the same track 
     associated to the race being updated/deleted is shown.\\
@@ -2141,7 +2140,7 @@ Workflow &
         \hline
         Goal & The user chooses one review to focus on and reads its details. \\
         \hline
-        Precondition & The user logged in and chose a review from the list of reviews on the karting center. \\
+        Precondition & The user logged in and the karting center received at least one review. \\
         \hline
         Postcondition & The user obtains reads the review and can decide to delete it. \\
         \hline
@@ -2192,7 +2191,6 @@ Workflow &
         Postcondition & The user deletes the review. \\
         \hline
         Workflow &
-        - The user chooses one review from the list of reviews on the karting center (from the homepage). \newline
         - The user chooses the option to delete the review. \\
         \hline
         \end{tabular}
@@ -3105,7 +3103,7 @@ Synonym & Go-karting center \\
 \hline
 Description & The karting center is one of the three core entities of \kc{},
 it is a place where newcomers can register and gain experience in go-kart racing.
-Karting centers have usually one track and sometimes more, they host events and 
+Karting centers usually have one track and sometimes more, they host events and 
 get reviewed by pilots. \\
 \hline
 Example of instance & 
@@ -3180,7 +3178,7 @@ Components & None \\
 \hline
 Relations &
 City\_KartingCenter (1:N): the karting centers located in the city \newline
-\textit{City\_Track} (1:N): the tracks (inside a karting center) located in the city \newline
+\textit{City\_Track} (1:N): the tracks (of a karting center) located in the city \newline
 \textit{City\_Event} (N:N): the events that had at least one race on a track of a karting center
 located in the city \\
 \hline
@@ -3259,11 +3257,12 @@ Track\_TrackAshpalt (N:1): the asphalt of the track \newline
 Track\_TrackDifficulty (N:1): the difficulty of the track \newline
 Track\_Pilot (N:N): the pilots that have the track as one of their favourite \newline
 \textit{Track\_City} (N:1): the city where the karting center the track belongs to is located \newline
-\textit{Track\_TrackLengthRange} (N:1): the range within the length of the track falls \newline
+\textit{Track\_ReviewScoreRange} (N:1): the range within the average score of the reviews of the track falls \newline
 \textit{Track\_NPilotsRange} (N:1): the range within the number of pilots that have raced on the track falls \newline
 \textit{Track\_NRacesRange} (N:1): the range within the number of races that took place on the track falls \newline
 \textit{Track\_NEventsRange} (N:1): the range within the number of events that took place on the track falls \newline
-\textit{Track\_ReviewScoreRange} (N:1): the range within the average score of the reviews of the track falls \\
+\textit{Track\_Event} (N:N): the events that had at least one race hosted on the track \newline
+\textit{Track\_TrackLengthRange} (N:1): the range within the length of the track falls \\
 \hline
 Superconcepts & None \\
 \hline
@@ -3546,7 +3545,7 @@ Every race has a best lap-time,
 chances that more pilots made lap-times with the same
 best time are very low, but in any case the they are both stored
 so there is no worry about one of the two being forgotten or not
-getting the credit it deserves.
+getting the credit it deserves:
 the best lap-time chosen for the race in this case is the one 
 that has been made first, in any leaderboard the \textit{discarded}
 lap-time can be shown as the first one in the list in case the sorting
@@ -3555,7 +3554,7 @@ policy sorts ties by the name of the pilot or its weight or its age. \\
 Example of instance &
 LapNumber: 7 \newline
 LapTime: 00:00:48.595 \newline
-\textit{GoKartModel}: Sodi RX7 \\
+\textit{GoKartModel}: Sodi RX7 \newline
 \textit{PilotUsername}: denisfesta \\
 \hline
 Properties &
@@ -4054,8 +4053,8 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     Pilot\_Track (N:N): the tracks the pilot has as favorite \newline
     Pilot\_Race (N:N): the races the pilot participated in \newline
     Pilot\_LapTime (1:N): the lap-times the pilot made \newline
-    \textit{Pilot\_Race} (N:1): the last race the pilot participated in \newline
-    \textit{Pilot\_Event} (N:N): the events the pilot was accepted to participate in \\
+    \textit{Pilot\_Race} (N:1): the last race the pilot participated to \newline
+    \textit{Pilot\_Event} (N:N): the events the pilot was accepted to participate to \\
     \hline
     Superconcepts & User \\
     \hline
@@ -4077,7 +4076,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & A filtering of the three types of reviews (karting center, track, event)
+    Description & A filtering mechanism for the three types of reviews (karting center, track, event)
     based on the average score of the reviews. \\
     \hline
     Example of instance &
@@ -4113,9 +4112,8 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & A filtering of the karting centers and tracks based on the number of 
-    pilots who participated to at least one race on the track of the karting center. 
-    who participated in at least one race on the track of the karting center. \\
+    Description & A filtering mechanism for karting centers and tracks based on the number of 
+    pilots who participated to at least one race on the track of the karting center. \\
     \hline
     Example of instance &
     LowerBoundIncluded: 0 \newline
@@ -4149,7 +4147,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & A filtering of the karting centers and tracks based on the number of
+    Description & A filtering mechanism for karting centers and tracks based on the number of
     races that took place on the track of the karting center or on the karting center 
     in general (the sum of the number of races on all the tracks of the karting center). \\
     \hline
@@ -4186,7 +4184,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & A filtering of the karting centers and tracks based on the number of
+    Description & A filtering mechanism for karting centers and tracks based on the number of
     events that took place on the track of the karting center or on the karting center
     (an event that has two races on two different tracks of the same karting center 
     is counted as one event for the karting center). \\
@@ -4324,7 +4322,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & A filtering of the tracks based on their length. \\
+    Description & A filtering mechanism for tracks based on their length. \\
     \hline
     Example of instance &
     LowerBoundIncluded: 0 \newline
@@ -4487,7 +4485,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & A filtering of the events based on their price. \\
+    Description & A filtering mechanism for events based on their price. \\
     \hline
     Example of instance &
     LowerBoundIncluded: 0 \newline
@@ -4521,7 +4519,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \hline
     Synonym & None \\
     \hline
-    Description & The event can be open to every pilot (entry level difficulty),
+    Description & An event can be open to every pilot (entry level difficulty),
     intermediate (for those pilots that feel more competitive) and 
     pro (only pilots that show up at a high rank in the leaderboards can participate). \\
     \hline
@@ -4589,8 +4587,8 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
         \hline
         \multicolumn{1}{|c|}{\textbf{Site View}} & \multicolumn{3}{c|}{\textbf{Public view}} \\ 
-        \hline
-        Description & \multicolumn{3}{m{8cm}|}{Empty} \\
+        % \hline
+        % Description & \multicolumn{3}{m{8cm}|}{Empty} \\
         \hline
         User Groups & \multicolumn{3}{m{8cm}|}{Visitor, Pilot, Clerk, Organizer, 
         Karting center administrator, Information system administrator} \\
@@ -4617,8 +4615,8 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \textbf{Area Name} & \textbf{Area Description} & \textbf{Objects} & \textbf{Priority} \\
         \hline
         Home & The visitor is welcomed with a list of upcoming events,
-        the tracks on which the events will take place and the karting centers hosting the events.
-        By choosing one element from one of the three lists, he can move to other areas.
+        the tracks on which those events will take place and the karting centers hosting those events.
+        By choosing an element from one of the three lists, he can move to other areas.
         & UpcomingEvent, Track, KartingCenter & High \\
         \hline
         % continue
@@ -4663,28 +4661,30 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \setlength{\tabcolsep}{1pt}
         \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
         \hline
-        Race & The area is reached by selecting a track, an event or a pilot and gives the visitor
+        Race & The area is reached by selecting a track, an event or a pilot and then asking for
+        the related races, it gives the visitor
         a list of races, by choosing one he can read its details and move to other areas to get further informations
         related to the race.
          & Race & Medium \\
         \hline
-        Pilot & The area is reached by selecting a track, a race or an event and gives the visitor
+        Pilot & The area is reached by selecting a track, a race or an event and then asking for
+        the related pilots, it gives the visitor
         a list of pilots, by choosing one he can read its details and move to other areas to get further informations
         related to the pilot.
          & Pilot & Medium \\
         \hline
         Laptime & The area is reached by
-        selecting a race and gives the visitor a list of lap-times, by choosing one he can read its details
+        selecting a race and then asking for the lap-times, it gives the visitor a list of lap-times, by choosing one he can read its details
         and move to other areas to get further informations related to the lap-time.
          & LapTime & Low \\
         \hline
-        Leaderboard & The area is reached by selecting a karting center or a track
-        and gives the visitor a list of leaderboards, by choosing one he can read its details
+        Leaderboard & The area is reached by selecting a karting center or a track and then asking for
+        the related leaderboards, it gives the visitor a list of leaderboards, by choosing one he can read its details
         and move to the pilot area to get further informations related to the pilot who made the lap-time.
          & Leaderboard & Medium \\
         \hline
-        Review & The area is reached by either selecting a karting center, a track or an event
-        and gives the visitor a list of reviews related to the selected object, by choosing one he can read its details.
+        Review & The area is reached by selecting a karting center, a track or an event and then asking for
+        the related reviews, it gives the visitor a list of reviews related to the selected object, by choosing one he can read its details.
          & KartingCenterReview, TrackReview, EventReview & Medium \\
         \hline
         \end{tabular}
@@ -4700,8 +4700,8 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
         \hline
         \multicolumn{1}{|c|}{\textbf{Site View}} & \multicolumn{3}{c|}{\textbf{Pilot}} \\
-        \hline
-        Description & \multicolumn{3}{m{8cm}|}{Empty} \\
+        % \hline
+        % Description & \multicolumn{3}{m{8cm}|}{Empty} \\
         \hline
         User Groups & \multicolumn{3}{m{8cm}|}{Pilot} \\
         \hline
@@ -4747,7 +4747,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         Event & The area shows a list of events the pilot applied to but 
         the application was not yet confirmed and 
         a list of upcoming events the pilot did not apply to, by choosing one from the second list
-         he can apply to it. The pilot can also write a review about the events he participated in.
+         he can apply to it. The pilot can also write a review about the events he participated to.
          & Event, EventReview, Application & High \\
         \hline
         \end{tabular}
@@ -4763,8 +4763,8 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
         \hline
         \multicolumn{1}{|c|}{\textbf{Site View}} & \multicolumn{3}{c|}{\textbf{Organizer}} \\
-        \hline
-        Description & \multicolumn{3}{m{8cm}|}{Empty} \\
+        % \hline
+        % Description & \multicolumn{3}{m{8cm}|}{Empty} \\
         \hline
         User Groups & \multicolumn{3}{m{8cm}|}{Organizer, Information system administrator} \\
         \hline
@@ -4801,8 +4801,8 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
         \hline
         \multicolumn{1}{|c|}{\textbf{Site View}} & \multicolumn{3}{c|}{\textbf{Clerk}} \\
-        \hline
-        Description & \multicolumn{3}{m{8cm}|}{Empty} \\
+        % \hline
+        % Description & \multicolumn{3}{m{8cm}|}{Empty} \\
         \hline
         User Groups & \multicolumn{3}{m{8cm}|}{Clerk, 
         Information system administrator, Karting center administrator} \\
@@ -4842,8 +4842,8 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
         \hline
         \multicolumn{1}{|c|}{\textbf{Site View}} & \multicolumn{3}{c|}{\textbf{Karting center administrator}} \\
-        \hline
-        Description & \multicolumn{3}{m{8cm}|}{Empty} \\
+        % \hline
+        % Description & \multicolumn{3}{m{8cm}|}{Empty} \\
         \hline
         User Groups & \multicolumn{3}{m{8cm}|}{Karting center administrator, Information system administrator} \\
         \hline
@@ -4914,8 +4914,8 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
         \hline
         \multicolumn{1}{|c|}{\textbf{Site View}} & \multicolumn{3}{c|}{\textbf{Information system administrator}} \\
-        \hline
-        Description & \multicolumn{3}{m{8cm}|}{Empty} \\
+        % \hline
+        % Description & \multicolumn{3}{m{8cm}|}{Empty} \\
         \hline
         User Groups & \multicolumn{3}{m{8cm}|}{Information system administrator} \\
         \hline
@@ -5044,7 +5044,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \frametitle{Personalization subschemes}
     \scriptsize
     Among the five registered users, the information system admin is the one that does not need a 
-    personalization subscheme, his duty is to manage the system and, with it, all the entities, without
+    personalization subscheme, his duty is to manage the system, and with it, all the entities, without
     a specific focus on some instances with respect to others.
     The \textbf{Pilot} is the user with the highest number of personalization subschemes: 
     \begin{itemize}
@@ -5151,7 +5151,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \frametitle{Public view}
     \begin{figure}
         \centering
-        \includegraphics[width=0.9\textwidth]{drawio/public-view.pdf}
+        \includegraphics[width=0.8\textwidth]{drawio/public-view.pdf}
     \end{figure}
 \end{frame}
 
@@ -5159,7 +5159,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \frametitle{Pilot}
     \begin{figure}
         \centering
-        \includegraphics[width=0.9\textwidth]{drawio/pilot-view.pdf}
+        \includegraphics[width=0.8\textwidth]{drawio/pilot-view.pdf}
     \end{figure}
 \end{frame}
 
@@ -5175,7 +5175,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \frametitle{Clerk}
     \begin{figure}
         \centering
-        \includegraphics[width=0.8\textwidth]{drawio/clerk-view.pdf}
+        \includegraphics[width=0.9\textwidth]{drawio/clerk-view.pdf}
     \end{figure}
 \end{frame}
 
@@ -5183,7 +5183,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \frametitle{Karting center administrator}
     \begin{figure}
         \centering
-        \includegraphics[width=0.6\textwidth]{drawio/karting-center-admin-view.pdf}
+        \includegraphics[width=0.8\textwidth]{drawio/karting-center-admin-view.pdf}
     \end{figure}
 \end{frame}
 
@@ -5191,7 +5191,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \frametitle{Information system administrator}
     \begin{figure}
         \centering
-        \includegraphics[width=1\textwidth]{drawio/is-admin-view.pdf}
+        \includegraphics[width=0.9\textwidth]{drawio/is-admin-view.pdf}
     \end{figure}
 \end{frame}
 
@@ -5199,11 +5199,11 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
 \begin{frame}{Future work}
 Explaining the possible improvements to the current work
 would take at least as many slides as the ones presented so far,
-so here it is mentioned what I consider be one of the most difficult choices 
+so here it is mentioned what I consider to be one of the most difficult choice
 to make...
 \end{frame}
 
-\begin{frame}{Which are the real weak entities}
+\begin{frame}{Which are the real weak entities?}
     \scriptsize
     \begin{figure}
         \centering
@@ -5217,7 +5217,7 @@ to make...
     of a race: its weak entities lap-time and reservation are deleted together with it.
 \end{frame}
 
-\begin{frame}{Which are the real weak entities}
+\begin{frame}{Which are the real weak entities?}
     \scriptsize
     % picture called delete-karting-center.png
     \begin{figure}
@@ -5233,7 +5233,7 @@ to make...
     in fact, another karting center could buy the tracks of the karting center being deleted.
 \end{frame}
 
-\begin{frame}{Which are the real weak entities}
+\begin{frame}{Which are the real weak entities?}
     \scriptsize
     % picture called delete-karting-center.png
     \begin{figure}
