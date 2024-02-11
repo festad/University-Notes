@@ -89,6 +89,10 @@ useful to filter karting centers, tracks and events.
 
 \section{Requirements analysis}
 
+\begin{frame}{Requirements analysis}
+
+\end{frame}
+
 \subsection{User groups}
 
 \begin{frame}
@@ -111,7 +115,7 @@ useful to filter karting centers, tracks and events.
         \hline
         Description & The generic user can explore karting centers, tracks, events, the races that
         took place on tracks, the races an event organized, the races a particular pilot had, and more...
-        Different filtering mechanisms are made available to the user to help him throughout hhis navigation. \\
+        Different filtering mechanisms are made available to the user to help him throughout his navigation. \\
         \hline
         Profile data & None \\
         \hline
@@ -385,7 +389,7 @@ useful to filter karting centers, tracks and events.
         Write & Review on Karting center (only mine, only deleting), Review on Track (only of my karting center, only deleting), 
         Review on Event (only involving my karting center, only deleting), Reservation (only for my karting centers, only to confirm). \newline
         Indirectly: Karting center, Track, Event (when deleting a review, implicitly some of their 
-        attributes are alterated, e.g. \textit{avgReviewScore}, \textit{nReviews}). \\
+        attributes get modified, e.g. \textit{avgReviewScore}, \textit{nReviews}). \\
         \hline
         \end{tabular}
     \end{table}
@@ -425,7 +429,7 @@ useful to filter karting centers, tracks and events.
         \hline
         Write & Event (C.R.U.D. only mine), Race (C.R.U.D. only for my events) and implicitly Reservation, Application (only to my events, only to confirm). \newline
         Indirectly: Karting center, Track, Pilot (when organizing events, implicitly some of their 
-        attributes are alterated, e.g. \textit{nRaces}, \textit{nEvents}). \\
+        attributes get modified, e.g. \textit{nRaces}, \textit{nEvents}). \\
         \hline
         \end{tabular}
     \end{table}
@@ -439,7 +443,9 @@ useful to filter karting centers, tracks and events.
         \hline
         Group name & \textbf{Internet} \\
         \hline
-        Description & The internet side of \kc{} has mainly an explorative role. \\
+        Description & The internet side of \kc{} is mainly characterized by use cases with the 
+        goal of exploring the website for the visitor and make reservations or applications for 
+        the pilot. \\
         \hline
         Profile data & None \\
         \hline
@@ -511,7 +517,7 @@ useful to filter karting centers, tracks and events.
         Write & Race (only mine) and implicitly Reservation, Review on karting center, 
         Review on track, Review on event, Application (only mine). \newline
         Indirectly: Karting center, Track, Event (when participating to a race or writing a review, implicitly some of their 
-        attributes are alterated, e.g. \textit{nPilots}, \textit{nRaces}, \textit{avgReviewScore}). \\
+        attributes get modified, e.g. \textit{nPilots}, \textit{nRaces}, \textit{avgReviewScore}). \\
         \hline
         \end{tabular}
     \end{table}
@@ -553,6 +559,11 @@ useful to filter karting centers, tracks and events.
 
 
 \subsection{Use cases}
+
+\begin{frame}{Use cases}
+
+\end{frame}
+
 
 \subsubsection{User}
 
@@ -678,7 +689,7 @@ useful to filter karting centers, tracks and events.
         \hline
         Workflow &
         - The user moves to the area dedicated to karting centers. \newline
-        - The user selects a range of scores (the ranges are the same for karting centes, tracks and events). \\
+        - The user selects a range of scores (the ranges are the same for karting centers, tracks and events). \\
         \hline
         \end{tabular}
 \end{table}
@@ -719,7 +730,7 @@ useful to filter karting centers, tracks and events.
         \hline
         Precondition & The user got a list of karting centers (obtained from any of the previous use cases). \\
         \hline
-        Postcondition & The user obtains the details on the karting center and can move on to other related informations (e.g. tracks, reviews)\\
+        Postcondition & The user obtains the details on the karting center and can move on to other related data (e.g. tracks, reviews.)\\
         \hline
         Workflow &
         - The user chooses one karting center from a list. \\
@@ -979,7 +990,7 @@ useful to filter karting centers, tracks and events.
     \hline
     Workflow &
     - The user moves to the area dedicated to tracks. \newline
-    - The user selects a range of scores (the ranges are the same for karting centes, tracks and events). \\
+    - The user selects a range of scores (the ranges are the same for karting centers, tracks and events). \\
     \hline
     \end{tabular}
 \end{table}
@@ -1002,7 +1013,7 @@ useful to filter karting centers, tracks and events.
         \hline
         Precondition & The user got a list of tracks (obtained from any of the previous use cases).\\
         \hline
-        Postcondition & The user obtains the details on the track and can move on to other related informations (e.g. pilots, leaderboards, races, reviews)\\
+        Postcondition & The user obtains the details on the track and can move on to other related data (e.g. pilots, leaderboards, races, reviews.) \\
         \hline
         Workflow &
         - The user chooses one track from a list. \\
@@ -1065,7 +1076,7 @@ useful to filter karting centers, tracks and events.
     Title & \textbf{Explore leaderboards} \\
     \hline
     Goal & The user chooses one track to focus on and explores the leaderboards associated
-    to the track (leaderboards are filtering on the whole record of laptimes obtained by pilots in a race,
+    to the track (leaderboards are filtering on the whole record of lap-times obtained by pilots in a race,
     a leaderboard can focus on the last month, the last year, weight...) \\
     \hline
     Precondition & The user chose a track from a list of tracks (obtained from any of the previous use cases).\\
@@ -1163,7 +1174,7 @@ useful to filter karting centers, tracks and events.
     \hline
     Precondition & The user got a list of pilots from a track or an event.\\
     \hline
-    Postcondition & The user obtains the details on the pilot and can move on to other related informations (e.g. races, events). \\
+    Postcondition & The user obtains the details on the pilot and can move on to other related data (e.g. races, events.) \\
     \hline
     Workflow &
     - The user chooses one pilot from a list. \\
@@ -1233,7 +1244,7 @@ useful to filter karting centers, tracks and events.
         \hline
         Title & \textbf{Explore events by city} \\
         \hline
-        Goal & The user explres events selecting one city at a time. \\
+        Goal & The user explores events selecting one city at a time. \\
         \hline
         Precondition & None \\
         \hline
@@ -1253,7 +1264,7 @@ useful to filter karting centers, tracks and events.
     Title & \textbf{Explore events by average review score} \\
     \hline
     Goal & The user explores events selecting one range of average review scores (given to the event by all the pilots
-    that partcipated to it) at a time. \\
+    that participated to it) at a time. \\
     \hline
     Precondition & None \\
     \hline
@@ -1261,7 +1272,7 @@ useful to filter karting centers, tracks and events.
     \hline
     Workflow &
     - The user moves to the area dedicated to events. \newline
-    - The user selects a range of scores (the ranges are the same for karting centes, tracks and events). \\
+    - The user selects a range of scores (the ranges are the same for karting centers, tracks and events). \\
     \hline
     \end{tabular}
 \end{table}
@@ -1402,7 +1413,7 @@ useful to filter karting centers, tracks and events.
     Precondition & The user got a list of events (obtained from any of the previous use cases).\\
     \hline
     Postcondition & The user obtains the details on the event and can move on to other related
-    informations (e.g. races, pilots) \\
+    data (e.g. races, pilots.) \\
     \hline
     Workflow &
     - The user chooses one event from a list. \\
@@ -1726,8 +1737,8 @@ Workflow &
     The user explores the tracks that are part of a karting center the user manages. It is of course
     possible for a karting center administrator to explore all the tracks of all the karting centers
     the same way is is for a visitor, but the site view dedicated to the karting center administrator
-    focuses on showing him customized informations. This is not true for the access of the karting center administrator 
-    to clerks, he cannot even read informations about clerks from other karting centers, not in his dedicated 
+    focuses on showing him customized data. This is not true for the access of the karting center administrator 
+    to clerks, he cannot even read any information about clerks from other karting centers, not in his dedicated 
     site view, neither in the visitor's site view.\\
     \hline
     \end{tabular}
@@ -1871,7 +1882,7 @@ Workflow &
     Title & \textbf{U.D. races} \\
     \hline
     Goal, Precondition, Postcondition, Workflow & Similar to the use case \textbf{U.D. clerks}.
-    The user can udpdate or delete races that took place or are going to take place on a track 
+    The user can update or delete races that took place or are going to take place on a track 
     of a karting center he manages; when he does, the list of reservations on the same track 
     associated to the race being updated/deleted is shown.\\
     \hline
@@ -1922,7 +1933,7 @@ Workflow &
     When the race is created, an associated reservation (weak entity) is created as well and all the clerks
     working for the karting center that hosts the new race will be able to confirm it.
     The reservation stores the information of the pilot or the organizer that created the race, 
-    in this case a fictitious organizer that is created apriori is used.\\
+    in this case a fictitious organizer that is created a priori is used.\\
     \hline
     \end{tabular}
 \end{table}
@@ -2484,7 +2495,7 @@ Workflow &
     Precondition & The user logged in. \\
     \hline
     Postcondition & The user obtains the details on the event and 
-    can move on to other related informations (e.g. applications). \\
+    can move on to other related data (e.g. applications.) \\
     \hline
     Workflow &
     - A: the user chooses one event from the list of events he created in the homepage. \newline
@@ -2510,7 +2521,7 @@ Workflow &
         Precondition & The user logged in and he created at least one event. \\
         \hline
         Postcondition & The event is updated or deleted, the modifications might affect the races created for the track 
-        and the participations of the pilots to the races of the event but the applications made by pilots are not affected. \\
+        and the participation of the pilots to the races of the event but the applications made by pilots are not affected. \\
         \hline
         Workflow &
         - A: the user chooses one event from the list of events he created in the homepage. \newline
@@ -2721,14 +2732,14 @@ Workflow &
         \hline
         Title & \textbf{Read my details} \\
         \hline
-        Goal & The user reads its own personal informations, already available in the homepage.\\
+        Goal & The user reads its own personal details, already available in the homepage.\\
         \hline
         Precondition & The user logged in. \\
         \hline
-        Postcondition & The user obtains its personal informations. \\
+        Postcondition & The user obtains its personal details. \\
         \hline
         Workflow &
-        - The user logs in and reads the informations already present in the homepage. \\
+        - The user logs in and reads the details already present in the homepage. \\
         \hline
         \end{tabular}
 \end{table}
@@ -2831,7 +2842,7 @@ Workflow &
     \hline
     Precondition & The user logged in. \\
     \hline
-    Postcondition & The user obtains the details on the race and related informations such as the best lap-time of
+    Postcondition & The user obtains the details on the race and related data such as the best lap-time of
     that race (it could be from the user himself or another pilot). \\
     \hline
     Workflow &
@@ -3075,6 +3086,10 @@ Workflow &
 % %%%%%%% DICTIONARY %%%%%%%
 
 \subsection{Data dictionary}
+
+\begin{frame}{Data dictionary}
+
+\end{frame}
 
 \subsubsection{Primary entities}
 
@@ -3399,7 +3414,7 @@ Name & \textbf{Race} \\
 Synonym & None \\
 \hline
 Description & A race is a competition involving many 
-(but it could be just one) pilots that, everytime they complete
+(but it could be just one) pilots that, every time they complete
 a lap, generate a lap-time. A race can be created on the spot by
 the karting center administrator or a reservation can be made by
 a pilot or an organizer, such reservation is then confirmed by a clerk.
@@ -3476,8 +3491,8 @@ makes a reservation and it is later confirmed by a clerk.
 When the karting center administrator creates 
 a race on the spot, as by February 2024, the associated
 reservation is created automatically and connected to a 
-fictitious organizer created apriori, then confirmed automatically
-by a fictitious clerk created apriori for every karting center.
+fictitious organizer created a priori, then confirmed automatically
+by a fictitious clerk created a priori for every karting center.
 Further improvements might allow the reservation to be created
 without the need of such fictitious instances that only 
 cause an overload for the simple sake of not leaving empty fields 
@@ -3690,7 +3705,7 @@ Event\_EventReview (1:N): the reviews about the event \newline
 \hline
 Superconcepts & None \\
 \hline
-Subconcepts & Controversial event, Popular evenet, Upcoming event \\
+Subconcepts & Controversial event, Popular event, Upcoming event \\
 \hline
 \end{tabular}
 \end{table}
@@ -3839,7 +3854,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     Synonym & None \\
     \hline
     Description & This entity represents a registered user
-    (not to be confused with the generic user, whose informations
+    (not to be confused with the generic user, whose data
     are not stored anywhere) who can login or logout. \\
     \hline
     Example of instance &
@@ -4544,6 +4559,10 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
 
 \subsection{Site views}
 
+\begin{frame}{Site views}
+
+\end{frame}
+
 % \begin{frame}
 %     \frametitle{Site views}
 %     \begin{table}[ht]
@@ -4634,21 +4653,27 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \hline
         KartingCenter & The default page allows the visitor to explore karting centers
         by filtering them using different criteria (access subschemes), then, when he selects a karting center,
-        he can read its details and move to other areas to get further informations related to the karting center.
+        he can read its details and move to other areas to get further data related to the karting center.
          & KartingCenter, City, NPilotsRange, NRacesRange, NEventsRange, ReviewScoreRange & High \\
         \hline
         Track & The default page allows the visitor to explore tracks
         by filtering them using different criteria (access subschemes), then, when he selects a track,
-        he can read its details and move to other areas to get further informations related to the track.
+        he can read its details and move to other areas to get further data related to the track.
         & Track, TrackAsphalt, TrackDifficulty, TrackLengthRange, City, NPilotsRange, NRacesRange, NEventsRange, ReviewScoreRange,
         GoKartModel, PopularTrack & High \\
         \hline
         Event & The default page allows the visitor to explore events
         by filtering them using different criteria (access subschemes), then, when he selects an event,
-        he can read its details and move to other areas to get further informations related to the event.
+        he can read its details and move to other areas to get further data related to the event.
          & Event, City, ReviewScoreRange, PriceRange, EventCategory, PopularEvent, ControversialEvent, 
         UpcomingEvent & High \\
         \hline
+        Race & The area is reached by selecting a track, an event or a pilot and then asking for
+        the related races, it gives the visitor
+        a list of races, by choosing one he can read its details and move to other areas to get further data
+        related to the race.
+         & Race & Medium \\
+        \hline        
         \end{tabular}
     \end{table}
 \end{frame}
@@ -4661,26 +4686,20 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
         \setlength{\tabcolsep}{1pt}
         \begin{tabular}{|m{2cm}|m{4cm}|m{3cm}|m{1cm}|}
         \hline
-        Race & The area is reached by selecting a track, an event or a pilot and then asking for
-        the related races, it gives the visitor
-        a list of races, by choosing one he can read its details and move to other areas to get further informations
-        related to the race.
-         & Race & Medium \\
-        \hline
         Pilot & The area is reached by selecting a track, a race or an event and then asking for
         the related pilots, it gives the visitor
-        a list of pilots, by choosing one he can read its details and move to other areas to get further informations
+        a list of pilots, by choosing one he can read its details and move to other areas to get further data
         related to the pilot.
          & Pilot & Medium \\
         \hline
         Laptime & The area is reached by
         selecting a race and then asking for the lap-times, it gives the visitor a list of lap-times, by choosing one he can read its details
-        and move to other areas to get further informations related to the lap-time.
+        and move to other areas to get further data related to the lap-time.
          & LapTime & Low \\
         \hline
         Leaderboard & The area is reached by selecting a karting center or a track and then asking for
         the related leaderboards, it gives the visitor a list of leaderboards, by choosing one he can read its details
-        and move to the pilot area to get further informations related to the pilot who made the lap-time.
+        and move to the pilot area to get further data related to the pilot who made the lap-time.
          & Leaderboard & Medium \\
         \hline
         Review & The area is reached by selecting a karting center, a track or an event and then asking for
@@ -4974,10 +4993,14 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
 
 \section{Data model}
 
+\begin{frame}{Data model}
+
+\end{frame}
+
 \subsection{Objects' classification}
 
 \begin{frame}
-    \frametitle{Subschemes}
+    \frametitle{Objects' classification into subschemes}
     In \kc{} the core entities are \textbf{Karting center}, \textbf{Track}, and \textbf{Event},
     the union of each entity with the set of its weak entities forms the core subscheme associated to the core entity. 
     Core entities are accessible one from the other through different paths, the interconnection subschemes
@@ -4985,7 +5008,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     In order to provide a better experience for the user, the core entities are made accessible through
     two other types of subschemes: the visitor will benefit from access subschemes, the registered users will additionally
     benefit from personalization subschemes.
-    \footnotetext{The following four slides are thought to be scrolled in full screen just to grasp the whole picture, 
+    \footnotetext{The following four slides are meant to be scrolled in full screen mode just to grasp the whole picture, 
     then each subscheme will be zoomed in.}
 \end{frame}
 
@@ -5029,8 +5052,14 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \begin{figure}
         \centering
         \includegraphics[width=1\linewidth]{drawio/core-subschemes-cropped.pdf}
+        \caption{
+            The core entities are those that the visitor should be able to access first and with the least effort,
+            in \kc{} the core entities are \textbf{Karting center}, \textbf{Track}, and \textbf{Event}.
+            A core subscheme is the union of a core entity with the set of its weak entities.            
+        }
     \end{figure}
 \end{frame}
+
 
 \begin{frame}
     \frametitle{Personalization subschemes}
@@ -5116,7 +5145,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
     \frametitle{Access subschemes}
     \scriptsize
     The access subschemes are the most important for the visitor, they allow him to reach the core entities
-    through an explorative research rather than a lookup search. The visitor is offered a series of filters to reach the core entities,
+    through an exploratory research rather than a lookup search. The visitor is offered a series of filters to reach the core entities,
     the filters are not to be mistaken for weak entities, they are categorization criteria that can be created before even creating
     the core entities. It is worth noticing that among the access subschemes there are some entities that extend the core entities
     (PopularTrack, PopularEvent, ControversialEvent, UpcomingEvent), these should not be considered as real extensions of the core entities 
@@ -5128,7 +5157,7 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
 
 \begin{frame}
     \frametitle{Hypertext model}
-    The hypertext model is composed of a preliminar phase that produces a coarse hypertext model,
+    The hypertext model is composed of a preliminary phase that produces a coarse hypertext model,
     followed by a detailed phase that produces the detailed hypertext model.
     The second phase is not presented in this report, but a prototype created with the tool \textit{Webratio} will be made available.
 \end{frame}
@@ -5137,14 +5166,28 @@ Subconcepts & Controversial event, Popular evenet, Upcoming event \\
 
 \begin{frame}
     \frametitle{Coarse hypertext model}
+    \tiny
     In addition to the commonly used primitives
-        $$\text{Core}(\text{core\_entity},\text{component}_1,\dots,\text{component}_N),$$
-        $$\text{Access}(\text{Core\_entity},\text{access\_entity},\dots,\text{access\_entity}_N),$$
-        $$\text{Interconnection}(\text{entity}_1, \text{role}_1, \dots, \text{role}_N),$$
-        $$\text{Personalization}(\text{entity}_1, \text{role}, \dots, \text{role}_N)$$
+    \begin{align*}
+        &\text{Core}(\text{core\_entity},\text{component}_1,\dots,\text{component}_N), \\
+        &\text{Access}(\text{Core\_entity},\text{access\_entity},\dots,\text{access\_entity}_N), \\
+        &\text{Interconnection}(\text{entity}_1, \text{role}_1, \dots, \text{role}_N), \\
+        &\text{Personalization}(\text{entity}_1, \text{role}, \dots, \text{role}_N),
+    \end{align*}
         and others, we adopt the primitive 
     $$ \text{CoreSub.}(\text{core\_weak\_entity}_1,\dots,\text{core\_weak\_entity}_N) $$
-    to represent the focus of a page on the components only of a core entity, without the need to show the core entity itself.
+    to represent the focus of a page on the components only of a core entity, without the need to show the core entity itself. \\
+    Another note: in the following slides the interconnection between an entity and any other entity is not shown unless the interconnection
+    concides with an interconnection subscheme: e.g. in the site view \textit{Public view}, area \textit{Karting center}, the final hypertext model 
+    allows the visitor to move from a karting center to its reviews, but this is not shown in the coarse hypertext model, the
+    only interconnection shown are from KartingCenter to Event and from KartingCenter to Track.
+    Multi-steps paths are not explicitly represented:
+    \begin{itemize}
+    \item the interconnection \textit{KartingCenter} $\rightarrow$ \textit{Track} $\rightarrow$ \textit{Race} $\rightarrow$ \textit{Event}
+    is denoted as a single interconnection between \textit{KartingCenter} and \textit{Event} (and vice versa),
+    \item the interconnection \textit{Track} $\rightarrow $ \textit{Race} $\rightarrow$ \textit{Event} is denoted as 
+    a single interconnection between \textit{Track} and \textit{Event} (and vice versa).
+    \end{itemize}
 \end{frame}
 
 \begin{frame}
@@ -5209,6 +5252,7 @@ to make...
         \centering
         \includegraphics[width=0.5\textwidth]{drawio/del-race.png}
         \label{fig:delete-race}
+        \caption{The deletion of a race.}
     \end{figure} 
     The deletion of an entity implies the deletion of its weak entities, 
     e.g. the deletion of a karting center implies the deletion of its reviews.
@@ -5224,10 +5268,11 @@ to make...
         \centering
         \includegraphics[width=0.5\textwidth]{drawio/del-karting-center.png}
         \label{fig:delete-karting-center}
+        \caption{The deletion of a karting center.}
     \end{figure}
     Sometimes it is not trivial to choose whether an entity should be the weak
-    entity of another one or not, e.g. the deletion of a karting center should or 
-    should not imply the deletion of its tracks?    
+    entity of another one or not, e.g. should or should not the deletion of a karting center
+    imply the deletion of its tracks?    
     The choice made in \kc{} is that the deletion of a karting center does 
     not imply the deletion of its tracks (as shown in figure \ref{fig:delete-karting-center}),
     in fact, another karting center could buy the tracks of the karting center being deleted.
@@ -5240,10 +5285,11 @@ to make...
         \centering
         \includegraphics[width=0.5\textwidth]{drawio/del-track.png}
         \label{fig:delete-track}
+        \caption{The deletion of a track.}
     \end{figure}
     The deletion of a track is another example where the choice of what to delete is not obvious:
     a race can happen only if hosted by a track, this leads to the conclusion that the race is a weak entity 
-    of the track, but does the deletion of a track really imply the deletion of all the informations on the races 
+    of the track, but does the deletion of a track really imply the deletion of every information on the races 
     that happened on it? Although as of now the race is a weak entity of the track, in \kc{} (as shown
     in figure \ref{fig:delete-track}) the deletion of a track does 
     not imply the deletion of all the races that happened on it, in fact, 

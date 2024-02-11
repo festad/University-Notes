@@ -1,18 +1,18 @@
 \babel@toc {english}{}\relax 
 \beamer@sectionintoc {2}{Requirements analysis}{4}{0}{1}
-\beamer@subsectionintoc {2}{1}{User groups}{4}{0}{1}
-\beamer@subsectionintoc {2}{2}{Use cases}{18}{0}{1}
-\beamer@subsubsectionintoc {2}{2}{1}{User}{18}{0}{1}
-\beamer@subsubsectionintoc {2}{2}{2}{Intranet}{40}{0}{1}
-\beamer@subsubsectionintoc {2}{2}{3}{Extranet}{62}{0}{1}
-\beamer@subsubsectionintoc {2}{2}{4}{Internet}{68}{0}{1}
-\beamer@subsectionintoc {2}{3}{Data dictionary}{76}{0}{1}
-\beamer@subsubsectionintoc {2}{3}{1}{Primary entities}{76}{0}{1}
-\beamer@subsubsectionintoc {2}{3}{2}{Users' entities}{96}{0}{1}
-\beamer@subsubsectionintoc {2}{3}{3}{Auxiliary entities}{103}{0}{1}
-\beamer@subsectionintoc {2}{4}{Site views}{117}{0}{1}
-\beamer@sectionintoc {3}{Data model}{128}{0}{2}
-\beamer@subsectionintoc {3}{1}{Objects' classification}{128}{0}{2}
-\beamer@sectionintoc {4}{Hypertext model}{141}{0}{3}
-\beamer@subsectionintoc {4}{1}{Coarse hypertext model}{142}{0}{3}
-\beamer@sectionintoc {5}{Future work}{149}{0}{4}
+\beamer@subsectionintoc {2}{1}{User groups}{5}{0}{1}
+\beamer@subsectionintoc {2}{2}{Use cases}{19}{0}{1}
+\beamer@subsubsectionintoc {2}{2}{1}{User}{20}{0}{1}
+\beamer@subsubsectionintoc {2}{2}{2}{Intranet}{42}{0}{1}
+\beamer@subsubsectionintoc {2}{2}{3}{Extranet}{64}{0}{1}
+\beamer@subsubsectionintoc {2}{2}{4}{Internet}{70}{0}{1}
+\beamer@subsectionintoc {2}{3}{Data dictionary}{78}{0}{1}
+\beamer@subsubsectionintoc {2}{3}{1}{Primary entities}{79}{0}{1}
+\beamer@subsubsectionintoc {2}{3}{2}{Users' entities}{99}{0}{1}
+\beamer@subsubsectionintoc {2}{3}{3}{Auxiliary entities}{106}{0}{1}
+\beamer@subsectionintoc {2}{4}{Site views}{120}{0}{1}
+\beamer@sectionintoc {3}{Data model}{132}{0}{2}
+\beamer@subsectionintoc {3}{1}{Objects' classification}{133}{0}{2}
+\beamer@sectionintoc {4}{Hypertext model}{146}{0}{3}
+\beamer@subsectionintoc {4}{1}{Coarse hypertext model}{147}{0}{3}
+\beamer@sectionintoc {5}{Future work}{154}{0}{4}
