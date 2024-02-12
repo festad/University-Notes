@@ -58,31 +58,29 @@
     \tableofcontents
 \end{frame}
 
-
 \begin{frame}
-\footnotesize
-\kc{} is a web information system that allows different actors to cooperate
-to give the best experience possible to the karting community.
-Visitors can explore our website, discover tracks and karting centers 
-near to where they live and also events that, like a tour, take place 
-in different tracks and karting centers. When visitors feel ready
-to have they first race, they can register as pilots from home or 
-at the closest karting center. \kc{} allows pilots to organize
-their own races by choosing a track of a karting center, picking a date 
-and a time and inserting the names of the pilots that will participate,
-then the system will create a reservation that the clerk of the target karting center
-will confirm. Organizers can create events (an event is a sequence of races that can take
-place on different tracks), they can insert pilots of their choice and they can accept
-applications from pilots that want to participate. Similarly to before, the system 
-will create reservations that the clerks of the karting centers will confirm.
-Karting center administrators can manage their karting centers by adding new
-tracks and go-karts or registering new pilots and clerks.
-Clerks can confirm reservations from pilots and organizers and moderate reviews
-that pilots write about karting centers, tracks and events.
-The information system administrator can manage the information system by creating new karting centers,
-karting center administrators and organizers, they can also take care of all the
-entities that help the visitors to navigate the website, such as cities, categories or ranges 
-useful to filter karting centers, tracks and events.
+    \footnotesize
+    \kc{} is a web information system that allows different actors to cooperate
+    to offer an optimal experience to the karting community.
+    Visitors can explore \kc{}, discover tracks and karting centers 
+    near to where they live as well as events that tour different tracks and karting centers. When ready
+    for their first race, visitors can register as pilots either online or 
+    at a nearby karting center. \kc{} enables pilots to organize
+    their own races by selecting a track of a karting center, choosing a date 
+    and time and listing participating pilots,
+    then the system will create a reservation that the clerk of the target karting center
+    will confirm. Organizers can create events (an event is a sequence of races that can take
+    place on different tracks), they can insert pilots of their choice and they can accept
+    applications from pilots that want to participate. Similarly to before, the system 
+    will create reservations that the clerks of the karting centers will confirm.
+    Karting center administrators can manage their karting centers by adding new
+    tracks and go-karts or registering new pilots and clerks.
+    Clerks can confirm reservations from pilots and organizers and moderate reviews
+    submitted by pilots about karting centers, tracks and events.
+    The information system administrator manages \kc{} by creating new karting centers,
+    karting center administrators and organizers, he also takes care of all the
+    entities that help the visitors to navigate the website, such as cities, categories or ranges 
+    useful to filter karting centers, tracks and events.
 \end{frame}
 
 
@@ -1605,7 +1603,7 @@ useful to filter karting centers, tracks and events.
     \hline  
     Title & \textbf{Explore pilots by karting center} \\
     \hline
-    Goal & The user explores the pilots that participated in at
+    Goal & The user explores the pilots that participated to at
     least one race on a track of a karting center the user manages. \\
     \hline
     Precondition & The user logged in, manages at least one karting center and at least one pilot
@@ -3461,8 +3459,8 @@ Components & Reservation, Lap-time \\
 Relations & 
 Race\_Track (N:1): the track the race has been raced on \newline
 Race\_Reservation (1:1): the reservation that has been made for the race \newline
-Race\_Pilot (N:N): the pilots that participated in the race \newline
-Race\_LapTime (1:N): every lap-time of every pilot that participated in the race \newline
+Race\_Pilot (N:N): the pilots that participated to the race \newline
+Race\_LapTime (1:N): every lap-time of every pilot that participated to the race \newline
 Race\_Event (N:1): the event the race is part of \newline
 \textit{Race\_Pilot} (1:N): the pilots who have this race as their last race \newline
 \textit{Race\_Laptime} (1:1): the best lap-time of the race \\
@@ -4066,7 +4064,7 @@ Subconcepts & Controversial event, Popular event, Upcoming event \\
     Pilot\_Application (1:N): the applications the pilot made \newline
     Pilot\_Reservation (1:N): the reservations the pilot made \newline
     Pilot\_Track (N:N): the tracks the pilot has as favorite \newline
-    Pilot\_Race (N:N): the races the pilot participated in \newline
+    Pilot\_Race (N:N): the races the pilot participated to \newline
     Pilot\_LapTime (1:N): the lap-times the pilot made \newline
     \textit{Pilot\_Race} (N:1): the last race the pilot participated to \newline
     \textit{Pilot\_Event} (N:N): the events the pilot was accepted to participate to \\
@@ -4758,7 +4756,7 @@ Subconcepts & Controversial event, Popular event, Upcoming event \\
         to create a new race and reservation.
          & Race, Reservation & High \\
         \hline
-        Race & The area shows a list of past races the pilot participated in, by choosing one he can read its details,
+        Race & The area shows a list of past races the pilot participated to, by choosing one he can read its details,
         write a review of the karting center or the track that hosted the race.
          & Race, LapTime, KartingCenter, KartingCenterReview, Track, TrackReview
         (Pilot, Track, Timetable and KartingCenter when operating on Race) & High \\
@@ -5177,8 +5175,9 @@ Subconcepts & Controversial event, Popular event, Upcoming event \\
         and others, we adopt the primitive 
     $$ \text{CoreSub.}(\text{core\_weak\_entity}_1,\dots,\text{core\_weak\_entity}_N) $$
     to represent the focus of a page on the components only of a core entity, without the need to show the core entity itself. \\
+    \hfill\\
     Another note: in the following slides the interconnection between an entity and any other entity is not shown unless the interconnection
-    concides with an interconnection subscheme: e.g. in the site view \textit{Public view}, area \textit{Karting center}, the final hypertext model 
+    coincides with an interconnection subscheme: e.g. in the site view \textit{Public view}, area \textit{Karting center}, the final hypertext model 
     allows the visitor to move from a karting center to its reviews, but this is not shown in the coarse hypertext model, the
     only interconnection shown are from KartingCenter to Event and from KartingCenter to Track.
     Multi-steps paths are not explicitly represented:
@@ -5297,6 +5296,7 @@ to make...
     in the karting center or how the pilots performed compared to each other
     might still be relevant independently of the existence of the track.
     Notice that the deletion of a track still implies the deletion of the other two weak entities, timetable and leaderboard.
+    \hfill \\
     Another specific choice made in \kc{} is that the reservation, a weak entity of the race but not of the track, is deleted together 
     with the track because, differently from the race, does not carry relevant information in addition to the race that is kept.
     
