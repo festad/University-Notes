@@ -45,5 +45,17 @@ Route::post('/login', [UserController::class, 'login'])->name('login.submit');
 
 Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
+Route::middleware(['auth', 'role:Organizer'])->group(function () {
+    
+    Route::get('/organizer', function() {
+        return view('organizer');
+    })->name('organizer');
+
+    Route::post('events/store', [EventController::class, 'store'])->name('events.store');
+
+    Route::get('organizer/events', [EventController::class, 'getEventsFromOrganizer'])->name('organizer.events');
+
+});
+
 
 

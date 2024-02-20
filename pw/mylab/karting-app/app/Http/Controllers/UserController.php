@@ -21,6 +21,11 @@ use Illuminate\Support\Facades\Validator;
 class UserController extends Controller
 {
 
+    public function hasRole($role)
+    {
+        return $this->roles()->where('name', $role)->exists();
+    }
+
     public function checkEmail(Request $request)
     {
         $email = $request->input('email');
