@@ -16,9 +16,11 @@ use App\Http\Controllers\LanguageController;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+// No need to use the language middleware, it has been set
+// to globally run on every request in the 'web' group, cfr App\Http\Kernel.php
+// Route::middleware(['language'])->group(function () {
+//     Route::get('/', function () {return view('home');})->name('home');
+// });
 
 // Restful routes for thread
 
@@ -42,7 +44,6 @@ Route::get('/threads/search/title', [ThreadController::class, 'search_title'])->
 
 // search a thread by author
 Route::get('/threads/search/author', [ThreadController::class, 'search_author'])->name('threads.search.author');
-
 
 // change language
 Route::get('/language/{lang}',
