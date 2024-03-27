@@ -16,9 +16,9 @@
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Title</th>
+                            <th>{{__('messages.title')}}</th>
                             <th>Author</th>
-                            <th>Comments</th>
+                            <th>{{__('messages.comments')}}</th>
                             <th>Tags</th>
                             <th>Actions</th>
                         </tr>

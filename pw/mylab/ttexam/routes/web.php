@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\ThreadController;
+use App\Http\Controllers\LanguageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,3 +42,9 @@ Route::get('/threads/search/title', [ThreadController::class, 'search_title'])->
 
 // search a thread by author
 Route::get('/threads/search/author', [ThreadController::class, 'search_author'])->name('threads.search.author');
+
+
+// change language
+Route::get('/language/{lang}',
+           [LanguageController::class, 'switch']
+)->name('language.switch');
