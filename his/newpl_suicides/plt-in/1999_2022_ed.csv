@@ -1,0 +1,4727 @@
+year,garnizon,education,suicides,outcome
+1999,Wrocław,basic incomplete,13,Attempted
+1999,Wrocław,basic,90,Attempted
+1999,Wrocław,technical/professional,98,Attempted
+1999,Wrocław,medium,35,Attempted
+1999,Wrocław,higher,4,Attempted
+1999,Bydgoszcz,basic incomplete,13,Attempted
+1999,Bydgoszcz,basic,79,Attempted
+1999,Bydgoszcz,technical/professional,62,Attempted
+1999,Bydgoszcz,medium,26,Attempted
+1999,Bydgoszcz,higher,2,Attempted
+1999,Lublin,basic incomplete,21,Attempted
+1999,Lublin,basic,100,Attempted
+1999,Lublin,technical/professional,61,Attempted
+1999,Lublin,medium,21,Attempted
+1999,Lublin,higher,5,Attempted
+1999,Gorzów Wlkp.,basic incomplete,4,Attempted
+1999,Gorzów Wlkp.,basic,32,Attempted
+1999,Gorzów Wlkp.,technical/professional,43,Attempted
+1999,Gorzów Wlkp.,medium,15,Attempted
+1999,Gorzów Wlkp.,higher,5,Attempted
+1999,Łódź,basic incomplete,39,Attempted
+1999,Łódź,basic,143,Attempted
+1999,Łódź,technical/professional,76,Attempted
+1999,Łódź,medium,23,Attempted
+1999,Łódź,higher,10,Attempted
+1999,Kraków,basic incomplete,9,Attempted
+1999,Kraków,basic,88,Attempted
+1999,Kraków,technical/professional,100,Attempted
+1999,Kraków,medium,28,Attempted
+1999,Kraków,higher,6,Attempted
+1999,Radom,basic incomplete,32,Attempted
+1999,Radom,basic,127,Attempted
+1999,Radom,technical/professional,97,Attempted
+1999,Radom,medium,35,Attempted
+1999,Radom,higher,4,Attempted
+1999,Opole,basic incomplete,11,Attempted
+1999,Opole,basic,49,Attempted
+1999,Opole,technical/professional,52,Attempted
+1999,Opole,medium,12,Attempted
+1999,Opole,higher,4,Attempted
+1999,Rzeszów,basic incomplete,9,Attempted
+1999,Rzeszów,basic,63,Attempted
+1999,Rzeszów,technical/professional,54,Attempted
+1999,Rzeszów,medium,23,Attempted
+1999,Rzeszów,higher,4,Attempted
+1999,Białystok,basic incomplete,24,Attempted
+1999,Białystok,basic,74,Attempted
+1999,Białystok,technical/professional,40,Attempted
+1999,Białystok,medium,18,Attempted
+1999,Białystok,higher,6,Attempted
+1999,Gdańsk,basic incomplete,10,Attempted
+1999,Gdańsk,basic,78,Attempted
+1999,Gdańsk,technical/professional,57,Attempted
+1999,Gdańsk,medium,20,Attempted
+1999,Gdańsk,higher,6,Attempted
+1999,Katowice,basic incomplete,23,Attempted
+1999,Katowice,basic,91,Attempted
+1999,Katowice,technical/professional,156,Attempted
+1999,Katowice,medium,37,Attempted
+1999,Katowice,higher,7,Attempted
+1999,Kielce,basic incomplete,12,Attempted
+1999,Kielce,basic,64,Attempted
+1999,Kielce,technical/professional,62,Attempted
+1999,Kielce,medium,16,Attempted
+1999,Kielce,higher,5,Attempted
+1999,Olsztyn,basic incomplete,21,Attempted
+1999,Olsztyn,basic,57,Attempted
+1999,Olsztyn,technical/professional,35,Attempted
+1999,Olsztyn,medium,21,Attempted
+1999,Olsztyn,higher,4,Attempted
+1999,Poznań,basic incomplete,33,Attempted
+1999,Poznań,basic,175,Attempted
+1999,Poznań,technical/professional,211,Attempted
+1999,Poznań,medium,57,Attempted
+1999,Poznań,higher,18,Attempted
+1999,Szczecin,basic incomplete,13,Attempted
+1999,Szczecin,basic,89,Attempted
+1999,Szczecin,technical/professional,69,Attempted
+1999,Szczecin,medium,23,Attempted
+1999,Szczecin,higher,2,Attempted
+1999,Warszawa,basic incomplete,4,Attempted
+1999,Warszawa,basic,12,Attempted
+1999,Warszawa,technical/professional,30,Attempted
+1999,Warszawa,medium,27,Attempted
+1999,Warszawa,higher,2,Attempted
+2000,Wrocław,basic incomplete,17,Attempted
+2000,Wrocław,basic,94,Attempted
+2000,Wrocław,technical/professional,99,Attempted
+2000,Wrocław,medium,36,Attempted
+2000,Wrocław,higher,7,Attempted
+2000,Bydgoszcz,basic incomplete,7,Attempted
+2000,Bydgoszcz,basic,66,Attempted
+2000,Bydgoszcz,technical/professional,60,Attempted
+2000,Bydgoszcz,medium,18,Attempted
+2000,Bydgoszcz,higher,5,Attempted
+2000,Lublin,basic incomplete,25,Attempted
+2000,Lublin,basic,90,Attempted
+2000,Lublin,technical/professional,60,Attempted
+2000,Lublin,medium,19,Attempted
+2000,Lublin,higher,4,Attempted
+2000,Gorzów Wlkp.,basic incomplete,7,Attempted
+2000,Gorzów Wlkp.,basic,26,Attempted
+2000,Gorzów Wlkp.,technical/professional,35,Attempted
+2000,Gorzów Wlkp.,medium,11,Attempted
+2000,Gorzów Wlkp.,higher,4,Attempted
+2000,Łódź,basic incomplete,26,Attempted
+2000,Łódź,basic,109,Attempted
+2000,Łódź,technical/professional,87,Attempted
+2000,Łódź,medium,28,Attempted
+2000,Łódź,higher,4,Attempted
+2000,Kraków,basic incomplete,19,Attempted
+2000,Kraków,basic,152,Attempted
+2000,Kraków,technical/professional,129,Attempted
+2000,Kraków,medium,53,Attempted
+2000,Kraków,higher,20,Attempted
+2000,Radom,basic incomplete,27,Attempted
+2000,Radom,basic,138,Attempted
+2000,Radom,technical/professional,100,Attempted
+2000,Radom,medium,26,Attempted
+2000,Radom,higher,6,Attempted
+2000,Opole,basic incomplete,4,Attempted
+2000,Opole,basic,35,Attempted
+2000,Opole,technical/professional,34,Attempted
+2000,Opole,medium,12,Attempted
+2000,Opole,higher,3,Attempted
+2000,Rzeszów,basic incomplete,19,Attempted
+2000,Rzeszów,basic,107,Attempted
+2000,Rzeszów,technical/professional,101,Attempted
+2000,Rzeszów,medium,31,Attempted
+2000,Rzeszów,higher,9,Attempted
+2000,Białystok,basic incomplete,18,Attempted
+2000,Białystok,basic,79,Attempted
+2000,Białystok,technical/professional,37,Attempted
+2000,Białystok,medium,21,Attempted
+2000,Białystok,higher,5,Attempted
+2000,Gdańsk,basic incomplete,18,Attempted
+2000,Gdańsk,basic,65,Attempted
+2000,Gdańsk,technical/professional,59,Attempted
+2000,Gdańsk,medium,21,Attempted
+2000,Gdańsk,higher,9,Attempted
+2000,Katowice,basic incomplete,15,Attempted
+2000,Katowice,basic,98,Attempted
+2000,Katowice,technical/professional,165,Attempted
+2000,Katowice,medium,51,Attempted
+2000,Katowice,higher,11,Attempted
+2000,Kielce,basic incomplete,13,Attempted
+2000,Kielce,basic,51,Attempted
+2000,Kielce,technical/professional,52,Attempted
+2000,Kielce,medium,25,Attempted
+2000,Kielce,higher,5,Attempted
+2000,Olsztyn,basic incomplete,6,Attempted
+2000,Olsztyn,basic,46,Attempted
+2000,Olsztyn,technical/professional,21,Attempted
+2000,Olsztyn,medium,13,Attempted
+2000,Olsztyn,higher,1,Attempted
+2000,Poznań,basic incomplete,24,Attempted
+2000,Poznań,basic,161,Attempted
+2000,Poznań,technical/professional,169,Attempted
+2000,Poznań,medium,51,Attempted
+2000,Poznań,higher,15,Attempted
+2000,Szczecin,basic incomplete,17,Attempted
+2000,Szczecin,basic,77,Attempted
+2000,Szczecin,technical/professional,59,Attempted
+2000,Szczecin,medium,25,Attempted
+2000,Szczecin,higher,3,Attempted
+2000,Warszawa,basic incomplete,3,Attempted
+2000,Warszawa,basic,11,Attempted
+2000,Warszawa,technical/professional,18,Attempted
+2000,Warszawa,medium,16,Attempted
+2000,Warszawa,higher,9,Attempted
+2001,Wrocław,basic incomplete,13,Attempted
+2001,Wrocław,basic,73,Attempted
+2001,Wrocław,technical/professional,94,Attempted
+2001,Wrocław,medium,26,Attempted
+2001,Wrocław,higher,4,Attempted
+2001,Bydgoszcz,basic incomplete,9,Attempted
+2001,Bydgoszcz,basic,74,Attempted
+2001,Bydgoszcz,technical/professional,59,Attempted
+2001,Bydgoszcz,medium,22,Attempted
+2001,Bydgoszcz,higher,3,Attempted
+2001,Lublin,basic incomplete,19,Attempted
+2001,Lublin,basic,98,Attempted
+2001,Lublin,technical/professional,76,Attempted
+2001,Lublin,medium,29,Attempted
+2001,Lublin,higher,7,Attempted
+2001,Gorzów Wlkp.,basic incomplete,6,Attempted
+2001,Gorzów Wlkp.,basic,31,Attempted
+2001,Gorzów Wlkp.,technical/professional,42,Attempted
+2001,Gorzów Wlkp.,medium,20,Attempted
+2001,Gorzów Wlkp.,higher,7,Attempted
+2001,Łódź,basic incomplete,30,Attempted
+2001,Łódź,basic,99,Attempted
+2001,Łódź,technical/professional,85,Attempted
+2001,Łódź,medium,26,Attempted
+2001,Łódź,higher,11,Attempted
+2001,Kraków,basic incomplete,15,Attempted
+2001,Kraków,basic,124,Attempted
+2001,Kraków,technical/professional,143,Attempted
+2001,Kraków,medium,52,Attempted
+2001,Kraków,higher,24,Attempted
+2001,Radom,basic incomplete,39,Attempted
+2001,Radom,basic,119,Attempted
+2001,Radom,technical/professional,99,Attempted
+2001,Radom,medium,40,Attempted
+2001,Radom,higher,3,Attempted
+2001,Opole,basic incomplete,4,Attempted
+2001,Opole,basic,34,Attempted
+2001,Opole,technical/professional,42,Attempted
+2001,Opole,medium,11,Attempted
+2001,Opole,higher,3,Attempted
+2001,Rzeszów,basic incomplete,20,Attempted
+2001,Rzeszów,basic,85,Attempted
+2001,Rzeszów,technical/professional,82,Attempted
+2001,Rzeszów,medium,25,Attempted
+2001,Rzeszów,higher,7,Attempted
+2001,Białystok,basic incomplete,19,Attempted
+2001,Białystok,basic,69,Attempted
+2001,Białystok,technical/professional,45,Attempted
+2001,Białystok,medium,10,Attempted
+2001,Białystok,higher,3,Attempted
+2001,Gdańsk,basic incomplete,4,Attempted
+2001,Gdańsk,basic,68,Attempted
+2001,Gdańsk,technical/professional,64,Attempted
+2001,Gdańsk,medium,24,Attempted
+2001,Gdańsk,higher,10,Attempted
+2001,Katowice,basic incomplete,8,Attempted
+2001,Katowice,basic,90,Attempted
+2001,Katowice,technical/professional,140,Attempted
+2001,Katowice,medium,43,Attempted
+2001,Katowice,higher,10,Attempted
+2001,Kielce,basic incomplete,12,Attempted
+2001,Kielce,basic,49,Attempted
+2001,Kielce,technical/professional,62,Attempted
+2001,Kielce,medium,19,Attempted
+2001,Kielce,higher,4,Attempted
+2001,Olsztyn,basic incomplete,12,Attempted
+2001,Olsztyn,basic,73,Attempted
+2001,Olsztyn,technical/professional,36,Attempted
+2001,Olsztyn,medium,12,Attempted
+2001,Olsztyn,higher,8,Attempted
+2001,Poznań,basic incomplete,25,Attempted
+2001,Poznań,basic,135,Attempted
+2001,Poznań,technical/professional,185,Attempted
+2001,Poznań,medium,53,Attempted
+2001,Poznań,higher,10,Attempted
+2001,Szczecin,basic incomplete,16,Attempted
+2001,Szczecin,basic,66,Attempted
+2001,Szczecin,technical/professional,52,Attempted
+2001,Szczecin,medium,22,Attempted
+2001,Szczecin,higher,3,Attempted
+2001,Warszawa,basic incomplete,0,Attempted
+2001,Warszawa,basic,7,Attempted
+2001,Warszawa,technical/professional,8,Attempted
+2001,Warszawa,medium,14,Attempted
+2001,Warszawa,higher,6,Attempted
+2002,Wrocław,basic incomplete,8,Attempted
+2002,Wrocław,basic,80,Attempted
+2002,Wrocław,technical/professional,69,Attempted
+2002,Wrocław,medium,40,Attempted
+2002,Wrocław,higher,6,Attempted
+2002,Bydgoszcz,basic incomplete,8,Attempted
+2002,Bydgoszcz,basic,54,Attempted
+2002,Bydgoszcz,technical/professional,56,Attempted
+2002,Bydgoszcz,medium,19,Attempted
+2002,Bydgoszcz,higher,4,Attempted
+2002,Lublin,basic incomplete,17,Attempted
+2002,Lublin,basic,105,Attempted
+2002,Lublin,technical/professional,75,Attempted
+2002,Lublin,medium,25,Attempted
+2002,Lublin,higher,6,Attempted
+2002,Gorzów Wlkp.,basic incomplete,2,Attempted
+2002,Gorzów Wlkp.,basic,37,Attempted
+2002,Gorzów Wlkp.,technical/professional,40,Attempted
+2002,Gorzów Wlkp.,medium,16,Attempted
+2002,Gorzów Wlkp.,higher,1,Attempted
+2002,Łódź,basic incomplete,19,Attempted
+2002,Łódź,basic,105,Attempted
+2002,Łódź,technical/professional,79,Attempted
+2002,Łódź,medium,28,Attempted
+2002,Łódź,higher,5,Attempted
+2002,Kraków,basic incomplete,10,Attempted
+2002,Kraków,basic,127,Attempted
+2002,Kraków,technical/professional,120,Attempted
+2002,Kraków,medium,52,Attempted
+2002,Kraków,higher,14,Attempted
+2002,Radom,basic incomplete,21,Attempted
+2002,Radom,basic,100,Attempted
+2002,Radom,technical/professional,78,Attempted
+2002,Radom,medium,31,Attempted
+2002,Radom,higher,3,Attempted
+2002,Opole,basic incomplete,5,Attempted
+2002,Opole,basic,36,Attempted
+2002,Opole,technical/professional,27,Attempted
+2002,Opole,medium,6,Attempted
+2002,Opole,higher,4,Attempted
+2002,Rzeszów,basic incomplete,13,Attempted
+2002,Rzeszów,basic,94,Attempted
+2002,Rzeszów,technical/professional,96,Attempted
+2002,Rzeszów,medium,40,Attempted
+2002,Rzeszów,higher,12,Attempted
+2002,Białystok,basic incomplete,23,Attempted
+2002,Białystok,basic,59,Attempted
+2002,Białystok,technical/professional,37,Attempted
+2002,Białystok,medium,21,Attempted
+2002,Białystok,higher,7,Attempted
+2002,Gdańsk,basic incomplete,3,Attempted
+2002,Gdańsk,basic,62,Attempted
+2002,Gdańsk,technical/professional,59,Attempted
+2002,Gdańsk,medium,17,Attempted
+2002,Gdańsk,higher,3,Attempted
+2002,Katowice,basic incomplete,11,Attempted
+2002,Katowice,basic,90,Attempted
+2002,Katowice,technical/professional,154,Attempted
+2002,Katowice,medium,45,Attempted
+2002,Katowice,higher,9,Attempted
+2002,Kielce,basic incomplete,19,Attempted
+2002,Kielce,basic,66,Attempted
+2002,Kielce,technical/professional,60,Attempted
+2002,Kielce,medium,17,Attempted
+2002,Kielce,higher,1,Attempted
+2002,Olsztyn,basic incomplete,12,Attempted
+2002,Olsztyn,basic,80,Attempted
+2002,Olsztyn,technical/professional,43,Attempted
+2002,Olsztyn,medium,20,Attempted
+2002,Olsztyn,higher,2,Attempted
+2002,Poznań,basic incomplete,23,Attempted
+2002,Poznań,basic,126,Attempted
+2002,Poznań,technical/professional,162,Attempted
+2002,Poznań,medium,42,Attempted
+2002,Poznań,higher,14,Attempted
+2002,Szczecin,basic incomplete,20,Attempted
+2002,Szczecin,basic,66,Attempted
+2002,Szczecin,technical/professional,70,Attempted
+2002,Szczecin,medium,24,Attempted
+2002,Szczecin,higher,5,Attempted
+2002,Warszawa,basic incomplete,1,Attempted
+2002,Warszawa,basic,15,Attempted
+2002,Warszawa,technical/professional,18,Attempted
+2002,Warszawa,medium,15,Attempted
+2002,Warszawa,higher,4,Attempted
+2003,Wrocław,basic incomplete,6,Attempted
+2003,Wrocław,basic,74,Attempted
+2003,Wrocław,technical/professional,81,Attempted
+2003,Wrocław,medium,30,Attempted
+2003,Wrocław,higher,13,Attempted
+2003,Bydgoszcz,basic incomplete,3,Attempted
+2003,Bydgoszcz,basic,36,Attempted
+2003,Bydgoszcz,technical/professional,48,Attempted
+2003,Bydgoszcz,medium,22,Attempted
+2003,Bydgoszcz,higher,6,Attempted
+2003,Lublin,basic incomplete,16,Attempted
+2003,Lublin,basic,110,Attempted
+2003,Lublin,technical/professional,74,Attempted
+2003,Lublin,medium,32,Attempted
+2003,Lublin,higher,5,Attempted
+2003,Gorzów Wlkp.,basic incomplete,5,Attempted
+2003,Gorzów Wlkp.,basic,29,Attempted
+2003,Gorzów Wlkp.,technical/professional,18,Attempted
+2003,Gorzów Wlkp.,medium,14,Attempted
+2003,Gorzów Wlkp.,higher,4,Attempted
+2003,Łódź,basic incomplete,10,Attempted
+2003,Łódź,basic,91,Attempted
+2003,Łódź,technical/professional,76,Attempted
+2003,Łódź,medium,29,Attempted
+2003,Łódź,higher,8,Attempted
+2003,Kraków,basic incomplete,12,Attempted
+2003,Kraków,basic,78,Attempted
+2003,Kraków,technical/professional,113,Attempted
+2003,Kraków,medium,35,Attempted
+2003,Kraków,higher,8,Attempted
+2003,Radom,basic incomplete,18,Attempted
+2003,Radom,basic,93,Attempted
+2003,Radom,technical/professional,50,Attempted
+2003,Radom,medium,26,Attempted
+2003,Radom,higher,5,Attempted
+2003,Opole,basic incomplete,2,Attempted
+2003,Opole,basic,25,Attempted
+2003,Opole,technical/professional,33,Attempted
+2003,Opole,medium,8,Attempted
+2003,Opole,higher,6,Attempted
+2003,Rzeszów,basic incomplete,7,Attempted
+2003,Rzeszów,basic,67,Attempted
+2003,Rzeszów,technical/professional,56,Attempted
+2003,Rzeszów,medium,18,Attempted
+2003,Rzeszów,higher,5,Attempted
+2003,Białystok,basic incomplete,14,Attempted
+2003,Białystok,basic,73,Attempted
+2003,Białystok,technical/professional,49,Attempted
+2003,Białystok,medium,26,Attempted
+2003,Białystok,higher,9,Attempted
+2003,Gdańsk,basic incomplete,5,Attempted
+2003,Gdańsk,basic,43,Attempted
+2003,Gdańsk,technical/professional,44,Attempted
+2003,Gdańsk,medium,15,Attempted
+2003,Gdańsk,higher,3,Attempted
+2003,Katowice,basic incomplete,9,Attempted
+2003,Katowice,basic,93,Attempted
+2003,Katowice,technical/professional,142,Attempted
+2003,Katowice,medium,46,Attempted
+2003,Katowice,higher,9,Attempted
+2003,Kielce,basic incomplete,6,Attempted
+2003,Kielce,basic,47,Attempted
+2003,Kielce,technical/professional,61,Attempted
+2003,Kielce,medium,18,Attempted
+2003,Kielce,higher,6,Attempted
+2003,Olsztyn,basic incomplete,12,Attempted
+2003,Olsztyn,basic,59,Attempted
+2003,Olsztyn,technical/professional,40,Attempted
+2003,Olsztyn,medium,18,Attempted
+2003,Olsztyn,higher,4,Attempted
+2003,Poznań,basic incomplete,14,Attempted
+2003,Poznań,basic,87,Attempted
+2003,Poznań,technical/professional,137,Attempted
+2003,Poznań,medium,41,Attempted
+2003,Poznań,higher,8,Attempted
+2003,Szczecin,basic incomplete,13,Attempted
+2003,Szczecin,basic,61,Attempted
+2003,Szczecin,technical/professional,74,Attempted
+2003,Szczecin,medium,20,Attempted
+2003,Szczecin,higher,3,Attempted
+2003,Warszawa,basic incomplete,2,Attempted
+2003,Warszawa,basic,19,Attempted
+2003,Warszawa,technical/professional,16,Attempted
+2003,Warszawa,medium,40,Attempted
+2003,Warszawa,higher,6,Attempted
+2004,Wrocław,basic incomplete,10,Attempted
+2004,Wrocław,basic,67,Attempted
+2004,Wrocław,technical/professional,71,Attempted
+2004,Wrocław,medium,25,Attempted
+2004,Wrocław,higher,10,Attempted
+2004,Bydgoszcz,basic incomplete,11,Attempted
+2004,Bydgoszcz,basic,74,Attempted
+2004,Bydgoszcz,technical/professional,72,Attempted
+2004,Bydgoszcz,medium,18,Attempted
+2004,Bydgoszcz,higher,5,Attempted
+2004,Lublin,basic incomplete,23,Attempted
+2004,Lublin,basic,123,Attempted
+2004,Lublin,technical/professional,79,Attempted
+2004,Lublin,medium,35,Attempted
+2004,Lublin,higher,3,Attempted
+2004,Gorzów Wlkp.,basic incomplete,5,Attempted
+2004,Gorzów Wlkp.,basic,33,Attempted
+2004,Gorzów Wlkp.,technical/professional,22,Attempted
+2004,Gorzów Wlkp.,medium,9,Attempted
+2004,Gorzów Wlkp.,higher,4,Attempted
+2004,Łódź,basic incomplete,6,Attempted
+2004,Łódź,basic,78,Attempted
+2004,Łódź,technical/professional,78,Attempted
+2004,Łódź,medium,25,Attempted
+2004,Łódź,higher,5,Attempted
+2004,Kraków,basic incomplete,9,Attempted
+2004,Kraków,basic,80,Attempted
+2004,Kraków,technical/professional,100,Attempted
+2004,Kraków,medium,32,Attempted
+2004,Kraków,higher,12,Attempted
+2004,Radom,basic incomplete,11,Attempted
+2004,Radom,basic,85,Attempted
+2004,Radom,technical/professional,61,Attempted
+2004,Radom,medium,15,Attempted
+2004,Radom,higher,5,Attempted
+2004,Opole,basic incomplete,4,Attempted
+2004,Opole,basic,27,Attempted
+2004,Opole,technical/professional,34,Attempted
+2004,Opole,medium,8,Attempted
+2004,Opole,higher,5,Attempted
+2004,Rzeszów,basic incomplete,7,Attempted
+2004,Rzeszów,basic,46,Attempted
+2004,Rzeszów,technical/professional,55,Attempted
+2004,Rzeszów,medium,29,Attempted
+2004,Rzeszów,higher,10,Attempted
+2004,Białystok,basic incomplete,9,Attempted
+2004,Białystok,basic,48,Attempted
+2004,Białystok,technical/professional,29,Attempted
+2004,Białystok,medium,21,Attempted
+2004,Białystok,higher,6,Attempted
+2004,Gdańsk,basic incomplete,6,Attempted
+2004,Gdańsk,basic,46,Attempted
+2004,Gdańsk,technical/professional,27,Attempted
+2004,Gdańsk,medium,9,Attempted
+2004,Gdańsk,higher,10,Attempted
+2004,Katowice,basic incomplete,10,Attempted
+2004,Katowice,basic,78,Attempted
+2004,Katowice,technical/professional,128,Attempted
+2004,Katowice,medium,67,Attempted
+2004,Katowice,higher,10,Attempted
+2004,Kielce,basic incomplete,11,Attempted
+2004,Kielce,basic,56,Attempted
+2004,Kielce,technical/professional,86,Attempted
+2004,Kielce,medium,34,Attempted
+2004,Kielce,higher,4,Attempted
+2004,Olsztyn,basic incomplete,1,Attempted
+2004,Olsztyn,basic,71,Attempted
+2004,Olsztyn,technical/professional,38,Attempted
+2004,Olsztyn,medium,15,Attempted
+2004,Olsztyn,higher,5,Attempted
+2004,Poznań,basic incomplete,9,Attempted
+2004,Poznań,basic,70,Attempted
+2004,Poznań,technical/professional,124,Attempted
+2004,Poznań,medium,39,Attempted
+2004,Poznań,higher,8,Attempted
+2004,Szczecin,basic incomplete,11,Attempted
+2004,Szczecin,basic,65,Attempted
+2004,Szczecin,technical/professional,51,Attempted
+2004,Szczecin,medium,20,Attempted
+2004,Szczecin,higher,3,Attempted
+2004,Warszawa,basic incomplete,3,Attempted
+2004,Warszawa,basic,37,Attempted
+2004,Warszawa,technical/professional,25,Attempted
+2004,Warszawa,medium,48,Attempted
+2004,Warszawa,higher,12,Attempted
+2005,Wrocław,basic incomplete,7,Attempted
+2005,Wrocław,basic,36,Attempted
+2005,Wrocław,technical/professional,54,Attempted
+2005,Wrocław,medium,20,Attempted
+2005,Wrocław,higher,7,Attempted
+2005,Bydgoszcz,basic incomplete,4,Attempted
+2005,Bydgoszcz,basic,62,Attempted
+2005,Bydgoszcz,technical/professional,66,Attempted
+2005,Bydgoszcz,medium,28,Attempted
+2005,Bydgoszcz,higher,3,Attempted
+2005,Lublin,basic incomplete,14,Attempted
+2005,Lublin,basic,87,Attempted
+2005,Lublin,technical/professional,59,Attempted
+2005,Lublin,medium,31,Attempted
+2005,Lublin,higher,9,Attempted
+2005,Gorzów Wlkp.,basic incomplete,3,Attempted
+2005,Gorzów Wlkp.,basic,29,Attempted
+2005,Gorzów Wlkp.,technical/professional,25,Attempted
+2005,Gorzów Wlkp.,medium,7,Attempted
+2005,Gorzów Wlkp.,higher,0,Attempted
+2005,Łódź,basic incomplete,15,Attempted
+2005,Łódź,basic,90,Attempted
+2005,Łódź,technical/professional,68,Attempted
+2005,Łódź,medium,26,Attempted
+2005,Łódź,higher,6,Attempted
+2005,Kraków,basic incomplete,7,Attempted
+2005,Kraków,basic,67,Attempted
+2005,Kraków,technical/professional,75,Attempted
+2005,Kraków,medium,36,Attempted
+2005,Kraków,higher,11,Attempted
+2005,Radom,basic incomplete,17,Attempted
+2005,Radom,basic,91,Attempted
+2005,Radom,technical/professional,63,Attempted
+2005,Radom,medium,17,Attempted
+2005,Radom,higher,6,Attempted
+2005,Opole,basic incomplete,4,Attempted
+2005,Opole,basic,26,Attempted
+2005,Opole,technical/professional,23,Attempted
+2005,Opole,medium,15,Attempted
+2005,Opole,higher,5,Attempted
+2005,Rzeszów,basic incomplete,7,Attempted
+2005,Rzeszów,basic,58,Attempted
+2005,Rzeszów,technical/professional,64,Attempted
+2005,Rzeszów,medium,23,Attempted
+2005,Rzeszów,higher,4,Attempted
+2005,Białystok,basic incomplete,3,Attempted
+2005,Białystok,basic,59,Attempted
+2005,Białystok,technical/professional,25,Attempted
+2005,Białystok,medium,23,Attempted
+2005,Białystok,higher,9,Attempted
+2005,Gdańsk,basic incomplete,6,Attempted
+2005,Gdańsk,basic,47,Attempted
+2005,Gdańsk,technical/professional,41,Attempted
+2005,Gdańsk,medium,15,Attempted
+2005,Gdańsk,higher,5,Attempted
+2005,Katowice,basic incomplete,6,Attempted
+2005,Katowice,basic,88,Attempted
+2005,Katowice,technical/professional,162,Attempted
+2005,Katowice,medium,45,Attempted
+2005,Katowice,higher,8,Attempted
+2005,Kielce,basic incomplete,7,Attempted
+2005,Kielce,basic,36,Attempted
+2005,Kielce,technical/professional,54,Attempted
+2005,Kielce,medium,40,Attempted
+2005,Kielce,higher,8,Attempted
+2005,Olsztyn,basic incomplete,7,Attempted
+2005,Olsztyn,basic,70,Attempted
+2005,Olsztyn,technical/professional,42,Attempted
+2005,Olsztyn,medium,17,Attempted
+2005,Olsztyn,higher,6,Attempted
+2005,Poznań,basic incomplete,9,Attempted
+2005,Poznań,basic,78,Attempted
+2005,Poznań,technical/professional,98,Attempted
+2005,Poznań,medium,36,Attempted
+2005,Poznań,higher,14,Attempted
+2005,Szczecin,basic incomplete,3,Attempted
+2005,Szczecin,basic,62,Attempted
+2005,Szczecin,technical/professional,40,Attempted
+2005,Szczecin,medium,13,Attempted
+2005,Szczecin,higher,7,Attempted
+2005,Warszawa,basic incomplete,5,Attempted
+2005,Warszawa,basic,38,Attempted
+2005,Warszawa,technical/professional,30,Attempted
+2005,Warszawa,medium,25,Attempted
+2005,Warszawa,higher,13,Attempted
+2006,Wrocław,basic incomplete,7,Attempted
+2006,Wrocław,basic,38,Attempted
+2006,Wrocław,technical/professional,40,Attempted
+2006,Wrocław,medium,17,Attempted
+2006,Wrocław,higher,6,Attempted
+2006,Bydgoszcz,basic incomplete,6,Attempted
+2006,Bydgoszcz,basic,35,Attempted
+2006,Bydgoszcz,technical/professional,53,Attempted
+2006,Bydgoszcz,medium,16,Attempted
+2006,Bydgoszcz,higher,4,Attempted
+2006,Lublin,basic incomplete,16,Attempted
+2006,Lublin,basic,93,Attempted
+2006,Lublin,technical/professional,48,Attempted
+2006,Lublin,medium,30,Attempted
+2006,Lublin,higher,4,Attempted
+2006,Gorzów Wlkp.,basic incomplete,2,Attempted
+2006,Gorzów Wlkp.,basic,19,Attempted
+2006,Gorzów Wlkp.,technical/professional,27,Attempted
+2006,Gorzów Wlkp.,medium,14,Attempted
+2006,Gorzów Wlkp.,higher,3,Attempted
+2006,Łódź,basic incomplete,11,Attempted
+2006,Łódź,basic,68,Attempted
+2006,Łódź,technical/professional,76,Attempted
+2006,Łódź,medium,22,Attempted
+2006,Łódź,higher,9,Attempted
+2006,Kraków,basic incomplete,3,Attempted
+2006,Kraków,basic,44,Attempted
+2006,Kraków,technical/professional,64,Attempted
+2006,Kraków,medium,28,Attempted
+2006,Kraków,higher,15,Attempted
+2006,Radom,basic incomplete,12,Attempted
+2006,Radom,basic,57,Attempted
+2006,Radom,technical/professional,51,Attempted
+2006,Radom,medium,23,Attempted
+2006,Radom,higher,3,Attempted
+2006,Opole,basic incomplete,2,Attempted
+2006,Opole,basic,32,Attempted
+2006,Opole,technical/professional,33,Attempted
+2006,Opole,medium,19,Attempted
+2006,Opole,higher,2,Attempted
+2006,Rzeszów,basic incomplete,3,Attempted
+2006,Rzeszów,basic,53,Attempted
+2006,Rzeszów,technical/professional,61,Attempted
+2006,Rzeszów,medium,19,Attempted
+2006,Rzeszów,higher,14,Attempted
+2006,Białystok,basic incomplete,8,Attempted
+2006,Białystok,basic,38,Attempted
+2006,Białystok,technical/professional,30,Attempted
+2006,Białystok,medium,15,Attempted
+2006,Białystok,higher,3,Attempted
+2006,Gdańsk,basic incomplete,9,Attempted
+2006,Gdańsk,basic,57,Attempted
+2006,Gdańsk,technical/professional,34,Attempted
+2006,Gdańsk,medium,12,Attempted
+2006,Gdańsk,higher,7,Attempted
+2006,Katowice,basic incomplete,2,Attempted
+2006,Katowice,basic,81,Attempted
+2006,Katowice,technical/professional,115,Attempted
+2006,Katowice,medium,45,Attempted
+2006,Katowice,higher,8,Attempted
+2006,Kielce,basic incomplete,2,Attempted
+2006,Kielce,basic,47,Attempted
+2006,Kielce,technical/professional,59,Attempted
+2006,Kielce,medium,59,Attempted
+2006,Kielce,higher,1,Attempted
+2006,Olsztyn,basic incomplete,2,Attempted
+2006,Olsztyn,basic,45,Attempted
+2006,Olsztyn,technical/professional,35,Attempted
+2006,Olsztyn,medium,9,Attempted
+2006,Olsztyn,higher,5,Attempted
+2006,Poznań,basic incomplete,10,Attempted
+2006,Poznań,basic,61,Attempted
+2006,Poznań,technical/professional,79,Attempted
+2006,Poznań,medium,22,Attempted
+2006,Poznań,higher,4,Attempted
+2006,Szczecin,basic incomplete,2,Attempted
+2006,Szczecin,basic,51,Attempted
+2006,Szczecin,technical/professional,31,Attempted
+2006,Szczecin,medium,19,Attempted
+2006,Szczecin,higher,3,Attempted
+2006,Warszawa,basic incomplete,2,Attempted
+2006,Warszawa,basic,31,Attempted
+2006,Warszawa,technical/professional,24,Attempted
+2006,Warszawa,medium,19,Attempted
+2006,Warszawa,higher,11,Attempted
+2007,Wrocław,basic incomplete,4,Attempted
+2007,Wrocław,basic,39,Attempted
+2007,Wrocław,technical/professional,45,Attempted
+2007,Wrocław,medium,15,Attempted
+2007,Wrocław,higher,7,Attempted
+2007,Bydgoszcz,basic incomplete,4,Attempted
+2007,Bydgoszcz,basic,52,Attempted
+2007,Bydgoszcz,technical/professional,27,Attempted
+2007,Bydgoszcz,medium,15,Attempted
+2007,Bydgoszcz,higher,5,Attempted
+2007,Lublin,basic incomplete,9,Attempted
+2007,Lublin,basic,56,Attempted
+2007,Lublin,technical/professional,49,Attempted
+2007,Lublin,medium,26,Attempted
+2007,Lublin,higher,5,Attempted
+2007,Gorzów Wlkp.,basic incomplete,3,Attempted
+2007,Gorzów Wlkp.,basic,15,Attempted
+2007,Gorzów Wlkp.,technical/professional,25,Attempted
+2007,Gorzów Wlkp.,medium,10,Attempted
+2007,Gorzów Wlkp.,higher,3,Attempted
+2007,Łódź,basic incomplete,12,Attempted
+2007,Łódź,basic,70,Attempted
+2007,Łódź,technical/professional,58,Attempted
+2007,Łódź,medium,30,Attempted
+2007,Łódź,higher,7,Attempted
+2007,Kraków,basic incomplete,3,Attempted
+2007,Kraków,basic,48,Attempted
+2007,Kraków,technical/professional,39,Attempted
+2007,Kraków,medium,30,Attempted
+2007,Kraków,higher,9,Attempted
+2007,Radom,basic incomplete,8,Attempted
+2007,Radom,basic,58,Attempted
+2007,Radom,technical/professional,57,Attempted
+2007,Radom,medium,12,Attempted
+2007,Radom,higher,5,Attempted
+2007,Opole,basic incomplete,2,Attempted
+2007,Opole,basic,17,Attempted
+2007,Opole,technical/professional,19,Attempted
+2007,Opole,medium,8,Attempted
+2007,Opole,higher,2,Attempted
+2007,Rzeszów,basic incomplete,8,Attempted
+2007,Rzeszów,basic,38,Attempted
+2007,Rzeszów,technical/professional,46,Attempted
+2007,Rzeszów,medium,16,Attempted
+2007,Rzeszów,higher,10,Attempted
+2007,Białystok,basic incomplete,7,Attempted
+2007,Białystok,basic,33,Attempted
+2007,Białystok,technical/professional,40,Attempted
+2007,Białystok,medium,18,Attempted
+2007,Białystok,higher,3,Attempted
+2007,Gdańsk,basic incomplete,3,Attempted
+2007,Gdańsk,basic,32,Attempted
+2007,Gdańsk,technical/professional,31,Attempted
+2007,Gdańsk,medium,11,Attempted
+2007,Gdańsk,higher,3,Attempted
+2007,Katowice,basic incomplete,3,Attempted
+2007,Katowice,basic,58,Attempted
+2007,Katowice,technical/professional,95,Attempted
+2007,Katowice,medium,31,Attempted
+2007,Katowice,higher,4,Attempted
+2007,Kielce,basic incomplete,3,Attempted
+2007,Kielce,basic,25,Attempted
+2007,Kielce,technical/professional,43,Attempted
+2007,Kielce,medium,45,Attempted
+2007,Kielce,higher,1,Attempted
+2007,Olsztyn,basic incomplete,8,Attempted
+2007,Olsztyn,basic,40,Attempted
+2007,Olsztyn,technical/professional,30,Attempted
+2007,Olsztyn,medium,9,Attempted
+2007,Olsztyn,higher,3,Attempted
+2007,Poznań,basic incomplete,9,Attempted
+2007,Poznań,basic,56,Attempted
+2007,Poznań,technical/professional,79,Attempted
+2007,Poznań,medium,20,Attempted
+2007,Poznań,higher,9,Attempted
+2007,Szczecin,basic incomplete,3,Attempted
+2007,Szczecin,basic,59,Attempted
+2007,Szczecin,technical/professional,34,Attempted
+2007,Szczecin,medium,20,Attempted
+2007,Szczecin,higher,5,Attempted
+2007,Warszawa,basic incomplete,1,Attempted
+2007,Warszawa,basic,12,Attempted
+2007,Warszawa,technical/professional,9,Attempted
+2007,Warszawa,medium,20,Attempted
+2007,Warszawa,higher,8,Attempted
+2008,Wrocław,basic incomplete,6,Attempted
+2008,Wrocław,basic,37,Attempted
+2008,Wrocław,technical/professional,34,Attempted
+2008,Wrocław,medium,23,Attempted
+2008,Wrocław,higher,6,Attempted
+2008,Bydgoszcz,basic incomplete,4,Attempted
+2008,Bydgoszcz,basic,44,Attempted
+2008,Bydgoszcz,technical/professional,67,Attempted
+2008,Bydgoszcz,medium,36,Attempted
+2008,Bydgoszcz,higher,0,Attempted
+2008,Lublin,basic incomplete,10,Attempted
+2008,Lublin,basic,108,Attempted
+2008,Lublin,technical/professional,61,Attempted
+2008,Lublin,medium,21,Attempted
+2008,Lublin,higher,7,Attempted
+2008,Gorzów Wlkp.,basic incomplete,2,Attempted
+2008,Gorzów Wlkp.,basic,24,Attempted
+2008,Gorzów Wlkp.,technical/professional,16,Attempted
+2008,Gorzów Wlkp.,medium,7,Attempted
+2008,Gorzów Wlkp.,higher,2,Attempted
+2008,Łódź,basic incomplete,4,Attempted
+2008,Łódź,basic,74,Attempted
+2008,Łódź,technical/professional,63,Attempted
+2008,Łódź,medium,31,Attempted
+2008,Łódź,higher,9,Attempted
+2008,Kraków,basic incomplete,1,Attempted
+2008,Kraków,basic,45,Attempted
+2008,Kraków,technical/professional,42,Attempted
+2008,Kraków,medium,24,Attempted
+2008,Kraków,higher,10,Attempted
+2008,Radom,basic incomplete,16,Attempted
+2008,Radom,basic,101,Attempted
+2008,Radom,technical/professional,79,Attempted
+2008,Radom,medium,19,Attempted
+2008,Radom,higher,7,Attempted
+2008,Opole,basic incomplete,1,Attempted
+2008,Opole,basic,21,Attempted
+2008,Opole,technical/professional,32,Attempted
+2008,Opole,medium,10,Attempted
+2008,Opole,higher,5,Attempted
+2008,Rzeszów,basic incomplete,5,Attempted
+2008,Rzeszów,basic,46,Attempted
+2008,Rzeszów,technical/professional,36,Attempted
+2008,Rzeszów,medium,20,Attempted
+2008,Rzeszów,higher,6,Attempted
+2008,Białystok,basic incomplete,4,Attempted
+2008,Białystok,basic,51,Attempted
+2008,Białystok,technical/professional,26,Attempted
+2008,Białystok,medium,25,Attempted
+2008,Białystok,higher,4,Attempted
+2008,Gdańsk,basic incomplete,3,Attempted
+2008,Gdańsk,basic,35,Attempted
+2008,Gdańsk,technical/professional,17,Attempted
+2008,Gdańsk,medium,15,Attempted
+2008,Gdańsk,higher,2,Attempted
+2008,Katowice,basic incomplete,7,Attempted
+2008,Katowice,basic,54,Attempted
+2008,Katowice,technical/professional,99,Attempted
+2008,Katowice,medium,36,Attempted
+2008,Katowice,higher,5,Attempted
+2008,Kielce,basic incomplete,4,Attempted
+2008,Kielce,basic,18,Attempted
+2008,Kielce,technical/professional,28,Attempted
+2008,Kielce,medium,7,Attempted
+2008,Kielce,higher,3,Attempted
+2008,Olsztyn,basic incomplete,5,Attempted
+2008,Olsztyn,basic,49,Attempted
+2008,Olsztyn,technical/professional,34,Attempted
+2008,Olsztyn,medium,12,Attempted
+2008,Olsztyn,higher,5,Attempted
+2008,Poznań,basic incomplete,8,Attempted
+2008,Poznań,basic,47,Attempted
+2008,Poznań,technical/professional,58,Attempted
+2008,Poznań,medium,21,Attempted
+2008,Poznań,higher,6,Attempted
+2008,Szczecin,basic incomplete,2,Attempted
+2008,Szczecin,basic,42,Attempted
+2008,Szczecin,technical/professional,35,Attempted
+2008,Szczecin,medium,14,Attempted
+2008,Szczecin,higher,4,Attempted
+2008,Warszawa,basic incomplete,2,Attempted
+2008,Warszawa,basic,8,Attempted
+2008,Warszawa,technical/professional,8,Attempted
+2008,Warszawa,medium,27,Attempted
+2008,Warszawa,higher,11,Attempted
+2009,Wrocław,basic incomplete,3,Attempted
+2009,Wrocław,basic,29,Attempted
+2009,Wrocław,technical/professional,41,Attempted
+2009,Wrocław,medium,19,Attempted
+2009,Wrocław,higher,3,Attempted
+2009,Bydgoszcz,basic incomplete,7,Attempted
+2009,Bydgoszcz,basic,39,Attempted
+2009,Bydgoszcz,technical/professional,57,Attempted
+2009,Bydgoszcz,medium,33,Attempted
+2009,Bydgoszcz,higher,5,Attempted
+2009,Lublin,basic incomplete,8,Attempted
+2009,Lublin,basic,74,Attempted
+2009,Lublin,technical/professional,41,Attempted
+2009,Lublin,medium,23,Attempted
+2009,Lublin,higher,10,Attempted
+2009,Gorzów Wlkp.,basic incomplete,3,Attempted
+2009,Gorzów Wlkp.,basic,26,Attempted
+2009,Gorzów Wlkp.,technical/professional,27,Attempted
+2009,Gorzów Wlkp.,medium,13,Attempted
+2009,Gorzów Wlkp.,higher,1,Attempted
+2009,Łódź,basic incomplete,6,Attempted
+2009,Łódź,basic,73,Attempted
+2009,Łódź,technical/professional,64,Attempted
+2009,Łódź,medium,26,Attempted
+2009,Łódź,higher,7,Attempted
+2009,Kraków,basic incomplete,3,Attempted
+2009,Kraków,basic,42,Attempted
+2009,Kraków,technical/professional,69,Attempted
+2009,Kraków,medium,31,Attempted
+2009,Kraków,higher,13,Attempted
+2009,Radom,basic incomplete,7,Attempted
+2009,Radom,basic,70,Attempted
+2009,Radom,technical/professional,47,Attempted
+2009,Radom,medium,13,Attempted
+2009,Radom,higher,2,Attempted
+2009,Opole,basic incomplete,1,Attempted
+2009,Opole,basic,14,Attempted
+2009,Opole,technical/professional,17,Attempted
+2009,Opole,medium,10,Attempted
+2009,Opole,higher,8,Attempted
+2009,Rzeszów,basic incomplete,4,Attempted
+2009,Rzeszów,basic,38,Attempted
+2009,Rzeszów,technical/professional,34,Attempted
+2009,Rzeszów,medium,20,Attempted
+2009,Rzeszów,higher,4,Attempted
+2009,Białystok,basic incomplete,3,Attempted
+2009,Białystok,basic,50,Attempted
+2009,Białystok,technical/professional,28,Attempted
+2009,Białystok,medium,18,Attempted
+2009,Białystok,higher,3,Attempted
+2009,Gdańsk,basic incomplete,4,Attempted
+2009,Gdańsk,basic,36,Attempted
+2009,Gdańsk,technical/professional,20,Attempted
+2009,Gdańsk,medium,10,Attempted
+2009,Gdańsk,higher,6,Attempted
+2009,Katowice,basic incomplete,9,Attempted
+2009,Katowice,basic,79,Attempted
+2009,Katowice,technical/professional,109,Attempted
+2009,Katowice,medium,51,Attempted
+2009,Katowice,higher,12,Attempted
+2009,Kielce,basic incomplete,5,Attempted
+2009,Kielce,basic,30,Attempted
+2009,Kielce,technical/professional,34,Attempted
+2009,Kielce,medium,11,Attempted
+2009,Kielce,higher,2,Attempted
+2009,Olsztyn,basic incomplete,5,Attempted
+2009,Olsztyn,basic,46,Attempted
+2009,Olsztyn,technical/professional,27,Attempted
+2009,Olsztyn,medium,19,Attempted
+2009,Olsztyn,higher,4,Attempted
+2009,Poznań,basic incomplete,4,Attempted
+2009,Poznań,basic,54,Attempted
+2009,Poznań,technical/professional,67,Attempted
+2009,Poznań,medium,30,Attempted
+2009,Poznań,higher,9,Attempted
+2009,Szczecin,basic incomplete,2,Attempted
+2009,Szczecin,basic,32,Attempted
+2009,Szczecin,technical/professional,30,Attempted
+2009,Szczecin,medium,14,Attempted
+2009,Szczecin,higher,4,Attempted
+2009,Warszawa,basic incomplete,4,Attempted
+2009,Warszawa,basic,24,Attempted
+2009,Warszawa,technical/professional,23,Attempted
+2009,Warszawa,medium,30,Attempted
+2009,Warszawa,higher,8,Attempted
+2010,Wrocław,basic incomplete,2,Attempted
+2010,Wrocław,basic,21,Attempted
+2010,Wrocław,technical/professional,24,Attempted
+2010,Wrocław,medium,23,Attempted
+2010,Wrocław,higher,2,Attempted
+2010,Bydgoszcz,basic incomplete,2,Attempted
+2010,Bydgoszcz,basic,24,Attempted
+2010,Bydgoszcz,technical/professional,39,Attempted
+2010,Bydgoszcz,medium,34,Attempted
+2010,Bydgoszcz,higher,5,Attempted
+2010,Lublin,basic incomplete,7,Attempted
+2010,Lublin,basic,55,Attempted
+2010,Lublin,technical/professional,48,Attempted
+2010,Lublin,medium,21,Attempted
+2010,Lublin,higher,8,Attempted
+2010,Gorzów Wlkp.,basic incomplete,0,Attempted
+2010,Gorzów Wlkp.,basic,15,Attempted
+2010,Gorzów Wlkp.,technical/professional,10,Attempted
+2010,Gorzów Wlkp.,medium,6,Attempted
+2010,Gorzów Wlkp.,higher,2,Attempted
+2010,Łódź,basic incomplete,5,Attempted
+2010,Łódź,basic,65,Attempted
+2010,Łódź,technical/professional,44,Attempted
+2010,Łódź,medium,24,Attempted
+2010,Łódź,higher,6,Attempted
+2010,Kraków,basic incomplete,6,Attempted
+2010,Kraków,basic,36,Attempted
+2010,Kraków,technical/professional,61,Attempted
+2010,Kraków,medium,32,Attempted
+2010,Kraków,higher,14,Attempted
+2010,Radom,basic incomplete,7,Attempted
+2010,Radom,basic,68,Attempted
+2010,Radom,technical/professional,50,Attempted
+2010,Radom,medium,22,Attempted
+2010,Radom,higher,5,Attempted
+2010,Opole,basic incomplete,0,Attempted
+2010,Opole,basic,22,Attempted
+2010,Opole,technical/professional,12,Attempted
+2010,Opole,medium,8,Attempted
+2010,Opole,higher,1,Attempted
+2010,Rzeszów,basic incomplete,2,Attempted
+2010,Rzeszów,basic,31,Attempted
+2010,Rzeszów,technical/professional,55,Attempted
+2010,Rzeszów,medium,12,Attempted
+2010,Rzeszów,higher,8,Attempted
+2010,Białystok,basic incomplete,4,Attempted
+2010,Białystok,basic,43,Attempted
+2010,Białystok,technical/professional,21,Attempted
+2010,Białystok,medium,17,Attempted
+2010,Białystok,higher,1,Attempted
+2010,Gdańsk,basic incomplete,1,Attempted
+2010,Gdańsk,basic,30,Attempted
+2010,Gdańsk,technical/professional,24,Attempted
+2010,Gdańsk,medium,12,Attempted
+2010,Gdańsk,higher,3,Attempted
+2010,Katowice,basic incomplete,6,Attempted
+2010,Katowice,basic,72,Attempted
+2010,Katowice,technical/professional,118,Attempted
+2010,Katowice,medium,42,Attempted
+2010,Katowice,higher,19,Attempted
+2010,Kielce,basic incomplete,4,Attempted
+2010,Kielce,basic,30,Attempted
+2010,Kielce,technical/professional,42,Attempted
+2010,Kielce,medium,14,Attempted
+2010,Kielce,higher,1,Attempted
+2010,Olsztyn,basic incomplete,3,Attempted
+2010,Olsztyn,basic,40,Attempted
+2010,Olsztyn,technical/professional,15,Attempted
+2010,Olsztyn,medium,13,Attempted
+2010,Olsztyn,higher,2,Attempted
+2010,Poznań,basic incomplete,5,Attempted
+2010,Poznań,basic,29,Attempted
+2010,Poznań,technical/professional,47,Attempted
+2010,Poznań,medium,20,Attempted
+2010,Poznań,higher,6,Attempted
+2010,Szczecin,basic incomplete,5,Attempted
+2010,Szczecin,basic,36,Attempted
+2010,Szczecin,technical/professional,22,Attempted
+2010,Szczecin,medium,12,Attempted
+2010,Szczecin,higher,1,Attempted
+2010,Warszawa,basic incomplete,1,Attempted
+2010,Warszawa,basic,18,Attempted
+2010,Warszawa,technical/professional,13,Attempted
+2010,Warszawa,medium,23,Attempted
+2010,Warszawa,higher,6,Attempted
+2011,Wrocław,basic incomplete,1,Attempted
+2011,Wrocław,basic,10,Attempted
+2011,Wrocław,technical/professional,26,Attempted
+2011,Wrocław,medium,10,Attempted
+2011,Wrocław,higher,5,Attempted
+2011,Bydgoszcz,basic incomplete,4,Attempted
+2011,Bydgoszcz,basic,36,Attempted
+2011,Bydgoszcz,technical/professional,42,Attempted
+2011,Bydgoszcz,medium,20,Attempted
+2011,Bydgoszcz,higher,5,Attempted
+2011,Lublin,basic incomplete,3,Attempted
+2011,Lublin,basic,34,Attempted
+2011,Lublin,technical/professional,36,Attempted
+2011,Lublin,medium,17,Attempted
+2011,Lublin,higher,10,Attempted
+2011,Gorzów Wlkp.,basic incomplete,0,Attempted
+2011,Gorzów Wlkp.,basic,12,Attempted
+2011,Gorzów Wlkp.,technical/professional,10,Attempted
+2011,Gorzów Wlkp.,medium,9,Attempted
+2011,Gorzów Wlkp.,higher,2,Attempted
+2011,Łódź,basic incomplete,5,Attempted
+2011,Łódź,basic,45,Attempted
+2011,Łódź,technical/professional,44,Attempted
+2011,Łódź,medium,29,Attempted
+2011,Łódź,higher,11,Attempted
+2011,Kraków,basic incomplete,1,Attempted
+2011,Kraków,basic,44,Attempted
+2011,Kraków,technical/professional,49,Attempted
+2011,Kraków,medium,26,Attempted
+2011,Kraków,higher,13,Attempted
+2011,Radom,basic incomplete,9,Attempted
+2011,Radom,basic,69,Attempted
+2011,Radom,technical/professional,30,Attempted
+2011,Radom,medium,16,Attempted
+2011,Radom,higher,2,Attempted
+2011,Opole,basic incomplete,0,Attempted
+2011,Opole,basic,10,Attempted
+2011,Opole,technical/professional,11,Attempted
+2011,Opole,medium,5,Attempted
+2011,Opole,higher,3,Attempted
+2011,Rzeszów,basic incomplete,0,Attempted
+2011,Rzeszów,basic,23,Attempted
+2011,Rzeszów,technical/professional,31,Attempted
+2011,Rzeszów,medium,23,Attempted
+2011,Rzeszów,higher,8,Attempted
+2011,Białystok,basic incomplete,2,Attempted
+2011,Białystok,basic,41,Attempted
+2011,Białystok,technical/professional,26,Attempted
+2011,Białystok,medium,17,Attempted
+2011,Białystok,higher,12,Attempted
+2011,Gdańsk,basic incomplete,4,Attempted
+2011,Gdańsk,basic,26,Attempted
+2011,Gdańsk,technical/professional,16,Attempted
+2011,Gdańsk,medium,6,Attempted
+2011,Gdańsk,higher,2,Attempted
+2011,Katowice,basic incomplete,4,Attempted
+2011,Katowice,basic,61,Attempted
+2011,Katowice,technical/professional,96,Attempted
+2011,Katowice,medium,40,Attempted
+2011,Katowice,higher,12,Attempted
+2011,Kielce,basic incomplete,2,Attempted
+2011,Kielce,basic,26,Attempted
+2011,Kielce,technical/professional,34,Attempted
+2011,Kielce,medium,5,Attempted
+2011,Kielce,higher,8,Attempted
+2011,Olsztyn,basic incomplete,4,Attempted
+2011,Olsztyn,basic,34,Attempted
+2011,Olsztyn,technical/professional,19,Attempted
+2011,Olsztyn,medium,18,Attempted
+2011,Olsztyn,higher,4,Attempted
+2011,Poznań,basic incomplete,3,Attempted
+2011,Poznań,basic,27,Attempted
+2011,Poznań,technical/professional,43,Attempted
+2011,Poznań,medium,12,Attempted
+2011,Poznań,higher,5,Attempted
+2011,Szczecin,basic incomplete,7,Attempted
+2011,Szczecin,basic,31,Attempted
+2011,Szczecin,technical/professional,22,Attempted
+2011,Szczecin,medium,10,Attempted
+2011,Szczecin,higher,8,Attempted
+2011,Warszawa,basic incomplete,3,Attempted
+2011,Warszawa,basic,9,Attempted
+2011,Warszawa,technical/professional,12,Attempted
+2011,Warszawa,medium,19,Attempted
+2011,Warszawa,higher,3,Attempted
+2012,Wrocław,basic incomplete,3,Attempted
+2012,Wrocław,basic,17,Attempted
+2012,Wrocław,technical/professional,34,Attempted
+2012,Wrocław,medium,17,Attempted
+2012,Wrocław,higher,5,Attempted
+2012,Bydgoszcz,basic incomplete,6,Attempted
+2012,Bydgoszcz,basic,50,Attempted
+2012,Bydgoszcz,technical/professional,42,Attempted
+2012,Bydgoszcz,medium,25,Attempted
+2012,Bydgoszcz,higher,11,Attempted
+2012,Lublin,basic incomplete,3,Attempted
+2012,Lublin,basic,35,Attempted
+2012,Lublin,technical/professional,47,Attempted
+2012,Lublin,medium,21,Attempted
+2012,Lublin,higher,7,Attempted
+2012,Gorzów Wlkp.,basic incomplete,2,Attempted
+2012,Gorzów Wlkp.,basic,10,Attempted
+2012,Gorzów Wlkp.,technical/professional,9,Attempted
+2012,Gorzów Wlkp.,medium,2,Attempted
+2012,Gorzów Wlkp.,higher,4,Attempted
+2012,Łódź,basic incomplete,3,Attempted
+2012,Łódź,basic,57,Attempted
+2012,Łódź,technical/professional,49,Attempted
+2012,Łódź,medium,34,Attempted
+2012,Łódź,higher,7,Attempted
+2012,Kraków,basic incomplete,3,Attempted
+2012,Kraków,basic,50,Attempted
+2012,Kraków,technical/professional,51,Attempted
+2012,Kraków,medium,37,Attempted
+2012,Kraków,higher,14,Attempted
+2012,Radom,basic incomplete,6,Attempted
+2012,Radom,basic,47,Attempted
+2012,Radom,technical/professional,31,Attempted
+2012,Radom,medium,19,Attempted
+2012,Radom,higher,3,Attempted
+2012,Opole,basic incomplete,1,Attempted
+2012,Opole,basic,14,Attempted
+2012,Opole,technical/professional,13,Attempted
+2012,Opole,medium,6,Attempted
+2012,Opole,higher,2,Attempted
+2012,Rzeszów,basic incomplete,2,Attempted
+2012,Rzeszów,basic,16,Attempted
+2012,Rzeszów,technical/professional,30,Attempted
+2012,Rzeszów,medium,14,Attempted
+2012,Rzeszów,higher,4,Attempted
+2012,Białystok,basic incomplete,3,Attempted
+2012,Białystok,basic,39,Attempted
+2012,Białystok,technical/professional,19,Attempted
+2012,Białystok,medium,20,Attempted
+2012,Białystok,higher,7,Attempted
+2012,Gdańsk,basic incomplete,2,Attempted
+2012,Gdańsk,basic,20,Attempted
+2012,Gdańsk,technical/professional,19,Attempted
+2012,Gdańsk,medium,16,Attempted
+2012,Gdańsk,higher,4,Attempted
+2012,Katowice,basic incomplete,8,Attempted
+2012,Katowice,basic,45,Attempted
+2012,Katowice,technical/professional,88,Attempted
+2012,Katowice,medium,35,Attempted
+2012,Katowice,higher,9,Attempted
+2012,Kielce,basic incomplete,8,Attempted
+2012,Kielce,basic,77,Attempted
+2012,Kielce,technical/professional,104,Attempted
+2012,Kielce,medium,80,Attempted
+2012,Kielce,higher,21,Attempted
+2012,Olsztyn,basic incomplete,3,Attempted
+2012,Olsztyn,basic,45,Attempted
+2012,Olsztyn,technical/professional,20,Attempted
+2012,Olsztyn,medium,17,Attempted
+2012,Olsztyn,higher,7,Attempted
+2012,Poznań,basic incomplete,0,Attempted
+2012,Poznań,basic,18,Attempted
+2012,Poznań,technical/professional,35,Attempted
+2012,Poznań,medium,17,Attempted
+2012,Poznań,higher,7,Attempted
+2012,Szczecin,basic incomplete,1,Attempted
+2012,Szczecin,basic,27,Attempted
+2012,Szczecin,technical/professional,20,Attempted
+2012,Szczecin,medium,14,Attempted
+2012,Szczecin,higher,2,Attempted
+2012,Warszawa,basic incomplete,2,Attempted
+2012,Warszawa,basic,28,Attempted
+2012,Warszawa,technical/professional,13,Attempted
+2012,Warszawa,medium,22,Attempted
+2012,Warszawa,higher,25,Attempted
+2013,Bydgoszcz,basic incomplete,1,Attempted
+2013,Bydgoszcz,basic,27,Attempted
+2013,Bydgoszcz,technical/professional,35,Attempted
+2013,Bydgoszcz,medium,20,Attempted
+2013,Bydgoszcz,higher,6,Attempted
+2013,Białystok,basic incomplete,1,Attempted
+2013,Białystok,basic,45,Attempted
+2013,Białystok,technical/professional,24,Attempted
+2013,Białystok,medium,21,Attempted
+2013,Białystok,higher,5,Attempted
+2013,Gdańsk,basic incomplete,1,Attempted
+2013,Gdańsk,basic,22,Attempted
+2013,Gdańsk,technical/professional,26,Attempted
+2013,Gdańsk,medium,7,Attempted
+2013,Gdańsk,higher,8,Attempted
+2013,Gorzów Wlkp.,basic incomplete,2,Attempted
+2013,Gorzów Wlkp.,basic,12,Attempted
+2013,Gorzów Wlkp.,technical/professional,13,Attempted
+2013,Gorzów Wlkp.,medium,8,Attempted
+2013,Gorzów Wlkp.,higher,3,Attempted
+2013,Katowice,basic incomplete,4,Attempted
+2013,Katowice,basic,67,Attempted
+2013,Katowice,technical/professional,92,Attempted
+2013,Katowice,medium,71,Attempted
+2013,Katowice,higher,24,Attempted
+2013,Kielce,basic incomplete,6,Attempted
+2013,Kielce,basic,101,Attempted
+2013,Kielce,technical/professional,99,Attempted
+2013,Kielce,medium,88,Attempted
+2013,Kielce,higher,24,Attempted
+2013,Kraków,basic incomplete,2,Attempted
+2013,Kraków,basic,57,Attempted
+2013,Kraków,technical/professional,56,Attempted
+2013,Kraków,medium,39,Attempted
+2013,Kraków,higher,18,Attempted
+2013,Łódź,basic incomplete,7,Attempted
+2013,Łódź,basic,76,Attempted
+2013,Łódź,technical/professional,51,Attempted
+2013,Łódź,medium,49,Attempted
+2013,Łódź,higher,13,Attempted
+2013,Lublin,basic incomplete,6,Attempted
+2013,Lublin,basic,70,Attempted
+2013,Lublin,technical/professional,42,Attempted
+2013,Lublin,medium,28,Attempted
+2013,Lublin,higher,10,Attempted
+2013,Olsztyn,basic incomplete,4,Attempted
+2013,Olsztyn,basic,53,Attempted
+2013,Olsztyn,technical/professional,24,Attempted
+2013,Olsztyn,medium,21,Attempted
+2013,Olsztyn,higher,5,Attempted
+2013,Opole,basic incomplete,2,Attempted
+2013,Opole,basic,15,Attempted
+2013,Opole,technical/professional,19,Attempted
+2013,Opole,medium,8,Attempted
+2013,Opole,higher,5,Attempted
+2013,Poznań,basic incomplete,2,Attempted
+2013,Poznań,basic,46,Attempted
+2013,Poznań,technical/professional,52,Attempted
+2013,Poznań,medium,37,Attempted
+2013,Poznań,higher,9,Attempted
+2013,Rzeszów,basic incomplete,1,Attempted
+2013,Rzeszów,basic,35,Attempted
+2013,Rzeszów,technical/professional,27,Attempted
+2013,Rzeszów,medium,23,Attempted
+2013,Rzeszów,higher,6,Attempted
+2013,Szczecin,basic incomplete,1,Attempted
+2013,Szczecin,basic,49,Attempted
+2013,Szczecin,technical/professional,37,Attempted
+2013,Szczecin,medium,32,Attempted
+2013,Szczecin,higher,14,Attempted
+2013,Warszawa,basic incomplete,1,Attempted
+2013,Warszawa,basic,17,Attempted
+2013,Warszawa,technical/professional,15,Attempted
+2013,Warszawa,medium,26,Attempted
+2013,Warszawa,higher,20,Attempted
+2013,Radom,basic incomplete,4,Attempted
+2013,Radom,basic,65,Attempted
+2013,Radom,technical/professional,50,Attempted
+2013,Radom,medium,25,Attempted
+2013,Radom,higher,5,Attempted
+2013,Wrocław,basic incomplete,2,Attempted
+2013,Wrocław,basic,43,Attempted
+2013,Wrocław,technical/professional,57,Attempted
+2013,Wrocław,medium,34,Attempted
+2013,Wrocław,higher,11,Attempted
+2014,Bydgoszcz,basic incomplete,2,Attempted
+2014,Bydgoszcz,basic,16,Attempted
+2014,Bydgoszcz,technical/professional,33,Attempted
+2014,Bydgoszcz,medium,16,Attempted
+2014,Bydgoszcz,higher,2,Attempted
+2014,Białystok,basic incomplete,0,Attempted
+2014,Białystok,basic,49,Attempted
+2014,Białystok,technical/professional,27,Attempted
+2014,Białystok,medium,19,Attempted
+2014,Białystok,higher,4,Attempted
+2014,Gdańsk,basic incomplete,4,Attempted
+2014,Gdańsk,basic,34,Attempted
+2014,Gdańsk,technical/professional,27,Attempted
+2014,Gdańsk,medium,22,Attempted
+2014,Gdańsk,higher,8,Attempted
+2014,Gorzów Wlkp.,basic incomplete,0,Attempted
+2014,Gorzów Wlkp.,basic,12,Attempted
+2014,Gorzów Wlkp.,technical/professional,5,Attempted
+2014,Gorzów Wlkp.,medium,3,Attempted
+2014,Gorzów Wlkp.,higher,1,Attempted
+2014,Katowice,basic incomplete,5,Attempted
+2014,Katowice,basic,101,Attempted
+2014,Katowice,technical/professional,112,Attempted
+2014,Katowice,medium,75,Attempted
+2014,Katowice,higher,13,Attempted
+2014,Kielce,basic incomplete,7,Attempted
+2014,Kielce,basic,134,Attempted
+2014,Kielce,technical/professional,179,Attempted
+2014,Kielce,medium,95,Attempted
+2014,Kielce,higher,41,Attempted
+2014,Kraków,basic incomplete,5,Attempted
+2014,Kraków,basic,85,Attempted
+2014,Kraków,technical/professional,70,Attempted
+2014,Kraków,medium,56,Attempted
+2014,Kraków,higher,12,Attempted
+2014,Łódź,basic incomplete,4,Attempted
+2014,Łódź,basic,95,Attempted
+2014,Łódź,technical/professional,45,Attempted
+2014,Łódź,medium,53,Attempted
+2014,Łódź,higher,16,Attempted
+2014,Lublin,basic incomplete,5,Attempted
+2014,Lublin,basic,79,Attempted
+2014,Lublin,technical/professional,42,Attempted
+2014,Lublin,medium,33,Attempted
+2014,Lublin,higher,13,Attempted
+2014,Olsztyn,basic incomplete,4,Attempted
+2014,Olsztyn,basic,69,Attempted
+2014,Olsztyn,technical/professional,35,Attempted
+2014,Olsztyn,medium,30,Attempted
+2014,Olsztyn,higher,7,Attempted
+2014,Opole,basic incomplete,0,Attempted
+2014,Opole,basic,24,Attempted
+2014,Opole,technical/professional,22,Attempted
+2014,Opole,medium,23,Attempted
+2014,Opole,higher,5,Attempted
+2014,Poznań,basic incomplete,3,Attempted
+2014,Poznań,basic,53,Attempted
+2014,Poznań,technical/professional,57,Attempted
+2014,Poznań,medium,39,Attempted
+2014,Poznań,higher,8,Attempted
+2014,Rzeszów,basic incomplete,2,Attempted
+2014,Rzeszów,basic,47,Attempted
+2014,Rzeszów,technical/professional,62,Attempted
+2014,Rzeszów,medium,29,Attempted
+2014,Rzeszów,higher,12,Attempted
+2014,Szczecin,basic incomplete,3,Attempted
+2014,Szczecin,basic,63,Attempted
+2014,Szczecin,technical/professional,56,Attempted
+2014,Szczecin,medium,40,Attempted
+2014,Szczecin,higher,12,Attempted
+2014,Warszawa,basic incomplete,0,Attempted
+2014,Warszawa,basic,28,Attempted
+2014,Warszawa,technical/professional,12,Attempted
+2014,Warszawa,medium,37,Attempted
+2014,Warszawa,higher,25,Attempted
+2014,Radom,basic incomplete,1,Attempted
+2014,Radom,basic,87,Attempted
+2014,Radom,technical/professional,59,Attempted
+2014,Radom,medium,40,Attempted
+2014,Radom,higher,11,Attempted
+2014,Wrocław,basic incomplete,7,Attempted
+2014,Wrocław,basic,53,Attempted
+2014,Wrocław,technical/professional,63,Attempted
+2014,Wrocław,medium,38,Attempted
+2014,Wrocław,higher,15,Attempted
+2015,Bydgoszcz,basic incomplete,0,Attempted
+2015,Bydgoszcz,basic,29,Attempted
+2015,Bydgoszcz,technical/professional,25,Attempted
+2015,Bydgoszcz,medium,14,Attempted
+2015,Bydgoszcz,higher,4,Attempted
+2015,Białystok,basic incomplete,1,Attempted
+2015,Białystok,basic,25,Attempted
+2015,Białystok,technical/professional,15,Attempted
+2015,Białystok,medium,21,Attempted
+2015,Białystok,higher,8,Attempted
+2015,Gdańsk,basic incomplete,3,Attempted
+2015,Gdańsk,basic,35,Attempted
+2015,Gdańsk,technical/professional,27,Attempted
+2015,Gdańsk,medium,14,Attempted
+2015,Gdańsk,higher,8,Attempted
+2015,Gorzów Wlkp.,basic incomplete,1,Attempted
+2015,Gorzów Wlkp.,basic,20,Attempted
+2015,Gorzów Wlkp.,technical/professional,12,Attempted
+2015,Gorzów Wlkp.,medium,8,Attempted
+2015,Gorzów Wlkp.,higher,1,Attempted
+2015,Katowice,basic incomplete,1,Attempted
+2015,Katowice,basic,103,Attempted
+2015,Katowice,technical/professional,125,Attempted
+2015,Katowice,medium,78,Attempted
+2015,Katowice,higher,16,Attempted
+2015,Kielce,basic incomplete,5,Attempted
+2015,Kielce,basic,131,Attempted
+2015,Kielce,technical/professional,144,Attempted
+2015,Kielce,medium,144,Attempted
+2015,Kielce,higher,36,Attempted
+2015,Kraków,basic incomplete,4,Attempted
+2015,Kraków,basic,75,Attempted
+2015,Kraków,technical/professional,74,Attempted
+2015,Kraków,medium,59,Attempted
+2015,Kraków,higher,19,Attempted
+2015,Łódź,basic incomplete,8,Attempted
+2015,Łódź,basic,80,Attempted
+2015,Łódź,technical/professional,52,Attempted
+2015,Łódź,medium,60,Attempted
+2015,Łódź,higher,19,Attempted
+2015,Lublin,basic incomplete,3,Attempted
+2015,Lublin,basic,67,Attempted
+2015,Lublin,technical/professional,52,Attempted
+2015,Lublin,medium,38,Attempted
+2015,Lublin,higher,9,Attempted
+2015,Olsztyn,basic incomplete,6,Attempted
+2015,Olsztyn,basic,79,Attempted
+2015,Olsztyn,technical/professional,35,Attempted
+2015,Olsztyn,medium,29,Attempted
+2015,Olsztyn,higher,12,Attempted
+2015,Opole,basic incomplete,1,Attempted
+2015,Opole,basic,41,Attempted
+2015,Opole,technical/professional,32,Attempted
+2015,Opole,medium,19,Attempted
+2015,Opole,higher,4,Attempted
+2015,Poznań,basic incomplete,2,Attempted
+2015,Poznań,basic,53,Attempted
+2015,Poznań,technical/professional,79,Attempted
+2015,Poznań,medium,39,Attempted
+2015,Poznań,higher,10,Attempted
+2015,Rzeszów,basic incomplete,0,Attempted
+2015,Rzeszów,basic,74,Attempted
+2015,Rzeszów,technical/professional,43,Attempted
+2015,Rzeszów,medium,40,Attempted
+2015,Rzeszów,higher,13,Attempted
+2015,Szczecin,basic incomplete,5,Attempted
+2015,Szczecin,basic,55,Attempted
+2015,Szczecin,technical/professional,32,Attempted
+2015,Szczecin,medium,24,Attempted
+2015,Szczecin,higher,7,Attempted
+2015,Warszawa,basic incomplete,2,Attempted
+2015,Warszawa,basic,18,Attempted
+2015,Warszawa,technical/professional,13,Attempted
+2015,Warszawa,medium,22,Attempted
+2015,Warszawa,higher,21,Attempted
+2015,Radom,basic incomplete,4,Attempted
+2015,Radom,basic,70,Attempted
+2015,Radom,technical/professional,44,Attempted
+2015,Radom,medium,35,Attempted
+2015,Radom,higher,8,Attempted
+2015,Wrocław,basic incomplete,2,Attempted
+2015,Wrocław,basic,49,Attempted
+2015,Wrocław,technical/professional,58,Attempted
+2015,Wrocław,medium,28,Attempted
+2015,Wrocław,higher,12,Attempted
+2016,Bydgoszcz,basic incomplete,3,Attempted
+2016,Bydgoszcz,basic,24,Attempted
+2016,Bydgoszcz,technical/professional,34,Attempted
+2016,Bydgoszcz,medium,16,Attempted
+2016,Bydgoszcz,higher,5,Attempted
+2016,Białystok,basic incomplete,1,Attempted
+2016,Białystok,basic,42,Attempted
+2016,Białystok,technical/professional,22,Attempted
+2016,Białystok,medium,28,Attempted
+2016,Białystok,higher,7,Attempted
+2016,Gdańsk,basic incomplete,3,Attempted
+2016,Gdańsk,basic,38,Attempted
+2016,Gdańsk,technical/professional,31,Attempted
+2016,Gdańsk,medium,18,Attempted
+2016,Gdańsk,higher,9,Attempted
+2016,Gorzów Wlkp.,basic incomplete,1,Attempted
+2016,Gorzów Wlkp.,basic,15,Attempted
+2016,Gorzów Wlkp.,technical/professional,9,Attempted
+2016,Gorzów Wlkp.,medium,7,Attempted
+2016,Gorzów Wlkp.,higher,3,Attempted
+2016,Katowice,basic incomplete,2,Attempted
+2016,Katowice,basic,107,Attempted
+2016,Katowice,technical/professional,89,Attempted
+2016,Katowice,medium,70,Attempted
+2016,Katowice,higher,17,Attempted
+2016,Kielce,basic incomplete,1,Attempted
+2016,Kielce,basic,119,Attempted
+2016,Kielce,technical/professional,139,Attempted
+2016,Kielce,medium,111,Attempted
+2016,Kielce,higher,36,Attempted
+2016,Kraków,basic incomplete,2,Attempted
+2016,Kraków,basic,80,Attempted
+2016,Kraków,technical/professional,85,Attempted
+2016,Kraków,medium,62,Attempted
+2016,Kraków,higher,22,Attempted
+2016,Łódź,basic incomplete,3,Attempted
+2016,Łódź,basic,129,Attempted
+2016,Łódź,technical/professional,69,Attempted
+2016,Łódź,medium,74,Attempted
+2016,Łódź,higher,25,Attempted
+2016,Lublin,basic incomplete,0,Attempted
+2016,Lublin,basic,66,Attempted
+2016,Lublin,technical/professional,43,Attempted
+2016,Lublin,medium,25,Attempted
+2016,Lublin,higher,12,Attempted
+2016,Olsztyn,basic incomplete,2,Attempted
+2016,Olsztyn,basic,52,Attempted
+2016,Olsztyn,technical/professional,28,Attempted
+2016,Olsztyn,medium,22,Attempted
+2016,Olsztyn,higher,8,Attempted
+2016,Opole,basic incomplete,1,Attempted
+2016,Opole,basic,36,Attempted
+2016,Opole,technical/professional,31,Attempted
+2016,Opole,medium,16,Attempted
+2016,Opole,higher,4,Attempted
+2016,Poznań,basic incomplete,2,Attempted
+2016,Poznań,basic,53,Attempted
+2016,Poznań,technical/professional,79,Attempted
+2016,Poznań,medium,30,Attempted
+2016,Poznań,higher,13,Attempted
+2016,Rzeszów,basic incomplete,1,Attempted
+2016,Rzeszów,basic,56,Attempted
+2016,Rzeszów,technical/professional,48,Attempted
+2016,Rzeszów,medium,37,Attempted
+2016,Rzeszów,higher,8,Attempted
+2016,Szczecin,basic incomplete,1,Attempted
+2016,Szczecin,basic,60,Attempted
+2016,Szczecin,technical/professional,36,Attempted
+2016,Szczecin,medium,30,Attempted
+2016,Szczecin,higher,13,Attempted
+2016,Warszawa,basic incomplete,2,Attempted
+2016,Warszawa,basic,18,Attempted
+2016,Warszawa,technical/professional,22,Attempted
+2016,Warszawa,medium,28,Attempted
+2016,Warszawa,higher,16,Attempted
+2016,Radom,basic incomplete,3,Attempted
+2016,Radom,basic,61,Attempted
+2016,Radom,technical/professional,51,Attempted
+2016,Radom,medium,33,Attempted
+2016,Radom,higher,5,Attempted
+2016,Wrocław,basic incomplete,2,Attempted
+2016,Wrocław,basic,37,Attempted
+2016,Wrocław,technical/professional,40,Attempted
+2016,Wrocław,medium,37,Attempted
+2016,Wrocław,higher,12,Attempted
+2017,Bydgoszcz,basic incomplete,5,Attempted
+2017,Bydgoszcz,basic,28,Attempted
+2017,Bydgoszcz,junior high,9,Attempted
+2017,Bydgoszcz,technical/professional,38,Attempted
+2017,Bydgoszcz,medium,18,Attempted
+2017,Bydgoszcz,post-secondary,0,Attempted
+2017,Bydgoszcz,higher,4,Attempted
+2017,Białystok,basic incomplete,6,Attempted
+2017,Białystok,basic,43,Attempted
+2017,Białystok,junior high,20,Attempted
+2017,Białystok,technical/professional,20,Attempted
+2017,Białystok,medium,29,Attempted
+2017,Białystok,post-secondary,3,Attempted
+2017,Białystok,higher,9,Attempted
+2017,Gdańsk,basic incomplete,5,Attempted
+2017,Gdańsk,basic,51,Attempted
+2017,Gdańsk,junior high,21,Attempted
+2017,Gdańsk,technical/professional,37,Attempted
+2017,Gdańsk,medium,26,Attempted
+2017,Gdańsk,post-secondary,0,Attempted
+2017,Gdańsk,higher,17,Attempted
+2017,Gorzów Wlkp.,basic incomplete,3,Attempted
+2017,Gorzów Wlkp.,basic,9,Attempted
+2017,Gorzów Wlkp.,junior high,7,Attempted
+2017,Gorzów Wlkp.,technical/professional,13,Attempted
+2017,Gorzów Wlkp.,medium,6,Attempted
+2017,Gorzów Wlkp.,post-secondary,0,Attempted
+2017,Gorzów Wlkp.,higher,4,Attempted
+2017,Katowice,basic incomplete,14,Attempted
+2017,Katowice,basic,135,Attempted
+2017,Katowice,junior high,69,Attempted
+2017,Katowice,technical/professional,166,Attempted
+2017,Katowice,medium,150,Attempted
+2017,Katowice,post-secondary,1,Attempted
+2017,Katowice,higher,38,Attempted
+2017,Kielce,basic incomplete,6,Attempted
+2017,Kielce,basic,89,Attempted
+2017,Kielce,junior high,31,Attempted
+2017,Kielce,technical/professional,138,Attempted
+2017,Kielce,medium,102,Attempted
+2017,Kielce,post-secondary,1,Attempted
+2017,Kielce,higher,27,Attempted
+2017,Kraków,basic incomplete,9,Attempted
+2017,Kraków,basic,82,Attempted
+2017,Kraków,junior high,31,Attempted
+2017,Kraków,technical/professional,97,Attempted
+2017,Kraków,medium,74,Attempted
+2017,Kraków,post-secondary,1,Attempted
+2017,Kraków,higher,26,Attempted
+2017,Łódź,basic incomplete,11,Attempted
+2017,Łódź,basic,130,Attempted
+2017,Łódź,junior high,44,Attempted
+2017,Łódź,technical/professional,82,Attempted
+2017,Łódź,medium,107,Attempted
+2017,Łódź,post-secondary,3,Attempted
+2017,Łódź,higher,39,Attempted
+2017,Lublin,basic incomplete,3,Attempted
+2017,Lublin,basic,67,Attempted
+2017,Lublin,junior high,15,Attempted
+2017,Lublin,technical/professional,52,Attempted
+2017,Lublin,medium,52,Attempted
+2017,Lublin,post-secondary,0,Attempted
+2017,Lublin,higher,13,Attempted
+2017,Olsztyn,basic incomplete,4,Attempted
+2017,Olsztyn,basic,63,Attempted
+2017,Olsztyn,junior high,25,Attempted
+2017,Olsztyn,technical/professional,41,Attempted
+2017,Olsztyn,medium,20,Attempted
+2017,Olsztyn,post-secondary,0,Attempted
+2017,Olsztyn,higher,12,Attempted
+2017,Opole,basic incomplete,3,Attempted
+2017,Opole,basic,27,Attempted
+2017,Opole,junior high,4,Attempted
+2017,Opole,technical/professional,49,Attempted
+2017,Opole,medium,22,Attempted
+2017,Opole,post-secondary,1,Attempted
+2017,Opole,higher,3,Attempted
+2017,Poznań,basic incomplete,8,Attempted
+2017,Poznań,basic,68,Attempted
+2017,Poznań,junior high,17,Attempted
+2017,Poznań,technical/professional,97,Attempted
+2017,Poznań,medium,51,Attempted
+2017,Poznań,post-secondary,2,Attempted
+2017,Poznań,higher,9,Attempted
+2017,Rzeszów,basic incomplete,4,Attempted
+2017,Rzeszów,basic,62,Attempted
+2017,Rzeszów,junior high,26,Attempted
+2017,Rzeszów,technical/professional,76,Attempted
+2017,Rzeszów,medium,56,Attempted
+2017,Rzeszów,post-secondary,1,Attempted
+2017,Rzeszów,higher,15,Attempted
+2017,Szczecin,basic incomplete,3,Attempted
+2017,Szczecin,basic,59,Attempted
+2017,Szczecin,junior high,18,Attempted
+2017,Szczecin,technical/professional,46,Attempted
+2017,Szczecin,medium,22,Attempted
+2017,Szczecin,post-secondary,2,Attempted
+2017,Szczecin,higher,8,Attempted
+2017,Warszawa,basic incomplete,0,Attempted
+2017,Warszawa,basic,27,Attempted
+2017,Warszawa,junior high,14,Attempted
+2017,Warszawa,technical/professional,29,Attempted
+2017,Warszawa,medium,48,Attempted
+2017,Warszawa,post-secondary,0,Attempted
+2017,Warszawa,higher,24,Attempted
+2017,Radom,basic incomplete,5,Attempted
+2017,Radom,basic,81,Attempted
+2017,Radom,junior high,24,Attempted
+2017,Radom,technical/professional,59,Attempted
+2017,Radom,medium,43,Attempted
+2017,Radom,post-secondary,0,Attempted
+2017,Radom,higher,10,Attempted
+2017,Wrocław,basic incomplete,10,Attempted
+2017,Wrocław,basic,48,Attempted
+2017,Wrocław,junior high,18,Attempted
+2017,Wrocław,technical/professional,67,Attempted
+2017,Wrocław,medium,48,Attempted
+2017,Wrocław,post-secondary,0,Attempted
+2017,Wrocław,higher,16,Attempted
+2018,Bydgoszcz,basic incomplete,5,Attempted
+2018,Bydgoszcz,basic,26,Attempted
+2018,Bydgoszcz,junior high,11,Attempted
+2018,Bydgoszcz,technical/professional,21,Attempted
+2018,Bydgoszcz,medium,21,Attempted
+2018,Bydgoszcz,post-secondary,1,Attempted
+2018,Bydgoszcz,higher,4,Attempted
+2018,Białystok,basic incomplete,5,Attempted
+2018,Białystok,basic,34,Attempted
+2018,Białystok,junior high,18,Attempted
+2018,Białystok,technical/professional,16,Attempted
+2018,Białystok,medium,15,Attempted
+2018,Białystok,post-secondary,0,Attempted
+2018,Białystok,higher,3,Attempted
+2018,Gdańsk,basic incomplete,12,Attempted
+2018,Gdańsk,basic,43,Attempted
+2018,Gdańsk,junior high,22,Attempted
+2018,Gdańsk,technical/professional,25,Attempted
+2018,Gdańsk,medium,27,Attempted
+2018,Gdańsk,post-secondary,1,Attempted
+2018,Gdańsk,higher,10,Attempted
+2018,Gorzów Wlkp.,basic incomplete,4,Attempted
+2018,Gorzów Wlkp.,basic,10,Attempted
+2018,Gorzów Wlkp.,junior high,3,Attempted
+2018,Gorzów Wlkp.,technical/professional,11,Attempted
+2018,Gorzów Wlkp.,medium,6,Attempted
+2018,Gorzów Wlkp.,post-secondary,0,Attempted
+2018,Gorzów Wlkp.,higher,2,Attempted
+2018,Katowice,basic incomplete,21,Attempted
+2018,Katowice,basic,125,Attempted
+2018,Katowice,junior high,56,Attempted
+2018,Katowice,technical/professional,176,Attempted
+2018,Katowice,medium,143,Attempted
+2018,Katowice,post-secondary,2,Attempted
+2018,Katowice,higher,42,Attempted
+2018,Kielce,basic incomplete,7,Attempted
+2018,Kielce,basic,87,Attempted
+2018,Kielce,junior high,24,Attempted
+2018,Kielce,technical/professional,104,Attempted
+2018,Kielce,medium,102,Attempted
+2018,Kielce,post-secondary,1,Attempted
+2018,Kielce,higher,27,Attempted
+2018,Kraków,basic incomplete,12,Attempted
+2018,Kraków,basic,69,Attempted
+2018,Kraków,junior high,26,Attempted
+2018,Kraków,technical/professional,70,Attempted
+2018,Kraków,medium,62,Attempted
+2018,Kraków,post-secondary,1,Attempted
+2018,Kraków,higher,31,Attempted
+2018,Łódź,basic incomplete,20,Attempted
+2018,Łódź,basic,88,Attempted
+2018,Łódź,junior high,39,Attempted
+2018,Łódź,technical/professional,76,Attempted
+2018,Łódź,medium,109,Attempted
+2018,Łódź,post-secondary,4,Attempted
+2018,Łódź,higher,36,Attempted
+2018,Lublin,basic incomplete,4,Attempted
+2018,Lublin,basic,73,Attempted
+2018,Lublin,junior high,19,Attempted
+2018,Lublin,technical/professional,58,Attempted
+2018,Lublin,medium,61,Attempted
+2018,Lublin,post-secondary,1,Attempted
+2018,Lublin,higher,13,Attempted
+2018,Olsztyn,basic incomplete,8,Attempted
+2018,Olsztyn,basic,47,Attempted
+2018,Olsztyn,junior high,26,Attempted
+2018,Olsztyn,technical/professional,51,Attempted
+2018,Olsztyn,medium,26,Attempted
+2018,Olsztyn,post-secondary,0,Attempted
+2018,Olsztyn,higher,6,Attempted
+2018,Opole,basic incomplete,5,Attempted
+2018,Opole,basic,26,Attempted
+2018,Opole,junior high,3,Attempted
+2018,Opole,technical/professional,35,Attempted
+2018,Opole,medium,19,Attempted
+2018,Opole,post-secondary,1,Attempted
+2018,Opole,higher,4,Attempted
+2018,Poznań,basic incomplete,10,Attempted
+2018,Poznań,basic,57,Attempted
+2018,Poznań,junior high,17,Attempted
+2018,Poznań,technical/professional,112,Attempted
+2018,Poznań,medium,45,Attempted
+2018,Poznań,post-secondary,0,Attempted
+2018,Poznań,higher,13,Attempted
+2018,Rzeszów,basic incomplete,10,Attempted
+2018,Rzeszów,basic,49,Attempted
+2018,Rzeszów,junior high,24,Attempted
+2018,Rzeszów,technical/professional,69,Attempted
+2018,Rzeszów,medium,60,Attempted
+2018,Rzeszów,post-secondary,1,Attempted
+2018,Rzeszów,higher,14,Attempted
+2018,Szczecin,basic incomplete,3,Attempted
+2018,Szczecin,basic,44,Attempted
+2018,Szczecin,junior high,14,Attempted
+2018,Szczecin,technical/professional,38,Attempted
+2018,Szczecin,medium,42,Attempted
+2018,Szczecin,post-secondary,0,Attempted
+2018,Szczecin,higher,7,Attempted
+2018,Warszawa,basic incomplete,4,Attempted
+2018,Warszawa,basic,25,Attempted
+2018,Warszawa,junior high,10,Attempted
+2018,Warszawa,technical/professional,19,Attempted
+2018,Warszawa,medium,38,Attempted
+2018,Warszawa,post-secondary,1,Attempted
+2018,Warszawa,higher,21,Attempted
+2018,Radom,basic incomplete,6,Attempted
+2018,Radom,basic,56,Attempted
+2018,Radom,junior high,32,Attempted
+2018,Radom,technical/professional,61,Attempted
+2018,Radom,medium,34,Attempted
+2018,Radom,post-secondary,0,Attempted
+2018,Radom,higher,7,Attempted
+2018,Wrocław,basic incomplete,11,Attempted
+2018,Wrocław,basic,50,Attempted
+2018,Wrocław,junior high,23,Attempted
+2018,Wrocław,technical/professional,63,Attempted
+2018,Wrocław,medium,67,Attempted
+2018,Wrocław,post-secondary,1,Attempted
+2018,Wrocław,higher,17,Attempted
+2019,Bydgoszcz,basic incomplete,9,Attempted
+2019,Bydgoszcz,basic,28,Attempted
+2019,Bydgoszcz,junior high,9,Attempted
+2019,Bydgoszcz,technical/professional,20,Attempted
+2019,Bydgoszcz,medium,19,Attempted
+2019,Bydgoszcz,post-secondary,1,Attempted
+2019,Bydgoszcz,higher,7,Attempted
+2019,Białystok,basic incomplete,8,Attempted
+2019,Białystok,basic,32,Attempted
+2019,Białystok,junior high,16,Attempted
+2019,Białystok,technical/professional,23,Attempted
+2019,Białystok,medium,37,Attempted
+2019,Białystok,post-secondary,2,Attempted
+2019,Białystok,higher,6,Attempted
+2019,Gdańsk,basic incomplete,15,Attempted
+2019,Gdańsk,basic,72,Attempted
+2019,Gdańsk,junior high,16,Attempted
+2019,Gdańsk,technical/professional,29,Attempted
+2019,Gdańsk,medium,43,Attempted
+2019,Gdańsk,post-secondary,1,Attempted
+2019,Gdańsk,higher,7,Attempted
+2019,Gorzów Wlkp.,basic incomplete,8,Attempted
+2019,Gorzów Wlkp.,basic,17,Attempted
+2019,Gorzów Wlkp.,junior high,3,Attempted
+2019,Gorzów Wlkp.,technical/professional,12,Attempted
+2019,Gorzów Wlkp.,medium,4,Attempted
+2019,Gorzów Wlkp.,post-secondary,0,Attempted
+2019,Gorzów Wlkp.,higher,6,Attempted
+2019,Katowice,basic incomplete,33,Attempted
+2019,Katowice,basic,127,Attempted
+2019,Katowice,junior high,56,Attempted
+2019,Katowice,technical/professional,148,Attempted
+2019,Katowice,medium,156,Attempted
+2019,Katowice,post-secondary,2,Attempted
+2019,Katowice,higher,28,Attempted
+2019,Kielce,basic incomplete,11,Attempted
+2019,Kielce,basic,75,Attempted
+2019,Kielce,junior high,28,Attempted
+2019,Kielce,technical/professional,94,Attempted
+2019,Kielce,medium,96,Attempted
+2019,Kielce,post-secondary,0,Attempted
+2019,Kielce,higher,29,Attempted
+2019,Kraków,basic incomplete,19,Attempted
+2019,Kraków,basic,83,Attempted
+2019,Kraków,junior high,36,Attempted
+2019,Kraków,technical/professional,99,Attempted
+2019,Kraków,medium,82,Attempted
+2019,Kraków,post-secondary,0,Attempted
+2019,Kraków,higher,23,Attempted
+2019,Łódź,basic incomplete,26,Attempted
+2019,Łódź,basic,108,Attempted
+2019,Łódź,junior high,40,Attempted
+2019,Łódź,technical/professional,67,Attempted
+2019,Łódź,medium,102,Attempted
+2019,Łódź,post-secondary,4,Attempted
+2019,Łódź,higher,36,Attempted
+2019,Lublin,basic incomplete,18,Attempted
+2019,Lublin,basic,53,Attempted
+2019,Lublin,junior high,24,Attempted
+2019,Lublin,technical/professional,51,Attempted
+2019,Lublin,medium,56,Attempted
+2019,Lublin,post-secondary,0,Attempted
+2019,Lublin,higher,12,Attempted
+2019,Olsztyn,basic incomplete,8,Attempted
+2019,Olsztyn,basic,59,Attempted
+2019,Olsztyn,junior high,17,Attempted
+2019,Olsztyn,technical/professional,52,Attempted
+2019,Olsztyn,medium,31,Attempted
+2019,Olsztyn,post-secondary,0,Attempted
+2019,Olsztyn,higher,14,Attempted
+2019,Opole,basic incomplete,2,Attempted
+2019,Opole,basic,18,Attempted
+2019,Opole,junior high,9,Attempted
+2019,Opole,technical/professional,38,Attempted
+2019,Opole,medium,12,Attempted
+2019,Opole,post-secondary,0,Attempted
+2019,Opole,higher,8,Attempted
+2019,Poznań,basic incomplete,8,Attempted
+2019,Poznań,basic,65,Attempted
+2019,Poznań,junior high,17,Attempted
+2019,Poznań,technical/professional,85,Attempted
+2019,Poznań,medium,61,Attempted
+2019,Poznań,post-secondary,0,Attempted
+2019,Poznań,higher,16,Attempted
+2019,Rzeszów,basic incomplete,9,Attempted
+2019,Rzeszów,basic,57,Attempted
+2019,Rzeszów,junior high,22,Attempted
+2019,Rzeszów,technical/professional,65,Attempted
+2019,Rzeszów,medium,43,Attempted
+2019,Rzeszów,post-secondary,1,Attempted
+2019,Rzeszów,higher,17,Attempted
+2019,Szczecin,basic incomplete,8,Attempted
+2019,Szczecin,basic,52,Attempted
+2019,Szczecin,junior high,13,Attempted
+2019,Szczecin,technical/professional,48,Attempted
+2019,Szczecin,medium,35,Attempted
+2019,Szczecin,post-secondary,1,Attempted
+2019,Szczecin,higher,6,Attempted
+2019,Warszawa,basic incomplete,4,Attempted
+2019,Warszawa,basic,27,Attempted
+2019,Warszawa,junior high,16,Attempted
+2019,Warszawa,technical/professional,12,Attempted
+2019,Warszawa,medium,34,Attempted
+2019,Warszawa,post-secondary,1,Attempted
+2019,Warszawa,higher,21,Attempted
+2019,Radom,basic incomplete,9,Attempted
+2019,Radom,basic,65,Attempted
+2019,Radom,junior high,21,Attempted
+2019,Radom,technical/professional,62,Attempted
+2019,Radom,medium,44,Attempted
+2019,Radom,post-secondary,0,Attempted
+2019,Radom,higher,14,Attempted
+2019,Wrocław,basic incomplete,15,Attempted
+2019,Wrocław,basic,63,Attempted
+2019,Wrocław,junior high,21,Attempted
+2019,Wrocław,technical/professional,84,Attempted
+2019,Wrocław,medium,70,Attempted
+2019,Wrocław,post-secondary,1,Attempted
+2019,Wrocław,higher,22,Attempted
+2020,Bydgoszcz,basic incomplete,4,Attempted
+2020,Bydgoszcz,basic,22,Attempted
+2020,Bydgoszcz,junior high,12,Attempted
+2020,Bydgoszcz,technical/professional,21,Attempted
+2020,Bydgoszcz,medium,15,Attempted
+2020,Bydgoszcz,post-secondary,0,Attempted
+2020,Bydgoszcz,higher,8,Attempted
+2020,Białystok,basic incomplete,5,Attempted
+2020,Białystok,basic,44,Attempted
+2020,Białystok,junior high,5,Attempted
+2020,Białystok,technical/professional,28,Attempted
+2020,Białystok,medium,23,Attempted
+2020,Białystok,post-secondary,1,Attempted
+2020,Białystok,higher,7,Attempted
+2020,Gdańsk,basic incomplete,11,Attempted
+2020,Gdańsk,basic,75,Attempted
+2020,Gdańsk,junior high,25,Attempted
+2020,Gdańsk,technical/professional,33,Attempted
+2020,Gdańsk,medium,41,Attempted
+2020,Gdańsk,post-secondary,0,Attempted
+2020,Gdańsk,higher,17,Attempted
+2020,Gorzów Wlkp.,basic incomplete,1,Attempted
+2020,Gorzów Wlkp.,basic,12,Attempted
+2020,Gorzów Wlkp.,junior high,4,Attempted
+2020,Gorzów Wlkp.,technical/professional,8,Attempted
+2020,Gorzów Wlkp.,medium,13,Attempted
+2020,Gorzów Wlkp.,post-secondary,0,Attempted
+2020,Gorzów Wlkp.,higher,6,Attempted
+2020,Katowice,basic incomplete,19,Attempted
+2020,Katowice,basic,124,Attempted
+2020,Katowice,junior high,44,Attempted
+2020,Katowice,technical/professional,166,Attempted
+2020,Katowice,medium,156,Attempted
+2020,Katowice,post-secondary,2,Attempted
+2020,Katowice,higher,46,Attempted
+2020,Kielce,basic incomplete,8,Attempted
+2020,Kielce,basic,64,Attempted
+2020,Kielce,junior high,19,Attempted
+2020,Kielce,technical/professional,110,Attempted
+2020,Kielce,medium,97,Attempted
+2020,Kielce,post-secondary,1,Attempted
+2020,Kielce,higher,29,Attempted
+2020,Kraków,basic incomplete,17,Attempted
+2020,Kraków,basic,90,Attempted
+2020,Kraków,junior high,39,Attempted
+2020,Kraków,technical/professional,110,Attempted
+2020,Kraków,medium,101,Attempted
+2020,Kraków,post-secondary,2,Attempted
+2020,Kraków,higher,31,Attempted
+2020,Łódź,basic incomplete,25,Attempted
+2020,Łódź,basic,119,Attempted
+2020,Łódź,junior high,35,Attempted
+2020,Łódź,technical/professional,71,Attempted
+2020,Łódź,medium,101,Attempted
+2020,Łódź,post-secondary,2,Attempted
+2020,Łódź,higher,38,Attempted
+2020,Lublin,basic incomplete,15,Attempted
+2020,Lublin,basic,58,Attempted
+2020,Lublin,junior high,18,Attempted
+2020,Lublin,technical/professional,58,Attempted
+2020,Lublin,medium,53,Attempted
+2020,Lublin,post-secondary,1,Attempted
+2020,Lublin,higher,24,Attempted
+2020,Olsztyn,basic incomplete,10,Attempted
+2020,Olsztyn,basic,65,Attempted
+2020,Olsztyn,junior high,9,Attempted
+2020,Olsztyn,technical/professional,60,Attempted
+2020,Olsztyn,medium,33,Attempted
+2020,Olsztyn,post-secondary,0,Attempted
+2020,Olsztyn,higher,16,Attempted
+2020,Opole,basic incomplete,7,Attempted
+2020,Opole,basic,21,Attempted
+2020,Opole,junior high,2,Attempted
+2020,Opole,technical/professional,27,Attempted
+2020,Opole,medium,15,Attempted
+2020,Opole,post-secondary,0,Attempted
+2020,Opole,higher,5,Attempted
+2020,Poznań,basic incomplete,5,Attempted
+2020,Poznań,basic,55,Attempted
+2020,Poznań,junior high,16,Attempted
+2020,Poznań,technical/professional,93,Attempted
+2020,Poznań,medium,61,Attempted
+2020,Poznań,post-secondary,4,Attempted
+2020,Poznań,higher,22,Attempted
+2020,Rzeszów,basic incomplete,4,Attempted
+2020,Rzeszów,basic,56,Attempted
+2020,Rzeszów,junior high,18,Attempted
+2020,Rzeszów,technical/professional,60,Attempted
+2020,Rzeszów,medium,65,Attempted
+2020,Rzeszów,post-secondary,0,Attempted
+2020,Rzeszów,higher,16,Attempted
+2020,Szczecin,basic incomplete,10,Attempted
+2020,Szczecin,basic,62,Attempted
+2020,Szczecin,junior high,19,Attempted
+2020,Szczecin,technical/professional,51,Attempted
+2020,Szczecin,medium,33,Attempted
+2020,Szczecin,post-secondary,0,Attempted
+2020,Szczecin,higher,10,Attempted
+2020,Warszawa,basic incomplete,4,Attempted
+2020,Warszawa,basic,28,Attempted
+2020,Warszawa,junior high,10,Attempted
+2020,Warszawa,technical/professional,18,Attempted
+2020,Warszawa,medium,36,Attempted
+2020,Warszawa,post-secondary,0,Attempted
+2020,Warszawa,higher,24,Attempted
+2020,Radom,basic incomplete,11,Attempted
+2020,Radom,basic,64,Attempted
+2020,Radom,junior high,19,Attempted
+2020,Radom,technical/professional,52,Attempted
+2020,Radom,medium,43,Attempted
+2020,Radom,post-secondary,2,Attempted
+2020,Radom,higher,20,Attempted
+2020,Wrocław,basic incomplete,7,Attempted
+2020,Wrocław,basic,65,Attempted
+2020,Wrocław,junior high,16,Attempted
+2020,Wrocław,technical/professional,62,Attempted
+2020,Wrocław,medium,72,Attempted
+2020,Wrocław,post-secondary,2,Attempted
+2020,Wrocław,higher,23,Attempted
+2021,Bydgoszcz,basic incomplete,13,Attempted
+2021,Bydgoszcz,basic,34,Attempted
+2021,Bydgoszcz,junior high,12,Attempted
+2021,Bydgoszcz,technical/professional,24,Attempted
+2021,Bydgoszcz,medium,27,Attempted
+2021,Bydgoszcz,post-secondary,0,Attempted
+2021,Bydgoszcz,higher,7,Attempted
+2021,Białystok,basic incomplete,11,Attempted
+2021,Białystok,basic,41,Attempted
+2021,Białystok,junior high,14,Attempted
+2021,Białystok,technical/professional,28,Attempted
+2021,Białystok,medium,44,Attempted
+2021,Białystok,post-secondary,1,Attempted
+2021,Białystok,higher,5,Attempted
+2021,Gdańsk,basic incomplete,66,Attempted
+2021,Gdańsk,basic,191,Attempted
+2021,Gdańsk,junior high,48,Attempted
+2021,Gdańsk,technical/professional,77,Attempted
+2021,Gdańsk,medium,88,Attempted
+2021,Gdańsk,post-secondary,1,Attempted
+2021,Gdańsk,higher,31,Attempted
+2021,Gorzów Wlkp.,basic incomplete,2,Attempted
+2021,Gorzów Wlkp.,basic,11,Attempted
+2021,Gorzów Wlkp.,junior high,7,Attempted
+2021,Gorzów Wlkp.,technical/professional,11,Attempted
+2021,Gorzów Wlkp.,medium,11,Attempted
+2021,Gorzów Wlkp.,post-secondary,0,Attempted
+2021,Gorzów Wlkp.,higher,5,Attempted
+2021,Katowice,basic incomplete,44,Attempted
+2021,Katowice,basic,175,Attempted
+2021,Katowice,junior high,45,Attempted
+2021,Katowice,technical/professional,148,Attempted
+2021,Katowice,medium,187,Attempted
+2021,Katowice,post-secondary,1,Attempted
+2021,Katowice,higher,41,Attempted
+2021,Kielce,basic incomplete,13,Attempted
+2021,Kielce,basic,78,Attempted
+2021,Kielce,junior high,15,Attempted
+2021,Kielce,technical/professional,77,Attempted
+2021,Kielce,medium,127,Attempted
+2021,Kielce,post-secondary,1,Attempted
+2021,Kielce,higher,30,Attempted
+2021,Kraków,basic incomplete,27,Attempted
+2021,Kraków,basic,104,Attempted
+2021,Kraków,junior high,38,Attempted
+2021,Kraków,technical/professional,107,Attempted
+2021,Kraków,medium,83,Attempted
+2021,Kraków,post-secondary,1,Attempted
+2021,Kraków,higher,22,Attempted
+2021,Łódź,basic incomplete,31,Attempted
+2021,Łódź,basic,118,Attempted
+2021,Łódź,junior high,34,Attempted
+2021,Łódź,technical/professional,76,Attempted
+2021,Łódź,medium,120,Attempted
+2021,Łódź,post-secondary,3,Attempted
+2021,Łódź,higher,34,Attempted
+2021,Lublin,basic incomplete,13,Attempted
+2021,Lublin,basic,57,Attempted
+2021,Lublin,junior high,24,Attempted
+2021,Lublin,technical/professional,54,Attempted
+2021,Lublin,medium,74,Attempted
+2021,Lublin,post-secondary,0,Attempted
+2021,Lublin,higher,19,Attempted
+2021,Olsztyn,basic incomplete,18,Attempted
+2021,Olsztyn,basic,54,Attempted
+2021,Olsztyn,junior high,12,Attempted
+2021,Olsztyn,technical/professional,47,Attempted
+2021,Olsztyn,medium,40,Attempted
+2021,Olsztyn,post-secondary,0,Attempted
+2021,Olsztyn,higher,11,Attempted
+2021,Opole,basic incomplete,3,Attempted
+2021,Opole,basic,24,Attempted
+2021,Opole,junior high,4,Attempted
+2021,Opole,technical/professional,30,Attempted
+2021,Opole,medium,21,Attempted
+2021,Opole,post-secondary,1,Attempted
+2021,Opole,higher,7,Attempted
+2021,Poznań,basic incomplete,13,Attempted
+2021,Poznań,basic,72,Attempted
+2021,Poznań,junior high,25,Attempted
+2021,Poznań,technical/professional,117,Attempted
+2021,Poznań,medium,68,Attempted
+2021,Poznań,post-secondary,2,Attempted
+2021,Poznań,higher,22,Attempted
+2021,Rzeszów,basic incomplete,15,Attempted
+2021,Rzeszów,basic,64,Attempted
+2021,Rzeszów,junior high,22,Attempted
+2021,Rzeszów,technical/professional,58,Attempted
+2021,Rzeszów,medium,75,Attempted
+2021,Rzeszów,post-secondary,0,Attempted
+2021,Rzeszów,higher,15,Attempted
+2021,Szczecin,basic incomplete,12,Attempted
+2021,Szczecin,basic,72,Attempted
+2021,Szczecin,junior high,25,Attempted
+2021,Szczecin,technical/professional,38,Attempted
+2021,Szczecin,medium,33,Attempted
+2021,Szczecin,post-secondary,0,Attempted
+2021,Szczecin,higher,11,Attempted
+2021,Warszawa,basic incomplete,8,Attempted
+2021,Warszawa,basic,31,Attempted
+2021,Warszawa,junior high,10,Attempted
+2021,Warszawa,technical/professional,22,Attempted
+2021,Warszawa,medium,53,Attempted
+2021,Warszawa,post-secondary,1,Attempted
+2021,Warszawa,higher,16,Attempted
+2021,Radom,basic incomplete,14,Attempted
+2021,Radom,basic,71,Attempted
+2021,Radom,junior high,9,Attempted
+2021,Radom,technical/professional,57,Attempted
+2021,Radom,medium,56,Attempted
+2021,Radom,post-secondary,1,Attempted
+2021,Radom,higher,12,Attempted
+2021,Wrocław,basic incomplete,17,Attempted
+2021,Wrocław,basic,64,Attempted
+2021,Wrocław,junior high,13,Attempted
+2021,Wrocław,technical/professional,72,Attempted
+2021,Wrocław,medium,76,Attempted
+2021,Wrocław,post-secondary,1,Attempted
+2021,Wrocław,higher,23,Attempted
+2022,Bydgoszcz,basic incomplete,12,Attempted
+2022,Bydgoszcz,basic,28,Attempted
+2022,Bydgoszcz,junior high,6,Attempted
+2022,Bydgoszcz,technical/professional,22,Attempted
+2022,Bydgoszcz,medium,23,Attempted
+2022,Bydgoszcz,post-secondary,1,Attempted
+2022,Bydgoszcz,higher,7,Attempted
+2022,Białystok,basic incomplete,12,Attempted
+2022,Białystok,basic,66,Attempted
+2022,Białystok,junior high,13,Attempted
+2022,Białystok,technical/professional,20,Attempted
+2022,Białystok,medium,42,Attempted
+2022,Białystok,post-secondary,0,Attempted
+2022,Białystok,higher,2,Attempted
+2022,Gdańsk,basic incomplete,89,Attempted
+2022,Gdańsk,basic,231,Attempted
+2022,Gdańsk,junior high,31,Attempted
+2022,Gdańsk,technical/professional,85,Attempted
+2022,Gdańsk,medium,134,Attempted
+2022,Gdańsk,post-secondary,0,Attempted
+2022,Gdańsk,higher,24,Attempted
+2022,Gorzów Wlkp.,basic incomplete,7,Attempted
+2022,Gorzów Wlkp.,basic,22,Attempted
+2022,Gorzów Wlkp.,junior high,6,Attempted
+2022,Gorzów Wlkp.,technical/professional,13,Attempted
+2022,Gorzów Wlkp.,medium,13,Attempted
+2022,Gorzów Wlkp.,post-secondary,1,Attempted
+2022,Gorzów Wlkp.,higher,6,Attempted
+2022,Katowice,basic incomplete,59,Attempted
+2022,Katowice,basic,221,Attempted
+2022,Katowice,junior high,54,Attempted
+2022,Katowice,technical/professional,126,Attempted
+2022,Katowice,medium,162,Attempted
+2022,Katowice,post-secondary,5,Attempted
+2022,Katowice,higher,54,Attempted
+2022,Kielce,basic incomplete,17,Attempted
+2022,Kielce,basic,84,Attempted
+2022,Kielce,junior high,23,Attempted
+2022,Kielce,technical/professional,70,Attempted
+2022,Kielce,medium,115,Attempted
+2022,Kielce,post-secondary,3,Attempted
+2022,Kielce,higher,26,Attempted
+2022,Kraków,basic incomplete,37,Attempted
+2022,Kraków,basic,146,Attempted
+2022,Kraków,junior high,36,Attempted
+2022,Kraków,technical/professional,91,Attempted
+2022,Kraków,medium,111,Attempted
+2022,Kraków,post-secondary,2,Attempted
+2022,Kraków,higher,25,Attempted
+2022,Łódź,basic incomplete,43,Attempted
+2022,Łódź,basic,158,Attempted
+2022,Łódź,junior high,38,Attempted
+2022,Łódź,technical/professional,84,Attempted
+2022,Łódź,medium,113,Attempted
+2022,Łódź,post-secondary,4,Attempted
+2022,Łódź,higher,35,Attempted
+2022,Lublin,basic incomplete,30,Attempted
+2022,Lublin,basic,89,Attempted
+2022,Lublin,junior high,42,Attempted
+2022,Lublin,technical/professional,57,Attempted
+2022,Lublin,medium,91,Attempted
+2022,Lublin,post-secondary,1,Attempted
+2022,Lublin,higher,20,Attempted
+2022,Olsztyn,basic incomplete,19,Attempted
+2022,Olsztyn,basic,71,Attempted
+2022,Olsztyn,junior high,12,Attempted
+2022,Olsztyn,technical/professional,42,Attempted
+2022,Olsztyn,medium,44,Attempted
+2022,Olsztyn,post-secondary,1,Attempted
+2022,Olsztyn,higher,10,Attempted
+2022,Opole,basic incomplete,6,Attempted
+2022,Opole,basic,19,Attempted
+2022,Opole,junior high,9,Attempted
+2022,Opole,technical/professional,25,Attempted
+2022,Opole,medium,20,Attempted
+2022,Opole,post-secondary,0,Attempted
+2022,Opole,higher,5,Attempted
+2022,Poznań,basic incomplete,27,Attempted
+2022,Poznań,basic,104,Attempted
+2022,Poznań,junior high,20,Attempted
+2022,Poznań,technical/professional,134,Attempted
+2022,Poznań,medium,96,Attempted
+2022,Poznań,post-secondary,1,Attempted
+2022,Poznań,higher,26,Attempted
+2022,Rzeszów,basic incomplete,20,Attempted
+2022,Rzeszów,basic,87,Attempted
+2022,Rzeszów,junior high,16,Attempted
+2022,Rzeszów,technical/professional,90,Attempted
+2022,Rzeszów,medium,72,Attempted
+2022,Rzeszów,post-secondary,1,Attempted
+2022,Rzeszów,higher,22,Attempted
+2022,Szczecin,basic incomplete,14,Attempted
+2022,Szczecin,basic,70,Attempted
+2022,Szczecin,junior high,19,Attempted
+2022,Szczecin,technical/professional,38,Attempted
+2022,Szczecin,medium,40,Attempted
+2022,Szczecin,post-secondary,2,Attempted
+2022,Szczecin,higher,16,Attempted
+2022,Warszawa,basic incomplete,9,Attempted
+2022,Warszawa,basic,57,Attempted
+2022,Warszawa,junior high,6,Attempted
+2022,Warszawa,technical/professional,17,Attempted
+2022,Warszawa,medium,63,Attempted
+2022,Warszawa,post-secondary,0,Attempted
+2022,Warszawa,higher,32,Attempted
+2022,Radom,basic incomplete,12,Attempted
+2022,Radom,basic,82,Attempted
+2022,Radom,junior high,20,Attempted
+2022,Radom,technical/professional,65,Attempted
+2022,Radom,medium,63,Attempted
+2022,Radom,post-secondary,2,Attempted
+2022,Radom,higher,22,Attempted
+2022,Wrocław,basic incomplete,16,Attempted
+2022,Wrocław,basic,82,Attempted
+2022,Wrocław,junior high,20,Attempted
+2022,Wrocław,technical/professional,56,Attempted
+2022,Wrocław,medium,70,Attempted
+2022,Wrocław,post-secondary,0,Attempted
+2022,Wrocław,higher,19,Attempted
+2023,Bydgoszcz,basic incomplete,9,Attempted
+2023,Bydgoszcz,basic,52,Attempted
+2023,Bydgoszcz,junior high,8,Attempted
+2023,Bydgoszcz,technical/professional,23,Attempted
+2023,Bydgoszcz,medium,37,Attempted
+2023,Bydgoszcz,post-secondary,0,Attempted
+2023,Bydgoszcz,higher,20,Attempted
+2023,Białystok,basic incomplete,19,Attempted
+2023,Białystok,basic,72,Attempted
+2023,Białystok,junior high,20,Attempted
+2023,Białystok,technical/professional,24,Attempted
+2023,Białystok,medium,52,Attempted
+2023,Białystok,post-secondary,0,Attempted
+2023,Białystok,higher,12,Attempted
+2023,Gdańsk,basic incomplete,88,Attempted
+2023,Gdańsk,basic,272,Attempted
+2023,Gdańsk,junior high,32,Attempted
+2023,Gdańsk,technical/professional,64,Attempted
+2023,Gdańsk,medium,136,Attempted
+2023,Gdańsk,post-secondary,2,Attempted
+2023,Gdańsk,higher,39,Attempted
+2023,Gorzów Wlkp.,basic incomplete,4,Attempted
+2023,Gorzów Wlkp.,basic,17,Attempted
+2023,Gorzów Wlkp.,junior high,8,Attempted
+2023,Gorzów Wlkp.,technical/professional,8,Attempted
+2023,Gorzów Wlkp.,medium,14,Attempted
+2023,Gorzów Wlkp.,post-secondary,0,Attempted
+2023,Gorzów Wlkp.,higher,7,Attempted
+2023,Katowice,basic incomplete,57,Attempted
+2023,Katowice,basic,192,Attempted
+2023,Katowice,junior high,46,Attempted
+2023,Katowice,technical/professional,129,Attempted
+2023,Katowice,medium,224,Attempted
+2023,Katowice,post-secondary,2,Attempted
+2023,Katowice,higher,53,Attempted
+2023,Kielce,basic incomplete,17,Attempted
+2023,Kielce,basic,94,Attempted
+2023,Kielce,junior high,13,Attempted
+2023,Kielce,technical/professional,66,Attempted
+2023,Kielce,medium,123,Attempted
+2023,Kielce,post-secondary,3,Attempted
+2023,Kielce,higher,35,Attempted
+2023,Kraków,basic incomplete,29,Attempted
+2023,Kraków,basic,133,Attempted
+2023,Kraków,junior high,26,Attempted
+2023,Kraków,technical/professional,84,Attempted
+2023,Kraków,medium,111,Attempted
+2023,Kraków,post-secondary,3,Attempted
+2023,Kraków,higher,30,Attempted
+2023,Łódź,basic incomplete,52,Attempted
+2023,Łódź,basic,164,Attempted
+2023,Łódź,junior high,36,Attempted
+2023,Łódź,technical/professional,61,Attempted
+2023,Łódź,medium,149,Attempted
+2023,Łódź,post-secondary,3,Attempted
+2023,Łódź,higher,60,Attempted
+2023,Lublin,basic incomplete,18,Attempted
+2023,Lublin,basic,109,Attempted
+2023,Lublin,junior high,30,Attempted
+2023,Lublin,technical/professional,56,Attempted
+2023,Lublin,medium,70,Attempted
+2023,Lublin,post-secondary,1,Attempted
+2023,Lublin,higher,31,Attempted
+2023,Olsztyn,basic incomplete,21,Attempted
+2023,Olsztyn,basic,88,Attempted
+2023,Olsztyn,junior high,16,Attempted
+2023,Olsztyn,technical/professional,41,Attempted
+2023,Olsztyn,medium,38,Attempted
+2023,Olsztyn,post-secondary,2,Attempted
+2023,Olsztyn,higher,16,Attempted
+2023,Opole,basic incomplete,8,Attempted
+2023,Opole,basic,20,Attempted
+2023,Opole,junior high,7,Attempted
+2023,Opole,technical/professional,23,Attempted
+2023,Opole,medium,20,Attempted
+2023,Opole,post-secondary,0,Attempted
+2023,Opole,higher,8,Attempted
+2023,Poznań,basic incomplete,21,Attempted
+2023,Poznań,basic,152,Attempted
+2023,Poznań,junior high,31,Attempted
+2023,Poznań,technical/professional,152,Attempted
+2023,Poznań,medium,111,Attempted
+2023,Poznań,post-secondary,2,Attempted
+2023,Poznań,higher,32,Attempted
+2023,Rzeszów,basic incomplete,14,Attempted
+2023,Rzeszów,basic,66,Attempted
+2023,Rzeszów,junior high,16,Attempted
+2023,Rzeszów,technical/professional,73,Attempted
+2023,Rzeszów,medium,65,Attempted
+2023,Rzeszów,post-secondary,2,Attempted
+2023,Rzeszów,higher,21,Attempted
+2023,Szczecin,basic incomplete,21,Attempted
+2023,Szczecin,basic,69,Attempted
+2023,Szczecin,junior high,14,Attempted
+2023,Szczecin,technical/professional,42,Attempted
+2023,Szczecin,medium,46,Attempted
+2023,Szczecin,post-secondary,1,Attempted
+2023,Szczecin,higher,19,Attempted
+2023,Warszawa,basic incomplete,14,Attempted
+2023,Warszawa,basic,54,Attempted
+2023,Warszawa,junior high,14,Attempted
+2023,Warszawa,technical/professional,19,Attempted
+2023,Warszawa,medium,65,Attempted
+2023,Warszawa,post-secondary,2,Attempted
+2023,Warszawa,higher,41,Attempted
+2023,Radom,basic incomplete,15,Attempted
+2023,Radom,basic,96,Attempted
+2023,Radom,junior high,13,Attempted
+2023,Radom,technical/professional,48,Attempted
+2023,Radom,medium,56,Attempted
+2023,Radom,post-secondary,1,Attempted
+2023,Radom,higher,20,Attempted
+2023,Wrocław,basic incomplete,13,Attempted
+2023,Wrocław,basic,72,Attempted
+2023,Wrocław,junior high,20,Attempted
+2023,Wrocław,technical/professional,69,Attempted
+2023,Wrocław,medium,72,Attempted
+2023,Wrocław,post-secondary,2,Attempted
+2023,Wrocław,higher,24,Attempted
+1999,Wrocław,basic incomplete,13,Fatal
+1999,Wrocław,basic,74,Fatal
+1999,Wrocław,technical/professional,88,Fatal
+1999,Wrocław,medium,29,Fatal
+1999,Wrocław,higher,3,Fatal
+1999,Bydgoszcz,basic incomplete,11,Fatal
+1999,Bydgoszcz,basic,75,Fatal
+1999,Bydgoszcz,technical/professional,60,Fatal
+1999,Bydgoszcz,medium,24,Fatal
+1999,Bydgoszcz,higher,2,Fatal
+1999,Lublin,basic incomplete,17,Fatal
+1999,Lublin,basic,96,Fatal
+1999,Lublin,technical/professional,54,Fatal
+1999,Lublin,medium,20,Fatal
+1999,Lublin,higher,4,Fatal
+1999,Gorzów Wlkp.,basic incomplete,3,Fatal
+1999,Gorzów Wlkp.,basic,31,Fatal
+1999,Gorzów Wlkp.,technical/professional,39,Fatal
+1999,Gorzów Wlkp.,medium,15,Fatal
+1999,Gorzów Wlkp.,higher,4,Fatal
+1999,Łódź,basic incomplete,37,Fatal
+1999,Łódź,basic,138,Fatal
+1999,Łódź,technical/professional,72,Fatal
+1999,Łódź,medium,22,Fatal
+1999,Łódź,higher,10,Fatal
+1999,Kraków,basic incomplete,8,Fatal
+1999,Kraków,basic,81,Fatal
+1999,Kraków,technical/professional,93,Fatal
+1999,Kraków,medium,27,Fatal
+1999,Kraków,higher,6,Fatal
+1999,Radom,basic incomplete,32,Fatal
+1999,Radom,basic,125,Fatal
+1999,Radom,technical/professional,93,Fatal
+1999,Radom,medium,32,Fatal
+1999,Radom,higher,4,Fatal
+1999,Opole,basic incomplete,8,Fatal
+1999,Opole,basic,42,Fatal
+1999,Opole,technical/professional,39,Fatal
+1999,Opole,medium,8,Fatal
+1999,Opole,higher,4,Fatal
+1999,Rzeszów,basic incomplete,9,Fatal
+1999,Rzeszów,basic,54,Fatal
+1999,Rzeszów,technical/professional,51,Fatal
+1999,Rzeszów,medium,23,Fatal
+1999,Rzeszów,higher,4,Fatal
+1999,Białystok,basic incomplete,23,Fatal
+1999,Białystok,basic,64,Fatal
+1999,Białystok,technical/professional,32,Fatal
+1999,Białystok,medium,17,Fatal
+1999,Białystok,higher,6,Fatal
+1999,Gdańsk,basic incomplete,6,Fatal
+1999,Gdańsk,basic,73,Fatal
+1999,Gdańsk,technical/professional,52,Fatal
+1999,Gdańsk,medium,19,Fatal
+1999,Gdańsk,higher,6,Fatal
+1999,Katowice,basic incomplete,21,Fatal
+1999,Katowice,basic,78,Fatal
+1999,Katowice,technical/professional,134,Fatal
+1999,Katowice,medium,32,Fatal
+1999,Katowice,higher,6,Fatal
+1999,Kielce,basic incomplete,12,Fatal
+1999,Kielce,basic,60,Fatal
+1999,Kielce,technical/professional,60,Fatal
+1999,Kielce,medium,15,Fatal
+1999,Kielce,higher,5,Fatal
+1999,Olsztyn,basic incomplete,21,Fatal
+1999,Olsztyn,basic,48,Fatal
+1999,Olsztyn,technical/professional,34,Fatal
+1999,Olsztyn,medium,16,Fatal
+1999,Olsztyn,higher,3,Fatal
+1999,Poznań,basic incomplete,26,Fatal
+1999,Poznań,basic,156,Fatal
+1999,Poznań,technical/professional,184,Fatal
+1999,Poznań,medium,49,Fatal
+1999,Poznań,higher,17,Fatal
+1999,Szczecin,basic incomplete,8,Fatal
+1999,Szczecin,basic,77,Fatal
+1999,Szczecin,technical/professional,55,Fatal
+1999,Szczecin,medium,18,Fatal
+1999,Szczecin,higher,2,Fatal
+1999,Warszawa,basic incomplete,2,Fatal
+1999,Warszawa,basic,9,Fatal
+1999,Warszawa,technical/professional,27,Fatal
+1999,Warszawa,medium,24,Fatal
+1999,Warszawa,higher,1,Fatal
+2000,Wrocław,basic incomplete,16,Fatal
+2000,Wrocław,basic,81,Fatal
+2000,Wrocław,technical/professional,90,Fatal
+2000,Wrocław,medium,30,Fatal
+2000,Wrocław,higher,6,Fatal
+2000,Bydgoszcz,basic incomplete,7,Fatal
+2000,Bydgoszcz,basic,63,Fatal
+2000,Bydgoszcz,technical/professional,53,Fatal
+2000,Bydgoszcz,medium,15,Fatal
+2000,Bydgoszcz,higher,5,Fatal
+2000,Lublin,basic incomplete,22,Fatal
+2000,Lublin,basic,80,Fatal
+2000,Lublin,technical/professional,54,Fatal
+2000,Lublin,medium,16,Fatal
+2000,Lublin,higher,4,Fatal
+2000,Gorzów Wlkp.,basic incomplete,5,Fatal
+2000,Gorzów Wlkp.,basic,21,Fatal
+2000,Gorzów Wlkp.,technical/professional,33,Fatal
+2000,Gorzów Wlkp.,medium,10,Fatal
+2000,Gorzów Wlkp.,higher,3,Fatal
+2000,Łódź,basic incomplete,25,Fatal
+2000,Łódź,basic,101,Fatal
+2000,Łódź,technical/professional,75,Fatal
+2000,Łódź,medium,23,Fatal
+2000,Łódź,higher,4,Fatal
+2000,Kraków,basic incomplete,15,Fatal
+2000,Kraków,basic,131,Fatal
+2000,Kraków,technical/professional,116,Fatal
+2000,Kraków,medium,41,Fatal
+2000,Kraków,higher,18,Fatal
+2000,Radom,basic incomplete,24,Fatal
+2000,Radom,basic,128,Fatal
+2000,Radom,technical/professional,88,Fatal
+2000,Radom,medium,24,Fatal
+2000,Radom,higher,6,Fatal
+2000,Opole,basic incomplete,2,Fatal
+2000,Opole,basic,30,Fatal
+2000,Opole,technical/professional,31,Fatal
+2000,Opole,medium,10,Fatal
+2000,Opole,higher,2,Fatal
+2000,Rzeszów,basic incomplete,17,Fatal
+2000,Rzeszów,basic,98,Fatal
+2000,Rzeszów,technical/professional,92,Fatal
+2000,Rzeszów,medium,27,Fatal
+2000,Rzeszów,higher,9,Fatal
+2000,Białystok,basic incomplete,17,Fatal
+2000,Białystok,basic,67,Fatal
+2000,Białystok,technical/professional,28,Fatal
+2000,Białystok,medium,19,Fatal
+2000,Białystok,higher,4,Fatal
+2000,Gdańsk,basic incomplete,14,Fatal
+2000,Gdańsk,basic,56,Fatal
+2000,Gdańsk,technical/professional,53,Fatal
+2000,Gdańsk,medium,19,Fatal
+2000,Gdańsk,higher,8,Fatal
+2000,Katowice,basic incomplete,14,Fatal
+2000,Katowice,basic,76,Fatal
+2000,Katowice,technical/professional,145,Fatal
+2000,Katowice,medium,42,Fatal
+2000,Katowice,higher,9,Fatal
+2000,Kielce,basic incomplete,13,Fatal
+2000,Kielce,basic,46,Fatal
+2000,Kielce,technical/professional,48,Fatal
+2000,Kielce,medium,24,Fatal
+2000,Kielce,higher,5,Fatal
+2000,Olsztyn,basic incomplete,6,Fatal
+2000,Olsztyn,basic,45,Fatal
+2000,Olsztyn,technical/professional,19,Fatal
+2000,Olsztyn,medium,12,Fatal
+2000,Olsztyn,higher,1,Fatal
+2000,Poznań,basic incomplete,17,Fatal
+2000,Poznań,basic,144,Fatal
+2000,Poznań,technical/professional,145,Fatal
+2000,Poznań,medium,39,Fatal
+2000,Poznań,higher,13,Fatal
+2000,Szczecin,basic incomplete,11,Fatal
+2000,Szczecin,basic,50,Fatal
+2000,Szczecin,technical/professional,41,Fatal
+2000,Szczecin,medium,14,Fatal
+2000,Szczecin,higher,2,Fatal
+2000,Warszawa,basic incomplete,2,Fatal
+2000,Warszawa,basic,7,Fatal
+2000,Warszawa,technical/professional,15,Fatal
+2000,Warszawa,medium,16,Fatal
+2000,Warszawa,higher,9,Fatal
+2001,Wrocław,basic incomplete,8,Fatal
+2001,Wrocław,basic,64,Fatal
+2001,Wrocław,technical/professional,82,Fatal
+2001,Wrocław,medium,23,Fatal
+2001,Wrocław,higher,3,Fatal
+2001,Bydgoszcz,basic incomplete,8,Fatal
+2001,Bydgoszcz,basic,68,Fatal
+2001,Bydgoszcz,technical/professional,55,Fatal
+2001,Bydgoszcz,medium,19,Fatal
+2001,Bydgoszcz,higher,2,Fatal
+2001,Lublin,basic incomplete,14,Fatal
+2001,Lublin,basic,88,Fatal
+2001,Lublin,technical/professional,70,Fatal
+2001,Lublin,medium,22,Fatal
+2001,Lublin,higher,7,Fatal
+2001,Gorzów Wlkp.,basic incomplete,5,Fatal
+2001,Gorzów Wlkp.,basic,26,Fatal
+2001,Gorzów Wlkp.,technical/professional,41,Fatal
+2001,Gorzów Wlkp.,medium,13,Fatal
+2001,Gorzów Wlkp.,higher,6,Fatal
+2001,Łódź,basic incomplete,26,Fatal
+2001,Łódź,basic,87,Fatal
+2001,Łódź,technical/professional,76,Fatal
+2001,Łódź,medium,20,Fatal
+2001,Łódź,higher,10,Fatal
+2001,Kraków,basic incomplete,13,Fatal
+2001,Kraków,basic,104,Fatal
+2001,Kraków,technical/professional,124,Fatal
+2001,Kraków,medium,42,Fatal
+2001,Kraków,higher,21,Fatal
+2001,Radom,basic incomplete,38,Fatal
+2001,Radom,basic,106,Fatal
+2001,Radom,technical/professional,89,Fatal
+2001,Radom,medium,36,Fatal
+2001,Radom,higher,3,Fatal
+2001,Opole,basic incomplete,3,Fatal
+2001,Opole,basic,33,Fatal
+2001,Opole,technical/professional,35,Fatal
+2001,Opole,medium,9,Fatal
+2001,Opole,higher,3,Fatal
+2001,Rzeszów,basic incomplete,19,Fatal
+2001,Rzeszów,basic,77,Fatal
+2001,Rzeszów,technical/professional,80,Fatal
+2001,Rzeszów,medium,22,Fatal
+2001,Rzeszów,higher,6,Fatal
+2001,Białystok,basic incomplete,17,Fatal
+2001,Białystok,basic,55,Fatal
+2001,Białystok,technical/professional,37,Fatal
+2001,Białystok,medium,8,Fatal
+2001,Białystok,higher,3,Fatal
+2001,Gdańsk,basic incomplete,3,Fatal
+2001,Gdańsk,basic,58,Fatal
+2001,Gdańsk,technical/professional,56,Fatal
+2001,Gdańsk,medium,19,Fatal
+2001,Gdańsk,higher,10,Fatal
+2001,Katowice,basic incomplete,4,Fatal
+2001,Katowice,basic,67,Fatal
+2001,Katowice,technical/professional,124,Fatal
+2001,Katowice,medium,30,Fatal
+2001,Katowice,higher,8,Fatal
+2001,Kielce,basic incomplete,12,Fatal
+2001,Kielce,basic,46,Fatal
+2001,Kielce,technical/professional,55,Fatal
+2001,Kielce,medium,18,Fatal
+2001,Kielce,higher,4,Fatal
+2001,Olsztyn,basic incomplete,11,Fatal
+2001,Olsztyn,basic,62,Fatal
+2001,Olsztyn,technical/professional,29,Fatal
+2001,Olsztyn,medium,8,Fatal
+2001,Olsztyn,higher,6,Fatal
+2001,Poznań,basic incomplete,19,Fatal
+2001,Poznań,basic,115,Fatal
+2001,Poznań,technical/professional,153,Fatal
+2001,Poznań,medium,44,Fatal
+2001,Poznań,higher,10,Fatal
+2001,Szczecin,basic incomplete,9,Fatal
+2001,Szczecin,basic,47,Fatal
+2001,Szczecin,technical/professional,36,Fatal
+2001,Szczecin,medium,11,Fatal
+2001,Szczecin,higher,3,Fatal
+2001,Warszawa,basic incomplete,0,Fatal
+2001,Warszawa,basic,7,Fatal
+2001,Warszawa,technical/professional,7,Fatal
+2001,Warszawa,medium,13,Fatal
+2001,Warszawa,higher,6,Fatal
+2002,Wrocław,basic incomplete,7,Fatal
+2002,Wrocław,basic,76,Fatal
+2002,Wrocław,technical/professional,62,Fatal
+2002,Wrocław,medium,36,Fatal
+2002,Wrocław,higher,6,Fatal
+2002,Bydgoszcz,basic incomplete,8,Fatal
+2002,Bydgoszcz,basic,48,Fatal
+2002,Bydgoszcz,technical/professional,52,Fatal
+2002,Bydgoszcz,medium,16,Fatal
+2002,Bydgoszcz,higher,3,Fatal
+2002,Lublin,basic incomplete,14,Fatal
+2002,Lublin,basic,95,Fatal
+2002,Lublin,technical/professional,63,Fatal
+2002,Lublin,medium,21,Fatal
+2002,Lublin,higher,5,Fatal
+2002,Gorzów Wlkp.,basic incomplete,1,Fatal
+2002,Gorzów Wlkp.,basic,22,Fatal
+2002,Gorzów Wlkp.,technical/professional,27,Fatal
+2002,Gorzów Wlkp.,medium,13,Fatal
+2002,Gorzów Wlkp.,higher,0,Fatal
+2002,Łódź,basic incomplete,17,Fatal
+2002,Łódź,basic,88,Fatal
+2002,Łódź,technical/professional,68,Fatal
+2002,Łódź,medium,26,Fatal
+2002,Łódź,higher,4,Fatal
+2002,Kraków,basic incomplete,10,Fatal
+2002,Kraków,basic,102,Fatal
+2002,Kraków,technical/professional,102,Fatal
+2002,Kraków,medium,46,Fatal
+2002,Kraków,higher,12,Fatal
+2002,Radom,basic incomplete,20,Fatal
+2002,Radom,basic,93,Fatal
+2002,Radom,technical/professional,72,Fatal
+2002,Radom,medium,27,Fatal
+2002,Radom,higher,3,Fatal
+2002,Opole,basic incomplete,4,Fatal
+2002,Opole,basic,27,Fatal
+2002,Opole,technical/professional,21,Fatal
+2002,Opole,medium,5,Fatal
+2002,Opole,higher,3,Fatal
+2002,Rzeszów,basic incomplete,9,Fatal
+2002,Rzeszów,basic,80,Fatal
+2002,Rzeszów,technical/professional,86,Fatal
+2002,Rzeszów,medium,36,Fatal
+2002,Rzeszów,higher,9,Fatal
+2002,Białystok,basic incomplete,19,Fatal
+2002,Białystok,basic,44,Fatal
+2002,Białystok,technical/professional,30,Fatal
+2002,Białystok,medium,18,Fatal
+2002,Białystok,higher,5,Fatal
+2002,Gdańsk,basic incomplete,2,Fatal
+2002,Gdańsk,basic,59,Fatal
+2002,Gdańsk,technical/professional,57,Fatal
+2002,Gdańsk,medium,14,Fatal
+2002,Gdańsk,higher,3,Fatal
+2002,Katowice,basic incomplete,8,Fatal
+2002,Katowice,basic,67,Fatal
+2002,Katowice,technical/professional,128,Fatal
+2002,Katowice,medium,35,Fatal
+2002,Katowice,higher,9,Fatal
+2002,Kielce,basic incomplete,15,Fatal
+2002,Kielce,basic,62,Fatal
+2002,Kielce,technical/professional,55,Fatal
+2002,Kielce,medium,14,Fatal
+2002,Kielce,higher,1,Fatal
+2002,Olsztyn,basic incomplete,8,Fatal
+2002,Olsztyn,basic,65,Fatal
+2002,Olsztyn,technical/professional,34,Fatal
+2002,Olsztyn,medium,19,Fatal
+2002,Olsztyn,higher,1,Fatal
+2002,Poznań,basic incomplete,18,Fatal
+2002,Poznań,basic,95,Fatal
+2002,Poznań,technical/professional,123,Fatal
+2002,Poznań,medium,34,Fatal
+2002,Poznań,higher,13,Fatal
+2002,Szczecin,basic incomplete,14,Fatal
+2002,Szczecin,basic,44,Fatal
+2002,Szczecin,technical/professional,45,Fatal
+2002,Szczecin,medium,9,Fatal
+2002,Szczecin,higher,1,Fatal
+2002,Warszawa,basic incomplete,1,Fatal
+2002,Warszawa,basic,12,Fatal
+2002,Warszawa,technical/professional,15,Fatal
+2002,Warszawa,medium,12,Fatal
+2002,Warszawa,higher,4,Fatal
+2003,Wrocław,basic incomplete,3,Fatal
+2003,Wrocław,basic,65,Fatal
+2003,Wrocław,technical/professional,75,Fatal
+2003,Wrocław,medium,22,Fatal
+2003,Wrocław,higher,11,Fatal
+2003,Bydgoszcz,basic incomplete,3,Fatal
+2003,Bydgoszcz,basic,32,Fatal
+2003,Bydgoszcz,technical/professional,43,Fatal
+2003,Bydgoszcz,medium,19,Fatal
+2003,Bydgoszcz,higher,6,Fatal
+2003,Lublin,basic incomplete,13,Fatal
+2003,Lublin,basic,93,Fatal
+2003,Lublin,technical/professional,68,Fatal
+2003,Lublin,medium,28,Fatal
+2003,Lublin,higher,4,Fatal
+2003,Gorzów Wlkp.,basic incomplete,3,Fatal
+2003,Gorzów Wlkp.,basic,18,Fatal
+2003,Gorzów Wlkp.,technical/professional,14,Fatal
+2003,Gorzów Wlkp.,medium,10,Fatal
+2003,Gorzów Wlkp.,higher,4,Fatal
+2003,Łódź,basic incomplete,10,Fatal
+2003,Łódź,basic,79,Fatal
+2003,Łódź,technical/professional,69,Fatal
+2003,Łódź,medium,24,Fatal
+2003,Łódź,higher,8,Fatal
+2003,Kraków,basic incomplete,12,Fatal
+2003,Kraków,basic,68,Fatal
+2003,Kraków,technical/professional,96,Fatal
+2003,Kraków,medium,29,Fatal
+2003,Kraków,higher,7,Fatal
+2003,Radom,basic incomplete,17,Fatal
+2003,Radom,basic,87,Fatal
+2003,Radom,technical/professional,44,Fatal
+2003,Radom,medium,22,Fatal
+2003,Radom,higher,3,Fatal
+2003,Opole,basic incomplete,2,Fatal
+2003,Opole,basic,16,Fatal
+2003,Opole,technical/professional,26,Fatal
+2003,Opole,medium,7,Fatal
+2003,Opole,higher,5,Fatal
+2003,Rzeszów,basic incomplete,6,Fatal
+2003,Rzeszów,basic,58,Fatal
+2003,Rzeszów,technical/professional,53,Fatal
+2003,Rzeszów,medium,15,Fatal
+2003,Rzeszów,higher,4,Fatal
+2003,Białystok,basic incomplete,11,Fatal
+2003,Białystok,basic,64,Fatal
+2003,Białystok,technical/professional,42,Fatal
+2003,Białystok,medium,22,Fatal
+2003,Białystok,higher,6,Fatal
+2003,Gdańsk,basic incomplete,4,Fatal
+2003,Gdańsk,basic,37,Fatal
+2003,Gdańsk,technical/professional,40,Fatal
+2003,Gdańsk,medium,14,Fatal
+2003,Gdańsk,higher,2,Fatal
+2003,Katowice,basic incomplete,4,Fatal
+2003,Katowice,basic,55,Fatal
+2003,Katowice,technical/professional,115,Fatal
+2003,Katowice,medium,37,Fatal
+2003,Katowice,higher,8,Fatal
+2003,Kielce,basic incomplete,4,Fatal
+2003,Kielce,basic,44,Fatal
+2003,Kielce,technical/professional,55,Fatal
+2003,Kielce,medium,17,Fatal
+2003,Kielce,higher,5,Fatal
+2003,Olsztyn,basic incomplete,10,Fatal
+2003,Olsztyn,basic,50,Fatal
+2003,Olsztyn,technical/professional,32,Fatal
+2003,Olsztyn,medium,14,Fatal
+2003,Olsztyn,higher,4,Fatal
+2003,Poznań,basic incomplete,10,Fatal
+2003,Poznań,basic,75,Fatal
+2003,Poznań,technical/professional,97,Fatal
+2003,Poznań,medium,25,Fatal
+2003,Poznań,higher,6,Fatal
+2003,Szczecin,basic incomplete,7,Fatal
+2003,Szczecin,basic,34,Fatal
+2003,Szczecin,technical/professional,40,Fatal
+2003,Szczecin,medium,15,Fatal
+2003,Szczecin,higher,3,Fatal
+2003,Warszawa,basic incomplete,0,Fatal
+2003,Warszawa,basic,15,Fatal
+2003,Warszawa,technical/professional,15,Fatal
+2003,Warszawa,medium,33,Fatal
+2003,Warszawa,higher,6,Fatal
+2004,Wrocław,basic incomplete,7,Fatal
+2004,Wrocław,basic,60,Fatal
+2004,Wrocław,technical/professional,61,Fatal
+2004,Wrocław,medium,23,Fatal
+2004,Wrocław,higher,7,Fatal
+2004,Bydgoszcz,basic incomplete,11,Fatal
+2004,Bydgoszcz,basic,66,Fatal
+2004,Bydgoszcz,technical/professional,62,Fatal
+2004,Bydgoszcz,medium,18,Fatal
+2004,Bydgoszcz,higher,4,Fatal
+2004,Lublin,basic incomplete,21,Fatal
+2004,Lublin,basic,104,Fatal
+2004,Lublin,technical/professional,74,Fatal
+2004,Lublin,medium,26,Fatal
+2004,Lublin,higher,3,Fatal
+2004,Gorzów Wlkp.,basic incomplete,4,Fatal
+2004,Gorzów Wlkp.,basic,24,Fatal
+2004,Gorzów Wlkp.,technical/professional,9,Fatal
+2004,Gorzów Wlkp.,medium,5,Fatal
+2004,Gorzów Wlkp.,higher,3,Fatal
+2004,Łódź,basic incomplete,6,Fatal
+2004,Łódź,basic,63,Fatal
+2004,Łódź,technical/professional,70,Fatal
+2004,Łódź,medium,19,Fatal
+2004,Łódź,higher,5,Fatal
+2004,Kraków,basic incomplete,7,Fatal
+2004,Kraków,basic,69,Fatal
+2004,Kraków,technical/professional,89,Fatal
+2004,Kraków,medium,27,Fatal
+2004,Kraków,higher,9,Fatal
+2004,Radom,basic incomplete,10,Fatal
+2004,Radom,basic,74,Fatal
+2004,Radom,technical/professional,57,Fatal
+2004,Radom,medium,14,Fatal
+2004,Radom,higher,4,Fatal
+2004,Opole,basic incomplete,4,Fatal
+2004,Opole,basic,24,Fatal
+2004,Opole,technical/professional,25,Fatal
+2004,Opole,medium,4,Fatal
+2004,Opole,higher,3,Fatal
+2004,Rzeszów,basic incomplete,6,Fatal
+2004,Rzeszów,basic,33,Fatal
+2004,Rzeszów,technical/professional,47,Fatal
+2004,Rzeszów,medium,20,Fatal
+2004,Rzeszów,higher,8,Fatal
+2004,Białystok,basic incomplete,8,Fatal
+2004,Białystok,basic,39,Fatal
+2004,Białystok,technical/professional,24,Fatal
+2004,Białystok,medium,15,Fatal
+2004,Białystok,higher,4,Fatal
+2004,Gdańsk,basic incomplete,5,Fatal
+2004,Gdańsk,basic,37,Fatal
+2004,Gdańsk,technical/professional,27,Fatal
+2004,Gdańsk,medium,7,Fatal
+2004,Gdańsk,higher,6,Fatal
+2004,Katowice,basic incomplete,7,Fatal
+2004,Katowice,basic,54,Fatal
+2004,Katowice,technical/professional,94,Fatal
+2004,Katowice,medium,50,Fatal
+2004,Katowice,higher,6,Fatal
+2004,Kielce,basic incomplete,10,Fatal
+2004,Kielce,basic,49,Fatal
+2004,Kielce,technical/professional,78,Fatal
+2004,Kielce,medium,30,Fatal
+2004,Kielce,higher,4,Fatal
+2004,Olsztyn,basic incomplete,1,Fatal
+2004,Olsztyn,basic,58,Fatal
+2004,Olsztyn,technical/professional,32,Fatal
+2004,Olsztyn,medium,8,Fatal
+2004,Olsztyn,higher,4,Fatal
+2004,Poznań,basic incomplete,5,Fatal
+2004,Poznań,basic,55,Fatal
+2004,Poznań,technical/professional,101,Fatal
+2004,Poznań,medium,31,Fatal
+2004,Poznań,higher,7,Fatal
+2004,Szczecin,basic incomplete,6,Fatal
+2004,Szczecin,basic,35,Fatal
+2004,Szczecin,technical/professional,33,Fatal
+2004,Szczecin,medium,15,Fatal
+2004,Szczecin,higher,3,Fatal
+2004,Warszawa,basic incomplete,3,Fatal
+2004,Warszawa,basic,29,Fatal
+2004,Warszawa,technical/professional,25,Fatal
+2004,Warszawa,medium,41,Fatal
+2004,Warszawa,higher,7,Fatal
+2005,Wrocław,basic incomplete,7,Fatal
+2005,Wrocław,basic,30,Fatal
+2005,Wrocław,technical/professional,48,Fatal
+2005,Wrocław,medium,17,Fatal
+2005,Wrocław,higher,7,Fatal
+2005,Bydgoszcz,basic incomplete,4,Fatal
+2005,Bydgoszcz,basic,53,Fatal
+2005,Bydgoszcz,technical/professional,57,Fatal
+2005,Bydgoszcz,medium,28,Fatal
+2005,Bydgoszcz,higher,2,Fatal
+2005,Lublin,basic incomplete,13,Fatal
+2005,Lublin,basic,72,Fatal
+2005,Lublin,technical/professional,44,Fatal
+2005,Lublin,medium,23,Fatal
+2005,Lublin,higher,9,Fatal
+2005,Gorzów Wlkp.,basic incomplete,2,Fatal
+2005,Gorzów Wlkp.,basic,14,Fatal
+2005,Gorzów Wlkp.,technical/professional,15,Fatal
+2005,Gorzów Wlkp.,medium,6,Fatal
+2005,Gorzów Wlkp.,higher,0,Fatal
+2005,Łódź,basic incomplete,14,Fatal
+2005,Łódź,basic,74,Fatal
+2005,Łódź,technical/professional,55,Fatal
+2005,Łódź,medium,24,Fatal
+2005,Łódź,higher,6,Fatal
+2005,Kraków,basic incomplete,7,Fatal
+2005,Kraków,basic,57,Fatal
+2005,Kraków,technical/professional,63,Fatal
+2005,Kraków,medium,25,Fatal
+2005,Kraków,higher,9,Fatal
+2005,Radom,basic incomplete,15,Fatal
+2005,Radom,basic,82,Fatal
+2005,Radom,technical/professional,61,Fatal
+2005,Radom,medium,16,Fatal
+2005,Radom,higher,6,Fatal
+2005,Opole,basic incomplete,0,Fatal
+2005,Opole,basic,14,Fatal
+2005,Opole,technical/professional,14,Fatal
+2005,Opole,medium,9,Fatal
+2005,Opole,higher,3,Fatal
+2005,Rzeszów,basic incomplete,4,Fatal
+2005,Rzeszów,basic,47,Fatal
+2005,Rzeszów,technical/professional,55,Fatal
+2005,Rzeszów,medium,20,Fatal
+2005,Rzeszów,higher,2,Fatal
+2005,Białystok,basic incomplete,2,Fatal
+2005,Białystok,basic,45,Fatal
+2005,Białystok,technical/professional,19,Fatal
+2005,Białystok,medium,20,Fatal
+2005,Białystok,higher,7,Fatal
+2005,Gdańsk,basic incomplete,4,Fatal
+2005,Gdańsk,basic,39,Fatal
+2005,Gdańsk,technical/professional,36,Fatal
+2005,Gdańsk,medium,14,Fatal
+2005,Gdańsk,higher,4,Fatal
+2005,Katowice,basic incomplete,3,Fatal
+2005,Katowice,basic,53,Fatal
+2005,Katowice,technical/professional,118,Fatal
+2005,Katowice,medium,39,Fatal
+2005,Katowice,higher,8,Fatal
+2005,Kielce,basic incomplete,6,Fatal
+2005,Kielce,basic,34,Fatal
+2005,Kielce,technical/professional,49,Fatal
+2005,Kielce,medium,34,Fatal
+2005,Kielce,higher,8,Fatal
+2005,Olsztyn,basic incomplete,5,Fatal
+2005,Olsztyn,basic,45,Fatal
+2005,Olsztyn,technical/professional,27,Fatal
+2005,Olsztyn,medium,13,Fatal
+2005,Olsztyn,higher,6,Fatal
+2005,Poznań,basic incomplete,7,Fatal
+2005,Poznań,basic,64,Fatal
+2005,Poznań,technical/professional,80,Fatal
+2005,Poznań,medium,27,Fatal
+2005,Poznań,higher,13,Fatal
+2005,Szczecin,basic incomplete,1,Fatal
+2005,Szczecin,basic,39,Fatal
+2005,Szczecin,technical/professional,29,Fatal
+2005,Szczecin,medium,11,Fatal
+2005,Szczecin,higher,5,Fatal
+2005,Warszawa,basic incomplete,5,Fatal
+2005,Warszawa,basic,30,Fatal
+2005,Warszawa,technical/professional,25,Fatal
+2005,Warszawa,medium,23,Fatal
+2005,Warszawa,higher,10,Fatal
+2006,Wrocław,basic incomplete,6,Fatal
+2006,Wrocław,basic,33,Fatal
+2006,Wrocław,technical/professional,35,Fatal
+2006,Wrocław,medium,15,Fatal
+2006,Wrocław,higher,4,Fatal
+2006,Bydgoszcz,basic incomplete,5,Fatal
+2006,Bydgoszcz,basic,31,Fatal
+2006,Bydgoszcz,technical/professional,49,Fatal
+2006,Bydgoszcz,medium,14,Fatal
+2006,Bydgoszcz,higher,4,Fatal
+2006,Lublin,basic incomplete,12,Fatal
+2006,Lublin,basic,72,Fatal
+2006,Lublin,technical/professional,37,Fatal
+2006,Lublin,medium,24,Fatal
+2006,Lublin,higher,3,Fatal
+2006,Gorzów Wlkp.,basic incomplete,2,Fatal
+2006,Gorzów Wlkp.,basic,11,Fatal
+2006,Gorzów Wlkp.,technical/professional,20,Fatal
+2006,Gorzów Wlkp.,medium,6,Fatal
+2006,Gorzów Wlkp.,higher,2,Fatal
+2006,Łódź,basic incomplete,9,Fatal
+2006,Łódź,basic,59,Fatal
+2006,Łódź,technical/professional,61,Fatal
+2006,Łódź,medium,18,Fatal
+2006,Łódź,higher,8,Fatal
+2006,Kraków,basic incomplete,3,Fatal
+2006,Kraków,basic,34,Fatal
+2006,Kraków,technical/professional,55,Fatal
+2006,Kraków,medium,20,Fatal
+2006,Kraków,higher,12,Fatal
+2006,Radom,basic incomplete,11,Fatal
+2006,Radom,basic,48,Fatal
+2006,Radom,technical/professional,42,Fatal
+2006,Radom,medium,18,Fatal
+2006,Radom,higher,3,Fatal
+2006,Opole,basic incomplete,1,Fatal
+2006,Opole,basic,16,Fatal
+2006,Opole,technical/professional,21,Fatal
+2006,Opole,medium,10,Fatal
+2006,Opole,higher,1,Fatal
+2006,Rzeszów,basic incomplete,3,Fatal
+2006,Rzeszów,basic,38,Fatal
+2006,Rzeszów,technical/professional,54,Fatal
+2006,Rzeszów,medium,13,Fatal
+2006,Rzeszów,higher,12,Fatal
+2006,Białystok,basic incomplete,8,Fatal
+2006,Białystok,basic,28,Fatal
+2006,Białystok,technical/professional,18,Fatal
+2006,Białystok,medium,9,Fatal
+2006,Białystok,higher,2,Fatal
+2006,Gdańsk,basic incomplete,5,Fatal
+2006,Gdańsk,basic,43,Fatal
+2006,Gdańsk,technical/professional,32,Fatal
+2006,Gdańsk,medium,9,Fatal
+2006,Gdańsk,higher,5,Fatal
+2006,Katowice,basic incomplete,1,Fatal
+2006,Katowice,basic,45,Fatal
+2006,Katowice,technical/professional,84,Fatal
+2006,Katowice,medium,34,Fatal
+2006,Katowice,higher,7,Fatal
+2006,Kielce,basic incomplete,2,Fatal
+2006,Kielce,basic,44,Fatal
+2006,Kielce,technical/professional,55,Fatal
+2006,Kielce,medium,53,Fatal
+2006,Kielce,higher,1,Fatal
+2006,Olsztyn,basic incomplete,2,Fatal
+2006,Olsztyn,basic,28,Fatal
+2006,Olsztyn,technical/professional,24,Fatal
+2006,Olsztyn,medium,2,Fatal
+2006,Olsztyn,higher,3,Fatal
+2006,Poznań,basic incomplete,9,Fatal
+2006,Poznań,basic,43,Fatal
+2006,Poznań,technical/professional,64,Fatal
+2006,Poznań,medium,16,Fatal
+2006,Poznań,higher,3,Fatal
+2006,Szczecin,basic incomplete,2,Fatal
+2006,Szczecin,basic,29,Fatal
+2006,Szczecin,technical/professional,21,Fatal
+2006,Szczecin,medium,10,Fatal
+2006,Szczecin,higher,2,Fatal
+2006,Warszawa,basic incomplete,2,Fatal
+2006,Warszawa,basic,26,Fatal
+2006,Warszawa,technical/professional,19,Fatal
+2006,Warszawa,medium,17,Fatal
+2006,Warszawa,higher,11,Fatal
+2007,Wrocław,basic incomplete,2,Fatal
+2007,Wrocław,basic,32,Fatal
+2007,Wrocław,technical/professional,28,Fatal
+2007,Wrocław,medium,14,Fatal
+2007,Wrocław,higher,6,Fatal
+2007,Bydgoszcz,basic incomplete,2,Fatal
+2007,Bydgoszcz,basic,43,Fatal
+2007,Bydgoszcz,technical/professional,21,Fatal
+2007,Bydgoszcz,medium,14,Fatal
+2007,Bydgoszcz,higher,5,Fatal
+2007,Lublin,basic incomplete,7,Fatal
+2007,Lublin,basic,42,Fatal
+2007,Lublin,technical/professional,34,Fatal
+2007,Lublin,medium,21,Fatal
+2007,Lublin,higher,4,Fatal
+2007,Gorzów Wlkp.,basic incomplete,1,Fatal
+2007,Gorzów Wlkp.,basic,7,Fatal
+2007,Gorzów Wlkp.,technical/professional,23,Fatal
+2007,Gorzów Wlkp.,medium,7,Fatal
+2007,Gorzów Wlkp.,higher,2,Fatal
+2007,Łódź,basic incomplete,6,Fatal
+2007,Łódź,basic,56,Fatal
+2007,Łódź,technical/professional,49,Fatal
+2007,Łódź,medium,22,Fatal
+2007,Łódź,higher,6,Fatal
+2007,Kraków,basic incomplete,2,Fatal
+2007,Kraków,basic,29,Fatal
+2007,Kraków,technical/professional,29,Fatal
+2007,Kraków,medium,24,Fatal
+2007,Kraków,higher,7,Fatal
+2007,Radom,basic incomplete,8,Fatal
+2007,Radom,basic,48,Fatal
+2007,Radom,technical/professional,51,Fatal
+2007,Radom,medium,8,Fatal
+2007,Radom,higher,5,Fatal
+2007,Opole,basic incomplete,2,Fatal
+2007,Opole,basic,12,Fatal
+2007,Opole,technical/professional,8,Fatal
+2007,Opole,medium,4,Fatal
+2007,Opole,higher,0,Fatal
+2007,Rzeszów,basic incomplete,4,Fatal
+2007,Rzeszów,basic,26,Fatal
+2007,Rzeszów,technical/professional,35,Fatal
+2007,Rzeszów,medium,10,Fatal
+2007,Rzeszów,higher,7,Fatal
+2007,Białystok,basic incomplete,5,Fatal
+2007,Białystok,basic,22,Fatal
+2007,Białystok,technical/professional,30,Fatal
+2007,Białystok,medium,13,Fatal
+2007,Białystok,higher,3,Fatal
+2007,Gdańsk,basic incomplete,2,Fatal
+2007,Gdańsk,basic,19,Fatal
+2007,Gdańsk,technical/professional,24,Fatal
+2007,Gdańsk,medium,9,Fatal
+2007,Gdańsk,higher,2,Fatal
+2007,Katowice,basic incomplete,1,Fatal
+2007,Katowice,basic,31,Fatal
+2007,Katowice,technical/professional,62,Fatal
+2007,Katowice,medium,22,Fatal
+2007,Katowice,higher,2,Fatal
+2007,Kielce,basic incomplete,2,Fatal
+2007,Kielce,basic,22,Fatal
+2007,Kielce,technical/professional,35,Fatal
+2007,Kielce,medium,42,Fatal
+2007,Kielce,higher,1,Fatal
+2007,Olsztyn,basic incomplete,1,Fatal
+2007,Olsztyn,basic,19,Fatal
+2007,Olsztyn,technical/professional,19,Fatal
+2007,Olsztyn,medium,4,Fatal
+2007,Olsztyn,higher,3,Fatal
+2007,Poznań,basic incomplete,5,Fatal
+2007,Poznań,basic,45,Fatal
+2007,Poznań,technical/professional,66,Fatal
+2007,Poznań,medium,17,Fatal
+2007,Poznań,higher,7,Fatal
+2007,Szczecin,basic incomplete,3,Fatal
+2007,Szczecin,basic,32,Fatal
+2007,Szczecin,technical/professional,17,Fatal
+2007,Szczecin,medium,10,Fatal
+2007,Szczecin,higher,4,Fatal
+2007,Warszawa,basic incomplete,1,Fatal
+2007,Warszawa,basic,11,Fatal
+2007,Warszawa,technical/professional,8,Fatal
+2007,Warszawa,medium,16,Fatal
+2007,Warszawa,higher,5,Fatal
+2008,Wrocław,basic incomplete,4,Fatal
+2008,Wrocław,basic,29,Fatal
+2008,Wrocław,technical/professional,31,Fatal
+2008,Wrocław,medium,19,Fatal
+2008,Wrocław,higher,5,Fatal
+2008,Bydgoszcz,basic incomplete,2,Fatal
+2008,Bydgoszcz,basic,36,Fatal
+2008,Bydgoszcz,technical/professional,55,Fatal
+2008,Bydgoszcz,medium,33,Fatal
+2008,Bydgoszcz,higher,0,Fatal
+2008,Lublin,basic incomplete,7,Fatal
+2008,Lublin,basic,78,Fatal
+2008,Lublin,technical/professional,47,Fatal
+2008,Lublin,medium,15,Fatal
+2008,Lublin,higher,7,Fatal
+2008,Gorzów Wlkp.,basic incomplete,1,Fatal
+2008,Gorzów Wlkp.,basic,10,Fatal
+2008,Gorzów Wlkp.,technical/professional,8,Fatal
+2008,Gorzów Wlkp.,medium,4,Fatal
+2008,Gorzów Wlkp.,higher,1,Fatal
+2008,Łódź,basic incomplete,3,Fatal
+2008,Łódź,basic,56,Fatal
+2008,Łódź,technical/professional,56,Fatal
+2008,Łódź,medium,20,Fatal
+2008,Łódź,higher,7,Fatal
+2008,Kraków,basic incomplete,1,Fatal
+2008,Kraków,basic,31,Fatal
+2008,Kraków,technical/professional,38,Fatal
+2008,Kraków,medium,22,Fatal
+2008,Kraków,higher,7,Fatal
+2008,Radom,basic incomplete,16,Fatal
+2008,Radom,basic,90,Fatal
+2008,Radom,technical/professional,69,Fatal
+2008,Radom,medium,18,Fatal
+2008,Radom,higher,5,Fatal
+2008,Opole,basic incomplete,0,Fatal
+2008,Opole,basic,11,Fatal
+2008,Opole,technical/professional,19,Fatal
+2008,Opole,medium,5,Fatal
+2008,Opole,higher,2,Fatal
+2008,Rzeszów,basic incomplete,3,Fatal
+2008,Rzeszów,basic,27,Fatal
+2008,Rzeszów,technical/professional,24,Fatal
+2008,Rzeszów,medium,11,Fatal
+2008,Rzeszów,higher,5,Fatal
+2008,Białystok,basic incomplete,2,Fatal
+2008,Białystok,basic,42,Fatal
+2008,Białystok,technical/professional,19,Fatal
+2008,Białystok,medium,15,Fatal
+2008,Białystok,higher,1,Fatal
+2008,Gdańsk,basic incomplete,3,Fatal
+2008,Gdańsk,basic,28,Fatal
+2008,Gdańsk,technical/professional,16,Fatal
+2008,Gdańsk,medium,11,Fatal
+2008,Gdańsk,higher,0,Fatal
+2008,Katowice,basic incomplete,1,Fatal
+2008,Katowice,basic,29,Fatal
+2008,Katowice,technical/professional,69,Fatal
+2008,Katowice,medium,22,Fatal
+2008,Katowice,higher,5,Fatal
+2008,Kielce,basic incomplete,4,Fatal
+2008,Kielce,basic,14,Fatal
+2008,Kielce,technical/professional,24,Fatal
+2008,Kielce,medium,6,Fatal
+2008,Kielce,higher,2,Fatal
+2008,Olsztyn,basic incomplete,2,Fatal
+2008,Olsztyn,basic,21,Fatal
+2008,Olsztyn,technical/professional,20,Fatal
+2008,Olsztyn,medium,4,Fatal
+2008,Olsztyn,higher,3,Fatal
+2008,Poznań,basic incomplete,7,Fatal
+2008,Poznań,basic,33,Fatal
+2008,Poznań,technical/professional,48,Fatal
+2008,Poznań,medium,11,Fatal
+2008,Poznań,higher,6,Fatal
+2008,Szczecin,basic incomplete,1,Fatal
+2008,Szczecin,basic,19,Fatal
+2008,Szczecin,technical/professional,17,Fatal
+2008,Szczecin,medium,11,Fatal
+2008,Szczecin,higher,0,Fatal
+2008,Warszawa,basic incomplete,1,Fatal
+2008,Warszawa,basic,5,Fatal
+2008,Warszawa,technical/professional,7,Fatal
+2008,Warszawa,medium,22,Fatal
+2008,Warszawa,higher,9,Fatal
+2009,Wrocław,basic incomplete,2,Fatal
+2009,Wrocław,basic,18,Fatal
+2009,Wrocław,technical/professional,35,Fatal
+2009,Wrocław,medium,15,Fatal
+2009,Wrocław,higher,2,Fatal
+2009,Bydgoszcz,basic incomplete,6,Fatal
+2009,Bydgoszcz,basic,30,Fatal
+2009,Bydgoszcz,technical/professional,47,Fatal
+2009,Bydgoszcz,medium,31,Fatal
+2009,Bydgoszcz,higher,4,Fatal
+2009,Lublin,basic incomplete,7,Fatal
+2009,Lublin,basic,56,Fatal
+2009,Lublin,technical/professional,34,Fatal
+2009,Lublin,medium,22,Fatal
+2009,Lublin,higher,7,Fatal
+2009,Gorzów Wlkp.,basic incomplete,2,Fatal
+2009,Gorzów Wlkp.,basic,15,Fatal
+2009,Gorzów Wlkp.,technical/professional,13,Fatal
+2009,Gorzów Wlkp.,medium,7,Fatal
+2009,Gorzów Wlkp.,higher,1,Fatal
+2009,Łódź,basic incomplete,3,Fatal
+2009,Łódź,basic,50,Fatal
+2009,Łódź,technical/professional,48,Fatal
+2009,Łódź,medium,19,Fatal
+2009,Łódź,higher,5,Fatal
+2009,Kraków,basic incomplete,1,Fatal
+2009,Kraków,basic,31,Fatal
+2009,Kraków,technical/professional,54,Fatal
+2009,Kraków,medium,23,Fatal
+2009,Kraków,higher,12,Fatal
+2009,Radom,basic incomplete,6,Fatal
+2009,Radom,basic,57,Fatal
+2009,Radom,technical/professional,38,Fatal
+2009,Radom,medium,9,Fatal
+2009,Radom,higher,2,Fatal
+2009,Opole,basic incomplete,0,Fatal
+2009,Opole,basic,4,Fatal
+2009,Opole,technical/professional,10,Fatal
+2009,Opole,medium,5,Fatal
+2009,Opole,higher,8,Fatal
+2009,Rzeszów,basic incomplete,2,Fatal
+2009,Rzeszów,basic,26,Fatal
+2009,Rzeszów,technical/professional,20,Fatal
+2009,Rzeszów,medium,14,Fatal
+2009,Rzeszów,higher,4,Fatal
+2009,Białystok,basic incomplete,2,Fatal
+2009,Białystok,basic,32,Fatal
+2009,Białystok,technical/professional,20,Fatal
+2009,Białystok,medium,7,Fatal
+2009,Białystok,higher,2,Fatal
+2009,Gdańsk,basic incomplete,2,Fatal
+2009,Gdańsk,basic,18,Fatal
+2009,Gdańsk,technical/professional,17,Fatal
+2009,Gdańsk,medium,8,Fatal
+2009,Gdańsk,higher,6,Fatal
+2009,Katowice,basic incomplete,3,Fatal
+2009,Katowice,basic,44,Fatal
+2009,Katowice,technical/professional,63,Fatal
+2009,Katowice,medium,30,Fatal
+2009,Katowice,higher,8,Fatal
+2009,Kielce,basic incomplete,5,Fatal
+2009,Kielce,basic,25,Fatal
+2009,Kielce,technical/professional,27,Fatal
+2009,Kielce,medium,8,Fatal
+2009,Kielce,higher,2,Fatal
+2009,Olsztyn,basic incomplete,3,Fatal
+2009,Olsztyn,basic,24,Fatal
+2009,Olsztyn,technical/professional,11,Fatal
+2009,Olsztyn,medium,11,Fatal
+2009,Olsztyn,higher,1,Fatal
+2009,Poznań,basic incomplete,2,Fatal
+2009,Poznań,basic,42,Fatal
+2009,Poznań,technical/professional,55,Fatal
+2009,Poznań,medium,24,Fatal
+2009,Poznań,higher,8,Fatal
+2009,Szczecin,basic incomplete,1,Fatal
+2009,Szczecin,basic,18,Fatal
+2009,Szczecin,technical/professional,15,Fatal
+2009,Szczecin,medium,6,Fatal
+2009,Szczecin,higher,3,Fatal
+2009,Warszawa,basic incomplete,2,Fatal
+2009,Warszawa,basic,19,Fatal
+2009,Warszawa,technical/professional,17,Fatal
+2009,Warszawa,medium,23,Fatal
+2009,Warszawa,higher,5,Fatal
+2010,Wrocław,basic incomplete,1,Fatal
+2010,Wrocław,basic,18,Fatal
+2010,Wrocław,technical/professional,20,Fatal
+2010,Wrocław,medium,20,Fatal
+2010,Wrocław,higher,2,Fatal
+2010,Bydgoszcz,basic incomplete,1,Fatal
+2010,Bydgoszcz,basic,19,Fatal
+2010,Bydgoszcz,technical/professional,33,Fatal
+2010,Bydgoszcz,medium,25,Fatal
+2010,Bydgoszcz,higher,3,Fatal
+2010,Lublin,basic incomplete,5,Fatal
+2010,Lublin,basic,44,Fatal
+2010,Lublin,technical/professional,39,Fatal
+2010,Lublin,medium,15,Fatal
+2010,Lublin,higher,4,Fatal
+2010,Gorzów Wlkp.,basic incomplete,0,Fatal
+2010,Gorzów Wlkp.,basic,8,Fatal
+2010,Gorzów Wlkp.,technical/professional,9,Fatal
+2010,Gorzów Wlkp.,medium,4,Fatal
+2010,Gorzów Wlkp.,higher,2,Fatal
+2010,Łódź,basic incomplete,2,Fatal
+2010,Łódź,basic,44,Fatal
+2010,Łódź,technical/professional,29,Fatal
+2010,Łódź,medium,14,Fatal
+2010,Łódź,higher,5,Fatal
+2010,Kraków,basic incomplete,2,Fatal
+2010,Kraków,basic,25,Fatal
+2010,Kraków,technical/professional,43,Fatal
+2010,Kraków,medium,23,Fatal
+2010,Kraków,higher,9,Fatal
+2010,Radom,basic incomplete,5,Fatal
+2010,Radom,basic,62,Fatal
+2010,Radom,technical/professional,40,Fatal
+2010,Radom,medium,20,Fatal
+2010,Radom,higher,4,Fatal
+2010,Opole,basic incomplete,0,Fatal
+2010,Opole,basic,8,Fatal
+2010,Opole,technical/professional,10,Fatal
+2010,Opole,medium,3,Fatal
+2010,Opole,higher,1,Fatal
+2010,Rzeszów,basic incomplete,0,Fatal
+2010,Rzeszów,basic,21,Fatal
+2010,Rzeszów,technical/professional,45,Fatal
+2010,Rzeszów,medium,6,Fatal
+2010,Rzeszów,higher,6,Fatal
+2010,Białystok,basic incomplete,1,Fatal
+2010,Białystok,basic,30,Fatal
+2010,Białystok,technical/professional,12,Fatal
+2010,Białystok,medium,9,Fatal
+2010,Białystok,higher,0,Fatal
+2010,Gdańsk,basic incomplete,1,Fatal
+2010,Gdańsk,basic,18,Fatal
+2010,Gdańsk,technical/professional,16,Fatal
+2010,Gdańsk,medium,9,Fatal
+2010,Gdańsk,higher,3,Fatal
+2010,Katowice,basic incomplete,3,Fatal
+2010,Katowice,basic,42,Fatal
+2010,Katowice,technical/professional,83,Fatal
+2010,Katowice,medium,27,Fatal
+2010,Katowice,higher,17,Fatal
+2010,Kielce,basic incomplete,3,Fatal
+2010,Kielce,basic,26,Fatal
+2010,Kielce,technical/professional,41,Fatal
+2010,Kielce,medium,13,Fatal
+2010,Kielce,higher,0,Fatal
+2010,Olsztyn,basic incomplete,0,Fatal
+2010,Olsztyn,basic,17,Fatal
+2010,Olsztyn,technical/professional,10,Fatal
+2010,Olsztyn,medium,8,Fatal
+2010,Olsztyn,higher,1,Fatal
+2010,Poznań,basic incomplete,5,Fatal
+2010,Poznań,basic,24,Fatal
+2010,Poznań,technical/professional,35,Fatal
+2010,Poznań,medium,17,Fatal
+2010,Poznań,higher,5,Fatal
+2010,Szczecin,basic incomplete,3,Fatal
+2010,Szczecin,basic,18,Fatal
+2010,Szczecin,technical/professional,13,Fatal
+2010,Szczecin,medium,4,Fatal
+2010,Szczecin,higher,0,Fatal
+2010,Warszawa,basic incomplete,0,Fatal
+2010,Warszawa,basic,11,Fatal
+2010,Warszawa,technical/professional,10,Fatal
+2010,Warszawa,medium,20,Fatal
+2010,Warszawa,higher,6,Fatal
+2011,Wrocław,basic incomplete,1,Fatal
+2011,Wrocław,basic,5,Fatal
+2011,Wrocław,technical/professional,20,Fatal
+2011,Wrocław,medium,7,Fatal
+2011,Wrocław,higher,3,Fatal
+2011,Bydgoszcz,basic incomplete,3,Fatal
+2011,Bydgoszcz,basic,25,Fatal
+2011,Bydgoszcz,technical/professional,34,Fatal
+2011,Bydgoszcz,medium,17,Fatal
+2011,Bydgoszcz,higher,3,Fatal
+2011,Lublin,basic incomplete,0,Fatal
+2011,Lublin,basic,26,Fatal
+2011,Lublin,technical/professional,27,Fatal
+2011,Lublin,medium,15,Fatal
+2011,Lublin,higher,6,Fatal
+2011,Gorzów Wlkp.,basic incomplete,0,Fatal
+2011,Gorzów Wlkp.,basic,5,Fatal
+2011,Gorzów Wlkp.,technical/professional,7,Fatal
+2011,Gorzów Wlkp.,medium,6,Fatal
+2011,Gorzów Wlkp.,higher,2,Fatal
+2011,Łódź,basic incomplete,4,Fatal
+2011,Łódź,basic,33,Fatal
+2011,Łódź,technical/professional,33,Fatal
+2011,Łódź,medium,21,Fatal
+2011,Łódź,higher,7,Fatal
+2011,Kraków,basic incomplete,1,Fatal
+2011,Kraków,basic,27,Fatal
+2011,Kraków,technical/professional,38,Fatal
+2011,Kraków,medium,20,Fatal
+2011,Kraków,higher,11,Fatal
+2011,Radom,basic incomplete,8,Fatal
+2011,Radom,basic,60,Fatal
+2011,Radom,technical/professional,25,Fatal
+2011,Radom,medium,15,Fatal
+2011,Radom,higher,2,Fatal
+2011,Opole,basic incomplete,0,Fatal
+2011,Opole,basic,6,Fatal
+2011,Opole,technical/professional,8,Fatal
+2011,Opole,medium,2,Fatal
+2011,Opole,higher,1,Fatal
+2011,Rzeszów,basic incomplete,0,Fatal
+2011,Rzeszów,basic,15,Fatal
+2011,Rzeszów,technical/professional,21,Fatal
+2011,Rzeszów,medium,17,Fatal
+2011,Rzeszów,higher,8,Fatal
+2011,Białystok,basic incomplete,1,Fatal
+2011,Białystok,basic,22,Fatal
+2011,Białystok,technical/professional,18,Fatal
+2011,Białystok,medium,10,Fatal
+2011,Białystok,higher,9,Fatal
+2011,Gdańsk,basic incomplete,4,Fatal
+2011,Gdańsk,basic,22,Fatal
+2011,Gdańsk,technical/professional,14,Fatal
+2011,Gdańsk,medium,5,Fatal
+2011,Gdańsk,higher,2,Fatal
+2011,Katowice,basic incomplete,1,Fatal
+2011,Katowice,basic,31,Fatal
+2011,Katowice,technical/professional,60,Fatal
+2011,Katowice,medium,22,Fatal
+2011,Katowice,higher,10,Fatal
+2011,Kielce,basic incomplete,2,Fatal
+2011,Kielce,basic,23,Fatal
+2011,Kielce,technical/professional,32,Fatal
+2011,Kielce,medium,5,Fatal
+2011,Kielce,higher,7,Fatal
+2011,Olsztyn,basic incomplete,2,Fatal
+2011,Olsztyn,basic,16,Fatal
+2011,Olsztyn,technical/professional,8,Fatal
+2011,Olsztyn,medium,8,Fatal
+2011,Olsztyn,higher,1,Fatal
+2011,Poznań,basic incomplete,1,Fatal
+2011,Poznań,basic,17,Fatal
+2011,Poznań,technical/professional,36,Fatal
+2011,Poznań,medium,9,Fatal
+2011,Poznań,higher,5,Fatal
+2011,Szczecin,basic incomplete,3,Fatal
+2011,Szczecin,basic,11,Fatal
+2011,Szczecin,technical/professional,9,Fatal
+2011,Szczecin,medium,8,Fatal
+2011,Szczecin,higher,4,Fatal
+2011,Warszawa,basic incomplete,2,Fatal
+2011,Warszawa,basic,8,Fatal
+2011,Warszawa,technical/professional,12,Fatal
+2011,Warszawa,medium,16,Fatal
+2011,Warszawa,higher,3,Fatal
+2012,Wrocław,basic incomplete,2,Fatal
+2012,Wrocław,basic,13,Fatal
+2012,Wrocław,technical/professional,26,Fatal
+2012,Wrocław,medium,13,Fatal
+2012,Wrocław,higher,5,Fatal
+2012,Bydgoszcz,basic incomplete,5,Fatal
+2012,Bydgoszcz,basic,41,Fatal
+2012,Bydgoszcz,technical/professional,35,Fatal
+2012,Bydgoszcz,medium,21,Fatal
+2012,Bydgoszcz,higher,9,Fatal
+2012,Lublin,basic incomplete,2,Fatal
+2012,Lublin,basic,24,Fatal
+2012,Lublin,technical/professional,38,Fatal
+2012,Lublin,medium,15,Fatal
+2012,Lublin,higher,6,Fatal
+2012,Gorzów Wlkp.,basic incomplete,1,Fatal
+2012,Gorzów Wlkp.,basic,5,Fatal
+2012,Gorzów Wlkp.,technical/professional,8,Fatal
+2012,Gorzów Wlkp.,medium,2,Fatal
+2012,Gorzów Wlkp.,higher,3,Fatal
+2012,Łódź,basic incomplete,1,Fatal
+2012,Łódź,basic,33,Fatal
+2012,Łódź,technical/professional,32,Fatal
+2012,Łódź,medium,23,Fatal
+2012,Łódź,higher,5,Fatal
+2012,Kraków,basic incomplete,1,Fatal
+2012,Kraków,basic,27,Fatal
+2012,Kraków,technical/professional,37,Fatal
+2012,Kraków,medium,25,Fatal
+2012,Kraków,higher,8,Fatal
+2012,Radom,basic incomplete,5,Fatal
+2012,Radom,basic,42,Fatal
+2012,Radom,technical/professional,29,Fatal
+2012,Radom,medium,17,Fatal
+2012,Radom,higher,3,Fatal
+2012,Opole,basic incomplete,0,Fatal
+2012,Opole,basic,4,Fatal
+2012,Opole,technical/professional,7,Fatal
+2012,Opole,medium,4,Fatal
+2012,Opole,higher,2,Fatal
+2012,Rzeszów,basic incomplete,2,Fatal
+2012,Rzeszów,basic,15,Fatal
+2012,Rzeszów,technical/professional,28,Fatal
+2012,Rzeszów,medium,11,Fatal
+2012,Rzeszów,higher,1,Fatal
+2012,Białystok,basic incomplete,1,Fatal
+2012,Białystok,basic,24,Fatal
+2012,Białystok,technical/professional,13,Fatal
+2012,Białystok,medium,11,Fatal
+2012,Białystok,higher,6,Fatal
+2012,Gdańsk,basic incomplete,2,Fatal
+2012,Gdańsk,basic,12,Fatal
+2012,Gdańsk,technical/professional,13,Fatal
+2012,Gdańsk,medium,15,Fatal
+2012,Gdańsk,higher,4,Fatal
+2012,Katowice,basic incomplete,3,Fatal
+2012,Katowice,basic,15,Fatal
+2012,Katowice,technical/professional,52,Fatal
+2012,Katowice,medium,24,Fatal
+2012,Katowice,higher,7,Fatal
+2012,Kielce,basic incomplete,4,Fatal
+2012,Kielce,basic,37,Fatal
+2012,Kielce,technical/professional,67,Fatal
+2012,Kielce,medium,40,Fatal
+2012,Kielce,higher,12,Fatal
+2012,Olsztyn,basic incomplete,1,Fatal
+2012,Olsztyn,basic,24,Fatal
+2012,Olsztyn,technical/professional,10,Fatal
+2012,Olsztyn,medium,9,Fatal
+2012,Olsztyn,higher,6,Fatal
+2012,Poznań,basic incomplete,0,Fatal
+2012,Poznań,basic,12,Fatal
+2012,Poznań,technical/professional,28,Fatal
+2012,Poznań,medium,12,Fatal
+2012,Poznań,higher,6,Fatal
+2012,Szczecin,basic incomplete,0,Fatal
+2012,Szczecin,basic,11,Fatal
+2012,Szczecin,technical/professional,10,Fatal
+2012,Szczecin,medium,6,Fatal
+2012,Szczecin,higher,1,Fatal
+2012,Warszawa,basic incomplete,1,Fatal
+2012,Warszawa,basic,18,Fatal
+2012,Warszawa,technical/professional,12,Fatal
+2012,Warszawa,medium,14,Fatal
+2012,Warszawa,higher,21,Fatal
+2013,Bydgoszcz,basic incomplete,0,Fatal
+2013,Bydgoszcz,basic,20,Fatal
+2013,Bydgoszcz,technical/professional,35,Fatal
+2013,Bydgoszcz,medium,18,Fatal
+2013,Bydgoszcz,higher,6,Fatal
+2013,Białystok,basic incomplete,1,Fatal
+2013,Białystok,basic,26,Fatal
+2013,Białystok,technical/professional,13,Fatal
+2013,Białystok,medium,12,Fatal
+2013,Białystok,higher,2,Fatal
+2013,Gdańsk,basic incomplete,1,Fatal
+2013,Gdańsk,basic,15,Fatal
+2013,Gdańsk,technical/professional,23,Fatal
+2013,Gdańsk,medium,5,Fatal
+2013,Gdańsk,higher,6,Fatal
+2013,Gorzów Wlkp.,basic incomplete,0,Fatal
+2013,Gorzów Wlkp.,basic,6,Fatal
+2013,Gorzów Wlkp.,technical/professional,10,Fatal
+2013,Gorzów Wlkp.,medium,6,Fatal
+2013,Gorzów Wlkp.,higher,0,Fatal
+2013,Katowice,basic incomplete,2,Fatal
+2013,Katowice,basic,41,Fatal
+2013,Katowice,technical/professional,60,Fatal
+2013,Katowice,medium,45,Fatal
+2013,Katowice,higher,16,Fatal
+2013,Kielce,basic incomplete,2,Fatal
+2013,Kielce,basic,28,Fatal
+2013,Kielce,technical/professional,44,Fatal
+2013,Kielce,medium,23,Fatal
+2013,Kielce,higher,9,Fatal
+2013,Kraków,basic incomplete,1,Fatal
+2013,Kraków,basic,31,Fatal
+2013,Kraków,technical/professional,39,Fatal
+2013,Kraków,medium,24,Fatal
+2013,Kraków,higher,14,Fatal
+2013,Łódź,basic incomplete,5,Fatal
+2013,Łódź,basic,44,Fatal
+2013,Łódź,technical/professional,32,Fatal
+2013,Łódź,medium,30,Fatal
+2013,Łódź,higher,10,Fatal
+2013,Lublin,basic incomplete,5,Fatal
+2013,Lublin,basic,53,Fatal
+2013,Lublin,technical/professional,37,Fatal
+2013,Lublin,medium,23,Fatal
+2013,Lublin,higher,9,Fatal
+2013,Olsztyn,basic incomplete,1,Fatal
+2013,Olsztyn,basic,20,Fatal
+2013,Olsztyn,technical/professional,8,Fatal
+2013,Olsztyn,medium,12,Fatal
+2013,Olsztyn,higher,3,Fatal
+2013,Opole,basic incomplete,1,Fatal
+2013,Opole,basic,9,Fatal
+2013,Opole,technical/professional,15,Fatal
+2013,Opole,medium,5,Fatal
+2013,Opole,higher,3,Fatal
+2013,Poznań,basic incomplete,2,Fatal
+2013,Poznań,basic,38,Fatal
+2013,Poznań,technical/professional,40,Fatal
+2013,Poznań,medium,32,Fatal
+2013,Poznań,higher,7,Fatal
+2013,Rzeszów,basic incomplete,1,Fatal
+2013,Rzeszów,basic,25,Fatal
+2013,Rzeszów,technical/professional,20,Fatal
+2013,Rzeszów,medium,19,Fatal
+2013,Rzeszów,higher,5,Fatal
+2013,Szczecin,basic incomplete,0,Fatal
+2013,Szczecin,basic,32,Fatal
+2013,Szczecin,technical/professional,27,Fatal
+2013,Szczecin,medium,20,Fatal
+2013,Szczecin,higher,12,Fatal
+2013,Warszawa,basic incomplete,1,Fatal
+2013,Warszawa,basic,12,Fatal
+2013,Warszawa,technical/professional,14,Fatal
+2013,Warszawa,medium,23,Fatal
+2013,Warszawa,higher,18,Fatal
+2013,Radom,basic incomplete,4,Fatal
+2013,Radom,basic,51,Fatal
+2013,Radom,technical/professional,39,Fatal
+2013,Radom,medium,25,Fatal
+2013,Radom,higher,4,Fatal
+2013,Wrocław,basic incomplete,2,Fatal
+2013,Wrocław,basic,39,Fatal
+2013,Wrocław,technical/professional,51,Fatal
+2013,Wrocław,medium,27,Fatal
+2013,Wrocław,higher,10,Fatal
+2014,Bydgoszcz,basic incomplete,2,Fatal
+2014,Bydgoszcz,basic,13,Fatal
+2014,Bydgoszcz,technical/professional,28,Fatal
+2014,Bydgoszcz,medium,16,Fatal
+2014,Bydgoszcz,higher,1,Fatal
+2014,Białystok,basic incomplete,0,Fatal
+2014,Białystok,basic,25,Fatal
+2014,Białystok,technical/professional,10,Fatal
+2014,Białystok,medium,10,Fatal
+2014,Białystok,higher,2,Fatal
+2014,Gdańsk,basic incomplete,1,Fatal
+2014,Gdańsk,basic,16,Fatal
+2014,Gdańsk,technical/professional,21,Fatal
+2014,Gdańsk,medium,21,Fatal
+2014,Gdańsk,higher,6,Fatal
+2014,Gorzów Wlkp.,basic incomplete,0,Fatal
+2014,Gorzów Wlkp.,basic,4,Fatal
+2014,Gorzów Wlkp.,technical/professional,2,Fatal
+2014,Gorzów Wlkp.,medium,0,Fatal
+2014,Gorzów Wlkp.,higher,1,Fatal
+2014,Katowice,basic incomplete,2,Fatal
+2014,Katowice,basic,27,Fatal
+2014,Katowice,technical/professional,61,Fatal
+2014,Katowice,medium,35,Fatal
+2014,Katowice,higher,9,Fatal
+2014,Kielce,basic incomplete,1,Fatal
+2014,Kielce,basic,40,Fatal
+2014,Kielce,technical/professional,54,Fatal
+2014,Kielce,medium,17,Fatal
+2014,Kielce,higher,7,Fatal
+2014,Kraków,basic incomplete,2,Fatal
+2014,Kraków,basic,35,Fatal
+2014,Kraków,technical/professional,41,Fatal
+2014,Kraków,medium,31,Fatal
+2014,Kraków,higher,6,Fatal
+2014,Łódź,basic incomplete,1,Fatal
+2014,Łódź,basic,37,Fatal
+2014,Łódź,technical/professional,25,Fatal
+2014,Łódź,medium,23,Fatal
+2014,Łódź,higher,10,Fatal
+2014,Lublin,basic incomplete,1,Fatal
+2014,Lublin,basic,48,Fatal
+2014,Lublin,technical/professional,32,Fatal
+2014,Lublin,medium,22,Fatal
+2014,Lublin,higher,11,Fatal
+2014,Olsztyn,basic incomplete,0,Fatal
+2014,Olsztyn,basic,21,Fatal
+2014,Olsztyn,technical/professional,21,Fatal
+2014,Olsztyn,medium,11,Fatal
+2014,Olsztyn,higher,4,Fatal
+2014,Opole,basic incomplete,0,Fatal
+2014,Opole,basic,8,Fatal
+2014,Opole,technical/professional,10,Fatal
+2014,Opole,medium,11,Fatal
+2014,Opole,higher,3,Fatal
+2014,Poznań,basic incomplete,3,Fatal
+2014,Poznań,basic,32,Fatal
+2014,Poznań,technical/professional,46,Fatal
+2014,Poznań,medium,29,Fatal
+2014,Poznań,higher,3,Fatal
+2014,Rzeszów,basic incomplete,0,Fatal
+2014,Rzeszów,basic,30,Fatal
+2014,Rzeszów,technical/professional,42,Fatal
+2014,Rzeszów,medium,17,Fatal
+2014,Rzeszów,higher,9,Fatal
+2014,Szczecin,basic incomplete,1,Fatal
+2014,Szczecin,basic,34,Fatal
+2014,Szczecin,technical/professional,43,Fatal
+2014,Szczecin,medium,24,Fatal
+2014,Szczecin,higher,6,Fatal
+2014,Warszawa,basic incomplete,0,Fatal
+2014,Warszawa,basic,20,Fatal
+2014,Warszawa,technical/professional,10,Fatal
+2014,Warszawa,medium,34,Fatal
+2014,Warszawa,higher,20,Fatal
+2014,Radom,basic incomplete,1,Fatal
+2014,Radom,basic,57,Fatal
+2014,Radom,technical/professional,45,Fatal
+2014,Radom,medium,26,Fatal
+2014,Radom,higher,7,Fatal
+2014,Wrocław,basic incomplete,6,Fatal
+2014,Wrocław,basic,41,Fatal
+2014,Wrocław,technical/professional,54,Fatal
+2014,Wrocław,medium,30,Fatal
+2014,Wrocław,higher,12,Fatal
+2015,Bydgoszcz,basic incomplete,0,Fatal
+2015,Bydgoszcz,basic,24,Fatal
+2015,Bydgoszcz,technical/professional,20,Fatal
+2015,Bydgoszcz,medium,10,Fatal
+2015,Bydgoszcz,higher,2,Fatal
+2015,Białystok,basic incomplete,1,Fatal
+2015,Białystok,basic,10,Fatal
+2015,Białystok,technical/professional,10,Fatal
+2015,Białystok,medium,12,Fatal
+2015,Białystok,higher,5,Fatal
+2015,Gdańsk,basic incomplete,1,Fatal
+2015,Gdańsk,basic,16,Fatal
+2015,Gdańsk,technical/professional,19,Fatal
+2015,Gdańsk,medium,10,Fatal
+2015,Gdańsk,higher,7,Fatal
+2015,Gorzów Wlkp.,basic incomplete,0,Fatal
+2015,Gorzów Wlkp.,basic,9,Fatal
+2015,Gorzów Wlkp.,technical/professional,7,Fatal
+2015,Gorzów Wlkp.,medium,7,Fatal
+2015,Gorzów Wlkp.,higher,1,Fatal
+2015,Katowice,basic incomplete,0,Fatal
+2015,Katowice,basic,31,Fatal
+2015,Katowice,technical/professional,70,Fatal
+2015,Katowice,medium,32,Fatal
+2015,Katowice,higher,12,Fatal
+2015,Kielce,basic incomplete,2,Fatal
+2015,Kielce,basic,38,Fatal
+2015,Kielce,technical/professional,45,Fatal
+2015,Kielce,medium,32,Fatal
+2015,Kielce,higher,7,Fatal
+2015,Kraków,basic incomplete,0,Fatal
+2015,Kraków,basic,20,Fatal
+2015,Kraków,technical/professional,29,Fatal
+2015,Kraków,medium,29,Fatal
+2015,Kraków,higher,13,Fatal
+2015,Łódź,basic incomplete,4,Fatal
+2015,Łódź,basic,29,Fatal
+2015,Łódź,technical/professional,25,Fatal
+2015,Łódź,medium,24,Fatal
+2015,Łódź,higher,9,Fatal
+2015,Lublin,basic incomplete,1,Fatal
+2015,Lublin,basic,46,Fatal
+2015,Lublin,technical/professional,40,Fatal
+2015,Lublin,medium,26,Fatal
+2015,Lublin,higher,8,Fatal
+2015,Olsztyn,basic incomplete,2,Fatal
+2015,Olsztyn,basic,22,Fatal
+2015,Olsztyn,technical/professional,13,Fatal
+2015,Olsztyn,medium,7,Fatal
+2015,Olsztyn,higher,7,Fatal
+2015,Opole,basic incomplete,0,Fatal
+2015,Opole,basic,16,Fatal
+2015,Opole,technical/professional,18,Fatal
+2015,Opole,medium,12,Fatal
+2015,Opole,higher,3,Fatal
+2015,Poznań,basic incomplete,0,Fatal
+2015,Poznań,basic,29,Fatal
+2015,Poznań,technical/professional,60,Fatal
+2015,Poznań,medium,27,Fatal
+2015,Poznań,higher,8,Fatal
+2015,Rzeszów,basic incomplete,0,Fatal
+2015,Rzeszów,basic,35,Fatal
+2015,Rzeszów,technical/professional,26,Fatal
+2015,Rzeszów,medium,19,Fatal
+2015,Rzeszów,higher,11,Fatal
+2015,Szczecin,basic incomplete,2,Fatal
+2015,Szczecin,basic,28,Fatal
+2015,Szczecin,technical/professional,18,Fatal
+2015,Szczecin,medium,15,Fatal
+2015,Szczecin,higher,5,Fatal
+2015,Warszawa,basic incomplete,1,Fatal
+2015,Warszawa,basic,10,Fatal
+2015,Warszawa,technical/professional,11,Fatal
+2015,Warszawa,medium,18,Fatal
+2015,Warszawa,higher,18,Fatal
+2015,Radom,basic incomplete,3,Fatal
+2015,Radom,basic,51,Fatal
+2015,Radom,technical/professional,34,Fatal
+2015,Radom,medium,24,Fatal
+2015,Radom,higher,4,Fatal
+2015,Wrocław,basic incomplete,1,Fatal
+2015,Wrocław,basic,39,Fatal
+2015,Wrocław,technical/professional,45,Fatal
+2015,Wrocław,medium,19,Fatal
+2015,Wrocław,higher,12,Fatal
+2016,Bydgoszcz,basic incomplete,3,Fatal
+2016,Bydgoszcz,basic,16,Fatal
+2016,Bydgoszcz,technical/professional,29,Fatal
+2016,Bydgoszcz,medium,11,Fatal
+2016,Bydgoszcz,higher,5,Fatal
+2016,Białystok,basic incomplete,0,Fatal
+2016,Białystok,basic,15,Fatal
+2016,Białystok,technical/professional,12,Fatal
+2016,Białystok,medium,9,Fatal
+2016,Białystok,higher,2,Fatal
+2016,Gdańsk,basic incomplete,2,Fatal
+2016,Gdańsk,basic,17,Fatal
+2016,Gdańsk,technical/professional,17,Fatal
+2016,Gdańsk,medium,11,Fatal
+2016,Gdańsk,higher,7,Fatal
+2016,Gorzów Wlkp.,basic incomplete,0,Fatal
+2016,Gorzów Wlkp.,basic,6,Fatal
+2016,Gorzów Wlkp.,technical/professional,6,Fatal
+2016,Gorzów Wlkp.,medium,3,Fatal
+2016,Gorzów Wlkp.,higher,3,Fatal
+2016,Katowice,basic incomplete,1,Fatal
+2016,Katowice,basic,23,Fatal
+2016,Katowice,technical/professional,47,Fatal
+2016,Katowice,medium,35,Fatal
+2016,Katowice,higher,11,Fatal
+2016,Kielce,basic incomplete,0,Fatal
+2016,Kielce,basic,40,Fatal
+2016,Kielce,technical/professional,41,Fatal
+2016,Kielce,medium,26,Fatal
+2016,Kielce,higher,8,Fatal
+2016,Kraków,basic incomplete,1,Fatal
+2016,Kraków,basic,23,Fatal
+2016,Kraków,technical/professional,39,Fatal
+2016,Kraków,medium,24,Fatal
+2016,Kraków,higher,12,Fatal
+2016,Łódź,basic incomplete,1,Fatal
+2016,Łódź,basic,42,Fatal
+2016,Łódź,technical/professional,21,Fatal
+2016,Łódź,medium,22,Fatal
+2016,Łódź,higher,11,Fatal
+2016,Lublin,basic incomplete,0,Fatal
+2016,Lublin,basic,47,Fatal
+2016,Lublin,technical/professional,35,Fatal
+2016,Lublin,medium,18,Fatal
+2016,Lublin,higher,7,Fatal
+2016,Olsztyn,basic incomplete,0,Fatal
+2016,Olsztyn,basic,19,Fatal
+2016,Olsztyn,technical/professional,11,Fatal
+2016,Olsztyn,medium,9,Fatal
+2016,Olsztyn,higher,6,Fatal
+2016,Opole,basic incomplete,1,Fatal
+2016,Opole,basic,16,Fatal
+2016,Opole,technical/professional,14,Fatal
+2016,Opole,medium,4,Fatal
+2016,Opole,higher,3,Fatal
+2016,Poznań,basic incomplete,0,Fatal
+2016,Poznań,basic,29,Fatal
+2016,Poznań,technical/professional,54,Fatal
+2016,Poznań,medium,20,Fatal
+2016,Poznań,higher,11,Fatal
+2016,Rzeszów,basic incomplete,0,Fatal
+2016,Rzeszów,basic,22,Fatal
+2016,Rzeszów,technical/professional,26,Fatal
+2016,Rzeszów,medium,23,Fatal
+2016,Rzeszów,higher,5,Fatal
+2016,Szczecin,basic incomplete,0,Fatal
+2016,Szczecin,basic,26,Fatal
+2016,Szczecin,technical/professional,20,Fatal
+2016,Szczecin,medium,21,Fatal
+2016,Szczecin,higher,11,Fatal
+2016,Warszawa,basic incomplete,1,Fatal
+2016,Warszawa,basic,11,Fatal
+2016,Warszawa,technical/professional,17,Fatal
+2016,Warszawa,medium,23,Fatal
+2016,Warszawa,higher,13,Fatal
+2016,Radom,basic incomplete,1,Fatal
+2016,Radom,basic,36,Fatal
+2016,Radom,technical/professional,39,Fatal
+2016,Radom,medium,19,Fatal
+2016,Radom,higher,3,Fatal
+2016,Wrocław,basic incomplete,0,Fatal
+2016,Wrocław,basic,20,Fatal
+2016,Wrocław,technical/professional,36,Fatal
+2016,Wrocław,medium,28,Fatal
+2016,Wrocław,higher,11,Fatal
+2017,Bydgoszcz,basic incomplete,3,Fatal
+2017,Bydgoszcz,basic,14,Fatal
+2017,Bydgoszcz,junior high,4,Fatal
+2017,Bydgoszcz,technical/professional,26,Fatal
+2017,Bydgoszcz,medium,11,Fatal
+2017,Bydgoszcz,post-secondary,0,Fatal
+2017,Bydgoszcz,higher,3,Fatal
+2017,Białystok,basic incomplete,2,Fatal
+2017,Białystok,basic,14,Fatal
+2017,Białystok,junior high,3,Fatal
+2017,Białystok,technical/professional,7,Fatal
+2017,Białystok,medium,13,Fatal
+2017,Białystok,post-secondary,0,Fatal
+2017,Białystok,higher,5,Fatal
+2017,Gdańsk,basic incomplete,2,Fatal
+2017,Gdańsk,basic,17,Fatal
+2017,Gdańsk,junior high,4,Fatal
+2017,Gdańsk,technical/professional,27,Fatal
+2017,Gdańsk,medium,19,Fatal
+2017,Gdańsk,post-secondary,0,Fatal
+2017,Gdańsk,higher,14,Fatal
+2017,Gorzów Wlkp.,basic incomplete,1,Fatal
+2017,Gorzów Wlkp.,basic,7,Fatal
+2017,Gorzów Wlkp.,junior high,3,Fatal
+2017,Gorzów Wlkp.,technical/professional,5,Fatal
+2017,Gorzów Wlkp.,medium,5,Fatal
+2017,Gorzów Wlkp.,post-secondary,0,Fatal
+2017,Gorzów Wlkp.,higher,4,Fatal
+2017,Katowice,basic incomplete,2,Fatal
+2017,Katowice,basic,36,Fatal
+2017,Katowice,junior high,12,Fatal
+2017,Katowice,technical/professional,68,Fatal
+2017,Katowice,medium,51,Fatal
+2017,Katowice,post-secondary,0,Fatal
+2017,Katowice,higher,12,Fatal
+2017,Kielce,basic incomplete,3,Fatal
+2017,Kielce,basic,27,Fatal
+2017,Kielce,junior high,3,Fatal
+2017,Kielce,technical/professional,54,Fatal
+2017,Kielce,medium,21,Fatal
+2017,Kielce,post-secondary,0,Fatal
+2017,Kielce,higher,6,Fatal
+2017,Kraków,basic incomplete,3,Fatal
+2017,Kraków,basic,31,Fatal
+2017,Kraków,junior high,5,Fatal
+2017,Kraków,technical/professional,48,Fatal
+2017,Kraków,medium,29,Fatal
+2017,Kraków,post-secondary,0,Fatal
+2017,Kraków,higher,15,Fatal
+2017,Łódź,basic incomplete,2,Fatal
+2017,Łódź,basic,22,Fatal
+2017,Łódź,junior high,8,Fatal
+2017,Łódź,technical/professional,30,Fatal
+2017,Łódź,medium,28,Fatal
+2017,Łódź,post-secondary,1,Fatal
+2017,Łódź,higher,5,Fatal
+2017,Lublin,basic incomplete,1,Fatal
+2017,Lublin,basic,34,Fatal
+2017,Lublin,junior high,6,Fatal
+2017,Lublin,technical/professional,38,Fatal
+2017,Lublin,medium,31,Fatal
+2017,Lublin,post-secondary,0,Fatal
+2017,Lublin,higher,9,Fatal
+2017,Olsztyn,basic incomplete,2,Fatal
+2017,Olsztyn,basic,20,Fatal
+2017,Olsztyn,junior high,6,Fatal
+2017,Olsztyn,technical/professional,19,Fatal
+2017,Olsztyn,medium,7,Fatal
+2017,Olsztyn,post-secondary,0,Fatal
+2017,Olsztyn,higher,4,Fatal
+2017,Opole,basic incomplete,1,Fatal
+2017,Opole,basic,6,Fatal
+2017,Opole,junior high,1,Fatal
+2017,Opole,technical/professional,26,Fatal
+2017,Opole,medium,12,Fatal
+2017,Opole,post-secondary,0,Fatal
+2017,Opole,higher,2,Fatal
+2017,Poznań,basic incomplete,3,Fatal
+2017,Poznań,basic,35,Fatal
+2017,Poznań,junior high,5,Fatal
+2017,Poznań,technical/professional,60,Fatal
+2017,Poznań,medium,29,Fatal
+2017,Poznań,post-secondary,1,Fatal
+2017,Poznań,higher,7,Fatal
+2017,Rzeszów,basic incomplete,2,Fatal
+2017,Rzeszów,basic,19,Fatal
+2017,Rzeszów,junior high,5,Fatal
+2017,Rzeszów,technical/professional,36,Fatal
+2017,Rzeszów,medium,25,Fatal
+2017,Rzeszów,post-secondary,0,Fatal
+2017,Rzeszów,higher,9,Fatal
+2017,Szczecin,basic incomplete,2,Fatal
+2017,Szczecin,basic,25,Fatal
+2017,Szczecin,junior high,6,Fatal
+2017,Szczecin,technical/professional,19,Fatal
+2017,Szczecin,medium,12,Fatal
+2017,Szczecin,post-secondary,1,Fatal
+2017,Szczecin,higher,5,Fatal
+2017,Warszawa,basic incomplete,0,Fatal
+2017,Warszawa,basic,18,Fatal
+2017,Warszawa,junior high,6,Fatal
+2017,Warszawa,technical/professional,20,Fatal
+2017,Warszawa,medium,37,Fatal
+2017,Warszawa,post-secondary,0,Fatal
+2017,Warszawa,higher,19,Fatal
+2017,Radom,basic incomplete,1,Fatal
+2017,Radom,basic,47,Fatal
+2017,Radom,junior high,9,Fatal
+2017,Radom,technical/professional,33,Fatal
+2017,Radom,medium,22,Fatal
+2017,Radom,post-secondary,0,Fatal
+2017,Radom,higher,5,Fatal
+2017,Wrocław,basic incomplete,1,Fatal
+2017,Wrocław,basic,20,Fatal
+2017,Wrocław,junior high,7,Fatal
+2017,Wrocław,technical/professional,42,Fatal
+2017,Wrocław,medium,26,Fatal
+2017,Wrocław,post-secondary,0,Fatal
+2017,Wrocław,higher,8,Fatal
+2018,Bydgoszcz,basic incomplete,0,Fatal
+2018,Bydgoszcz,basic,18,Fatal
+2018,Bydgoszcz,junior high,9,Fatal
+2018,Bydgoszcz,technical/professional,13,Fatal
+2018,Bydgoszcz,medium,16,Fatal
+2018,Bydgoszcz,post-secondary,1,Fatal
+2018,Bydgoszcz,higher,4,Fatal
+2018,Białystok,basic incomplete,0,Fatal
+2018,Białystok,basic,12,Fatal
+2018,Białystok,junior high,4,Fatal
+2018,Białystok,technical/professional,7,Fatal
+2018,Białystok,medium,8,Fatal
+2018,Białystok,post-secondary,0,Fatal
+2018,Białystok,higher,3,Fatal
+2018,Gdańsk,basic incomplete,3,Fatal
+2018,Gdańsk,basic,15,Fatal
+2018,Gdańsk,junior high,6,Fatal
+2018,Gdańsk,technical/professional,13,Fatal
+2018,Gdańsk,medium,16,Fatal
+2018,Gdańsk,post-secondary,0,Fatal
+2018,Gdańsk,higher,6,Fatal
+2018,Gorzów Wlkp.,basic incomplete,1,Fatal
+2018,Gorzów Wlkp.,basic,3,Fatal
+2018,Gorzów Wlkp.,junior high,0,Fatal
+2018,Gorzów Wlkp.,technical/professional,7,Fatal
+2018,Gorzów Wlkp.,medium,2,Fatal
+2018,Gorzów Wlkp.,post-secondary,0,Fatal
+2018,Gorzów Wlkp.,higher,2,Fatal
+2018,Katowice,basic incomplete,1,Fatal
+2018,Katowice,basic,20,Fatal
+2018,Katowice,junior high,7,Fatal
+2018,Katowice,technical/professional,64,Fatal
+2018,Katowice,medium,50,Fatal
+2018,Katowice,post-secondary,0,Fatal
+2018,Katowice,higher,19,Fatal
+2018,Kielce,basic incomplete,0,Fatal
+2018,Kielce,basic,32,Fatal
+2018,Kielce,junior high,0,Fatal
+2018,Kielce,technical/professional,40,Fatal
+2018,Kielce,medium,34,Fatal
+2018,Kielce,post-secondary,0,Fatal
+2018,Kielce,higher,5,Fatal
+2018,Kraków,basic incomplete,2,Fatal
+2018,Kraków,basic,27,Fatal
+2018,Kraków,junior high,3,Fatal
+2018,Kraków,technical/professional,28,Fatal
+2018,Kraków,medium,21,Fatal
+2018,Kraków,post-secondary,0,Fatal
+2018,Kraków,higher,14,Fatal
+2018,Łódź,basic incomplete,3,Fatal
+2018,Łódź,basic,21,Fatal
+2018,Łódź,junior high,7,Fatal
+2018,Łódź,technical/professional,21,Fatal
+2018,Łódź,medium,32,Fatal
+2018,Łódź,post-secondary,0,Fatal
+2018,Łódź,higher,10,Fatal
+2018,Lublin,basic incomplete,0,Fatal
+2018,Lublin,basic,31,Fatal
+2018,Lublin,junior high,6,Fatal
+2018,Lublin,technical/professional,36,Fatal
+2018,Lublin,medium,24,Fatal
+2018,Lublin,post-secondary,0,Fatal
+2018,Lublin,higher,7,Fatal
+2018,Olsztyn,basic incomplete,2,Fatal
+2018,Olsztyn,basic,14,Fatal
+2018,Olsztyn,junior high,5,Fatal
+2018,Olsztyn,technical/professional,13,Fatal
+2018,Olsztyn,medium,7,Fatal
+2018,Olsztyn,post-secondary,0,Fatal
+2018,Olsztyn,higher,2,Fatal
+2018,Opole,basic incomplete,4,Fatal
+2018,Opole,basic,10,Fatal
+2018,Opole,junior high,0,Fatal
+2018,Opole,technical/professional,20,Fatal
+2018,Opole,medium,11,Fatal
+2018,Opole,post-secondary,0,Fatal
+2018,Opole,higher,1,Fatal
+2018,Poznań,basic incomplete,2,Fatal
+2018,Poznań,basic,24,Fatal
+2018,Poznań,junior high,3,Fatal
+2018,Poznań,technical/professional,68,Fatal
+2018,Poznań,medium,23,Fatal
+2018,Poznań,post-secondary,0,Fatal
+2018,Poznań,higher,11,Fatal
+2018,Rzeszów,basic incomplete,5,Fatal
+2018,Rzeszów,basic,16,Fatal
+2018,Rzeszów,junior high,4,Fatal
+2018,Rzeszów,technical/professional,33,Fatal
+2018,Rzeszów,medium,27,Fatal
+2018,Rzeszów,post-secondary,1,Fatal
+2018,Rzeszów,higher,9,Fatal
+2018,Szczecin,basic incomplete,1,Fatal
+2018,Szczecin,basic,18,Fatal
+2018,Szczecin,junior high,5,Fatal
+2018,Szczecin,technical/professional,25,Fatal
+2018,Szczecin,medium,26,Fatal
+2018,Szczecin,post-secondary,0,Fatal
+2018,Szczecin,higher,4,Fatal
+2018,Warszawa,basic incomplete,0,Fatal
+2018,Warszawa,basic,13,Fatal
+2018,Warszawa,junior high,7,Fatal
+2018,Warszawa,technical/professional,17,Fatal
+2018,Warszawa,medium,28,Fatal
+2018,Warszawa,post-secondary,1,Fatal
+2018,Warszawa,higher,16,Fatal
+2018,Radom,basic incomplete,1,Fatal
+2018,Radom,basic,26,Fatal
+2018,Radom,junior high,8,Fatal
+2018,Radom,technical/professional,31,Fatal
+2018,Radom,medium,15,Fatal
+2018,Radom,post-secondary,0,Fatal
+2018,Radom,higher,4,Fatal
+2018,Wrocław,basic incomplete,4,Fatal
+2018,Wrocław,basic,24,Fatal
+2018,Wrocław,junior high,4,Fatal
+2018,Wrocław,technical/professional,31,Fatal
+2018,Wrocław,medium,40,Fatal
+2018,Wrocław,post-secondary,0,Fatal
+2018,Wrocław,higher,13,Fatal
+2019,Bydgoszcz,basic incomplete,3,Fatal
+2019,Bydgoszcz,basic,16,Fatal
+2019,Bydgoszcz,junior high,2,Fatal
+2019,Bydgoszcz,technical/professional,15,Fatal
+2019,Bydgoszcz,medium,13,Fatal
+2019,Bydgoszcz,post-secondary,1,Fatal
+2019,Bydgoszcz,higher,6,Fatal
+2019,Białystok,basic incomplete,2,Fatal
+2019,Białystok,basic,10,Fatal
+2019,Białystok,junior high,1,Fatal
+2019,Białystok,technical/professional,13,Fatal
+2019,Białystok,medium,15,Fatal
+2019,Białystok,post-secondary,0,Fatal
+2019,Białystok,higher,3,Fatal
+2019,Gdańsk,basic incomplete,3,Fatal
+2019,Gdańsk,basic,15,Fatal
+2019,Gdańsk,junior high,4,Fatal
+2019,Gdańsk,technical/professional,14,Fatal
+2019,Gdańsk,medium,16,Fatal
+2019,Gdańsk,post-secondary,0,Fatal
+2019,Gdańsk,higher,2,Fatal
+2019,Gorzów Wlkp.,basic incomplete,2,Fatal
+2019,Gorzów Wlkp.,basic,4,Fatal
+2019,Gorzów Wlkp.,junior high,1,Fatal
+2019,Gorzów Wlkp.,technical/professional,5,Fatal
+2019,Gorzów Wlkp.,medium,1,Fatal
+2019,Gorzów Wlkp.,post-secondary,0,Fatal
+2019,Gorzów Wlkp.,higher,2,Fatal
+2019,Katowice,basic incomplete,1,Fatal
+2019,Katowice,basic,20,Fatal
+2019,Katowice,junior high,4,Fatal
+2019,Katowice,technical/professional,56,Fatal
+2019,Katowice,medium,62,Fatal
+2019,Katowice,post-secondary,1,Fatal
+2019,Katowice,higher,14,Fatal
+2019,Kielce,basic incomplete,0,Fatal
+2019,Kielce,basic,26,Fatal
+2019,Kielce,junior high,1,Fatal
+2019,Kielce,technical/professional,42,Fatal
+2019,Kielce,medium,24,Fatal
+2019,Kielce,post-secondary,0,Fatal
+2019,Kielce,higher,10,Fatal
+2019,Kraków,basic incomplete,0,Fatal
+2019,Kraków,basic,30,Fatal
+2019,Kraków,junior high,6,Fatal
+2019,Kraków,technical/professional,32,Fatal
+2019,Kraków,medium,32,Fatal
+2019,Kraków,post-secondary,0,Fatal
+2019,Kraków,higher,10,Fatal
+2019,Łódź,basic incomplete,2,Fatal
+2019,Łódź,basic,20,Fatal
+2019,Łódź,junior high,7,Fatal
+2019,Łódź,technical/professional,28,Fatal
+2019,Łódź,medium,12,Fatal
+2019,Łódź,post-secondary,1,Fatal
+2019,Łódź,higher,8,Fatal
+2019,Lublin,basic incomplete,1,Fatal
+2019,Lublin,basic,23,Fatal
+2019,Lublin,junior high,7,Fatal
+2019,Lublin,technical/professional,29,Fatal
+2019,Lublin,medium,31,Fatal
+2019,Lublin,post-secondary,0,Fatal
+2019,Lublin,higher,8,Fatal
+2019,Olsztyn,basic incomplete,1,Fatal
+2019,Olsztyn,basic,10,Fatal
+2019,Olsztyn,junior high,4,Fatal
+2019,Olsztyn,technical/professional,10,Fatal
+2019,Olsztyn,medium,9,Fatal
+2019,Olsztyn,post-secondary,0,Fatal
+2019,Olsztyn,higher,9,Fatal
+2019,Opole,basic incomplete,0,Fatal
+2019,Opole,basic,11,Fatal
+2019,Opole,junior high,3,Fatal
+2019,Opole,technical/professional,25,Fatal
+2019,Opole,medium,8,Fatal
+2019,Opole,post-secondary,0,Fatal
+2019,Opole,higher,7,Fatal
+2019,Poznań,basic incomplete,2,Fatal
+2019,Poznań,basic,22,Fatal
+2019,Poznań,junior high,1,Fatal
+2019,Poznań,technical/professional,46,Fatal
+2019,Poznań,medium,36,Fatal
+2019,Poznań,post-secondary,0,Fatal
+2019,Poznań,higher,10,Fatal
+2019,Rzeszów,basic incomplete,1,Fatal
+2019,Rzeszów,basic,18,Fatal
+2019,Rzeszów,junior high,5,Fatal
+2019,Rzeszów,technical/professional,30,Fatal
+2019,Rzeszów,medium,19,Fatal
+2019,Rzeszów,post-secondary,0,Fatal
+2019,Rzeszów,higher,9,Fatal
+2019,Szczecin,basic incomplete,0,Fatal
+2019,Szczecin,basic,19,Fatal
+2019,Szczecin,junior high,1,Fatal
+2019,Szczecin,technical/professional,28,Fatal
+2019,Szczecin,medium,14,Fatal
+2019,Szczecin,post-secondary,1,Fatal
+2019,Szczecin,higher,3,Fatal
+2019,Warszawa,basic incomplete,1,Fatal
+2019,Warszawa,basic,14,Fatal
+2019,Warszawa,junior high,5,Fatal
+2019,Warszawa,technical/professional,9,Fatal
+2019,Warszawa,medium,22,Fatal
+2019,Warszawa,post-secondary,0,Fatal
+2019,Warszawa,higher,17,Fatal
+2019,Radom,basic incomplete,0,Fatal
+2019,Radom,basic,35,Fatal
+2019,Radom,junior high,5,Fatal
+2019,Radom,technical/professional,40,Fatal
+2019,Radom,medium,16,Fatal
+2019,Radom,post-secondary,0,Fatal
+2019,Radom,higher,11,Fatal
+2019,Wrocław,basic incomplete,1,Fatal
+2019,Wrocław,basic,19,Fatal
+2019,Wrocław,junior high,2,Fatal
+2019,Wrocław,technical/professional,43,Fatal
+2019,Wrocław,medium,26,Fatal
+2019,Wrocław,post-secondary,0,Fatal
+2019,Wrocław,higher,9,Fatal
+2020,Bydgoszcz,basic incomplete,0,Fatal
+2020,Bydgoszcz,basic,10,Fatal
+2020,Bydgoszcz,junior high,5,Fatal
+2020,Bydgoszcz,technical/professional,16,Fatal
+2020,Bydgoszcz,medium,10,Fatal
+2020,Bydgoszcz,post-secondary,0,Fatal
+2020,Bydgoszcz,higher,5,Fatal
+2020,Białystok,basic incomplete,0,Fatal
+2020,Białystok,basic,15,Fatal
+2020,Białystok,junior high,2,Fatal
+2020,Białystok,technical/professional,14,Fatal
+2020,Białystok,medium,11,Fatal
+2020,Białystok,post-secondary,1,Fatal
+2020,Białystok,higher,2,Fatal
+2020,Gdańsk,basic incomplete,1,Fatal
+2020,Gdańsk,basic,19,Fatal
+2020,Gdańsk,junior high,1,Fatal
+2020,Gdańsk,technical/professional,19,Fatal
+2020,Gdańsk,medium,16,Fatal
+2020,Gdańsk,post-secondary,0,Fatal
+2020,Gdańsk,higher,8,Fatal
+2020,Gorzów Wlkp.,basic incomplete,0,Fatal
+2020,Gorzów Wlkp.,basic,3,Fatal
+2020,Gorzów Wlkp.,junior high,1,Fatal
+2020,Gorzów Wlkp.,technical/professional,6,Fatal
+2020,Gorzów Wlkp.,medium,5,Fatal
+2020,Gorzów Wlkp.,post-secondary,0,Fatal
+2020,Gorzów Wlkp.,higher,2,Fatal
+2020,Katowice,basic incomplete,2,Fatal
+2020,Katowice,basic,19,Fatal
+2020,Katowice,junior high,5,Fatal
+2020,Katowice,technical/professional,52,Fatal
+2020,Katowice,medium,42,Fatal
+2020,Katowice,post-secondary,1,Fatal
+2020,Katowice,higher,17,Fatal
+2020,Kielce,basic incomplete,0,Fatal
+2020,Kielce,basic,23,Fatal
+2020,Kielce,junior high,2,Fatal
+2020,Kielce,technical/professional,44,Fatal
+2020,Kielce,medium,28,Fatal
+2020,Kielce,post-secondary,0,Fatal
+2020,Kielce,higher,10,Fatal
+2020,Kraków,basic incomplete,1,Fatal
+2020,Kraków,basic,28,Fatal
+2020,Kraków,junior high,8,Fatal
+2020,Kraków,technical/professional,52,Fatal
+2020,Kraków,medium,36,Fatal
+2020,Kraków,post-secondary,1,Fatal
+2020,Kraków,higher,16,Fatal
+2020,Łódź,basic incomplete,0,Fatal
+2020,Łódź,basic,22,Fatal
+2020,Łódź,junior high,4,Fatal
+2020,Łódź,technical/professional,25,Fatal
+2020,Łódź,medium,25,Fatal
+2020,Łódź,post-secondary,0,Fatal
+2020,Łódź,higher,11,Fatal
+2020,Lublin,basic incomplete,1,Fatal
+2020,Lublin,basic,23,Fatal
+2020,Lublin,junior high,4,Fatal
+2020,Lublin,technical/professional,29,Fatal
+2020,Lublin,medium,28,Fatal
+2020,Lublin,post-secondary,0,Fatal
+2020,Lublin,higher,14,Fatal
+2020,Olsztyn,basic incomplete,1,Fatal
+2020,Olsztyn,basic,18,Fatal
+2020,Olsztyn,junior high,2,Fatal
+2020,Olsztyn,technical/professional,19,Fatal
+2020,Olsztyn,medium,12,Fatal
+2020,Olsztyn,post-secondary,0,Fatal
+2020,Olsztyn,higher,9,Fatal
+2020,Opole,basic incomplete,2,Fatal
+2020,Opole,basic,10,Fatal
+2020,Opole,junior high,2,Fatal
+2020,Opole,technical/professional,19,Fatal
+2020,Opole,medium,8,Fatal
+2020,Opole,post-secondary,0,Fatal
+2020,Opole,higher,2,Fatal
+2020,Poznań,basic incomplete,0,Fatal
+2020,Poznań,basic,19,Fatal
+2020,Poznań,junior high,4,Fatal
+2020,Poznań,technical/professional,50,Fatal
+2020,Poznań,medium,28,Fatal
+2020,Poznań,post-secondary,1,Fatal
+2020,Poznań,higher,12,Fatal
+2020,Rzeszów,basic incomplete,1,Fatal
+2020,Rzeszów,basic,21,Fatal
+2020,Rzeszów,junior high,3,Fatal
+2020,Rzeszów,technical/professional,25,Fatal
+2020,Rzeszów,medium,28,Fatal
+2020,Rzeszów,post-secondary,0,Fatal
+2020,Rzeszów,higher,6,Fatal
+2020,Szczecin,basic incomplete,3,Fatal
+2020,Szczecin,basic,17,Fatal
+2020,Szczecin,junior high,8,Fatal
+2020,Szczecin,technical/professional,22,Fatal
+2020,Szczecin,medium,18,Fatal
+2020,Szczecin,post-secondary,0,Fatal
+2020,Szczecin,higher,4,Fatal
+2020,Warszawa,basic incomplete,3,Fatal
+2020,Warszawa,basic,13,Fatal
+2020,Warszawa,junior high,3,Fatal
+2020,Warszawa,technical/professional,11,Fatal
+2020,Warszawa,medium,28,Fatal
+2020,Warszawa,post-secondary,0,Fatal
+2020,Warszawa,higher,20,Fatal
+2020,Radom,basic incomplete,4,Fatal
+2020,Radom,basic,37,Fatal
+2020,Radom,junior high,5,Fatal
+2020,Radom,technical/professional,29,Fatal
+2020,Radom,medium,19,Fatal
+2020,Radom,post-secondary,0,Fatal
+2020,Radom,higher,10,Fatal
+2020,Wrocław,basic incomplete,2,Fatal
+2020,Wrocław,basic,17,Fatal
+2020,Wrocław,junior high,1,Fatal
+2020,Wrocław,technical/professional,34,Fatal
+2020,Wrocław,medium,26,Fatal
+2020,Wrocław,post-secondary,0,Fatal
+2020,Wrocław,higher,14,Fatal
+2021,Bydgoszcz,basic incomplete,2,Fatal
+2021,Bydgoszcz,basic,14,Fatal
+2021,Bydgoszcz,junior high,6,Fatal
+2021,Bydgoszcz,technical/professional,18,Fatal
+2021,Bydgoszcz,medium,19,Fatal
+2021,Bydgoszcz,post-secondary,0,Fatal
+2021,Bydgoszcz,higher,6,Fatal
+2021,Białystok,basic incomplete,0,Fatal
+2021,Białystok,basic,6,Fatal
+2021,Białystok,junior high,1,Fatal
+2021,Białystok,technical/professional,9,Fatal
+2021,Białystok,medium,13,Fatal
+2021,Białystok,post-secondary,0,Fatal
+2021,Białystok,higher,2,Fatal
+2021,Gdańsk,basic incomplete,5,Fatal
+2021,Gdańsk,basic,24,Fatal
+2021,Gdańsk,junior high,3,Fatal
+2021,Gdańsk,technical/professional,18,Fatal
+2021,Gdańsk,medium,21,Fatal
+2021,Gdańsk,post-secondary,0,Fatal
+2021,Gdańsk,higher,12,Fatal
+2021,Gorzów Wlkp.,basic incomplete,0,Fatal
+2021,Gorzów Wlkp.,basic,3,Fatal
+2021,Gorzów Wlkp.,junior high,2,Fatal
+2021,Gorzów Wlkp.,technical/professional,8,Fatal
+2021,Gorzów Wlkp.,medium,2,Fatal
+2021,Gorzów Wlkp.,post-secondary,0,Fatal
+2021,Gorzów Wlkp.,higher,4,Fatal
+2021,Katowice,basic incomplete,3,Fatal
+2021,Katowice,basic,33,Fatal
+2021,Katowice,junior high,5,Fatal
+2021,Katowice,technical/professional,57,Fatal
+2021,Katowice,medium,53,Fatal
+2021,Katowice,post-secondary,0,Fatal
+2021,Katowice,higher,14,Fatal
+2021,Kielce,basic incomplete,0,Fatal
+2021,Kielce,basic,29,Fatal
+2021,Kielce,junior high,0,Fatal
+2021,Kielce,technical/professional,35,Fatal
+2021,Kielce,medium,35,Fatal
+2021,Kielce,post-secondary,1,Fatal
+2021,Kielce,higher,15,Fatal
+2021,Kraków,basic incomplete,2,Fatal
+2021,Kraków,basic,23,Fatal
+2021,Kraków,junior high,5,Fatal
+2021,Kraków,technical/professional,50,Fatal
+2021,Kraków,medium,23,Fatal
+2021,Kraków,post-secondary,0,Fatal
+2021,Kraków,higher,13,Fatal
+2021,Łódź,basic incomplete,0,Fatal
+2021,Łódź,basic,20,Fatal
+2021,Łódź,junior high,2,Fatal
+2021,Łódź,technical/professional,24,Fatal
+2021,Łódź,medium,24,Fatal
+2021,Łódź,post-secondary,0,Fatal
+2021,Łódź,higher,13,Fatal
+2021,Lublin,basic incomplete,1,Fatal
+2021,Lublin,basic,19,Fatal
+2021,Lublin,junior high,4,Fatal
+2021,Lublin,technical/professional,24,Fatal
+2021,Lublin,medium,31,Fatal
+2021,Lublin,post-secondary,0,Fatal
+2021,Lublin,higher,13,Fatal
+2021,Olsztyn,basic incomplete,1,Fatal
+2021,Olsztyn,basic,7,Fatal
+2021,Olsztyn,junior high,2,Fatal
+2021,Olsztyn,technical/professional,14,Fatal
+2021,Olsztyn,medium,10,Fatal
+2021,Olsztyn,post-secondary,0,Fatal
+2021,Olsztyn,higher,4,Fatal
+2021,Opole,basic incomplete,1,Fatal
+2021,Opole,basic,8,Fatal
+2021,Opole,junior high,2,Fatal
+2021,Opole,technical/professional,11,Fatal
+2021,Opole,medium,6,Fatal
+2021,Opole,post-secondary,0,Fatal
+2021,Opole,higher,3,Fatal
+2021,Poznań,basic incomplete,2,Fatal
+2021,Poznań,basic,29,Fatal
+2021,Poznań,junior high,5,Fatal
+2021,Poznań,technical/professional,68,Fatal
+2021,Poznań,medium,31,Fatal
+2021,Poznań,post-secondary,0,Fatal
+2021,Poznań,higher,13,Fatal
+2021,Rzeszów,basic incomplete,2,Fatal
+2021,Rzeszów,basic,21,Fatal
+2021,Rzeszów,junior high,8,Fatal
+2021,Rzeszów,technical/professional,29,Fatal
+2021,Rzeszów,medium,29,Fatal
+2021,Rzeszów,post-secondary,0,Fatal
+2021,Rzeszów,higher,3,Fatal
+2021,Szczecin,basic incomplete,2,Fatal
+2021,Szczecin,basic,17,Fatal
+2021,Szczecin,junior high,4,Fatal
+2021,Szczecin,technical/professional,16,Fatal
+2021,Szczecin,medium,15,Fatal
+2021,Szczecin,post-secondary,0,Fatal
+2021,Szczecin,higher,6,Fatal
+2021,Warszawa,basic incomplete,3,Fatal
+2021,Warszawa,basic,10,Fatal
+2021,Warszawa,junior high,4,Fatal
+2021,Warszawa,technical/professional,16,Fatal
+2021,Warszawa,medium,32,Fatal
+2021,Warszawa,post-secondary,0,Fatal
+2021,Warszawa,higher,10,Fatal
+2021,Radom,basic incomplete,1,Fatal
+2021,Radom,basic,29,Fatal
+2021,Radom,junior high,3,Fatal
+2021,Radom,technical/professional,23,Fatal
+2021,Radom,medium,27,Fatal
+2021,Radom,post-secondary,1,Fatal
+2021,Radom,higher,7,Fatal
+2021,Wrocław,basic incomplete,2,Fatal
+2021,Wrocław,basic,10,Fatal
+2021,Wrocław,junior high,0,Fatal
+2021,Wrocław,technical/professional,31,Fatal
+2021,Wrocław,medium,29,Fatal
+2021,Wrocław,post-secondary,0,Fatal
+2021,Wrocław,higher,14,Fatal
+2022,Bydgoszcz,basic incomplete,0,Fatal
+2022,Bydgoszcz,basic,8,Fatal
+2022,Bydgoszcz,junior high,3,Fatal
+2022,Bydgoszcz,technical/professional,15,Fatal
+2022,Bydgoszcz,medium,14,Fatal
+2022,Bydgoszcz,post-secondary,0,Fatal
+2022,Bydgoszcz,higher,5,Fatal
+2022,Białystok,basic incomplete,1,Fatal
+2022,Białystok,basic,11,Fatal
+2022,Białystok,junior high,1,Fatal
+2022,Białystok,technical/professional,8,Fatal
+2022,Białystok,medium,12,Fatal
+2022,Białystok,post-secondary,0,Fatal
+2022,Białystok,higher,1,Fatal
+2022,Gdańsk,basic incomplete,4,Fatal
+2022,Gdańsk,basic,9,Fatal
+2022,Gdańsk,junior high,3,Fatal
+2022,Gdańsk,technical/professional,26,Fatal
+2022,Gdańsk,medium,23,Fatal
+2022,Gdańsk,post-secondary,0,Fatal
+2022,Gdańsk,higher,7,Fatal
+2022,Gorzów Wlkp.,basic incomplete,4,Fatal
+2022,Gorzów Wlkp.,basic,4,Fatal
+2022,Gorzów Wlkp.,junior high,4,Fatal
+2022,Gorzów Wlkp.,technical/professional,6,Fatal
+2022,Gorzów Wlkp.,medium,6,Fatal
+2022,Gorzów Wlkp.,post-secondary,0,Fatal
+2022,Gorzów Wlkp.,higher,1,Fatal
+2022,Katowice,basic incomplete,4,Fatal
+2022,Katowice,basic,21,Fatal
+2022,Katowice,junior high,3,Fatal
+2022,Katowice,technical/professional,46,Fatal
+2022,Katowice,medium,38,Fatal
+2022,Katowice,post-secondary,0,Fatal
+2022,Katowice,higher,15,Fatal
+2022,Kielce,basic incomplete,2,Fatal
+2022,Kielce,basic,20,Fatal
+2022,Kielce,junior high,2,Fatal
+2022,Kielce,technical/professional,28,Fatal
+2022,Kielce,medium,32,Fatal
+2022,Kielce,post-secondary,0,Fatal
+2022,Kielce,higher,6,Fatal
+2022,Kraków,basic incomplete,2,Fatal
+2022,Kraków,basic,29,Fatal
+2022,Kraków,junior high,2,Fatal
+2022,Kraków,technical/professional,31,Fatal
+2022,Kraków,medium,43,Fatal
+2022,Kraków,post-secondary,0,Fatal
+2022,Kraków,higher,12,Fatal
+2022,Łódź,basic incomplete,3,Fatal
+2022,Łódź,basic,25,Fatal
+2022,Łódź,junior high,4,Fatal
+2022,Łódź,technical/professional,25,Fatal
+2022,Łódź,medium,19,Fatal
+2022,Łódź,post-secondary,2,Fatal
+2022,Łódź,higher,6,Fatal
+2022,Lublin,basic incomplete,1,Fatal
+2022,Lublin,basic,23,Fatal
+2022,Lublin,junior high,9,Fatal
+2022,Lublin,technical/professional,36,Fatal
+2022,Lublin,medium,36,Fatal
+2022,Lublin,post-secondary,1,Fatal
+2022,Lublin,higher,8,Fatal
+2022,Olsztyn,basic incomplete,3,Fatal
+2022,Olsztyn,basic,17,Fatal
+2022,Olsztyn,junior high,3,Fatal
+2022,Olsztyn,technical/professional,14,Fatal
+2022,Olsztyn,medium,12,Fatal
+2022,Olsztyn,post-secondary,0,Fatal
+2022,Olsztyn,higher,5,Fatal
+2022,Opole,basic incomplete,1,Fatal
+2022,Opole,basic,5,Fatal
+2022,Opole,junior high,1,Fatal
+2022,Opole,technical/professional,14,Fatal
+2022,Opole,medium,11,Fatal
+2022,Opole,post-secondary,0,Fatal
+2022,Opole,higher,1,Fatal
+2022,Poznań,basic incomplete,2,Fatal
+2022,Poznań,basic,24,Fatal
+2022,Poznań,junior high,2,Fatal
+2022,Poznań,technical/professional,65,Fatal
+2022,Poznań,medium,46,Fatal
+2022,Poznań,post-secondary,1,Fatal
+2022,Poznań,higher,17,Fatal
+2022,Rzeszów,basic incomplete,2,Fatal
+2022,Rzeszów,basic,17,Fatal
+2022,Rzeszów,junior high,2,Fatal
+2022,Rzeszów,technical/professional,41,Fatal
+2022,Rzeszów,medium,19,Fatal
+2022,Rzeszów,post-secondary,0,Fatal
+2022,Rzeszów,higher,6,Fatal
+2022,Szczecin,basic incomplete,2,Fatal
+2022,Szczecin,basic,15,Fatal
+2022,Szczecin,junior high,1,Fatal
+2022,Szczecin,technical/professional,14,Fatal
+2022,Szczecin,medium,16,Fatal
+2022,Szczecin,post-secondary,1,Fatal
+2022,Szczecin,higher,8,Fatal
+2022,Warszawa,basic incomplete,2,Fatal
+2022,Warszawa,basic,19,Fatal
+2022,Warszawa,junior high,1,Fatal
+2022,Warszawa,technical/professional,9,Fatal
+2022,Warszawa,medium,22,Fatal
+2022,Warszawa,post-secondary,0,Fatal
+2022,Warszawa,higher,14,Fatal
+2022,Radom,basic incomplete,0,Fatal
+2022,Radom,basic,34,Fatal
+2022,Radom,junior high,3,Fatal
+2022,Radom,technical/professional,34,Fatal
+2022,Radom,medium,27,Fatal
+2022,Radom,post-secondary,1,Fatal
+2022,Radom,higher,12,Fatal
+2022,Wrocław,basic incomplete,1,Fatal
+2022,Wrocław,basic,18,Fatal
+2022,Wrocław,junior high,5,Fatal
+2022,Wrocław,technical/professional,27,Fatal
+2022,Wrocław,medium,32,Fatal
+2022,Wrocław,post-secondary,0,Fatal
+2022,Wrocław,higher,7,Fatal
+2023,Bydgoszcz,basic incomplete,1,Fatal
+2023,Bydgoszcz,basic,12,Fatal
+2023,Bydgoszcz,junior high,2,Fatal
+2023,Bydgoszcz,technical/professional,15,Fatal
+2023,Bydgoszcz,medium,11,Fatal
+2023,Bydgoszcz,post-secondary,0,Fatal
+2023,Bydgoszcz,higher,11,Fatal
+2023,Białystok,basic incomplete,2,Fatal
+2023,Białystok,basic,10,Fatal
+2023,Białystok,junior high,5,Fatal
+2023,Białystok,technical/professional,10,Fatal
+2023,Białystok,medium,17,Fatal
+2023,Białystok,post-secondary,0,Fatal
+2023,Białystok,higher,2,Fatal
+2023,Gdańsk,basic incomplete,1,Fatal
+2023,Gdańsk,basic,13,Fatal
+2023,Gdańsk,junior high,2,Fatal
+2023,Gdańsk,technical/professional,17,Fatal
+2023,Gdańsk,medium,15,Fatal
+2023,Gdańsk,post-secondary,0,Fatal
+2023,Gdańsk,higher,13,Fatal
+2023,Gorzów Wlkp.,basic incomplete,0,Fatal
+2023,Gorzów Wlkp.,basic,4,Fatal
+2023,Gorzów Wlkp.,junior high,1,Fatal
+2023,Gorzów Wlkp.,technical/professional,4,Fatal
+2023,Gorzów Wlkp.,medium,6,Fatal
+2023,Gorzów Wlkp.,post-secondary,0,Fatal
+2023,Gorzów Wlkp.,higher,3,Fatal
+2023,Katowice,basic incomplete,5,Fatal
+2023,Katowice,basic,19,Fatal
+2023,Katowice,junior high,2,Fatal
+2023,Katowice,technical/professional,37,Fatal
+2023,Katowice,medium,49,Fatal
+2023,Katowice,post-secondary,1,Fatal
+2023,Katowice,higher,15,Fatal
+2023,Kielce,basic incomplete,1,Fatal
+2023,Kielce,basic,22,Fatal
+2023,Kielce,junior high,2,Fatal
+2023,Kielce,technical/professional,31,Fatal
+2023,Kielce,medium,34,Fatal
+2023,Kielce,post-secondary,0,Fatal
+2023,Kielce,higher,9,Fatal
+2023,Kraków,basic incomplete,1,Fatal
+2023,Kraków,basic,19,Fatal
+2023,Kraków,junior high,3,Fatal
+2023,Kraków,technical/professional,37,Fatal
+2023,Kraków,medium,26,Fatal
+2023,Kraków,post-secondary,2,Fatal
+2023,Kraków,higher,14,Fatal
+2023,Łódź,basic incomplete,0,Fatal
+2023,Łódź,basic,23,Fatal
+2023,Łódź,junior high,3,Fatal
+2023,Łódź,technical/professional,22,Fatal
+2023,Łódź,medium,25,Fatal
+2023,Łódź,post-secondary,0,Fatal
+2023,Łódź,higher,16,Fatal
+2023,Lublin,basic incomplete,1,Fatal
+2023,Lublin,basic,22,Fatal
+2023,Lublin,junior high,2,Fatal
+2023,Lublin,technical/professional,34,Fatal
+2023,Lublin,medium,23,Fatal
+2023,Lublin,post-secondary,0,Fatal
+2023,Lublin,higher,14,Fatal
+2023,Olsztyn,basic incomplete,0,Fatal
+2023,Olsztyn,basic,24,Fatal
+2023,Olsztyn,junior high,1,Fatal
+2023,Olsztyn,technical/professional,11,Fatal
+2023,Olsztyn,medium,10,Fatal
+2023,Olsztyn,post-secondary,0,Fatal
+2023,Olsztyn,higher,7,Fatal
+2023,Opole,basic incomplete,1,Fatal
+2023,Opole,basic,9,Fatal
+2023,Opole,junior high,0,Fatal
+2023,Opole,technical/professional,12,Fatal
+2023,Opole,medium,11,Fatal
+2023,Opole,post-secondary,0,Fatal
+2023,Opole,higher,6,Fatal
+2023,Poznań,basic incomplete,4,Fatal
+2023,Poznań,basic,52,Fatal
+2023,Poznań,junior high,7,Fatal
+2023,Poznań,technical/professional,68,Fatal
+2023,Poznań,medium,54,Fatal
+2023,Poznań,post-secondary,1,Fatal
+2023,Poznań,higher,16,Fatal
+2023,Rzeszów,basic incomplete,0,Fatal
+2023,Rzeszów,basic,15,Fatal
+2023,Rzeszów,junior high,3,Fatal
+2023,Rzeszów,technical/professional,37,Fatal
+2023,Rzeszów,medium,22,Fatal
+2023,Rzeszów,post-secondary,1,Fatal
+2023,Rzeszów,higher,9,Fatal
+2023,Szczecin,basic incomplete,2,Fatal
+2023,Szczecin,basic,14,Fatal
+2023,Szczecin,junior high,2,Fatal
+2023,Szczecin,technical/professional,13,Fatal
+2023,Szczecin,medium,21,Fatal
+2023,Szczecin,post-secondary,0,Fatal
+2023,Szczecin,higher,10,Fatal
+2023,Warszawa,basic incomplete,0,Fatal
+2023,Warszawa,basic,17,Fatal
+2023,Warszawa,junior high,3,Fatal
+2023,Warszawa,technical/professional,10,Fatal
+2023,Warszawa,medium,25,Fatal
+2023,Warszawa,post-secondary,0,Fatal
+2023,Warszawa,higher,24,Fatal
+2023,Radom,basic incomplete,2,Fatal
+2023,Radom,basic,40,Fatal
+2023,Radom,junior high,4,Fatal
+2023,Radom,technical/professional,26,Fatal
+2023,Radom,medium,25,Fatal
+2023,Radom,post-secondary,0,Fatal
+2023,Radom,higher,6,Fatal
+2023,Wrocław,basic incomplete,0,Fatal
+2023,Wrocław,basic,14,Fatal
+2023,Wrocław,junior high,2,Fatal
+2023,Wrocław,technical/professional,29,Fatal
+2023,Wrocław,medium,33,Fatal
+2023,Wrocław,post-secondary,1,Fatal
+2023,Wrocław,higher,7,Fatal
