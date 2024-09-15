@@ -1,7 +1,20 @@
 # The address where the function
 # execute_shellcode();
 # defined as
-# viod (*execute_shellcode)(void) = (void (*)(void))0x40820c2c;
+# viod (*execute_shellcode)(void) = (void (*)(void));
+#
+# When the shellcode was 
+# 0xef, 0x80, 0x72, 0x3f
+# the address of &shellcode[0] was 0x40820c6c
+#
+# When the shellcode was
+# 0xef, 0x80, 0x72, 0x3f,
+# 0xef, 0x80, 0x72, 0x3f,
+# the address of &shellcode[0] was 0x40820c68,
+# exactly 4 bytes before the previous address.
+# The base address of the shellcode is
+# 0x40820c70 - length of the shellcode
+
 current_address = 0x40820c6c
 # Address of a random function,
 # e.g. ic_create_wifi_task();
