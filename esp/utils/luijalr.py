@@ -9,23 +9,23 @@ def generate_lui_jalr_instructions(target_address, rd=1, rs1=1):
     """
     # Generate the LUI instruction
     upper_20 = (target_address >> 12) & 0xfffff  # Extract the upper 20 bits (imm[31:12])
-    lui_opcode = 0x37  # LUI opcode
+    lower_12 = target_address & 0xfff            # Extract the lower 12 bits (imm[11:0])
 
-    # Construct the LUI instruction (upper_20 << 12) | (rd << 7) | lui_opcode
-    lui_instruction = (upper_20 << 12) | (rd << 7) | lui_opcode
+    # If lower_12 exceeds signed 12-bit range, adjust
+    if lower_12 > 2047:
+        upper_20 += 1
+        lower_12 -= 4096  # Adjust lower to fit signed range
 
-    # Generate the JALR instruction
-    lower_12 = target_address & 0xfff  # Extract the lower 12 bits (imm[11:0])
-    jalr_opcode = 0x67  # JALR opcode
-    funct3 = 0x0  # funct3 for JALR is always 0
+    # Construct the LUI instruction
+    lui_instruction = ((upper_20 << 12) | (rd << 7) | 0x37) & 0xffffffff
 
     # Construct the JALR instruction
-    jalr_instruction = (lower_12 << 20) | (rs1 << 15) | (funct3 << 12) | (rd << 7) | jalr_opcode
+    jalr_instruction = ((lower_12 << 20) | (rs1 << 15) | (0x0 << 12) | (rd << 7) | 0x67) & 0xffffffff
 
     return f"LUI instruction: {lui_instruction:08x}", f"JALR instruction: {jalr_instruction:08x}"
 
 # Example usage: an address in ROM
-target_address = 0x400400c0  # Example target address
+target_address = 0x40030d2c  # Example target address
 
 lui_instr, jalr_instr = generate_lui_jalr_instructions(target_address)
 print(lui_instr)
