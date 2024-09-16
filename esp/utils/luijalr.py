@@ -25,7 +25,7 @@ def generate_lui_jalr_instructions(target_address, rd=1, rs1=1):
     return f"LUI instruction: {lui_instruction:08x}", f"JALR instruction: {jalr_instruction:08x}"
 
 # Example usage: an address in ROM
-target_address = 0x40030d2c  # Example target address
+target_address = 0x40000800  # Example target address
 
 lui_instr, jalr_instr = generate_lui_jalr_instructions(target_address)
 print(lui_instr)
